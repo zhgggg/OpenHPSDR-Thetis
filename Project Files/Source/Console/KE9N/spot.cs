@@ -446,7 +446,7 @@ namespace Thetis
             this.SWLbutton.Name = "SWLbutton";
             this.SWLbutton.Size = new System.Drawing.Size(75, 23);
             this.SWLbutton.TabIndex = 2;
-            this.SWLbutton.Text = "Spot SWL";
+            this.SWLbutton.Text = "信标 SWL";
             this.toolTip1.SetToolTip(this.SWLbutton, resources.GetString("SWLbutton.ToolTip"));
             this.SWLbutton.UseVisualStyleBackColor = false;
             this.SWLbutton.Click += new System.EventHandler(this.SWLbutton_Click);
@@ -459,7 +459,7 @@ namespace Thetis
             this.SSBbutton.Name = "SSBbutton";
             this.SSBbutton.Size = new System.Drawing.Size(75, 23);
             this.SSBbutton.TabIndex = 1;
-            this.SSBbutton.Text = "Connect";
+            this.SSBbutton.Text = "连接";
             this.toolTip1.SetToolTip(this.SSBbutton, "Click to Turn On/Off Dx Cluster Spotting (on both this DX Spotting window and Pan" +
         "adapter)\r\nRequires Internet to work.\r\n");
             this.SSBbutton.UseVisualStyleBackColor = false;
@@ -521,7 +521,7 @@ namespace Thetis
             this.callBox.Name = "callBox";
             this.callBox.Size = new System.Drawing.Size(87, 22);
             this.callBox.TabIndex = 5;
-            this.callBox.Text = "Callsign";
+            this.callBox.Text = "呼号";
             this.toolTip1.SetToolTip(this.callBox, "Enter Your Call sign to login to the DX Cluster here");
             this.callBox.TextChanged += new System.EventHandler(this.callBox_TextChanged);
             this.callBox.Leave += new System.EventHandler(this.callBox_Leave);
@@ -564,7 +564,7 @@ namespace Thetis
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(68, 23);
             this.button1.TabIndex = 3;
-            this.button1.Text = "Pause";
+            this.button1.Text = "暂停";
             this.toolTip1.SetToolTip(this.button1, "Click to Pause the DX Text window (if spots are coming through too fast)\r\nUpdates" +
         " to the Panadapter will still occur");
             this.button1.UseVisualStyleBackColor = false;
@@ -591,7 +591,7 @@ namespace Thetis
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(102, 13);
             this.label1.TabIndex = 17;
-            this.label1.Text = "Status of DX Cluster";
+            this.label1.Text = "DX 集群状态";
             // 
             // label2
             // 
@@ -602,7 +602,7 @@ namespace Thetis
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(113, 13);
             this.label2.TabIndex = 18;
-            this.label2.Text = "Status of SWL Spotter";
+            this.label2.Text = "SWL 信标台状态";
             // 
             // btnTrack
             // 
@@ -612,7 +612,7 @@ namespace Thetis
             this.btnTrack.Name = "btnTrack";
             this.btnTrack.Size = new System.Drawing.Size(75, 23);
             this.btnTrack.TabIndex = 62;
-            this.btnTrack.Text = "Track";
+            this.btnTrack.Text = "跟踪";
             this.toolTip1.SetToolTip(this.btnTrack, resources.GetString("btnTrack.ToolTip"));
             this.btnTrack.UseVisualStyleBackColor = false;
             this.btnTrack.Click += new System.EventHandler(this.btnTrack_Click);
@@ -721,7 +721,7 @@ namespace Thetis
             this.SWLbutton2.Name = "SWLbutton2";
             this.SWLbutton2.Size = new System.Drawing.Size(75, 23);
             this.SWLbutton2.TabIndex = 76;
-            this.SWLbutton2.Text = "SWL list";
+            this.SWLbutton2.Text = "SWL 列表";
             this.toolTip1.SetToolTip(this.SWLbutton2, resources.GetString("SWLbutton2.ToolTip"));
             this.SWLbutton2.UseVisualStyleBackColor = false;
             this.SWLbutton2.Click += new System.EventHandler(this.SWLbutton2_Click);
@@ -734,7 +734,7 @@ namespace Thetis
             this.btnBeacon.Name = "btnBeacon";
             this.btnBeacon.Size = new System.Drawing.Size(75, 23);
             this.btnBeacon.TabIndex = 85;
-            this.btnBeacon.Text = "Beacon Chk";
+            this.btnBeacon.Text = "信标检查";
             this.toolTip1.SetToolTip(this.btnBeacon, resources.GetString("btnBeacon.ToolTip"));
             this.btnBeacon.UseVisualStyleBackColor = false;
             this.btnBeacon.Click += new System.EventHandler(this.btnBeacon_Click);
@@ -747,7 +747,7 @@ namespace Thetis
             this.btnTime.Name = "btnTime";
             this.btnTime.Size = new System.Drawing.Size(75, 23);
             this.btnTime.TabIndex = 89;
-            this.btnTime.Text = "Time Sync";
+            this.btnTime.Text = "时间同步";
             this.toolTip1.SetToolTip(this.btnTime, resources.GetString("btnTime.ToolTip"));
             this.btnTime.UseVisualStyleBackColor = false;
             this.btnTime.Click += new System.EventHandler(this.btnTime_Click);
@@ -762,7 +762,7 @@ namespace Thetis
             this.checkBoxTone.Size = new System.Drawing.Size(46, 17);
             this.checkBoxTone.TabIndex = 93;
             this.checkBoxTone.TabStop = true;
-            this.checkBoxTone.Text = "Tick";
+            this.checkBoxTone.Text = "刻度";
             this.toolTip1.SetToolTip(this.checkBoxTone, "ON = BCD sub-Carrier Tick\r\nOFF = no Tick");
             this.checkBoxTone.UseVisualStyleBackColor = true;
             this.checkBoxTone.CheckedChanged += new System.EventHandler(this.checkBoxTone_CheckedChanged);
@@ -789,7 +789,7 @@ namespace Thetis
             this.chkBoxContour.Name = "chkBoxContour";
             this.chkBoxContour.Size = new System.Drawing.Size(70, 24);
             this.chkBoxContour.TabIndex = 98;
-            this.chkBoxContour.Text = "Contour";
+            this.chkBoxContour.Text = "轮廓";
             this.toolTip1.SetToolTip(this.chkBoxContour, "VOACAP: Check for Contour instead of dots\r\n\r\n");
             this.chkBoxContour.CheckedChanged += new System.EventHandler(this.chkBoxContour_CheckedChanged);
             // 
@@ -819,7 +819,7 @@ namespace Thetis
             this.chkBoxAnt.Name = "chkBoxAnt";
             this.chkBoxAnt.Size = new System.Drawing.Size(55, 24);
             this.chkBoxAnt.TabIndex = 96;
-            this.chkBoxAnt.Text = "Beam";
+            this.chkBoxAnt.Text = "波束";
             this.toolTip1.SetToolTip(this.chkBoxAnt, "Check this box if your using a Beam Antenna instead of a Dipole\r\n\r\nUse VOACAP to " +
         "map Signal Strength from your station, \r\nbased on your Lat & Long\r\n\r\nView using " +
         "TRACK button\r\n\r\n");
@@ -836,7 +836,7 @@ namespace Thetis
             this.chkBoxDIG.Name = "chkBoxDIG";
             this.chkBoxDIG.Size = new System.Drawing.Size(85, 24);
             this.chkBoxDIG.TabIndex = 70;
-            this.chkBoxDIG.Text = "Spot Digital";
+            this.chkBoxDIG.Text = "信标数字";
             this.toolTip1.SetToolTip(this.chkBoxDIG, "Show Digital spots when checked (like RTTY, PSK, etc)\r\n");
             // 
             // checkBoxMUF
@@ -894,7 +894,7 @@ namespace Thetis
             this.checkBoxWWV.Name = "checkBoxWWV";
             this.checkBoxWWV.Size = new System.Drawing.Size(98, 24);
             this.checkBoxWWV.TabIndex = 90;
-            this.checkBoxWWV.Text = "Use WWV HF";
+            this.checkBoxWWV.Text = "使用 WWV HF";
             this.toolTip1.SetToolTip(this.checkBoxWWV, resources.GetString("checkBoxWWV.ToolTip"));
             this.checkBoxWWV.CheckedChanged += new System.EventHandler(this.checkBoxWWV_CheckedChanged);
             // 
@@ -938,7 +938,7 @@ namespace Thetis
             this.BoxBFScan.Name = "BoxBFScan";
             this.BoxBFScan.Size = new System.Drawing.Size(87, 24);
             this.BoxBFScan.TabIndex = 87;
-            this.BoxBFScan.Text = "Slow Scan";
+            this.BoxBFScan.Text = "慢速扫描";
             this.toolTip1.SetToolTip(this.BoxBFScan, resources.GetString("BoxBFScan.ToolTip"));
             this.BoxBFScan.CheckedChanged += new System.EventHandler(this.BoxBFScan_CheckedChanged);
             // 
@@ -951,7 +951,7 @@ namespace Thetis
             this.BoxBScan.Name = "BoxBScan";
             this.BoxBScan.Size = new System.Drawing.Size(81, 24);
             this.BoxBScan.TabIndex = 86;
-            this.BoxBScan.Text = "Fast Scan";
+            this.BoxBScan.Text = "快速扫描";
             this.toolTip1.SetToolTip(this.BoxBScan, "Check to Scan all 18 Beacon Stations 5 Frequecies at each 10 second Interval\r\nPow" +
         "erSDR will move across all 5 Beacon Frequencies in 1 sec intervals \r\n\r\nTotal bea" +
         "con map is compled in 3 minutes.\r\n\r\n");
@@ -966,7 +966,7 @@ namespace Thetis
             this.chkBoxBeam.Name = "chkBoxBeam";
             this.chkBoxBeam.Size = new System.Drawing.Size(88, 24);
             this.chkBoxBeam.TabIndex = 83;
-            this.chkBoxBeam.Text = "Map Beam°";
+            this.chkBoxBeam.Text = "地图波束°";
             this.toolTip1.SetToolTip(this.chkBoxBeam, "Check To Show Beam heading on map in (deg)\r\n");
             this.chkBoxBeam.CheckedChanged += new System.EventHandler(this.chkBoxBeam_CheckedChanged);
             // 
@@ -1045,7 +1045,7 @@ namespace Thetis
             this.chkBoxMem.Name = "chkBoxMem";
             this.chkBoxMem.Size = new System.Drawing.Size(123, 24);
             this.chkBoxMem.TabIndex = 74;
-            this.chkBoxMem.Text = "MEMORIES to Pan";
+            this.chkBoxMem.Text = "存储到平移";
             this.toolTip1.SetToolTip(this.chkBoxMem, "Show Memories directly on Panadapter.\r\n\r\nLEFT CLICK on visible Memory + CTRL to s" +
         "et Mode\r\n\r\nLEFT CLICK on PAN + ALT + M keys to save New Memory\r\n");
             this.chkBoxMem.CheckedChanged += new System.EventHandler(this.chkBoxMem_CheckedChanged);
@@ -1059,7 +1059,7 @@ namespace Thetis
             this.chkBoxPan.Name = "chkBoxPan";
             this.chkBoxPan.Size = new System.Drawing.Size(100, 24);
             this.chkBoxPan.TabIndex = 71;
-            this.chkBoxPan.Text = "Map just Pan";
+            this.chkBoxPan.Text = "地图仅平移";
             this.toolTip1.SetToolTip(this.chkBoxPan, "Show Country or Calls on Map for just the Panadapter freq you are viewing.\r\n");
             this.chkBoxPan.CheckedChanged += new System.EventHandler(this.chkBoxPan_CheckedChanged);
             // 
@@ -1074,7 +1074,7 @@ namespace Thetis
             this.chkBoxSSB.Name = "chkBoxSSB";
             this.chkBoxSSB.Size = new System.Drawing.Size(85, 24);
             this.chkBoxSSB.TabIndex = 69;
-            this.chkBoxSSB.Text = "Spot Phone";
+            this.chkBoxSSB.Text = "信标语音";
             this.toolTip1.SetToolTip(this.chkBoxSSB, "Show SSB spots when checked\r\n");
             // 
             // chkBoxCW
@@ -1088,7 +1088,7 @@ namespace Thetis
             this.chkBoxCW.Name = "chkBoxCW";
             this.chkBoxCW.Size = new System.Drawing.Size(85, 24);
             this.chkBoxCW.TabIndex = 68;
-            this.chkBoxCW.Text = "Spot CW";
+            this.chkBoxCW.Text = "信标 CW";
             this.toolTip1.SetToolTip(this.chkBoxCW, "Show CW spots when checked\r\n");
             // 
             // chkMapBand
@@ -1102,7 +1102,7 @@ namespace Thetis
             this.chkMapBand.Name = "chkMapBand";
             this.chkMapBand.Size = new System.Drawing.Size(113, 24);
             this.chkMapBand.TabIndex = 67;
-            this.chkMapBand.Text = "Map just Band";
+            this.chkMapBand.Text = "地图仅波段";
             this.toolTip1.SetToolTip(this.chkMapBand, "Show Country or Calls on Map for the Band you are on.\r\n");
             this.chkMapBand.CheckedChanged += new System.EventHandler(this.chkMapBand_CheckedChanged);
             // 
@@ -1115,7 +1115,7 @@ namespace Thetis
             this.chkMapCountry.Name = "chkMapCountry";
             this.chkMapCountry.Size = new System.Drawing.Size(88, 22);
             this.chkMapCountry.TabIndex = 66;
-            this.chkMapCountry.Text = "Map Country";
+            this.chkMapCountry.Text = "地图国家";
             this.toolTip1.SetToolTip(this.chkMapCountry, "Show Dx spot Countries on Map\r\n");
             this.chkMapCountry.CheckedChanged += new System.EventHandler(this.chkMapCountry_CheckedChanged);
             // 
@@ -1130,7 +1130,7 @@ namespace Thetis
             this.chkMapCall.Name = "chkMapCall";
             this.chkMapCall.Size = new System.Drawing.Size(88, 24);
             this.chkMapCall.TabIndex = 65;
-            this.chkMapCall.Text = "Map Calls";
+            this.chkMapCall.Text = "地图呼号";
             this.toolTip1.SetToolTip(this.chkMapCall, "Show DX Spot Call signs on Map");
             this.chkMapCall.CheckedChanged += new System.EventHandler(this.chkMapCall_CheckedChanged);
             // 
@@ -1161,7 +1161,7 @@ namespace Thetis
             this.chkGrayLine.Name = "chkGrayLine";
             this.chkGrayLine.Size = new System.Drawing.Size(105, 17);
             this.chkGrayLine.TabIndex = 61;
-            this.chkGrayLine.Text = "GrayLine Track";
+            this.chkGrayLine.Text = "灰线跟踪";
             this.toolTip1.SetToolTip(this.chkGrayLine, "GrayLine will show on Panadapter Display\r\nBut only when using KE9SN6_World skin o" +
         "nly\r\nAnd only when RX1 is in Panadapter Mode with RX2 Display OFF");
             this.chkGrayLine.CheckedChanged += new System.EventHandler(this.chkGrayLine_CheckedChanged);
@@ -1191,7 +1191,7 @@ namespace Thetis
             this.chkReconnect.Name = "chkReconnect";
             this.chkReconnect.Size = new System.Drawing.Size(142, 24);
             this.chkReconnect.TabIndex = 100;
-            this.chkReconnect.Text = "Reconnect at Startup";
+            this.chkReconnect.Text = "启动时重新连接";
             this.toolTip1.SetToolTip(this.chkReconnect, "Try to connect to last used at startup");
             // 
             // label3
@@ -1214,7 +1214,7 @@ namespace Thetis
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 13);
             this.label4.TabIndex = 82;
-            this.label4.Text = "Your Call sign";
+            this.label4.Text = "您的呼号";
             // 
             // label5
             // 
@@ -1225,7 +1225,7 @@ namespace Thetis
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(227, 13);
             this.label5.TabIndex = 84;
-            this.label5.Text = "Setup->CAT Control->DDUtil , for Rotor Control";
+            this.label5.Text = "设置->CAT 控制->DDUtil，用于旋转器控制";
             // 
             // chkBoxWrld
             // 
@@ -1236,7 +1236,7 @@ namespace Thetis
             this.chkBoxWrld.Name = "chkBoxWrld";
             this.chkBoxWrld.Size = new System.Drawing.Size(194, 28);
             this.chkBoxWrld.TabIndex = 78;
-            this.chkBoxWrld.Text = "Exclude North American Spotters";
+            this.chkBoxWrld.Text = "排除北美信标台";
             this.chkBoxWrld.CheckedChanged += new System.EventHandler(this.chkBoxWrld_CheckedChanged);
             // 
             // chkBoxNA
@@ -1248,7 +1248,7 @@ namespace Thetis
             this.chkBoxNA.Name = "chkBoxNA";
             this.chkBoxNA.Size = new System.Drawing.Size(175, 28);
             this.chkBoxNA.TabIndex = 77;
-            this.chkBoxNA.Text = "North American Spotters only";
+            this.chkBoxNA.Text = "仅北美信标台";
             this.chkBoxNA.CheckedChanged += new System.EventHandler(this.chkBoxNA_CheckedChanged);
             // 
             // chkAlwaysOnTop
@@ -1291,7 +1291,7 @@ namespace Thetis
             // 
             this.mnuSpotOptions.Name = "mnuSpotOptions";
             this.mnuSpotOptions.Size = new System.Drawing.Size(106, 20);
-            this.mnuSpotOptions.Text = "VOCAP Override";
+            this.mnuSpotOptions.Text = "VOCAP 覆盖";
             this.mnuSpotOptions.Click += new System.EventHandler(this.mnuSpotOptions_Click);
             // 
             // chkBoxEU
@@ -1303,7 +1303,7 @@ namespace Thetis
             this.chkBoxEU.Name = "chkBoxEU";
             this.chkBoxEU.Size = new System.Drawing.Size(153, 21);
             this.chkBoxEU.TabIndex = 101;
-            this.chkBoxEU.Text = "European Spotters only";
+            this.chkBoxEU.Text = "仅欧洲信标台";
             this.chkBoxEU.CheckedChanged += new System.EventHandler(this.chkBoxEU_CheckedChanged);
             // 
             // chkTrackActive
@@ -1383,7 +1383,7 @@ namespace Thetis
             this.MaximumSize = new System.Drawing.Size(800, 1000);
             this.MinimumSize = new System.Drawing.Size(800, 400);
             this.Name = "SpotControl";
-            this.Text = "DX / SWL Spotter";
+            this.Text = "DX / SWL 信标台";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SpotControl_FormClosing);
             this.Load += new System.EventHandler(this.SpotControl_Load);
             this.Layout += new System.Windows.Forms.LayoutEventHandler(this.SpotControl_Layout);
@@ -1535,7 +1535,7 @@ namespace Thetis
                 Debug.WriteLine("problem no SWL.CSV file found ");
                 statusBoxSWL.ForeColor = Color.Red;
 
-                statusBoxSWL.Text = "No SWL.csv file found";
+                statusBoxSWL.Text = "未找到 SWL.csv 文件";
 
                 return;
             }
@@ -1697,7 +1697,7 @@ namespace Thetis
 
                 }
 
-                statusBoxSWL.Text = "Reading SWL2 ";
+                statusBoxSWL.Text = "正在读取 SWL2 ";
 
                 //------------------------------------------------------------------
                 for (;;)
@@ -1783,7 +1783,7 @@ namespace Thetis
                     catch (EndOfStreamException)
                     {
                         SWL2_Index1--;
-                        // textBox1.Text = "End of SWL FILE at "+ SWL_Index1.ToString();
+                        // textBox1.Text = "SWL 文件结束于 "+ SWL_Index1.ToString();
                         Debug.WriteLine(" SWL2_Freq[SWL2_Index1] " + SWL2_Freq[SWL2_Index1]);
                         break; // done with file
                     }
@@ -2205,7 +2205,7 @@ namespace Thetis
                 SP3_Active = 1; // done loading swl database (Good)
 
                 statusBoxSWL.ForeColor = Color.Blue;
-                statusBoxSWL.Text = "SWL Spotting " + SWL_Index1.ToString();
+                statusBoxSWL.Text = "SWL 信标 " + SWL_Index1.ToString();
 
 
                 if (SP_Active == 0)
@@ -2343,7 +2343,7 @@ namespace Thetis
 
                 console.spotterMenu.Text = "Closing";
                 statusBox.Text = "Closing";
-                SSBbutton.Text = "Closing..."; //MW0LGE_21a;
+                SSBbutton.Text = "正在关闭..."; //MW0LGE_21a;
 
                 textBox1.Text += "Clicked to Close Socket (click again to Force Closed)\r\n";
 
@@ -2375,7 +2375,7 @@ namespace Thetis
                     SP_Active = 0; // turn off DX Spotter
                     SP2_Active = 0; // turn off DX Spotter
 
-                    SSBbutton.Text = "Connect"; // MMW0LGE_21a
+                    SSBbutton.Text = "连接"; // MMW0LGE_21a
                 }
                 else SP2_Active = 1; // in process of shutting down.
 
@@ -2505,7 +2505,7 @@ namespace Thetis
            DXLOC_FILE(); // open DXLOC.txt file and put into array of lat/lon values vs prefix
 
 
-            SSBbutton.Text = "Connecting..."; //MW0LGE_21a
+            SSBbutton.Text = "正在连接..."; //MW0LGE_21a
 
             try // opening socket
             {
@@ -2556,12 +2556,12 @@ namespace Thetis
                 statusBox.ForeColor = Color.Red;
                 console.spotterMenu.ForeColor = Color.Red;
 
-                statusBox.Text = "Socket";
+                statusBox.Text = "套接字";
                 console.spotterMenu.Text = "Socket";
 
                 textBox1.Text += "Got Socket \r\n";
 
-                SSBbutton.Text = "Disconnect"; //MW0LGE_21a
+                SSBbutton.Text = "断开连接"; //MW0LGE_21a
 
                 for (; SP_Active > 0;) // shut down socket and thread if SP_Active = 0  (0=off, 1=turned on, 2=logging , 3=waiting for spots)                
                 {
@@ -2595,7 +2595,7 @@ namespace Thetis
                             statusBox.ForeColor = Color.Red;
                             console.spotterMenu.ForeColor = Color.Red;
 
-                            statusBox.Text = "Login";
+                            statusBox.Text = "登录";
                             console.spotterMenu.Text = "Login";
 
 
@@ -2611,7 +2611,7 @@ namespace Thetis
                         statusBox.ForeColor = Color.Green;
                         console.spotterMenu.ForeColor = Color.GreenYellow;//Color.Blue;   //MW0LGE_21b
 
-                        statusBox.Text = "Spotting";
+                        statusBox.Text = "信标中";
                         console.spotterMenu.Text = "Spotting";
 
                         textBox1.Text += "Waiting for DX Spots \r\n";
@@ -2665,7 +2665,7 @@ namespace Thetis
 
 
                             statusBox.ForeColor = Color.Green;
-                            statusBox.Text = "Spotting";
+                            statusBox.Text = "信标中";
                             //SP_Active = 3; 
                             if(SP_Active!=0) SP_Active = 3; // well we could never leave MW0LGE_21b
 
@@ -3907,7 +3907,7 @@ namespace Thetis
                             console.spotterMenu.ForeColor = Color.Red;
 
                             console.spotterMenu.Text = "Closed12345";
-                            statusBox.Text = "Closed";
+                            statusBox.Text = "已关闭";
 
 
                             SP_writer.Close();                  // close down now
@@ -3926,7 +3926,7 @@ namespace Thetis
                             SP_Active = 0;
                             SP2_Active = 0;
 
-                            SSBbutton.Text = "Connect"; //MW0LGE_21a
+                            SSBbutton.Text = "连接"; //MW0LGE_21a
 
                             return;
                         } // if disconnected
@@ -3948,7 +3948,7 @@ namespace Thetis
 
                 console.spotterMenu.Text = "Closing";
                 statusBox.Text = "Closing";
-                SSBbutton.Text = "Closing..."; //MW0LGE_21a
+                SSBbutton.Text = "正在关闭..."; //MW0LGE_21a
 
                 textBox1.Text += "Asked to Close \r\n";
 
@@ -3969,7 +3969,7 @@ namespace Thetis
                 textBox1.Text += "All closed \r\n";
                 SP2_Active = 0;
                 SP_Active = 0;
-                SSBbutton.Text = "Connect"; //MW0LGE_21a
+                SSBbutton.Text = "连接"; //MW0LGE_21a
                 return;
 
 
@@ -3982,7 +3982,7 @@ namespace Thetis
                 statusBox.ForeColor = Color.Red;
                 console.spotterMenu.ForeColor = Color.Red;
 
-                statusBox.Text = "Socket";
+                statusBox.Text = "套接字";
                 console.spotterMenu.Text = "Socket";
 
                 try
@@ -4011,7 +4011,7 @@ namespace Thetis
                 SP2_Active = 0;
 
                 //   textBox1.Text += "Socket crash Done \r\n";
-                statusBox.Text = "Closed";
+                statusBox.Text = "已关闭";
                 console.spotterMenu.Text = "Spot";
 
                 //    textBox1.Text = SE.ToString();
@@ -4028,7 +4028,7 @@ namespace Thetis
                  statusBox.ForeColor = Color.Red;
                 console.spotterMenu.ForeColor = Color.Red;
 
-                statusBox.Text = "Socket";
+                statusBox.Text = "套接字";
                 console.spotterMenu.Text = "Socket";
 
                 try
@@ -4054,10 +4054,10 @@ namespace Thetis
 
                 SP2_Active = 0;
 
-                statusBox.Text = "Closed";
+                statusBox.Text = "已关闭";
                 console.spotterMenu.Text = "Spot";
 
-                SSBbutton.Text = "Connect"; //MW0LGE_21a
+                SSBbutton.Text = "连接"; //MW0LGE_21a
 
                 return;
             }
@@ -4529,14 +4529,14 @@ namespace Thetis
                 {
                     statusBox.ForeColor = Color.Red;
 
-                    statusBox.Text = "Test Sent <CR>";
+                    statusBox.Text = "测试已发送 <CR>";
 
                     SP_writer.Write((char)13);
                     SP_writer.Write((char)10);
                 }
                 catch(Exception)
                 {
-                    statusBox.Text = "Failed Test";
+                    statusBox.Text = "测试失败";
 
                 }
      
@@ -4865,12 +4865,12 @@ namespace Thetis
             if (pause == true)
             {
                 pause = false;
-                button1.Text = "Pause";
+                button1.Text = "暂停";
             }
             else
             {
                 pause = true;
-                button1.Text = "Paused";
+                button1.Text = "已暂停";
             }
 
         }
@@ -4968,7 +4968,7 @@ namespace Thetis
                 if (chkPanMode.Checked == true) Display.SpecialPanafall = true; // special panafall mode (80 - 20)
                 else Display.SpecialPanafall = false;
 
-                btnTrack.Text = "Track ON";
+                btnTrack.Text = "跟踪开启";
 
                 LastDisplayMode = Display.CurrentDisplayMode; // save the display mode that you were in before you turned on special panafall mode
 
@@ -5021,7 +5021,7 @@ namespace Thetis
              //   if (console.SetupForm.gridBoxTS.Checked == true) Display.GridControl = 1; // put gridlines back the way they were
                // else Display.GridOff = 0; // gridlines ON
             
-                btnTrack.Text = "Track";
+                btnTrack.Text = "跟踪";
      
                 textBox1.Text += "Click to turn off GrayLine Sun Tracking\r\n";
              
@@ -5940,7 +5940,7 @@ namespace Thetis
                                 } 
                                 catch(Exception)
                                 {
-                                    textBox1.Text = "problem with Contour map";
+                                    textBox1.Text = "轮廓地图出现问题";
 
                                 }
 
@@ -7193,7 +7193,7 @@ namespace Thetis
             if (beacon == true)
             {
                 beacon = false;
-                btnBeacon.Text = "Beacon Chk";
+                btnBeacon.Text = "信标检查";
                 btnBeacon.ForeColor = Color.Black;
 
                
@@ -7208,7 +7208,7 @@ namespace Thetis
             {
             
                 beacon = true;
-                btnBeacon.Text = "Beacon Run";
+                btnBeacon.Text = "信标运行";
                 btnBeacon.ForeColor = Color.Red;
 
                 beacon11 = 0; // reset freq for slow scan since you may have changed the freq
@@ -7267,7 +7267,7 @@ namespace Thetis
 
                     Debug.WriteLine(">>>>>>>>BEACON:  mapping turned on");
 
-                    btnTrack.Text = "Track-ON";
+                    btnTrack.Text = "跟踪开";
 
 
                 }//  if (SP5_Active == 0) map was off (above) so turn it on 
@@ -7455,7 +7455,7 @@ namespace Thetis
                  //   if (console.SetupForm.gridBoxTS.Checked == true) Display.GridOff = 1; // put gridlines back the way they were
                  //   else Display.GridOff = 0; // gridlines ON
 
-                    btnTrack.Text = "Track";
+                    btnTrack.Text = "跟踪";
 
                     textBox1.Text += "Click to turn off GrayLine Sun Tracking\r\n";
 
@@ -8317,7 +8317,7 @@ namespace Thetis
                 st.FromDateTime(SetDT); //Convert System.DateTime to SystemTime 
                 Win32API.SetLocalTime(ref st);  //Call Win32 API to set the system time  
 
-                textBox1.Text = "IMPORTANT: Your PC Time will NOT update unless Thetis is launched in ADMIN mode!!!!" + "\r\n" + 
+                textBox1.Text = "重要：除非以管理员模式启动 Thetis，否则电脑时间不会更新！！！！" + "\r\n" + 
                                 "PC LOC TIME when Request sent to NIST: " + startDT.ToString("yy-MM-dd HH:mm:ss.fff") + "\r\n" +
                                 "TIME UTC reported back from NIST : " + temp1 + "\r\n" +
                                 "NIST reported this time: " + temp2 + " milliseconds Early" + "\r\n" +
@@ -8358,7 +8358,7 @@ namespace Thetis
                 if (WTime == false)
                 {
 
-                    textBox1.Text = "Will Attempt to read";
+                    textBox1.Text = "将尝试读取";
 
                     Thread t = new Thread(new ThreadStart(WWVTime))
                     {
@@ -9473,13 +9473,13 @@ VOACHECK_TOP:
                     SSNf = (int)(Math.Pow((93918.4 + 1225.0 * (double)Console.SFI), 0.5) - 416.0); // convert SFI to SSN
                 }
 
-                statusBoxSWL.Text = "Using SSNf = " + SSNf;
+                statusBoxSWL.Text = "使用 SSNf = " + SSNf;
 
             }
             else
             {
                 SSNf = (int)SpotOptions.udSSN.Value; // from options screen
-                statusBoxSWL.Text = "Cstm SSNf = " + SSNf;
+                statusBoxSWL.Text = "自定义 SSNf = " + SSNf;
             }
 
             if (SSNf < 0) SSNf = 0;
@@ -9790,7 +9790,7 @@ VOACHECK_TOP:
                 VOA[11] + VOA[12] + VOA[13] + VOA[14] + VOA[15] + VOA[16] + VOA[17] + VOA[18];
 
 /*
-            textBox1.Text = "Method: " + METHOD + "\r\n";
+            textBox1.Text = "方法: " + METHOD + "\r\n";
             textBox1.Text += "Coeff: " + COEFF + "\r\n";
             textBox1.Text += "Month: " + MONTH + "\r\n";
             textBox1.Text += "Day: " + DAY + "\r\n";
@@ -9803,7 +9803,7 @@ VOACHECK_TOP:
             textBox1.Text += "SNR: " + CRS + "\r\n";
             textBox1.Text += "Watts: " + WATTS + "\r\n";
 */
-     //       textBox1.Text = "Method: " + METHOD + " Coeff: " + COEFF +  " Month: " + MONTH +  " Day: " + DAY + " Hour: " + HOUR + 
+     //       textBox1.Text = "方法: " + METHOD + " Coeff: " + COEFF +  " Month: " + MONTH +  " Day: " + DAY + " Hour: " + HOUR + 
      //    " SSN: " + SSN + " Freq: " + MHZ + " Mode: " + Last_MODE +  " Angle: " + ANGLE +" Rel: " + REL + " SNR: " + CRS + " Watts: " + WATTS + "\r\n";
 
 
@@ -9990,7 +9990,7 @@ RT1:
                     catch (EndOfStreamException)
                     {
                         VOA_Index--;
-                        // textBox1.Text = "End of SWL FILE at "+ SWL_Index1.ToString();
+                        // textBox1.Text = "SWL 文件结束于 "+ SWL_Index1.ToString();
                         // Debug.WriteLine(" SWL2_Freq[SWL2_Index1] " + SWL2_Freq[SWL2_Index1]);
                         break; // done with file
                     }

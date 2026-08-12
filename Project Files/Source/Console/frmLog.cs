@@ -74,7 +74,7 @@ namespace Thetis
 
         public void ShowWithTitle(string title)
         {
-            this.Text = "Log: " + title;
+            this.Text = "日志: " + title;
             this.Show();
         }
 

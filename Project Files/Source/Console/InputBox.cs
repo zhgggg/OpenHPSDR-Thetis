@@ -1,4 +1,4 @@
-//=================================================================
+﻿//=================================================================
 // InputBox.cs
 //=================================================================
 // PowerSDR is a C# implementation of a Software Defined Radio.
@@ -108,7 +108,7 @@ namespace Thetis
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(72, 23);
             this.btnOK.TabIndex = 2;
-            this.btnOK.Text = "OK";
+            this.btnOK.Text = "确定";
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // btnCancel

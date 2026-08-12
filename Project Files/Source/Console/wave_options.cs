@@ -1,4 +1,4 @@
-//=================================================================
+﻿//=================================================================
 // wave_options.cs
 //=================================================================
 // PowerSDR is a C# implementation of a Software Defined Radio.
@@ -175,7 +175,7 @@ namespace Thetis
             this.radTXPostProcessed.Name = "radTXPostProcessed";
             this.radTXPostProcessed.Size = new System.Drawing.Size(144, 24);
             this.radTXPostProcessed.TabIndex = 1;
-            this.radTXPostProcessed.Text = "Transmitter Output I/Q";
+            this.radTXPostProcessed.Text = "发射机输出 I/Q";
             this.toolTip1.SetToolTip(this.radTXPostProcessed, "Transmitter I/Q data outbound to the hardware.");
             this.radTXPostProcessed.CheckedChanged += new System.EventHandler(this.radTXPostProcessed_CheckedChanged);
             // 
@@ -188,7 +188,7 @@ namespace Thetis
             this.radTXPreProcessed.Size = new System.Drawing.Size(144, 24);
             this.radTXPreProcessed.TabIndex = 0;
             this.radTXPreProcessed.TabStop = true;
-            this.radTXPreProcessed.Text = "MIC Audio";
+            this.radTXPreProcessed.Text = "MIC 音频";
             this.toolTip1.SetToolTip(this.radTXPreProcessed, "Raw MIC Audio Input coming from the hardware.");
             this.radTXPreProcessed.CheckedChanged += new System.EventHandler(this.radTXPreProcessed_CheckedChanged);
             // 
@@ -201,7 +201,7 @@ namespace Thetis
             this.radRXPostProcessed.Size = new System.Drawing.Size(144, 24);
             this.radRXPostProcessed.TabIndex = 1;
             this.radRXPostProcessed.TabStop = true;
-            this.radRXPostProcessed.Text = "Receiver Output Audio";
+            this.radRXPostProcessed.Text = "接收机输出音频";
             this.toolTip1.SetToolTip(this.radRXPostProcessed, "The demodulated filtered audio you listen to.");
             this.radRXPostProcessed.CheckedChanged += new System.EventHandler(this.radRXPostProcessed_CheckedChanged);
             // 
@@ -212,7 +212,7 @@ namespace Thetis
             this.radRXPreProcessed.Name = "radRXPreProcessed";
             this.radRXPreProcessed.Size = new System.Drawing.Size(144, 24);
             this.radRXPreProcessed.TabIndex = 0;
-            this.radRXPreProcessed.Text = "Receiver Input I/Q";
+            this.radRXPreProcessed.Text = "接收机输入 I/Q";
             this.toolTip1.SetToolTip(this.radRXPreProcessed, "Raw I/Q Data coming from the hardware.");
             this.radRXPreProcessed.CheckedChanged += new System.EventHandler(this.radRXPreProcessed_CheckedChanged);
             // 
@@ -225,7 +225,7 @@ namespace Thetis
             this.grpWaveDither.Size = new System.Drawing.Size(96, 69);
             this.grpWaveDither.TabIndex = 38;
             this.grpWaveDither.TabStop = false;
-            this.grpWaveDither.Text = "Dither";
+            this.grpWaveDither.Text = "抖动";
             // 
             // udWaveDitherBits
             // 
@@ -267,7 +267,7 @@ namespace Thetis
             this.grpBitDepth.Size = new System.Drawing.Size(168, 106);
             this.grpBitDepth.TabIndex = 37;
             this.grpBitDepth.TabStop = false;
-            this.grpBitDepth.Text = "Bit Depth";
+            this.grpBitDepth.Text = "位深";
             // 
             // radBitDepth8PCM
             // 
@@ -276,7 +276,7 @@ namespace Thetis
             this.radBitDepth8PCM.Name = "radBitDepth8PCM";
             this.radBitDepth8PCM.Size = new System.Drawing.Size(144, 18);
             this.radBitDepth8PCM.TabIndex = 4;
-            this.radBitDepth8PCM.Text = "8-Bit UnSigned PCM";
+            this.radBitDepth8PCM.Text = "8 位无符号 PCM";
             this.radBitDepth8PCM.CheckedChanged += new System.EventHandler(this.radBitDepth8PCM_CheckedChanged);
             // 
             // radBitDepth16PCM
@@ -286,7 +286,7 @@ namespace Thetis
             this.radBitDepth16PCM.Name = "radBitDepth16PCM";
             this.radBitDepth16PCM.Size = new System.Drawing.Size(144, 18);
             this.radBitDepth16PCM.TabIndex = 3;
-            this.radBitDepth16PCM.Text = "16-Bit Signed PCM";
+            this.radBitDepth16PCM.Text = "16 位有符号 PCM";
             this.radBitDepth16PCM.CheckedChanged += new System.EventHandler(this.radBitDepth16PCM_CheckedChanged);
             // 
             // radBitDepth24PCM
@@ -296,7 +296,7 @@ namespace Thetis
             this.radBitDepth24PCM.Name = "radBitDepth24PCM";
             this.radBitDepth24PCM.Size = new System.Drawing.Size(144, 18);
             this.radBitDepth24PCM.TabIndex = 2;
-            this.radBitDepth24PCM.Text = "24-Bit Signed PCM";
+            this.radBitDepth24PCM.Text = "24 位有符号 PCM";
             this.radBitDepth24PCM.CheckedChanged += new System.EventHandler(this.radBitDepth24PCM_CheckedChanged);
             // 
             // radBitDepth32PCM
@@ -306,7 +306,7 @@ namespace Thetis
             this.radBitDepth32PCM.Name = "radBitDepth32PCM";
             this.radBitDepth32PCM.Size = new System.Drawing.Size(144, 18);
             this.radBitDepth32PCM.TabIndex = 1;
-            this.radBitDepth32PCM.Text = "32-Bit Signed PCM";
+            this.radBitDepth32PCM.Text = "32 位有符号 PCM";
             this.radBitDepth32PCM.CheckedChanged += new System.EventHandler(this.radBitDepth32PCM_CheckedChanged);
             // 
             // radBitDepthIEEE
@@ -318,7 +318,7 @@ namespace Thetis
             this.radBitDepthIEEE.Size = new System.Drawing.Size(144, 16);
             this.radBitDepthIEEE.TabIndex = 0;
             this.radBitDepthIEEE.TabStop = true;
-            this.radBitDepthIEEE.Text = "32-Bit IEEE Floats *";
+            this.radBitDepthIEEE.Text = "32 位 IEEE 浮点 *";
             this.radBitDepthIEEE.CheckedChanged += new System.EventHandler(this.radBitDepthIEEE_CheckedChanged);
             // 
             // grpAudioSampleRate1
@@ -340,7 +340,7 @@ namespace Thetis
             this.groupBox1.Size = new System.Drawing.Size(168, 80);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "When Transmitting, Record ...";
+            this.groupBox1.Text = "发射时，录制 ...";
             // 
             // grpReceive
             // 
@@ -351,7 +351,7 @@ namespace Thetis
             this.grpReceive.Size = new System.Drawing.Size(168, 80);
             this.grpReceive.TabIndex = 0;
             this.grpReceive.TabStop = false;
-            this.grpReceive.Text = "When Receiving, Record ...";
+            this.grpReceive.Text = "接收时，录制 ...";
             // 
             // WaveOptions
             // 
@@ -363,7 +363,7 @@ namespace Thetis
             this.Controls.Add(this.grpReceive);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "WaveOptions";
-            this.Text = "Wave Record Options";
+            this.Text = "波形录制选项";
             this.Closing += new System.ComponentModel.CancelEventHandler(this.WaveOptions_Closing);
             this.grpWaveDither.ResumeLayout(false);
             this.grpWaveDither.PerformLayout();

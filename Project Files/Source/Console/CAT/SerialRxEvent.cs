@@ -1,4 +1,4 @@
-//==============================================================
+﻿//==============================================================
 //Written by: Philip A Covington, N8VB
 //
 //This software is licensed under the GNU General Public License

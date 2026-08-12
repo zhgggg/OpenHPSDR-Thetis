@@ -31,7 +31,7 @@ namespace Thetis
             chid = 2 * stid;                                                // WDSP channel id
             panDisplay.init = true;
             panDisplay.DisplayID = stid;
-            this.Text = "Using Rx" + fwid.ToString();
+            this.Text = "使用 Rx" + fwid.ToString();
             this.Name = "rxa" + fwid.ToString();
             create_rxa();
             Common.RestoreForm(this, this.Name, false);

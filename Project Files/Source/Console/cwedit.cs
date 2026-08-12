@@ -1,4 +1,4 @@
-//=================================================================
+﻿//=================================================================
 // cwedit.cs
 //=================================================================
 // PowerSDR is a C# implementation of a Software Defined Radio.
@@ -140,7 +140,7 @@ namespace Thetis
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(56, 16);
 			this.label2.TabIndex = 4;
-			this.label2.Text = "Elements";
+			this.label2.Text = "单元";
 			// 
 			// label3
 			// 
@@ -148,7 +148,7 @@ namespace Thetis
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(72, 16);
 			this.label3.TabIndex = 5;
-			this.label3.Text = "Comments";
+			this.label3.Text = "备注";
 			// 
 			// label4
 			// 
@@ -156,7 +156,7 @@ namespace Thetis
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(120, 16);
 			this.label4.TabIndex = 6;
-			this.label4.Text = "Original Definition";
+			this.label4.Text = "原始定义";
 			// 
 			// label5
 			// 
@@ -164,7 +164,7 @@ namespace Thetis
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(96, 16);
 			this.label5.TabIndex = 8;
-			this.label5.Text = "Current Definition";
+			this.label5.Text = "当前定义";
 			// 
 			// cancelButton
 			// 
@@ -215,7 +215,7 @@ namespace Thetis
 			this.Controls.Add(this.saveButton);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
 			this.Name = "cwedit";
-			this.Text = " CW definition editor ...";
+			this.Text = " CW 定义编辑器 ...";
 			this.Load += new System.EventHandler(this.cwedit_Load);
 			this.ResumeLayout(false);
 

@@ -1,4 +1,4 @@
-//=================================================================
+﻿//=================================================================
 // DiversityForm.cs
 //=================================================================
 // PowerSDR is a C# implementation of a Software Defined Radio.
@@ -354,7 +354,7 @@ namespace Thetis
             this.grpRxSource.Size = new System.Drawing.Size(113, 90);
             this.grpRxSource.TabIndex = 52;
             this.grpRxSource.TabStop = false;
-            this.grpRxSource.Text = "Receiver Source";
+            this.grpRxSource.Text = "接收机源";
             // 
             // radRxSourceRx1Rx2
             // 
@@ -378,7 +378,7 @@ namespace Thetis
             this.radRxSource2.Name = "radRxSource2";
             this.radRxSource2.Size = new System.Drawing.Size(77, 17);
             this.radRxSource2.TabIndex = 1;
-            this.radRxSource2.Text = "Receiver 2";
+            this.radRxSource2.Text = "接收机 2";
             this.radRxSource2.UseVisualStyleBackColor = true;
             this.radRxSource2.CheckedChanged += new System.EventHandler(this.radRxSource2_CheckedChanged);
             // 
@@ -390,7 +390,7 @@ namespace Thetis
             this.radRxSource1.Name = "radRxSource1";
             this.radRxSource1.Size = new System.Drawing.Size(77, 17);
             this.radRxSource1.TabIndex = 0;
-            this.radRxSource1.Text = "Receiver 1";
+            this.radRxSource1.Text = "接收机 1";
             this.radRxSource1.UseVisualStyleBackColor = true;
             this.radRxSource1.CheckedChanged += new System.EventHandler(this.radRxSource1_CheckedChanged);
             // 
@@ -452,7 +452,7 @@ namespace Thetis
             this.groupBox_refMerc.Size = new System.Drawing.Size(252, 140);
             this.groupBox_refMerc.TabIndex = 59;
             this.groupBox_refMerc.TabStop = false;
-            this.groupBox_refMerc.Text = "Reference Source";
+            this.groupBox_refMerc.Text = "参考源";
             this.groupBox_refMerc.Enter += new System.EventHandler(this.groupBox_refMerc_Enter);
             // 
             // labelTS1
@@ -463,7 +463,7 @@ namespace Thetis
             this.labelTS1.Name = "labelTS1";
             this.labelTS1.Size = new System.Drawing.Size(56, 13);
             this.labelTS1.TabIndex = 106;
-            this.labelTS1.Text = "Gain multi:";
+            this.labelTS1.Text = "增益倍数:";
             // 
             // udGainMulti
             // 
@@ -506,7 +506,7 @@ namespace Thetis
             this.chkLockAngle.Name = "chkLockAngle";
             this.chkLockAngle.Size = new System.Drawing.Size(83, 17);
             this.chkLockAngle.TabIndex = 104;
-            this.chkLockAngle.Text = "Lock Phase";
+            this.chkLockAngle.Text = "锁定相位";
             this.chkLockAngle.UseVisualStyleBackColor = true;
             this.chkLockAngle.CheckedChanged += new System.EventHandler(this.chkLockAngle_CheckedChanged);
             // 
@@ -518,7 +518,7 @@ namespace Thetis
             this.chkLockR.Name = "chkLockR";
             this.chkLockR.Size = new System.Drawing.Size(75, 17);
             this.chkLockR.TabIndex = 103;
-            this.chkLockR.Text = "Lock Gain";
+            this.chkLockR.Text = "锁定增益";
             this.chkLockR.UseVisualStyleBackColor = true;
             this.chkLockR.CheckedChanged += new System.EventHandler(this.chkLockR_CheckedChanged);
             // 
@@ -530,7 +530,7 @@ namespace Thetis
             this.chkCrossFire.Name = "chkCrossFire";
             this.chkCrossFire.Size = new System.Drawing.Size(89, 17);
             this.chkCrossFire.TabIndex = 100;
-            this.chkCrossFire.Text = "Enable X-Fire";
+            this.chkCrossFire.Text = "启用交叉";
             this.chkCrossFire.UseVisualStyleBackColor = true;
             this.chkCrossFire.Visible = false;
             this.chkCrossFire.CheckedChanged += new System.EventHandler(this.chkCrossFire_CheckedChanged);
@@ -543,7 +543,7 @@ namespace Thetis
             this.labelTS4.Name = "labelTS4";
             this.labelTS4.Size = new System.Drawing.Size(37, 13);
             this.labelTS4.TabIndex = 102;
-            this.labelTS4.Text = "Phase";
+            this.labelTS4.Text = "相位";
             // 
             // labelTS33
             // 
@@ -672,7 +672,7 @@ namespace Thetis
             this.radioButtonMerc2.Name = "radioButtonMerc2";
             this.radioButtonMerc2.Size = new System.Drawing.Size(77, 17);
             this.radioButtonMerc2.TabIndex = 1;
-            this.radioButtonMerc2.Text = "Receiver 2";
+            this.radioButtonMerc2.Text = "接收机 2";
             this.radioButtonMerc2.UseVisualStyleBackColor = true;
             this.radioButtonMerc2.CheckedChanged += new System.EventHandler(this.radioButtonMerc2_CheckedChanged);
             // 
@@ -686,7 +686,7 @@ namespace Thetis
             this.radioButtonMerc1.Size = new System.Drawing.Size(77, 17);
             this.radioButtonMerc1.TabIndex = 0;
             this.radioButtonMerc1.TabStop = true;
-            this.radioButtonMerc1.Text = "Receiver 1";
+            this.radioButtonMerc1.Text = "接收机 1";
             this.radioButtonMerc1.UseVisualStyleBackColor = true;
             this.radioButtonMerc1.CheckedChanged += new System.EventHandler(this.radioButtonMerc1_CheckedChanged);
             // 
@@ -710,7 +710,7 @@ namespace Thetis
             this.btnSync.Name = "btnSync";
             this.btnSync.Size = new System.Drawing.Size(66, 23);
             this.btnSync.TabIndex = 47;
-            this.btnSync.Text = "VFO Sync";
+            this.btnSync.Text = "VFO 同步";
             this.toolTip1.SetToolTip(this.btnSync, "Sync RX2 with RX1");
             this.btnSync.Click += new System.EventHandler(this.btnSync_Click);
             // 
@@ -726,7 +726,7 @@ namespace Thetis
             this.groupBoxTS1.Size = new System.Drawing.Size(142, 75);
             this.groupBoxTS1.TabIndex = 100;
             this.groupBoxTS1.TabStop = false;
-            this.groupBoxTS1.Text = "Antenna Spacing";
+            this.groupBoxTS1.Text = "天线间距";
             // 
             // labelTS41
             // 
@@ -736,7 +736,7 @@ namespace Thetis
             this.labelTS41.Name = "labelTS41";
             this.labelTS41.Size = new System.Drawing.Size(55, 13);
             this.labelTS41.TabIndex = 98;
-            this.labelTS41.Text = "D (meters)";
+            this.labelTS41.Text = "距离（米）";
             // 
             // labelTS30
             // 
@@ -844,7 +844,7 @@ namespace Thetis
             this.labelTS5.Name = "labelTS5";
             this.labelTS5.Size = new System.Drawing.Size(72, 13);
             this.labelTS5.TabIndex = 61;
-            this.labelTS5.Text = "calib direction";
+            this.labelTS5.Text = "校准方向";
             this.labelTS5.Visible = false;
             // 
             // udCalib
@@ -921,7 +921,7 @@ namespace Thetis
             this.labelDirection.Name = "labelDirection";
             this.labelDirection.Size = new System.Drawing.Size(63, 33);
             this.labelDirection.TabIndex = 65;
-            this.labelDirection.Text = "NW";
+            this.labelDirection.Text = "西北";
             this.labelDirection.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.labelDirection.Visible = false;
             // 
@@ -933,7 +933,7 @@ namespace Thetis
             this.labelTS9.Name = "labelTS9";
             this.labelTS9.Size = new System.Drawing.Size(76, 13);
             this.labelTS9.TabIndex = 64;
-            this.labelTS9.Text = "Direction (deg)";
+            this.labelTS9.Text = "方向（度）";
             this.labelTS9.Visible = false;
             // 
             // udAngle0
@@ -989,7 +989,7 @@ namespace Thetis
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(360, 500);
             this.Name = "DiversityForm";
-            this.Text = "Phasing Control";
+            this.Text = "相位控制";
             this.Closing += new System.ComponentModel.CancelEventHandler(this.DiversityForm_Closing);
             this.Load += new System.EventHandler(this.DiversityForm_Load);
             this.Resize += new System.EventHandler(this.DiversityForm_Resize);
@@ -1034,12 +1034,12 @@ namespace Thetis
             g.TextRenderingHint = TextRenderingHint.AntiAlias;
             // draw the background of the radar
             g.FillEllipse(new LinearGradientBrush(new Point((int)(size / 2), 0), new Point((int)(size / 2), size - 1), topColor, bottomColor), 0, 0, size - 1, size - 1);
-            // draw the outer ring (0� elevation)
+            // draw the outer ring (0� elevation)
             g.DrawEllipse(pen, 0, 0, size - 1, size - 1);
-            // draw the inner ring (60� elevation)
+            // draw the inner ring (60� elevation)
             //int interval = size / 3;
             //g.DrawEllipse(pen, (size - interval) / 2, (size - interval) / 2, interval, interval);
-            // draw the middle ring (30� elevation)
+            // draw the middle ring (30� elevation)
             //interval *= 2;
             //g.DrawEllipse(pen, (size - interval) / 2, (size - interval) / 2, interval, interval);
             int interval = size / 2;
@@ -1241,7 +1241,7 @@ namespace Thetis
             }
             if (direction > 22 & direction <= 67)
             {
-                labelDirection.Text = "NE";
+                labelDirection.Text = "东北";
                 return;
             }
             if (direction > 67 & direction <= 112)
@@ -1251,7 +1251,7 @@ namespace Thetis
             }
             if (direction > 112 & direction < 157)
             {
-                labelDirection.Text = "SE";
+                labelDirection.Text = "东南";
                 return;
             }
             if (direction > 157 & direction <= 202)
@@ -1261,7 +1261,7 @@ namespace Thetis
             }
             if (direction > 202 & direction <= 247)
             {
-                labelDirection.Text = "SW";
+                labelDirection.Text = "西南";
                 return;
             }
             if (direction > 247 & direction <= 292)
@@ -1271,7 +1271,7 @@ namespace Thetis
             }
             if (direction > 292 & direction <= 337)
             {
-                labelDirection.Text = "NW";
+                labelDirection.Text = "西北";
                 return;
             }
         }
@@ -1983,7 +1983,7 @@ namespace Thetis
             else
             {
                 chkEnableDiversity.BackColor = Color.Red;
-                chkEnableDiversity.Text = "Disabled";
+                chkEnableDiversity.Text = "已禁用";
             }
         }
 

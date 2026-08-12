@@ -386,7 +386,7 @@ namespace Thetis
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(100, 40);
             this.btnClose.TabIndex = 0;
-            this.btnClose.Text = "Close";
+            this.btnClose.Text = "关闭";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
@@ -400,7 +400,7 @@ namespace Thetis
             this.Controls.Add(this.btnClose);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "BandButtonsPopup";
-            this.Text = "Select Operating Band";
+            this.Text = "选择工作波段";
             this.TopMost = true;
             this.Activated += new System.EventHandler(this.BandButtonsPopup_Activated);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.BandButtonsPopup_FormClosing);
@@ -426,7 +426,7 @@ namespace Thetis
 
             if (console.ShowRX1)
             {
-                this.Text = "set RX1 Band";
+                this.Text = "设置 RX1 波段";
                 currentBand = console.RX1Band;
                 switch(currentBandGroup)
                 {
@@ -565,7 +565,7 @@ namespace Thetis
             }
             else                                    // RX2 - HF only
             {
-                this.Text = "set RX2 Band";
+                this.Text = "设置 RX2 波段";
                 currentBand = console.RX2Band;
                 radBtn1.Text = "160";
                 radBtn2.Text = "80";

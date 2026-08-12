@@ -1005,7 +1005,7 @@ namespace Thetis
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(75, 23);
             this.clearButton.TabIndex = 46;
-            this.clearButton.Text = "Clear (F2)";
+            this.clearButton.Text = "清除 (F2)";
             this.toolTip1.SetToolTip(this.clearButton, " Clear the keyboard buffer.");
             this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
@@ -1016,7 +1016,7 @@ namespace Thetis
             this.chkPause.Name = "chkPause";
             this.chkPause.Size = new System.Drawing.Size(80, 16);
             this.chkPause.TabIndex = 43;
-            this.chkPause.Text = "Pause (F1)";
+            this.chkPause.Text = "暂停 (F1)";
             this.toolTip1.SetToolTip(this.chkPause, " Pause keyboard transmission.");
             this.chkPause.CheckedChanged += new System.EventHandler(this.chkPause_CheckedChanged);
             // 
@@ -1027,7 +1027,7 @@ namespace Thetis
             this.txtdummy1.Name = "txtdummy1";
             this.txtdummy1.Size = new System.Drawing.Size(665, 82);
             this.txtdummy1.TabIndex = 42;
-            this.txtdummy1.Text = "the actual text box will be a graphic here and this one disabled";
+            this.txtdummy1.Text = "实际文本框此处将是图形，此控件已禁用";
             // 
             // txt9
             // 
@@ -1124,7 +1124,7 @@ namespace Thetis
             this.keyButton.Name = "keyButton";
             this.keyButton.Size = new System.Drawing.Size(40, 24);
             this.keyButton.TabIndex = 37;
-            this.keyButton.Text = "Key";
+            this.keyButton.Text = "键";
             this.toolTip1.SetToolTip(this.keyButton, "Turn on transmitter and key it. (60 second timeout)");
             this.keyButton.Click += new System.EventHandler(this.keyButton_Click);
             // 
@@ -1135,7 +1135,7 @@ namespace Thetis
             this.dropdelaylabel.Name = "dropdelaylabel";
             this.dropdelaylabel.Size = new System.Drawing.Size(64, 16);
             this.dropdelaylabel.TabIndex = 36;
-            this.dropdelaylabel.Text = "Drop Delay";
+            this.dropdelaylabel.Text = "下落延迟";
             this.toolTip1.SetToolTip(this.dropdelaylabel, " Set break in drop out in milliseconds. Minimum allowed is PTT Delay * 1.5 .");
             this.dropdelaylabel.Visible = false;
             // 
@@ -1230,7 +1230,7 @@ namespace Thetis
             this.stopButton.Name = "stopButton";
             this.stopButton.Size = new System.Drawing.Size(72, 24);
             this.stopButton.TabIndex = 26;
-            this.stopButton.Text = "Stop (Esc)";
+            this.stopButton.Text = "停止 (Esc)";
             this.toolTip1.SetToolTip(this.stopButton, "Stop all keying.");
             this.stopButton.Click += new System.EventHandler(this.stopButton_Click);
             // 
@@ -1250,7 +1250,7 @@ namespace Thetis
             this.repeatdelayLabel.Name = "repeatdelayLabel";
             this.repeatdelayLabel.Size = new System.Drawing.Size(80, 16);
             this.repeatdelayLabel.TabIndex = 48;
-            this.repeatdelayLabel.Text = "Repeat Delay";
+            this.repeatdelayLabel.Text = "重复延迟";
             this.toolTip1.SetToolTip(this.repeatdelayLabel, " Set repeat message delay in seconds.");
             // 
             // udDelay
@@ -1303,7 +1303,7 @@ namespace Thetis
             this.notesButton.Name = "notesButton";
             this.notesButton.Size = new System.Drawing.Size(48, 24);
             this.notesButton.TabIndex = 17;
-            this.notesButton.Text = "Notes";
+            this.notesButton.Text = "注释";
             this.toolTip1.SetToolTip(this.notesButton, "Show program notes.");
             this.notesButton.Click += new System.EventHandler(this.notesButton_Click);
             // 
@@ -1314,7 +1314,7 @@ namespace Thetis
             this.speedLabel.Name = "speedLabel";
             this.speedLabel.Size = new System.Drawing.Size(72, 16);
             this.speedLabel.TabIndex = 15;
-            this.speedLabel.Text = "Speed WPM";
+            this.speedLabel.Text = "速度 WPM";
             this.toolTip1.SetToolTip(this.speedLabel, " Set memory keyer (not paddle) speed in words per minute. (PARIS method)");
             // 
             // s6
@@ -1440,7 +1440,7 @@ namespace Thetis
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Name = "CWX";
-            this.Text = "   CW Memories and Keyboard ...";
+            this.Text = "   CW 存储与键盘 ...";
             this.Closing += new System.ComponentModel.CancelEventHandler(this.CWX_Closing);
             this.Load += new System.EventHandler(this.CWX_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.CWX_Paint);
@@ -1484,7 +1484,7 @@ namespace Thetis
         {
             
             keyboardButton.ForeColor = System.Drawing.Color.Gray;
-            keyboardButton.Text = "Keys Off";
+            keyboardButton.Text = "按键关闭";
             keyboardLed.BackColor = System.Drawing.Color.Black;
 
         }
@@ -1493,7 +1493,7 @@ namespace Thetis
         {
             
             keyboardButton.ForeColor = System.Drawing.Color.Black;
-            keyboardButton.Text = "KEYS ACTIVE";
+            keyboardButton.Text = "按键激活";
             keyboardLed.BackColor = System.Drawing.Color.Cyan;
 
         }
@@ -1518,7 +1518,7 @@ namespace Thetis
             
             char key = (char)e.KeyValue;
 
-            label5.Text = "KeyDown " + key + " " +
+            label5.Text = "按下 " + key + " " +
                 e.KeyCode.ToString() + " " +
                 e.KeyData.ToString() + " " +
                 e.KeyValue.ToString("x");

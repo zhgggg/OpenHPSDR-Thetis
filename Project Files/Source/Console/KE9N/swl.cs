@@ -1,4 +1,4 @@
-//=================================================================
+﻿//=================================================================
 // swl.cs
 // created by Darrin Kohn ke9ns
 //
@@ -131,7 +131,7 @@ namespace Thetis
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 61;
-            this.button1.Text = "Update List";
+            this.button1.Text = "更新列表";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -154,7 +154,7 @@ namespace Thetis
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 63;
-            this.button2.Text = "Search";
+            this.button2.Text = "搜索";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 

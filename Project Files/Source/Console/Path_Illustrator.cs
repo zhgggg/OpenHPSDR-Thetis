@@ -1344,42 +1344,42 @@ namespace Thetis
             bool_EXT2 = bool_temp;
 
             hide_all_labels();
-            label_hardware_selected.Text = "Routing for HPSDR";
+            label_hardware_selected.Text = "HPSDR 的信号路由";
             label_PC.Visible = true;
             label_RX1_DISPLAY.Visible = true;
             //label_RX2_DISPLAY.Visible = true;
             if (bool_XVTR) label_XVTR_VHF.Visible = true;
 
             // label ALEX rectangles            
-            label_C2.Text = "XV RX IN";
+            label_C2.Text = "XV RX 输入";
             label_C2.Visible = true;
             label_C2.Location = C2_label_HPSDR;
 
-            label_C3.Text = "RX 2 IN";
+            label_C3.Text = "RX 2 输入";
             label_C3.Visible = true;
             label_C3.Location = C3_label_HPSDR;
 
-            label_C4.Text = "RX 1 IN";
+            label_C4.Text = "RX 1 输入";
             label_C4.Visible = true;
             label_C4.Location = C4_label_HPSDR;
 
-            label_C5.Text = "RX 1 OUT";
+            label_C5.Text = "RX 1 输出";
             label_C5.Visible = true;
             label_C5.Location = C5_label_HPSDR;
 
-            label_C7.Text = "ANT 1";
+            label_C7.Text = "天线 1";
             label_C7.Visible = true;
             label_C7.Location = C7_label_HPSDR;
 
-            label_C8.Text = "ANT 2";
+            label_C8.Text = "天线 2";
             label_C8.Visible = true;
             label_C8.Location = C8_label_HPSDR;
 
-            label_C9.Text = "ANT 3";
+            label_C9.Text = "天线 3";
             label_C9.Visible = true;
             label_C9.Location = C9_label_HPSDR;
 
-            label_C10.Text = "From TX*";
+            label_C10.Text = "来自 TX*";
             label_C10.Visible = true;
             label_C10.Location = C10_label_ALEX_TX_IN;
 
@@ -1405,35 +1405,35 @@ namespace Thetis
             if (cb_DUAL_MERCURY_ALEX.Checked)
             {
                 // label ALEX 2 rectangle
-                label_C16.Text = "XV RX IN";
+                label_C16.Text = "XV RX 输入";
                 label_C16.Visible = true;
                 label_C16.Location = C16_ALEX_2_label;
 
-                label_C17.Text = "RX 2 IN";
+                label_C17.Text = "RX 2 输入";
                 label_C17.Visible = true;
                 label_C17.Location = C17_ALEX_2_label;
 
-                label_C18.Text = "RX 1 IN";
+                label_C18.Text = "RX 1 输入";
                 label_C18.Visible = true;
                 label_C18.Location = C18_ALEX_2_label;
 
-                label_C19.Text = "RX 1 OUT";
+                label_C19.Text = "RX 1 输出";
                 label_C19.Visible = true;
                 label_C19.Location = C19_ALEX_2_label;
 
-                label_C20.Text = "ANT 1";
+                label_C20.Text = "天线 1";
                 label_C20.Visible = true;
                 label_C20.Location = C20_ALEX_2_label;
 
-                label_C24.Text = "ANT 2";
+                label_C24.Text = "天线 2";
                 label_C24.Visible = true;
                 label_C24.Location = C24_ALEX_2_label;
 
-                label_C25.Text = "ANT 3";
+                label_C25.Text = "天线 3";
                 label_C25.Visible = true;
                 label_C25.Location = C25_ALEX_2_label;
 
-                label_C26.Text = "From Tx";
+                label_C26.Text = "来自 TX";
                 label_C26.Visible = true;
                 label_C26.Location = C26_ALEX_2_label;
 
@@ -1923,7 +1923,7 @@ namespace Thetis
             bool_EXT2 = bool_temp;
 
             hide_all_labels();
-            label_hardware_selected.Text = "Routing for HERMES";
+            label_hardware_selected.Text = "HERMES 的信号路由";
             label_PC.Visible = true;
             label_RX1_DISPLAY.Visible = true;
             //label_RX2_DISPLAY.Visible = true;
@@ -1935,35 +1935,35 @@ namespace Thetis
             label_C24.Visible = true;
 
             // label ALEX rectangles            
-            label_C2.Text = "XV RX IN";
+            label_C2.Text = "XV RX 输入";
             label_C2.Visible = true;
             label_C2.Location = C2_label_HPSDR;
 
-            label_C3.Text = "RX 2 IN";
+            label_C3.Text = "RX 2 输入";
             label_C3.Visible = true;
             label_C3.Location = C3_label_HPSDR;
 
-            label_C4.Text = "RX 1 IN";
+            label_C4.Text = "RX 1 输入";
             label_C4.Visible = true;
             label_C4.Location = C4_label_HPSDR;
 
-            label_C5.Text = "RX 1 OUT";
+            label_C5.Text = "RX 1 输出";
             label_C5.Visible = true;
             label_C5.Location = C5_label_HPSDR;
 
-            label_C7.Text = "ANT 1";
+            label_C7.Text = "天线 1";
             label_C7.Visible = true;
             label_C7.Location = C7_label_HPSDR;
 
-            label_C8.Text = "ANT 2";
+            label_C8.Text = "天线 2";
             label_C8.Visible = true;
             label_C8.Location = C8_label_HPSDR;
 
-            label_C9.Text = "ANT 3";
+            label_C9.Text = "天线 3";
             label_C9.Visible = true;
             label_C9.Location = C9_label_HPSDR;
 
-            label_C10.Text = "From TX*";
+            label_C10.Text = "来自 TX*";
             label_C10.Visible = true;
             label_C10.Location = C10_label_ALEX_TX_IN;
 
@@ -2339,7 +2339,7 @@ namespace Thetis
         private void draw_ANAN_10E()
         {
             hide_all_labels();
-            label_hardware_selected.Text = "Routing for ANAN-10, ANAN-10E";
+            label_hardware_selected.Text = "ANAN-10、ANAN-10E 的信号路由";
             if (bool_XVTR) label_XVTR_VHF.Visible = true;
             label_ADC0.Visible = true;
             label_ADC0_atten.Visible = true;
@@ -2605,7 +2605,7 @@ namespace Thetis
         private void draw_ANAN_100_PA_rev15()
         {
             hide_all_labels();
-            label_hardware_selected.Text = "Routing for ANAN-100 (PA rev_15/16)";
+            label_hardware_selected.Text = "ANAN-100（PA rev_15/16）的信号路由";
             if (bool_XVTR) label_XVTR_VHF.Visible = true; 
             label_ADC0.Visible = true;
             label_ADC0_atten.Visible = true;
@@ -3112,7 +3112,7 @@ namespace Thetis
         private void draw_ANAN_100_PA_rev24()
         {
             hide_all_labels();
-            label_hardware_selected.Text = "Routing for ANAN-100, ANAN-100B (PA rev_24)";
+            label_hardware_selected.Text = "ANAN-100、ANAN-100B（PA rev_24）的信号路由";
             if (bool_XVTR) label_XVTR_VHF.Visible = true; 
             label_ADC0.Visible = true;
             label_ADC0_atten.Visible = true;
@@ -3566,7 +3566,7 @@ namespace Thetis
         private void draw_ANAN_100D_PA_rev15()
         {
             hide_all_labels();
-            label_hardware_selected.Text = "Routing for ANAN-100D, ANAN-200D (PA rev_15/16)";
+            label_hardware_selected.Text = "ANAN-100D、ANAN-200D（PA rev_15/16）的信号路由";
             label_SDR_Hardware.Visible = true;
             label_FPGA.Visible = true;
             label_PC.Visible = true;
@@ -4279,7 +4279,7 @@ namespace Thetis
         private void draw_ANAN_100D_PA_rev24()
         {
             hide_all_labels();
-            label_hardware_selected.Text = "Routing for ANAN-100D, ANAN-200D (PA rev_24)";
+            label_hardware_selected.Text = "ANAN-100D、ANAN-200D（PA rev_24）的信号路由";
             label_SDR_Hardware.Visible = true;
             label_FPGA.Visible = true;
             label_PC.Visible = true;

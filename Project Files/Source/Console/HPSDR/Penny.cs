@@ -1,4 +1,4 @@
-/*
+﻿/*
 *
 * Copyright (C) 2008 Bill Tracey, KD5TFD, bill@ewjt.com 
 * Copyright (C) 2010-2020  Doug Wigley

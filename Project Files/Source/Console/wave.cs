@@ -192,7 +192,7 @@ namespace Thetis
             this.grpPlaylist.Size = new System.Drawing.Size(304, 184);
             this.grpPlaylist.TabIndex = 6;
             this.grpPlaylist.TabStop = false;
-            this.grpPlaylist.Text = "Playlist";
+            this.grpPlaylist.Text = "播放列表";
             // 
             // checkBoxRandom
             // 
@@ -203,7 +203,7 @@ namespace Thetis
             this.checkBoxRandom.Name = "checkBoxRandom";
             this.checkBoxRandom.Size = new System.Drawing.Size(56, 23);
             this.checkBoxRandom.TabIndex = 13;
-            this.checkBoxRandom.Text = "Random";
+            this.checkBoxRandom.Text = "随机";
             this.checkBoxRandom.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBoxRandom.Visible = false;
             this.checkBoxRandom.CheckedChanged += new System.EventHandler(this.checkBoxRandom_CheckedChanged);
@@ -217,7 +217,7 @@ namespace Thetis
             this.checkBoxLoop.Name = "checkBoxLoop";
             this.checkBoxLoop.Size = new System.Drawing.Size(40, 23);
             this.checkBoxLoop.TabIndex = 12;
-            this.checkBoxLoop.Text = "Loop";
+            this.checkBoxLoop.Text = "循环";
             this.checkBoxLoop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBoxLoop.CheckedChanged += new System.EventHandler(this.checkBoxLoop_CheckedChanged);
             // 
@@ -228,7 +228,7 @@ namespace Thetis
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(48, 23);
             this.btnAdd.TabIndex = 6;
-            this.btnAdd.Text = "Add...";
+            this.btnAdd.Text = "添加...";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // lstPlaylist
@@ -270,7 +270,7 @@ namespace Thetis
             this.createBoxTS.Name = "createBoxTS";
             this.createBoxTS.Size = new System.Drawing.Size(72, 24);
             this.createBoxTS.TabIndex = 65;
-            this.createBoxTS.Text = "Create Wtr ID";
+            this.createBoxTS.Text = "创建瀑布 ID";
             this.createBoxTS.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.createBoxTS.Visible = false;
             this.createBoxTS.CheckedChanged += new System.EventHandler(this.createBoxTS_CheckedChanged);
@@ -285,7 +285,7 @@ namespace Thetis
             this.TXIDBoxTS.Name = "TXIDBoxTS";
             this.TXIDBoxTS.Size = new System.Drawing.Size(72, 24);
             this.TXIDBoxTS.TabIndex = 64;
-            this.TXIDBoxTS.Text = "WaterID Play";
+            this.TXIDBoxTS.Text = "瀑布 ID 播放";
             this.TXIDBoxTS.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.TXIDBoxTS.Visible = false;
             this.TXIDBoxTS.CheckedChanged += new System.EventHandler(this.TXIDBoxTS_CheckedChanged);
@@ -307,7 +307,7 @@ namespace Thetis
             this.chkQuickAudioFolder.Name = "chkQuickAudioFolder";
             this.chkQuickAudioFolder.Size = new System.Drawing.Size(172, 26);
             this.chkQuickAudioFolder.TabIndex = 61;
-            this.chkQuickAudioFolder.Text = "QuickAudio Save Folder";
+            this.chkQuickAudioFolder.Text = "快速音频保存文件夹";
             this.chkQuickAudioFolder.Visible = false;
             this.chkQuickAudioFolder.CheckedChanged += new System.EventHandler(this.chkQuickAudioFolder_CheckedChanged);
             // 
@@ -319,7 +319,7 @@ namespace Thetis
             this.labelTS1.Name = "labelTS1";
             this.labelTS1.Size = new System.Drawing.Size(387, 26);
             this.labelTS1.TabIndex = 56;
-            this.labelTS1.Text = "NOTE:  In Receive, playback goes to the input of the receiver.                  I" +
+            this.labelTS1.Text = "注意：接收时，回放进入接收机的输入。              I" +
     "n Transmit, playback goes to the input of the transmitter.";
             // 
             // chkQuickPlay
@@ -331,7 +331,7 @@ namespace Thetis
             this.chkQuickPlay.Name = "chkQuickPlay";
             this.chkQuickPlay.Size = new System.Drawing.Size(72, 24);
             this.chkQuickPlay.TabIndex = 55;
-            this.chkQuickPlay.Text = "Quick Play";
+            this.chkQuickPlay.Text = "快速播放";
             this.chkQuickPlay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.chkQuickPlay.CheckedChanged += new System.EventHandler(this.chkQuickPlay_CheckedChanged);
             // 
@@ -343,7 +343,7 @@ namespace Thetis
             this.chkQuickRec.Name = "chkQuickRec";
             this.chkQuickRec.Size = new System.Drawing.Size(72, 24);
             this.chkQuickRec.TabIndex = 54;
-            this.chkQuickRec.Text = "Quick Rec";
+            this.chkQuickRec.Text = "快速录音";
             this.chkQuickRec.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.chkQuickRec.CheckedChanged += new System.EventHandler(this.chkQuickRec_CheckedChanged);
             // 
@@ -356,7 +356,7 @@ namespace Thetis
             this.groupBoxTS1.Size = new System.Drawing.Size(88, 80);
             this.groupBoxTS1.TabIndex = 53;
             this.groupBoxTS1.TabStop = false;
-            this.groupBoxTS1.Text = "TX Gain (dB)";
+            this.groupBoxTS1.Text = "TX 增益 (dB)";
             // 
             // tbPreamp
             // 
@@ -437,7 +437,7 @@ namespace Thetis
             this.grpPlayback.Size = new System.Drawing.Size(304, 88);
             this.grpPlayback.TabIndex = 4;
             this.grpPlayback.TabStop = false;
-            this.grpPlayback.Text = "Playback";
+            this.grpPlayback.Text = "回放";
             // 
             // txtCurrentFile
             // 
@@ -454,7 +454,7 @@ namespace Thetis
             this.lblCurrentlyPlaying.Name = "lblCurrentlyPlaying";
             this.lblCurrentlyPlaying.Size = new System.Drawing.Size(96, 23);
             this.lblCurrentlyPlaying.TabIndex = 10;
-            this.lblCurrentlyPlaying.Text = "Currently Playing:";
+            this.lblCurrentlyPlaying.Text = "正在播放:";
             // 
             // btnNext
             // 
@@ -464,7 +464,7 @@ namespace Thetis
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(40, 23);
             this.btnNext.TabIndex = 8;
-            this.btnNext.Text = "Next";
+            this.btnNext.Text = "下一个";
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // btnPrevious
@@ -475,7 +475,7 @@ namespace Thetis
             this.btnPrevious.Name = "btnPrevious";
             this.btnPrevious.Size = new System.Drawing.Size(40, 23);
             this.btnPrevious.TabIndex = 7;
-            this.btnPrevious.Text = "Prev";
+            this.btnPrevious.Text = "上一个";
             this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
             // 
             // checkBoxPause
@@ -487,7 +487,7 @@ namespace Thetis
             this.checkBoxPause.Name = "checkBoxPause";
             this.checkBoxPause.Size = new System.Drawing.Size(48, 23);
             this.checkBoxPause.TabIndex = 5;
-            this.checkBoxPause.Text = "Pause";
+            this.checkBoxPause.Text = "暂停";
             this.checkBoxPause.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBoxPause.CheckedChanged += new System.EventHandler(this.checkBoxPause_CheckedChanged);
             // 
@@ -511,7 +511,7 @@ namespace Thetis
             this.checkBoxPlay.Name = "checkBoxPlay";
             this.checkBoxPlay.Size = new System.Drawing.Size(40, 23);
             this.checkBoxPlay.TabIndex = 3;
-            this.checkBoxPlay.Text = "Play";
+            this.checkBoxPlay.Text = "播放";
             this.checkBoxPlay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBoxPlay.CheckedChanged += new System.EventHandler(this.checkBoxPlay_CheckedChanged);
             // 
@@ -549,7 +549,7 @@ namespace Thetis
             this.Controls.Add(this.menuStripOptions);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "WaveControl";
-            this.Text = "Wave File Controls";
+            this.Text = "波形文件控件";
             this.Closing += new System.ComponentModel.CancelEventHandler(this.WaveControl_Closing);
             this.grpPlaylist.ResumeLayout(false);
             this.groupBoxTS1.ResumeLayout(false);

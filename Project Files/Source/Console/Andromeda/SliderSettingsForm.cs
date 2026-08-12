@@ -212,7 +212,7 @@ namespace Thetis
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(96, 40);
             this.btnClose.TabIndex = 11;
-            this.btnClose.Text = "Close";
+            this.btnClose.Text = "关闭";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
@@ -225,7 +225,7 @@ namespace Thetis
             this.lblMasterAF.Name = "lblMasterAF";
             this.lblMasterAF.Size = new System.Drawing.Size(80, 13);
             this.lblMasterAF.TabIndex = 10;
-            this.lblMasterAF.Text = "Master AF Gain";
+            this.lblMasterAF.Text = "主 AF 增益";
             // 
             // lblDrive
             // 
@@ -236,7 +236,7 @@ namespace Thetis
             this.lblDrive.Name = "lblDrive";
             this.lblDrive.Size = new System.Drawing.Size(49, 13);
             this.lblDrive.TabIndex = 9;
-            this.lblDrive.Text = "TX Drive";
+            this.lblDrive.Text = "TX 驱动";
             // 
             // grpSubRX
             // 
@@ -251,7 +251,7 @@ namespace Thetis
             this.grpSubRX.Size = new System.Drawing.Size(155, 243);
             this.grpSubRX.TabIndex = 8;
             this.grpSubRX.TabStop = false;
-            this.grpSubRX.Text = "Sub RX";
+            this.grpSubRX.Text = "子 RX";
             // 
             // chkSubRX
             // 
@@ -262,7 +262,7 @@ namespace Thetis
             this.chkSubRX.Name = "chkSubRX";
             this.chkSubRX.Size = new System.Drawing.Size(110, 28);
             this.chkSubRX.TabIndex = 11;
-            this.chkSubRX.Text = "Enable Sub RX";
+            this.chkSubRX.Text = "启用子 RX";
             this.chkSubRX.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.chkSubRX.UseVisualStyleBackColor = true;
             this.chkSubRX.CheckedChanged += new System.EventHandler(this.chkSubRX_CheckedChanged);
@@ -275,7 +275,7 @@ namespace Thetis
             this.labelTS5.Name = "labelTS5";
             this.labelTS5.Size = new System.Drawing.Size(48, 13);
             this.labelTS5.TabIndex = 10;
-            this.labelTS5.Text = "L/R Pan";
+            this.labelTS5.Text = "左/右平移";
             // 
             // labelTS4
             // 
@@ -408,7 +408,7 @@ namespace Thetis
             this.lblPan.Name = "lblPan";
             this.lblPan.Size = new System.Drawing.Size(48, 13);
             this.lblPan.TabIndex = 6;
-            this.lblPan.Text = "L/R Pan";
+            this.lblPan.Text = "左/右平移";
             // 
             // labelTS11
             // 
@@ -418,7 +418,7 @@ namespace Thetis
             this.labelTS11.Name = "labelTS11";
             this.labelTS11.Size = new System.Drawing.Size(32, 13);
             this.labelTS11.TabIndex = 15;
-            this.labelTS11.Text = "Atten";
+            this.labelTS11.Text = "衰减";
             // 
             // tbRX2Atten
             // 
@@ -440,7 +440,7 @@ namespace Thetis
             this.chkRX2Mute.Name = "chkRX2Mute";
             this.chkRX2Mute.Size = new System.Drawing.Size(40, 28);
             this.chkRX2Mute.TabIndex = 9;
-            this.chkRX2Mute.Text = "Mute";
+            this.chkRX2Mute.Text = "静音";
             this.chkRX2Mute.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.chkRX2Mute.UseVisualStyleBackColor = true;
             this.chkRX2Mute.CheckedChanged += new System.EventHandler(this.chkRX2Mute_CheckedChanged);
@@ -634,7 +634,7 @@ namespace Thetis
             this.labelTS10.Name = "labelTS10";
             this.labelTS10.Size = new System.Drawing.Size(32, 13);
             this.labelTS10.TabIndex = 14;
-            this.labelTS10.Text = "Atten";
+            this.labelTS10.Text = "衰减";
             // 
             // tbRX1Atten
             // 
@@ -666,7 +666,7 @@ namespace Thetis
             this.chkRX1Mute.Name = "chkRX1Mute";
             this.chkRX1Mute.Size = new System.Drawing.Size(40, 28);
             this.chkRX1Mute.TabIndex = 10;
-            this.chkRX1Mute.Text = "Mute";
+            this.chkRX1Mute.Text = "静音";
             this.chkRX1Mute.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.chkRX1Mute.UseVisualStyleBackColor = true;
             this.chkRX1Mute.CheckedChanged += new System.EventHandler(this.chkRX1Mute_CheckedChanged);
@@ -699,7 +699,7 @@ namespace Thetis
             this.labelTS6.Name = "labelTS6";
             this.labelTS6.Size = new System.Drawing.Size(48, 13);
             this.labelTS6.TabIndex = 10;
-            this.labelTS6.Text = "L/R Pan";
+            this.labelTS6.Text = "左/右平移";
             // 
             // chkRX1Sql
             // 
@@ -778,7 +778,7 @@ namespace Thetis
             this.labelTS16.Name = "labelTS16";
             this.labelTS16.Size = new System.Drawing.Size(49, 13);
             this.labelTS16.TabIndex = 13;
-            this.labelTS16.Text = "Mic Gain";
+            this.labelTS16.Text = "麦克风增益";
             // 
             // SliderSettingsForm
             // 
@@ -801,7 +801,7 @@ namespace Thetis
             this.MinimizeBox = false;
             this.Name = "SliderSettingsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Analogue Gain Control Settings";
+            this.Text = "模拟增益控制设置";
             this.TopMost = true;
             this.Activated += new System.EventHandler(this.SliderSettingsForm_Activated);
             this.Closing += new System.ComponentModel.CancelEventHandler(this.SliderSettingsForm_Closing);

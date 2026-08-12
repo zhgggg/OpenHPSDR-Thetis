@@ -28,7 +28,7 @@ namespace Thetis
 
             m_nTabMainTop = tabMain.Top;
 
-            btnClear.Text = "Close";
+            btnClear.Text = "关闭";
             btnCopyImageToClipboard.Enabled = false;
             btnCopyToClipboard.Enabled = false;
 
@@ -49,7 +49,7 @@ namespace Thetis
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            btnClear.Text = "Close";
+            btnClear.Text = "关闭";
             btnCopyImageToClipboard.Enabled = false;
             btnCopyToClipboard.Enabled = false;
             txtLog.Text = "";
@@ -66,7 +66,7 @@ namespace Thetis
 
             txtLog.Text = log.ToString();
 
-            btnClear.Text = "Clear Log + Close";
+            btnClear.Text = "清除日志并关闭";
             btnCopyImageToClipboard.Enabled = true;
             btnCopyToClipboard.Enabled = true;
         }

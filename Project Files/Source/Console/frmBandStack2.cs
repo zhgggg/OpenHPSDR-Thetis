@@ -215,7 +215,7 @@ namespace Thetis
             else
             {
                 this.Width = 512;
-                btnOptions.Text = "Options <<";
+                btnOptions.Text = "选项 <<";
             }
         }
 

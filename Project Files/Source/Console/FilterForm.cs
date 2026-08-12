@@ -1,4 +1,4 @@
-//=================================================================
+﻿//=================================================================
 // FilterForm.cs
 //=================================================================
 // PowerSDR is a C# implementation of a Software Defined Radio.
@@ -474,7 +474,7 @@ namespace Thetis
             this.lblWidth.Name = "lblWidth";
             this.lblWidth.Size = new System.Drawing.Size(64, 23);
             this.lblWidth.TabIndex = 57;
-            this.lblWidth.Text = "Width:";
+            this.lblWidth.Text = "宽度:";
             // 
             // picDisplay
             // 
@@ -498,7 +498,7 @@ namespace Thetis
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FilterForm";
-            this.Text = "Filter Setup";
+            this.Text = "滤波器设置";
             ((System.ComponentModel.ISupportInitialize)(this.udLow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.udHigh)).EndInit();
             this.groupBox1.ResumeLayout(false);

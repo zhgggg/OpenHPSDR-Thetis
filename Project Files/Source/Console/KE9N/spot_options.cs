@@ -1,4 +1,4 @@
-//=================================================================
+﻿//=================================================================
 // spot_options.cs
 //=================================================================
 // PowerSDR is a C# implementation of a Software Defined Radio.
@@ -362,7 +362,7 @@ namespace Thetis
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(43, 13);
             this.label5.TabIndex = 85;
-            this.label5.Text = "Method";
+            this.label5.Text = "方法";
             // 
             // label1
             // 
@@ -422,7 +422,7 @@ namespace Thetis
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(26, 13);
             this.label8.TabIndex = 98;
-            this.label8.Text = "Day";
+            this.label8.Text = "天";
             // 
             // textBox1
             // 
@@ -431,7 +431,7 @@ namespace Thetis
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(194, 222);
             this.textBox1.TabIndex = 100;
-            this.textBox1.Text = "When this Window is Open, all VOACAP settings come from this window except Freqeu" +
+            this.textBox1.Text = "此窗口打开时，除频率外所有 VOACAP 设置均来自此窗口" +
     "ncy, Month, Hour\r\n\r\nClose this Window to use default VOCAP setup from dx spotter" +
     " window.";
             // 
@@ -457,7 +457,7 @@ namespace Thetis
             this.Controls.Add(this.udMethod);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SpotOptions";
-            this.Text = "VOACAP Override";
+            this.Text = "VOACAP 覆盖";
             this.Closing += new System.ComponentModel.CancelEventHandler(this.SpotOptions_Closing);
             ((System.ComponentModel.ISupportInitialize)(this.udDAY)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.udWATTS)).EndInit();

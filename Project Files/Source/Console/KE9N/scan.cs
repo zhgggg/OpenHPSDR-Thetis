@@ -1,4 +1,4 @@
-//=================================================================
+﻿//=================================================================
 // scan.cs
 // created by Darrin Kohn ke9ns
 //
@@ -142,7 +142,7 @@ namespace Thetis
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 2;
-            this.button3.Text = "Pause";
+            this.button3.Text = "暂停";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
@@ -151,7 +151,7 @@ namespace Thetis
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 3;
-            this.button4.Text = "Scan SWL";
+            this.button4.Text = "扫描 SWL";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -161,7 +161,7 @@ namespace Thetis
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 4;
-            this.button5.Text = "Scan Band";
+            this.button5.Text = "扫描波段";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -171,7 +171,7 @@ namespace Thetis
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 23);
             this.button6.TabIndex = 5;
-            this.button6.Text = "Scan Mem";
+            this.button6.Text = "扫描存储";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
@@ -225,7 +225,7 @@ namespace Thetis
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(108, 13);
             this.label2.TabIndex = 19;
-            this.label2.Text = "Low Edge Frequency";
+            this.label2.Text = "低端频率";
             // 
             // label1
             // 
@@ -255,7 +255,7 @@ namespace Thetis
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(142, 13);
             this.label3.TabIndex = 22;
-            this.label3.Text = "Current Frequency Scanning";
+            this.label3.Text = "当前扫描频率";
             // 
             // speedBox
             // 
@@ -274,7 +274,7 @@ namespace Thetis
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 13);
             this.label4.TabIndex = 24;
-            this.label4.Text = "Step in Khz";
+            this.label4.Text = "步进（kHz）";
             // 
             // label5
             // 
@@ -283,7 +283,7 @@ namespace Thetis
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(79, 13);
             this.label5.TabIndex = 25;
-            this.label5.Text = "Speed in mSec";
+            this.label5.Text = "速度（毫秒）";
             // 
             // chkAlwaysOnTop
             // 
@@ -320,7 +320,7 @@ namespace Thetis
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(330, 446);
             this.Name = "ScanControl";
-            this.Text = "Scanner";
+            this.Text = "扫描器";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ScanControl_FormClosing);
             this.Load += new System.EventHandler(this.ScanControl_Load);
             this.ResumeLayout(false);

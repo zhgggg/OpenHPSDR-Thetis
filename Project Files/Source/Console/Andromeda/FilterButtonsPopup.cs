@@ -112,7 +112,7 @@ namespace Thetis
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(100, 40);
             this.btnClose.TabIndex = 0;
-            this.btnClose.Text = "Close";
+            this.btnClose.Text = "关闭";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
@@ -340,7 +340,7 @@ namespace Thetis
             this.Controls.Add(this.btnClose);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FilterButtonsPopup";
-            this.Text = "Select IF Filter";
+            this.Text = "选择中频滤波器";
             this.TopMost = true;
             this.Activated += new System.EventHandler(this.FilterButtonsPopup_Activated);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FilterButtonsPopup_FormClosing);
@@ -365,14 +365,14 @@ namespace Thetis
 
             if (console.ShowRX1)
             {
-                this.Text = "set RX1 Filter";
+                this.Text = "设置 RX1 滤波器";
                 currentMode = console.RX1DSPMode;
                 Filters = console.rx1_filters;
                 currentFilter = console.RX1Filter;
             }
             else
             {
-                this.Text = "set RX2 Filter";
+                this.Text = "设置 RX2 滤波器";
                 currentMode = console.RX2DSPMode;
                 Filters = console.rx2_filters;
                 currentFilter = console.RX2Filter;

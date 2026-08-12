@@ -1890,8 +1890,8 @@ namespace Thetis
             InitMemoryFrontPanel();
             vfob_dsp_mode = DSPMode.LSB;
             vfob_filter = Filter.F3;
-            comboDisplayMode.Text = "瀑布+频谱";
-            comboRX2DisplayMode.Text = "频谱";
+            comboDisplayMode.Text = "Panafall";
+            comboRX2DisplayMode.Text = "Panadapter";
             comboMeterRXMode.SelectedIndex = 0;
             comboRX2MeterMode.SelectedIndex = 0;
             comboTuneMode.SelectedIndex = 0;
@@ -10628,7 +10628,7 @@ namespace Thetis
             int rit_val = (int)udRIT.Value;						// save current RIT value
 
             string display = comboDisplayMode.Text;
-            comboDisplayMode.Text = "频谱";
+            comboDisplayMode.Text = "Pandapter";
             // comboDisplayMode.Text = "Off";
 
             //  bool polyphase = SetupForm.Polyphase;				// save current polyphase setting
@@ -11104,7 +11104,7 @@ namespace Thetis
             double vfoa = VFOAFreq;								// save current VFOA
 
             string display = comboDisplayMode.Text;
-            comboDisplayMode.Text = "频谱显示";
+            comboDisplayMode.Text = "Spectrum";
 
             int dsp_buf_size = SetupForm.DSPPhoneRXBuffer;		// save current DSP buffer size
             SetupForm.DSPPhoneRXBuffer = 4096;					// set DSP Buffer Size to 2048
@@ -29836,13 +29836,13 @@ namespace Thetis
                         switch (Display.CurrentDisplayMode)
                         {
                             case DisplayMode.PANADAPTER:
-                                comboDisplayMode.Text = "频谱显示";
+                                comboDisplayMode.Text = "Spectrum";
                                 break;
                             case DisplayMode.SPECTRUM:
-                                comboDisplayMode.Text = "频谱";
+                                comboDisplayMode.Text = "Pandapter";
                                 break;
                             default:
-                                comboDisplayMode.Text = "频谱";
+                                comboDisplayMode.Text = "Pandapter";
                                 break;
                         }
                         break;
@@ -40835,7 +40835,7 @@ namespace Thetis
                     bool save_water = (Display.CurrentDisplayMode == DisplayMode.WATERFALL);
                     if (save_pan || save_water)
                     {
-                        comboDisplayMode.Text = "频谱显示";
+                        comboDisplayMode.Text = "Spectrum";
                     }
                     comboDisplayMode.Items.Remove("Panadapter");
                     comboDisplayMode.Items.Remove("Waterfall");
@@ -44083,17 +44083,17 @@ namespace Thetis
                     /*if (comboDisplayMode.Items.Contains("Panafall"))
                         comboDisplayMode.Items.Remove("Panafall");*/  //MW0LGE - rx2
                     if (comboDisplayMode.SelectedIndex < 0)
-                        comboDisplayMode.Text = "频谱";
+                        comboDisplayMode.Text = "Pandapter";
 
                     if (comboDisplayMode.Items.Contains("Panascope"))
                         comboDisplayMode.Items.Remove("Panascope");
                     if (comboDisplayMode.SelectedIndex < 0)
-                        comboDisplayMode.Text = "频谱";
+                        comboDisplayMode.Text = "Pandapter";
 
                     if (comboDisplayMode.Items.Contains("Spectrascope"))
                         comboDisplayMode.Items.Remove("Spectrascope");
                     if (comboDisplayMode.SelectedIndex < 0)
-                        comboDisplayMode.Text = "频谱";
+                        comboDisplayMode.Text = "Pandapter";
                 }
                 else
                 {

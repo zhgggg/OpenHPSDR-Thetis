@@ -41,7 +41,7 @@ namespace Thetis
             {
                 lblATUTuneLabel.Visible = true;
                 lblATUTuneLabel.BackColor = System.Drawing.Color.Blue;
-                lblATUTuneLabel.Text = "ATU Tuned";
+                lblATUTuneLabel.Text = "ATU 已调谐";
             }
             else                                // ATU enabled but no tune solution
             {
@@ -461,7 +461,7 @@ namespace Thetis
                 Antenna = AntennaArrayByBand[idx];
                 if(Antenna != TXAntennaSent)
                 {
-                    toolStripStatusLabelTXAnt.Text = "Tx Ant " + Antenna.ToString();
+                    toolStripStatusLabelTXAnt.Text = "发射天线 " + Antenna.ToString();
                     TXAntennaSent = Antenna;
                 }
             }

@@ -123,7 +123,7 @@ namespace Thetis
             this.BtnClose.Name = "BtnClose";
             this.BtnClose.Size = new System.Drawing.Size(98, 38);
             this.BtnClose.TabIndex = 0;
-            this.BtnClose.Text = "Close";
+            this.BtnClose.Text = "关闭";
             this.BtnClose.UseVisualStyleBackColor = true;
             this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
             // 
@@ -149,7 +149,7 @@ namespace Thetis
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(772, 301);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Encoders";
+            this.tabPage1.Text = "编码器";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // EncoderDataGridView
@@ -172,7 +172,7 @@ namespace Thetis
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(772, 301);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Pushbuttons";
+            this.tabPage2.Text = "按钮";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // ButtonDataGridView
@@ -194,7 +194,7 @@ namespace Thetis
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(772, 301);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Indicators";
+            this.tabPage3.Text = "指示器";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // IndicatorDataGridView
@@ -216,7 +216,7 @@ namespace Thetis
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Size = new System.Drawing.Size(772, 301);
             this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Menus";
+            this.tabPage4.Text = "菜单";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // MenuDataGridView
@@ -237,7 +237,7 @@ namespace Thetis
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(86, 38);
             this.btnDelete.TabIndex = 5;
-            this.btnDelete.Text = "Delete Menu";
+            this.btnDelete.Text = "删除菜单";
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Visible = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
@@ -248,7 +248,7 @@ namespace Thetis
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(86, 38);
             this.btnInsert.TabIndex = 4;
-            this.btnInsert.Text = "Insert Menu";
+            this.btnInsert.Text = "插入菜单";
             this.btnInsert.UseVisualStyleBackColor = true;
             this.btnInsert.Visible = false;
             this.btnInsert.Click += new System.EventHandler(this.BtnInsert_Click);
@@ -269,7 +269,7 @@ namespace Thetis
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(96, 38);
             this.btnReset.TabIndex = 3;
-            this.btnReset.Text = "Reset Data";
+            this.btnReset.Text = "重置数据";
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.BtnReset_Click);
             // 
@@ -286,7 +286,7 @@ namespace Thetis
             this.Controls.Add(this.BtnClose);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AndromedaEditForm";
-            this.Text = "Andromeda Settings Editor";
+            this.Text = "Andromeda 设置编辑器";
             this.Activated += new System.EventHandler(this.AndromedaEditForm_Activated);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AndromedaEditForm_FormClosing);
             this.Load += new System.EventHandler(this.AndromedaEditForm_Load);

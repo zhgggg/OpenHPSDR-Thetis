@@ -1,4 +1,4 @@
-//=================================================================
+﻿//=================================================================
 // progress.cs
 //=================================================================
 // PowerSDR is a C# implementation of a Software Defined Radio.
@@ -99,7 +99,7 @@ namespace Thetis
             this.btnAbort.Name = "btnAbort";
             this.btnAbort.Size = new System.Drawing.Size(75, 23);
             this.btnAbort.TabIndex = 1;
-            this.btnAbort.Text = "Abort";
+            this.btnAbort.Text = "中止";
             this.btnAbort.Click += new System.EventHandler(this.btnAbort_Click);
             // 
             // Progress
@@ -111,7 +111,7 @@ namespace Thetis
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Progress";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "progress";
+            this.Text = "进度";
             this.Closing += new System.ComponentModel.CancelEventHandler(this.Progress_Closing);
             this.ResumeLayout(false);
 

@@ -1,4 +1,4 @@
-//=================================================================
+﻿//=================================================================
 // xvtr.cs
 //=================================================================
 // PowerSDR is a C# implementation of a Software Defined Radio.
@@ -630,7 +630,7 @@ namespace Thetis
             this.chkAlexTRRelay.Name = "chkAlexTRRelay";
             this.chkAlexTRRelay.Size = new System.Drawing.Size(114, 17);
             this.chkAlexTRRelay.TabIndex = 206;
-            this.chkAlexTRRelay.Text = "Disable ANAN PA ";
+            this.chkAlexTRRelay.Text = "禁用 ANAN PA ";
             this.chkAlexTRRelay.UseVisualStyleBackColor = true;
             this.chkAlexTRRelay.Visible = false;
             this.chkAlexTRRelay.CheckedChanged += new System.EventHandler(this.chkAlexTRRelay_CheckedChanged);
@@ -642,7 +642,7 @@ namespace Thetis
             this.chkUseXVTRTUNPWR.Name = "chkUseXVTRTUNPWR";
             this.chkUseXVTRTUNPWR.Size = new System.Drawing.Size(152, 24);
             this.chkUseXVTRTUNPWR.TabIndex = 204;
-            this.chkUseXVTRTUNPWR.Text = "Use XVTR PWR for Tune";
+            this.chkUseXVTRTUNPWR.Text = "调谐使用 XVTR 功率";
             this.chkUseXVTRTUNPWR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.chkUseXVTRTUNPWR.CheckedChanged += new System.EventHandler(this.chkUseXVTRTUNPWR_CheckedChanged);
             // 
@@ -1133,7 +1133,7 @@ namespace Thetis
             this.lblRXGain.Name = "lblRXGain";
             this.lblRXGain.Size = new System.Drawing.Size(56, 32);
             this.lblRXGain.TabIndex = 187;
-            this.lblRXGain.Text = "RX Gain (dB)";
+            this.lblRXGain.Text = "RX 增益 (dB)";
             // 
             // chkXVTRRF15
             // 
@@ -1807,7 +1807,7 @@ namespace Thetis
             this.lblPower.Name = "lblPower";
             this.lblPower.Size = new System.Drawing.Size(40, 16);
             this.lblPower.TabIndex = 153;
-            this.lblPower.Text = "Power";
+            this.lblPower.Text = "功率";
             // 
             // udLOError15
             // 
@@ -2280,7 +2280,7 @@ namespace Thetis
             this.lblLOError.Name = "lblLOError";
             this.lblLOError.Size = new System.Drawing.Size(56, 32);
             this.lblLOError.TabIndex = 136;
-            this.lblLOError.Text = "LO Error (kHz)";
+            this.lblLOError.Text = "本振误差 (kHz)";
             // 
             // chkRXOnly15
             // 
@@ -2433,7 +2433,7 @@ namespace Thetis
             this.lblRXOnly.Name = "lblRXOnly";
             this.lblRXOnly.Size = new System.Drawing.Size(48, 16);
             this.lblRXOnly.TabIndex = 119;
-            this.lblRXOnly.Text = "RX Only";
+            this.lblRXOnly.Text = "仅接收";
             // 
             // udFreqEnd15
             // 
@@ -2906,7 +2906,7 @@ namespace Thetis
             this.lblFreqEnd.Name = "lblFreqEnd";
             this.lblFreqEnd.Size = new System.Drawing.Size(88, 16);
             this.lblFreqEnd.TabIndex = 102;
-            this.lblFreqEnd.Text = "End Freq (MHz)";
+            this.lblFreqEnd.Text = "结束频率 (MHz)";
             // 
             // udFreqBegin15
             // 
@@ -3379,7 +3379,7 @@ namespace Thetis
             this.lblFreqBegin.Name = "lblFreqBegin";
             this.lblFreqBegin.Size = new System.Drawing.Size(96, 16);
             this.lblFreqBegin.TabIndex = 85;
-            this.lblFreqBegin.Text = "Begin Freq (MHz)";
+            this.lblFreqBegin.Text = "起始频率 (MHz)";
             // 
             // udLOOffset15
             // 
@@ -3852,7 +3852,7 @@ namespace Thetis
             this.lblLOOffset.Name = "lblLOOffset";
             this.lblLOOffset.Size = new System.Drawing.Size(72, 32);
             this.lblLOOffset.TabIndex = 68;
-            this.lblLOOffset.Text = "LO Offset (MHz)";
+            this.lblLOOffset.Text = "本振偏移 (MHz)";
             // 
             // txtButtonText15
             // 
@@ -4366,7 +4366,7 @@ namespace Thetis
             this.lblButtonText.Name = "lblButtonText";
             this.lblButtonText.Size = new System.Drawing.Size(72, 16);
             this.lblButtonText.TabIndex = 2;
-            this.lblButtonText.Text = "Button Text";
+            this.lblButtonText.Text = "按钮文本";
             // 
             // lblBandButton
             // 
@@ -4375,7 +4375,7 @@ namespace Thetis
             this.lblBandButton.Name = "lblBandButton";
             this.lblBandButton.Size = new System.Drawing.Size(72, 16);
             this.lblBandButton.TabIndex = 0;
-            this.lblBandButton.Text = "Band Button";
+            this.lblBandButton.Text = "波段按钮";
             // 
             // chkDisablePA15
             // 
@@ -4560,7 +4560,7 @@ namespace Thetis
             this.lblDisablePA.Name = "lblDisablePA";
             this.lblDisablePA.Size = new System.Drawing.Size(42, 32);
             this.lblDisablePA.TabIndex = 221;
-            this.lblDisablePA.Text = "Disable PA";
+            this.lblDisablePA.Text = "禁用 PA";
             // 
             // XVTRForm
             // 
@@ -4773,7 +4773,7 @@ namespace Thetis
             this.Controls.Add(this.lblBandButton);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "XVTRForm";
-            this.Text = "XVTR Setup";
+            this.Text = "XVTR 设置";
             this.Closing += new System.ComponentModel.CancelEventHandler(this.XVTRForm_Closing);
             ((System.ComponentModel.ISupportInitialize)(this.udRXGain15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.udRXGain14)).EndInit();

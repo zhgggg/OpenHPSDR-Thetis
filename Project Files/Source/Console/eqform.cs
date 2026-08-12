@@ -276,7 +276,7 @@ namespace Thetis
             this.lblRXEQ5.Name = "lblRXEQ5";
             this.lblRXEQ5.Size = new System.Drawing.Size(40, 16);
             this.lblRXEQ5.TabIndex = 116;
-            this.lblRXEQ5.Text = "Mid";
+            this.lblRXEQ5.Text = "中";
             this.lblRXEQ5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.lblRXEQ5, "400-1500Hz");
             // 
@@ -301,7 +301,7 @@ namespace Thetis
             this.rad10Band.Size = new System.Drawing.Size(120, 24);
             this.rad10Band.TabIndex = 3;
             this.rad10Band.TabStop = true;
-            this.rad10Band.Text = "10-Band Equalizer";
+            this.rad10Band.Text = "10 段均衡器";
             this.rad10Band.CheckedChanged += new System.EventHandler(this.rad10Band_CheckedChanged);
             // 
             // rad3Band
@@ -311,7 +311,7 @@ namespace Thetis
             this.rad3Band.Name = "rad3Band";
             this.rad3Band.Size = new System.Drawing.Size(120, 24);
             this.rad3Band.TabIndex = 2;
-            this.rad3Band.Text = "3-Band Equalizer";
+            this.rad3Band.Text = "3 段均衡器";
             this.rad3Band.CheckedChanged += new System.EventHandler(this.rad3Band_CheckedChanged);
             // 
             // grpRXEQ
@@ -352,7 +352,7 @@ namespace Thetis
             this.grpRXEQ.Size = new System.Drawing.Size(528, 224);
             this.grpRXEQ.TabIndex = 1;
             this.grpRXEQ.TabStop = false;
-            this.grpRXEQ.Text = "Receive Equalizer";
+            this.grpRXEQ.Text = "接收均衡器";
             // 
             // lblRXEQ15db2
             // 
@@ -642,7 +642,7 @@ namespace Thetis
             this.lblRXEQPreamp.Name = "lblRXEQPreamp";
             this.lblRXEQPreamp.Size = new System.Drawing.Size(48, 16);
             this.lblRXEQPreamp.TabIndex = 74;
-            this.lblRXEQPreamp.Text = "Preamp";
+            this.lblRXEQPreamp.Text = "前置放大器";
             this.lblRXEQPreamp.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tbRXEQPreamp
@@ -726,7 +726,7 @@ namespace Thetis
             this.grpTXEQ.Size = new System.Drawing.Size(528, 224);
             this.grpTXEQ.TabIndex = 1;
             this.grpTXEQ.TabStop = false;
-            this.grpTXEQ.Text = "Transmit Equalizer";
+            this.grpTXEQ.Text = "发射均衡器";
             // 
             // lblCFCFreq
             // 
@@ -1207,7 +1207,7 @@ namespace Thetis
             this.lblTXEQPreamp.Name = "lblTXEQPreamp";
             this.lblTXEQPreamp.Size = new System.Drawing.Size(48, 16);
             this.lblTXEQPreamp.TabIndex = 105;
-            this.lblTXEQPreamp.Text = "Preamp";
+            this.lblTXEQPreamp.Text = "前置放大器";
             this.lblTXEQPreamp.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tbTXEQPre
@@ -1263,7 +1263,7 @@ namespace Thetis
             this.Controls.Add(this.grpTXEQ);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EQForm";
-            this.Text = "Equalizer Settings";
+            this.Text = "均衡器设置";
             this.Closing += new System.ComponentModel.CancelEventHandler(this.EQForm_Closing);
             this.grpRXEQ.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tbRXEQ10)).EndInit();
@@ -1829,7 +1829,7 @@ namespace Thetis
 				tbRXEQ10.Visible = false;
 
 				lblRXEQ1.Text = "Low";
-				lblRXEQ5.Text = "Mid";
+				lblRXEQ5.Text = "中";
 				lblRXEQ9.Text = "High";
 
 				toolTip1.SetToolTip(lblRXEQ1, "0-400Hz");

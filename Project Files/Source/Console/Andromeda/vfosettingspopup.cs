@@ -92,7 +92,7 @@ namespace Thetis
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(75, 32);
             this.buttonClose.TabIndex = 4;
-            this.buttonClose.Text = "Close";
+            this.buttonClose.Text = "关闭";
             this.buttonClose.UseVisualStyleBackColor = true;
             this.buttonClose.Click += new System.EventHandler(this.ButtonClose_Click);
             // 
@@ -105,7 +105,7 @@ namespace Thetis
             this.labelTS1.Name = "labelTS1";
             this.labelTS1.Size = new System.Drawing.Size(57, 13);
             this.labelTS1.TabIndex = 3;
-            this.labelTS1.Text = "Tune Step";
+            this.labelTS1.Text = "调谐步进";
             // 
             // buttonPlus
             // 
@@ -153,7 +153,7 @@ namespace Thetis
             this.Controls.Add(this.txtBoxTuneStep);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "VFOSettingsPopup";
-            this.Text = "VFO Settings";
+            this.Text = "VFO 设置";
             this.TopMost = true;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.VFOSettingsPopup_FormClosing);
             this.Load += new System.EventHandler(this.VFOSettingsPopup_Load);

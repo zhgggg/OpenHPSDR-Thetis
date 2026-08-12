@@ -122,7 +122,7 @@ namespace Thetis
             this.labelTS5.Name = "labelTS5";
             this.labelTS5.Size = new System.Drawing.Size(51, 13);
             this.labelTS5.TabIndex = 10;
-            this.labelTS5.Text = "TX Meter";
+            this.labelTS5.Text = "TX 仪表";
             // 
             // comboTXMeter
             // 
@@ -142,7 +142,7 @@ namespace Thetis
             this.labelTS4.Name = "labelTS4";
             this.labelTS4.Size = new System.Drawing.Size(95, 13);
             this.labelTS4.TabIndex = 8;
-            this.labelTS4.Text = "RX2 Display Mode";
+            this.labelTS4.Text = "RX2 显示模式";
             // 
             // labelTS3
             // 
@@ -153,7 +153,7 @@ namespace Thetis
             this.labelTS3.Name = "labelTS3";
             this.labelTS3.Size = new System.Drawing.Size(95, 13);
             this.labelTS3.TabIndex = 7;
-            this.labelTS3.Text = "RX1 Display Mode";
+            this.labelTS3.Text = "RX1 显示模式";
             // 
             // comboRX2Display
             // 
@@ -182,7 +182,7 @@ namespace Thetis
             this.labelTS2.Name = "labelTS2";
             this.labelTS2.Size = new System.Drawing.Size(58, 13);
             this.labelTS2.TabIndex = 4;
-            this.labelTS2.Text = "RX2 Meter";
+            this.labelTS2.Text = "RX2 仪表";
             // 
             // comboRX2Meter
             // 
@@ -202,7 +202,7 @@ namespace Thetis
             this.labelTS1.Name = "labelTS1";
             this.labelTS1.Size = new System.Drawing.Size(58, 13);
             this.labelTS1.TabIndex = 2;
-            this.labelTS1.Text = "RX1 Meter";
+            this.labelTS1.Text = "RX1 仪表";
             // 
             // comboRX1Meter
             // 
@@ -220,7 +220,7 @@ namespace Thetis
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(109, 41);
             this.btnClose.TabIndex = 0;
-            this.btnClose.Text = "Close";
+            this.btnClose.Text = "关闭";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.BtnClose_Click);
             // 
@@ -233,7 +233,7 @@ namespace Thetis
             this.chkRX1Avg.Name = "chkRX1Avg";
             this.chkRX1Avg.Size = new System.Drawing.Size(50, 41);
             this.chkRX1Avg.TabIndex = 11;
-            this.chkRX1Avg.Text = "Avg";
+            this.chkRX1Avg.Text = "均值";
             this.chkRX1Avg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.chkRX1Avg.UseVisualStyleBackColor = true;
             this.chkRX1Avg.CheckedChanged += new System.EventHandler(this.ChkRX1Avg_CheckedChanged);
@@ -261,7 +261,7 @@ namespace Thetis
             this.chkRX2Avg.Name = "chkRX2Avg";
             this.chkRX2Avg.Size = new System.Drawing.Size(50, 41);
             this.chkRX2Avg.TabIndex = 13;
-            this.chkRX2Avg.Text = "Avg";
+            this.chkRX2Avg.Text = "均值";
             this.chkRX2Avg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.chkRX2Avg.UseVisualStyleBackColor = true;
             this.chkRX2Avg.CheckedChanged += new System.EventHandler(this.ChkRX2Avg_CheckedChanged);
@@ -303,7 +303,7 @@ namespace Thetis
             this.Controls.Add(this.btnClose);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DisplaySettingsForm";
-            this.Text = "Display Settings";
+            this.Text = "显示设置";
             this.TopMost = true;
             this.Activated += new System.EventHandler(this.DisplaySettingsForm_Activated);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DisplaySettingsForm_FormClosing);

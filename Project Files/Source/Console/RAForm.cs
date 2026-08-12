@@ -182,7 +182,7 @@ namespace Thetis
                 writer.Close();
                 labelTS10.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
                 labelTS10.ForeColor = System.Drawing.SystemColors.Highlight;
-                labelTS10.Text = "data written to: RA_data.csv";
+                labelTS10.Text = "数据已写入：RA_data.csv";
                 button_readFile.Enabled = true;
             }              
         }
@@ -385,7 +385,7 @@ namespace Thetis
                     ref_power = Math.Pow(10, (double)sig_max / 10);
                     // convert dBm sig_max to linear value in units of ref_power
                     s2 = String.Format(nfi, "{0:F1}", (float) ref_power);
-                    labelTS12.Text = "Signal ( x " + s2 + " mW)";
+                    labelTS12.Text = "信号 ( x " + s2 + " mW)";
                     float linear_sig_max = (float)Math.Pow(10, sig_max / 10) / (float)ref_power; // in units of ref_power
                     float linear_sig_min = (float)Math.Pow(10, sig_min / 10) / (float)ref_power;
                     // rescale plot if necessary
@@ -658,8 +658,8 @@ namespace Thetis
             }
             else   // linear mode selected
             {
-                labelTS3.Text = "manual Ymax";
-                labelTS2.Text = "manual Ymin";
+                labelTS3.Text = "手动 Y 轴最大值";
+                labelTS2.Text = "手动 Y 轴最小值";
                 manual_ymax.Value = 110;
                 manual_ymin.Value = 0;
             }
@@ -712,7 +712,7 @@ namespace Thetis
                     line = reader.ReadLine();
                     if (i == 1)
                     {
-                        textBox_file_date_time.Text = "Date/time:  " + line;
+                        textBox_file_date_time.Text = "日期/时间:  " + line;
                     }
                     if (i == 3)
                     {
@@ -750,7 +750,7 @@ namespace Thetis
                          {
                              labelTS10.ForeColor = Color.White;
                              labelTS10.BackColor = Color.Red;
-                             labelTS10.Text = "NO VALID DATA IN THE FILE";
+                             labelTS10.Text = "文件中没有有效数据";
                          }
                          sig_max = -140;
                          for (int i = 2; i < data_points; i++) 

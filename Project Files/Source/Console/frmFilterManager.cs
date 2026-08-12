@@ -27,7 +27,7 @@ namespace Thetis
             if (this.Width < 1272)
             {
                 this.Width = 1272;
-                btnMore.Text = "Less <<";
+                btnMore.Text = "收起 <<";
             }
             else
             {

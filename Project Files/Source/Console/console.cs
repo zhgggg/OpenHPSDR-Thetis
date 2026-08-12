@@ -1,4 +1,4 @@
-//=================================================================
+﻿//=================================================================
 // console.cs
 //=================================================================
 // Thetis is a C# implementation of a Software Defined Radio.
@@ -591,9 +591,9 @@ namespace Thetis
             if (!checkVersions())
             {
                 // version incorrect
-                DialogResult dr = MessageBox.Show("An incorrect version of a required dll has been found.\n" +
-                    "Please resolve the issue otherwise unexpected behaviour may occur.",
-                    "Version error",
+                DialogResult dr = MessageBox.Show("发现所需 DLL 的版本不正确。\n" +
+                    "请解决此问题，否则可能出现意外行为。",
+                    "版本错误",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Stop, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
             }
@@ -610,10 +610,10 @@ namespace Thetis
                         AppDataPath = path;
                     else
                     {
-                        DialogResult dr = MessageBox.Show("-datapath: command line option found, but the folder specified was not found.\n" +
-                            "Would you like to create this folder?  If not, the default folder will be used.\n\n" +
+                        DialogResult dr = MessageBox.Show("-datapath：找到命令行选项，但指定的文件夹不存在。\n" +
+                            "是否要创建此文件夹？如果不创建，将使用默认文件夹。\n\n" +
                             "(" + path + ")",
-                            "Command Line Option: Create Folder?",
+                            "命令行选项：创建文件夹？",
                             MessageBoxButtons.YesNo,
                             MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
 
@@ -646,10 +646,10 @@ namespace Thetis
                     }
                     else
                     {
-                        DialogResult dr = MessageBox.Show("-dbfilename: command line option found, but the file specified was not found.\n" +
-                            "Would you like to create this file?  If not, the default database will be used.\n\n" +
+                        DialogResult dr = MessageBox.Show("-dbfilename：找到命令行选项，但指定的文件不存在。\n" +
+                            "是否要创建此文件？如果不创建，将使用默认数据库。\n\n" +
                             "(" + path + ")",
-                            "Command Line Option: Create File?",
+                            "命令行选项：创建文件？",
                             MessageBoxButtons.YesNo,
                             MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
 
@@ -679,11 +679,11 @@ namespace Thetis
                     if (Keyboard.IsKeyDown(Keys.LShiftKey) || Keyboard.IsKeyDown(Keys.RShiftKey))
                     {
                         DialogResult dr = MessageBox.Show(
-                             "The database reset function has been triggered.  Would you like to reset your database?\n\n" +
-                             "If so, a copy of the current database will be placed in the DB_Archive folder with\n" +
-                             "a date and time stamp in the file name, before creating a brand new\n" +
-                             "database for active use.",
-                             "Reset Database?",
+                             "已触发数据库重置功能。是否要重置数据库？\n\n" +
+                             "如果是，当前数据库的副本将保存到 DB_Archive 文件夹，\n" +
+                             "文件名中带日期和时间戳，然后再创建全新的\n" +
+                             "数据库用于当前使用。",
+                             "重置数据库？",
                              MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
 
                         if (dr == DialogResult.Yes)
@@ -719,9 +719,9 @@ namespace Thetis
 
                         File.Copy(db_file_name, AppDataPath + "DB_Archive\\Thetis" + file + "_" + datetime + ".xml", true);
                         File.Delete(db_file_name);
-                        MessageBox.Show("The database file could not be read. It has been copied to the DB_Archive folder\n\n"
-                                    + "Current database has been reset and initialized.  After the reset, "
-                                    + "you can try importing another working database file using Setup - Import Database.", "Database Read Failure",
+                        MessageBox.Show("数据库文件无法读取。已将其复制到 DB_Archive 文件夹\n\n"
+                                    + "当前数据库已重置并初始化。重置后，"
+                                    + "您可以尝试通过 设置 - 导入数据库 导入另一个可用的数据库文件。", "数据库读取失败",
                                      MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                     }
                     else
@@ -760,17 +760,17 @@ namespace Thetis
                                     DB.WriteDB(db_file_name);
                                     DB.Init();
                                     versionName = versionName.Replace("<FW>", "");
-                                    MessageBox.Show("Your database from a different version was imported successfully into a new one.\n\n"
-                                        + versionName + " will now start.", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
+                                    MessageBox.Show("来自不同版本的数据库已成功导入到新数据库中。\n\n"
+                                        + versionName + " 现在将启动。", "成功！", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                                 }
                                 else
                                 {
                                     File.Delete(db_file_name);
                                     File.Delete(autoMergeFileName);
                                     Thread.Sleep(100);
-                                    MessageBox.Show("A previous version database file could not be imported. It has been copied to the DB_Archive folder\n\n. "
-                                        + "The current database has been reset and initialized.\n"
-                                        + "You can try importing another working database file using Setup - Import Database.", "Database Import Failure",
+                                    MessageBox.Show("旧版本数据库文件无法导入。已将其复制到 DB_Archive 文件夹\n\n。 "
+                                        + "当前数据库已重置并初始化。\n"
+                                        + "您可以尝试通过 设置 - 导入数据库 导入另一个可用的数据库文件。", "数据库导入失败",
                                         MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                                 }
                                 resetForAutoMerge = false;
@@ -792,9 +792,9 @@ namespace Thetis
                                 resetForAutoMerge = true;  // a flag to main()
 
                                 string sForced = bForcedUpdate ? "CTRL KEY Forced Update : " : "";
-                                MessageBox.Show(sForced + "Your database file is from a different version.\nMerging it into a new database will now be attempted.\n\n"
-                                    + "First your old database will be saved in DB_Archive folder,\nand a database reset will happen.\n\n"
-                                    + "Please RE-START when the reset finishes.", "Note", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
+                                MessageBox.Show(sForced + "您的数据库文件来自不同版本。\n现在将尝试将其合并到新数据库中。\n\n"
+                                    + "首先您的旧数据库将保存到 DB_Archive 文件夹，\n然后执行数据库重置。\n\n"
+                                    + "请在重置完成后重启。", "注意", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                             }
 
                         }
@@ -1022,7 +1022,7 @@ namespace Thetis
             {
                 Splash.SetStatus("Waiting for PortAudio");
                 bool bOk = portAudioThread.Join(5000);
-                if(!bOk) MessageBox.Show("There was an issue initialising PortAudio", "PortAudio", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
+                if(!bOk) MessageBox.Show("初始化 PortAudio 时出现问题", "PortAudio", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
             }
 
             Splash.SetStatus("Finished");
@@ -1032,7 +1032,7 @@ namespace Thetis
 
             if (resetForAutoMerge)
             {
-                MessageBox.Show("Please RE-START now.", "Note", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
+                MessageBox.Show("请立即重启。", "注意", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
             }
             else
             {
@@ -1337,10 +1337,10 @@ namespace Thetis
                         app_data_path = path;
                     else
                     {
-                        DialogResult dr = MessageBox.Show("-datapath: command line option found, but the folder specified was not found.\n" +
-                            "Would you like to create this folder?  If not, the default folder will be used.\n\n" +
+                        DialogResult dr = MessageBox.Show("-datapath：找到命令行选项，但指定的文件夹不存在。\n" +
+                            "是否要创建此文件夹？如果不创建，将使用默认文件夹。\n\n" +
                             "(" + path + ")",
-                            "Command Line Option: Create Folder?",
+                            "命令行选项：创建文件夹？",
                             MessageBoxButtons.YesNo,
                             MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
 
@@ -1407,9 +1407,9 @@ namespace Thetis
 
                 if (!bBypass && Common.IsVersionTimedOut)
                 {
-                    DialogResult dr = MessageBox.Show("This version of Thetis has timed out.\n" +
-                        "Please download and install a more recent version.",
-                        "Thetis timed out",
+                    DialogResult dr = MessageBox.Show("此版本的 Thetis 已超时。\n" +
+                        "请下载并安装更新版本。",
+                        "Thetis 已超时",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Stop, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                     Application.Exit();
@@ -1433,14 +1433,14 @@ namespace Thetis
                         "This is most likely because the database has not been updated.\n\n" +
                         "If this is a modified version of Thetis, then try holding left \n" +
                         "CTRL as you start up Thetis, and keep it held until you see a message.";
-                    MessageBox.Show(msg, "Database Error",
+                    MessageBox.Show(msg, "数据库错误",
                         MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                 }
                 else
                 {
                     string msg = ex.Message + "\n\n" + ex.StackTrace.ToString();
                     if (ex.InnerException != null) msg += "\n\n" + ex.InnerException.Message;
-                    MessageBox.Show(msg, "Fatal Error",
+                    MessageBox.Show(msg, "致命错误",
                         MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                 }
                 Application.Exit();
@@ -1890,8 +1890,8 @@ namespace Thetis
             InitMemoryFrontPanel();
             vfob_dsp_mode = DSPMode.LSB;
             vfob_filter = Filter.F3;
-            comboDisplayMode.Text = "Panafall";
-            comboRX2DisplayMode.Text = "Panadapter";
+            comboDisplayMode.Text = "瀑布+频谱";
+            comboRX2DisplayMode.Text = "频谱";
             comboMeterRXMode.SelectedIndex = 0;
             comboRX2MeterMode.SelectedIndex = 0;
             comboTuneMode.SelectedIndex = 0;
@@ -2219,7 +2219,7 @@ namespace Thetis
                     {
                         if (!IsSetupFormNull) SetupForm.DisableTCPIPCatServerDueToError();
                         removeTCPIPcatDelegates();
-                        MessageBox.Show("Unable to start the server." + Environment.NewLine + Environment.NewLine + "[ " + m_tcpCATServer.LastError + " ]", "TCPIP CAT Server",
+                        MessageBox.Show("无法启动服务器。" + Environment.NewLine + Environment.NewLine + "[ " + m_tcpCATServer.LastError + " ]", "TCP/IP CAT 服务器",
                             MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                     }
                 }
@@ -2376,7 +2376,7 @@ namespace Thetis
                     {
                         if (!IsSetupFormNull) SetupForm.DisableTCIServerDueToError();
                         removeTCIDelegates();
-                        MessageBox.Show("Unable to start the server." + Environment.NewLine + Environment.NewLine + "[ " + m_tcpTCIServer.LastError + " ]", "TCI Server",
+                        MessageBox.Show("无法启动服务器。" + Environment.NewLine + Environment.NewLine + "[ " + m_tcpTCIServer.LastError + " ]", "TCI 服务器",
                             MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                     }
                 }
@@ -4370,7 +4370,7 @@ namespace Thetis
                                 i = checkbox_list.Count + 1;
                             }
                             if (i == checkbox_list.Count)
-                                MessageBox.Show("Control not found: " + name, "GetState Error",
+                                MessageBox.Show("未找到控件：" + name, "GetState 错误",
                                     MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                         }
                         break;
@@ -4385,7 +4385,7 @@ namespace Thetis
                                 i = combobox_list.Count + 1;
                             }
                             if (i == combobox_list.Count)
-                                MessageBox.Show("Control not found: " + name, "GetState Error",
+                                MessageBox.Show("未找到控件：" + name, "GetState 错误",
                                     MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                         }
                         break;
@@ -4404,7 +4404,7 @@ namespace Thetis
                                 i = numericupdown_list.Count + 1;
                             }
                             if (i == numericupdown_list.Count)
-                                MessageBox.Show("Control not found: " + name, "GetState Error",
+                                MessageBox.Show("未找到控件：" + name, "GetState 错误",
                                     MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                         }
                         break;
@@ -4421,7 +4421,7 @@ namespace Thetis
                                 i = radiobutton_list.Count + 1;
                             }
                             if (i == radiobutton_list.Count)
-                                MessageBox.Show("Control not found: " + name, "GetState Error",
+                                MessageBox.Show("未找到控件：" + name, "GetState 错误",
                                     MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                         }
                         break;
@@ -4436,7 +4436,7 @@ namespace Thetis
                                 i = textbox_list.Count + 1;
                             }
                             if (i == textbox_list.Count)
-                                MessageBox.Show("Control not found: " + name, "GetState Error",
+                                MessageBox.Show("未找到控件：" + name, "GetState 错误",
                                     MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                         }
                         break;
@@ -4451,7 +4451,7 @@ namespace Thetis
                                 i = trackbar_list.Count + 1;
                             }
                             if (i == trackbar_list.Count)
-                                MessageBox.Show("Control not found: " + name, "GetState Error",
+                                MessageBox.Show("未找到控件：" + name, "GetState 错误",
                                     MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                         }
                         break;
@@ -4466,7 +4466,7 @@ namespace Thetis
                                 i = prettytrackbar_list.Count + 1;
                             }
                             if (i == prettytrackbar_list.Count)
-                                MessageBox.Show("Control not found: " + name, "GetState Error",
+                                MessageBox.Show("未找到控件：" + name, "GetState 错误",
                                     MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                         }
                         break;
@@ -7327,9 +7327,9 @@ namespace Thetis
             Process[] p = Process.GetProcessesByName("Thetis");
             if (p.Length > 1)
             {
-                DialogResult dr = MessageBox.Show("There are other Thetis instances running.\n" +
-                    "Are you sure you want to continue?",
-                    "Continue?",
+                DialogResult dr = MessageBox.Show("有其他 Thetis 实例正在运行。\n" +
+                    "确定要继续吗？",
+                    "继续？",
                     MessageBoxButtons.YesNo,
                     MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                 if (dr == DialogResult.No)
@@ -8417,7 +8417,7 @@ namespace Thetis
             }
 
             if (f == rx1_filter)
-                panelFilter.Text = "Filter - " + rx1_filters[(int)rx1_dsp_mode].GetName(f);
+                panelFilter.Text = "滤波器 - " + rx1_filters[(int)rx1_dsp_mode].GetName(f);
         }
 
         public void UpdateRX1FilterPresetLow(int val)
@@ -8464,7 +8464,7 @@ namespace Thetis
             }
 
             if (f == rx2_filter)
-                panelRX2Filter.Text = "RX2 Filter - " + rx2_filters[(int)rx2_dsp_mode].GetName(f);
+                panelRX2Filter.Text = "RX2 滤波器 - " + rx2_filters[(int)rx2_dsp_mode].GetName(f);
         }
 
         public void UpdateRX2FilterPresetLow(int val)
@@ -10517,7 +10517,7 @@ namespace Thetis
         {
             if (!chkPower.Checked)
             {
-                MessageBox.Show("Power must be on in order to calibrate Frequency.", "Power Is Off",
+                MessageBox.Show("校准频率前必须先开启电源。", "电源已关闭",
                     MessageBoxButtons.OK, MessageBoxIcon.Stop, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                 return false;
             }
@@ -10595,7 +10595,7 @@ namespace Thetis
             {
                 if (!suppress_errors)
                 {
-                    MessageBox.Show("Power must be on in order to calibrate RX Level.", "Power Is Off",
+                    MessageBox.Show("校准 RX 电平前必须先开启电源。", "电源已关闭",
                         MessageBoxButtons.OK, MessageBoxIcon.Stop, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                 }
                 calibration_running = false;
@@ -10628,7 +10628,7 @@ namespace Thetis
             int rit_val = (int)udRIT.Value;						// save current RIT value
 
             string display = comboDisplayMode.Text;
-            comboDisplayMode.Text = "Panadapter";
+            comboDisplayMode.Text = "频谱";
             // comboDisplayMode.Text = "Off";
 
             //  bool polyphase = SetupForm.Polyphase;				// save current polyphase setting
@@ -10714,9 +10714,9 @@ namespace Thetis
 
                if (max < (avg + 30))
                {
-                   MessageBox.Show("Peak is less than 30dB from the noise floor.  " +
-                       "Please use a larger signal for frequency calibration.",
-                       "Calibration Error - Weak Signal",
+                   MessageBox.Show("峰值与噪底相差不到 30dB。  " +
+                       "请使用更强的信号进行频率校准。",
+                       "校准错误 - 信号太弱",
                        MessageBoxButtons.OK,
                        MessageBoxIcon.Error);
                    ret_val = false;
@@ -10757,9 +10757,9 @@ namespace Thetis
             // if (maxsumsq / avgmag < 1000.0)
             if ((maxsumsq - avgmag) < 30.0) // compare the max bin with the average bin value
             {
-                MessageBox.Show("Peak is less than 30dB from the noise floor.  " +
-                    "Please use a larger signal for frequency calibration.",
-                    "Calibration Error - Weak Signal",
+                MessageBox.Show("峰值与噪底相差不到 30dB。  " +
+                    "请使用更强的信号进行频率校准。",
+                    "校准错误 - 信号太弱",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                 ret_val = false;
@@ -11088,7 +11088,7 @@ namespace Thetis
             {
                 if (!suppress_errors)
                 {
-                    MessageBox.Show("Power must be on in order to calibrate RX2 Level.", "Power Is Off",
+                    MessageBox.Show("校准 RX2 电平前必须先开启电源。", "电源已关闭",
                         MessageBoxButtons.OK, MessageBoxIcon.Stop, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                 }
                 calibration_running = false;
@@ -11104,7 +11104,7 @@ namespace Thetis
             double vfoa = VFOAFreq;								// save current VFOA
 
             string display = comboDisplayMode.Text;
-            comboDisplayMode.Text = "Spectrum";
+            comboDisplayMode.Text = "频谱显示";
 
             int dsp_buf_size = SetupForm.DSPPhoneRXBuffer;		// save current DSP buffer size
             SetupForm.DSPPhoneRXBuffer = 4096;					// set DSP Buffer Size to 2048
@@ -11214,9 +11214,9 @@ namespace Thetis
             {
                 if (!suppress_errors)
                 {
-                    MessageBox.Show("Peak is less than 30dB from the noise floor.  " +
-                        "Please use a larger signal for frequency calibration.",
-                        "Calibration Error - Weak Signal",
+                    MessageBox.Show("峰值与噪底相差不到 30dB。  " +
+                        "请使用更强的信号进行频率校准。",
+                        "校准错误 - 信号太弱",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                 }
@@ -11369,7 +11369,7 @@ namespace Thetis
 
             if (!chkPower.Checked)
             {
-                MessageBox.Show("START must be active in order to calibrate PA Gain.", "START is not presently active",
+                MessageBox.Show("校准 PA 增益前必须激活 START。", "START 当前未激活",
                     MessageBoxButtons.OK, MessageBoxIcon.Stop, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                 return false;
             }
@@ -11668,9 +11668,9 @@ namespace Thetis
             return ret_val;
 
         error:
-            MessageBox.Show("Calculated gain is invalid.  Please double check connections and try again.\n"/* +
-                "If this problem persists, contact support@flex-radio.com for support."*/,
-                "Invalid Gain Found",
+            MessageBox.Show("计算出的增益无效。请仔细检查连接后重试。\n"/* +
+                "如果此问题持续存在，请联系 support@flex-radio.com 获取支持。"*/,
+                "发现无效增益",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
             goto end;
@@ -11690,7 +11690,7 @@ namespace Thetis
 
             if (!chkPower.Checked)
             {
-                MessageBox.Show("Power must be on in order to run PA Sweep.", "Power Is Off",
+                MessageBox.Show("运行 PA 扫描前必须先开启电源。", "电源已关闭",
                     MessageBoxButtons.OK, MessageBoxIcon.Stop, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                 return false;
             }
@@ -13569,13 +13569,13 @@ namespace Thetis
                 if (value == false)
                 {
                     waveToolStripMenuItem.ForeColor = SystemColors.ControlLightLight;
-                    waveToolStripMenuItem.Text = "Wave";
+                    waveToolStripMenuItem.Text = "波形";
 
                 }
                 else
                 {
                     waveToolStripMenuItem.ForeColor = Color.Red;
-                    waveToolStripMenuItem.Text = "Record";
+                    waveToolStripMenuItem.Text = "录音";
 
 
                 }
@@ -13593,13 +13593,13 @@ namespace Thetis
                 {
 
                     memoryToolStripMenuItem.ForeColor = SystemColors.ControlLightLight;
-                    memoryToolStripMenuItem.Text = "Memory";
+                    memoryToolStripMenuItem.Text = "存储";
                 }
                 else
                 {
 
                     memoryToolStripMenuItem.ForeColor = Color.Red;
-                    memoryToolStripMenuItem.Text = "Mem Sched";
+                    memoryToolStripMenuItem.Text = "存储计划";
                 }
             }
 
@@ -16277,7 +16277,7 @@ namespace Thetis
                     case BreakIn.Manual: // manual PTT
                         QSKEnabled = false;
                         NetworkIO.SetCWBreakIn(0);
-                        chkQSK.Text = "OFF";
+                        chkQSK.Text = "关";
 
                         break;
                     case BreakIn.Semi:
@@ -18451,9 +18451,9 @@ namespace Thetis
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("Error enabling CAT on COM" + cat_port + ".\n" +
-                        "Please check CAT settings and try again.",
-                        "CAT Error",
+                    MessageBox.Show("在 COM 上启用 CAT 时出错" + cat_port + ".\n" +
+                        "请检查 CAT 设置后重试。",
+                        "CAT 错误",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                     if (!IsSetupFormNull) SetupForm.CATEnabled = false;
@@ -18489,9 +18489,9 @@ namespace Thetis
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("Error enabling Andromeda on COM" + cat_port + ".\n" +
-                        "Please check settings and try again.",
-                        "Andromeda CAT Error",
+                    MessageBox.Show("在 COM 上启用 Andromeda 时出错" + cat_port + ".\n" +
+                        "请检查设置后重试。",
+                        "Andromeda CAT 错误",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                     if (!IsSetupFormNull) SetupForm.AndromedaCATEnabled = false;
@@ -18526,9 +18526,9 @@ namespace Thetis
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("Error enabling Aries on COM" + cat_port + ".\n" +
-                        "Please check settings and try again.",
-                        "Aries CAT Error",
+                    MessageBox.Show("在 COM 上启用 Aries 时出错" + cat_port + ".\n" +
+                        "请检查设置后重试。",
+                        "Aries CAT 错误",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                     if (!IsSetupFormNull) SetupForm.AriesCATEnabled = false;
@@ -18561,9 +18561,9 @@ namespace Thetis
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("Error enabling Ganymede on COM" + cat_port + ".\n" +
-                        "Please check settings and try again.",
-                        "Ganymede CAT Error",
+                    MessageBox.Show("在 COM 上启用 Ganymede 时出错" + cat_port + ".\n" +
+                        "请检查设置后重试。",
+                        "Ganymede CAT 错误",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                     if (!IsSetupFormNull) SetupForm.GanymedeCATEnabled = false;
@@ -18595,9 +18595,9 @@ namespace Thetis
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("Error enabling CAT2 on COM" + cat_port + ".\n" +
-                        "Please check CAT2 settings and try again.",
-                        "CAT2 Error",
+                    MessageBox.Show("在 COM 上启用 CAT2 时出错" + cat_port + ".\n" +
+                        "请检查 CAT2 设置后重试。",
+                        "CAT2 错误",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                     if (!IsSetupFormNull) SetupForm.CAT2Enabled = false;
@@ -18629,9 +18629,9 @@ namespace Thetis
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("Error enabling CAT3 on COM" + cat_port + ".\n" +
-                        "Please check CAT3 settings and try again.",
-                        "CAT3 Error",
+                    MessageBox.Show("在 COM 上启用 CAT3 时出错" + cat_port + ".\n" +
+                        "请检查 CAT3 设置后重试。",
+                        "CAT3 错误",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                     if (!IsSetupFormNull) SetupForm.CAT3Enabled = false;
@@ -18663,9 +18663,9 @@ namespace Thetis
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("Error enabling CAT4 on COM" + cat_port + ".\n" +
-                        "Please check CAT4 settings and try again.",
-                        "CAT4 Error",
+                    MessageBox.Show("在 COM 上启用 CAT4 时出错" + cat_port + ".\n" +
+                        "请检查 CAT4 设置后重试。",
+                        "CAT4 错误",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                     if (!IsSetupFormNull) SetupForm.CAT4Enabled = false;
@@ -18772,8 +18772,8 @@ namespace Thetis
                         {
                             SetupForm.copyCATPropsToDialogVars(); // need to make sure the props on the setup page get reset 
                         }
-                        MessageBox.Show("Could not initialize PTT Bit Bang control.  Exception was:\n\n " + ex.Message +
-                            "\n\nPTT Bit Bang control has been disabled.", "Error Initializing PTT control",
+                        MessageBox.Show("无法初始化 PTT Bit Bang 控制。异常信息：\n\n " + ex.Message +
+                            "\n\nPTT Bit Bang 控制已被禁用。", "初始化 PTT 控件出错",
                             MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
 
                     }
@@ -20215,7 +20215,7 @@ namespace Thetis
             {
                 apf_freq = value;
                 ptbCWAPFFreq.Value = value;
-                lblCWAPFTune.Text = "Tune:  " + ptbCWAPFFreq.Value.ToString();
+                lblCWAPFTune.Text = "调谐:  " + ptbCWAPFFreq.Value.ToString();
             }
         }
 
@@ -20227,7 +20227,7 @@ namespace Thetis
             {
                 apf_bandwidth = value;
                 ptbCWAPFBandwidth.Value = value;
-                lblCWAPFBandwidth.Text = "Bandwidth:  " + ptbCWAPFBandwidth.Value.ToString();
+                lblCWAPFBandwidth.Text = "带宽:  " + ptbCWAPFBandwidth.Value.ToString();
             }
         }
 
@@ -20242,7 +20242,7 @@ namespace Thetis
                     apf_gain = value;
                     ptbCWAPFGain.Value = value;
                     double gain_value = Math.Round(ptbCWAPFGain.Value / 10.0, 0);
-                    lblCWAPFGain.Text = "Gain:  " + gain_value.ToString();
+                    lblCWAPFGain.Text = "增益:  " + gain_value.ToString();
                 }
             }
         }
@@ -27098,7 +27098,7 @@ namespace Thetis
             }
             catch (Exception e)
             {
-                //MessageBox.Show("Error in RunDisplay.\n" + e.Message);
+                //MessageBox.Show("RunDisplay 出错。\n" + e.Message);
                 Common.LogException(e);
             }
 
@@ -28888,8 +28888,8 @@ namespace Thetis
                             NetworkIO.swr_protect = 0.01f;
                             chkMOX.Checked = false;
 
-                            MessageBox.Show("Please check your antenna connection.",
-                            "High SWR condition detected",
+                            MessageBox.Show("请检查天线连接。",
+                            "检测到高 SWR 状态",
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Warning,
                             MessageBoxDefaultButton.Button1,
@@ -29015,8 +29015,8 @@ namespace Thetis
                             NetworkIO.SWRProtect = 0.01f;
                             chkMOX.Checked = false;
 
-                            MessageBox.Show("Please check your antenna connection.",
-                            "High SWR condition detected",
+                            MessageBox.Show("请检查天线连接。",
+                            "检测到高 SWR 状态",
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Warning,
                             MessageBoxDefaultButton.Button1,
@@ -29836,13 +29836,13 @@ namespace Thetis
                         switch (Display.CurrentDisplayMode)
                         {
                             case DisplayMode.PANADAPTER:
-                                comboDisplayMode.Text = "Spectrum";
+                                comboDisplayMode.Text = "频谱显示";
                                 break;
                             case DisplayMode.SPECTRUM:
-                                comboDisplayMode.Text = "Panadapter";
+                                comboDisplayMode.Text = "频谱";
                                 break;
                             default:
-                                comboDisplayMode.Text = "Panadapter";
+                                comboDisplayMode.Text = "频谱";
                                 break;
                         }
                         break;
@@ -31543,7 +31543,7 @@ namespace Thetis
                     SetupForm.tbDSPAGCHangThreshold.Enabled = true;
                     SetupForm.AGCRX1HangThreshold = SetupForm.tbDSPAGCHangThreshold.Value;
                     toolTip1.SetToolTip(comboAGC, "Automatic Gain Control Mode Setting:\n" +
-                        "Long (Attack 2ms, Hang 2000ms, Decay 2000ms)");
+                        "长（启动 2ms，保持 2000ms，衰减 2000ms）");
                     break;
                 case AGCMode.SLOW:
                     SetupForm.CustomRXAGCEnabled = false;
@@ -31559,7 +31559,7 @@ namespace Thetis
                     SetupForm.tbDSPAGCHangThreshold.Enabled = true;
                     SetupForm.AGCRX1HangThreshold = SetupForm.tbDSPAGCHangThreshold.Value;
                     toolTip1.SetToolTip(comboAGC, "Automatic Gain Control Mode Setting:\n" +
-                        "Slow (Attack 2ms, Hang 1000ms, Decay 500ms)");
+                        "慢（启动 2ms，保持 1000ms，衰减 500ms）");
                     //comboAGC.BackColor = SystemColors.Window;
                     break;
                 case AGCMode.MED:
@@ -31578,7 +31578,7 @@ namespace Thetis
                     //SetupForm.SetAGCHangThres();
                     SetupForm.tbDSPAGCHangThreshold.Enabled = false;
                     toolTip1.SetToolTip(comboAGC, "Automatic Gain Control Mode Setting:\n" +
-                        "Medium (Attack 2ms, Hang OFF, Decay 250ms)");
+                        "中（启动 2ms，保持关，衰减 250ms）");
                     //comboAGC.BackColor = SystemColors.Window;
                     break;
                 case AGCMode.FAST:
@@ -31596,7 +31596,7 @@ namespace Thetis
                     WDSP.SetRXAAGCHangThreshold(WDSP.id(0, 0), 100);
                     SetupForm.tbDSPAGCHangThreshold.Enabled = false;
                     toolTip1.SetToolTip(comboAGC, "Automatic Gain Control Mode Setting:\n" +
-                        "Fast (Attack 2ms, Hang OFF, Decay 50ms)");
+                        "快速（启动 2ms，保持关，衰减 50ms）");
                     //comboAGC.BackColor = SystemColors.Window;
                     break;
                 case AGCMode.CUSTOM:
@@ -31606,13 +31606,13 @@ namespace Thetis
                     SetupForm.tbDSPAGCHangThreshold.Enabled = true;
                     SetupForm.AGCRX1HangThreshold = SetupForm.tbDSPAGCHangThreshold.Value;
                     toolTip1.SetToolTip(comboAGC, "Automatic Gain Control Mode Setting:\n" +
-                        "Custom - Set specifics in Setup Form -> DSP -> AGC/ALC");
+                        "自定义 - 在 设置 -> DSP -> AGC/ALC 中指定");
                     //comboAGC.BackColor = SystemColors.Window;
                     break;
                 case AGCMode.FIXD:
                     SetupForm.CustomRXAGCEnabled = false;
                     toolTip1.SetToolTip(comboAGC, "Automatic Gain Control Mode Setting:\n" +
-                        "Fixed - Set gain with AGC-T control above");
+                        "固定 - 使用上方 AGC-T 控件设置增益");
                     //comboAGC.BackColor = Color.Orange;
                     break;
             }
@@ -31800,8 +31800,8 @@ namespace Thetis
                 if (SetupForm.StillWaitingForSaveLoad)
                 {
                     // save didnt complete
-                    MessageBox.Show("Saving to the database did not complete in the alloted time. Your settings will not be saved.",
-                    "DB Save TimeOut",
+                    MessageBox.Show("数据库保存未在规定时间内完成。您的设置将不会被保存。",
+                    "数据库保存超时",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                 }
@@ -32093,13 +32093,13 @@ namespace Thetis
             if (!bShowLimitValue)
             {
                 if (ptbPWR.IsConstrained)
-                    lblPWR.Text = "Drive:  (" + sValue + ")";
+                    lblPWR.Text = "驱动:  (" + sValue + ")";
                 else
-                    lblPWR.Text = "Drive:  " + sValue;
+                    lblPWR.Text = "驱动:  " + sValue;
             }
             else
             {
-                lblPWR.Text = "Limit: " + sValue;
+                lblPWR.Text = "限制: " + sValue;
             }
         }
         public string PAProfile
@@ -32200,7 +32200,7 @@ namespace Thetis
 
         private void ptbAF_Scroll(object sender, System.EventArgs e)
         {
-            lblAF.Text = "Master AF:  " + ptbAF.Value.ToString();
+            lblAF.Text = "主 AF:  " + ptbAF.Value.ToString();
 
             if ((mox) && !chkMON.Checked)
             {
@@ -32235,11 +32235,11 @@ namespace Thetis
             switch (RX1AGCMode)
             {
                 case AGCMode.FIXD:
-                    lblRF.Text = "Fixed Gain:  " + ptbRF.Value.ToString();
+                    lblRF.Text = "固定增益:  " + ptbRF.Value.ToString();
                     if (!IsSetupFormNull) SetupForm.AGCFixedGain = ptbRF.Value;
                     break;
                 default:
-                    lblRF.Text = "AGC Gain:  " + ptbRF.Value.ToString();
+                    lblRF.Text = "AGC 增益:  " + ptbRF.Value.ToString();
                     if (!IsSetupFormNull) SetupForm.AGCMaxGain = ptbRF.Value;
                     break;
             }
@@ -32304,7 +32304,7 @@ namespace Thetis
 
         private void ptbCWSpeed_Scroll(object sender, System.EventArgs e)
         {
-            lblCWSpeed.Text = "Speed:  " + ptbCWSpeed.Value.ToString() + " WPM";
+            lblCWSpeed.Text = "速度:  " + ptbCWSpeed.Value.ToString() + " WPM";
             NetworkIO.SetCWKeyerSpeed(ptbCWSpeed.Value);
             if (sender.GetType() == typeof(PrettyTrackBar))
             {
@@ -32359,7 +32359,7 @@ namespace Thetis
 
         private void ptbVACRXGain_Scroll(object sender, System.EventArgs e)
         {
-            lblRXGain.Text = "RX Gain:  " + ptbVACRXGain.Value.ToString();
+            lblRXGain.Text = "RX 增益:  " + ptbVACRXGain.Value.ToString();
             if (!IsSetupFormNull)
                 if (!(chkRX2.Checked && chkVAC2.Checked && chkVFOBTX.Checked))
                 {
@@ -32384,7 +32384,7 @@ namespace Thetis
 
         private void ptbVACTXGain_Scroll(object sender, System.EventArgs e)
         {
-            lblTXGain.Text = "TX Gain:  " + ptbVACTXGain.Value.ToString();
+            lblTXGain.Text = "TX 增益:  " + ptbVACTXGain.Value.ToString();
             if (!IsSetupFormNull)
             {
                 if (!(chkRX2.Checked && chkVAC2.Checked && chkVFOBTX.Checked))
@@ -32840,8 +32840,8 @@ namespace Thetis
                     if (_preventTXonDifferentBandToRXband && ((!RX2Enabled && VFOBTX && RX1Band != TXBand) || (RX2Enabled && VFOBTX && RX2Band != TXBand)))
                     {
                         // note RX2 enabled with a TXvfoB will always TX
-                        MessageBox.Show("Your TX band is different to your RX band and you have selected the option to prevent this.",
-                        "Transmit Error: TX/RX bands different",
+                        MessageBox.Show("您的 TX 波段与 RX 波段不同，而您已选择禁止此情况的选项。",
+                        "发射错误：TX/RX 波段不同",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
 
@@ -32859,8 +32859,8 @@ namespace Thetis
                             case DSPMode.DIGU:
                                 break;
                             default:
-                                MessageBox.Show(rx1_dsp_mode.ToString() + " mode is not allowed on 60M band.",
-                                    "Transmit Error: Mode/Band",
+                                MessageBox.Show(rx1_dsp_mode.ToString() + " 模式在 60M 波段不允许使用。",
+                                    "发射错误：模式/波段",
                                     MessageBoxButtons.OK,
                                     MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                                 chkMOX.Checked = false;
@@ -32873,9 +32873,9 @@ namespace Thetis
                         if (tx_band == Band.B60M && current_region == FRSRegion.US &&
                             CheckValidTXFreq_Private(current_region, freq) && !extended)
                         {
-                            MessageBox.Show("The transmit filter you have selected exceeds the bandwidth\n" +
-                                "constraints (2.8kHz) for the 60m band in this region.",
-                                "60m Bandwidth",
+                            MessageBox.Show("您选择的发射滤波器超过了带宽\n" +
+                                "本区域 60m 波段的限制（2.8kHz）。",
+                                "60m 带宽",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                         }
@@ -32885,27 +32885,27 @@ namespace Thetis
                             {
                                 case DSPMode.CWL:
                                 case DSPMode.CWU:
-                                    MessageBox.Show("The frequency " + freq.ToString("f6") + "MHz is not within the\n" +
-                                        "Band specifications for your region (" + ((int)current_region).ToString() + ").",
-                                        "Transmit Error: Out Of Band",
+                                    MessageBox.Show("频率 " + freq.ToString("f6") + "MHz 不在\n" +
+                                        "您所在区域的波段规范（" + ((int)current_region).ToString() + ").",
+                                        "发射错误：带外",
                                         MessageBoxButtons.OK,
                                         MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                                     break;
                                 default:
                                     if (!chkTUN.Checked)
                                     {
-                                        MessageBox.Show("The frequency " + freq.ToString("f6") + "MHz in combination with your TX filter\n" +
-                                            "settings [" + Display.TXFilterLow.ToString() + ", " + Display.TXFilterHigh.ToString() + "] are not within the " +
-                                            "Band specifications for your region (" + ((int)current_region).ToString() + ").",
-                                            "Transmit Error: Out Of Band",
+                                        MessageBox.Show("频率 " + freq.ToString("f6") + "MHz 与您的 TX 滤波器组合\n" +
+                                            "设置 [" + Display.TXFilterLow.ToString() + ", " + Display.TXFilterHigh.ToString() + "] 不在 " +
+                                            "您所在区域的波段规范（" + ((int)current_region).ToString() + ").",
+                                            "发射错误：带外",
                                             MessageBoxButtons.OK,
                                             MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                                     }
                                     else
                                     {
-                                        MessageBox.Show("The frequency " + freq.ToString("f6") + "MHz is not within the\n" +
-                                               "Band specifications for your region (" + ((int)current_region).ToString() + ").",
-                                               "Transmit Error: Out Of Band",
+                                        MessageBox.Show("频率 " + freq.ToString("f6") + "MHz 不在\n" +
+                                               "您所在区域的波段规范（" + ((int)current_region).ToString() + ").",
+                                               "发射错误：带外",
                                                MessageBoxButtons.OK,
                                                MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                                     }
@@ -33383,8 +33383,8 @@ namespace Thetis
             {
                 if (!PowerOn)
                 {
-                    MessageBox.Show("Power must be on to turn on the Tune function.",
-                        "Power is off",
+                    MessageBox.Show("开启调谐功能前必须先开启电源。",
+                        "电源已关闭",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                     chkTUN.Checked = false;
@@ -34065,7 +34065,7 @@ namespace Thetis
                 if (SetupForm.RX2APFControls)
                     SetupForm.RX2APFFreq = ptbCWAPFFreq.Value;
             }
-            lblCWAPFTune.Text = "Tune:  " + ptbCWAPFFreq.Value.ToString();
+            lblCWAPFTune.Text = "调谐:  " + ptbCWAPFFreq.Value.ToString();
             if (sender.GetType() == typeof(PrettyTrackBar))
             {
                 ptbCWAPFFreq.Focus();
@@ -34084,7 +34084,7 @@ namespace Thetis
                 if (SetupForm.RX2APFControls)
                     SetupForm.RX2APFBandwidth = ptbCWAPFBandwidth.Value;
             }
-            lblCWAPFBandwidth.Text = "Bandwidth:  " + ptbCWAPFBandwidth.Value.ToString();
+            lblCWAPFBandwidth.Text = "带宽:  " + ptbCWAPFBandwidth.Value.ToString();
 
             if (sender.GetType() == typeof(PrettyTrackBar))
             {
@@ -34105,8 +34105,8 @@ namespace Thetis
                 // apf_gain = ptbCWAPFGain.Value;
             }
             double gain_value = Math.Round(ptbCWAPFGain.Value / 10.0, 0);
-            // lblCWAPFGain.Text = "Gain:  " + ptbCWAPFGain.Value.ToString();
-            lblCWAPFGain.Text = "Gain:  " + gain_value.ToString();
+            // lblCWAPFGain.Text = "增益:  " + ptbCWAPFGain.Value.ToString();
+            lblCWAPFGain.Text = "增益:  " + gain_value.ToString();
             // if (ptbCWAPFGain.Focused) btnHidden.Focus();
             if (sender.GetType() == typeof(PrettyTrackBar))
             {
@@ -35057,27 +35057,27 @@ namespace Thetis
                     {
                         case DSPMode.CWL: // MW0LGE [2.9.0.7] NOTE, will not get here on tune, as the currentdspmode is changed to USB/LSB in chkTUN_CheckedChanged
                         case DSPMode.CWU:
-                            MessageBox.Show("The frequency " + tx_freq.ToString("f6") + "MHz is not within the\n" +
-                                "Band specifications for your region (" + current_region.ToString() + ").",
-                                "Transmit Error: Out Of Band",
+                            MessageBox.Show("频率 " + tx_freq.ToString("f6") + "MHz 不在\n" +
+                                "您所在区域的波段规范（" + current_region.ToString() + ").",
+                                "发射错误：带外",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                             break;
                         default:
                             if (!chkTUN.Checked)
                             {
-                                MessageBox.Show("The frequency " + tx_freq.ToString("f6") + "MHz in combination with your TX filter\n" +
-                                    "settings [" + Display.TXFilterLow.ToString() + ", " + Display.TXFilterHigh.ToString() + "] are not within the " +
-                                    "Band specifications for your region (" + current_region.ToString() + ").",
-                                    "Transmit Error: Out Of Band",
+                                MessageBox.Show("频率 " + tx_freq.ToString("f6") + "MHz 与您的 TX 滤波器组合\n" +
+                                    "设置 [" + Display.TXFilterLow.ToString() + ", " + Display.TXFilterHigh.ToString() + "] 不在 " +
+                                    "您所在区域的波段规范（" + current_region.ToString() + ").",
+                                    "发射错误：带外",
                                     MessageBoxButtons.OK,
                                     MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                             }
                             else
                             {
-                                MessageBox.Show("The frequency " + tx_freq.ToString("f6") + "MHz is not within the\n" +
-                                       "Band specifications for your region (" + ((int)current_region).ToString() + ").",
-                                       "Transmit Error: Out Of Band",
+                                MessageBox.Show("频率 " + tx_freq.ToString("f6") + "MHz 不在\n" +
+                                       "您所在区域的波段规范（" + ((int)current_region).ToString() + ").",
+                                       "发射错误：带外",
                                        MessageBoxButtons.OK,
                                        MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                             }
@@ -36104,27 +36104,27 @@ namespace Thetis
                     {
                         case DSPMode.CWL:
                         case DSPMode.CWU:
-                            MessageBox.Show("The frequency " + tx_freq.ToString("f6") + "MHz is not within the\n" +
-                                "Band specifications for your region (" + ((int)current_region).ToString() + ").",
-                                "Transmit Error: Out Of Band",
+                            MessageBox.Show("频率 " + tx_freq.ToString("f6") + "MHz 不在\n" +
+                                "您所在区域的波段规范（" + ((int)current_region).ToString() + ").",
+                                "发射错误：带外",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                             break;
                         default:
                             if (!chkTUN.Checked)
                             {
-                                MessageBox.Show("The frequency " + tx_freq.ToString("f6") + "MHz in combination with your TX filter\n" +
-                                    "settings [" + Display.TXFilterLow.ToString() + ", " + Display.TXFilterHigh.ToString() + "] are not within the " +
-                                    "Band specifications for your region (" + ((int)current_region).ToString() + ").",
-                                    "Transmit Error: Out Of Band",
+                                MessageBox.Show("频率 " + tx_freq.ToString("f6") + "MHz 与您的 TX 滤波器组合\n" +
+                                    "设置 [" + Display.TXFilterLow.ToString() + ", " + Display.TXFilterHigh.ToString() + "] 不在 " +
+                                    "您所在区域的波段规范（" + ((int)current_region).ToString() + ").",
+                                    "发射错误：带外",
                                     MessageBoxButtons.OK,
                                     MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                             }
                             else
                             {
-                                MessageBox.Show("The frequency " + tx_freq.ToString("f6") + "MHz is not within the\n" +
-                                       "Band specifications for your region (" + ((int)current_region).ToString() + ").",
-                                       "Transmit Error: Out Of Band",
+                                MessageBox.Show("频率 " + tx_freq.ToString("f6") + "MHz 不在\n" +
+                                       "您所在区域的波段规范（" + ((int)current_region).ToString() + ").",
+                                       "发射错误：带外",
                                        MessageBoxButtons.OK,
                                        MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                             }
@@ -40835,7 +40835,7 @@ namespace Thetis
                     bool save_water = (Display.CurrentDisplayMode == DisplayMode.WATERFALL);
                     if (save_pan || save_water)
                     {
-                        comboDisplayMode.Text = "Spectrum";
+                        comboDisplayMode.Text = "频谱显示";
                     }
                     comboDisplayMode.Items.Remove("Panadapter");
                     comboDisplayMode.Items.Remove("Waterfall");
@@ -40967,7 +40967,7 @@ namespace Thetis
                 }
 
                 RX1Filter = Filter.NONE;
-                //grpFilter.Text = "Filter - "+(sample_rate1/1000).ToString("f0")+"kHz";
+                //grpFilter.Text = "滤波器 - "+(sample_rate1/1000).ToString("f0")+"kHz";
             }
             BINToolStripMenuItem.Enabled = chkBIN.Enabled;
 
@@ -41222,7 +41222,7 @@ namespace Thetis
             high = rx1_filters[(int)rx1_dsp_mode].GetHigh(new_filter);
             rx1_filters[(int)rx1_dsp_mode].LastFilter = new_filter;
 
-            //grpFilter.Text = "Filter - "+rx1_filters[(int)rx1_dsp_mode].GetName(new_filter);
+            //grpFilter.Text = "滤波器 - "+rx1_filters[(int)rx1_dsp_mode].GetName(new_filter);
 
             switch (new_filter)
             {
@@ -43501,7 +43501,7 @@ namespace Thetis
             Audio.FullDuplex = chkFullDuplex.Checked;
             if (chkFullDuplex.Checked)
             {
-                //MessageBox.Show("Full Duplex is On");
+                //MessageBox.Show("全双工已开启");
                 chkFullDuplex.BackColor = Color.Red;
                 txtVFOBFreq_LostFocus(this, EventArgs.Empty);
                 //DttSP.SetThreadProcessingMode(0, 2);
@@ -44083,17 +44083,17 @@ namespace Thetis
                     /*if (comboDisplayMode.Items.Contains("Panafall"))
                         comboDisplayMode.Items.Remove("Panafall");*/  //MW0LGE - rx2
                     if (comboDisplayMode.SelectedIndex < 0)
-                        comboDisplayMode.Text = "Panadapter";
+                        comboDisplayMode.Text = "频谱";
 
                     if (comboDisplayMode.Items.Contains("Panascope"))
                         comboDisplayMode.Items.Remove("Panascope");
                     if (comboDisplayMode.SelectedIndex < 0)
-                        comboDisplayMode.Text = "Panadapter";
+                        comboDisplayMode.Text = "频谱";
 
                     if (comboDisplayMode.Items.Contains("Spectrascope"))
                         comboDisplayMode.Items.Remove("Spectrascope");
                     if (comboDisplayMode.SelectedIndex < 0)
-                        comboDisplayMode.Text = "Pandapter";
+                        comboDisplayMode.Text = "频谱";
                 }
                 else
                 {
@@ -45200,7 +45200,7 @@ namespace Thetis
             high = rx2_filters[(int)rx2_dsp_mode].GetHigh(new_filter);
             rx2_filters[(int)rx2_dsp_mode].LastFilter = new_filter;
 
-            panelRX2Filter.Text = "RX2 Filter - " + rx2_filters[(int)rx2_dsp_mode].GetName(new_filter);
+            panelRX2Filter.Text = "RX2 滤波器 - " + rx2_filters[(int)rx2_dsp_mode].GetName(new_filter);
 
             switch (new_filter)
             {
@@ -45514,11 +45514,11 @@ namespace Thetis
             switch (RX2AGCMode)
             {
                 case AGCMode.FIXD:
-                    lblRX2RF.Text = "Fixed Gain:  " + ptbRX2RF.Value.ToString();
+                    lblRX2RF.Text = "固定增益:  " + ptbRX2RF.Value.ToString();
                     if (!IsSetupFormNull) SetupForm.AGCRX2FixedGain = ptbRX2RF.Value;
                     break;
                 default:
-                    lblRX2RF.Text = "AGC Gain:  " + ptbRX2RF.Value.ToString();
+                    lblRX2RF.Text = "AGC 增益:  " + ptbRX2RF.Value.ToString();
                     if (!IsSetupFormNull) SetupForm.AGCRX2MaxGain = ptbRX2RF.Value;
                     break;
             }
@@ -45557,13 +45557,13 @@ namespace Thetis
             if (chkRX1Preamp.Checked)
             {
                 chkRX1Preamp.BackColor = button_selected_color;
-                chkRX1Preamp.Text = "On";
+                chkRX1Preamp.Text = "开";
                 RX1PreampMode = PreampMode.HPSDR_ON;
             }
             else
             {
                 chkRX1Preamp.BackColor = SystemColors.Control;
-                chkRX1Preamp.Text = "Off";
+                chkRX1Preamp.Text = "关";
                 RX1PreampMode = PreampMode.HPSDR_OFF;
             }
         }
@@ -46629,7 +46629,7 @@ namespace Thetis
                     radio.GetDSPRX(1, 0).RXAGCDecay = 2000;
                     SetupForm.AGCRX2HangThreshold = SetupForm.tbDSPAGCRX2HangThreshold.Value;
                     toolTip1.SetToolTip(comboRX2AGC, "Automatic Gain Control Mode Setting:\n" +
-                        "Long (Attack 2ms, Hang 2000ms, Decay 2000ms)");
+                        "长（启动 2ms，保持 2000ms，衰减 2000ms）");
                     //comboRX2AGC.BackColor = SystemColors.Window;
                     break;
                 case AGCMode.SLOW:
@@ -46642,7 +46642,7 @@ namespace Thetis
                     radio.GetDSPRX(1, 0).RXAGCDecay = 500;
                     SetupForm.AGCRX2HangThreshold = SetupForm.tbDSPAGCRX2HangThreshold.Value;
                     toolTip1.SetToolTip(comboRX2AGC, "Automatic Gain Control Mode Setting:\n" +
-                        "Slow (Attack 2ms, Hang 1000ms, Decay 500ms)");
+                        "慢（启动 2ms，保持 1000ms，衰减 500ms）");
                     //comboRX2AGC.BackColor = SystemColors.Window;
                     break;
                 case AGCMode.MED:
@@ -46654,7 +46654,7 @@ namespace Thetis
                     radio.GetDSPRX(1, 0).RXAGCHang = 0;
                     radio.GetDSPRX(1, 0).RXAGCDecay = 250;
                     toolTip1.SetToolTip(comboRX2AGC, "Automatic Gain Control Mode Setting:\n" +
-                        "Medium (Attack 2ms, Hang OFF, Decay 250ms)");
+                        "中（启动 2ms，保持关，衰减 250ms）");
                     //comboRX2AGC.BackColor = SystemColors.Window;
                     break;
                 case AGCMode.FAST:
@@ -46666,7 +46666,7 @@ namespace Thetis
                     radio.GetDSPRX(1, 0).RXAGCHang = 0;
                     radio.GetDSPRX(1, 0).RXAGCDecay = 50;
                     toolTip1.SetToolTip(comboRX2AGC, "Automatic Gain Control Mode Setting:\n" +
-                       "Fast (Attack 2ms, Hang OFF, Decay 50ms)");
+                       "快速（启动 2ms，保持关，衰减 50ms）");
                     //comboRX2AGC.BackColor = SystemColors.Window;
                     break;
                 case AGCMode.CUSTOM:
@@ -46677,13 +46677,13 @@ namespace Thetis
                     SetupForm.AGCRX2HangThreshold = SetupForm.tbDSPAGCRX2HangThreshold.Value;
 
                     toolTip1.SetToolTip(comboRX2AGC, "Automatic Gain Control Mode Setting:\n" +
-                        "Custom - Set specifics in Setup Form -> DSP -> AGC/ALC");
+                        "自定义 - 在 设置 -> DSP -> AGC/ALC 中指定");
                     // comboRX2AGC.BackColor = SystemColors.Window;
                     break;
                 case AGCMode.FIXD:
                     SetupForm.CustomRX2AGCEnabled = false;
                     toolTip1.SetToolTip(comboAGC, "Automatic Gain Control Mode Setting:\n" +
-                        "Fixed - Set gain with AGC-T control above");
+                        "固定 - 使用上方 AGC-T 控件设置增益");
                     //comboRX2AGC.BackColor = Color.Orange;
                     break;
             }
@@ -46996,8 +46996,8 @@ namespace Thetis
         private void toolStripMenuItemRX1FilterReset_Click(object sender, EventArgs e)
         {
             DialogResult dr = MessageBox.Show(
-                "Are you sure you want to reset all RX1 custom filter settings to the default?",
-                "Reset Filters?",
+                "确定要将所有 RX1 自定义滤波器设置重置为默认值吗？",
+                "重置滤波器？",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
 
@@ -47094,8 +47094,8 @@ namespace Thetis
         private void toolStripMenuItemRX2FilterReset_Click(object sender, EventArgs e)
         {
             DialogResult dr = MessageBox.Show(
-                "Are you sure you want to reset all RX2 custom filter settings to the default?",
-                "Reset Filters?",
+                "确定要将所有 RX2 自定义滤波器设置重置为默认值吗？",
+                "重置滤波器？",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
 
@@ -47885,9 +47885,9 @@ namespace Thetis
             if (rx1_dsp_mode != DSPMode.CWL &&
                 rx1_dsp_mode != DSPMode.CWU)
             {
-                MessageBox.Show("The radio must be in CWL or CWU mode in order to open the " +
-                    "CWX Control Form.",
-                    "CWX Error: Wrong Mode",
+                MessageBox.Show("电台必须处于 CWL 或 CWU 模式才能打开 " +
+                    "CWX 控制窗体。",
+                    "CWX 错误：模式不对",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                 return;
@@ -48145,7 +48145,7 @@ namespace Thetis
 
             if (bSuspendDraw) SuspendDrawing(this);
 
-            this.collapseToolStripMenuItem.Text = "Collapse";
+            this.collapseToolStripMenuItem.Text = "折叠";
 
             this.collapsedDisplay = false;
             rX2ToolStripMenuItem.Visible = false;
@@ -48606,7 +48606,7 @@ namespace Thetis
             if (!this.collapsedDisplay)
                 this.expandedSize = this.Size;
 
-            this.collapseToolStripMenuItem.Text = "Expand";
+            this.collapseToolStripMenuItem.Text = "展开";
             this.collapsedDisplay = true;
             this.rX2ToolStripMenuItem.Visible = true;
             this.dSPToolStripMenuItem.Visible = true;
@@ -52477,16 +52477,16 @@ namespace Thetis
                 nCMasterVersion = cmaster.GetCMVersion();
                 if (nCMasterVersion != Versions._CMASTER_VERSION)
                 {
-                    DialogResult dr = MessageBox.Show("Incorrect version of channelmaster.dll installed.",
-                    "Version error",
+                    DialogResult dr = MessageBox.Show("安装的 channelmaster.dll 版本不正确。",
+                    "版本错误",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                 }
             }
             catch
             {
-                DialogResult dr = MessageBox.Show("Could not find GetCMVersion() in channelmaster.dll .\nEnsure correct version installed.",
-                    "Version function error",
+                DialogResult dr = MessageBox.Show("在 channelmaster.dll 中找不到 GetCMVersion()。\n请确保安装了正确的版本。",
+                    "版本函数错误",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
             }
@@ -52498,16 +52498,16 @@ namespace Thetis
                 nWDSPVersion = WDSP.GetWDSPVersion() * 10; // see comment above
                 if (nWDSPVersion != Versions._WDSP_VERSION)
                 {
-                    DialogResult dr = MessageBox.Show("Incorrect version of wdsp.dll installed.",
-                    "Version error",
+                    DialogResult dr = MessageBox.Show("安装的 wdsp.dll 版本不正确。",
+                    "版本错误",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning);
                 }
             }
             catch
             {
-                DialogResult dr = MessageBox.Show("Could not find GetWDSPVersion() in wdsp.dll .\nEnsure correct version installed.",
-                    "Version function error",
+                DialogResult dr = MessageBox.Show("在 wdsp.dll 中找不到 GetWDSPVersion()。\n请确保安装了正确的版本。",
+                    "版本函数错误",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning);
             }
@@ -52519,8 +52519,8 @@ namespace Thetis
                 nPAVersion = PA19.PA_GetVersion();
                 if (nPAVersion != Versions._PORTAUDIO_VERSION)
                 {
-                    DialogResult dr = MessageBox.Show("Incorrect version of portaudio.dll installed.",
-                    "Version error",
+                    DialogResult dr = MessageBox.Show("安装的 portaudio.dll 版本不正确。",
+                    "版本错误",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning);
                 }
@@ -52528,8 +52528,8 @@ namespace Thetis
             }
             catch
             {
-                DialogResult dr = MessageBox.Show("Could not find PA_GetVersion() in portaudio.dll .\nEnsure correct version installed.",
-                    "Version function error",
+                DialogResult dr = MessageBox.Show("在 portaudio.dll 中找不到 PA_GetVersion()。\n请确保安装了正确的版本。",
+                    "版本函数错误",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning);
             }
@@ -53979,9 +53979,9 @@ namespace Thetis
             //btnDisplayZTB.Enabled = m_bZTBisRecallStore || chkFWCATU.Checked || (chkX2TR.Checked && RX2Enabled); //MW0LGE_21k9rc5 always shown, as we now switch to CTUN on
 
             if (m_bZTBisRecallStore)
-                toolTip1.SetToolTip(btnDisplayZTB, "Recall/Store mode. Left click to recall, right to store Zoom/Pan/Center per band, per RX. Shift for RX2.");
+                toolTip1.SetToolTip(btnDisplayZTB, "调用/存储模式。左键调用，右键存储每个波段、每个 RX 的缩放/平移/居中。按住 Shift 用于 RX2。");
             else
-                toolTip1.SetToolTip(btnDisplayZTB, "Zoom to the band using Region band edges. Shift for RX2.");
+                toolTip1.SetToolTip(btnDisplayZTB, "使用区域波段边缘缩放到波段。按住 Shift 用于 RX2。");
         }
 
         private void btnDisplayZTB_MouseUp(object sender, MouseEventArgs e)
@@ -54270,7 +54270,7 @@ namespace Thetis
             }
             else
             {
-                lblTune.Text = "Limit: "+ sValue;
+                lblTune.Text = "限制: "+ sValue;
             }
         }
         private double m_fTuneDrivePower = -1;
@@ -55061,7 +55061,7 @@ namespace Thetis
                     radio.GetDSPRX(0, 0).SSqlThreshold = nValue / 100f;
                     radio.GetDSPRX(0, 1).SSqlThreshold = nValue / 100f;
 
-                    chkSquelch.Text = "VSQL: " + nValue.ToString();
+                    chkSquelch.Text = "语音静噪: " + nValue.ToString();
                     break;
             }
 
@@ -55464,7 +55464,7 @@ namespace Thetis
                     radio.GetDSPRX(1, 0).SSqlThreshold = nValue / 100f;
                     radio.GetDSPRX(1, 1).SSqlThreshold = nValue / 100f;
 
-                    chkRX2Squelch.Text = "VSQL: " + nValue.ToString();
+                    chkRX2Squelch.Text = "语音静噪: " + nValue.ToString();
                     break;
             }
 

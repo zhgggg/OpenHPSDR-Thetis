@@ -1,4 +1,4 @@
-//=================================================================
+﻿//=================================================================
 // common.cs
 //=================================================================
 // PowerSDR is a C# implementation of a Software Defined Radio.
@@ -355,7 +355,7 @@ namespace Thetis
 							i = checkbox_list.Count+1;
 						}
 						if(i == checkbox_list.Count)
-							MessageBox.Show("Control not found: "+name);
+							MessageBox.Show("未找到控件："+name);
 					}
 				}
 				else if(s.StartsWith("combo"))	// control is a ComboBox
@@ -370,7 +370,7 @@ namespace Thetis
 							if(c.Text != val) Debug.WriteLine("Warning: "+form.Name+"."+name+" did not set to "+val);
 						}
 						if(i == combobox_list.Count)
-							MessageBox.Show("Control not found: "+name);
+							MessageBox.Show("未找到控件："+name);
 					}
 				}
 				else if(s.StartsWith("ud"))
@@ -388,7 +388,7 @@ namespace Thetis
 							i = numericupdown_list.Count+1;
 						}
 						if(i == numericupdown_list.Count)
-							MessageBox.Show("Control not found: "+name);	
+							MessageBox.Show("未找到控件："+name);	
 					}
 				}
 				else if(s.StartsWith("rad"))
@@ -404,7 +404,7 @@ namespace Thetis
 							i = radiobutton_list.Count+1;
 						}
 						if(i == radiobutton_list.Count)
-							MessageBox.Show("Control not found: "+name);
+							MessageBox.Show("未找到控件："+name);
 					}
 				}
 				else if(s.StartsWith("txt"))
@@ -418,7 +418,7 @@ namespace Thetis
 							i = textbox_list.Count+1;
 						}
 						if(i == textbox_list.Count)
-							MessageBox.Show("Control not found: "+name);
+							MessageBox.Show("未找到控件："+name);
 					}
 				}
 				else if(s.StartsWith("tb"))
@@ -436,7 +436,7 @@ namespace Thetis
 							i = trackbar_list.Count+1;
 						}
 						if(i == trackbar_list.Count)
-							MessageBox.Show("Control not found: "+name);
+							MessageBox.Show("未找到控件："+name);
 					}
 				}
 				else if(s.StartsWith("clrbtn"))
@@ -459,7 +459,7 @@ namespace Thetis
 								i = colorbutton_list.Count+1;
 							}
 							if(i == colorbutton_list.Count)
-								MessageBox.Show("Control not found: "+name);
+								MessageBox.Show("未找到控件："+name);
 						}
 					}
 				}

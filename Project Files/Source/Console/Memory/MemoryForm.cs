@@ -571,8 +571,8 @@ namespace Thetis
                     return;
             }
 
-            DialogResult dr = MessageBox.Show("Are you sure you want to remove the selected row(s)?",
-                "Remove Row(s)?",
+            DialogResult dr = MessageBox.Show("确定要移除选中的行吗？",
+                "移除行？",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question);
 
@@ -1313,7 +1313,7 @@ namespace Thetis
 
                                             if ((bool)dataGridView1["Recording", aa].Value == true)
                                             {
-                                                AutoClosingMessageBox.Show("A Scheduled Recording has been started.\nYou can end the recording early by Checking OFF both Weekly & Monthly boxes. ", "Scheduled Recording Started", 4000);
+                                                AutoClosingMessageBox.Show("计划录音已开始。\n您可以通过取消勾选“每周”和“每月”两个复选框来提前结束录音。 ", "计划录音已开始", 4000);
 
                                                 Debug.WriteLine("Start AUDIO RECORDING1 ");
 
@@ -1327,7 +1327,7 @@ namespace Thetis
                                             } // Recording ON
                                             else
                                             {
-                                                AutoClosingMessageBox.Show("Scheduled Frequency Change has occured\n", "Scheduled Frequency change", 4000);
+                                                AutoClosingMessageBox.Show("计划频率更改已发生\n", "计划频率更改", 4000);
                                                 
                                             }
 
@@ -1336,13 +1336,13 @@ namespace Thetis
                                         } // !MOX
                                         else // transmitting so pop up message box
                                         {
-                                            AutoClosingMessageBox.Show("Scheduled Frequency change and/or Recording could not take place while Transmitting", "Scheduled Memory Event", 4000);
+                                            AutoClosingMessageBox.Show("发射期间无法执行计划频率更改和/或录音", "计划存储事件", 4000);
 
 
                                             /*
-                                            MessageBox.Show("You were transmitting during a Scheduled Frequency change.\n" +
-                                               "You will need to manually go to the Frequency to keep your Schedule.",
-                                               "Frequency: " + dataGridView1["RXFreq", aa].Value + " Mhz.",
+                                            MessageBox.Show("您在计划频率更改期间正在发射。\n" +
+                                               "您需要手动转到该频率以保持计划。",
+                                               "频率：" + dataGridView1["RXFreq", aa].Value + " MHz。",
                                                MessageBoxButtons.OK,
                                                MessageBoxIcon.Error);
                                                */

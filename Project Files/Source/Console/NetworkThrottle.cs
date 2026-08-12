@@ -24,8 +24,8 @@ namespace Thetis
             {
                 if (showErrors)
                 {
-                    MessageBox.Show("Unable to open LocalMachine registry base key.",
-                        "Error",
+                    MessageBox.Show("无法打开 LocalMachine 注册表基础键。",
+                        "错误",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                 }
@@ -41,8 +41,8 @@ namespace Thetis
                 {
                     if (showErrors)
                     {
-                        MessageBox.Show("Unable to open SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Multimedia\\SystemProfile registry key.",
-                            "Error",
+                        MessageBox.Show("无法打开 SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Multimedia\\SystemProfile 注册表键。",
+                            "错误",
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                     }
@@ -64,8 +64,8 @@ namespace Thetis
                             {
                                 if (showErrors)
                                 {
-                                    MessageBox.Show("Unsuitable value in NetworkThrottlingIndex key.",
-                                        "Error",
+                                    MessageBox.Show("NetworkThrottlingIndex 键中的值不合适。",
+                                        "错误",
                                         MessageBoxButtons.OK,
                                         MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                                 }
@@ -76,8 +76,8 @@ namespace Thetis
                     {
                         if (showErrors)
                         {
-                            MessageBox.Show("Unable to GetValue on NetworkThrottlingIndex registry entry.",
-                                "Error",
+                            MessageBox.Show("无法读取 NetworkThrottlingIndex 注册表项的值。",
+                                "错误",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                         }
@@ -101,8 +101,8 @@ namespace Thetis
                 }
                 catch
                 {
-                    MessageBox.Show("Unable to open LocalMachine registry base key.",
-                        "Error",
+                    MessageBox.Show("无法打开 LocalMachine 注册表基础键。",
+                        "错误",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                 }
@@ -116,8 +116,8 @@ namespace Thetis
                     }
                     catch
                     {
-                        MessageBox.Show("Unable to open SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Multimedia\\SystemProfile registry key.",
-                            "Error",
+                        MessageBox.Show("无法打开 SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Multimedia\\SystemProfile 注册表键。",
+                            "错误",
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                     }
@@ -132,8 +132,8 @@ namespace Thetis
                         }
                         catch
                         {
-                            MessageBox.Show("Unable to SetValue on NetworkThrottlingIndex registry entry.",
-                            "Error",
+                            MessageBox.Show("无法设置 NetworkThrottlingIndex 注册表项的值。",
+                            "错误",
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                         }
@@ -145,8 +145,8 @@ namespace Thetis
             else
             {
                 //msgbox need to be admin !
-                MessageBox.Show("You need to be an Administrator. Please run Thetis 'As Administrator'.",
-                    "No Administrator Rights",
+                MessageBox.Show("您需要是管理员。请以“管理员身份”运行 Thetis。",
+                    "无管理员权限",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
             }

@@ -1,4 +1,4 @@
-//=================================================================
+﻿//=================================================================
 // eqform.cs
 //=================================================================
 // PowerSDR is a C# implementation of a Software Defined Radio.
@@ -1392,7 +1392,7 @@ namespace Thetis
 				{
 					if(value.Length < 4) 
 					{
-						MessageBox.Show("Error setting RX EQ");
+						MessageBox.Show("设置 RX EQ 出错");
 						return;
 					}
 					tbRXEQPreamp.Value = Math.Max(tbRXEQPreamp.Minimum, Math.Min(tbRXEQPreamp.Maximum, value[0]));
@@ -1404,7 +1404,7 @@ namespace Thetis
 				{
 					if(value.Length < 11)
 					{
-						MessageBox.Show("Error setting RX EQ");
+						MessageBox.Show("设置 RX EQ 出错");
 						return; 
 					}
 					tbRXEQPreamp.Value = Math.Max(tbRXEQPreamp.Minimum, Math.Min(tbRXEQPreamp.Maximum, value[0]));
@@ -1486,7 +1486,7 @@ namespace Thetis
                 //{
                 //    if(value.Length < 4)
                 //    {
-                //        MessageBox.Show("Error setting TX EQ");
+                //        MessageBox.Show("设置 TX EQ 出错");
                 //        return;
                 //    }
                 //    //tbTXEQPreamp.Value = Math.Max(tbTXEQPreamp.Minimum, Math.Min(tbTXEQPreamp.Maximum, value[0]));
@@ -1498,7 +1498,7 @@ namespace Thetis
                 //{
                 //    if(value.Length < 11)
                 //    {
-                //        MessageBox.Show("Error setting TX EQ");
+                //        MessageBox.Show("设置 TX EQ 出错");
                 //        return;
                 //    }
                 tbTXEQPre.Value = Math.Max(tbTXEQPre.Minimum, Math.Min(tbTXEQPre.Maximum, value[0]));
@@ -1769,9 +1769,9 @@ namespace Thetis
 		private void btnRXEQReset_Click(object sender, System.EventArgs e)
 		{
 			DialogResult dr = MessageBox.Show(
-				"Are you sure you want to reset the Receive Equalizer\n"+
-				"to flat (zero)?",
-				"Are you sure?",
+				"确定要重置接收均衡器吗\n"+
+				"为平坦（零）？",
+				"确定吗？",
 				MessageBoxButtons.YesNo,
 				MessageBoxIcon.Question);
 			
@@ -1790,9 +1790,9 @@ namespace Thetis
         //private void btnTXEQReset_Click(object sender, System.EventArgs e)
         //{
         //    DialogResult dr = MessageBox.Show(
-        //        "Are you sure you want to reset the Transmit Equalizer\n"+
-        //        "to flat (zero)?",
-        //        "Are you sure?",
+        //        "确定要重置发射均衡器吗\n"+
+        //        "为平坦（零）？",
+        //        "确定吗？",
         //        MessageBoxButtons.YesNo,
         //        MessageBoxIcon.Question);
 			

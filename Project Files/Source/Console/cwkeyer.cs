@@ -1,4 +1,4 @@
-/* 	This file is part of a program that implements a Software-Defined Radio.
+﻿/* 	This file is part of a program that implements a Software-Defined Radio.
 	The code in this file is derived from routines originally written by
 	Pierre-Philippe Coupard for his CWirc X-chat program. That program
 	is issued under the GPL and is
@@ -229,7 +229,7 @@ namespace PowerSDR
 						}
 						catch(Exception) 
 						{
-							MessageBox.Show("Primary Keyer Port ["+primary_conn_port+"] could not be opened.");	
+							MessageBox.Show("主电键端口 ["+primary_conn_port+"] 无法打开。");	
 							primary_conn_port = "Radio";
 						}
 						break;
@@ -251,7 +251,7 @@ namespace PowerSDR
 						break;
 					case "CAT":
 						if(!cat_enabled)
-							MessageBox.Show("CAT was selected for the Keyer Secondary Port, but CAT is not enabled.");
+							MessageBox.Show("电键器副端口选择了 CAT，但 CAT 未启用。");
 
 						break;
 #if false
@@ -262,7 +262,7 @@ namespace PowerSDR
 						{ 
 							if ( ! c.PTTBitBangEnabled || c.serialPTT == null ) 
 							{ 
-								MessageBox.Show("Bit Bang PTT was selected for the Keyer Secondary Port, but Bit Bang PTT is not enabled.");
+								MessageBox.Show("电键器副端口选择了 Bit Bang PTT，但 Bit Bang PTT 未启用。");
 							}						}
 						break; 
 #endif 
@@ -278,7 +278,7 @@ namespace PowerSDR
 						}
 						catch(Exception) 
 						{
-							MessageBox.Show("Comport for keyer program could not be opened\n");
+							MessageBox.Show("电键器程序的 COM 端口无法打开\n");
 							secondary_conn_port = "None";
 						}
 						break;

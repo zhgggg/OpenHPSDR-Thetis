@@ -1,4 +1,4 @@
-//=================================================================
+﻿//=================================================================
 // wave.cs
 //=================================================================
 // PowerSDR is a C# implementation of a Software Defined Radio.
@@ -660,8 +660,8 @@ namespace Thetis
 
 			if(!File.Exists(filename))
 			{
-				MessageBox.Show("Filename doesn't exist. ("+filename+")",
-					"Bad Filename",
+				MessageBox.Show("文件名不存在。（"+filename+")",
+					"无效文件名",
 					MessageBoxButtons.OK,
 					MessageBoxIcon.Error);
 				if(currently_playing>=0) file_list.RemoveAt(currently_playing); // MW0LGE fix -1 error
@@ -676,7 +676,7 @@ namespace Thetis
 			}
 			catch(Exception)
 			{
-				MessageBox.Show("File is already open.");
+				MessageBox.Show("文件已打开。");
 				return false;
 			}
             
@@ -684,8 +684,8 @@ namespace Thetis
                 reader.PeekChar() != 'R')
 			{
 				reader.Close();
-				MessageBox.Show("File is not in the correct format.",
-					"Wrong File Format",
+				MessageBox.Show("文件格式不正确。",
+					"文件格式错误",
 					MessageBoxButtons.OK,
 					MessageBoxIcon.Error);
 				file_list.RemoveAt(currently_playing);
@@ -708,8 +708,8 @@ namespace Thetis
             if (reader.BaseStream.Position == reader.BaseStream.Length)
 			{
 				reader.Close();
-				MessageBox.Show("File is not in the correct format.",
-					"Wrong File Format",
+				MessageBox.Show("文件格式不正确。",
+					"文件格式错误",
 					MessageBoxButtons.OK,
 					MessageBoxIcon.Error);
 				file_list.RemoveAt(currently_playing);
@@ -719,8 +719,8 @@ namespace Thetis
 			if(riff.riff_type != 0x45564157)
 			{
 				reader.Close();	
-				MessageBox.Show("File is not an RIFF Wave file.",
-					"Wrong file format",
+				MessageBox.Show("文件不是 RIFF Wave 文件。",
+					"文件格式错误",
 					MessageBoxButtons.OK,
 					MessageBoxIcon.Error);
 				file_list.RemoveAt(currently_playing);
@@ -731,8 +731,8 @@ namespace Thetis
 				(fmt.format == 1 && fmt.sample_rate != Audio.SampleRate1))
 			{
 				reader.Close();	
-				MessageBox.Show("File has the wrong sample rate.",
-					"Wrong Sample Rate",
+				MessageBox.Show("文件采样率不对。",
+					"采样率错误",
 					MessageBoxButtons.OK,
 					MessageBoxIcon.Error);
 				file_list.RemoveAt(currently_playing);
@@ -742,8 +742,8 @@ namespace Thetis
 			if(fmt.channels != 2)
 			{
 				reader.Close();	
-				MessageBox.Show("Wave File is not stereo.",
-					"Wrong Number of Channels",
+				MessageBox.Show("Wave 文件不是立体声。",
+					"声道数错误",
 					MessageBoxButtons.OK,
 					MessageBoxIcon.Error);
 				file_list.RemoveAt(currently_playing);
@@ -984,7 +984,7 @@ namespace Thetis
 
              	WaveThing.wave_file_writer[0].Stop();
 				checkBoxRecord.BackColor = SystemColors.Control;
-				//MessageBox.Show("The file has been written to the following location:\n"+file_name);
+				//MessageBox.Show("文件已写入以下位置：\n"+file_name);
 			}
 		}
 
@@ -1007,9 +1007,9 @@ namespace Thetis
                     Application.DoEvents();
 					DialogResult dr = MessageBox.Show(
 						(string)lstPlaylist.Items[i]+
-						" is currently playing.\n"+
-						"Stop playing and remove from Playlist?",
-						"Stop and Remove?",
+						" 正在播放。\n"+
+						"停止播放并从播放列表中移除？",
+						"停止并移除？",
 						MessageBoxButtons.YesNo,
 						MessageBoxIcon.Question);
 
@@ -1334,9 +1334,9 @@ namespace Thetis
 
                 //dd if (console.checkBoxID.Checked == false) // ke9ns add
                 //{
-                //    MessageBox.Show("The 'Over the Air' Quick audio recording has been successfully created.\n" +
-                //        "Key the radio with either PTT or MOX and click on the Play button to play back the Quick audio recording over the air.");
-                //    // MessageBox.Show("The file has been written to the following location:\n"+file_name);
+                //    MessageBox.Show("“空中”快速音频录音已成功创建。\n" +
+                //        "用 PTT 或 MOX 键控电台，然后点击播放按钮即可在空中回放快速音频录音。");
+                //    // MessageBox.Show("文件已写入以下位置：\n"+file_name);
                 //}
 
 //                 Audio.RecordRXPreProcessed = temp_record; //return to original state
@@ -1700,8 +1700,8 @@ namespace Thetis
 
                 if (!File.Exists(file_name1))
                 {
-                    MessageBox.Show("Filename doesn't exist. (" + file_name1 + ")",
-                        "Bad Filename",
+                    MessageBox.Show("文件名不存在。（" + file_name1 + ")",
+                        "无效文件名",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error);
                     TXIDBoxTS.Checked = false;
@@ -2178,7 +2178,7 @@ namespace Thetis
 			}
 			catch(Exception)
 			{
-				MessageBox.Show("File is already open.");
+				MessageBox.Show("文件已打开。");
 				valid = false;
 				return;
 			}

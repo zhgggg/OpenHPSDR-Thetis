@@ -1,4 +1,4 @@
-//=================================================================
+﻿//=================================================================
 // database.cs
 //=================================================================
 // Thetis is a C# implementation of a Software Defined Radio.
@@ -8494,9 +8494,9 @@ namespace Thetis
             //}
             //    catch (Exception ex)
             //    {
-            //        MessageBox.Show("A database write to file operation failed.  " +
-            //            "The exception error was:\n\n" + ex.Message,
-            //            "ERROR: Database Write Error",
+            //        MessageBox.Show("数据库写入文件操作失败。  " +
+            //            "异常错误为：\n\n" + ex.Message,
+            //            "错误：数据库写入错误",
             //            MessageBoxButtons.OK, MessageBoxIcon.Error);
             //    }
             WriteDB(file_name, ds);
@@ -8514,9 +8514,9 @@ namespace Thetis
             // }
             // catch (Exception ex)
             // {
-            //     MessageBox.Show("A database write to file operation failed.  " +
-            //         "The exception error was:\n\n" + ex.Message,
-            //         "ERROR: Database Write Error",
+            //     MessageBox.Show("数据库写入文件操作失败。  " +
+            //         "异常错误为：\n\n" + ex.Message,
+            //         "错误：数据库写入错误",
             //         MessageBoxButtons.OK, MessageBoxIcon.Error);
             //     return false;
             // }
@@ -8535,9 +8535,9 @@ namespace Thetis
             }
             catch (Exception ex)
             {
-                MessageBox.Show("A database write to file operation failed.  " +
-                    "The exception error was:\n\n" + ex.Message,
-                    "ERROR: Database Write Error",
+                MessageBox.Show("数据库写入文件操作失败。  " +
+                    "异常错误为：\n\n" + ex.Message,
+                    "错误：数据库写入错误",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
@@ -8578,7 +8578,7 @@ namespace Thetis
                 }
                 else //if(rows.Length > 1)	// this should never happen
                 {
-                    MessageBox.Show("Error reading BandInfo table.", "Database Error",
+                    MessageBox.Show("读取 BandInfo 表出错。", "数据库错误",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                     outStr = "Error";
                     return false;
@@ -8586,7 +8586,7 @@ namespace Thetis
             }
             catch (Exception e)
             {
-                MessageBox.Show(e.Message + "\n\n\n" + e.StackTrace, "Database Error",
+                MessageBox.Show(e.Message + "\n\n\n" + e.StackTrace, "数据库错误",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 outStr = "Error";
                 return false;
@@ -8626,7 +8626,7 @@ namespace Thetis
 
         //    if (rows.Length == 0)
         //    {
-        //        MessageBox.Show("No Entries found for Band: " + band, "No Entry Found",
+        //        MessageBox.Show("未找到波段的条目：" + band, "未找到条目",
         //            MessageBoxButtons.OK, MessageBoxIcon.Warning);
         //        mode = "";
         //        filter = "";
@@ -8701,7 +8701,7 @@ namespace Thetis
 
         //    if (rows.Length == 0)
         //    {
-        //        MessageBox.Show("No Entries found for Band: " + band, "No Entry Found",
+        //        MessageBox.Show("未找到波段的条目：" + band, "未找到条目",
         //            MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
         //    }
@@ -8730,7 +8730,7 @@ namespace Thetis
         //    }
         //    catch (Exception)
         //    {
-        //        MessageBox.Show("No Entries found to Delete for Band: " + band, "No Entry Found",
+        //        MessageBox.Show("未找到要删除的波段条目：" + band, "未找到条目",
         //          MessageBoxButtons.OK, MessageBoxIcon.Warning);
         //    }
 
@@ -8763,7 +8763,7 @@ namespace Thetis
         //    }
         //    catch (Exception)
         //    {
-        //        MessageBox.Show("problem found sorting entry for Band: " + band, "No Entry Found",
+        //        MessageBox.Show("为波段排序条目时发现问题：" + band, "未找到条目",
         //                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
         //    }
 
@@ -9033,7 +9033,7 @@ namespace Thetis
             }
             catch (Exception)  // Something is seriously wrong with the file.
             {
-                //MessageBox.Show("The file: " + filename + " could not be read successfully.","Error",
+                //MessageBox.Show("文件：" + filename + " 无法成功读取。","错误",
                 //    MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }

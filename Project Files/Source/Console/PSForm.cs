@@ -724,8 +724,8 @@ namespace Thetis
         {
             if(checkLoopback.Checked && (console.SampleRateRX1 != 192000 || console.SampleRateRX2 != 192000))
             {
-                DialogResult dr = MessageBox.Show("This feature can only be used with sample rates set to 192KHz.",
-                    "Sample Rate Issue",
+                DialogResult dr = MessageBox.Show("此功能只能在采样率设置为 192KHz 时使用。",
+                    "采样率问题",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Stop, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
 

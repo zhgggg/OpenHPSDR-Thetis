@@ -138,8 +138,8 @@ namespace Thetis
                writer.WriteLine(DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToShortTimeString() + " " +
                    "File not found ("+path + ".xml.\n");
                writer.Close();
-               MessageBox.Show("Error reading skin.  File not found.",
-                   "Skin file error",
+               MessageBox.Show("读取皮肤出错。文件未找到。",
+                   "皮肤文件错误",
                    MessageBoxButtons.OK,
                    MessageBoxIcon.Error);*/
                 return true;
@@ -156,8 +156,8 @@ namespace Thetis
                 writer.WriteLine(DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToShortTimeString() + " " +
                     ex.Message + "\n\n" + ex.StackTrace + "\n");
                 writer.Close();
-                MessageBox.Show("Error reading Skin file.\n\n" + ex.Message + "\n\n" + ex.StackTrace,
-                    "Skin file error",
+                MessageBox.Show("读取皮肤文件出错。\n\n" + ex.Message + "\n\n" + ex.StackTrace,
+                    "皮肤文件错误",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
                 return false;

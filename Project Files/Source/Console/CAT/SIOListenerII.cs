@@ -1,4 +1,4 @@
-//=================================================================
+﻿//=================================================================
 // SIOListener.cs
 //=================================================================
 // Copyright (C) 2005  Bob Tracy
@@ -57,8 +57,8 @@ namespace Thetis
                     {
                         console.SetupForm.copyCATPropsToDialogVars(); // need to make sure the props on the setup page get reset 
                     }
-                    MessageBox.Show("Could not initialize CAT control.  Exception was:\n\n " + ex.Message +
-                        "\n\nCAT control has been disabled.", "Error Initializing CAT control",
+                    MessageBox.Show("无法初始化 CAT 控制。异常信息：\n\n " + ex.Message +
+                        "\n\nCAT 控制已被禁用。", "初始化 CAT 控件出错",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
@@ -350,8 +350,8 @@ namespace Thetis
                     {
                         console.SetupForm.copyCAT2PropsToDialogVars(); // need to make sure the props on the setup page get reset 
                     }
-                    MessageBox.Show("Could not initialize CAT control.  Exception was:\n\n " + ex.Message +
-                        "\n\nCAT control has been disabled.", "Error Initializing CAT control",
+                    MessageBox.Show("无法初始化 CAT 控制。异常信息：\n\n " + ex.Message +
+                        "\n\nCAT 控制已被禁用。", "初始化 CAT 控件出错",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
@@ -582,8 +582,8 @@ namespace Thetis
                     {
                         console.SetupForm.copyCAT3PropsToDialogVars(); // need to make sure the props on the setup page get reset 
                     }
-                    MessageBox.Show("Could not initialize CAT control.  Exception was:\n\n " + ex.Message +
-                        "\n\nCAT control has been disabled.", "Error Initializing CAT control",
+                    MessageBox.Show("无法初始化 CAT 控制。异常信息：\n\n " + ex.Message +
+                        "\n\nCAT 控制已被禁用。", "初始化 CAT 控件出错",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
@@ -810,8 +810,8 @@ namespace Thetis
                        {
                            console.SetupForm.copyCAT4PropsToDialogVars(); // need to make sure the props on the setup page get reset 
                        }
-                       MessageBox.Show("Could not initialize CAT control.  Exception was:\n\n " + ex.Message +
-                           "\n\nCAT control has been disabled.", "Error Initializing CAT control",
+                       MessageBox.Show("无法初始化 CAT 控制。异常信息：\n\n " + ex.Message +
+                           "\n\nCAT 控制已被禁用。", "初始化 CAT 控件出错",
                            MessageBoxButtons.OK, MessageBoxIcon.Error);
                    }
                } 
@@ -1039,8 +1039,8 @@ namespace Thetis
                     {
                         console.SetupForm.copyAndromedaCATPropsToDialogVars(); // need to make sure the props on the setup page get reset 
                     }
-                    MessageBox.Show("Could not initialize Andromeda CAT control.  Exception was:\n\n " + ex.Message +
-                        "\n\nCAT control has been disabled.", "Error Initializing CAT control",
+                    MessageBox.Show("无法初始化 Andromeda CAT 控制。异常信息：\n\n " + ex.Message +
+                        "\n\nCAT 控制已被禁用。", "初始化 CAT 控件出错",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
@@ -1213,8 +1213,8 @@ namespace Thetis
                     {
                         console.SetupForm.copyAriesCATPropsToDialogVars(); // need to make sure the props on the setup page get reset 
                     }
-                    MessageBox.Show("Could not initialize Aries CAT control.  Exception was:\n\n " + ex.Message +
-                        "\n\nCAT control has been disabled.", "Error Initializing CAT control",
+                    MessageBox.Show("无法初始化 Aries CAT 控制。异常信息：\n\n " + ex.Message +
+                        "\n\nCAT 控制已被禁用。", "初始化 CAT 控件出错",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
@@ -1387,8 +1387,8 @@ namespace Thetis
                     {
                         console.SetupForm.copyGanymedeCATPropsToDialogVars(); // need to make sure the props on the setup page get reset 
                     }
-                    MessageBox.Show("Could not initialize Ganymede CAT control.  Exception was:\n\n " + ex.Message +
-                        "\n\nCAT control has been disabled.", "Error Initializing CAT control",
+                    MessageBox.Show("无法初始化 Ganymede CAT 控制。异常信息：\n\n " + ex.Message +
+                        "\n\nCAT 控制已被禁用。", "初始化 CAT 控件出错",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }

@@ -1,4 +1,4 @@
-//=================================================================
+﻿//=================================================================
 // setup.cs
 //=================================================================
 // Thetis is a C# implementation of a Software Defined Radio.
@@ -159,8 +159,8 @@ namespace Thetis
             comboAudioBuffer2.Text = "1024";
             comboAudioBuffer3.Text = "1024";
             comboDisplayLabelAlign.Text = "Auto";
-            comboColorPalette.Text = "enhanced";
-            comboRX2ColorPalette.Text = "enhanced";
+            comboColorPalette.Text = "增强";
+            comboRX2ColorPalette.Text = "增强";
             comboTXLabelAlign.Text = "Cntr";
             //MW0LGE_21g comboDisplayDriver.Text = "DirectX";
 
@@ -262,17 +262,17 @@ namespace Thetis
             comboRX2DispWinType.Text = "Hann";
             comboDispPanDetector.Text = "Peak";
             comboDispWFDetector.Text = "Peak";
-            comboDispPanAveraging.Text = "Log Recursive";
-            comboDispWFAveraging.Text = "Log Recursive";
+            comboDispPanAveraging.Text = "递归日志";
+            comboDispWFAveraging.Text = "递归日志";
             comboRX2DispPanDetector.Text = "Peak";
-            comboRX2DispPanAveraging.Text = "Log Recursive";
+            comboRX2DispPanAveraging.Text = "递归日志";
             comboRX2DispWFDetector.Text = "Peak";
-            comboRX2DispWFAveraging.Text = "Log Recursive";
+            comboRX2DispWFAveraging.Text = "递归日志";
             comboTXDispPanDetector.Text = "Peak";
-            comboTXDispPanAveraging.Text = "Log Recursive";
+            comboTXDispPanAveraging.Text = "递归日志";
             comboTXDispWinType.Text = "Hann";
             comboTXDispWFDetector.Text = "Peak";
-            comboTXDispWFAveraging.Text = "Log Recursive";
+            comboTXDispWFAveraging.Text = "递归日志";
             comboKeyerConnKeyLine.SelectedIndex = 0;
             comboKeyerConnSecondary.SelectedIndex = 0;
             comboKeyerConnPTTLine.SelectedIndex = 0;
@@ -1030,9 +1030,9 @@ namespace Thetis
 
             if (!Directory.Exists(path))
             {
-                MessageBox.Show("The console presentation files (skins) were not found.\n" +
-                    "Appearance will suffer until this is rectified.\n",
-                    "Skins files not found",
+                MessageBox.Show("未找到控制台界面文件（皮肤）。\n" +
+                    "在此之前界面外观会受到影响。\n",
+                    "未找到皮肤文件",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST); //MW0LGE_[2.9.0.7]);
                 return;
@@ -1047,9 +1047,9 @@ namespace Thetis
 
             if (comboAppSkin.Items.Count == 0)
             {
-                MessageBox.Show("The console presentation files (skins) were not found.\n" +
-                    "Appearance will suffer until this is rectified.\n",
-                    "Skins files not found",
+                MessageBox.Show("未找到控制台界面文件（皮肤）。\n" +
+                    "在此之前界面外观会受到影响。\n",
+                    "未找到皮肤文件",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST); //MW0LGE_[2.9.0.7]);
                 return;
@@ -1449,7 +1449,7 @@ namespace Thetis
             DB.PurgeMeters(MeterManager.GetFormGuidList()); // clear the db of any meter info before we try to add it
             if (!MeterManager.StoreSettings2(ref a))
             {
-                MessageBox.Show("There was an issue storing the settings for MultiMeter.", "MultiMeter StoreSettings",
+                MessageBox.Show("存储万用表设置时出现问题。", "万用表存储设置",
                                     MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
             }
             //
@@ -1695,7 +1695,7 @@ namespace Thetis
             {
                 if (!MeterManager.RestoreSettings2(ref a)) // pass this dictionary of settings to the meter manager to restore from
                 {
-                    MessageBox.Show("There was an issue restoring the settings for MultiMeter. Please remove all meters, re-add, and restart Thetis.", "MultiMeter RestoreSettings",
+                    MessageBox.Show("恢复万用表设置时出现问题。请移除所有仪表，重新添加后重启 Thetis。", "万用表恢复设置",
                         MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                 }
             }
@@ -6830,7 +6830,7 @@ namespace Thetis
             {
                 if (value.Length < 32)
                 {
-                    MessageBox.Show("Error setting CFC EQ");
+                    MessageBox.Show("设置 CFC EQ 出错");
                     return;
                 }
                 tbCFCPRECOMP.Value = Math.Max(tbCFCPRECOMP.Minimum, Math.Min(tbCFCPRECOMP.Maximum, value[0]));
@@ -7029,7 +7029,7 @@ namespace Thetis
                 chkDisableRXOut.Visible = false;
                 chkBPF2Gnd.Visible = true;
                 chkEnableXVTRHF.Visible = true;
-                toolTip1.SetToolTip(chkEXT2OutOnTx, "Enable Rx BYPASS during transmit.");
+                toolTip1.SetToolTip(chkEXT2OutOnTx, "发射时启用 Rx 旁路。");
             }
             else
             {
@@ -7094,7 +7094,7 @@ namespace Thetis
                 tpAlex2FilterControl.Text = "BPF2";
                 labelAlex1FilterHPF.Text = "BPF1";
                 chkAlexHPFBypass.Text = "ByPass/55 MHz BPF";
-                chkDisableHPFonTX.Text = "BPF ByPass on TX";
+                chkDisableHPFonTX.Text = "发射时旁路 BPF";
                 labelAlexFilterActive.Location = new Point(275, 0);
                 ud6mRx2LNAGainOffset.Visible = true;
                 lblRx26mLNA.Visible = true;
@@ -7131,7 +7131,7 @@ namespace Thetis
             }
             else
             {
-                tpAlexControl.Text = "Ant/Filters";
+                tpAlexControl.Text = "天线/滤波器";
                 chkHFTRRelay.Visible = true;
                 chkHFTRRelay.Enabled = true;
             }
@@ -7294,10 +7294,10 @@ namespace Thetis
                 !chkGeneralRXOnly.Checked)
             {
                 DialogResult dr = MessageBox.Show(
-                    "Unchecking Receive Only while in Unsupported Card mode may \n" +
-                    "cause damage to your SDR-1000 hardware.  Are you sure you want \n" +
-                    "to enable transmit?",
-                    "Warning: Enable Transmit?",
+                    "在不支持的声卡模式下取消勾选“仅接收”可能会 \n" +
+                    "可能损坏您的 SDR-1000 硬件。确定要继续 \n" +
+                    "以启用发射？",
+                    "警告：启用发射？",
                     MessageBoxButtons.YesNo,
                     MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2, Common.MB_TOPMOST); //MW0LGE_[2.9.0.7]);
                 if (dr == DialogResult.No)
@@ -7327,8 +7327,8 @@ namespace Thetis
         private void btnGeneralCalLevelStart_Click(object sender, System.EventArgs e)
         {
             DialogResult dr = MessageBox.Show(
-            "Is the calibrated signal present at the correct frequency?",
-            "Level Calibration Check",
+            "校准信号是否以正确的频率存在？",
+            "电平校准检查",
             MessageBoxButtons.YesNo,
             MessageBoxIcon.Question);
             if (dr == DialogResult.No) return; //MW0LGE_[2.9.0.6] double check we want to do this, prevents accidental click from changing config
@@ -7373,7 +7373,7 @@ namespace Thetis
         private void CalibrateFreq()
         {
             bool done = console.CalibrateFreq((float)udGeneralCalFreq1.Value);
-            if (done) MessageBox.Show("Frequency Calibration complete.");
+            if (done) MessageBox.Show("频率校准完成。");
             btnGeneralCalFreqStart.Enabled = true;
         }
 
@@ -7385,7 +7385,7 @@ namespace Thetis
                 progress,
                 false);
 
-            if (done) MessageBox.Show("Level Calibration complete.");
+            if (done) MessageBox.Show("电平校准完成。");
             btnGeneralCalLevelStart.Enabled = true;
             btnResetLevelCal.Enabled = true;
         }
@@ -7397,7 +7397,7 @@ namespace Thetis
                 (float)udGeneralCalRX2Freq2.Value,
                 progress,
                 false);
-            if (done) MessageBox.Show("Level Calibration complete.");
+            if (done) MessageBox.Show("电平校准完成。");
             btnCalLevel.Enabled = true;
         }
 
@@ -7418,10 +7418,10 @@ namespace Thetis
                 comboGeneralProcessPriority.Focused)
             {
                 DialogResult dr = MessageBox.Show(
-                    "Setting the Process Priority to Realtime can cause the system to become unresponsive.\n" +
-                    "This setting is not recommended.\n" +
-                    "Are you sure you want to change to Realtime?",
-                    "Warning: Realtime Not Recommended",
+                    "将进程优先级设置为实时可能导致系统无响应。\n" +
+                    "不建议使用此设置。\n" +
+                    "确定要切换到实时优先级吗？",
+                    "警告：不建议使用实时优先级",
                     MessageBoxButtons.YesNo,
                     MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST); //MW0LGE_[2.9.0.7]);
                 if (dr == DialogResult.No)
@@ -9634,9 +9634,9 @@ namespace Thetis
         {
             if (!CWInput.SetPrimaryInput(comboKeyerConnPrimary.Text))
             {
-                MessageBox.Show("Error using " + comboKeyerConnPrimary.Text + " for Keyer Primary Input.\n" +
-                    "The port may already be in use by another application.",
-                    "Error using " + comboKeyerConnPrimary.Text,
+                MessageBox.Show("使用出错：" + comboKeyerConnPrimary.Text + "（用于电键器主输入）。\n" +
+                    "该端口可能已被其他应用程序占用。",
+                    "使用出错：" + comboKeyerConnPrimary.Text,
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST); //MW0LGE_[2.9.0.7]
                 comboKeyerConnPrimary.Text = CWInput.PrimaryInput;
@@ -9651,8 +9651,8 @@ namespace Thetis
             {
                 if (!chkCATEnable.Checked)
                 {
-                    MessageBox.Show("CAT is not Enabled.  Please enable the CAT interface before selecting this option.",
-                        "CAT not enabled",
+                    MessageBox.Show("CAT 未启用。请先启用 CAT 接口再选择此选项。",
+                        "CAT 未启用",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST); //MW0LGE_[2.9.0.7]
                     comboKeyerConnSecondary.Text = CWInput.SecondaryInput;
@@ -9672,9 +9672,9 @@ namespace Thetis
 
             if (!CWInput.SetSecondaryInput(comboKeyerConnSecondary.Text))
             {
-                MessageBox.Show("Error using " + comboKeyerConnSecondary.Text + " for Keyer Secondary Input.\n" +
-                    "The port may already be in use by another application.",
-                    "Error using " + comboKeyerConnSecondary.Text,
+                MessageBox.Show("使用出错：" + comboKeyerConnSecondary.Text + "（用于电键器副输入）。\n" +
+                    "该端口可能已被其他应用程序占用。",
+                    "使用出错：" + comboKeyerConnSecondary.Text,
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST); //MW0LGE_[2.9.0.7]);
 
@@ -9925,10 +9925,10 @@ namespace Thetis
 
         private void TXBW()
         {
-            MessageBox.Show("The transmit bandwidth is being increased beyond 3kHz.\n\n" +
-                "As the control operator, you are responsible for compliance with current " +
-                "rules and good operating practice.",
-                "Warning: Transmit Bandwidth",
+            MessageBox.Show("发射带宽将被增加到超过 3kHz。\n\n" +
+                "作为电台控制操作者，您有责任遵守现行的 " +
+                "规章制度和良好的操作规范。",
+                "警告：发射带宽",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Warning);
         }
@@ -9979,8 +9979,8 @@ namespace Thetis
 
             if (rows.Length != 1)
             {
-                MessageBox.Show("Database error reading TxProfile Table.",
-                    "Database error",
+                MessageBox.Show("读取 TxProfile 表时数据库出错。",
+                    "数据库错误",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
                 return false;
@@ -10188,11 +10188,11 @@ namespace Thetis
 
         public int TCIClientsConnectedChange
         {
-            set { grpTCIServer.Text = "TCI Server (" + value.ToString() + " clients)"; }
+            set { grpTCIServer.Text = "TCI 服务器 (" + value.ToString() + " 个客户端)"; }
         }
         public int TCPIPcatClientsConnectedChange
         {
-            set { grpTCPIPcatServer.Text = "TCP / IP CAT Server (" + value.ToString() + " clients)"; }
+            set { grpTCPIPcatServer.Text = "TCP/IP CAT 服务器 (" + value.ToString() + " 个客户端)"; }
         }
         public void ForceTXProfileUpdate()
         {
@@ -10213,9 +10213,9 @@ namespace Thetis
             {
                 if (comboTXProfileName.Focused && checkTXProfileChanged2()/*CheckTXProfileChanged()*/) //MW0LGE_21k8 swap the order so focus is needed before check profile is called
                 {
-                    DialogResult result = MessageBox.Show("The current profile has changed.  " +
-                        "Would you like to save the current profile?",
-                        "Save Current Profile?",
+                    DialogResult result = MessageBox.Show("当前配置文件已更改。  " +
+                        "是否要保存当前配置文件？",
+                        "保存当前配置文件？",
                         MessageBoxButtons.YesNoCancel,
                         MessageBoxIcon.Question);
 
@@ -10240,8 +10240,8 @@ namespace Thetis
 
             if (string.IsNullOrEmpty(name))
             {
-                MessageBox.Show("TX Profile Save cancelled",
-                    "TX Profile",
+                MessageBox.Show("TX 配置文件保存已取消",
+                    "TX 配置文件",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
                 return;
@@ -10251,8 +10251,8 @@ namespace Thetis
             if (comboTXProfileName.Items.Contains(name))
             {
                 DialogResult result = MessageBox.Show(
-                    "Are you sure you want to overwrite the " + name + " TX Profile?",
-                    "Overwrite Profile?",
+                    "确定要覆盖 " + name + " TX 配置文件？",
+                    "覆盖配置文件？",
                     MessageBoxButtons.YesNo,
                     MessageBoxIcon.Question);
 
@@ -10422,8 +10422,8 @@ namespace Thetis
         private void btnTXProfileDelete_Click(object sender, System.EventArgs e)
         {
             DialogResult dr = MessageBox.Show(
-                "Are you sure you want to delete the " + comboTXProfileName.Text + " TX Profile?",
-                "Delete Profile?",
+                "确定要删除 " + comboTXProfileName.Text + " TX 配置文件？",
+                "删除配置文件？",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Warning);
 
@@ -10546,7 +10546,7 @@ namespace Thetis
                 s += ")?\nFailure to connect a dummy load properly could cause damage to the radio.";
             }
             DialogResult dr = MessageBox.Show(s,
-                "Warning: Is dummy load properly connected?",
+                "警告：假负载是否正确连接？",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Warning);
 
@@ -10592,7 +10592,7 @@ namespace Thetis
             }
             bool done = false;
             done = chkPANewCal.Checked ? console.CalibratePAGain2(progress, run, false) : console.CalibratePAGain(progress, run, (int)udPACalPower.Value);
-            if (done) MessageBox.Show("PA Gain Calibration complete.");
+            if (done) MessageBox.Show("PA 增益校准完成。");
             btnPAGainCalibration.Enabled = true;
         }
 
@@ -11327,8 +11327,8 @@ namespace Thetis
                 {
                     if (chkCATEnable.Checked)
                     {
-                        MessageBox.Show("The CAT port \"" + comboCATPort.Text + "\" is not a valid port.\n" +
-                            "Please select another port.");
+                        MessageBox.Show("CAT 端口“" + comboCATPort.Text + "”不是有效端口。\n" +
+                            "请选择其他端口。");
                         chkCATEnable.Checked = false;
                     }
                 }
@@ -11339,7 +11339,7 @@ namespace Thetis
             if (chkCATEnable.Checked && console.PTTBitBangEnabled &&
                 (comboCATPort.Text == comboCATPTTPort.Text))
             {
-                MessageBox.Show("CAT port cannot be the same as Bit Bang Port", "Port Selection Error",
+                MessageBox.Show("CAT 端口不能与 Bit Bang 端口相同", "端口选择错误",
                     MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST); //MW0LGE_[2.9.0.7]
                 chkCATEnable.Checked = false;
             }
@@ -11360,8 +11360,8 @@ namespace Thetis
                 {
                     console.CATEnabled = false;
                     chkCATEnable.Checked = false;
-                    MessageBox.Show("Could not initialize CAT control.  Exception was:\n\n " + ex.Message +
-                        "\n\nCAT control has been disabled.", "Error Initializing CAT control",
+                    MessageBox.Show("无法初始化 CAT 控制。异常信息：\n\n " + ex.Message +
+                        "\n\nCAT 控制已被禁用。", "初始化 CAT 控件出错",
                         MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST); //MW0LGE_[2.9.0.7]
                 }
             }
@@ -11369,8 +11369,8 @@ namespace Thetis
             {
                 if (comboKeyerConnSecondary.Text == "CAT" && chkCATEnable.Focused)
                 {
-                    MessageBox.Show("The Secondary Keyer option has been changed to None since CAT has been disabled.",
-                        "CAT Disabled",
+                    MessageBox.Show("由于 CAT 已被禁用，副电键器选项已更改为 None。",
+                        "CAT 已禁用",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST); //MW0LGE_[2.9.0.7]
                     comboKeyerConnSecondary.Text = "None";
@@ -11378,8 +11378,8 @@ namespace Thetis
 
                 if (comboCATPTTPort.Text == "CAT" && chkCATEnable.Focused)
                 {
-                    MessageBox.Show("The PTT Control Port option has been changed to None since CAT has been disabled.",
-                        "CAT Disabled",
+                    MessageBox.Show("由于 CAT 已被禁用，PTT 控制端口选项已更改为 None。",
+                        "CAT 已禁用",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST); //MW0LGE_[2.9.0.7]
 
@@ -11402,8 +11402,8 @@ namespace Thetis
                 {
                     if (chkCAT2Enable.Checked)
                     {
-                        MessageBox.Show("The CAT port \"" + comboCAT2Port.Text + "\" is not a valid port.\n" +
-                            "Please select another port.");
+                        MessageBox.Show("CAT 端口“" + comboCAT2Port.Text + "”不是有效端口。\n" +
+                            "请选择其他端口。");
                         chkCAT2Enable.Checked = false;
                     }
                 }
@@ -11414,7 +11414,7 @@ namespace Thetis
             if (chkCAT2Enable.Checked && console.PTTBitBangEnabled &&
                 (comboCAT2Port.Text == comboCATPTTPort.Text))
             {
-                MessageBox.Show("CAT port cannot be the same as Bit Bang Port", "Port Selection Error",
+                MessageBox.Show("CAT 端口不能与 Bit Bang 端口相同", "端口选择错误",
                     MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST); //MW0LGE_[2.9.0.7]
                 chkCAT2Enable.Checked = false;
             }
@@ -11435,8 +11435,8 @@ namespace Thetis
                 {
                     console.CAT2Enabled = false;
                     chkCAT2Enable.Checked = false;
-                    MessageBox.Show("Could not initialize CAT control.  Exception was:\n\n " + ex.Message +
-                        "\n\nCAT control has been disabled.", "Error Initializing CAT control",
+                    MessageBox.Show("无法初始化 CAT 控制。异常信息：\n\n " + ex.Message +
+                        "\n\nCAT 控制已被禁用。", "初始化 CAT 控件出错",
                         MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST); //MW0LGE_[2.9.0.7]
                 }
             }
@@ -11456,8 +11456,8 @@ namespace Thetis
                 {
                     if (chkCAT3Enable.Checked)
                     {
-                        MessageBox.Show("The CAT port \"" + comboCAT3Port.Text + "\" is not a valid port.\n" +
-                            "Please select another port.");
+                        MessageBox.Show("CAT 端口“" + comboCAT3Port.Text + "”不是有效端口。\n" +
+                            "请选择其他端口。");
                         chkCAT3Enable.Checked = false;
                     }
                 }
@@ -11468,7 +11468,7 @@ namespace Thetis
             if (chkCAT3Enable.Checked && console.PTTBitBangEnabled &&
                 (comboCAT3Port.Text == comboCATPTTPort.Text))
             {
-                MessageBox.Show("CAT port cannot be the same as Bit Bang Port", "Port Selection Error",
+                MessageBox.Show("CAT 端口不能与 Bit Bang 端口相同", "端口选择错误",
                     MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST); //MW0LGE_[2.9.0.7]
                 chkCAT3Enable.Checked = false;
             }
@@ -11489,8 +11489,8 @@ namespace Thetis
                 {
                     console.CAT3Enabled = false;
                     chkCAT3Enable.Checked = false;
-                    MessageBox.Show("Could not initialize CAT control.  Exception was:\n\n " + ex.Message +
-                        "\n\nCAT control has been disabled.", "Error Initializing CAT control",
+                    MessageBox.Show("无法初始化 CAT 控制。异常信息：\n\n " + ex.Message +
+                        "\n\nCAT 控制已被禁用。", "初始化 CAT 控件出错",
                         MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST); //MW0LGE_[2.9.0.7]
                 }
             }
@@ -11510,8 +11510,8 @@ namespace Thetis
                 {
                     if (chkCAT4Enable.Checked)
                     {
-                        MessageBox.Show("The CAT port \"" + comboCAT4Port.Text + "\" is not a valid port.\n" +
-                            "Please select another port.");
+                        MessageBox.Show("CAT 端口“" + comboCAT4Port.Text + "”不是有效端口。\n" +
+                            "请选择其他端口。");
                         chkCAT4Enable.Checked = false;
                     }
                 }
@@ -11522,7 +11522,7 @@ namespace Thetis
             if (chkCAT4Enable.Checked && console.PTTBitBangEnabled &&
                 (comboCAT4Port.Text == comboCATPTTPort.Text))
             {
-                MessageBox.Show("CAT port cannot be the same as Bit Bang Port", "Port Selection Error",
+                MessageBox.Show("CAT 端口不能与 Bit Bang 端口相同", "端口选择错误",
                     MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST); //MW0LGE_[2.9.0.7]
                 chkCAT4Enable.Checked = false;
             }
@@ -11543,8 +11543,8 @@ namespace Thetis
                 {
                     console.CAT4Enabled = false;
                     chkCAT4Enable.Checked = false;
-                    MessageBox.Show("Could not initialize CAT control.  Exception was:\n\n " + ex.Message +
-                        "\n\nCAT control has been disabled.", "Error Initializing CAT control",
+                    MessageBox.Show("无法初始化 CAT 控制。异常信息：\n\n " + ex.Message +
+                        "\n\nCAT 控制已被禁用。", "初始化 CAT 控件出错",
                         MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST); //MW0LGE_[2.9.0.7]
                 }
             }
@@ -11564,8 +11564,8 @@ namespace Thetis
                 {
                     if (chkEnableAndromeda.Checked)
                     {
-                        MessageBox.Show("The CAT port \"" + comboAndromedaCATPort.Text + "\" is not a valid port.\n" +
-                            "Please select another port.");
+                        MessageBox.Show("CAT 端口“" + comboAndromedaCATPort.Text + "”不是有效端口。\n" +
+                            "请选择其他端口。");
                         chkEnableAndromeda.Checked = false;
                     }
                 }
@@ -11576,7 +11576,7 @@ namespace Thetis
             if (chkEnableAndromeda.Checked && console.PTTBitBangEnabled &&
                 (comboAndromedaCATPort.Text == comboCATPTTPort.Text))
             {
-                MessageBox.Show("Andromeda CAT port cannot be the same as Bit Bang Port", "Port Selection Error",
+                MessageBox.Show("Andromeda CAT 端口不能与 Bit Bang 端口相同", "端口选择错误",
                     MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST); //MW0LGE_[2.9.0.7]
                 chkEnableAndromeda.Checked = false;
             }
@@ -11595,8 +11595,8 @@ namespace Thetis
                 {
                     console.AndromedaCATEnabled = false;
                     chkEnableAndromeda.Checked = false;
-                    MessageBox.Show("Could not initialize Andromeda control.  Exception was:\n\n " + ex.Message +
-                        "\n\nAndromeda control has been disabled.", "Error Initializing Andromeda control",
+                    MessageBox.Show("无法初始化 Andromeda 控制。异常信息：\n\n " + ex.Message +
+                        "\n\nAndromeda 控制已被禁用。", "初始化 Andromeda 控件出错",
                         MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST); //MW0LGE_[2.9.0.7]
                 }
             }
@@ -11604,8 +11604,8 @@ namespace Thetis
             {
                 if (comboKeyerConnSecondary.Text == "CAT" && chkCATEnable.Focused)
                 {
-                    MessageBox.Show("The Secondary Keyer option has been changed to None since CAT has been disabled.",
-                        "CAT Disabled",
+                    MessageBox.Show("由于 CAT 已被禁用，副电键器选项已更改为 None。",
+                        "CAT 已禁用",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST); //MW0LGE_[2.9.0.7]
                     comboKeyerConnSecondary.Text = "None";
@@ -11613,8 +11613,8 @@ namespace Thetis
 
                 if (comboCATPTTPort.Text == "CAT" && chkCATEnable.Focused)
                 {
-                    MessageBox.Show("The PTT Control Port option has been changed to None since CAT has been disabled.",
-                        "CAT Disabled",
+                    MessageBox.Show("由于 CAT 已被禁用，PTT 控制端口选项已更改为 None。",
+                        "CAT 已禁用",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST); //MW0LGE_[2.9.0.7]
 
@@ -11699,7 +11699,7 @@ namespace Thetis
             {
                 if (chkCATPTTEnabled.Focused && chkCATPTTEnabled.Checked)
                 {
-                    MessageBox.Show("The PTT port \"" + comboCATPTTPort.Text + "\" is not a valid port.  Please select another port.");
+                    MessageBox.Show("PTT 端口“" + comboCATPTTPort.Text + "”不是有效端口。请选择其他端口。");
                 }
                 chkCATPTTEnabled.Checked = false;
                 return;
@@ -11710,7 +11710,7 @@ namespace Thetis
             {
                 if (chkCATPTTEnabled.Focused)
                 {
-                    MessageBox.Show("CAT port cannot be the same as Bit Bang Port", "Port Selection Error",
+                    MessageBox.Show("CAT 端口不能与 Bit Bang 端口相同", "端口选择错误",
                         MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST); //MW0LGE_[2.9.0.7]
                     chkCATPTTEnabled.Checked = false;
                 }
@@ -11874,8 +11874,8 @@ namespace Thetis
             {
                 if (!chkCATEnable.Checked)
                 {
-                    MessageBox.Show("CAT is not Enabled.  Please enable the CAT interface before selecting this option.",
-                        "CAT not enabled",
+                    MessageBox.Show("CAT 未启用。请先启用 CAT 接口再选择此选项。",
+                        "CAT 未启用",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST); //MW0LGE_[2.9.0.7]
                     comboCATPTTPort.Text = "None";
@@ -12053,8 +12053,8 @@ namespace Thetis
                 }
                 if (!console.PowerOn)
                 {
-                    MessageBox.Show("Power must be on to run this test.",
-                        "Power is off",
+                    MessageBox.Show("运行此测试前必须先开启电源。",
+                        "电源已关闭",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Hand);
                     chkTestIMD.Checked = false;
@@ -12122,7 +12122,7 @@ namespace Thetis
                 chkTestIMD.BackColor = console.ButtonSelectedColor;
                 console.psform.TTgenON = true;
 
-                chkTestIMD.Text = "Stop"; //MW0LGE_22b
+                chkTestIMD.Text = "停止"; //MW0LGE_22b
             }
             else
             {
@@ -12157,7 +12157,7 @@ namespace Thetis
                 chkInvertTones.Enabled = true;
                 udFreq2Delay.Enabled = true;
 
-                chkTestIMD.Text = "Start";
+                chkTestIMD.Text = "开始";
             }
         }
 
@@ -12307,12 +12307,12 @@ namespace Thetis
 
             if (bLoading)
             {
-                labelSavingLoading.Text = "LOADING";
+                labelSavingLoading.Text = "加载中";
                 labelSavingLoading.Visible = true;
             }
             else if (bSaving)
             {
-                labelSavingLoading.Text = "SAVING";
+                labelSavingLoading.Text = "保存中";
                 labelSavingLoading.Visible = true;
             }
             else
@@ -12464,13 +12464,13 @@ namespace Thetis
             bool success = DB.ImportAndMergeDatabase(openFileDialog1.FileName, console.AppDataPath);
 
             if (success)
-                MessageBox.Show("Database Imported Successfully. Thetis will now close.\n\nPlease RE-START.",
-                            "DB Import",
+                MessageBox.Show("数据库导入成功。Thetis 现在将关闭。\n\n请重新启动。",
+                            "数据库导入",
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
             else
-                MessageBox.Show("Database could not be imported. Previous database has been kept.",
-                            "DB Import",
+                MessageBox.Show("数据库无法导入。已保留之前的数据库。",
+                            "数据库导入",
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
 
@@ -12590,7 +12590,7 @@ namespace Thetis
                     txtbox.Text = s;
                 }
                 else
-                    txtbox.Text = "Not Assigned";
+                    txtbox.Text = "未分配";
             }
         }
 
@@ -13559,11 +13559,11 @@ namespace Thetis
 
         private void btnResetDB_Click(object sender, System.EventArgs e)
         {
-            DialogResult dr = MessageBox.Show("This will close the program, make a copy of the current\n" +
-                "database to the DB_Archive folder and reset the active database\n" +
-                "the next time Thetis is launched.\n\n" +
-                "Are you sure you want to reset the database?",
-                "Reset Database?",
+            DialogResult dr = MessageBox.Show("这将关闭程序，把当前\n" +
+                "数据库复制到 DB_Archive 文件夹并重置当前数据库，\n" +
+                "将在下次启动 Thetis 时生效。\n\n" +
+                "确定要重置数据库吗？",
+                "重置数据库？",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Warning);
 
@@ -13683,8 +13683,8 @@ namespace Thetis
         {
             if (lstTXProfileDef.SelectedIndex < 0) return;
 
-            DialogResult result = MessageBox.Show("Include this Additional TX profile in your profiles list?",
-                "Include?",
+            DialogResult result = MessageBox.Show("将此附加 TX 配置文件包含到您的配置文件列表中吗？",
+                "包含？",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question);
 
@@ -13696,8 +13696,8 @@ namespace Thetis
 
             if (rows.Length != 1)
             {
-                MessageBox.Show("Database error reading TXProfileDef Table.",
-                    "Database error",
+                MessageBox.Show("读取 TXProfileDef 表时数据库出错。",
+                    "数据库错误",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
                 return;
@@ -13707,8 +13707,8 @@ namespace Thetis
             if (comboTXProfileName.Items.Contains(name))
             {
                 result = MessageBox.Show(
-                    "Are you sure you want to overwrite the " + name + " TX Profile?",
-                    "Overwrite Profile?",
+                    "确定要覆盖 " + name + " TX 配置文件？",
+                    "覆盖配置文件？",
                     MessageBoxButtons.YesNo,
                     MessageBoxIcon.Question);
 
@@ -13773,8 +13773,8 @@ namespace Thetis
             }
             else
             {
-                MessageBox.Show("Can not locate " + current_profile + ".",  // This should never happen.
-                    "Profile error",
+                MessageBox.Show("无法找到 " + current_profile + ".",  // This should never happen.
+                    "配置文件错误",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
                 return;
@@ -13791,15 +13791,15 @@ namespace Thetis
             }
             catch
             {
-                MessageBox.Show("Can not write " + fileName + ".",
-                    "Export error",
+                MessageBox.Show("无法写入 " + fileName + ".",
+                    "导出错误",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
                 return;
             }
 
-            MessageBox.Show("Profile" + current_profile + " has been saved in file " + fileName,
-                    "Done",
+            MessageBox.Show("配置文件" + current_profile + " 已保存到文件 " + fileName,
+                    "完成",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
         }
@@ -15281,9 +15281,9 @@ namespace Thetis
 
                 /*               int rc = JanusAudio.GetHaveSync();
                                if (rc == 1)
-                                   lblSyncData.Text = "FrameSync: Yes";
+                                   lblSyncData.Text = "帧同步: 是";
                                else
-                                   lblSyncData.Text = "FrameSync: No"; 
+                                   lblSyncData.Text = "帧同步: 否"; 
                */
             }
             else grpVersion.Visible = false;
@@ -16866,31 +16866,31 @@ namespace Thetis
             switch (console.CurrentHPSDRModel)
             {
                 case HPSDRModel.HPSDR:
-                    lblHFRxControl.Text = "J6 Receive Pins";
-                    lblHFTxControl.Text = "J6 Transmit Pins";
-                    lblVHFRxControl.Text = "J6 Receive Pins";
-                    lblVHFTxControl.Text = "J6 Transmit Pins";
-                    lblSWLRxControl.Text = "J6 Receive Pins";
-                    lblSWLTxControl.Text = "J6 Transmit Pins";
+                    lblHFRxControl.Text = "J6 接收引脚";
+                    lblHFTxControl.Text = "J6 发射引脚";
+                    lblVHFRxControl.Text = "J6 接收引脚";
+                    lblVHFTxControl.Text = "J6 发射引脚";
+                    lblSWLRxControl.Text = "J6 接收引脚";
+                    lblSWLTxControl.Text = "J6 发射引脚";
                     break;
                 case HPSDRModel.ANAN7000D:
                 case HPSDRModel.ANAN8000D:
                 case HPSDRModel.ANAN_G2:
                 case HPSDRModel.ANAN_G2_1K:
-                    lblHFRxControl.Text = "OC Receive Pins";
-                    lblHFTxControl.Text = "OC Transmit Pins";
-                    lblVHFRxControl.Text = "OC Receive Pins";
-                    lblVHFTxControl.Text = "OC Transmit Pins";
-                    lblSWLRxControl.Text = "OC Receive Pins";
-                    lblSWLTxControl.Text = "OC Transmit Pins";
+                    lblHFRxControl.Text = "OC 接收引脚";
+                    lblHFTxControl.Text = "OC 发射引脚";
+                    lblVHFRxControl.Text = "OC 接收引脚";
+                    lblVHFTxControl.Text = "OC 发射引脚";
+                    lblSWLRxControl.Text = "OC 接收引脚";
+                    lblSWLTxControl.Text = "OC 发射引脚";
                     break;
                 default:
-                    lblHFRxControl.Text = "J16 Receive Pins";
-                    lblHFTxControl.Text = "J16 Transmit Pins";
-                    lblVHFRxControl.Text = "J16 Receive Pins";
-                    lblVHFTxControl.Text = "J16 Transmit Pins";
-                    lblSWLRxControl.Text = "J16 Receive Pins";
-                    lblSWLTxControl.Text = "J16 Transmit Pins";
+                    lblHFRxControl.Text = "J16 接收引脚";
+                    lblHFTxControl.Text = "J16 发射引脚";
+                    lblVHFRxControl.Text = "J16 接收引脚";
+                    lblVHFTxControl.Text = "J16 发射引脚";
+                    lblSWLRxControl.Text = "J16 接收引脚";
+                    lblSWLTxControl.Text = "J16 发射引脚";
                     break;
             }
         }
@@ -18171,7 +18171,7 @@ namespace Thetis
             if (nbmode < 0)
             {
                 nbmode = 0;
-                comboDSPNOBmode.Text = "Zero";
+                comboDSPNOBmode.Text = "零";
                 comboDSPNOBmode.SelectedIndex = nbmode;
             }
             console.radio.GetDSPRX(0, 0).NBMode = nbmode;
@@ -18702,7 +18702,7 @@ namespace Thetis
                 {
                     txtFocusMasterDelay.Enabled = true;
                     txtFocusMasterWinTitle.Enabled = true;
-                    txtFocusMasterWinTitle.Text = "Window not found!";
+                    txtFocusMasterWinTitle.Text = "未找到窗口！";
                     txtFocusMasterWinTitle.Focus();
                 }
             }
@@ -20525,8 +20525,8 @@ namespace Thetis
                 {
                     if (chkEnableGanymede.Checked)
                     {
-                        MessageBox.Show("The CAT port \"" + comboGanymedeCATPort.Text + "\" is not a valid port.\n" +
-                            "Please select another port.");
+                        MessageBox.Show("CAT 端口“" + comboGanymedeCATPort.Text + "”不是有效端口。\n" +
+                            "请选择其他端口。");
                         chkEnableGanymede.Checked = false;
                     }
                 }
@@ -20537,7 +20537,7 @@ namespace Thetis
             if (chkEnableGanymede.Checked && console.PTTBitBangEnabled &&
                 (comboGanymedeCATPort.Text == comboCATPTTPort.Text))
             {
-                MessageBox.Show("Ganymede CAT port cannot be the same as Bit Bang Port", "Port Selection Error",
+                MessageBox.Show("Ganymede CAT 端口不能与 Bit Bang 端口相同", "端口选择错误",
                     MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST); //MW0LGE_[2.9.0.7]
                 chkEnableGanymede.Checked = false;
             }
@@ -20556,8 +20556,8 @@ namespace Thetis
                 {
                     console.GanymedeCATEnabled = false;
                     chkEnableGanymede.Checked = false;
-                    MessageBox.Show("Could not initialize Ganymede control.  Exception was:\n\n " + ex.Message +
-                        "\n\nGanymede control has been disabled.", "Error Initializing Ganymede control",
+                    MessageBox.Show("无法初始化 Ganymede 控制。异常信息：\n\n " + ex.Message +
+                        "\n\nGanymede 控制已被禁用。", "初始化 Ganymede 控件出错",
                         MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST); //MW0LGE_[2.9.0.7]
                 }
             }
@@ -20575,8 +20575,8 @@ namespace Thetis
                 {
                     if (chkEnableAries.Checked)
                     {
-                        MessageBox.Show("The CAT port \"" + comboAriesCATPort.Text + "\" is not a valid port.\n" +
-                            "Please select another port.");
+                        MessageBox.Show("CAT 端口“" + comboAriesCATPort.Text + "”不是有效端口。\n" +
+                            "请选择其他端口。");
                         chkEnableAries.Checked = false;
                     }
                 }
@@ -20587,7 +20587,7 @@ namespace Thetis
             if (chkEnableAries.Checked && console.PTTBitBangEnabled &&
                 (comboAriesCATPort.Text == comboCATPTTPort.Text))
             {
-                MessageBox.Show("Aries CAT port cannot be the same as Bit Bang Port", "Port Selection Error",
+                MessageBox.Show("Aries CAT 端口不能与 Bit Bang 端口相同", "端口选择错误",
                     MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST); //MW0LGE_[2.9.0.7]
                 chkEnableAries.Checked = false;
             }
@@ -20606,8 +20606,8 @@ namespace Thetis
                 {
                     console.AriesCATEnabled = false;
                     chkEnableAries.Checked = false;
-                    MessageBox.Show("Could not initialize Aries control.  Exception was:\n\n " + ex.Message +
-                        "\n\nAries control has been disabled.", "Error Initializing Aries control",
+                    MessageBox.Show("无法初始化 Aries 控制。异常信息：\n\n " + ex.Message +
+                        "\n\nAries 控制已被禁用。", "初始化 Aries 控件出错",
                         MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST); //MW0LGE_[2.9.0.7]
                 }
             }
@@ -20814,9 +20814,9 @@ namespace Thetis
                     chkRX2StepAtt.Checked = false;
                     chkRX2StepAtt.Enabled = false;
                     udHermesStepAttenuatorDataRX2.Enabled = false;
-                    groupBoxRXOptions.Text = "Hermes Options";
-                    grpMetisAddr.Text = "Hermes Address";
-                    grpHermesStepAttenuator.Text = "Hermes Step Attenuator";
+                    groupBoxRXOptions.Text = "Hermes 选项";
+                    grpMetisAddr.Text = "Hermes 地址";
+                    grpHermesStepAttenuator.Text = "Hermes 步进衰减器";
                     // chkAlexPresent_CheckedChanged(this, EventArgs.Empty);
                     // chkAlexAntCtrl_CheckedChanged(this, EventArgs.Empty);
                     chkAutoPACalibrate.Checked = false;
@@ -20828,9 +20828,9 @@ namespace Thetis
                     RXAntChk3Name = "XVTR";
                     labelATTOnTX.Visible = true;
                     udATTOnTX.Visible = true;
-                    chkRxOutOnTx.Text = "RX 1 OUT on Tx";
-                    chkEXT1OutOnTx.Text = "RX 2 IN on Tx";
-                    chkEXT2OutOnTx.Text = "RX 1 IN on Tx";
+                    chkRxOutOnTx.Text = "发射时 RX 1 输出";
+                    chkEXT1OutOnTx.Text = "发射时 RX 2 输入";
+                    chkEXT2OutOnTx.Text = "发射时 RX 1 输入";
                     chkEXT2OutOnTx.Visible = true;
                     groupBoxHPSDRHW.Visible = true;
                     chkDisableRXOut.Visible = false;
@@ -20856,10 +20856,10 @@ namespace Thetis
                     chkRX2StepAtt.Checked = false;
                     chkRX2StepAtt.Enabled = false;
                     udHermesStepAttenuatorDataRX2.Enabled = false;
-                    groupBoxRXOptions.Text = "ANAN Options";
-                    grpMetisAddr.Text = "ANAN Address";
-                    grpHermesStepAttenuator.Text = "ANAN Step Attenuator";
-                    tpAlexControl.Text = "Ant/Filters";
+                    groupBoxRXOptions.Text = "ANAN 选项";
+                    grpMetisAddr.Text = "ANAN 地址";
+                    grpHermesStepAttenuator.Text = "ANAN 步进衰减器";
+                    tpAlexControl.Text = "天线/滤波器";
                     chkAutoPACalibrate.Checked = false;
                     chkAutoPACalibrate.Visible = false;
                     //grpANAN10PAGainByBand.BringToFront(); //MW0LGE_22b new PA system
@@ -20900,10 +20900,10 @@ namespace Thetis
                     chkRX2StepAtt.Checked = false;
                     chkRX2StepAtt.Enabled = false;
                     udHermesStepAttenuatorDataRX2.Enabled = false;
-                    groupBoxRXOptions.Text = "ANAN Options";
-                    grpMetisAddr.Text = "ANAN Address";
-                    grpHermesStepAttenuator.Text = "ANAN Step Attenuator";
-                    tpAlexControl.Text = "Ant/Filters";
+                    groupBoxRXOptions.Text = "ANAN 选项";
+                    grpMetisAddr.Text = "ANAN 地址";
+                    grpHermesStepAttenuator.Text = "ANAN 步进衰减器";
+                    tpAlexControl.Text = "天线/滤波器";
                     chkAutoPACalibrate.Checked = false;
                     chkAutoPACalibrate.Visible = false;
                     //grpANAN10PAGainByBand.BringToFront(); //MW0LGE_22b new PA system
@@ -20940,9 +20940,9 @@ namespace Thetis
                     chkRX2StepAtt.Checked = false;
                     chkRX2StepAtt.Enabled = false;
                     udHermesStepAttenuatorDataRX2.Enabled = false;
-                    groupBoxRXOptions.Text = "ANAN Options";
-                    grpMetisAddr.Text = "ANAN Address";
-                    grpHermesStepAttenuator.Text = "ANAN Step Attenuator";
+                    groupBoxRXOptions.Text = "ANAN 选项";
+                    grpMetisAddr.Text = "ANAN 地址";
+                    grpHermesStepAttenuator.Text = "ANAN 步进衰减器";
                     chkAlexPresent_CheckedChanged(this, EventArgs.Empty);
                     chkAlexAntCtrl_CheckedChanged(this, EventArgs.Empty);
                     chkAutoPACalibrate.Checked = false;
@@ -20954,9 +20954,9 @@ namespace Thetis
                     RXAntChk3Name = "XVTR";
                     labelATTOnTX.Visible = true;
                     udATTOnTX.Visible = true;
-                    chkRxOutOnTx.Text = "BYPASS on Tx";
-                    chkEXT1OutOnTx.Text = "Ext 1 on Tx";
-                    chkEXT2OutOnTx.Text = "Ext 2 on Tx";
+                    chkRxOutOnTx.Text = "发射时旁路";
+                    chkEXT1OutOnTx.Text = "发射时 Ext 1";
+                    chkEXT2OutOnTx.Text = "发射时 Ext 2";
                     chkEXT2OutOnTx.Visible = true;
                     groupBoxHPSDRHW.Visible = false;
                     chkDisableRXOut.Visible = true;
@@ -20988,9 +20988,9 @@ namespace Thetis
                     chkRX2StepAtt.Checked = false;
                     chkRX2StepAtt.Enabled = false;
                     udHermesStepAttenuatorDataRX2.Enabled = false;
-                    groupBoxRXOptions.Text = "ANAN Options";
-                    grpMetisAddr.Text = "ANAN Address";
-                    grpHermesStepAttenuator.Text = "ANAN Step Attenuator";
+                    groupBoxRXOptions.Text = "ANAN 选项";
+                    grpMetisAddr.Text = "ANAN 地址";
+                    grpHermesStepAttenuator.Text = "ANAN 步进衰减器";
                     chkAlexPresent_CheckedChanged(this, EventArgs.Empty);
                     chkAlexAntCtrl_CheckedChanged(this, EventArgs.Empty);
                     chkAutoPACalibrate.Checked = false;
@@ -21002,9 +21002,9 @@ namespace Thetis
                     RXAntChk3Name = "XVTR";
                     labelATTOnTX.Visible = true;
                     udATTOnTX.Visible = true;
-                    chkRxOutOnTx.Text = "BYPASS on Tx";
-                    chkEXT1OutOnTx.Text = "Ext 1 on Tx";
-                    chkEXT2OutOnTx.Text = "Ext 2 on Tx";
+                    chkRxOutOnTx.Text = "发射时旁路";
+                    chkEXT1OutOnTx.Text = "发射时 Ext 1";
+                    chkEXT2OutOnTx.Text = "发射时 Ext 2";
                     chkEXT2OutOnTx.Visible = true;
                     groupBoxHPSDRHW.Visible = false;
                     chkDisableRXOut.Visible = true;
@@ -21031,9 +21031,9 @@ namespace Thetis
                     udHermesStepAttenuatorData.Enabled = true;
                     chkRX2StepAtt.Enabled = true;
                     udHermesStepAttenuatorDataRX2.Enabled = true;
-                    groupBoxRXOptions.Text = "ANAN Options";
-                    grpMetisAddr.Text = "ANAN Address";
-                    grpHermesStepAttenuator.Text = "ANAN Step Attenuator";
+                    groupBoxRXOptions.Text = "ANAN 选项";
+                    grpMetisAddr.Text = "ANAN 地址";
+                    grpHermesStepAttenuator.Text = "ANAN 步进衰减器";
                     chkAlexPresent_CheckedChanged(this, EventArgs.Empty);
                     chkAlexAntCtrl_CheckedChanged(this, EventArgs.Empty);
                     chkAutoPACalibrate.Checked = false;
@@ -21052,9 +21052,9 @@ namespace Thetis
                     labelATTOnTX.Visible = true;
                     udATTOnTX.Visible = true;
                     chkRX2StepAtt_CheckedChanged(this, EventArgs.Empty);
-                    chkRxOutOnTx.Text = "BYPASS on Tx";
-                    chkEXT1OutOnTx.Text = "Ext 1 on Tx";
-                    chkEXT2OutOnTx.Text = "Ext 2 on Tx";
+                    chkRxOutOnTx.Text = "发射时旁路";
+                    chkEXT1OutOnTx.Text = "发射时 Ext 1";
+                    chkEXT2OutOnTx.Text = "发射时 Ext 2";
                     chkEXT2OutOnTx.Visible = true;
                     groupBoxHPSDRHW.Visible = true;
                     chkDisableRXOut.Visible = true;
@@ -21092,9 +21092,9 @@ namespace Thetis
                     udHermesStepAttenuatorData.Enabled = true;
                     chkRX2StepAtt.Enabled = true;
                     udHermesStepAttenuatorDataRX2.Enabled = true;
-                    groupBoxRXOptions.Text = "ANAN Options";
-                    grpMetisAddr.Text = "ANAN Address";
-                    grpHermesStepAttenuator.Text = "ANAN Step Attenuator";
+                    groupBoxRXOptions.Text = "ANAN 选项";
+                    grpMetisAddr.Text = "ANAN 地址";
+                    grpHermesStepAttenuator.Text = "ANAN 步进衰减器";
                     // chkAlexPresent_CheckedChanged(this, EventArgs.Empty);
                     // chkAlexAntCtrl_CheckedChanged(this, EventArgs.Empty);
                     chkAutoPACalibrate.Checked = false;
@@ -21110,9 +21110,9 @@ namespace Thetis
                     labelATTOnTX.Visible = true;
                     udATTOnTX.Visible = true;
                     chkRX2StepAtt_CheckedChanged(this, EventArgs.Empty);
-                    chkRxOutOnTx.Text = "BYPASS on Tx";
-                    chkEXT1OutOnTx.Text = "Ext 1 on Tx";
-                    chkEXT2OutOnTx.Text = "Ext 2 on Tx";
+                    chkRxOutOnTx.Text = "发射时旁路";
+                    chkEXT1OutOnTx.Text = "发射时 Ext 1";
+                    chkEXT2OutOnTx.Text = "发射时 Ext 2";
                     chkEXT2OutOnTx.Visible = true;
                     chkAlexPresent.Parent = grpGeneralHardwareORION;
                     chkAlexPresent.Location = new Point(43, 120);
@@ -21144,9 +21144,9 @@ namespace Thetis
                     udHermesStepAttenuatorData.Enabled = true;
                     chkRX2StepAtt.Enabled = true;
                     udHermesStepAttenuatorDataRX2.Enabled = true;
-                    groupBoxRXOptions.Text = "ANAN Options";
-                    grpMetisAddr.Text = "ANAN Address";
-                    grpHermesStepAttenuator.Text = "ANAN Step Attenuator";
+                    groupBoxRXOptions.Text = "ANAN 选项";
+                    grpMetisAddr.Text = "ANAN 地址";
+                    grpHermesStepAttenuator.Text = "ANAN 步进衰减器";
                     chkAlexPresent_CheckedChanged(this, EventArgs.Empty);
                     chkAlexAntCtrl_CheckedChanged(this, EventArgs.Empty);
                     chkAutoPACalibrate.Checked = false;
@@ -21160,8 +21160,8 @@ namespace Thetis
                     labelATTOnTX.Visible = true;
                     udATTOnTX.Visible = true;
                     chkRX2StepAtt_CheckedChanged(this, EventArgs.Empty);
-                    chkEXT1OutOnTx.Text = "Ext 1 on Tx";
-                    chkEXT2OutOnTx.Text = "Rx BYPASS on Tx";
+                    chkEXT1OutOnTx.Text = "发射时 Ext 1";
+                    chkEXT2OutOnTx.Text = "发射时 Rx 旁路";
                     chkAlexPresent.Parent = grpGeneralHardwareORION;
                     chkAlexPresent.Location = new Point(43, 120);
                     chkApolloPresent.Parent = grpGeneralHardwareORION;
@@ -21202,9 +21202,9 @@ namespace Thetis
                     udHermesStepAttenuatorData.Enabled = true;
                     chkRX2StepAtt.Enabled = true;
                     udHermesStepAttenuatorDataRX2.Enabled = true;
-                    groupBoxRXOptions.Text = "ANAN Options";
-                    grpMetisAddr.Text = "ANAN Address";
-                    grpHermesStepAttenuator.Text = "ANAN Step Attenuator";
+                    groupBoxRXOptions.Text = "ANAN 选项";
+                    grpMetisAddr.Text = "ANAN 地址";
+                    grpHermesStepAttenuator.Text = "ANAN 步进衰减器";
                     chkAlexPresent_CheckedChanged(this, EventArgs.Empty);
                     chkAlexAntCtrl_CheckedChanged(this, EventArgs.Empty);
                     chkAutoPACalibrate.Checked = false;
@@ -21218,8 +21218,8 @@ namespace Thetis
                     labelATTOnTX.Visible = true;
                     udATTOnTX.Visible = true;
                     chkRX2StepAtt_CheckedChanged(this, EventArgs.Empty);
-                    chkRxOutOnTx.Text = "BYPASS on Tx";
-                    chkEXT1OutOnTx.Text = "Ext 1 on Tx";
+                    chkRxOutOnTx.Text = "发射时旁路";
+                    chkEXT1OutOnTx.Text = "发射时 Ext 1";
                     chkEXT2OutOnTx.Visible = false;
                     chkAlexPresent.Parent = grpGeneralHardwareORION;
                     chkAlexPresent.Location = new Point(43, 120);
@@ -21263,9 +21263,9 @@ namespace Thetis
                     udHermesStepAttenuatorData.Enabled = true;
                     chkRX2StepAtt.Enabled = true;
                     udHermesStepAttenuatorDataRX2.Enabled = true;
-                    groupBoxRXOptions.Text = "ANAN Options";
-                    grpMetisAddr.Text = "ANAN Address";
-                    grpHermesStepAttenuator.Text = "ANAN Step Attenuator";
+                    groupBoxRXOptions.Text = "ANAN 选项";
+                    grpMetisAddr.Text = "ANAN 地址";
+                    grpHermesStepAttenuator.Text = "ANAN 步进衰减器";
                     chkAlexPresent_CheckedChanged(this, EventArgs.Empty);
                     chkAlexAntCtrl_CheckedChanged(this, EventArgs.Empty);
                     chkAutoPACalibrate.Checked = false;
@@ -21279,8 +21279,8 @@ namespace Thetis
                     labelATTOnTX.Visible = true;
                     udATTOnTX.Visible = true;
                     chkRX2StepAtt_CheckedChanged(this, EventArgs.Empty);
-                    chkEXT1OutOnTx.Text = "Ext 1 on Tx";
-                    chkEXT2OutOnTx.Text = "Rx BYPASS on Tx";
+                    chkEXT1OutOnTx.Text = "发射时 Ext 1";
+                    chkEXT2OutOnTx.Text = "发射时 Rx 旁路";
                     chkAlexPresent.Parent = grpGeneralHardwareORION;
                     chkAlexPresent.Location = new Point(43, 120);
                     chkApolloPresent.Parent = grpGeneralHardwareORION;
@@ -21321,9 +21321,9 @@ namespace Thetis
                     udHermesStepAttenuatorData.Enabled = true;
                     chkRX2StepAtt.Enabled = true;
                     udHermesStepAttenuatorDataRX2.Enabled = true;
-                    groupBoxRXOptions.Text = "ANAN Options";
-                    grpMetisAddr.Text = "ANAN Address";
-                    grpHermesStepAttenuator.Text = "ANAN Step Attenuator";
+                    groupBoxRXOptions.Text = "ANAN 选项";
+                    grpMetisAddr.Text = "ANAN 地址";
+                    grpHermesStepAttenuator.Text = "ANAN 步进衰减器";
                     chkAlexPresent_CheckedChanged(this, EventArgs.Empty);
                     chkAlexAntCtrl_CheckedChanged(this, EventArgs.Empty);
                     chkAutoPACalibrate.Checked = false;
@@ -21337,8 +21337,8 @@ namespace Thetis
                     labelATTOnTX.Visible = true;
                     udATTOnTX.Visible = true;
                     chkRX2StepAtt_CheckedChanged(this, EventArgs.Empty);
-                    chkEXT1OutOnTx.Text = "Ext 1 on Tx";
-                    chkEXT2OutOnTx.Text = "Rx BYPASS on Tx";
+                    chkEXT1OutOnTx.Text = "发射时 Ext 1";
+                    chkEXT2OutOnTx.Text = "发射时 Rx 旁路";
                     chkAlexPresent.Parent = grpGeneralHardwareORION;
                     chkAlexPresent.Location = new Point(43, 120);
                     chkApolloPresent.Parent = grpGeneralHardwareORION;
@@ -21927,13 +21927,13 @@ namespace Thetis
         private void tbRX1WaterfallOpacity_Scroll(object sender, EventArgs e)
         {
             Display.RX1WaterfallOpacity = tbRX1WaterfallOpacity.Value / 100f;
-            toolTip1.SetToolTip(tbRX1WaterfallOpacity, tbRX1WaterfallOpacity.Value.ToString() + "% opacity");
+            toolTip1.SetToolTip(tbRX1WaterfallOpacity, tbRX1WaterfallOpacity.Value.ToString() + "% 不透明度");
         }
 
         private void tbRX2WaterfallOpacity_Scroll(object sender, EventArgs e)
         {
             Display.RX2WaterfallOpacity = tbRX2WaterfallOpacity.Value / 100f;
-            toolTip1.SetToolTip(tbRX2WaterfallOpacity, tbRX2WaterfallOpacity.Value.ToString() + "% opacity");
+            toolTip1.SetToolTip(tbRX2WaterfallOpacity, tbRX2WaterfallOpacity.Value.ToString() + "% 不透明度");
         }
 
         private void chkShowControlDebug_CheckedChanged(object sender, EventArgs e)
@@ -22250,12 +22250,12 @@ namespace Thetis
                         }
                         else if (l.Name.StartsWith("lblRxDDC") && l.Name.EndsWith(sync1.ToString()))
                         {
-                            l.Text = "RX1 Sync1";
+                            l.Text = "RX1 同步1";
                             l.BackColor = SystemColors.ControlDark;
                         }
                         else if (l.Name.StartsWith("lblRxDDC") && l.Name.EndsWith(sync2.ToString()))
                         {
-                            l.Text = "RX1 Sync2";
+                            l.Text = "RX1 同步2";
                             l.BackColor = SystemColors.ControlDark;
                         }
                         else if (l.Name.StartsWith("lblRxDDC") && l.Name.EndsWith(psrx.ToString()))
@@ -22392,8 +22392,8 @@ namespace Thetis
             }
             if (bOK)
             {
-                MessageBox.Show("NetworkThrottleIndex has been changed. You need to restart/reboot for this to take effect.",
-                    "Reboot",
+                MessageBox.Show("NetworkThrottleIndex 已更改。需要重启电脑才能生效。",
+                    "重启",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
             }
@@ -23532,8 +23532,8 @@ namespace Thetis
 
             //if (!initializing)
             //{
-            //    DialogResult dr = MessageBox.Show("This change will take effect when Thetis is restarted.",
-            //        "Legacy DX Buffers",
+            //    DialogResult dr = MessageBox.Show("此更改将在 Thetis 重启后生效。",
+            //        "旧版 DX 缓冲",
             //        MessageBoxButtons.OK,
             //        MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
             //}
@@ -23917,8 +23917,8 @@ namespace Thetis
             if (sProfileName.StartsWith("Default"))
             {
                 DialogResult dr = MessageBox.Show(
-                    "The PA profile name " + sProfileName + " can not start with 'Default'.",
-                    "PA Profile Name",
+                    "PA 配置文件名称 " + sProfileName + " 不能以 'Default' 开头。",
+                    "PA 配置文件名称",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning);
                 return false;
@@ -23926,8 +23926,8 @@ namespace Thetis
             if (_PAProfiles.ContainsKey(sProfileName))
             {
                 DialogResult dr = MessageBox.Show(
-                    "The PA profile name " + sProfileName + " already exists.",
-                    "PA Profile Name",
+                    "PA 配置文件名称 " + sProfileName + " 已存在。",
+                    "PA 配置文件名称",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning);
                 return false;
@@ -23973,9 +23973,9 @@ namespace Thetis
             if (p == null) return;
 
             DialogResult dr = MessageBox.Show(
-                "Are you sure you want to delete the " + comboPAProfile.Text + " PA Profile?\n\n" +
-                "The Default profile will be selected if you do.",
-                "Delete Profile?",
+                "确定要删除 " + comboPAProfile.Text + " PA 配置文件？\n\n" +
+                "如果这样做，将选择默认配置文件。",
+                "删除配置文件？",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Warning);
 
@@ -24133,9 +24133,9 @@ namespace Thetis
         private void btnResetPAProfile_Click(object sender, EventArgs e)
         {
             DialogResult dr = MessageBox.Show(
-                "Are you sure you want to reset the " + comboPAProfile.Text + " PA Profile?\n\n" +
-                "The Default settings for this radio model will be applied if you do.",
-                "Reset Profile?",
+                "确定要重置 " + comboPAProfile.Text + " PA 配置文件？\n\n" +
+                "如果这样做，将应用此电台型号的默认设置。",
+                "重置配置文件？",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Warning);
 
@@ -24681,15 +24681,15 @@ namespace Thetis
             {
                 _adjustingBand = Band.FIRST; // MW0LGE_[2.9.0.7] reset
                 enabledPAAdjust(false);
-                lblAdjustBand.Text = "Ignore for : " + sBand;
-                lblMaxPowerForBandPA.Text = "Ignore for : " + sBand;
+                lblAdjustBand.Text = "忽略（用于 : ）" + sBand;
+                lblMaxPowerForBandPA.Text = "忽略（用于 : ）" + sBand;
                 return;
             }
             else
             {
                 enabledPAAdjust(true);
-                lblAdjustBand.Text = "Offset for : " + sBand;
-                lblMaxPowerForBandPA.Text = "Actual Power @ 100% slider for : " + sBand;
+                lblAdjustBand.Text = "偏移（用于 : ）" + sBand;
+                lblMaxPowerForBandPA.Text = "100% 滑块处实际功率（用于 : ）" + sBand;
             }
 
             _adjustingBand = b;
@@ -25479,8 +25479,8 @@ namespace Thetis
         private void btnResetLevelCal_Click(object sender, EventArgs e)
         {
             DialogResult dr = MessageBox.Show(
-                "Do you want to reset Level Calibration back to defaults ?",
-                "Level Defaults",
+                "要将电平校准重置为默认值吗？",
+                "电平默认值",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question);
 
@@ -25644,7 +25644,7 @@ namespace Thetis
             foreach (KeyValuePair<string, ucMeter> kvp in MeterManager.MeterContainers)
             {
                 clsContainerComboboxItem cci = new clsContainerComboboxItem();
-                cci.Text = "Container " + (i + 1).ToString() + " TRX" + kvp.Value.RX.ToString();
+                cci.Text = "容器 " + (i + 1).ToString() + " TRX" + kvp.Value.RX.ToString();
                 cci.ID = kvp.Value.ID;
 
                 comboContainerSelect.Items.Add(cci);

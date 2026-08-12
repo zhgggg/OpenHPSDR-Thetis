@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -65,7 +65,7 @@ namespace Thetis
             }
             catch
             {
-                MessageBox.Show("Issue loding CATStructs.xml",
+                MessageBox.Show("加载 CATStructs.xml 出错",
                     "CATStructs",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);

@@ -8985,7 +8985,7 @@
     <value>121, 22</value>
   </data>
   <data name="RX1PeakToolStripMenuItem.Text" xml:space="preserve">
-    <value>峰值</value>
+    <value>Peak</value>
   </data>
   <data name="dSPToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 20</value>
@@ -9489,7 +9489,7 @@
     <value>99, 22</value>
   </data>
   <data name="RX2PeakToolStripMenuItem.Text" xml:space="preserve">
-    <value>峰值</value>
+    <value>Peak</value>
   </data>
   <data name="dSPToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
     <value>105, 22</value>

@@ -46,21 +46,21 @@ namespace Thetis
         {
             if (!FirewallManager.IsServiceRunning)
             {
-                MessageBox.Show("Firewall service is not running.", "Firewall - No Service", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
+                MessageBox.Show("防火墙服务未运行。", "防火墙 - 无服务", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                 return;
             }
 
             string sExe = System.Reflection.Assembly.GetEntryAssembly().Location;
             if (sExe == "")
             {
-                MessageBox.Show("Could not obtain EXE path.", "Firewall - Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
+                MessageBox.Show("无法获取 EXE 路径。", "防火墙 - 错误", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                 return;
             }
 
             if (!Common.IsAdministrator())
             {
                 //msgbox need to be admin !
-                MessageBox.Show("To reset Thetis firewall entries please run Thetis 'As Administrator'.", "Firewall - No Administrator Rights", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
+                MessageBox.Show("要重置 Thetis 防火墙规则，请以“管理员身份”运行 Thetis。", "防火墙 - 无管理员权限", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                 return;
             }
 
@@ -75,7 +75,7 @@ namespace Thetis
             }
             catch 
             {
-                MessageBox.Show("There was a problem removing existing firewall entries. Please configure manually.\nThetis.exe needs UDP/TCP in/out, all ports", "Firewall - Problem", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
+                MessageBox.Show("移除现有防火墙规则时出现问题。请手动配置。\nThetis.exe 需要 UDP/TCP 入站/出站、所有端口", "防火墙 - 问题", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
                 return;
             }
 
@@ -88,11 +88,11 @@ namespace Thetis
 
             if (b1 && b2 && b3 && b4)
             {
-                MessageBox.Show("Firewall is configured correctly.", "Firewall - Success", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
+                MessageBox.Show("防火墙配置正确。", "防火墙 - 成功", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
             }
             else
             {
-                MessageBox.Show("There was a problem configuring the firewall. Please configure manually.\nThetis.exe needs UDP/TCP in/out, all ports", "Firewall - Problem", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
+                MessageBox.Show("配置防火墙时出现问题。请手动配置。\nThetis.exe 需要 UDP/TCP 入站/出站、所有端口", "防火墙 - 问题", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, Common.MB_TOPMOST);
             }                    
         }
 

@@ -1,4 +1,4 @@
-//=================================================================
+﻿//=================================================================
 // audio.cs
 //=================================================================
 // PowerSDR is a C# implementation of a Software Defined Radio.
@@ -1655,9 +1655,9 @@ namespace Thetis
                     }
                     catch (Exception)
                     {
-                        MessageBox.Show("The program is having trouble starting the VAC audio streams.\n" +
-                            "Please examine the VAC related settings on the Setup Form -> Audio Tab and try again.",
-                            "VAC Audio Stream Startup Error",
+                        MessageBox.Show("程序在启动 VAC 音频流时遇到问题。\n" +
+                            "请检查 设置 -> 音频 选项卡中与 VAC 相关的设置后重试。",
+                            "VAC 音频流启动错误",
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Error);
                     }
@@ -1739,9 +1739,9 @@ namespace Thetis
                     }
                     catch (Exception)
                     {
-                        MessageBox.Show("The program is having trouble starting the VAC audio streams.\n" +
-                            "Please examine the VAC related settings on the Setup Form -> Audio Tab and try again.",
-                            "VAC2 Audio Stream Startup Error",
+                        MessageBox.Show("程序在启动 VAC 音频流时遇到问题。\n" +
+                            "请检查 设置 -> 音频 选项卡中与 VAC 相关的设置后重试。",
+                            "VAC2 音频流启动错误",
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Error);
                     }
@@ -1794,14 +1794,14 @@ namespace Thetis
                     {
                         fw_err = "Bad Firmware levels";
                     }
-                    MessageBox.Show(fw_err, "Firmware Error",
+                    MessageBox.Show(fw_err, "固件错误",
                                     MessageBoxButtons.OK,
                                     MessageBoxIcon.Error);
                     return false;
                 }
                 else
                 {
-                    MessageBox.Show("Error starting SDR hardware, is it connected and powered?", "Network Error",
+                    MessageBox.Show("启动 SDR 硬件出错，请检查是否已连接并上电？", "网络错误",
                                     MessageBoxButtons.OK,
                                     MessageBoxIcon.Error);
                     return false;
@@ -1868,11 +1868,11 @@ namespace Thetis
 //                         "verify the settings there.";
 //                     if (vac_enabled) s += "  Since VAC is enabled, make sure\n" +
 //                          "you look at those settings as well.";
-//                     MessageBox.Show(s, "Audio Subsystem Error: Invalid Device",
+//                     MessageBox.Show(s, "音频子系统错误：无效设备",
 //                         MessageBoxButtons.OK, MessageBoxIcon.Error);
 //                     break;
 //                 default:
-//                     MessageBox.Show(PortAudio.Pa_GetErrorText(error), "PortAudio Error: " + error,
+//                     MessageBox.Show(PortAudio.Pa_GetErrorText(error), "PortAudio 错误：" + error,
 //                         MessageBoxButtons.OK, MessageBoxIcon.Error);
 //                     break;
 //             }

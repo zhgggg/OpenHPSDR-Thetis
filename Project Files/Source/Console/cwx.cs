@@ -1,4 +1,4 @@
-//=================================================================
+﻿//=================================================================
 // cwx.cs
 //=================================================================
 // CWX - new version of the old keyer memory and keyboard stuff
@@ -430,7 +430,7 @@ namespace Thetis
             t += "\n";
             t += "    << Sugar Land, Texas 2006-02-16 - Richard Allen, W5SXD >>\n";
 
-            MessageBox.Show(t, "  CWX Notes ...");
+            MessageBox.Show(t, "  CWX 备注 ...");
         }
 
         private void notesButton_Click(object sender, System.EventArgs e)
@@ -511,7 +511,7 @@ namespace Thetis
             if (!File.Exists(console.AppDataPath + sfile))	// create default morsedef.txt
             {
 #if(CWX_DEBUG)
-				MessageBox.Show(sfile+" not found, creating ...");
+				MessageBox.Show(sfile+" 未找到，正在创建 ...");
 #endif
                 using (StreamWriter sw = new StreamWriter(console.AppDataPath + sfile))
                 {
@@ -581,7 +581,7 @@ namespace Thetis
                     sw.WriteLine("95|_|*        | reserved  ");
                 }
             }
-            //MessageBox.Show("reading ",sfile);
+            //MessageBox.Show("读取 ",sfile);
             using (StreamReader sr = new StreamReader(console.AppDataPath + sfile))
             {
                 String line;
@@ -1574,8 +1574,8 @@ namespace Thetis
             if (console.RX1DSPMode != DSPMode.CWL &&
                 console.RX1DSPMode != DSPMode.CWU)
             {
-                MessageBox.Show("Console is not in CW mode.  Please switch to either CWL or CWU and try again.",
-                    "CWX Error: Wrong Mode",
+                MessageBox.Show("控制台不在 CW 模式。请切换到 CWL 或 CWU 后重试。",
+                    "CWX 错误：模式不对",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
                 return;
@@ -1912,11 +1912,11 @@ namespace Thetis
 #endif
             if (editline[5] == '*') //.Substring(5,1).Equals("*"))
             {
-                MessageBox.Show("Definitions that start with '*' cannot be edited");
+                MessageBox.Show("以 '*' 开头的定义不能编辑");
             }
             else if (editline.Length != 26)
             {
-                MessageBox.Show("Selected line has invalid length");
+                MessageBox.Show("选中的行长度无效");
             }
             else
             {
@@ -1929,7 +1929,7 @@ namespace Thetis
                 if (editline.Length == 26) insert_and_reload(editline);
                 else if (editline.Length > 0)
                 {
-                    MessageBox.Show("Edited line has invalid length and is not saved.");
+                    MessageBox.Show("已编辑的行长度无效，未保存。");
                 }
             }
         }
@@ -1943,7 +1943,7 @@ namespace Thetis
             id -= 32;
             if (id < 0 || id > 63)
             {
-                MessageBox.Show("Edited line cannot be found in a2m2.");
+                MessageBox.Show("在 a2m2 中找不到已编辑的行。");
                 return;
             }
             a2m2[id] = s;		// replace with the new lines
@@ -1962,7 +1962,7 @@ namespace Thetis
 					return;
 				}
 			}
-			MessageBox.Show("Edited line cannot be found in a2m2.");
+			MessageBox.Show("在 a2m2 中找不到已编辑的行。");
 #endif
         }
         private void write_a2m2()
@@ -2157,8 +2157,8 @@ namespace Thetis
             if (console.RX1DSPMode != DSPMode.CWL &&
                 console.RX1DSPMode != DSPMode.CWU)
             {
-                MessageBox.Show("Console is not in CW mode.  Please switch to either CWL or CWU and try again.",
-                    "CWX Error: Wrong Mode",
+                MessageBox.Show("控制台不在 CW 模式。请切换到 CWL 或 CWU 后重试。",
+                    "CWX 错误：模式不对",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
                 return;

@@ -8240,7 +8240,7 @@ namespace Thetis
                 EX1 = ex.Message;
                 // Debug.WriteLine("SOCKET ERROR: " + strHost + " , " + ex);
                 WTime = false;   // turn dx spotting back on
-                MessageBox.Show("Time server connection failed! /r error: " + EX1, " the system prompts", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+                MessageBox.Show("时间服务器连接失败！/r 错误：" + EX1, "系统提示", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
 
                 return;
             }
@@ -8252,7 +8252,7 @@ namespace Thetis
 
                 if (c.Connected) c.Close(); // close the socket
 
-                MessageBox.Show("Time server connection failed! /r error: " + EX1, " the system prompts", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+                MessageBox.Show("时间服务器连接失败！/r 错误：" + EX1, "系统提示", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                 WTime = false;   // turn dx spotting back on
 
                 return;
@@ -8273,7 +8273,7 @@ namespace Thetis
             {
 
                 if (c.Connected) c.Close(); // close the socket
-                MessageBox.Show("Time server connection failed! /r error: " + EX1, " the system prompts", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+                MessageBox.Show("时间服务器连接失败！/r 错误：" + EX1, "系统提示", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                 WTime = false;   // turn dx spotting back on
 
                 return;
@@ -8329,14 +8329,14 @@ namespace Thetis
             }
             catch (Exception)
             {
-                MessageBox.Show("Time server busy! Try Again.", " the system prompts", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+                MessageBox.Show("时间服务器忙！请重试。", "系统提示", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                 WTime = false;   // turn dx spotting back on
 
                 return;
 
             }
 
-            //    MessageBox.Show("Time synchronization, ", " the system prompts", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //    MessageBox.Show("时间同步，", "系统提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             WTime = false;   // turn dx spotting back on
 
@@ -9002,10 +9002,10 @@ namespace Thetis
                             DateTime startDT = DateTime.Now;   // get current PC time and date
  
 
-                            DialogResult temp0 = MessageBox.Show("You must be running in ADMIN mode to set your PC Clock.\r\nYour Current LOCAL Date time: " + startDT.ToString("yy-MM-dd HH:mm:ss.fff") +
-                                "\r\nDoes this UTC Time (below) look Correct?\r\nDo You Want to Update Your PC Clock?\r\n" +
-                                "This is the Decoded WWV UTC Time > " + WWVUTC.ToString("yy-MM-dd HH:mm:ss.fff") + "\r\n An additional correction factor will be added if you select YES",
-                                "WWV PC TIME UPDATE", MessageBoxButtons.YesNo, MessageBoxIcon.Information, MessageBoxDefaultButton.Button2, MessageBoxOptions.DefaultDesktopOnly);
+                            DialogResult temp0 = MessageBox.Show("必须以管理员模式运行才能设置电脑时钟。\r\n您当前的本地日期时间：" + startDT.ToString("yy-MM-dd HH:mm:ss.fff") +
+                                "\r\n下面的 UTC 时间看起来正确吗？\r\n是否要更新您的电脑时钟？\r\n" +
+                                "这是解码后的 WWV UTC 时间 > " + WWVUTC.ToString("yy-MM-dd HH:mm:ss.fff") + "\r\n 如果您选择“是”，将添加一个额外的修正系数",
+                                "WWV 电脑时间更新", MessageBoxButtons.YesNo, MessageBoxIcon.Information, MessageBoxDefaultButton.Button2, MessageBoxOptions.DefaultDesktopOnly);
 
                             if (temp0 == DialogResult.Yes)
                             {

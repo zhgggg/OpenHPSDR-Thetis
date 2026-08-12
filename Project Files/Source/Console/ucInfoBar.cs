@@ -1139,7 +1139,8 @@ namespace Thetis
             if (lblFB is null || lblPS is null ||
                 lblLeft1 is null || lblLeft2 is null || lblLeft3 is null ||
                 lblRight1 is null || lblRight2 is null || lblRight3 is null ||
-                lblWarning is null || lblSplitter is null)
+                lblWarning is null || lblSplitter is null ||
+                _left1Width is null || _right1Width is null)
             {
                 Debug.WriteLine(">>>>>>>>> REPOS NULL");
                 return;

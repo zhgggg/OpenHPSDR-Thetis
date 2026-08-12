@@ -6,8 +6,11 @@ on:
   pull_request:
     branches: [ master, zh-cn ]
 
+permissions:
+  contents: write
+
 jobs:
-  build-x86:
+  build:
     runs-on: windows-2022
     steps:
       - name: Checkout
@@ -30,6 +33,18 @@ jobs:
       - name: Build solution (Release x64)
         run: msbuild "Project Files\Source\Thetis_VS2022.sln" /m /p:Configuration=Release /p:Platform=x64 /v:minimal
 
+      - name: Build MSI installer (x86)
+        run: msbuild "Project Files\Source\Thetis-Installer\Thetis-Installer.wixproj" /m /p:Configuration=Release /p:Platform=x86 /v:minimal
+
+      - name: Build MSI installer (x64)
+        run: msbuild "Project Files\Source\Thetis-Installer\Thetis-Installer.wixproj" /m /p:Configuration=Release /p:Platform=x64 /v:minimal
+
+      - name: Zip portable builds
+        shell: pwsh
+        run: |
+          Compress-Archive -Path "Project Files\bin\x86\Release\*" -DestinationPath "Thetis-zh-cn-x86.zip" -Force
+          Compress-Archive -Path "Project Files\bin\x64\Release\*" -DestinationPath "Thetis-zh-cn-x64.zip" -Force
+
       - name: Upload x86 binaries
         uses: actions/upload-artifact@v4
         with:
@@ -48,3 +63,17 @@ jobs:
           name: Thetis-Installers
           path: "Project Files/bin/Installers/*.msi"
           if-no-files-found: ignore
+
+      - name: Publish zh-cn release
+        if: github.ref == 'refs/heads/zh-cn'
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release delete zh-cn-latest --cleanup-tag --yes
+          if ($LASTEXITCODE -ne 0) { Write-Host "no existing release to delete" }
+          gh release create zh-cn-latest Thetis-zh-cn-x86.zip Thetis-zh-cn-x64.zip "Project Files/bin/Installers/*.msi" `
+            --title "Thetis 中文汉化版 - 构建 #${{ github.run_number }}" `
+            --notes "自动构建于 zh-cn 分支（提交 ${{ github.sha }}）。`n`n包含 x86/x64 便携版（zip）与 MSI 安装包。`n`n汉化测试版：若发现问题请提交 issue。" `
+            --prerelease `
+            --target ${{ github.sha }}

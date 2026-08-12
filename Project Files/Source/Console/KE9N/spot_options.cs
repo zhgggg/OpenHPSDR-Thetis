@@ -431,9 +431,7 @@ namespace Thetis
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(194, 222);
             this.textBox1.TabIndex = 100;
-            this.textBox1.Text = "此窗口打开时，除频率外所有 VOACAP 设置均来自此窗口" +
-    "ncy, Month, Hour\r\n\r\nClose this Window to use default VOCAP setup from dx spotter" +
-    " window.";
+            this.textBox1.Text = "当此窗口打开时，除频率、月份、小时外，所有 VOACAP 设置均来自此窗口\r\n\r\n关闭此窗口以使用 dx spotter 窗口的默认 VOCAP 设置。";
             // 
             // SpotOptions
             // 

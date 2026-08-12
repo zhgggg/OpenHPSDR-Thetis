@@ -319,8 +319,7 @@ namespace Thetis
             this.labelTS1.Name = "labelTS1";
             this.labelTS1.Size = new System.Drawing.Size(387, 26);
             this.labelTS1.TabIndex = 56;
-            this.labelTS1.Text = "注意：接收时，回放进入接收机的输入。              I" +
-    "n Transmit, playback goes to the input of the transmitter.";
+            this.labelTS1.Text = "注意：接收时，回放进入接收机的输入；发射时，回放进入发射机的输入。";
             // 
             // chkQuickPlay
             // 

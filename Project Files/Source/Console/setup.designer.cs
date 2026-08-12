@@ -4386,7 +4386,7 @@
             tpAlexAntCtrl.Padding = new System.Windows.Forms.Padding(3);
             tpAlexAntCtrl.Size = new System.Drawing.Size(708, 378);
             tpAlexAntCtrl.TabIndex = 0;
-            tpAlexAntCtrl.Text = "Antenna";
+            tpAlexAntCtrl.Text = "天线";
             // 
             // chkForceATTwhenPSAoff
             // 
@@ -4397,8 +4397,8 @@
             this.chkForceATTwhenPSAoff.Name = "chkForceATTwhenPSAoff";
             this.chkForceATTwhenPSAoff.Size = new System.Drawing.Size(149, 31);
             this.chkForceATTwhenPSAoff.TabIndex = 20;
-            this.chkForceATTwhenPSAoff.Text = "Force ATT on Tx to 31 when PS-A is off";
-            this.toolTip1.SetToolTip(this.chkForceATTwhenPSAoff, "Forces ATT on Tx to 31 when PS-A is off. CW will do this anyway");
+            this.chkForceATTwhenPSAoff.Text = "PS-A 关闭时发射强制 ATT 为 31";
+            this.toolTip1.SetToolTip(this.chkForceATTwhenPSAoff, "PS-A 关闭时发射强制 ATT 为 31。CW 模式下本来就会这样做");
             this.chkForceATTwhenPSAoff.UseVisualStyleBackColor = true;
             this.chkForceATTwhenPSAoff.CheckedChanged += new System.EventHandler(this.chkForceATTwhenPSAoff_CheckedChanged);
             // 
@@ -4410,8 +4410,8 @@
             this.chkEnableXVTRHF.Name = "chkEnableXVTRHF";
             this.chkEnableXVTRHF.Size = new System.Drawing.Size(108, 17);
             this.chkEnableXVTRHF.TabIndex = 19;
-            this.chkEnableXVTRHF.Text = "Enable XVTR HF";
-            this.toolTip1.SetToolTip(this.chkEnableXVTRHF, "Enables the XVTR T/R relay on HF");
+            this.chkEnableXVTRHF.Text = "启用 XVTR HF";
+            this.toolTip1.SetToolTip(this.chkEnableXVTRHF, "在 HF 上启用 XVTR 收发继电器");
             this.chkEnableXVTRHF.UseVisualStyleBackColor = true;
             this.chkEnableXVTRHF.CheckedChanged += new System.EventHandler(this.chkEnableXVTRHF_CheckedChanged);
             // 
@@ -4425,8 +4425,8 @@
             this.chkBPF2Gnd.Name = "chkBPF2Gnd";
             this.chkBPF2Gnd.Size = new System.Drawing.Size(105, 17);
             this.chkBPF2Gnd.TabIndex = 16;
-            this.chkBPF2Gnd.Text = "Gnd BPF2 on Tx";
-            this.toolTip1.SetToolTip(this.chkBPF2Gnd, "Ground BPF2 input on Tx");
+            this.chkBPF2Gnd.Text = "发射时 BPF2 接地";
+            this.toolTip1.SetToolTip(this.chkBPF2Gnd, "发射时 BPF2 输入接地");
             this.chkBPF2Gnd.UseVisualStyleBackColor = true;
             this.chkBPF2Gnd.Visible = false;
             this.chkBPF2Gnd.CheckedChanged += new System.EventHandler(this.chkBPF2Gnd_CheckedChanged);
@@ -4439,8 +4439,8 @@
             this.chkDisableRXOut.Name = "chkDisableRXOut";
             this.chkDisableRXOut.Size = new System.Drawing.Size(106, 17);
             this.chkDisableRXOut.TabIndex = 15;
-            this.chkDisableRXOut.Text = "Disable BYPASS";
-            this.toolTip1.SetToolTip(this.chkDisableRXOut, "Disables BYPASS and ANT ports for use with Ext1,2,XVTR with new PA board.");
+            this.chkDisableRXOut.Text = "禁用旁路";
+            this.toolTip1.SetToolTip(this.chkDisableRXOut, "禁用 BYPASS 和 ANT 端口，以便与新 PA 板配合使用 Ext1、2、XVTR。");
             this.chkDisableRXOut.UseVisualStyleBackColor = true;
             this.chkDisableRXOut.CheckedChanged += new System.EventHandler(this.chkDisableRXOut_CheckedChanged);
             // 
@@ -4452,8 +4452,8 @@
             this.chkEXT2OutOnTx.Name = "chkEXT2OutOnTx";
             this.chkEXT2OutOnTx.Size = new System.Drawing.Size(94, 17);
             this.chkEXT2OutOnTx.TabIndex = 13;
-            this.chkEXT2OutOnTx.Text = "RX 1 IN on Tx";
-            this.toolTip1.SetToolTip(this.chkEXT2OutOnTx, "Enable RX 1 IN on Alex or Ext 2 on ANAN during transmit.");
+            this.chkEXT2OutOnTx.Text = "发射时 RX 1 输入";
+            this.toolTip1.SetToolTip(this.chkEXT2OutOnTx, "发射时启用 Alex 的 RX 1 输入或 ANAN 的 Ext 2。");
             this.chkEXT2OutOnTx.UseVisualStyleBackColor = true;
             this.chkEXT2OutOnTx.CheckedChanged += new System.EventHandler(this.chkEXT2OutOnTx_CheckedChanged);
             // 
@@ -4465,8 +4465,8 @@
             this.chkEXT1OutOnTx.Name = "chkEXT1OutOnTx";
             this.chkEXT1OutOnTx.Size = new System.Drawing.Size(94, 17);
             this.chkEXT1OutOnTx.TabIndex = 10;
-            this.chkEXT1OutOnTx.Text = "RX 2 IN on Tx";
-            this.toolTip1.SetToolTip(this.chkEXT1OutOnTx, "Enable RX 2 IN on Alex or Ext 1 on ANAN during transmit.");
+            this.chkEXT1OutOnTx.Text = "发射时 RX 2 输入";
+            this.toolTip1.SetToolTip(this.chkEXT1OutOnTx, "发射时启用 Alex 的 RX 2 输入或 ANAN 的 Ext 1。");
             this.chkEXT1OutOnTx.UseVisualStyleBackColor = true;
             this.chkEXT1OutOnTx.CheckedChanged += new System.EventHandler(this.chkEXT1OutOnTx_CheckedChanged);
             // 
@@ -4519,8 +4519,8 @@
             this.chkHFTRRelay.Name = "chkHFTRRelay";
             this.chkHFTRRelay.Size = new System.Drawing.Size(95, 17);
             this.chkHFTRRelay.TabIndex = 7;
-            this.chkHFTRRelay.Text = "Disable HF PA";
-            this.toolTip1.SetToolTip(this.chkHFTRRelay, "Disables HF PA.");
+            this.chkHFTRRelay.Text = "禁用 HF PA";
+            this.toolTip1.SetToolTip(this.chkHFTRRelay, "禁用 HF PA。");
             this.chkHFTRRelay.UseVisualStyleBackColor = true;
             this.chkHFTRRelay.CheckedChanged += new System.EventHandler(this.chkHFTRRelay_CheckedChanged);
             // 
@@ -4533,7 +4533,7 @@
             this.grpSWRProtectionControl.Size = new System.Drawing.Size(143, 84);
             this.grpSWRProtectionControl.TabIndex = 5;
             this.grpSWRProtectionControl.TabStop = false;
-            this.grpSWRProtectionControl.Text = "SWR Protection";
+            this.grpSWRProtectionControl.Text = "SWR 保护";
             // 
             // chkSWRTuneProtection
             // 
@@ -4544,8 +4544,8 @@
             this.chkSWRTuneProtection.Name = "chkSWRTuneProtection";
             this.chkSWRTuneProtection.Size = new System.Drawing.Size(116, 30);
             this.chkSWRTuneProtection.TabIndex = 4;
-            this.chkSWRTuneProtection.Text = "Disable on Tune Pwr <35W";
-            this.toolTip1.SetToolTip(this.chkSWRTuneProtection, "Disables SWR Protection during Tune.");
+            this.chkSWRTuneProtection.Text = "调谐功率 <35W 时禁用";
+            this.toolTip1.SetToolTip(this.chkSWRTuneProtection, "调谐期间禁用 SWR 保护。");
             this.chkSWRTuneProtection.UseVisualStyleBackColor = true;
             this.chkSWRTuneProtection.CheckedChanged += new System.EventHandler(this.chkSWRTuneProtection_CheckedChanged);
             // 
@@ -4559,8 +4559,8 @@
             this.chkSWRProtection.Name = "chkSWRProtection";
             this.chkSWRProtection.Size = new System.Drawing.Size(110, 17);
             this.chkSWRProtection.TabIndex = 3;
-            this.chkSWRProtection.Text = "Enable Protection";
-            this.toolTip1.SetToolTip(this.chkSWRProtection, "Disables SWR Protection.");
+            this.chkSWRProtection.Text = "启用保护";
+            this.toolTip1.SetToolTip(this.chkSWRProtection, "禁用 SWR 保护。");
             this.chkSWRProtection.UseVisualStyleBackColor = true;
             this.chkSWRProtection.CheckedChanged += new System.EventHandler(this.chkSWRProtection_CheckedChanged);
             // 
@@ -4574,8 +4574,8 @@
             this.chkATTOnTX.Name = "chkATTOnTX";
             this.chkATTOnTX.Size = new System.Drawing.Size(77, 17);
             this.chkATTOnTX.TabIndex = 4;
-            this.chkATTOnTX.Text = "ATT on Tx";
-            this.toolTip1.SetToolTip(this.chkATTOnTX, "Enables Attenuator on Mercury during Transmit.");
+            this.chkATTOnTX.Text = "发射时衰减 (ATT)";
+            this.toolTip1.SetToolTip(this.chkATTOnTX, "发射时启用 Mercury 衰减器。");
             this.chkATTOnTX.UseVisualStyleBackColor = true;
             this.chkATTOnTX.CheckedChanged += new System.EventHandler(this.chkATTOnTX_CheckedChanged);
             // 
@@ -4587,8 +4587,8 @@
             this.chkRxOutOnTx.Name = "chkRxOutOnTx";
             this.chkRxOutOnTx.Size = new System.Drawing.Size(98, 17);
             this.chkRxOutOnTx.TabIndex = 2;
-            this.chkRxOutOnTx.Text = "Rx 1 Out on Tx";
-            this.toolTip1.SetToolTip(this.chkRxOutOnTx, "Enable Rx 1 Out on Alex or ByPass on ANAN during transmit.");
+            this.chkRxOutOnTx.Text = "发射时 Rx 1 输出";
+            this.toolTip1.SetToolTip(this.chkRxOutOnTx, "发射时启用 Alex 的 Rx 1 输出或 ANAN 的旁路。");
             this.chkRxOutOnTx.UseVisualStyleBackColor = true;
             this.chkRxOutOnTx.CheckedChanged += new System.EventHandler(this.chkRxOutOnTx_CheckedChanged);
             // 
@@ -4606,7 +4606,7 @@
             this.chkAlexAntCtrl.Name = "chkAlexAntCtrl";
             this.chkAlexAntCtrl.Size = new System.Drawing.Size(95, 23);
             this.chkAlexAntCtrl.TabIndex = 1;
-            this.chkAlexAntCtrl.Text = "Antenna Control";
+            this.chkAlexAntCtrl.Text = "天线控制";
             this.chkAlexAntCtrl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.chkAlexAntCtrl.UseVisualStyleBackColor = false;
             this.chkAlexAntCtrl.Visible = false;
@@ -4621,7 +4621,7 @@
             this.grpAlexAntCtrl.Size = new System.Drawing.Size(426, 262);
             this.grpAlexAntCtrl.TabIndex = 0;
             this.grpAlexAntCtrl.TabStop = false;
-            this.grpAlexAntCtrl.Text = "Antenna Control";
+            this.grpAlexAntCtrl.Text = "天线控制";
             // 
             // panelAlexTXAntControl
             // 
@@ -4777,7 +4777,7 @@
             this.labelTS115.Name = "labelTS115";
             this.labelTS115.Size = new System.Drawing.Size(32, 16);
             this.labelTS115.TabIndex = 248;
-            this.labelTS115.Text = "Band";
+            this.labelTS115.Text = "波段";
             // 
             // label10
             // 
@@ -4817,7 +4817,7 @@
             this.labelTS15.Name = "labelTS15";
             this.labelTS15.Size = new System.Drawing.Size(56, 16);
             this.labelTS15.TabIndex = 244;
-            this.labelTS15.Text = "Transmit";
+            this.labelTS15.Text = "发射";
             this.labelTS15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel23
@@ -5400,7 +5400,7 @@
             this.labelTS257.Name = "labelTS257";
             this.labelTS257.Size = new System.Drawing.Size(58, 13);
             this.labelTS257.TabIndex = 238;
-            this.labelTS257.Text = "Do Not TX";
+            this.labelTS257.Text = "不发射";
             // 
             // panelAlexRXXVRTControl
             // 
@@ -5826,7 +5826,7 @@
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(56, 16);
             this.label12.TabIndex = 65;
-            this.label12.Text = "Receive";
+            this.label12.Text = "接收";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
@@ -6023,7 +6023,7 @@
             this.labelTS22.Name = "labelTS22";
             this.labelTS22.Size = new System.Drawing.Size(32, 16);
             this.labelTS22.TabIndex = 199;
-            this.labelTS22.Text = "Band";
+            this.labelTS22.Text = "波段";
             // 
             // panel11
             // 
@@ -6684,7 +6684,7 @@
             this.tpGeneral.Name = "tpGeneral";
             this.tpGeneral.Size = new System.Drawing.Size(728, 436);
             this.tpGeneral.TabIndex = 3;
-            this.tpGeneral.Text = "General";
+            this.tpGeneral.Text = "常规";
             // 
             // tcGeneral
             // 
@@ -6723,7 +6723,7 @@
             this.tpGeneralHardware.Name = "tpGeneralHardware";
             this.tpGeneralHardware.Size = new System.Drawing.Size(724, 410);
             this.tpGeneralHardware.TabIndex = 0;
-            this.tpGeneralHardware.Text = "H/W Select";
+            this.tpGeneralHardware.Text = "硬件选择";
             this.tpGeneralHardware.Paint += new System.Windows.Forms.PaintEventHandler(this.tpGeneralHardware_Paint);
             // 
             // pictureBox1
@@ -6745,7 +6745,7 @@
             this.chkSupportUkraine.Name = "chkSupportUkraine";
             this.chkSupportUkraine.Size = new System.Drawing.Size(103, 17);
             this.chkSupportUkraine.TabIndex = 39;
-            this.chkSupportUkraine.Text = "Support Ukraine";
+            this.chkSupportUkraine.Text = "支持乌克兰";
             this.toolTip1.SetToolTip(this.chkSupportUkraine, "RIP Ivan UR8GX");
             this.chkSupportUkraine.UseVisualStyleBackColor = true;
             this.chkSupportUkraine.CheckedChanged += new System.EventHandler(this.chkSupportUkraine_CheckedChanged);
@@ -6757,7 +6757,7 @@
             this.lblTimeout.Name = "lblTimeout";
             this.lblTimeout.Size = new System.Drawing.Size(87, 13);
             this.lblTimeout.TabIndex = 38;
-            this.lblTimeout.Text = "90 days";
+            this.lblTimeout.Text = "90 天";
             // 
             // lblShowTimeoutText
             // 
@@ -6766,7 +6766,7 @@
             this.lblShowTimeoutText.Name = "lblShowTimeoutText";
             this.lblShowTimeoutText.Size = new System.Drawing.Size(253, 13);
             this.lblShowTimeoutText.TabIndex = 37;
-            this.lblShowTimeoutText.Text = "This test/beta version of Thetis will timeout in :";
+            this.lblShowTimeoutText.Text = "此测试/测试版 Thetis 将在以下时间超时:";
             this.lblShowTimeoutText.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // grpFirmware
@@ -6782,7 +6782,7 @@
             this.grpFirmware.Size = new System.Drawing.Size(160, 105);
             this.grpFirmware.TabIndex = 36;
             this.grpFirmware.TabStop = false;
-            this.grpFirmware.Text = "Firmware";
+            this.grpFirmware.Text = "固件";
             // 
             // lblPLLLock
             // 
@@ -6791,7 +6791,7 @@
             this.lblPLLLock.Name = "lblPLLLock";
             this.lblPLLLock.Size = new System.Drawing.Size(105, 16);
             this.lblPLLLock.TabIndex = 9;
-            this.lblPLLLock.Text = "PLL Not Locked";
+            this.lblPLLLock.Text = "PLL 未锁定";
             // 
             // lblProtocolInfo
             // 
@@ -6800,7 +6800,7 @@
             this.lblProtocolInfo.Name = "lblProtocolInfo";
             this.lblProtocolInfo.Size = new System.Drawing.Size(105, 16);
             this.lblProtocolInfo.TabIndex = 8;
-            this.lblProtocolInfo.Text = "Protocol Info";
+            this.lblProtocolInfo.Text = "协议信息";
             // 
             // lblMetisBoardID
             // 
@@ -6836,7 +6836,7 @@
             this.lblMetisVer.Name = "lblMetisVer";
             this.lblMetisVer.Size = new System.Drawing.Size(26, 16);
             this.lblMetisVer.TabIndex = 4;
-            this.lblMetisVer.Text = "Ver:";
+            this.lblMetisVer.Text = "版本:";
             // 
             // grpOzyType
             // 
@@ -6852,7 +6852,7 @@
             this.grpOzyType.Size = new System.Drawing.Size(322, 274);
             this.grpOzyType.TabIndex = 34;
             this.grpOzyType.TabStop = false;
-            this.grpOzyType.Text = "Network Settings";
+            this.grpOzyType.Text = "网络设置";
             this.grpOzyType.Visible = false;
             // 
             // chkFirewallCheck
@@ -6863,8 +6863,8 @@
             this.chkFirewallCheck.Selectable = true;
             this.chkFirewallCheck.Size = new System.Drawing.Size(98, 33);
             this.chkFirewallCheck.TabIndex = 39;
-            this.chkFirewallCheck.Text = "Firewall Check";
-            this.toolTip1.SetToolTip(this.chkFirewallCheck, "Use this to re-apply default firewall rules if you are having issues");
+            this.chkFirewallCheck.Text = "防火墙检查";
+            this.toolTip1.SetToolTip(this.chkFirewallCheck, "遇到问题时使用此项重新应用默认防火墙规则");
             this.chkFirewallCheck.UseVisualStyleBackColor = true;
             this.chkFirewallCheck.Click += new System.EventHandler(this.chkFirewallCheck_Click);
             // 
@@ -6875,9 +6875,8 @@
             this.chkNetworkThrottleIndexTweak.Name = "chkNetworkThrottleIndexTweak";
             this.chkNetworkThrottleIndexTweak.Size = new System.Drawing.Size(186, 16);
             this.chkNetworkThrottleIndexTweak.TabIndex = 18;
-            this.chkNetworkThrottleIndexTweak.Text = "Network Throttle Index Tweak";
-            this.toolTip1.SetToolTip(this.chkNetworkThrottleIndexTweak, "When enabled NetworkThrottlingIndex is set to 0xffffffff to prevent windows from " +
-        "throttling the network connection. See thread on forums for more information.");
+            this.chkNetworkThrottleIndexTweak.Text = "网络节流索引调整";
+            this.toolTip1.SetToolTip(this.chkNetworkThrottleIndexTweak, "启用后将 NetworkThrottlingIndex 设置为 0xffffffff，防止 Windows 限制网络连接。详情请参阅论坛相关帖子。");
             this.chkNetworkThrottleIndexTweak.CheckedChanged += new System.EventHandler(this.chkNetworkThrottleIndexTweak_CheckedChanged);
             // 
             // chkRadioProtocolSelect
@@ -6889,9 +6888,9 @@
             this.chkRadioProtocolSelect.Name = "chkRadioProtocolSelect";
             this.chkRadioProtocolSelect.Size = new System.Drawing.Size(152, 16);
             this.chkRadioProtocolSelect.TabIndex = 17;
-            this.chkRadioProtocolSelect.Text = "Auto Detect Protocol";
+            this.chkRadioProtocolSelect.Text = "自动检测协议";
             this.chkRadioProtocolSelect.ThreeState = true;
-            this.toolTip1.SetToolTip(this.chkRadioProtocolSelect, "Selects Radio Protocol");
+            this.toolTip1.SetToolTip(this.chkRadioProtocolSelect, "选择电台协议");
             this.chkRadioProtocolSelect.CheckStateChanged += new System.EventHandler(this.chkRadioProtocolSelect_CheckStateChanged);
             // 
             // chkNetworkWDT
@@ -6903,8 +6902,8 @@
             this.chkNetworkWDT.Name = "chkNetworkWDT";
             this.chkNetworkWDT.Size = new System.Drawing.Size(152, 16);
             this.chkNetworkWDT.TabIndex = 16;
-            this.chkNetworkWDT.Text = "Network Watchdog";
-            this.toolTip1.SetToolTip(this.chkNetworkWDT, "Resets software/firmware if network becomes inactive.");
+            this.chkNetworkWDT.Text = "网络看门狗";
+            this.toolTip1.SetToolTip(this.chkNetworkWDT, "网络不活跃时复位软件/固件。");
             this.chkNetworkWDT.CheckedChanged += new System.EventHandler(this.chkNetworkWDT_CheckedChanged);
             // 
             // panelTS7
@@ -7336,7 +7335,7 @@
             this.btnSetIPAddr.Selectable = true;
             this.btnSetIPAddr.Size = new System.Drawing.Size(60, 20);
             this.btnSetIPAddr.TabIndex = 4;
-            this.btnSetIPAddr.Text = "Select IP";
+            this.btnSetIPAddr.Text = "选择 IP";
             this.btnSetIPAddr.UseVisualStyleBackColor = true;
             this.btnSetIPAddr.Click += new System.EventHandler(this.btnSetIPAddr_Click);
             // 
@@ -7463,7 +7462,7 @@
             this.chkEnableStaticIP.Name = "chkEnableStaticIP";
             this.chkEnableStaticIP.Size = new System.Drawing.Size(152, 16);
             this.chkEnableStaticIP.TabIndex = 14;
-            this.chkEnableStaticIP.Text = "Enable Static IP Address";
+            this.chkEnableStaticIP.Text = "启用静态 IP 地址";
             this.chkEnableStaticIP.CheckedChanged += new System.EventHandler(this.chkEnableStaticIP_CheckedChanged);
             // 
             // chkFullDiscovery
@@ -7475,8 +7474,8 @@
             this.chkFullDiscovery.Name = "chkFullDiscovery";
             this.chkFullDiscovery.Size = new System.Drawing.Size(152, 16);
             this.chkFullDiscovery.TabIndex = 13;
-            this.chkFullDiscovery.Text = "Reuse Last IP Address";
-            this.toolTip1.SetToolTip(this.chkFullDiscovery, "Reuse Last IP Address");
+            this.chkFullDiscovery.Text = "重用上次的 IP 地址";
+            this.toolTip1.SetToolTip(this.chkFullDiscovery, "重用上次的 IP 地址");
             this.chkFullDiscovery.CheckedChanged += new System.EventHandler(this.chkFullDiscovery_CheckedChanged);
             // 
             // grpFRSRegion
@@ -7490,7 +7489,7 @@
             this.grpFRSRegion.Size = new System.Drawing.Size(150, 75);
             this.grpFRSRegion.TabIndex = 33;
             this.grpFRSRegion.TabStop = false;
-            this.grpFRSRegion.Text = "Region";
+            this.grpFRSRegion.Text = "区域";
             // 
             // lblWarningRegionExtended
             // 
@@ -7499,7 +7498,7 @@
             this.lblWarningRegionExtended.Name = "lblWarningRegionExtended";
             this.lblWarningRegionExtended.Size = new System.Drawing.Size(100, 58);
             this.lblWarningRegionExtended.TabIndex = 38;
-            this.lblWarningRegionExtended.Text = "Changing this setting will reset your band stack entries";
+            this.lblWarningRegionExtended.Text = "更改此设置将重置波段堆栈条目";
             // 
             // picWarningRegionExtended
             // 
@@ -7517,8 +7516,8 @@
             this.chkExtended.Name = "chkExtended";
             this.chkExtended.Size = new System.Drawing.Size(71, 17);
             this.chkExtended.TabIndex = 1;
-            this.chkExtended.Text = "Extended";
-            this.toolTip1.SetToolTip(this.chkExtended, "Enable extended TX (out of band)");
+            this.chkExtended.Text = "扩展";
+            this.toolTip1.SetToolTip(this.chkExtended, "启用扩展发射（带外）");
             this.chkExtended.UseVisualStyleBackColor = true;
             this.chkExtended.CheckedChanged += new System.EventHandler(this.ChkExtended_CheckedChanged);
             this.chkExtended.MouseEnter += new System.EventHandler(this.chkExtended_MouseEnter);
@@ -7557,7 +7556,7 @@
             this.comboFRSRegion.Name = "comboFRSRegion";
             this.comboFRSRegion.Size = new System.Drawing.Size(113, 21);
             this.comboFRSRegion.TabIndex = 0;
-            this.toolTip1.SetToolTip(this.comboFRSRegion, "Select Region for your location");
+            this.toolTip1.SetToolTip(this.comboFRSRegion, "选择您所在区域");
             this.comboFRSRegion.SelectedIndexChanged += new System.EventHandler(this.comboFRSRegion_SelectedIndexChanged);
             this.comboFRSRegion.MouseClick += new System.Windows.Forms.MouseEventHandler(this.comboFRSRegion_MouseClick);
             this.comboFRSRegion.MouseEnter += new System.EventHandler(this.comboFRSRegion_MouseEnter);
@@ -7573,7 +7572,7 @@
             this.grpGeneralModel.Size = new System.Drawing.Size(153, 92);
             this.grpGeneralModel.TabIndex = 25;
             this.grpGeneralModel.TabStop = false;
-            this.grpGeneralModel.Text = "Radio Model";
+            this.grpGeneralModel.Text = "电台型号";
             // 
             // comboRadioModel
             // 
@@ -7605,8 +7604,8 @@
             this.chkGeneralRXOnly.Name = "chkGeneralRXOnly";
             this.chkGeneralRXOnly.Size = new System.Drawing.Size(96, 16);
             this.chkGeneralRXOnly.TabIndex = 11;
-            this.chkGeneralRXOnly.Text = "Receive Only";
-            this.toolTip1.SetToolTip(this.chkGeneralRXOnly, "Check to disable transmit functionality.");
+            this.chkGeneralRXOnly.Text = "仅接收";
+            this.toolTip1.SetToolTip(this.chkGeneralRXOnly, "勾选以禁用发射功能。");
             this.chkGeneralRXOnly.Visible = false;
             this.chkGeneralRXOnly.CheckedChanged += new System.EventHandler(this.chkGeneralRXOnly_CheckedChanged);
             // 
@@ -7621,7 +7620,7 @@
             this.grpMetisAddr.Size = new System.Drawing.Size(156, 105);
             this.grpMetisAddr.TabIndex = 35;
             this.grpMetisAddr.TabStop = false;
-            this.grpMetisAddr.Text = "Metis  Address";
+            this.grpMetisAddr.Text = "Metis 地址";
             this.grpMetisAddr.Visible = false;
             // 
             // labelTS16
@@ -7672,7 +7671,7 @@
             this.groupBoxHPSDRHW.Size = new System.Drawing.Size(160, 171);
             this.groupBoxHPSDRHW.TabIndex = 30;
             this.groupBoxHPSDRHW.TabStop = false;
-            this.groupBoxHPSDRHW.Text = "Hardware Options";
+            this.groupBoxHPSDRHW.Text = "硬件选项";
             // 
             // chkApolloPresent
             // 
@@ -7757,7 +7756,7 @@
             this.grpGeneralHardwareORION.Size = new System.Drawing.Size(160, 171);
             this.grpGeneralHardwareORION.TabIndex = 8;
             this.grpGeneralHardwareORION.TabStop = false;
-            this.grpGeneralHardwareORION.Text = "Hardware Options";
+            this.grpGeneralHardwareORION.Text = "硬件选项";
             // 
             // panelOrionPTT
             // 
@@ -7780,7 +7779,7 @@
             this.radOrionPTTOn.Size = new System.Drawing.Size(39, 17);
             this.radOrionPTTOn.TabIndex = 1;
             this.radOrionPTTOn.TabStop = true;
-            this.radOrionPTTOn.Text = "On";
+            this.radOrionPTTOn.Text = "开";
             this.radOrionPTTOn.UseVisualStyleBackColor = true;
             // 
             // radOrionPTTOff
@@ -7791,7 +7790,7 @@
             this.radOrionPTTOff.Name = "radOrionPTTOff";
             this.radOrionPTTOff.Size = new System.Drawing.Size(39, 17);
             this.radOrionPTTOff.TabIndex = 0;
-            this.radOrionPTTOff.Text = "Off";
+            this.radOrionPTTOff.Text = "关";
             this.radOrionPTTOff.UseVisualStyleBackColor = true;
             this.radOrionPTTOff.CheckedChanged += new System.EventHandler(this.radOrionPTTOff_CheckedChanged);
             // 
@@ -7825,7 +7824,7 @@
             this.radOrionBiasOn.Size = new System.Drawing.Size(39, 17);
             this.radOrionBiasOn.TabIndex = 1;
             this.radOrionBiasOn.TabStop = true;
-            this.radOrionBiasOn.Text = "On";
+            this.radOrionBiasOn.Text = "开";
             this.radOrionBiasOn.UseVisualStyleBackColor = true;
             this.radOrionBiasOn.CheckedChanged += new System.EventHandler(this.radOrionBiasOn_CheckedChanged);
             // 
@@ -7839,7 +7838,7 @@
             this.radOrionBiasOff.Size = new System.Drawing.Size(39, 17);
             this.radOrionBiasOff.TabIndex = 0;
             this.radOrionBiasOff.TabStop = true;
-            this.radOrionBiasOff.Text = "Off";
+            this.radOrionBiasOff.Text = "关";
             this.radOrionBiasOff.UseVisualStyleBackColor = true;
             // 
             // lblOrionBias
@@ -7850,7 +7849,7 @@
             this.lblOrionBias.Name = "lblOrionBias";
             this.lblOrionBias.Size = new System.Drawing.Size(27, 13);
             this.lblOrionBias.TabIndex = 2;
-            this.lblOrionBias.Text = "Bias";
+            this.lblOrionBias.Text = "偏置";
             // 
             // panelOrionMic
             // 
@@ -7872,7 +7871,7 @@
             this.radOrionMicRing.Size = new System.Drawing.Size(47, 17);
             this.radOrionMicRing.TabIndex = 1;
             this.radOrionMicRing.TabStop = true;
-            this.radOrionMicRing.Text = "Ring";
+            this.radOrionMicRing.Text = "环";
             this.radOrionMicRing.UseVisualStyleBackColor = true;
             // 
             // radOrionMicTip
@@ -7885,7 +7884,7 @@
             this.radOrionMicTip.Size = new System.Drawing.Size(40, 17);
             this.radOrionMicTip.TabIndex = 0;
             this.radOrionMicTip.TabStop = true;
-            this.radOrionMicTip.Text = "Tip";
+            this.radOrionMicTip.Text = "提示";
             this.radOrionMicTip.UseVisualStyleBackColor = true;
             this.radOrionMicTip.CheckedChanged += new System.EventHandler(this.radOrionMicTip_CheckedChanged);
             // 
@@ -7897,7 +7896,7 @@
             this.lblOrionMic.Name = "lblOrionMic";
             this.lblOrionMic.Size = new System.Drawing.Size(24, 13);
             this.lblOrionMic.TabIndex = 0;
-            this.lblOrionMic.Text = "Mic";
+            this.lblOrionMic.Text = "麦克风";
             // 
             // tpGeneralOptions
             // 
@@ -7907,7 +7906,7 @@
             this.tpGeneralOptions.Name = "tpGeneralOptions";
             this.tpGeneralOptions.Size = new System.Drawing.Size(724, 410);
             this.tpGeneralOptions.TabIndex = 1;
-            this.tpGeneralOptions.Text = "Options";
+            this.tpGeneralOptions.Text = "选项";
             // 
             // tcOptions
             // 
@@ -7935,7 +7934,7 @@
             this.tpOptions1.Padding = new System.Windows.Forms.Padding(3);
             this.tpOptions1.Size = new System.Drawing.Size(716, 384);
             this.tpOptions1.TabIndex = 0;
-            this.tpOptions1.Text = "Options-1";
+            this.tpOptions1.Text = "选项-1";
             // 
             // grpGeneralProcessPriority
             // 
@@ -7945,7 +7944,7 @@
             this.grpGeneralProcessPriority.Size = new System.Drawing.Size(168, 47);
             this.grpGeneralProcessPriority.TabIndex = 23;
             this.grpGeneralProcessPriority.TabStop = false;
-            this.grpGeneralProcessPriority.Text = "Process Priority";
+            this.grpGeneralProcessPriority.Text = "进程优先级";
             // 
             // comboGeneralProcessPriority
             // 
@@ -7962,7 +7961,7 @@
             this.comboGeneralProcessPriority.Name = "comboGeneralProcessPriority";
             this.comboGeneralProcessPriority.Size = new System.Drawing.Size(112, 21);
             this.comboGeneralProcessPriority.TabIndex = 0;
-            this.toolTip1.SetToolTip(this.comboGeneralProcessPriority, "Sets the process priority of the Thetis software.");
+            this.toolTip1.SetToolTip(this.comboGeneralProcessPriority, "设置 Thetis 软件的进程优先级。");
             this.comboGeneralProcessPriority.SelectedIndexChanged += new System.EventHandler(this.comboGeneralProcessPriority_SelectedIndexChanged);
             // 
             // grpGeneralOptions
@@ -7984,7 +7983,7 @@
             this.grpGeneralOptions.Size = new System.Drawing.Size(250, 224);
             this.grpGeneralOptions.TabIndex = 6;
             this.grpGeneralOptions.TabStop = false;
-            this.grpGeneralOptions.Text = "Options";
+            this.grpGeneralOptions.Text = "选项";
             // 
             // chkPreventTXonDifferentBandToRX
             // 
@@ -7993,8 +7992,8 @@
             this.chkPreventTXonDifferentBandToRX.Name = "chkPreventTXonDifferentBandToRX";
             this.chkPreventTXonDifferentBandToRX.Size = new System.Drawing.Size(115, 50);
             this.chkPreventTXonDifferentBandToRX.TabIndex = 30;
-            this.chkPreventTXonDifferentBandToRX.Text = "Prevent TX when on different band to RX";
-            this.toolTip1.SetToolTip(this.chkPreventTXonDifferentBandToRX, "Prevent TX\'ing on a different band to the RX band");
+            this.chkPreventTXonDifferentBandToRX.Text = "发射与接收波段不同时禁止发射";
+            this.toolTip1.SetToolTip(this.chkPreventTXonDifferentBandToRX, "禁止在与接收波段不同的波段上发射");
             this.chkPreventTXonDifferentBandToRX.CheckedChanged += new System.EventHandler(this.chkPreventTXonDifferentBandToRX_CheckedChanged);
             // 
             // udSpaceMoxDelay
@@ -8019,7 +8018,7 @@
             this.udSpaceMoxDelay.Size = new System.Drawing.Size(48, 20);
             this.udSpaceMoxDelay.TabIndex = 28;
             this.udSpaceMoxDelay.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udSpaceMoxDelay, "Sets the Hang time in mS.");
+            this.toolTip1.SetToolTip(this.udSpaceMoxDelay, "设置保持时间 (mS)。");
             this.udSpaceMoxDelay.Value = new decimal(new int[] {
             0,
             0,
@@ -8034,7 +8033,7 @@
             this.labelTS521.Name = "labelTS521";
             this.labelTS521.Size = new System.Drawing.Size(71, 23);
             this.labelTS521.TabIndex = 29;
-            this.labelTS521.Text = "PTT Delay";
+            this.labelTS521.Text = "PTT 延迟";
             this.labelTS521.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // udRFDelay
@@ -8060,7 +8059,7 @@
             this.udRFDelay.Size = new System.Drawing.Size(48, 20);
             this.udRFDelay.TabIndex = 22;
             this.udRFDelay.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udRFDelay, "Sets the Delay period to wait after TX before RF output except CW mode.");
+            this.toolTip1.SetToolTip(this.udRFDelay, "设置除 CW 外发射后等待到 RF 输出的延迟时间。");
             this.udRFDelay.Value = new decimal(new int[] {
             10,
             0,
@@ -8092,7 +8091,7 @@
             this.udMoxDelay.Size = new System.Drawing.Size(48, 20);
             this.udMoxDelay.TabIndex = 20;
             this.udMoxDelay.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udMoxDelay, "Sets the delay between carrier removal and PTT drops.");
+            this.toolTip1.SetToolTip(this.udMoxDelay, "设置载波移除与 PTT 释放之间的延迟。");
             this.udMoxDelay.Value = new decimal(new int[] {
             15,
             0,
@@ -8108,7 +8107,7 @@
             this.lblRFDelay.Name = "lblRFDelay";
             this.lblRFDelay.Size = new System.Drawing.Size(60, 23);
             this.lblRFDelay.TabIndex = 23;
-            this.lblRFDelay.Text = "RF Delay";
+            this.lblRFDelay.Text = "RF 延迟";
             this.lblRFDelay.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblRFDelay.Visible = false;
             // 
@@ -8134,7 +8133,7 @@
             this.udGenPTTOutDelay.Size = new System.Drawing.Size(48, 20);
             this.udGenPTTOutDelay.TabIndex = 17;
             this.udGenPTTOutDelay.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udGenPTTOutDelay, "Delay between PTT Out drops to RX On.");
+            this.toolTip1.SetToolTip(this.udGenPTTOutDelay, "PTT 输出释放到接收开启之间的延迟。");
             this.udGenPTTOutDelay.Value = new decimal(new int[] {
             0,
             0,
@@ -8149,7 +8148,7 @@
             this.lblMoxDelay.Name = "lblMoxDelay";
             this.lblMoxDelay.Size = new System.Drawing.Size(65, 23);
             this.lblMoxDelay.TabIndex = 21;
-            this.lblMoxDelay.Text = "MOX Delay";
+            this.lblMoxDelay.Text = "MOX 延迟";
             this.lblMoxDelay.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblMoxDelay.Visible = false;
             // 
@@ -8160,8 +8159,8 @@
             this.chkGenAllModeMicPTT.Name = "chkGenAllModeMicPTT";
             this.chkGenAllModeMicPTT.Size = new System.Drawing.Size(104, 32);
             this.chkGenAllModeMicPTT.TabIndex = 11;
-            this.chkGenAllModeMicPTT.Text = "All Mode Mic PTT";
-            this.toolTip1.SetToolTip(this.chkGenAllModeMicPTT, "If checked, the Mic PTT is no longer limited to just voice modes.");
+            this.chkGenAllModeMicPTT.Text = "所有模式麦克风 PTT";
+            this.toolTip1.SetToolTip(this.chkGenAllModeMicPTT, "勾选后，麦克风 PTT 不再仅限于语音模式。");
             this.chkGenAllModeMicPTT.CheckedChanged += new System.EventHandler(this.chkGenAllModeMicPTT_CheckedChanged);
             // 
             // chkGeneralDisablePTT
@@ -8171,8 +8170,8 @@
             this.chkGeneralDisablePTT.Name = "chkGeneralDisablePTT";
             this.chkGeneralDisablePTT.Size = new System.Drawing.Size(104, 24);
             this.chkGeneralDisablePTT.TabIndex = 4;
-            this.chkGeneralDisablePTT.Text = "Disable PTT";
-            this.toolTip1.SetToolTip(this.chkGeneralDisablePTT, "Disable Push To Talk detection.");
+            this.chkGeneralDisablePTT.Text = "禁用 PTT";
+            this.toolTip1.SetToolTip(this.chkGeneralDisablePTT, "禁用按键通话检测。");
             this.chkGeneralDisablePTT.CheckedChanged += new System.EventHandler(this.chkGeneralDisablePTT_CheckedChanged);
             // 
             // chkSplitOff
@@ -8182,8 +8181,8 @@
             this.chkSplitOff.Name = "chkSplitOff";
             this.chkSplitOff.Size = new System.Drawing.Size(123, 32);
             this.chkSplitOff.TabIndex = 12;
-            this.chkSplitOff.Text = "Disable Split on Band Change";
-            this.toolTip1.SetToolTip(this.chkSplitOff, "Split will be disabled when band is changed");
+            this.chkSplitOff.Text = "换波段时禁用 Split";
+            this.toolTip1.SetToolTip(this.chkSplitOff, "换波段时将禁用 Split");
             this.chkSplitOff.CheckedChanged += new System.EventHandler(this.chkSplitOff_CheckedChanged);
             // 
             // lblPTTOutDelay
@@ -8193,7 +8192,7 @@
             this.lblPTTOutDelay.Name = "lblPTTOutDelay";
             this.lblPTTOutDelay.Size = new System.Drawing.Size(65, 23);
             this.lblPTTOutDelay.TabIndex = 18;
-            this.lblPTTOutDelay.Text = "RX Delay";
+            this.lblPTTOutDelay.Text = "RX 延迟";
             this.lblPTTOutDelay.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // grpHermesStepAttenuator
@@ -8208,7 +8207,7 @@
             this.grpHermesStepAttenuator.Size = new System.Drawing.Size(168, 94);
             this.grpHermesStepAttenuator.TabIndex = 30;
             this.grpHermesStepAttenuator.TabStop = false;
-            this.grpHermesStepAttenuator.Text = "Hermes Step Attenuator";
+            this.grpHermesStepAttenuator.Text = "Hermes 步进衰减器";
             // 
             // lblADCLinked
             // 
@@ -8218,9 +8217,9 @@
             this.lblADCLinked.Name = "lblADCLinked";
             this.lblADCLinked.Size = new System.Drawing.Size(59, 17);
             this.lblADCLinked.TabIndex = 13;
-            this.lblADCLinked.Text = "adc linked";
+            this.lblADCLinked.Text = "ADC 已链接";
             this.lblADCLinked.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.toolTip1.SetToolTip(this.lblADCLinked, "Determines the frequency offset for click tuning and ");
+            this.toolTip1.SetToolTip(this.lblADCLinked, "确定点击调谐的频率偏移量");
             this.lblADCLinked.Visible = false;
             // 
             // udHermesStepAttenuatorDataRX2
@@ -8260,8 +8259,8 @@
             this.chkRX2StepAtt.Name = "chkRX2StepAtt";
             this.chkRX2StepAtt.Size = new System.Drawing.Size(88, 16);
             this.chkRX2StepAtt.TabIndex = 4;
-            this.chkRX2StepAtt.Text = "Enable RX2";
-            this.toolTip1.SetToolTip(this.chkRX2StepAtt, "Enable the step attenuator.");
+            this.chkRX2StepAtt.Text = "启用 RX2";
+            this.toolTip1.SetToolTip(this.chkRX2StepAtt, "启用步进衰减器。");
             this.chkRX2StepAtt.CheckedChanged += new System.EventHandler(this.chkRX2StepAtt_CheckedChanged);
             // 
             // udHermesStepAttenuatorData
@@ -8301,8 +8300,8 @@
             this.chkHermesStepAttenuator.Name = "chkHermesStepAttenuator";
             this.chkHermesStepAttenuator.Size = new System.Drawing.Size(88, 16);
             this.chkHermesStepAttenuator.TabIndex = 2;
-            this.chkHermesStepAttenuator.Text = "Enable RX1";
-            this.toolTip1.SetToolTip(this.chkHermesStepAttenuator, "Enable the step attenuator.");
+            this.chkHermesStepAttenuator.Text = "启用 RX1";
+            this.toolTip1.SetToolTip(this.chkHermesStepAttenuator, "启用步进衰减器。");
             this.chkHermesStepAttenuator.CheckedChanged += new System.EventHandler(this.chkHermesStepAttenuator_CheckedChanged);
             // 
             // grpCWDelay
@@ -8316,7 +8315,7 @@
             this.grpCWDelay.Size = new System.Drawing.Size(250, 86);
             this.grpCWDelay.TabIndex = 31;
             this.grpCWDelay.TabStop = false;
-            this.grpCWDelay.Text = "CW Delay";
+            this.grpCWDelay.Text = "CW 延迟";
             // 
             // labelTS322
             // 
@@ -8326,7 +8325,7 @@
             this.labelTS322.Name = "labelTS322";
             this.labelTS322.Size = new System.Drawing.Size(66, 13);
             this.labelTS322.TabIndex = 38;
-            this.labelTS322.Text = "Key-Up (mS)";
+            this.labelTS322.Text = "抬起 (mS)";
             // 
             // labelTS325
             // 
@@ -8336,7 +8335,7 @@
             this.labelTS325.Name = "labelTS325";
             this.labelTS325.Size = new System.Drawing.Size(80, 13);
             this.labelTS325.TabIndex = 31;
-            this.labelTS325.Text = "Key-Down (mS)";
+            this.labelTS325.Text = "按下 (mS)";
             // 
             // udCWKeyUpDelay
             // 
@@ -8360,7 +8359,7 @@
             this.udCWKeyUpDelay.Size = new System.Drawing.Size(48, 20);
             this.udCWKeyUpDelay.TabIndex = 37;
             this.udCWKeyUpDelay.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udCWKeyUpDelay, "Sets the delay between carrier removal and PTT Out drops.");
+            this.toolTip1.SetToolTip(this.udCWKeyUpDelay, "设置载波移除与 PTT 输出释放之间的延迟。");
             this.udCWKeyUpDelay.Value = new decimal(new int[] {
             10,
             0,
@@ -8390,7 +8389,7 @@
             this.udHWKeyDownDelay.Size = new System.Drawing.Size(48, 20);
             this.udHWKeyDownDelay.TabIndex = 36;
             this.udHWKeyDownDelay.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udHWKeyDownDelay, "Sets the Delay period to wait after Key-Down before RF output in CW mode.");
+            this.toolTip1.SetToolTip(this.udHWKeyDownDelay, "设置 CW 模式下键按下后等待到 RF 输出的延迟时间。");
             this.udHWKeyDownDelay.Value = new decimal(new int[] {
             7,
             0,
@@ -8406,7 +8405,7 @@
             this.grpGenCustomTitleText.Size = new System.Drawing.Size(168, 56);
             this.grpGenCustomTitleText.TabIndex = 29;
             this.grpGenCustomTitleText.TabStop = false;
-            this.grpGenCustomTitleText.Text = "Custom Title Text";
+            this.grpGenCustomTitleText.Text = "自定义标题文本";
             // 
             // txtGenCustomTitle
             // 
@@ -8445,7 +8444,7 @@
             this.grpOptMisc.Size = new System.Drawing.Size(271, 369);
             this.grpOptMisc.TabIndex = 28;
             this.grpOptMisc.TabStop = false;
-            this.grpOptMisc.Text = "Miscellaneous";
+            this.grpOptMisc.Text = "杂项";
             // 
             // chkCTUNignore0beat
             // 
@@ -8455,9 +8454,8 @@
             this.chkCTUNignore0beat.Name = "chkCTUNignore0beat";
             this.chkCTUNignore0beat.Size = new System.Drawing.Size(104, 17);
             this.chkCTUNignore0beat.TabIndex = 20;
-            this.chkCTUNignore0beat.Text = "CTUN no 0 beat";
-            this.toolTip1.SetToolTip(this.chkCTUNignore0beat, "When CTUN is on, and you click/drag inside a filter, the 0 beat will not be moved" +
-        " to the mouse.");
+            this.chkCTUNignore0beat.Text = "CTUN 不动零拍";
+            this.toolTip1.SetToolTip(this.chkCTUNignore0beat, "当 CTUN 开启时，在滤波器内点击/拖动不会把零拍移动到鼠标位置。");
             this.chkCTUNignore0beat.UseVisualStyleBackColor = true;
             this.chkCTUNignore0beat.CheckedChanged += new System.EventHandler(this.chkCTUNignore0beat_CheckedChanged);
             // 
@@ -8470,8 +8468,8 @@
             this.chkZTBstoreLock.Name = "chkZTBstoreLock";
             this.chkZTBstoreLock.Size = new System.Drawing.Size(50, 17);
             this.chkZTBstoreLock.TabIndex = 19;
-            this.chkZTBstoreLock.Text = "Lock";
-            this.toolTip1.SetToolTip(this.chkZTBstoreLock, "Prevent right click store");
+            this.chkZTBstoreLock.Text = "锁定";
+            this.toolTip1.SetToolTip(this.chkZTBstoreLock, "禁止右键存储");
             this.chkZTBstoreLock.UseVisualStyleBackColor = true;
             this.chkZTBstoreLock.CheckedChanged += new System.EventHandler(this.chkZTBstoreLock_CheckedChanged);
             // 
@@ -8483,9 +8481,8 @@
             this.chkZTBIsRecallStore.Name = "chkZTBIsRecallStore";
             this.chkZTBIsRecallStore.Size = new System.Drawing.Size(120, 17);
             this.chkZTBIsRecallStore.TabIndex = 18;
-            this.chkZTBIsRecallStore.Text = "ZTB is Recall/Store";
-            this.toolTip1.SetToolTip(this.chkZTBIsRecallStore, "The zoom to band button changes to recall/store. Left to recall, right to store, " +
-        "shift to use RX2");
+            this.chkZTBIsRecallStore.Text = "ZTB 为调用/存储";
+            this.toolTip1.SetToolTip(this.chkZTBIsRecallStore, "缩放到波段按钮变为调用/存储。左键调用，右键存储，按住 Shift 使用 RX2。");
             this.chkZTBIsRecallStore.UseVisualStyleBackColor = true;
             this.chkZTBIsRecallStore.CheckedChanged += new System.EventHandler(this.chkZTBIsRecallStore_CheckedChanged);
             // 
@@ -8497,8 +8494,8 @@
             this.chkCTLimitDragMouseOnly.Name = "chkCTLimitDragMouseOnly";
             this.chkCTLimitDragMouseOnly.Size = new System.Drawing.Size(109, 16);
             this.chkCTLimitDragMouseOnly.TabIndex = 17;
-            this.chkCTLimitDragMouseOnly.Text = "Mouse drag only";
-            this.toolTip1.SetToolTip(this.chkCTLimitDragMouseOnly, "Only limit when dragging with the mouse");
+            this.chkCTLimitDragMouseOnly.Text = "仅鼠标拖动";
+            this.toolTip1.SetToolTip(this.chkCTLimitDragMouseOnly, "仅鼠标拖动时限制");
             this.chkCTLimitDragMouseOnly.CheckedChanged += new System.EventHandler(this.chkCTLimitDragMouseOnly_CheckedChanged);
             // 
             // chkCTLimitDragToSpectral
@@ -8509,8 +8506,8 @@
             this.chkCTLimitDragToSpectral.Name = "chkCTLimitDragToSpectral";
             this.chkCTLimitDragToSpectral.Size = new System.Drawing.Size(107, 16);
             this.chkCTLimitDragToSpectral.TabIndex = 16;
-            this.chkCTLimitDragToSpectral.Text = "Limit to Spectral";
-            this.toolTip1.SetToolTip(this.chkCTLimitDragToSpectral, "When changing frequency, the VFOs are limited to the spectral area.");
+            this.chkCTLimitDragToSpectral.Text = "限制在频谱内";
+            this.toolTip1.SetToolTip(this.chkCTLimitDragToSpectral, "更改频率时，VFO 限制在频谱区域内。");
             this.chkCTLimitDragToSpectral.CheckedChanged += new System.EventHandler(this.chkCTLimitDragToSpectral_CheckedChanged);
             // 
             // chkTuneStepPerModeRX1
@@ -8520,9 +8517,8 @@
             this.chkTuneStepPerModeRX1.Name = "chkTuneStepPerModeRX1";
             this.chkTuneStepPerModeRX1.Size = new System.Drawing.Size(240, 16);
             this.chkTuneStepPerModeRX1.TabIndex = 15;
-            this.chkTuneStepPerModeRX1.Text = "Recover TuneStep per Mode for RX1";
-            this.toolTip1.SetToolTip(this.chkTuneStepPerModeRX1, "RX1 will store the tunestep assigned for each mode. When this is checked it will " +
-        "be recovered when a mode is selected (rx1 only)");
+            this.chkTuneStepPerModeRX1.Text = "RX1 按模式恢复调谐步进";
+            this.toolTip1.SetToolTip(this.chkTuneStepPerModeRX1, "RX1 将存储每个模式分配的调谐步进。勾选后，选择模式时将恢复该步进（仅限 RX1）。");
             this.chkTuneStepPerModeRX1.UseVisualStyleBackColor = true;
             this.chkTuneStepPerModeRX1.CheckedChanged += new System.EventHandler(this.chkTuneStepPerModeRX1_CheckedChanged);
             // 
@@ -8533,9 +8529,8 @@
             this.chkVFOSyncLinksCTUN.Name = "chkVFOSyncLinksCTUN";
             this.chkVFOSyncLinksCTUN.Size = new System.Drawing.Size(240, 16);
             this.chkVFOSyncLinksCTUN.TabIndex = 14;
-            this.chkVFOSyncLinksCTUN.Text = "VFOSync links CTUN";
-            this.toolTip1.SetToolTip(this.chkVFOSyncLinksCTUN, "If this is on together with VFOSync the CTUN buttons will act on each other as we" +
-        "ll");
+            this.chkVFOSyncLinksCTUN.Text = "VFOSync 联动 CTUN";
+            this.toolTip1.SetToolTip(this.chkVFOSyncLinksCTUN, "若与 VFOSync 同时开启，CTUN 按钮也将相互联动。");
             this.chkVFOSyncLinksCTUN.UseVisualStyleBackColor = true;
             this.chkVFOSyncLinksCTUN.CheckedChanged += new System.EventHandler(this.chkVFOSyncLinksCTUN_CheckedChanged);
             // 
@@ -8548,8 +8543,8 @@
             this.chkReverseShiftZoomModifier.Name = "chkReverseShiftZoomModifier";
             this.chkReverseShiftZoomModifier.Size = new System.Drawing.Size(66, 17);
             this.chkReverseShiftZoomModifier.TabIndex = 13;
-            this.chkReverseShiftZoomModifier.Text = "Reverse";
-            this.toolTip1.SetToolTip(this.chkReverseShiftZoomModifier, "Reverse the action, shift will casue zoom to  recentre");
+            this.chkReverseShiftZoomModifier.Text = "反向";
+            this.toolTip1.SetToolTip(this.chkReverseShiftZoomModifier, "反转动作：按 Shift 缩放将重新居中");
             this.chkReverseShiftZoomModifier.UseVisualStyleBackColor = true;
             this.chkReverseShiftZoomModifier.CheckedChanged += new System.EventHandler(this.ChkReverseShiftZoomModifier_CheckedChanged);
             // 
@@ -8560,8 +8555,8 @@
             this.chkZoomShiftModifier.Name = "chkZoomShiftModifier";
             this.chkZoomShiftModifier.Size = new System.Drawing.Size(240, 16);
             this.chkZoomShiftModifier.TabIndex = 12;
-            this.chkZoomShiftModifier.Text = "Shift zoom modifier";
-            this.toolTip1.SetToolTip(this.chkZoomShiftModifier, "Holding shift will not recentre on zoom");
+            this.chkZoomShiftModifier.Text = "Shift 缩放修饰";
+            this.toolTip1.SetToolTip(this.chkZoomShiftModifier, "缩放时按住 Shift 不重新居中");
             this.chkZoomShiftModifier.UseVisualStyleBackColor = true;
             this.chkZoomShiftModifier.CheckedChanged += new System.EventHandler(this.ChkZoomShiftModifier_CheckedChanged);
             // 
@@ -8572,8 +8567,8 @@
             this.chkITSync.Name = "chkITSync";
             this.chkITSync.Size = new System.Drawing.Size(240, 16);
             this.chkITSync.TabIndex = 11;
-            this.chkITSync.Text = "Sync RIT/XIT";
-            this.toolTip1.SetToolTip(this.chkITSync, "Lock RIT and XIT together");
+            this.chkITSync.Text = "同步 RIT/XIT";
+            this.toolTip1.SetToolTip(this.chkITSync, "RIT 与 XIT 联动锁定");
             this.chkITSync.UseVisualStyleBackColor = true;
             this.chkITSync.CheckedChanged += new System.EventHandler(this.chkITSync_CheckedChanged);
             // 
@@ -8584,8 +8579,8 @@
             this.chkWheelTunesOutsideSpectral.Name = "chkWheelTunesOutsideSpectral";
             this.chkWheelTunesOutsideSpectral.Size = new System.Drawing.Size(240, 16);
             this.chkWheelTunesOutsideSpectral.TabIndex = 11;
-            this.chkWheelTunesOutsideSpectral.Text = "Wheel Tunes Outside Spectral";
-            this.toolTip1.SetToolTip(this.chkWheelTunesOutsideSpectral, "Mouse wheel will cause frequency changes outside the spectral area");
+            this.chkWheelTunesOutsideSpectral.Text = "滚轮在频谱外调谐";
+            this.toolTip1.SetToolTip(this.chkWheelTunesOutsideSpectral, "鼠标滚轮可在频谱区域外改变频率");
             this.chkWheelTunesOutsideSpectral.CheckedChanged += new System.EventHandler(this.chkWheelTunesOutsideSpectral_CheckedChanged);
             // 
             // chkWheelReverse
@@ -8595,8 +8590,8 @@
             this.chkWheelReverse.Name = "chkWheelReverse";
             this.chkWheelReverse.Size = new System.Drawing.Size(240, 16);
             this.chkWheelReverse.TabIndex = 10;
-            this.chkWheelReverse.Text = "Reverse Wheel";
-            this.toolTip1.SetToolTip(this.chkWheelReverse, "Reverses the tuning logic for the mouse wheel.");
+            this.chkWheelReverse.Text = "反转滚轮";
+            this.toolTip1.SetToolTip(this.chkWheelReverse, "反转鼠标滚轮的调谐逻辑。");
             this.chkWheelReverse.CheckedChanged += new System.EventHandler(this.chkWheelReverse_CheckedChanged);
             // 
             // chkClickTuneDrag
@@ -8606,8 +8601,8 @@
             this.chkClickTuneDrag.Name = "chkClickTuneDrag";
             this.chkClickTuneDrag.Size = new System.Drawing.Size(240, 16);
             this.chkClickTuneDrag.TabIndex = 8;
-            this.chkClickTuneDrag.Text = "ClickTune Drag";
-            this.toolTip1.SetToolTip(this.chkClickTuneDrag, "Enables Click Tune & Drag Mode.");
+            this.chkClickTuneDrag.Text = "点击调谐拖动";
+            this.toolTip1.SetToolTip(this.chkClickTuneDrag, "启用点击调谐与拖动模式。");
             this.chkClickTuneDrag.CheckedChanged += new System.EventHandler(this.chkClickTuneDrag_CheckedChanged);
             // 
             // chkShowCTHLine
@@ -8617,8 +8612,8 @@
             this.chkShowCTHLine.Name = "chkShowCTHLine";
             this.chkShowCTHLine.Size = new System.Drawing.Size(240, 16);
             this.chkShowCTHLine.TabIndex = 7;
-            this.chkShowCTHLine.Text = "Show CT H Line";
-            this.toolTip1.SetToolTip(this.chkShowCTHLine, "Displays the Horizonal Line in Click Tune Mode.");
+            this.chkShowCTHLine.Text = "显示 CT 水平线";
+            this.toolTip1.SetToolTip(this.chkShowCTHLine, "在点击调谐模式下显示水平线。");
             this.chkShowCTHLine.CheckedChanged += new System.EventHandler(this.chkShowCTHLine_CheckedChanged);
             // 
             // chkClickTuneFilter
@@ -8628,8 +8623,8 @@
             this.chkClickTuneFilter.Name = "chkClickTuneFilter";
             this.chkClickTuneFilter.Size = new System.Drawing.Size(240, 16);
             this.chkClickTuneFilter.TabIndex = 6;
-            this.chkClickTuneFilter.Text = "Show CT Filter";
-            this.toolTip1.SetToolTip(this.chkClickTuneFilter, "Overlays the Recieve Filter in Click Tune mode.");
+            this.chkClickTuneFilter.Text = "显示 CT 滤波器";
+            this.toolTip1.SetToolTip(this.chkClickTuneFilter, "在点击调谐模式下叠加接收滤波器。");
             this.chkClickTuneFilter.CheckedChanged += new System.EventHandler(this.chkClickTuneFilter_CheckedChanged);
             // 
             // chkWheelTuneVFOB
@@ -8639,9 +8634,8 @@
             this.chkWheelTuneVFOB.Name = "chkWheelTuneVFOB";
             this.chkWheelTuneVFOB.Size = new System.Drawing.Size(240, 16);
             this.chkWheelTuneVFOB.TabIndex = 5;
-            this.chkWheelTuneVFOB.Text = "Wheel Tunes VFOB (red x-hairs)";
-            this.toolTip1.SetToolTip(this.chkWheelTuneVFOB, "When checked, the mouse wheel will tune VFO B when the red crosshairs are active." +
-        "");
+            this.chkWheelTuneVFOB.Text = "滚轮调谐 VFOB（红色十字线）";
+            this.toolTip1.SetToolTip(this.chkWheelTuneVFOB, "勾选后，当红色十字线处于激活状态时，鼠标滚轮将调谐 VFO B。");
             this.chkWheelTuneVFOB.CheckedChanged += new System.EventHandler(this.chkWheelTuneVFOB_CheckedChanged);
             // 
             // chkMouseTuneStep
@@ -8651,8 +8645,8 @@
             this.chkMouseTuneStep.Name = "chkMouseTuneStep";
             this.chkMouseTuneStep.Size = new System.Drawing.Size(240, 16);
             this.chkMouseTuneStep.TabIndex = 4;
-            this.chkMouseTuneStep.Text = "Mouse Tune Step";
-            this.toolTip1.SetToolTip(this.chkMouseTuneStep, "When checked, the middle mouse button/wheel will cycle through the Tuning Steps.");
+            this.chkMouseTuneStep.Text = "鼠标调谐步进";
+            this.toolTip1.SetToolTip(this.chkMouseTuneStep, "勾选后，中键/滚轮将循环切换调谐步进。");
             this.chkMouseTuneStep.CheckedChanged += new System.EventHandler(this.chkMouseTuneStep_CheckedChanged);
             // 
             // chkZeroBeatRIT
@@ -8662,9 +8656,8 @@
             this.chkZeroBeatRIT.Name = "chkZeroBeatRIT";
             this.chkZeroBeatRIT.Size = new System.Drawing.Size(240, 16);
             this.chkZeroBeatRIT.TabIndex = 3;
-            this.chkZeroBeatRIT.Text = "Zero Beat -  RIT";
-            this.toolTip1.SetToolTip(this.chkZeroBeatRIT, "When checked, the zero beat function uses RIT instead of adjusting the VFO direct" +
-        "ly.  This leaves the transmit frequency alone.");
+            this.chkZeroBeatRIT.Text = "零拍 - RIT";
+            this.toolTip1.SetToolTip(this.chkZeroBeatRIT, "勾选后，零拍功能使用 RIT 而非直接调整 VFO，发射频率保持不变。");
             this.chkZeroBeatRIT.CheckedChanged += new System.EventHandler(this.chkZeroBeatRIT_CheckedChanged);
             // 
             // chkSnapClickTune
@@ -8674,8 +8667,8 @@
             this.chkSnapClickTune.Name = "chkSnapClickTune";
             this.chkSnapClickTune.Size = new System.Drawing.Size(123, 16);
             this.chkSnapClickTune.TabIndex = 2;
-            this.chkSnapClickTune.Text = "Snap Click Tune";
-            this.toolTip1.SetToolTip(this.chkSnapClickTune, "Forces the VFO to the closest tuning step when click tuning.");
+            this.chkSnapClickTune.Text = "吸附点击调谐";
+            this.toolTip1.SetToolTip(this.chkSnapClickTune, "点击调谐时强制 VFO 到最近的调谐步进。");
             this.chkSnapClickTune.CheckedChanged += new System.EventHandler(this.chkSnapClickTune_CheckedChanged);
             // 
             // chkDisableToolTips
@@ -8685,8 +8678,8 @@
             this.chkDisableToolTips.Name = "chkDisableToolTips";
             this.chkDisableToolTips.Size = new System.Drawing.Size(123, 16);
             this.chkDisableToolTips.TabIndex = 1;
-            this.chkDisableToolTips.Text = "Disable ToolTips";
-            this.toolTip1.SetToolTip(this.chkDisableToolTips, "Check this box to hide all of the tooltips (including this one).");
+            this.chkDisableToolTips.Text = "禁用工具提示";
+            this.toolTip1.SetToolTip(this.chkDisableToolTips, "勾选以隐藏所有工具提示（包括本条）。");
             this.chkDisableToolTips.CheckedChanged += new System.EventHandler(this.chkDisableToolTips_CheckedChanged);
             // 
             // chkOptAlwaysOnTop
@@ -8696,8 +8689,8 @@
             this.chkOptAlwaysOnTop.Name = "chkOptAlwaysOnTop";
             this.chkOptAlwaysOnTop.Size = new System.Drawing.Size(123, 16);
             this.chkOptAlwaysOnTop.TabIndex = 0;
-            this.chkOptAlwaysOnTop.Text = "Always On Top";
-            this.toolTip1.SetToolTip(this.chkOptAlwaysOnTop, "Check this box to set the main console to always be on top (visible).");
+            this.chkOptAlwaysOnTop.Text = "总在最前";
+            this.toolTip1.SetToolTip(this.chkOptAlwaysOnTop, "勾选以使主控制台总在最前（可见）。");
             this.chkOptAlwaysOnTop.CheckedChanged += new System.EventHandler(this.chkOptAlwaysOnTop_CheckedChanged);
             // 
             // grpGenTuningOptions
@@ -8711,7 +8704,7 @@
             this.grpGenTuningOptions.Size = new System.Drawing.Size(168, 73);
             this.grpGenTuningOptions.TabIndex = 25;
             this.grpGenTuningOptions.TabStop = false;
-            this.grpGenTuningOptions.Text = "Click Tune / Filter Offsets";
+            this.grpGenTuningOptions.Text = "点击调谐 / 滤波器偏移";
             // 
             // lblOptClickTuneDIGL
             // 
@@ -8721,7 +8714,7 @@
             this.lblOptClickTuneDIGL.Size = new System.Drawing.Size(64, 23);
             this.lblOptClickTuneDIGL.TabIndex = 12;
             this.lblOptClickTuneDIGL.Text = "DIGL (Hz):";
-            this.toolTip1.SetToolTip(this.lblOptClickTuneDIGL, "Determines the frequency offset for click tuning and ");
+            this.toolTip1.SetToolTip(this.lblOptClickTuneDIGL, "确定点击调谐的频率偏移量");
             // 
             // udOptClickTuneOffsetDIGL
             // 
@@ -8745,7 +8738,7 @@
             this.udOptClickTuneOffsetDIGL.Size = new System.Drawing.Size(56, 20);
             this.udOptClickTuneOffsetDIGL.TabIndex = 11;
             this.udOptClickTuneOffsetDIGL.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udOptClickTuneOffsetDIGL, "Determines the frequency offset for click tuning and ");
+            this.toolTip1.SetToolTip(this.udOptClickTuneOffsetDIGL, "确定点击调谐的频率偏移量");
             this.udOptClickTuneOffsetDIGL.Value = new decimal(new int[] {
             2210,
             0,
@@ -8762,7 +8755,7 @@
             this.lblOptClickTuneDIGU.Size = new System.Drawing.Size(64, 23);
             this.lblOptClickTuneDIGU.TabIndex = 10;
             this.lblOptClickTuneDIGU.Text = "DIGU (Hz);";
-            this.toolTip1.SetToolTip(this.lblOptClickTuneDIGU, "Determines the frequency offset for click tuning and ");
+            this.toolTip1.SetToolTip(this.lblOptClickTuneDIGU, "确定点击调谐的频率偏移量");
             // 
             // udOptClickTuneOffsetDIGU
             // 
@@ -8786,7 +8779,7 @@
             this.udOptClickTuneOffsetDIGU.Size = new System.Drawing.Size(56, 20);
             this.udOptClickTuneOffsetDIGU.TabIndex = 0;
             this.udOptClickTuneOffsetDIGU.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udOptClickTuneOffsetDIGU, "Determines the frequency offset for click tuning and ");
+            this.toolTip1.SetToolTip(this.udOptClickTuneOffsetDIGU, "确定点击调谐的频率偏移量");
             this.udOptClickTuneOffsetDIGU.Value = new decimal(new int[] {
             1500,
             0,
@@ -8807,7 +8800,7 @@
             this.tpOptions2.Padding = new System.Windows.Forms.Padding(3);
             this.tpOptions2.Size = new System.Drawing.Size(716, 384);
             this.tpOptions2.TabIndex = 1;
-            this.tpOptions2.Text = "Options-2";
+            this.tpOptions2.Text = "选项-2";
             // 
             // groupBoxTS26
             // 
@@ -8825,7 +8818,7 @@
             this.groupBoxTS26.Size = new System.Drawing.Size(257, 148);
             this.groupBoxTS26.TabIndex = 35;
             this.groupBoxTS26.TabStop = false;
-            this.groupBoxTS26.Text = "Noise Floor";
+            this.groupBoxTS26.Text = "噪底";
             // 
             // btnResetNFShift
             // 
@@ -8835,8 +8828,8 @@
             this.btnResetNFShift.Selectable = true;
             this.btnResetNFShift.Size = new System.Drawing.Size(47, 23);
             this.btnResetNFShift.TabIndex = 16;
-            this.btnResetNFShift.Text = "Reset";
-            this.toolTip1.SetToolTip(this.btnResetNFShift, "Set to 0.0dBm");
+            this.btnResetNFShift.Text = "复位";
+            this.toolTip1.SetToolTip(this.btnResetNFShift, "设为 0.0dBm");
             this.btnResetNFShift.UseVisualStyleBackColor = true;
             this.btnResetNFShift.Click += new System.EventHandler(this.btnResetNFShift_Click);
             // 
@@ -8847,7 +8840,7 @@
             this.labelTS160.Name = "labelTS160";
             this.labelTS160.Size = new System.Drawing.Size(145, 35);
             this.labelTS160.TabIndex = 15;
-            this.labelTS160.Text = "Normalise PBSNR to 0dB by adusting shift";
+            this.labelTS160.Text = "通过调整偏移将 PBSNR 归一化到 0dB";
             this.labelTS160.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // btnRX2PBsnr
@@ -8859,7 +8852,7 @@
             this.btnRX2PBsnr.Size = new System.Drawing.Size(47, 23);
             this.btnRX2PBsnr.TabIndex = 14;
             this.btnRX2PBsnr.Text = "RX2";
-            this.toolTip1.SetToolTip(this.btnRX2PBsnr, "Adjust shift by current difference from RX2");
+            this.toolTip1.SetToolTip(this.btnRX2PBsnr, "按当前与 RX2 的差值调整偏移");
             this.btnRX2PBsnr.UseVisualStyleBackColor = true;
             this.btnRX2PBsnr.Click += new System.EventHandler(this.btnRX2PBsnr_Click);
             // 
@@ -8872,7 +8865,7 @@
             this.btnRX1PBsnr.Size = new System.Drawing.Size(47, 23);
             this.btnRX1PBsnr.TabIndex = 13;
             this.btnRX1PBsnr.Text = "RX1";
-            this.toolTip1.SetToolTip(this.btnRX1PBsnr, "Adjust shift by current difference from RX1");
+            this.toolTip1.SetToolTip(this.btnRX1PBsnr, "按当前与 RX1 的差值调整偏移");
             this.btnRX1PBsnr.UseVisualStyleBackColor = true;
             this.btnRX1PBsnr.Click += new System.EventHandler(this.btnRX1PBsnr_Click);
             // 
@@ -8894,8 +8887,8 @@
             this.labelTS156.Name = "labelTS156";
             this.labelTS156.Size = new System.Drawing.Size(26, 13);
             this.labelTS156.TabIndex = 11;
-            this.labelTS156.Text = "shift";
-            this.toolTip1.SetToolTip(this.labelTS156, "All band shift to the NF");
+            this.labelTS156.Text = "偏移";
+            this.toolTip1.SetToolTip(this.labelTS156, "所有波段偏移至噪底");
             // 
             // nudNFshift
             // 
@@ -8920,7 +8913,7 @@
             this.nudNFshift.Size = new System.Drawing.Size(47, 20);
             this.nudNFshift.TabIndex = 10;
             this.nudNFshift.TinyStep = false;
-            this.toolTip1.SetToolTip(this.nudNFshift, "Default 0. Apply a shift.");
+            this.toolTip1.SetToolTip(this.nudNFshift, "默认 0。应用一个偏移。");
             this.nudNFshift.Value = new decimal(new int[] {
             0,
             0,
@@ -8936,7 +8929,7 @@
             this.labelTS155.Name = "labelTS155";
             this.labelTS155.Size = new System.Drawing.Size(52, 13);
             this.labelTS155.TabIndex = 9;
-            this.labelTS155.Text = "sensitivity";
+            this.labelTS155.Text = "灵敏度";
             // 
             // nudNFsensitivity
             // 
@@ -8960,8 +8953,7 @@
             this.nudNFsensitivity.Size = new System.Drawing.Size(47, 20);
             this.nudNFsensitivity.TabIndex = 0;
             this.nudNFsensitivity.TinyStep = false;
-            this.toolTip1.SetToolTip(this.nudNFsensitivity, "Default 6. A low value will find very small areas of noise floor. Low values will" +
-        " help with a busy band.");
+            this.toolTip1.SetToolTip(this.nudNFsensitivity, "默认 6。数值越小，能识别越小的噪底区域。较低的值有助于在拥挤频段中工作。");
             this.nudNFsensitivity.Value = new decimal(new int[] {
             6,
             0,
@@ -8980,7 +8972,7 @@
             this.groupBoxTS23.Size = new System.Drawing.Size(212, 132);
             this.groupBoxTS23.TabIndex = 34;
             this.groupBoxTS23.TabStop = false;
-            this.groupBoxTS23.Text = "Info Bar (below spectrum)";
+            this.groupBoxTS23.Text = "信息栏（频谱下方）";
             // 
             // chkUseSUnitsForPBNPPBSNR
             // 
@@ -8990,8 +8982,8 @@
             this.chkUseSUnitsForPBNPPBSNR.Name = "chkUseSUnitsForPBNPPBSNR";
             this.chkUseSUnitsForPBNPPBSNR.Size = new System.Drawing.Size(167, 17);
             this.chkUseSUnitsForPBNPPBSNR.TabIndex = 3;
-            this.chkUseSUnitsForPBNPPBSNR.Text = "PBNP and PBSNR as S-Units";
-            this.toolTip1.SetToolTip(this.chkUseSUnitsForPBNPPBSNR, "Use S-Units for Estimated Passband Noise Power and Estimated Passband SNR");
+            this.chkUseSUnitsForPBNPPBSNR.Text = "PBNP 和 PBSNR 以 S 表显示";
+            this.toolTip1.SetToolTip(this.chkUseSUnitsForPBNPPBSNR, "估计通带噪声功率和估计通带信噪比使用 S 表");
             this.chkUseSUnitsForPBNPPBSNR.UseVisualStyleBackColor = true;
             this.chkUseSUnitsForPBNPPBSNR.CheckedChanged += new System.EventHandler(this.chkUseSUnitsForPBNPPBSNR_CheckedChanged);
             // 
@@ -9003,8 +8995,8 @@
             this.chkIgnoreSeqErrors.Name = "chkIgnoreSeqErrors";
             this.chkIgnoreSeqErrors.Size = new System.Drawing.Size(110, 17);
             this.chkIgnoreSeqErrors.TabIndex = 2;
-            this.chkIgnoreSeqErrors.Text = "Ignore SEQ errors";
-            this.toolTip1.SetToolTip(this.chkIgnoreSeqErrors, "Ignore any SEQ errors. Will not show red seq warnings.");
+            this.chkIgnoreSeqErrors.Text = "忽略 SEQ 错误";
+            this.toolTip1.SetToolTip(this.chkIgnoreSeqErrors, "忽略所有 SEQ 错误，不显示红色 seq 警告。");
             this.chkIgnoreSeqErrors.UseVisualStyleBackColor = true;
             this.chkIgnoreSeqErrors.CheckedChanged += new System.EventHandler(this.chkIgnoreSeqErrors_CheckedChanged);
             // 
@@ -9016,8 +9008,8 @@
             this.chkHideFeebackLevel.Name = "chkHideFeebackLevel";
             this.chkHideFeebackLevel.Size = new System.Drawing.Size(159, 17);
             this.chkHideFeebackLevel.TabIndex = 1;
-            this.chkHideFeebackLevel.Text = "Hide feedback level number";
-            this.toolTip1.SetToolTip(this.chkHideFeebackLevel, "Hide the feedback level from the info bar");
+            this.chkHideFeebackLevel.Text = "隐藏反馈电平数值";
+            this.toolTip1.SetToolTip(this.chkHideFeebackLevel, "在信息栏中隐藏反馈电平");
             this.chkHideFeebackLevel.UseVisualStyleBackColor = true;
             this.chkHideFeebackLevel.CheckedChanged += new System.EventHandler(this.chkHideFeebackLevel_CheckedChanged);
             // 
@@ -9029,8 +9021,8 @@
             this.chkSwapREDBluePSAColours.Name = "chkSwapREDBluePSAColours";
             this.chkSwapREDBluePSAColours.Size = new System.Drawing.Size(184, 17);
             this.chkSwapREDBluePSAColours.TabIndex = 0;
-            this.chkSwapREDBluePSAColours.Text = "Swap red and blue PS-A feeback";
-            this.toolTip1.SetToolTip(this.chkSwapREDBluePSAColours, "Swap the red/blue colours used in the feedback level");
+            this.chkSwapREDBluePSAColours.Text = "交换 PS-A 反馈的红蓝颜色";
+            this.toolTip1.SetToolTip(this.chkSwapREDBluePSAColours, "交换反馈电平使用的红/蓝颜色");
             this.chkSwapREDBluePSAColours.UseVisualStyleBackColor = true;
             this.chkSwapREDBluePSAColours.CheckedChanged += new System.EventHandler(this.chkSwapREDBluePSAColours_CheckedChanged);
             // 
@@ -9042,7 +9034,7 @@
             this.groupBoxTS22.Size = new System.Drawing.Size(212, 84);
             this.groupBoxTS22.TabIndex = 12;
             this.groupBoxTS22.TabStop = false;
-            this.groupBoxTS22.Text = "Cursors";
+            this.groupBoxTS22.Text = "光标";
             // 
             // chkUseOutlinedCross
             // 
@@ -9052,8 +9044,8 @@
             this.chkUseOutlinedCross.Name = "chkUseOutlinedCross";
             this.chkUseOutlinedCross.Size = new System.Drawing.Size(134, 17);
             this.chkUseOutlinedCross.TabIndex = 34;
-            this.chkUseOutlinedCross.Text = "Cross cursor is outlined";
-            this.toolTip1.SetToolTip(this.chkUseOutlinedCross, "Use an outlined cross for the mouse cursor if it is flickering/vanishing");
+            this.chkUseOutlinedCross.Text = "十字光标带描边";
+            this.toolTip1.SetToolTip(this.chkUseOutlinedCross, "如果鼠标光标闪烁/消失，使用带描边的十字光标");
             this.chkUseOutlinedCross.UseVisualStyleBackColor = true;
             this.chkUseOutlinedCross.CheckedChanged += new System.EventHandler(this.chkUseOutlinedCross_CheckedChanged);
             // 
@@ -9076,7 +9068,7 @@
             this.groupBoxTS15.Size = new System.Drawing.Size(166, 226);
             this.groupBoxTS15.TabIndex = 33;
             this.groupBoxTS15.TabStop = false;
-            this.groupBoxTS15.Text = "QSO Timer";
+            this.groupBoxTS15.Text = "QSO 计时器";
             // 
             // chkQSOTimerFlashTimerIfResetOnExpiry
             // 
@@ -9086,9 +9078,8 @@
             this.chkQSOTimerFlashTimerIfResetOnExpiry.Name = "chkQSOTimerFlashTimerIfResetOnExpiry";
             this.chkQSOTimerFlashTimerIfResetOnExpiry.Size = new System.Drawing.Size(112, 17);
             this.chkQSOTimerFlashTimerIfResetOnExpiry.TabIndex = 11;
-            this.chkQSOTimerFlashTimerIfResetOnExpiry.Text = "Flash continuation";
-            this.toolTip1.SetToolTip(this.chkQSOTimerFlashTimerIfResetOnExpiry, "Flash the timer on the status bar after an automatic reset. Left click to stop fl" +
-        "ashing");
+            this.chkQSOTimerFlashTimerIfResetOnExpiry.Text = "持续闪烁";
+            this.toolTip1.SetToolTip(this.chkQSOTimerFlashTimerIfResetOnExpiry, "自动重置后状态栏上的计时器闪烁。左键单击停止闪烁。");
             this.chkQSOTimerFlashTimerIfResetOnExpiry.UseVisualStyleBackColor = true;
             this.chkQSOTimerFlashTimerIfResetOnExpiry.CheckedChanged += new System.EventHandler(this.chkQSOTimerFlashTimerIfResetOnExpiry_CheckedChanged);
             // 
@@ -9100,8 +9091,8 @@
             this.chkQSOTimerResetOnExpiry.Name = "chkQSOTimerResetOnExpiry";
             this.chkQSOTimerResetOnExpiry.Size = new System.Drawing.Size(99, 17);
             this.chkQSOTimerResetOnExpiry.TabIndex = 10;
-            this.chkQSOTimerResetOnExpiry.Text = "Reset on expiry";
-            this.toolTip1.SetToolTip(this.chkQSOTimerResetOnExpiry, "The timer resets on expiry");
+            this.chkQSOTimerResetOnExpiry.Text = "到时重置";
+            this.toolTip1.SetToolTip(this.chkQSOTimerResetOnExpiry, "计时器到时重置");
             this.chkQSOTimerResetOnExpiry.UseVisualStyleBackColor = true;
             this.chkQSOTimerResetOnExpiry.CheckedChanged += new System.EventHandler(this.chkQSOTimerResetOnExpiry_CheckedChanged);
             // 
@@ -9113,7 +9104,7 @@
             this.btnQSOTimerPlaySelectedWAV.Selectable = true;
             this.btnQSOTimerPlaySelectedWAV.Size = new System.Drawing.Size(24, 24);
             this.btnQSOTimerPlaySelectedWAV.TabIndex = 9;
-            this.toolTip1.SetToolTip(this.btnQSOTimerPlaySelectedWAV, "Test play of the sound you selected");
+            this.toolTip1.SetToolTip(this.btnQSOTimerPlaySelectedWAV, "试听您选择的声音");
             this.btnQSOTimerPlaySelectedWAV.UseVisualStyleBackColor = true;
             this.btnQSOTimerPlaySelectedWAV.Click += new System.EventHandler(this.btnQSOTimerPlaySelectedWAV_Click);
             // 
@@ -9125,9 +9116,8 @@
             this.chkQSOTimerPlaySoundOnExpiry.Name = "chkQSOTimerPlaySoundOnExpiry";
             this.chkQSOTimerPlaySoundOnExpiry.Size = new System.Drawing.Size(123, 17);
             this.chkQSOTimerPlaySoundOnExpiry.TabIndex = 3;
-            this.chkQSOTimerPlaySoundOnExpiry.Text = "Play sound on expiry";
-            this.toolTip1.SetToolTip(this.chkQSOTimerPlaySoundOnExpiry, "Play sound to default sound device when timer expires (only plays once each time " +
-        "it expires)");
+            this.chkQSOTimerPlaySoundOnExpiry.Text = "到时播放提示音";
+            this.toolTip1.SetToolTip(this.chkQSOTimerPlaySoundOnExpiry, "计时器到时后通过默认声音设备播放提示音（每次到时只播放一次）。");
             this.chkQSOTimerPlaySoundOnExpiry.UseVisualStyleBackColor = true;
             this.chkQSOTimerPlaySoundOnExpiry.CheckedChanged += new System.EventHandler(this.chkQSOTimerPlaySoundOnExpiry_CheckedChanged);
             // 
@@ -9139,7 +9129,7 @@
             this.lblQSOTimerSecs.Name = "lblQSOTimerSecs";
             this.lblQSOTimerSecs.Size = new System.Drawing.Size(29, 13);
             this.lblQSOTimerSecs.TabIndex = 8;
-            this.lblQSOTimerSecs.Text = "secs";
+            this.lblQSOTimerSecs.Text = "秒";
             // 
             // lblQSOTimerMins
             // 
@@ -9149,7 +9139,7 @@
             this.lblQSOTimerMins.Name = "lblQSOTimerMins";
             this.lblQSOTimerMins.Size = new System.Drawing.Size(28, 13);
             this.lblQSOTimerMins.TabIndex = 7;
-            this.lblQSOTimerMins.Text = "mins";
+            this.lblQSOTimerMins.Text = "分钟";
             // 
             // udQSOTimerSeconds
             // 
@@ -9173,8 +9163,7 @@
             this.udQSOTimerSeconds.Size = new System.Drawing.Size(40, 20);
             this.udQSOTimerSeconds.TabIndex = 6;
             this.udQSOTimerSeconds.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udQSOTimerSeconds, "The minutes and seconds before the timer expires. Sound may play, and timer will " +
-        "flash");
+            this.toolTip1.SetToolTip(this.udQSOTimerSeconds, "计时器到时前的分钟和秒数。到时可能播放提示音并闪烁计时器。");
             this.udQSOTimerSeconds.Value = new decimal(new int[] {
             0,
             0,
@@ -9204,8 +9193,7 @@
             this.udQSOTimerMinutes.Size = new System.Drawing.Size(40, 20);
             this.udQSOTimerMinutes.TabIndex = 5;
             this.udQSOTimerMinutes.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udQSOTimerMinutes, "The minutes and seconds before the timer expires. Sound may play, and timer will " +
-        "flash");
+            this.toolTip1.SetToolTip(this.udQSOTimerMinutes, "计时器到时前的分钟和秒数。到时可能播放提示音并闪烁计时器。");
             this.udQSOTimerMinutes.Value = new decimal(new int[] {
             10,
             0,
@@ -9221,8 +9209,8 @@
             this.btnQSOTimerSelectWAV.Selectable = true;
             this.btnQSOTimerSelectWAV.Size = new System.Drawing.Size(72, 24);
             this.btnQSOTimerSelectWAV.TabIndex = 4;
-            this.btnQSOTimerSelectWAV.Text = "Select...";
-            this.toolTip1.SetToolTip(this.btnQSOTimerSelectWAV, "Click to select a Wav file");
+            this.btnQSOTimerSelectWAV.Text = "选择...";
+            this.toolTip1.SetToolTip(this.btnQSOTimerSelectWAV, "点击选择 Wav 文件");
             this.btnQSOTimerSelectWAV.UseVisualStyleBackColor = true;
             this.btnQSOTimerSelectWAV.Click += new System.EventHandler(this.btnQSOTimerSelectWAV_Click);
             // 
@@ -9234,8 +9222,8 @@
             this.chkQSOTimerResetOnMOX.Name = "chkQSOTimerResetOnMOX";
             this.chkQSOTimerResetOnMOX.Size = new System.Drawing.Size(96, 17);
             this.chkQSOTimerResetOnMOX.TabIndex = 2;
-            this.chkQSOTimerResetOnMOX.Text = "Reset on MOX";
-            this.toolTip1.SetToolTip(this.chkQSOTimerResetOnMOX, "Reset the timer on every MOX");
+            this.chkQSOTimerResetOnMOX.Text = "MOX 时重置";
+            this.toolTip1.SetToolTip(this.chkQSOTimerResetOnMOX, "每次 MOX 时重置计时器");
             this.chkQSOTimerResetOnMOX.UseVisualStyleBackColor = true;
             this.chkQSOTimerResetOnMOX.CheckedChanged += new System.EventHandler(this.chkQSOTimerResetOnMOX_CheckedChanged);
             // 
@@ -9247,8 +9235,8 @@
             this.chkQSOTimerOnlyDuringMOX.Name = "chkQSOTimerOnlyDuringMOX";
             this.chkQSOTimerOnlyDuringMOX.Size = new System.Drawing.Size(106, 17);
             this.chkQSOTimerOnlyDuringMOX.TabIndex = 1;
-            this.chkQSOTimerOnlyDuringMOX.Text = "Only during MOX";
-            this.toolTip1.SetToolTip(this.chkQSOTimerOnlyDuringMOX, "Only count when in MOX/tx state. NOTE: left click to start/stop is prevented");
+            this.chkQSOTimerOnlyDuringMOX.Text = "仅在 MOX 期间";
+            this.toolTip1.SetToolTip(this.chkQSOTimerOnlyDuringMOX, "仅在 MOX/发射状态下计时。注意：禁止左键点击开始/停止");
             this.chkQSOTimerOnlyDuringMOX.UseVisualStyleBackColor = true;
             this.chkQSOTimerOnlyDuringMOX.CheckedChanged += new System.EventHandler(this.chkQSOTimerOnlyDuringMOX_CheckedChanged);
             // 
@@ -9260,8 +9248,8 @@
             this.chkQSOTimerEnabled.Name = "chkQSOTimerEnabled";
             this.chkQSOTimerEnabled.Size = new System.Drawing.Size(65, 17);
             this.chkQSOTimerEnabled.TabIndex = 0;
-            this.chkQSOTimerEnabled.Text = "Enabled";
-            this.toolTip1.SetToolTip(this.chkQSOTimerEnabled, "Enable to use the QSO timer which is shown on the status bar");
+            this.chkQSOTimerEnabled.Text = "已启用";
+            this.toolTip1.SetToolTip(this.chkQSOTimerEnabled, "启用显示在状态栏上的 QSO 计时器");
             this.chkQSOTimerEnabled.UseVisualStyleBackColor = true;
             this.chkQSOTimerEnabled.CheckedChanged += new System.EventHandler(this.chkQSOTimerEnabled_CheckedChanged);
             // 
@@ -9280,7 +9268,7 @@
             this.tpGeneralCalibration.Name = "tpGeneralCalibration";
             this.tpGeneralCalibration.Size = new System.Drawing.Size(724, 410);
             this.tpGeneralCalibration.TabIndex = 2;
-            this.tpGeneralCalibration.Text = "Calibration";
+            this.tpGeneralCalibration.Text = "校准";
             this.tpGeneralCalibration.Paint += new System.Windows.Forms.PaintEventHandler(this.tpGeneralCalibration_Paint);
             // 
             // groupBoxTS27
@@ -9295,7 +9283,7 @@
             this.groupBoxTS27.Size = new System.Drawing.Size(175, 122);
             this.groupBoxTS27.TabIndex = 15;
             this.groupBoxTS27.TabStop = false;
-            this.groupBoxTS27.Text = "Current (A) calculation";
+            this.groupBoxTS27.Text = "电流 (A) 计算";
             // 
             // btnAmpDefault
             // 
@@ -9305,8 +9293,8 @@
             this.btnAmpDefault.Selectable = true;
             this.btnAmpDefault.Size = new System.Drawing.Size(75, 23);
             this.btnAmpDefault.TabIndex = 4;
-            this.btnAmpDefault.Text = "Default";
-            this.toolTip1.SetToolTip(this.btnAmpDefault, "Set volt/sens to defaults (7000dle has unique values)");
+            this.btnAmpDefault.Text = "默认";
+            this.toolTip1.SetToolTip(this.btnAmpDefault, "将电压/灵敏度设为默认值（7000dle 有独特值）");
             this.btnAmpDefault.UseVisualStyleBackColor = true;
             this.btnAmpDefault.Click += new System.EventHandler(this.btnAmpDefault_Click);
             // 
@@ -9318,7 +9306,7 @@
             this.labelTS159.Name = "labelTS159";
             this.labelTS159.Size = new System.Drawing.Size(57, 13);
             this.labelTS159.TabIndex = 3;
-            this.labelTS159.Text = "Sensitivity:";
+            this.labelTS159.Text = "灵敏度:";
             // 
             // labelTS158
             // 
@@ -9328,7 +9316,7 @@
             this.labelTS158.Name = "labelTS158";
             this.labelTS158.Size = new System.Drawing.Size(38, 13);
             this.labelTS158.TabIndex = 2;
-            this.labelTS158.Text = "Offset:";
+            this.labelTS158.Text = "偏移:";
             // 
             // udAmpSens
             // 
@@ -9412,7 +9400,7 @@
             this.labelTS135.Name = "labelTS135";
             this.labelTS135.Size = new System.Drawing.Size(64, 23);
             this.labelTS135.TabIndex = 9;
-            this.labelTS135.Text = "RX2 Freq:";
+            this.labelTS135.Text = "RX2 频率:";
             // 
             // udGeneralCalRX2Level
             // 
@@ -9437,7 +9425,7 @@
             this.udGeneralCalRX2Level.Size = new System.Drawing.Size(50, 20);
             this.udGeneralCalRX2Level.TabIndex = 12;
             this.udGeneralCalRX2Level.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udGeneralCalRX2Level, "Level calibration reference level");
+            this.toolTip1.SetToolTip(this.udGeneralCalRX2Level, "电平校准参考电平");
             this.udGeneralCalRX2Level.Value = new decimal(new int[] {
             70,
             0,
@@ -9452,9 +9440,8 @@
             this.btnCalLevel.Selectable = true;
             this.btnCalLevel.Size = new System.Drawing.Size(75, 23);
             this.btnCalLevel.TabIndex = 13;
-            this.btnCalLevel.Text = "Start";
-            this.toolTip1.SetToolTip(this.btnCalLevel, "Click to start the level calibration using the frequency and level references abo" +
-        "ve.");
+            this.btnCalLevel.Text = "开始";
+            this.toolTip1.SetToolTip(this.btnCalLevel, "点击开始使用上方频率和电平参考进行电平校准。");
             this.btnCalLevel.Click += new System.EventHandler(this.btnCalLevel_Click);
             // 
             // udGeneralCalRX2Freq2
@@ -9480,7 +9467,7 @@
             this.udGeneralCalRX2Freq2.Size = new System.Drawing.Size(75, 20);
             this.udGeneralCalRX2Freq2.TabIndex = 10;
             this.udGeneralCalRX2Freq2.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udGeneralCalRX2Freq2, "Level calibration reference frequency");
+            this.toolTip1.SetToolTip(this.udGeneralCalRX2Freq2, "电平校准参考频率");
             this.udGeneralCalRX2Freq2.Value = new decimal(new int[] {
             10,
             0,
@@ -9494,7 +9481,7 @@
             this.labelTS136.Name = "labelTS136";
             this.labelTS136.Size = new System.Drawing.Size(68, 23);
             this.labelTS136.TabIndex = 11;
-            this.labelTS136.Text = "Level (dBm):";
+            this.labelTS136.Text = "电平 (dBm):";
             this.labelTS136.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // grpBoxTXDisplayCal
@@ -9506,7 +9493,7 @@
             this.grpBoxTXDisplayCal.Size = new System.Drawing.Size(168, 105);
             this.grpBoxTXDisplayCal.TabIndex = 13;
             this.grpBoxTXDisplayCal.TabStop = false;
-            this.grpBoxTXDisplayCal.Text = "TX Display Cal";
+            this.grpBoxTXDisplayCal.Text = "TX 显示校准";
             // 
             // labelTS55
             // 
@@ -9515,7 +9502,7 @@
             this.labelTS55.Name = "labelTS55";
             this.labelTS55.Size = new System.Drawing.Size(54, 23);
             this.labelTS55.TabIndex = 13;
-            this.labelTS55.Text = "Offset:";
+            this.labelTS55.Text = "偏移:";
             this.labelTS55.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // udTXDisplayCalOffset
@@ -9541,7 +9528,7 @@
             this.udTXDisplayCalOffset.Size = new System.Drawing.Size(50, 20);
             this.udTXDisplayCalOffset.TabIndex = 12;
             this.udTXDisplayCalOffset.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udTXDisplayCalOffset, "Level TX Display Offset");
+            this.toolTip1.SetToolTip(this.udTXDisplayCalOffset, "发射显示电平偏移");
             this.udTXDisplayCalOffset.Value = new decimal(new int[] {
             0,
             0,
@@ -9563,7 +9550,7 @@
             this.grpHPSDRFreqCalDbg.Size = new System.Drawing.Size(164, 194);
             this.grpHPSDRFreqCalDbg.TabIndex = 11;
             this.grpHPSDRFreqCalDbg.TabStop = false;
-            this.grpHPSDRFreqCalDbg.Text = "HPSDR Freq Cal Diagnostic";
+            this.grpHPSDRFreqCalDbg.Text = "HPSDR 频率校准诊断";
             // 
             // btnHPSDRFreqCalReset10MHz
             // 
@@ -9571,8 +9558,8 @@
             this.btnHPSDRFreqCalReset10MHz.Name = "btnHPSDRFreqCalReset10MHz";
             this.btnHPSDRFreqCalReset10MHz.Size = new System.Drawing.Size(75, 23);
             this.btnHPSDRFreqCalReset10MHz.TabIndex = 5;
-            this.btnHPSDRFreqCalReset10MHz.Text = "Reset";
-            this.toolTip1.SetToolTip(this.btnHPSDRFreqCalReset10MHz, "Click to reset the freq  correction factor");
+            this.btnHPSDRFreqCalReset10MHz.Text = "复位";
+            this.toolTip1.SetToolTip(this.btnHPSDRFreqCalReset10MHz, "点击重置频率修正系数");
             this.btnHPSDRFreqCalReset10MHz.UseVisualStyleBackColor = true;
             this.btnHPSDRFreqCalReset10MHz.Click += new System.EventHandler(this.btnHPSDRFreqCalReset10MHz_Click);
             // 
@@ -9599,7 +9586,7 @@
             this.udHPSDRFreqCorrectFactor10MHz.Size = new System.Drawing.Size(84, 20);
             this.udHPSDRFreqCorrectFactor10MHz.TabIndex = 4;
             this.udHPSDRFreqCorrectFactor10MHz.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udHPSDRFreqCorrectFactor10MHz, "Frequency calibration reference frequency when the 10MHz ref is selected");
+            this.toolTip1.SetToolTip(this.udHPSDRFreqCorrectFactor10MHz, "选择 10MHz 参考时的频率校准参考频率");
             this.udHPSDRFreqCorrectFactor10MHz.Value = new decimal(new int[] {
             1,
             0,
@@ -9615,8 +9602,8 @@
             this.chkUsing10MHzRef.Name = "chkUsing10MHzRef";
             this.chkUsing10MHzRef.Size = new System.Drawing.Size(122, 17);
             this.chkUsing10MHzRef.TabIndex = 3;
-            this.chkUsing10MHzRef.Text = "Using ext 10MHz ref";
-            this.toolTip1.SetToolTip(this.chkUsing10MHzRef, "With this checked, the radio the correction factor below will be used instead");
+            this.chkUsing10MHzRef.Text = "使用外部 10MHz 参考";
+            this.toolTip1.SetToolTip(this.chkUsing10MHzRef, "勾选后，将改用下方修正系数");
             this.chkUsing10MHzRef.UseVisualStyleBackColor = true;
             this.chkUsing10MHzRef.CheckedChanged += new System.EventHandler(this.chkUsing10MHzRef_CheckedChanged);
             // 
@@ -9626,8 +9613,8 @@
             this.btnHPSDRFreqCalReset.Name = "btnHPSDRFreqCalReset";
             this.btnHPSDRFreqCalReset.Size = new System.Drawing.Size(75, 23);
             this.btnHPSDRFreqCalReset.TabIndex = 2;
-            this.btnHPSDRFreqCalReset.Text = "Reset";
-            this.toolTip1.SetToolTip(this.btnHPSDRFreqCalReset, "Click to reset the freq  correction factor");
+            this.btnHPSDRFreqCalReset.Text = "复位";
+            this.toolTip1.SetToolTip(this.btnHPSDRFreqCalReset, "点击重置频率修正系数");
             this.btnHPSDRFreqCalReset.UseVisualStyleBackColor = true;
             this.btnHPSDRFreqCalReset.Click += new System.EventHandler(this.btnHPSDRFreqCalReset_Click);
             // 
@@ -9654,7 +9641,7 @@
             this.udHPSDRFreqCorrectFactor.Size = new System.Drawing.Size(84, 20);
             this.udHPSDRFreqCorrectFactor.TabIndex = 1;
             this.udHPSDRFreqCorrectFactor.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udHPSDRFreqCorrectFactor, "Frequency calibration reference frequency");
+            this.toolTip1.SetToolTip(this.udHPSDRFreqCorrectFactor, "频率校准参考频率");
             this.udHPSDRFreqCorrectFactor.Value = new decimal(new int[] {
             1,
             0,
@@ -9670,7 +9657,7 @@
             this.labelTS10.Name = "labelTS10";
             this.labelTS10.Size = new System.Drawing.Size(88, 13);
             this.labelTS10.TabIndex = 0;
-            this.labelTS10.Text = "Correction Factor";
+            this.labelTS10.Text = "修正系数";
             // 
             // chkCalExpert
             // 
@@ -9679,7 +9666,7 @@
             this.chkCalExpert.Name = "chkCalExpert";
             this.chkCalExpert.Size = new System.Drawing.Size(56, 24);
             this.chkCalExpert.TabIndex = 10;
-            this.chkCalExpert.Text = "Expert";
+            this.chkCalExpert.Text = "专家";
             this.chkCalExpert.Visible = false;
             // 
             // grpGenCalLevel
@@ -9699,7 +9686,7 @@
             this.grpGenCalLevel.Size = new System.Drawing.Size(168, 227);
             this.grpGenCalLevel.TabIndex = 8;
             this.grpGenCalLevel.TabStop = false;
-            this.grpGenCalLevel.Text = "Level Cal";
+            this.grpGenCalLevel.Text = "电平校准";
             // 
             // btnResetLevelCal
             // 
@@ -9707,8 +9694,8 @@
             this.btnResetLevelCal.Name = "btnResetLevelCal";
             this.btnResetLevelCal.Size = new System.Drawing.Size(75, 23);
             this.btnResetLevelCal.TabIndex = 19;
-            this.btnResetLevelCal.Text = "Reset";
-            this.toolTip1.SetToolTip(this.btnResetLevelCal, "Click to reset the freq  correction factor");
+            this.btnResetLevelCal.Text = "复位";
+            this.toolTip1.SetToolTip(this.btnResetLevelCal, "点击重置频率修正系数");
             this.btnResetLevelCal.UseVisualStyleBackColor = true;
             this.btnResetLevelCal.Click += new System.EventHandler(this.btnResetLevelCal_Click);
             // 
@@ -9736,7 +9723,7 @@
             this.ud6mRx2LNAGainOffset.Size = new System.Drawing.Size(50, 20);
             this.ud6mRx2LNAGainOffset.TabIndex = 18;
             this.ud6mRx2LNAGainOffset.TinyStep = false;
-            this.toolTip1.SetToolTip(this.ud6mRx2LNAGainOffset, "6m LNA gain offset for meter calibration");
+            this.toolTip1.SetToolTip(this.ud6mRx2LNAGainOffset, "用于仪表校准的 6m LNA 增益偏移");
             this.ud6mRx2LNAGainOffset.Value = new decimal(new int[] {
             13,
             0,
@@ -9778,7 +9765,7 @@
             this.ud6mLNAGainOffset.Size = new System.Drawing.Size(50, 20);
             this.ud6mLNAGainOffset.TabIndex = 14;
             this.ud6mLNAGainOffset.TinyStep = false;
-            this.toolTip1.SetToolTip(this.ud6mLNAGainOffset, "6m LNA gain offset for meter calibration");
+            this.toolTip1.SetToolTip(this.ud6mLNAGainOffset, "用于仪表校准的 6m LNA 增益偏移");
             this.ud6mLNAGainOffset.Value = new decimal(new int[] {
             13,
             0,
@@ -9819,7 +9806,7 @@
             this.udGeneralCalLevel.Size = new System.Drawing.Size(50, 20);
             this.udGeneralCalLevel.TabIndex = 3;
             this.udGeneralCalLevel.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udGeneralCalLevel, "Level calibration reference level");
+            this.toolTip1.SetToolTip(this.udGeneralCalLevel, "电平校准参考电平");
             this.udGeneralCalLevel.Value = new decimal(new int[] {
             70,
             0,
@@ -9850,7 +9837,7 @@
             this.udGeneralCalFreq2.Size = new System.Drawing.Size(75, 20);
             this.udGeneralCalFreq2.TabIndex = 1;
             this.udGeneralCalFreq2.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udGeneralCalFreq2, "Level calibration reference frequency");
+            this.toolTip1.SetToolTip(this.udGeneralCalFreq2, "电平校准参考频率");
             this.udGeneralCalFreq2.Value = new decimal(new int[] {
             10,
             0,
@@ -9865,7 +9852,7 @@
             this.lblGenCalLevelFreq.Name = "lblGenCalLevelFreq";
             this.lblGenCalLevelFreq.Size = new System.Drawing.Size(64, 23);
             this.lblGenCalLevelFreq.TabIndex = 0;
-            this.lblGenCalLevelFreq.Text = "Frequency:";
+            this.lblGenCalLevelFreq.Text = "频率:";
             this.lblGenCalLevelFreq.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblGeneralCalLevel
@@ -9875,7 +9862,7 @@
             this.lblGeneralCalLevel.Name = "lblGeneralCalLevel";
             this.lblGeneralCalLevel.Size = new System.Drawing.Size(88, 23);
             this.lblGeneralCalLevel.TabIndex = 2;
-            this.lblGeneralCalLevel.Text = "Level (dBm):";
+            this.lblGeneralCalLevel.Text = "电平 (dBm):";
             this.lblGeneralCalLevel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btnGeneralCalLevelStart
@@ -9886,9 +9873,8 @@
             this.btnGeneralCalLevelStart.Selectable = true;
             this.btnGeneralCalLevelStart.Size = new System.Drawing.Size(75, 23);
             this.btnGeneralCalLevelStart.TabIndex = 4;
-            this.btnGeneralCalLevelStart.Text = "Start";
-            this.toolTip1.SetToolTip(this.btnGeneralCalLevelStart, "Click to start the level calibration using the frequency and level references abo" +
-        "ve.");
+            this.btnGeneralCalLevelStart.Text = "开始";
+            this.toolTip1.SetToolTip(this.btnGeneralCalLevelStart, "点击开始使用上方频率和电平参考进行电平校准。");
             this.btnGeneralCalLevelStart.Click += new System.EventHandler(this.btnGeneralCalLevelStart_Click);
             // 
             // grpGeneralCalibration
@@ -9902,7 +9888,7 @@
             this.grpGeneralCalibration.Size = new System.Drawing.Size(168, 131);
             this.grpGeneralCalibration.TabIndex = 5;
             this.grpGeneralCalibration.TabStop = false;
-            this.grpGeneralCalibration.Text = "Freq Cal";
+            this.grpGeneralCalibration.Text = "频率校准";
             // 
             // textBoxTS1
             // 
@@ -9913,7 +9899,7 @@
             this.textBoxTS1.ReadOnly = true;
             this.textBoxTS1.Size = new System.Drawing.Size(156, 45);
             this.textBoxTS1.TabIndex = 14;
-            this.textBoxTS1.Text = "Larger FFT Sizes and/or Lower Sampling Rates give increased accuracy.";
+            this.textBoxTS1.Text = "更大的 FFT 尺寸和/或更低的采样率可提高精度。";
             // 
             // btnGeneralCalFreqStart
             // 
@@ -9923,8 +9909,8 @@
             this.btnGeneralCalFreqStart.Selectable = true;
             this.btnGeneralCalFreqStart.Size = new System.Drawing.Size(75, 23);
             this.btnGeneralCalFreqStart.TabIndex = 5;
-            this.btnGeneralCalFreqStart.Text = "Start";
-            this.toolTip1.SetToolTip(this.btnGeneralCalFreqStart, "Click to start the frequency calibration using the reference frequency above.");
+            this.btnGeneralCalFreqStart.Text = "开始";
+            this.toolTip1.SetToolTip(this.btnGeneralCalFreqStart, "点击开始使用上方参考频率进行频率校准。");
             this.btnGeneralCalFreqStart.Click += new System.EventHandler(this.btnGeneralCalFreqStart_Click);
             // 
             // udGeneralCalFreq1
@@ -9950,7 +9936,7 @@
             this.udGeneralCalFreq1.Size = new System.Drawing.Size(75, 20);
             this.udGeneralCalFreq1.TabIndex = 1;
             this.udGeneralCalFreq1.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udGeneralCalFreq1, "Frequency calibration reference frequency");
+            this.toolTip1.SetToolTip(this.udGeneralCalFreq1, "频率校准参考频率");
             this.udGeneralCalFreq1.Value = new decimal(new int[] {
             10,
             0,
@@ -9965,7 +9951,7 @@
             this.lblGeneralCalFrequency.Name = "lblGeneralCalFrequency";
             this.lblGeneralCalFrequency.Size = new System.Drawing.Size(64, 23);
             this.lblGeneralCalFrequency.TabIndex = 0;
-            this.lblGeneralCalFrequency.Text = "Frequency:";
+            this.lblGeneralCalFrequency.Text = "频率:";
             // 
             // grpGenCalRXImage
             // 
@@ -9977,7 +9963,7 @@
             this.grpGenCalRXImage.Size = new System.Drawing.Size(168, 112);
             this.grpGenCalRXImage.TabIndex = 9;
             this.grpGenCalRXImage.TabStop = false;
-            this.grpGenCalRXImage.Text = "RX Image Reject Cal";
+            this.grpGenCalRXImage.Text = "RX 镜像抑制校准";
             this.grpGenCalRXImage.Visible = false;
             // 
             // udGeneralCalFreq3
@@ -10003,7 +9989,7 @@
             this.udGeneralCalFreq3.Size = new System.Drawing.Size(75, 20);
             this.udGeneralCalFreq3.TabIndex = 1;
             this.udGeneralCalFreq3.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udGeneralCalFreq3, "RX Image calibration reference frequency");
+            this.toolTip1.SetToolTip(this.udGeneralCalFreq3, "RX 镜像校准参考频率");
             this.udGeneralCalFreq3.Value = new decimal(new int[] {
             10,
             0,
@@ -10018,7 +10004,7 @@
             this.lblGenCalRXImageFreq.Name = "lblGenCalRXImageFreq";
             this.lblGenCalRXImageFreq.Size = new System.Drawing.Size(64, 23);
             this.lblGenCalRXImageFreq.TabIndex = 0;
-            this.lblGenCalRXImageFreq.Text = "Frequency:";
+            this.lblGenCalRXImageFreq.Text = "频率:";
             // 
             // btnGeneralCalImageStart
             // 
@@ -10028,9 +10014,8 @@
             this.btnGeneralCalImageStart.Selectable = true;
             this.btnGeneralCalImageStart.Size = new System.Drawing.Size(75, 23);
             this.btnGeneralCalImageStart.TabIndex = 7;
-            this.btnGeneralCalImageStart.Text = "Start";
-            this.toolTip1.SetToolTip(this.btnGeneralCalImageStart, "Click to start the RX Image rejection calibration using the above frequency refer" +
-        "ence.");
+            this.btnGeneralCalImageStart.Text = "开始";
+            this.toolTip1.SetToolTip(this.btnGeneralCalImageStart, "点击开始使用上方频率参考进行 RX 镜像抑制校准。");
             this.btnGeneralCalImageStart.Click += new System.EventHandler(this.btnGeneralCalImageStart_Click);
             // 
             // tpFilters
@@ -10043,7 +10028,7 @@
             this.tpFilters.Name = "tpFilters";
             this.tpFilters.Size = new System.Drawing.Size(724, 410);
             this.tpFilters.TabIndex = 3;
-            this.tpFilters.Text = "Filters";
+            this.tpFilters.Text = "滤波器";
             // 
             // chkLimitFilterEdgesToSidebands
             // 
@@ -10053,8 +10038,8 @@
             this.chkLimitFilterEdgesToSidebands.Name = "chkLimitFilterEdgesToSidebands";
             this.chkLimitFilterEdgesToSidebands.Size = new System.Drawing.Size(164, 17);
             this.chkLimitFilterEdgesToSidebands.TabIndex = 31;
-            this.chkLimitFilterEdgesToSidebands.Text = "Limit filter edges to sidebands";
-            this.toolTip1.SetToolTip(this.chkLimitFilterEdgesToSidebands, "Prevents crossing the 0 point with certain filters");
+            this.chkLimitFilterEdgesToSidebands.Text = "将滤波器边缘限制在边带内";
+            this.toolTip1.SetToolTip(this.chkLimitFilterEdgesToSidebands, "防止某些滤波器穿越 0 点");
             this.chkLimitFilterEdgesToSidebands.UseVisualStyleBackColor = true;
             this.chkLimitFilterEdgesToSidebands.CheckedChanged += new System.EventHandler(this.chkLimitFilterEdgesToSidebands_CheckedChanged);
             // 
@@ -10074,7 +10059,7 @@
             this.groupBoxTS6.Size = new System.Drawing.Size(200, 152);
             this.groupBoxTS6.TabIndex = 30;
             this.groupBoxTS6.TabStop = false;
-            this.groupBoxTS6.Text = "RX2 Filter Controls";
+            this.groupBoxTS6.Text = "RX2 滤波器控制";
             // 
             // udRX2FilterDefaultLowCut
             // 
@@ -10098,7 +10083,7 @@
             this.udRX2FilterDefaultLowCut.Size = new System.Drawing.Size(48, 20);
             this.udRX2FilterDefaultLowCut.TabIndex = 17;
             this.udRX2FilterDefaultLowCut.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udRX2FilterDefaultLowCut, "Sets the default low cut filter for filter changes");
+            this.toolTip1.SetToolTip(this.udRX2FilterDefaultLowCut, "为滤波器更改设置默认低切");
             this.udRX2FilterDefaultLowCut.Value = new decimal(new int[] {
             100,
             0,
@@ -10113,7 +10098,7 @@
             this.labelTS39.Name = "labelTS39";
             this.labelTS39.Size = new System.Drawing.Size(120, 23);
             this.labelTS39.TabIndex = 16;
-            this.labelTS39.Text = "Default Low Cut (Hz):";
+            this.labelTS39.Text = "默认低切 (Hz):";
             // 
             // udRX2OptMaxFilterShift
             // 
@@ -10137,8 +10122,7 @@
             this.udRX2OptMaxFilterShift.Size = new System.Drawing.Size(48, 20);
             this.udRX2OptMaxFilterShift.TabIndex = 13;
             this.udRX2OptMaxFilterShift.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udRX2OptMaxFilterShift, "Sets the maximum amount for the Shift control.  Set lower for finer resolution co" +
-        "ntrol");
+            this.toolTip1.SetToolTip(this.udRX2OptMaxFilterShift, "设置 Shift（偏移）控件的最大调整量。设置较低值可获得更精细的控制分辨率。");
             this.udRX2OptMaxFilterShift.Value = new decimal(new int[] {
             9999,
             0,
@@ -10153,7 +10137,7 @@
             this.labelTS50.Name = "labelTS50";
             this.labelTS50.Size = new System.Drawing.Size(120, 23);
             this.labelTS50.TabIndex = 14;
-            this.labelTS50.Text = "Max Filter Shift (Hz):";
+            this.labelTS50.Text = "最大滤波器偏移 (Hz):";
             this.labelTS50.Visible = false;
             // 
             // comboRX2OptFilterWidthMode
@@ -10168,7 +10152,7 @@
             this.comboRX2OptFilterWidthMode.Name = "comboRX2OptFilterWidthMode";
             this.comboRX2OptFilterWidthMode.Size = new System.Drawing.Size(56, 21);
             this.comboRX2OptFilterWidthMode.TabIndex = 12;
-            this.toolTip1.SetToolTip(this.comboRX2OptFilterWidthMode, "Sets the mapping for the filter width slider.");
+            this.toolTip1.SetToolTip(this.comboRX2OptFilterWidthMode, "设置滤波器宽度滑块的映射。");
             this.comboRX2OptFilterWidthMode.Visible = false;
             // 
             // labelTS86
@@ -10178,7 +10162,7 @@
             this.labelTS86.Name = "labelTS86";
             this.labelTS86.Size = new System.Drawing.Size(104, 16);
             this.labelTS86.TabIndex = 11;
-            this.labelTS86.Text = "Width Slider Mode:";
+            this.labelTS86.Text = "宽度滑块模式:";
             this.labelTS86.Visible = false;
             // 
             // udRX2OptMaxFilterWidth
@@ -10203,7 +10187,7 @@
             this.udRX2OptMaxFilterWidth.Size = new System.Drawing.Size(48, 20);
             this.udRX2OptMaxFilterWidth.TabIndex = 0;
             this.udRX2OptMaxFilterWidth.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udRX2OptMaxFilterWidth, "Wets the maximum filter bandwidth");
+            this.toolTip1.SetToolTip(this.udRX2OptMaxFilterWidth, "设置最大滤波器带宽");
             this.udRX2OptMaxFilterWidth.Value = new decimal(new int[] {
             9999,
             0,
@@ -10218,7 +10202,7 @@
             this.labelTS87.Name = "labelTS87";
             this.labelTS87.Size = new System.Drawing.Size(120, 23);
             this.labelTS87.TabIndex = 10;
-            this.labelTS87.Text = "Max Filter Width (Hz):";
+            this.labelTS87.Text = "最大滤波器宽度 (Hz):";
             this.labelTS87.Visible = false;
             // 
             // checkBoxTS2
@@ -10228,9 +10212,8 @@
             this.checkBoxTS2.Name = "checkBoxTS2";
             this.checkBoxTS2.Size = new System.Drawing.Size(176, 16);
             this.checkBoxTS2.TabIndex = 15;
-            this.checkBoxTS2.Text = "Save Slider/Display Changes";
-            this.toolTip1.SetToolTip(this.checkBoxTS2, "If checked, changes made to the filters via the display or sliders will be saved " +
-        "in the Variable filter.");
+            this.checkBoxTS2.Text = "保存滑块/显示更改";
+            this.toolTip1.SetToolTip(this.checkBoxTS2, "勾选后，通过显示或滑块对滤波器所做的更改将保存到可变滤波器（Variable filter）中。");
             this.checkBoxTS2.Visible = false;
             // 
             // grpOptFilterControls
@@ -10249,7 +10232,7 @@
             this.grpOptFilterControls.Size = new System.Drawing.Size(200, 152);
             this.grpOptFilterControls.TabIndex = 29;
             this.grpOptFilterControls.TabStop = false;
-            this.grpOptFilterControls.Text = "RX1 Filter Controls";
+            this.grpOptFilterControls.Text = "RX1 滤波器控制";
             // 
             // udFilterDefaultLowCut
             // 
@@ -10273,7 +10256,7 @@
             this.udFilterDefaultLowCut.Size = new System.Drawing.Size(48, 20);
             this.udFilterDefaultLowCut.TabIndex = 17;
             this.udFilterDefaultLowCut.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udFilterDefaultLowCut, "Sets the default low cut filter for filter changes");
+            this.toolTip1.SetToolTip(this.udFilterDefaultLowCut, "为滤波器更改设置默认低切");
             this.udFilterDefaultLowCut.Value = new decimal(new int[] {
             100,
             0,
@@ -10289,7 +10272,7 @@
             this.lblDefaultLowCut.Name = "lblDefaultLowCut";
             this.lblDefaultLowCut.Size = new System.Drawing.Size(120, 23);
             this.lblDefaultLowCut.TabIndex = 16;
-            this.lblDefaultLowCut.Text = "Default Low Cut (Hz):";
+            this.lblDefaultLowCut.Text = "默认低切 (Hz):";
             // 
             // udOptMaxFilterShift
             // 
@@ -10313,8 +10296,7 @@
             this.udOptMaxFilterShift.Size = new System.Drawing.Size(48, 20);
             this.udOptMaxFilterShift.TabIndex = 13;
             this.udOptMaxFilterShift.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udOptMaxFilterShift, "Sets the maximum amount for the Shift control.  Set lower for finer resolution co" +
-        "ntrol");
+            this.toolTip1.SetToolTip(this.udOptMaxFilterShift, "设置 Shift（偏移）控件的最大调整量。设置较低值可获得更精细的控制分辨率。");
             this.udOptMaxFilterShift.Value = new decimal(new int[] {
             9999,
             0,
@@ -10330,7 +10312,7 @@
             this.lblOptMaxFilterShift.Name = "lblOptMaxFilterShift";
             this.lblOptMaxFilterShift.Size = new System.Drawing.Size(120, 23);
             this.lblOptMaxFilterShift.TabIndex = 14;
-            this.lblOptMaxFilterShift.Text = "Max Filter Shift (Hz):";
+            this.lblOptMaxFilterShift.Text = "最大滤波器偏移 (Hz):";
             // 
             // comboOptFilterWidthMode
             // 
@@ -10344,7 +10326,7 @@
             this.comboOptFilterWidthMode.Name = "comboOptFilterWidthMode";
             this.comboOptFilterWidthMode.Size = new System.Drawing.Size(56, 21);
             this.comboOptFilterWidthMode.TabIndex = 12;
-            this.toolTip1.SetToolTip(this.comboOptFilterWidthMode, "Sets the mapping for the filter width slider.");
+            this.toolTip1.SetToolTip(this.comboOptFilterWidthMode, "设置滤波器宽度滑块的映射。");
             this.comboOptFilterWidthMode.SelectedIndexChanged += new System.EventHandler(this.comboOptFilterWidthMode_SelectedIndexChanged);
             // 
             // lblOptWidthSliderMode
@@ -10354,7 +10336,7 @@
             this.lblOptWidthSliderMode.Name = "lblOptWidthSliderMode";
             this.lblOptWidthSliderMode.Size = new System.Drawing.Size(104, 16);
             this.lblOptWidthSliderMode.TabIndex = 11;
-            this.lblOptWidthSliderMode.Text = "Width Slider Mode:";
+            this.lblOptWidthSliderMode.Text = "宽度滑块模式:";
             // 
             // udOptMaxFilterWidth
             // 
@@ -10378,7 +10360,7 @@
             this.udOptMaxFilterWidth.Size = new System.Drawing.Size(48, 20);
             this.udOptMaxFilterWidth.TabIndex = 0;
             this.udOptMaxFilterWidth.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udOptMaxFilterWidth, "Wets the maximum filter bandwidth");
+            this.toolTip1.SetToolTip(this.udOptMaxFilterWidth, "设置最大滤波器带宽");
             this.udOptMaxFilterWidth.Value = new decimal(new int[] {
             9999,
             0,
@@ -10394,7 +10376,7 @@
             this.lblOptMaxFilter.Name = "lblOptMaxFilter";
             this.lblOptMaxFilter.Size = new System.Drawing.Size(120, 23);
             this.lblOptMaxFilter.TabIndex = 10;
-            this.lblOptMaxFilter.Text = "Max Filter Width (Hz):";
+            this.lblOptMaxFilter.Text = "最大滤波器宽度 (Hz):";
             // 
             // chkOptFilterSaveChanges
             // 
@@ -10403,9 +10385,8 @@
             this.chkOptFilterSaveChanges.Name = "chkOptFilterSaveChanges";
             this.chkOptFilterSaveChanges.Size = new System.Drawing.Size(176, 16);
             this.chkOptFilterSaveChanges.TabIndex = 15;
-            this.chkOptFilterSaveChanges.Text = "Save Slider/Display Changes";
-            this.toolTip1.SetToolTip(this.chkOptFilterSaveChanges, "If checked, changes made to the filters via the display or sliders will be saved " +
-        "in the Variable filter.");
+            this.chkOptFilterSaveChanges.Text = "保存滑块/显示更改";
+            this.toolTip1.SetToolTip(this.chkOptFilterSaveChanges, "勾选后，通过显示或滑块对滤波器所做的更改将保存到可变滤波器（Variable filter）中。");
             this.chkOptFilterSaveChanges.CheckedChanged += new System.EventHandler(this.chkOptFilterSaveChanges_CheckedChanged);
             // 
             // tpADC
@@ -10450,7 +10431,7 @@
             this.lblP2assignment.Name = "lblP2assignment";
             this.lblP2assignment.Size = new System.Drawing.Size(99, 50);
             this.lblP2assignment.TabIndex = 29;
-            this.lblP2assignment.Text = "Protocol 2 ADC assignments";
+            this.lblP2assignment.Text = "协议 2 ADC 分配";
             this.lblP2assignment.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // grpP1DDC6ADC
@@ -10562,7 +10543,7 @@
             this.lblP1assignment.Name = "lblP1assignment";
             this.lblP1assignment.Size = new System.Drawing.Size(99, 50);
             this.lblP1assignment.TabIndex = 16;
-            this.lblP1assignment.Text = "Protocol 1 ADC assignments";
+            this.lblP1assignment.Text = "协议 1 ADC 分配";
             this.lblP1assignment.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // grpP1DDC5ADC
@@ -10624,7 +10605,7 @@
             this.btnResetP2ADC.Selectable = true;
             this.btnResetP2ADC.Size = new System.Drawing.Size(68, 37);
             this.btnResetP2ADC.TabIndex = 14;
-            this.btnResetP2ADC.Text = "Reset To Default";
+            this.btnResetP2ADC.Text = "重置为默认";
             this.btnResetP2ADC.UseVisualStyleBackColor = true;
             this.btnResetP2ADC.Click += new System.EventHandler(this.btnResetP2ADC_Click);
             // 
@@ -11197,7 +11178,7 @@
             this.btnResetP1ADC.Selectable = true;
             this.btnResetP1ADC.Size = new System.Drawing.Size(68, 37);
             this.btnResetP1ADC.TabIndex = 17;
-            this.btnResetP1ADC.Text = "Reset to Default";
+            this.btnResetP1ADC.Text = "重置为默认";
             this.btnResetP1ADC.UseVisualStyleBackColor = true;
             this.btnResetP1ADC.Click += new System.EventHandler(this.btnResetP1ADC_Click);
             // 
@@ -11287,7 +11268,7 @@
             this.tpPennyCtrl.Padding = new System.Windows.Forms.Padding(3);
             this.tpPennyCtrl.Size = new System.Drawing.Size(724, 410);
             this.tpPennyCtrl.TabIndex = 6;
-            this.tpPennyCtrl.Text = "Penny/Hermes Ctrl";
+            this.tpPennyCtrl.Text = "Penny/Hermes 控制";
             this.tpPennyCtrl.Paint += new System.Windows.Forms.PaintEventHandler(this.tpPennyCtrl_Paint);
             // 
             // grpTransmitPinActionSWL
@@ -11331,8 +11312,8 @@
             this.grpUSBBCD.Size = new System.Drawing.Size(165, 66);
             this.grpUSBBCD.TabIndex = 15;
             this.grpUSBBCD.TabStop = false;
-            this.grpUSBBCD.Text = "USB/BCD Cable";
-            this.toolTip1.SetToolTip(this.grpUSBBCD, "Outputs Yaesu BCD data on USB/BCD cable.");
+            this.grpUSBBCD.Text = "USB/BCD 线缆";
+            this.toolTip1.SetToolTip(this.grpUSBBCD, "在 USB/BCD 线缆上输出 Yaesu BCD 数据。");
             // 
             // comboUsbDevices
             // 
@@ -11350,8 +11331,8 @@
             this.chkUsbBCD.Name = "chkUsbBCD";
             this.chkUsbBCD.Size = new System.Drawing.Size(59, 17);
             this.chkUsbBCD.TabIndex = 9;
-            this.chkUsbBCD.Text = "Enable";
-            this.toolTip1.SetToolTip(this.chkUsbBCD, "Enables USB BCD outputs for FTDI cable.");
+            this.chkUsbBCD.Text = "启用";
+            this.toolTip1.SetToolTip(this.chkUsbBCD, "为 FTDI 线缆启用 USB BCD 输出。");
             this.chkUsbBCD.UseVisualStyleBackColor = true;
             this.chkUsbBCD.CheckedChanged += new System.EventHandler(this.chkUsbBCD_CheckedChanged);
             // 
@@ -11385,7 +11366,7 @@
             this.grpExtPAControlHF.Size = new System.Drawing.Size(118, 237);
             this.grpExtPAControlHF.TabIndex = 14;
             this.grpExtPAControlHF.TabStop = false;
-            this.grpExtPAControlHF.Text = "Ext PA Control (xPA)";
+            this.grpExtPAControlHF.Text = "外部 PA 控制 (xPA)";
             // 
             // labelTS577
             // 
@@ -11395,7 +11376,7 @@
             this.labelTS577.Name = "labelTS577";
             this.labelTS577.Size = new System.Drawing.Size(31, 13);
             this.labelTS577.TabIndex = 46;
-            this.labelTS577.Text = "Pin 7";
+            this.labelTS577.Text = "引脚 7";
             // 
             // labelTS582
             // 
@@ -11405,7 +11386,7 @@
             this.labelTS582.Name = "labelTS582";
             this.labelTS582.Size = new System.Drawing.Size(31, 13);
             this.labelTS582.TabIndex = 45;
-            this.labelTS582.Text = "Pin 6";
+            this.labelTS582.Text = "引脚 6";
             // 
             // labelTS583
             // 
@@ -11415,7 +11396,7 @@
             this.labelTS583.Name = "labelTS583";
             this.labelTS583.Size = new System.Drawing.Size(31, 13);
             this.labelTS583.TabIndex = 44;
-            this.labelTS583.Text = "Pin 5";
+            this.labelTS583.Text = "引脚 5";
             // 
             // labelTS584
             // 
@@ -11425,7 +11406,7 @@
             this.labelTS584.Name = "labelTS584";
             this.labelTS584.Size = new System.Drawing.Size(31, 13);
             this.labelTS584.TabIndex = 43;
-            this.labelTS584.Text = "Pin 4";
+            this.labelTS584.Text = "引脚 4";
             // 
             // labelTS585
             // 
@@ -11435,7 +11416,7 @@
             this.labelTS585.Name = "labelTS585";
             this.labelTS585.Size = new System.Drawing.Size(31, 13);
             this.labelTS585.TabIndex = 42;
-            this.labelTS585.Text = "Pin 3";
+            this.labelTS585.Text = "引脚 3";
             // 
             // labelTS586
             // 
@@ -11445,7 +11426,7 @@
             this.labelTS586.Name = "labelTS586";
             this.labelTS586.Size = new System.Drawing.Size(31, 13);
             this.labelTS586.TabIndex = 41;
-            this.labelTS586.Text = "Pin 2";
+            this.labelTS586.Text = "引脚 2";
             // 
             // labelTS587
             // 
@@ -11455,7 +11436,7 @@
             this.labelTS587.Name = "labelTS587";
             this.labelTS587.Size = new System.Drawing.Size(31, 13);
             this.labelTS587.TabIndex = 40;
-            this.labelTS587.Text = "Pin 1";
+            this.labelTS587.Text = "引脚 1";
             // 
             // chkPin7RXPAHF
             // 
@@ -11465,8 +11446,7 @@
             this.chkPin7RXPAHF.Name = "chkPin7RXPAHF";
             this.chkPin7RXPAHF.Size = new System.Drawing.Size(15, 14);
             this.chkPin7RXPAHF.TabIndex = 39;
-            this.toolTip1.SetToolTip(this.chkPin7RXPAHF, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin7RXPAHF, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin7RXPAHF.UseVisualStyleBackColor = true;
             this.chkPin7RXPAHF.CheckedChanged += new System.EventHandler(this.chkPin1RXPAHF_CheckedChanged);
             // 
@@ -11488,8 +11468,7 @@
             this.chkPin6RXPAHF.Name = "chkPin6RXPAHF";
             this.chkPin6RXPAHF.Size = new System.Drawing.Size(15, 14);
             this.chkPin6RXPAHF.TabIndex = 38;
-            this.toolTip1.SetToolTip(this.chkPin6RXPAHF, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin6RXPAHF, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin6RXPAHF.UseVisualStyleBackColor = true;
             this.chkPin6RXPAHF.CheckedChanged += new System.EventHandler(this.chkPin1RXPAHF_CheckedChanged);
             // 
@@ -11501,8 +11480,7 @@
             this.chkPin1RXPAHF.Name = "chkPin1RXPAHF";
             this.chkPin1RXPAHF.Size = new System.Drawing.Size(15, 14);
             this.chkPin1RXPAHF.TabIndex = 33;
-            this.toolTip1.SetToolTip(this.chkPin1RXPAHF, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin1RXPAHF, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin1RXPAHF.UseVisualStyleBackColor = true;
             this.chkPin1RXPAHF.CheckedChanged += new System.EventHandler(this.chkPin1RXPAHF_CheckedChanged);
             // 
@@ -11514,8 +11492,7 @@
             this.chkPin5RXPAHF.Name = "chkPin5RXPAHF";
             this.chkPin5RXPAHF.Size = new System.Drawing.Size(15, 14);
             this.chkPin5RXPAHF.TabIndex = 37;
-            this.toolTip1.SetToolTip(this.chkPin5RXPAHF, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin5RXPAHF, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin5RXPAHF.UseVisualStyleBackColor = true;
             this.chkPin5RXPAHF.CheckedChanged += new System.EventHandler(this.chkPin1RXPAHF_CheckedChanged);
             // 
@@ -11527,8 +11504,7 @@
             this.chkPin2RXPAHF.Name = "chkPin2RXPAHF";
             this.chkPin2RXPAHF.Size = new System.Drawing.Size(15, 14);
             this.chkPin2RXPAHF.TabIndex = 34;
-            this.toolTip1.SetToolTip(this.chkPin2RXPAHF, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin2RXPAHF, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin2RXPAHF.UseVisualStyleBackColor = true;
             this.chkPin2RXPAHF.CheckedChanged += new System.EventHandler(this.chkPin1RXPAHF_CheckedChanged);
             // 
@@ -11540,8 +11516,7 @@
             this.chkPin4RXPAHF.Name = "chkPin4RXPAHF";
             this.chkPin4RXPAHF.Size = new System.Drawing.Size(15, 14);
             this.chkPin4RXPAHF.TabIndex = 36;
-            this.toolTip1.SetToolTip(this.chkPin4RXPAHF, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin4RXPAHF, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin4RXPAHF.UseVisualStyleBackColor = true;
             this.chkPin4RXPAHF.CheckedChanged += new System.EventHandler(this.chkPin1RXPAHF_CheckedChanged);
             // 
@@ -11553,8 +11528,7 @@
             this.chkPin3RXPAHF.Name = "chkPin3RXPAHF";
             this.chkPin3RXPAHF.Size = new System.Drawing.Size(15, 14);
             this.chkPin3RXPAHF.TabIndex = 35;
-            this.toolTip1.SetToolTip(this.chkPin3RXPAHF, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin3RXPAHF, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin3RXPAHF.UseVisualStyleBackColor = true;
             this.chkPin3RXPAHF.CheckedChanged += new System.EventHandler(this.chkPin1RXPAHF_CheckedChanged);
             // 
@@ -11566,8 +11540,7 @@
             this.chkPin7TXPAHF.Name = "chkPin7TXPAHF";
             this.chkPin7TXPAHF.Size = new System.Drawing.Size(15, 14);
             this.chkPin7TXPAHF.TabIndex = 31;
-            this.toolTip1.SetToolTip(this.chkPin7TXPAHF, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin7TXPAHF, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin7TXPAHF.UseVisualStyleBackColor = true;
             this.chkPin7TXPAHF.CheckedChanged += new System.EventHandler(this.chkPin1TXPAHF_CheckedChanged);
             // 
@@ -11589,8 +11562,7 @@
             this.chkPin6TXPAHF.Name = "chkPin6TXPAHF";
             this.chkPin6TXPAHF.Size = new System.Drawing.Size(15, 14);
             this.chkPin6TXPAHF.TabIndex = 30;
-            this.toolTip1.SetToolTip(this.chkPin6TXPAHF, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin6TXPAHF, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin6TXPAHF.UseVisualStyleBackColor = true;
             this.chkPin6TXPAHF.CheckedChanged += new System.EventHandler(this.chkPin1TXPAHF_CheckedChanged);
             // 
@@ -11602,8 +11574,7 @@
             this.chkPin1TXPAHF.Name = "chkPin1TXPAHF";
             this.chkPin1TXPAHF.Size = new System.Drawing.Size(15, 14);
             this.chkPin1TXPAHF.TabIndex = 25;
-            this.toolTip1.SetToolTip(this.chkPin1TXPAHF, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin1TXPAHF, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin1TXPAHF.UseVisualStyleBackColor = true;
             this.chkPin1TXPAHF.CheckedChanged += new System.EventHandler(this.chkPin1TXPAHF_CheckedChanged);
             // 
@@ -11615,8 +11586,7 @@
             this.chkPin5TXPAHF.Name = "chkPin5TXPAHF";
             this.chkPin5TXPAHF.Size = new System.Drawing.Size(15, 14);
             this.chkPin5TXPAHF.TabIndex = 29;
-            this.toolTip1.SetToolTip(this.chkPin5TXPAHF, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin5TXPAHF, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin5TXPAHF.UseVisualStyleBackColor = true;
             this.chkPin5TXPAHF.CheckedChanged += new System.EventHandler(this.chkPin1TXPAHF_CheckedChanged);
             // 
@@ -11628,8 +11598,7 @@
             this.chkPin2TXPAHF.Name = "chkPin2TXPAHF";
             this.chkPin2TXPAHF.Size = new System.Drawing.Size(15, 14);
             this.chkPin2TXPAHF.TabIndex = 26;
-            this.toolTip1.SetToolTip(this.chkPin2TXPAHF, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin2TXPAHF, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin2TXPAHF.UseVisualStyleBackColor = true;
             this.chkPin2TXPAHF.CheckedChanged += new System.EventHandler(this.chkPin1TXPAHF_CheckedChanged);
             // 
@@ -11641,8 +11610,7 @@
             this.chkPin4TXPAHF.Name = "chkPin4TXPAHF";
             this.chkPin4TXPAHF.Size = new System.Drawing.Size(15, 14);
             this.chkPin4TXPAHF.TabIndex = 28;
-            this.toolTip1.SetToolTip(this.chkPin4TXPAHF, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin4TXPAHF, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin4TXPAHF.UseVisualStyleBackColor = true;
             this.chkPin4TXPAHF.CheckedChanged += new System.EventHandler(this.chkPin1TXPAHF_CheckedChanged);
             // 
@@ -11654,8 +11622,7 @@
             this.chkPin3TXPAHF.Name = "chkPin3TXPAHF";
             this.chkPin3TXPAHF.Size = new System.Drawing.Size(15, 14);
             this.chkPin3TXPAHF.TabIndex = 27;
-            this.toolTip1.SetToolTip(this.chkPin3TXPAHF, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin3TXPAHF, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin3TXPAHF.UseVisualStyleBackColor = true;
             this.chkPin3TXPAHF.CheckedChanged += new System.EventHandler(this.chkPin1TXPAHF_CheckedChanged);
             // 
@@ -11667,9 +11634,8 @@
             this.chkAllowHotSwitching.Name = "chkAllowHotSwitching";
             this.chkAllowHotSwitching.Size = new System.Drawing.Size(120, 17);
             this.chkAllowHotSwitching.TabIndex = 13;
-            this.chkAllowHotSwitching.Text = "Allow Hot Switching";
-            this.toolTip1.SetToolTip(this.chkAllowHotSwitching, "WIth this enabled, xPA button on console, and TX pins will be able to be \'chcked\'" +
-        " when in transmit");
+            this.chkAllowHotSwitching.Text = "允许热切换";
+            this.toolTip1.SetToolTip(this.chkAllowHotSwitching, "启用后，控制台上的 xPA 按钮和 TX 引脚可在发射状态下被选中。");
             this.chkAllowHotSwitching.UseVisualStyleBackColor = true;
             this.chkAllowHotSwitching.CheckedChanged += new System.EventHandler(this.chkAllowHotSwitching_CheckedChanged);
             // 
@@ -11688,7 +11654,7 @@
             this.grpOCPinState.Size = new System.Drawing.Size(131, 65);
             this.grpOCPinState.TabIndex = 12;
             this.grpOCPinState.TabStop = false;
-            this.grpOCPinState.Text = "Hardware Pin State";
+            this.grpOCPinState.Text = "硬件引脚状态";
             // 
             // labelTS569
             // 
@@ -11790,7 +11756,7 @@
             this.grpTransmitPinActionHF.Size = new System.Drawing.Size(235, 237);
             this.grpTransmitPinActionHF.TabIndex = 11;
             this.grpTransmitPinActionHF.TabStop = false;
-            this.grpTransmitPinActionHF.Text = "Transmit Pin Action";
+            this.grpTransmitPinActionHF.Text = "发射引脚动作";
             // 
             // comboPin7TXActionHF
             // 
@@ -11818,7 +11784,7 @@
             this.labelTS552.Name = "labelTS552";
             this.labelTS552.Size = new System.Drawing.Size(31, 13);
             this.labelTS552.TabIndex = 23;
-            this.labelTS552.Text = "Pin 7";
+            this.labelTS552.Text = "引脚 7";
             // 
             // comboPin6TXActionHF
             // 
@@ -11846,7 +11812,7 @@
             this.labelTS553.Name = "labelTS553";
             this.labelTS553.Size = new System.Drawing.Size(31, 13);
             this.labelTS553.TabIndex = 21;
-            this.labelTS553.Text = "Pin 6";
+            this.labelTS553.Text = "引脚 6";
             // 
             // comboPin5TXActionHF
             // 
@@ -11874,7 +11840,7 @@
             this.labelTS554.Name = "labelTS554";
             this.labelTS554.Size = new System.Drawing.Size(31, 13);
             this.labelTS554.TabIndex = 19;
-            this.labelTS554.Text = "Pin 5";
+            this.labelTS554.Text = "引脚 5";
             // 
             // comboPin4TXActionHF
             // 
@@ -11902,7 +11868,7 @@
             this.labelTS550.Name = "labelTS550";
             this.labelTS550.Size = new System.Drawing.Size(31, 13);
             this.labelTS550.TabIndex = 17;
-            this.labelTS550.Text = "Pin 4";
+            this.labelTS550.Text = "引脚 4";
             // 
             // comboPin3TXActionHF
             // 
@@ -11930,7 +11896,7 @@
             this.labelTS551.Name = "labelTS551";
             this.labelTS551.Size = new System.Drawing.Size(31, 13);
             this.labelTS551.TabIndex = 15;
-            this.labelTS551.Text = "Pin 3";
+            this.labelTS551.Text = "引脚 3";
             // 
             // comboPin2TXActionHF
             // 
@@ -11958,7 +11924,7 @@
             this.labelTS549.Name = "labelTS549";
             this.labelTS549.Size = new System.Drawing.Size(31, 13);
             this.labelTS549.TabIndex = 13;
-            this.labelTS549.Text = "Pin 2";
+            this.labelTS549.Text = "引脚 2";
             // 
             // comboPin1TXActionHF
             // 
@@ -11986,7 +11952,7 @@
             this.labelTS548.Name = "labelTS548";
             this.labelTS548.Size = new System.Drawing.Size(31, 13);
             this.labelTS548.TabIndex = 0;
-            this.labelTS548.Text = "Pin 1";
+            this.labelTS548.Text = "引脚 1";
             // 
             // groupBoxTS1
             // 
@@ -11998,7 +11964,7 @@
             this.groupBoxTS1.Size = new System.Drawing.Size(200, 66);
             this.groupBoxTS1.TabIndex = 10;
             this.groupBoxTS1.TabStop = false;
-            this.groupBoxTS1.Text = "Split Pins";
+            this.groupBoxTS1.Text = "Split 引脚";
             // 
             // radSplitPins3x4
             // 
@@ -12009,7 +11975,7 @@
             this.radSplitPins3x4.Size = new System.Drawing.Size(65, 17);
             this.radSplitPins3x4.TabIndex = 11;
             this.radSplitPins3x4.Text = "3x4 Split";
-            this.toolTip1.SetToolTip(this.radSplitPins3x4, "Use Pins 1-3 for VFOA, 4-7 for VFOB");
+            this.toolTip1.SetToolTip(this.radSplitPins3x4, "引脚 1-3 用于 VFOA，4-7 用于 VFOB");
             this.radSplitPins3x4.UseVisualStyleBackColor = true;
             this.radSplitPins3x4.CheckedChanged += new System.EventHandler(this.radSplitPins3x4_CheckedChanged);
             // 
@@ -12024,7 +11990,7 @@
             this.radSplitPins4x3.TabIndex = 11;
             this.radSplitPins4x3.TabStop = true;
             this.radSplitPins4x3.Text = "4x3 Split";
-            this.toolTip1.SetToolTip(this.radSplitPins4x3, "Use Pins 1-4 for VFOA, 5-7 for VFOB");
+            this.toolTip1.SetToolTip(this.radSplitPins4x3, "引脚 1-4 用于 VFOA，5-7 用于 VFOB");
             this.radSplitPins4x3.UseVisualStyleBackColor = true;
             this.radSplitPins4x3.CheckedChanged += new System.EventHandler(this.radSplitPins4x3_CheckedChanged);
             // 
@@ -12036,8 +12002,8 @@
             this.chkSplitPins.Name = "chkSplitPins";
             this.chkSplitPins.Size = new System.Drawing.Size(59, 17);
             this.chkSplitPins.TabIndex = 9;
-            this.chkSplitPins.Text = "Enable";
-            this.toolTip1.SetToolTip(this.chkSplitPins, "Enable Split Pins feature");
+            this.chkSplitPins.Text = "启用";
+            this.toolTip1.SetToolTip(this.chkSplitPins, "启用 Split 引脚功能");
             this.chkSplitPins.UseVisualStyleBackColor = true;
             this.chkSplitPins.CheckedChanged += new System.EventHandler(this.chkSplitPins_CheckedChanged);
             // 
@@ -14223,7 +14189,7 @@
             this.labelTS40.Name = "labelTS40";
             this.labelTS40.Size = new System.Drawing.Size(32, 16);
             this.labelTS40.TabIndex = 16;
-            this.labelTS40.Text = "Band";
+            this.labelTS40.Text = "波段";
             // 
             // labelTS44
             // 
@@ -14373,7 +14339,7 @@
             this.lblHFTxControl.Name = "lblHFTxControl";
             this.lblHFTxControl.Size = new System.Drawing.Size(95, 16);
             this.lblHFTxControl.TabIndex = 1;
-            this.lblHFTxControl.Text = "J6 Transmit Pins";
+            this.lblHFTxControl.Text = "J6 发射引脚";
             this.lblHFTxControl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblHFRxControl
@@ -14384,7 +14350,7 @@
             this.lblHFRxControl.Name = "lblHFRxControl";
             this.lblHFRxControl.Size = new System.Drawing.Size(95, 16);
             this.lblHFRxControl.TabIndex = 0;
-            this.lblHFRxControl.Text = "J6 Receive Pins";
+            this.lblHFRxControl.Text = "J6 接收引脚";
             this.lblHFRxControl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // chkPennyExtCtrl
@@ -14401,9 +14367,9 @@
             this.chkPennyExtCtrl.Name = "chkPennyExtCtrl";
             this.chkPennyExtCtrl.Size = new System.Drawing.Size(90, 23);
             this.chkPennyExtCtrl.TabIndex = 1;
-            this.chkPennyExtCtrl.Text = "Ext Control";
+            this.chkPennyExtCtrl.Text = "外部控制";
             this.chkPennyExtCtrl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.toolTip1.SetToolTip(this.chkPennyExtCtrl, "Enable External Control on Penelope J6");
+            this.toolTip1.SetToolTip(this.chkPennyExtCtrl, "启用 Penelope J6 外部控制");
             this.chkPennyExtCtrl.UseVisualStyleBackColor = false;
             this.chkPennyExtCtrl.CheckedChanged += new System.EventHandler(this.chkPennyExtCtrl_CheckedChanged);
             // 
@@ -14419,9 +14385,9 @@
             this.chkHERCULES.Name = "chkHERCULES";
             this.chkHERCULES.Size = new System.Drawing.Size(90, 23);
             this.chkHERCULES.TabIndex = 2;
-            this.chkHERCULES.Text = "Hercules Amp";
+            this.chkHERCULES.Text = "Hercules 功放";
             this.chkHERCULES.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.toolTip1.SetToolTip(this.chkHERCULES, "Preset pins for Hercules Amplifier");
+            this.toolTip1.SetToolTip(this.chkHERCULES, "Hercules 功放预设引脚");
             this.chkHERCULES.UseVisualStyleBackColor = false;
             this.chkHERCULES.Visible = false;
             this.chkHERCULES.CheckedChanged += new System.EventHandler(this.chkHERCULES_CheckedChanged);
@@ -14436,8 +14402,8 @@
             this.btnPennyCtrlReset.Selectable = true;
             this.btnPennyCtrlReset.Size = new System.Drawing.Size(60, 23);
             this.btnPennyCtrlReset.TabIndex = 4;
-            this.btnPennyCtrlReset.Text = "HF Reset";
-            this.toolTip1.SetToolTip(this.btnPennyCtrlReset, "Clears to Default");
+            this.btnPennyCtrlReset.Text = "HF 复位";
+            this.toolTip1.SetToolTip(this.btnPennyCtrlReset, "清除为默认值");
             this.btnPennyCtrlReset.UseVisualStyleBackColor = true;
             this.btnPennyCtrlReset.Click += new System.EventHandler(this.btnPennyCtrlReset_Click);
             // 
@@ -14485,7 +14451,7 @@
             this.grpExtPAControlVHF.Size = new System.Drawing.Size(118, 237);
             this.grpExtPAControlVHF.TabIndex = 15;
             this.grpExtPAControlVHF.TabStop = false;
-            this.grpExtPAControlVHF.Text = "Ext PA Control (xPA)";
+            this.grpExtPAControlVHF.Text = "外部 PA 控制 (xPA)";
             // 
             // labelTS588
             // 
@@ -14495,7 +14461,7 @@
             this.labelTS588.Name = "labelTS588";
             this.labelTS588.Size = new System.Drawing.Size(31, 13);
             this.labelTS588.TabIndex = 46;
-            this.labelTS588.Text = "Pin 7";
+            this.labelTS588.Text = "引脚 7";
             // 
             // labelTS589
             // 
@@ -14505,7 +14471,7 @@
             this.labelTS589.Name = "labelTS589";
             this.labelTS589.Size = new System.Drawing.Size(31, 13);
             this.labelTS589.TabIndex = 45;
-            this.labelTS589.Text = "Pin 6";
+            this.labelTS589.Text = "引脚 6";
             // 
             // labelTS590
             // 
@@ -14515,7 +14481,7 @@
             this.labelTS590.Name = "labelTS590";
             this.labelTS590.Size = new System.Drawing.Size(31, 13);
             this.labelTS590.TabIndex = 44;
-            this.labelTS590.Text = "Pin 5";
+            this.labelTS590.Text = "引脚 5";
             // 
             // labelTS591
             // 
@@ -14525,7 +14491,7 @@
             this.labelTS591.Name = "labelTS591";
             this.labelTS591.Size = new System.Drawing.Size(31, 13);
             this.labelTS591.TabIndex = 43;
-            this.labelTS591.Text = "Pin 4";
+            this.labelTS591.Text = "引脚 4";
             // 
             // labelTS592
             // 
@@ -14535,7 +14501,7 @@
             this.labelTS592.Name = "labelTS592";
             this.labelTS592.Size = new System.Drawing.Size(31, 13);
             this.labelTS592.TabIndex = 42;
-            this.labelTS592.Text = "Pin 3";
+            this.labelTS592.Text = "引脚 3";
             // 
             // labelTS593
             // 
@@ -14545,7 +14511,7 @@
             this.labelTS593.Name = "labelTS593";
             this.labelTS593.Size = new System.Drawing.Size(31, 13);
             this.labelTS593.TabIndex = 41;
-            this.labelTS593.Text = "Pin 2";
+            this.labelTS593.Text = "引脚 2";
             // 
             // labelTS594
             // 
@@ -14555,7 +14521,7 @@
             this.labelTS594.Name = "labelTS594";
             this.labelTS594.Size = new System.Drawing.Size(31, 13);
             this.labelTS594.TabIndex = 40;
-            this.labelTS594.Text = "Pin 1";
+            this.labelTS594.Text = "引脚 1";
             // 
             // chkPin7TXPAVHF
             // 
@@ -14565,8 +14531,7 @@
             this.chkPin7TXPAVHF.Name = "chkPin7TXPAVHF";
             this.chkPin7TXPAVHF.Size = new System.Drawing.Size(15, 14);
             this.chkPin7TXPAVHF.TabIndex = 39;
-            this.toolTip1.SetToolTip(this.chkPin7TXPAVHF, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin7TXPAVHF, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin7TXPAVHF.UseVisualStyleBackColor = true;
             this.chkPin7TXPAVHF.CheckedChanged += new System.EventHandler(this.chkPin1TXPAVHF_CheckedChanged);
             // 
@@ -14578,8 +14543,7 @@
             this.chkPin7RXPAVHF.Name = "chkPin7RXPAVHF";
             this.chkPin7RXPAVHF.Size = new System.Drawing.Size(15, 14);
             this.chkPin7RXPAVHF.TabIndex = 39;
-            this.toolTip1.SetToolTip(this.chkPin7RXPAVHF, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin7RXPAVHF, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin7RXPAVHF.UseVisualStyleBackColor = true;
             this.chkPin7RXPAVHF.CheckedChanged += new System.EventHandler(this.chkPin1RXPAVHF_CheckedChanged);
             // 
@@ -14591,8 +14555,7 @@
             this.chkPin6TXPAVHF.Name = "chkPin6TXPAVHF";
             this.chkPin6TXPAVHF.Size = new System.Drawing.Size(15, 14);
             this.chkPin6TXPAVHF.TabIndex = 38;
-            this.toolTip1.SetToolTip(this.chkPin6TXPAVHF, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin6TXPAVHF, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin6TXPAVHF.UseVisualStyleBackColor = true;
             this.chkPin6TXPAVHF.CheckedChanged += new System.EventHandler(this.chkPin1TXPAVHF_CheckedChanged);
             // 
@@ -14614,8 +14577,7 @@
             this.chkPin5TXPAVHF.Name = "chkPin5TXPAVHF";
             this.chkPin5TXPAVHF.Size = new System.Drawing.Size(15, 14);
             this.chkPin5TXPAVHF.TabIndex = 37;
-            this.toolTip1.SetToolTip(this.chkPin5TXPAVHF, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin5TXPAVHF, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin5TXPAVHF.UseVisualStyleBackColor = true;
             this.chkPin5TXPAVHF.CheckedChanged += new System.EventHandler(this.chkPin1TXPAVHF_CheckedChanged);
             // 
@@ -14627,8 +14589,7 @@
             this.chkPin6RXPAVHF.Name = "chkPin6RXPAVHF";
             this.chkPin6RXPAVHF.Size = new System.Drawing.Size(15, 14);
             this.chkPin6RXPAVHF.TabIndex = 38;
-            this.toolTip1.SetToolTip(this.chkPin6RXPAVHF, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin6RXPAVHF, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin6RXPAVHF.UseVisualStyleBackColor = true;
             this.chkPin6RXPAVHF.CheckedChanged += new System.EventHandler(this.chkPin1RXPAVHF_CheckedChanged);
             // 
@@ -14640,8 +14601,7 @@
             this.chkPin4TXPAVHF.Name = "chkPin4TXPAVHF";
             this.chkPin4TXPAVHF.Size = new System.Drawing.Size(15, 14);
             this.chkPin4TXPAVHF.TabIndex = 36;
-            this.toolTip1.SetToolTip(this.chkPin4TXPAVHF, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin4TXPAVHF, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin4TXPAVHF.UseVisualStyleBackColor = true;
             this.chkPin4TXPAVHF.CheckedChanged += new System.EventHandler(this.chkPin1TXPAVHF_CheckedChanged);
             // 
@@ -14653,8 +14613,7 @@
             this.chkPin1RXPAVHF.Name = "chkPin1RXPAVHF";
             this.chkPin1RXPAVHF.Size = new System.Drawing.Size(15, 14);
             this.chkPin1RXPAVHF.TabIndex = 33;
-            this.toolTip1.SetToolTip(this.chkPin1RXPAVHF, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin1RXPAVHF, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin1RXPAVHF.UseVisualStyleBackColor = true;
             this.chkPin1RXPAVHF.CheckedChanged += new System.EventHandler(this.chkPin1RXPAVHF_CheckedChanged);
             // 
@@ -14666,8 +14625,7 @@
             this.chkPin3TXPAVHF.Name = "chkPin3TXPAVHF";
             this.chkPin3TXPAVHF.Size = new System.Drawing.Size(15, 14);
             this.chkPin3TXPAVHF.TabIndex = 35;
-            this.toolTip1.SetToolTip(this.chkPin3TXPAVHF, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin3TXPAVHF, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin3TXPAVHF.UseVisualStyleBackColor = true;
             this.chkPin3TXPAVHF.CheckedChanged += new System.EventHandler(this.chkPin1TXPAVHF_CheckedChanged);
             // 
@@ -14679,8 +14637,7 @@
             this.chkPin5RXPAVHF.Name = "chkPin5RXPAVHF";
             this.chkPin5RXPAVHF.Size = new System.Drawing.Size(15, 14);
             this.chkPin5RXPAVHF.TabIndex = 37;
-            this.toolTip1.SetToolTip(this.chkPin5RXPAVHF, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin5RXPAVHF, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin5RXPAVHF.UseVisualStyleBackColor = true;
             this.chkPin5RXPAVHF.CheckedChanged += new System.EventHandler(this.chkPin1RXPAVHF_CheckedChanged);
             // 
@@ -14692,8 +14649,7 @@
             this.chkPin2TXPAVHF.Name = "chkPin2TXPAVHF";
             this.chkPin2TXPAVHF.Size = new System.Drawing.Size(15, 14);
             this.chkPin2TXPAVHF.TabIndex = 34;
-            this.toolTip1.SetToolTip(this.chkPin2TXPAVHF, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin2TXPAVHF, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin2TXPAVHF.UseVisualStyleBackColor = true;
             this.chkPin2TXPAVHF.CheckedChanged += new System.EventHandler(this.chkPin1TXPAVHF_CheckedChanged);
             // 
@@ -14705,8 +14661,7 @@
             this.chkPin2RXPAVHF.Name = "chkPin2RXPAVHF";
             this.chkPin2RXPAVHF.Size = new System.Drawing.Size(15, 14);
             this.chkPin2RXPAVHF.TabIndex = 34;
-            this.toolTip1.SetToolTip(this.chkPin2RXPAVHF, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin2RXPAVHF, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin2RXPAVHF.UseVisualStyleBackColor = true;
             this.chkPin2RXPAVHF.CheckedChanged += new System.EventHandler(this.chkPin1RXPAVHF_CheckedChanged);
             // 
@@ -14718,8 +14673,7 @@
             this.chkPin1TXPAVHF.Name = "chkPin1TXPAVHF";
             this.chkPin1TXPAVHF.Size = new System.Drawing.Size(15, 14);
             this.chkPin1TXPAVHF.TabIndex = 33;
-            this.toolTip1.SetToolTip(this.chkPin1TXPAVHF, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin1TXPAVHF, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin1TXPAVHF.UseVisualStyleBackColor = true;
             this.chkPin1TXPAVHF.CheckedChanged += new System.EventHandler(this.chkPin1TXPAVHF_CheckedChanged);
             // 
@@ -14731,8 +14685,7 @@
             this.chkPin4RXPAVHF.Name = "chkPin4RXPAVHF";
             this.chkPin4RXPAVHF.Size = new System.Drawing.Size(15, 14);
             this.chkPin4RXPAVHF.TabIndex = 36;
-            this.toolTip1.SetToolTip(this.chkPin4RXPAVHF, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin4RXPAVHF, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin4RXPAVHF.UseVisualStyleBackColor = true;
             this.chkPin4RXPAVHF.CheckedChanged += new System.EventHandler(this.chkPin1RXPAVHF_CheckedChanged);
             // 
@@ -14744,8 +14697,7 @@
             this.chkPin3RXPAVHF.Name = "chkPin3RXPAVHF";
             this.chkPin3RXPAVHF.Size = new System.Drawing.Size(15, 14);
             this.chkPin3RXPAVHF.TabIndex = 35;
-            this.toolTip1.SetToolTip(this.chkPin3RXPAVHF, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin3RXPAVHF, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin3RXPAVHF.UseVisualStyleBackColor = true;
             this.chkPin3RXPAVHF.CheckedChanged += new System.EventHandler(this.chkPin1RXPAVHF_CheckedChanged);
             // 
@@ -14780,7 +14732,7 @@
             this.grpTransmitPinActionVHF.Size = new System.Drawing.Size(235, 237);
             this.grpTransmitPinActionVHF.TabIndex = 12;
             this.grpTransmitPinActionVHF.TabStop = false;
-            this.grpTransmitPinActionVHF.Text = "Transmit Pin Action";
+            this.grpTransmitPinActionVHF.Text = "发射引脚动作";
             // 
             // comboPin7TXActionVHF
             // 
@@ -14808,7 +14760,7 @@
             this.labelTS555.Name = "labelTS555";
             this.labelTS555.Size = new System.Drawing.Size(31, 13);
             this.labelTS555.TabIndex = 23;
-            this.labelTS555.Text = "Pin 7";
+            this.labelTS555.Text = "引脚 7";
             // 
             // comboPin6TXActionVHF
             // 
@@ -14836,7 +14788,7 @@
             this.labelTS556.Name = "labelTS556";
             this.labelTS556.Size = new System.Drawing.Size(31, 13);
             this.labelTS556.TabIndex = 21;
-            this.labelTS556.Text = "Pin 6";
+            this.labelTS556.Text = "引脚 6";
             // 
             // comboPin5TXActionVHF
             // 
@@ -14864,7 +14816,7 @@
             this.labelTS557.Name = "labelTS557";
             this.labelTS557.Size = new System.Drawing.Size(31, 13);
             this.labelTS557.TabIndex = 19;
-            this.labelTS557.Text = "Pin 5";
+            this.labelTS557.Text = "引脚 5";
             // 
             // comboPin4TXActionVHF
             // 
@@ -14892,7 +14844,7 @@
             this.labelTS558.Name = "labelTS558";
             this.labelTS558.Size = new System.Drawing.Size(31, 13);
             this.labelTS558.TabIndex = 17;
-            this.labelTS558.Text = "Pin 4";
+            this.labelTS558.Text = "引脚 4";
             // 
             // comboPin3TXActionVHF
             // 
@@ -14920,7 +14872,7 @@
             this.labelTS559.Name = "labelTS559";
             this.labelTS559.Size = new System.Drawing.Size(31, 13);
             this.labelTS559.TabIndex = 15;
-            this.labelTS559.Text = "Pin 3";
+            this.labelTS559.Text = "引脚 3";
             // 
             // comboPin2TXActionVHF
             // 
@@ -14948,7 +14900,7 @@
             this.labelTS560.Name = "labelTS560";
             this.labelTS560.Size = new System.Drawing.Size(31, 13);
             this.labelTS560.TabIndex = 13;
-            this.labelTS560.Text = "Pin 2";
+            this.labelTS560.Text = "引脚 2";
             // 
             // comboPin1TXActionVHF
             // 
@@ -14976,7 +14928,7 @@
             this.labelTS561.Name = "labelTS561";
             this.labelTS561.Size = new System.Drawing.Size(31, 13);
             this.labelTS561.TabIndex = 0;
-            this.labelTS561.Text = "Pin 1";
+            this.labelTS561.Text = "引脚 1";
             // 
             // grpPennyExtCtrlVHF
             // 
@@ -15191,7 +15143,7 @@
             this.labelTS71.Name = "labelTS71";
             this.labelTS71.Size = new System.Drawing.Size(32, 16);
             this.labelTS71.TabIndex = 395;
-            this.labelTS71.Text = "Band";
+            this.labelTS71.Text = "波段";
             // 
             // labelTS72
             // 
@@ -15341,7 +15293,7 @@
             this.lblVHFTxControl.Name = "lblVHFTxControl";
             this.lblVHFTxControl.Size = new System.Drawing.Size(95, 16);
             this.lblVHFTxControl.TabIndex = 380;
-            this.lblVHFTxControl.Text = "J6 Transmit Pins";
+            this.lblVHFTxControl.Text = "J6 发射引脚";
             this.lblVHFTxControl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblVHFRxControl
@@ -15352,7 +15304,7 @@
             this.lblVHFRxControl.Name = "lblVHFRxControl";
             this.lblVHFRxControl.Size = new System.Drawing.Size(95, 16);
             this.lblVHFRxControl.TabIndex = 379;
-            this.lblVHFRxControl.Text = "J6 Receive Pins";
+            this.lblVHFRxControl.Text = "J6 接收引脚";
             this.lblVHFRxControl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelTS59
@@ -17334,8 +17286,8 @@
             this.btnPennyCtrlVHFReset.Selectable = true;
             this.btnPennyCtrlVHFReset.Size = new System.Drawing.Size(70, 23);
             this.btnPennyCtrlVHFReset.TabIndex = 7;
-            this.btnPennyCtrlVHFReset.Text = "VHF Reset";
-            this.toolTip1.SetToolTip(this.btnPennyCtrlVHFReset, "Clears to Default");
+            this.btnPennyCtrlVHFReset.Text = "VHF 复位";
+            this.toolTip1.SetToolTip(this.btnPennyCtrlVHFReset, "清除为默认值");
             this.btnPennyCtrlVHFReset.UseVisualStyleBackColor = true;
             this.btnPennyCtrlVHFReset.Click += new System.EventHandler(this.btnPennyCtrlVHFReset_Click);
             // 
@@ -17383,7 +17335,7 @@
             this.grpExtPAControlSWL.Size = new System.Drawing.Size(118, 237);
             this.grpExtPAControlSWL.TabIndex = 15;
             this.grpExtPAControlSWL.TabStop = false;
-            this.grpExtPAControlSWL.Text = "Ext PA Control (xPA)";
+            this.grpExtPAControlSWL.Text = "外部 PA 控制 (xPA)";
             // 
             // labelTS595
             // 
@@ -17393,7 +17345,7 @@
             this.labelTS595.Name = "labelTS595";
             this.labelTS595.Size = new System.Drawing.Size(31, 13);
             this.labelTS595.TabIndex = 46;
-            this.labelTS595.Text = "Pin 7";
+            this.labelTS595.Text = "引脚 7";
             // 
             // labelTS596
             // 
@@ -17403,7 +17355,7 @@
             this.labelTS596.Name = "labelTS596";
             this.labelTS596.Size = new System.Drawing.Size(31, 13);
             this.labelTS596.TabIndex = 45;
-            this.labelTS596.Text = "Pin 6";
+            this.labelTS596.Text = "引脚 6";
             // 
             // labelTS597
             // 
@@ -17413,7 +17365,7 @@
             this.labelTS597.Name = "labelTS597";
             this.labelTS597.Size = new System.Drawing.Size(31, 13);
             this.labelTS597.TabIndex = 44;
-            this.labelTS597.Text = "Pin 5";
+            this.labelTS597.Text = "引脚 5";
             // 
             // labelTS598
             // 
@@ -17423,7 +17375,7 @@
             this.labelTS598.Name = "labelTS598";
             this.labelTS598.Size = new System.Drawing.Size(31, 13);
             this.labelTS598.TabIndex = 43;
-            this.labelTS598.Text = "Pin 4";
+            this.labelTS598.Text = "引脚 4";
             // 
             // labelTS599
             // 
@@ -17433,7 +17385,7 @@
             this.labelTS599.Name = "labelTS599";
             this.labelTS599.Size = new System.Drawing.Size(31, 13);
             this.labelTS599.TabIndex = 42;
-            this.labelTS599.Text = "Pin 3";
+            this.labelTS599.Text = "引脚 3";
             // 
             // labelTS600
             // 
@@ -17443,7 +17395,7 @@
             this.labelTS600.Name = "labelTS600";
             this.labelTS600.Size = new System.Drawing.Size(31, 13);
             this.labelTS600.TabIndex = 41;
-            this.labelTS600.Text = "Pin 2";
+            this.labelTS600.Text = "引脚 2";
             // 
             // labelTS601
             // 
@@ -17453,7 +17405,7 @@
             this.labelTS601.Name = "labelTS601";
             this.labelTS601.Size = new System.Drawing.Size(31, 13);
             this.labelTS601.TabIndex = 40;
-            this.labelTS601.Text = "Pin 1";
+            this.labelTS601.Text = "引脚 1";
             // 
             // chkPin7TXPASWL
             // 
@@ -17463,8 +17415,7 @@
             this.chkPin7TXPASWL.Name = "chkPin7TXPASWL";
             this.chkPin7TXPASWL.Size = new System.Drawing.Size(15, 14);
             this.chkPin7TXPASWL.TabIndex = 39;
-            this.toolTip1.SetToolTip(this.chkPin7TXPASWL, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin7TXPASWL, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin7TXPASWL.UseVisualStyleBackColor = true;
             this.chkPin7TXPASWL.CheckedChanged += new System.EventHandler(this.chkPin1TXPASWL_CheckedChanged);
             // 
@@ -17476,8 +17427,7 @@
             this.chkPin7RXPASWL.Name = "chkPin7RXPASWL";
             this.chkPin7RXPASWL.Size = new System.Drawing.Size(15, 14);
             this.chkPin7RXPASWL.TabIndex = 39;
-            this.toolTip1.SetToolTip(this.chkPin7RXPASWL, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin7RXPASWL, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin7RXPASWL.UseVisualStyleBackColor = true;
             this.chkPin7RXPASWL.CheckedChanged += new System.EventHandler(this.chkPin1RXPASWL_CheckedChanged);
             // 
@@ -17489,8 +17439,7 @@
             this.chkPin6TXPASWL.Name = "chkPin6TXPASWL";
             this.chkPin6TXPASWL.Size = new System.Drawing.Size(15, 14);
             this.chkPin6TXPASWL.TabIndex = 38;
-            this.toolTip1.SetToolTip(this.chkPin6TXPASWL, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin6TXPASWL, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin6TXPASWL.UseVisualStyleBackColor = true;
             this.chkPin6TXPASWL.CheckedChanged += new System.EventHandler(this.chkPin1TXPASWL_CheckedChanged);
             // 
@@ -17512,8 +17461,7 @@
             this.chkPin5TXPASWL.Name = "chkPin5TXPASWL";
             this.chkPin5TXPASWL.Size = new System.Drawing.Size(15, 14);
             this.chkPin5TXPASWL.TabIndex = 37;
-            this.toolTip1.SetToolTip(this.chkPin5TXPASWL, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin5TXPASWL, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin5TXPASWL.UseVisualStyleBackColor = true;
             this.chkPin5TXPASWL.CheckedChanged += new System.EventHandler(this.chkPin1TXPASWL_CheckedChanged);
             // 
@@ -17525,8 +17473,7 @@
             this.chkPin6RXPASWL.Name = "chkPin6RXPASWL";
             this.chkPin6RXPASWL.Size = new System.Drawing.Size(15, 14);
             this.chkPin6RXPASWL.TabIndex = 38;
-            this.toolTip1.SetToolTip(this.chkPin6RXPASWL, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin6RXPASWL, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin6RXPASWL.UseVisualStyleBackColor = true;
             this.chkPin6RXPASWL.CheckedChanged += new System.EventHandler(this.chkPin1RXPASWL_CheckedChanged);
             // 
@@ -17538,8 +17485,7 @@
             this.chkPin4TXPASWL.Name = "chkPin4TXPASWL";
             this.chkPin4TXPASWL.Size = new System.Drawing.Size(15, 14);
             this.chkPin4TXPASWL.TabIndex = 36;
-            this.toolTip1.SetToolTip(this.chkPin4TXPASWL, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin4TXPASWL, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin4TXPASWL.UseVisualStyleBackColor = true;
             this.chkPin4TXPASWL.CheckedChanged += new System.EventHandler(this.chkPin1TXPASWL_CheckedChanged);
             // 
@@ -17551,8 +17497,7 @@
             this.chkPin1RXPASWL.Name = "chkPin1RXPASWL";
             this.chkPin1RXPASWL.Size = new System.Drawing.Size(15, 14);
             this.chkPin1RXPASWL.TabIndex = 33;
-            this.toolTip1.SetToolTip(this.chkPin1RXPASWL, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin1RXPASWL, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin1RXPASWL.UseVisualStyleBackColor = true;
             this.chkPin1RXPASWL.CheckedChanged += new System.EventHandler(this.chkPin1RXPASWL_CheckedChanged);
             // 
@@ -17564,8 +17509,7 @@
             this.chkPin3TXPASWL.Name = "chkPin3TXPASWL";
             this.chkPin3TXPASWL.Size = new System.Drawing.Size(15, 14);
             this.chkPin3TXPASWL.TabIndex = 35;
-            this.toolTip1.SetToolTip(this.chkPin3TXPASWL, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin3TXPASWL, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin3TXPASWL.UseVisualStyleBackColor = true;
             this.chkPin3TXPASWL.CheckedChanged += new System.EventHandler(this.chkPin1TXPASWL_CheckedChanged);
             // 
@@ -17577,8 +17521,7 @@
             this.chkPin5RXPASWL.Name = "chkPin5RXPASWL";
             this.chkPin5RXPASWL.Size = new System.Drawing.Size(15, 14);
             this.chkPin5RXPASWL.TabIndex = 37;
-            this.toolTip1.SetToolTip(this.chkPin5RXPASWL, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin5RXPASWL, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin5RXPASWL.UseVisualStyleBackColor = true;
             this.chkPin5RXPASWL.CheckedChanged += new System.EventHandler(this.chkPin1RXPASWL_CheckedChanged);
             // 
@@ -17590,8 +17533,7 @@
             this.chkPin2TXPASWL.Name = "chkPin2TXPASWL";
             this.chkPin2TXPASWL.Size = new System.Drawing.Size(15, 14);
             this.chkPin2TXPASWL.TabIndex = 34;
-            this.toolTip1.SetToolTip(this.chkPin2TXPASWL, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin2TXPASWL, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin2TXPASWL.UseVisualStyleBackColor = true;
             this.chkPin2TXPASWL.CheckedChanged += new System.EventHandler(this.chkPin1TXPASWL_CheckedChanged);
             // 
@@ -17603,8 +17545,7 @@
             this.chkPin2RXPASWL.Name = "chkPin2RXPASWL";
             this.chkPin2RXPASWL.Size = new System.Drawing.Size(15, 14);
             this.chkPin2RXPASWL.TabIndex = 34;
-            this.toolTip1.SetToolTip(this.chkPin2RXPASWL, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin2RXPASWL, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin2RXPASWL.UseVisualStyleBackColor = true;
             this.chkPin2RXPASWL.CheckedChanged += new System.EventHandler(this.chkPin1RXPASWL_CheckedChanged);
             // 
@@ -17616,8 +17557,7 @@
             this.chkPin1TXPASWL.Name = "chkPin1TXPASWL";
             this.chkPin1TXPASWL.Size = new System.Drawing.Size(15, 14);
             this.chkPin1TXPASWL.TabIndex = 33;
-            this.toolTip1.SetToolTip(this.chkPin1TXPASWL, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin1TXPASWL, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin1TXPASWL.UseVisualStyleBackColor = true;
             this.chkPin1TXPASWL.CheckedChanged += new System.EventHandler(this.chkPin1TXPASWL_CheckedChanged);
             // 
@@ -17629,8 +17569,7 @@
             this.chkPin4RXPASWL.Name = "chkPin4RXPASWL";
             this.chkPin4RXPASWL.Size = new System.Drawing.Size(15, 14);
             this.chkPin4RXPASWL.TabIndex = 36;
-            this.toolTip1.SetToolTip(this.chkPin4RXPASWL, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin4RXPASWL, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin4RXPASWL.UseVisualStyleBackColor = true;
             this.chkPin4RXPASWL.CheckedChanged += new System.EventHandler(this.chkPin1RXPASWL_CheckedChanged);
             // 
@@ -17642,8 +17581,7 @@
             this.chkPin3RXPASWL.Name = "chkPin3RXPASWL";
             this.chkPin3RXPASWL.Size = new System.Drawing.Size(15, 14);
             this.chkPin3RXPASWL.TabIndex = 35;
-            this.toolTip1.SetToolTip(this.chkPin3RXPASWL, "If checked, to enable this pin, the PA button on the console must also be enabled" +
-        ".");
+            this.toolTip1.SetToolTip(this.chkPin3RXPASWL, "勾选后，要启用该引脚，必须同时启用控制台上的 PA 按钮。");
             this.chkPin3RXPASWL.UseVisualStyleBackColor = true;
             this.chkPin3RXPASWL.CheckedChanged += new System.EventHandler(this.chkPin1RXPASWL_CheckedChanged);
             // 
@@ -17678,7 +17616,7 @@
             this.groupBoxTS19.Size = new System.Drawing.Size(235, 237);
             this.groupBoxTS19.TabIndex = 12;
             this.groupBoxTS19.TabStop = false;
-            this.groupBoxTS19.Text = "Transmit Pin Action";
+            this.groupBoxTS19.Text = "发射引脚动作";
             // 
             // comboPin7TXActionSWL
             // 
@@ -17706,7 +17644,7 @@
             this.labelTS562.Name = "labelTS562";
             this.labelTS562.Size = new System.Drawing.Size(31, 13);
             this.labelTS562.TabIndex = 23;
-            this.labelTS562.Text = "Pin 7";
+            this.labelTS562.Text = "引脚 7";
             // 
             // comboPin6TXActionSWL
             // 
@@ -17734,7 +17672,7 @@
             this.labelTS563.Name = "labelTS563";
             this.labelTS563.Size = new System.Drawing.Size(31, 13);
             this.labelTS563.TabIndex = 21;
-            this.labelTS563.Text = "Pin 6";
+            this.labelTS563.Text = "引脚 6";
             // 
             // comboPin5TXActionSWL
             // 
@@ -17762,7 +17700,7 @@
             this.labelTS564.Name = "labelTS564";
             this.labelTS564.Size = new System.Drawing.Size(31, 13);
             this.labelTS564.TabIndex = 19;
-            this.labelTS564.Text = "Pin 5";
+            this.labelTS564.Text = "引脚 5";
             // 
             // comboPin4TXActionSWL
             // 
@@ -17790,7 +17728,7 @@
             this.labelTS565.Name = "labelTS565";
             this.labelTS565.Size = new System.Drawing.Size(31, 13);
             this.labelTS565.TabIndex = 17;
-            this.labelTS565.Text = "Pin 4";
+            this.labelTS565.Text = "引脚 4";
             // 
             // comboPin3TXActionSWL
             // 
@@ -17818,7 +17756,7 @@
             this.labelTS566.Name = "labelTS566";
             this.labelTS566.Size = new System.Drawing.Size(31, 13);
             this.labelTS566.TabIndex = 15;
-            this.labelTS566.Text = "Pin 3";
+            this.labelTS566.Text = "引脚 3";
             // 
             // comboPin2TXActionSWL
             // 
@@ -17846,7 +17784,7 @@
             this.labelTS567.Name = "labelTS567";
             this.labelTS567.Size = new System.Drawing.Size(31, 13);
             this.labelTS567.TabIndex = 13;
-            this.labelTS567.Text = "Pin 2";
+            this.labelTS567.Text = "引脚 2";
             // 
             // comboPin1TXActionSWL
             // 
@@ -17874,7 +17812,7 @@
             this.labelTS568.Name = "labelTS568";
             this.labelTS568.Size = new System.Drawing.Size(31, 13);
             this.labelTS568.TabIndex = 0;
-            this.labelTS568.Text = "Pin 1";
+            this.labelTS568.Text = "引脚 1";
             // 
             // btnCtrlSWLReset
             // 
@@ -17886,8 +17824,8 @@
             this.btnCtrlSWLReset.Selectable = true;
             this.btnCtrlSWLReset.Size = new System.Drawing.Size(62, 23);
             this.btnCtrlSWLReset.TabIndex = 9;
-            this.btnCtrlSWLReset.Text = "SWL Reset";
-            this.toolTip1.SetToolTip(this.btnCtrlSWLReset, "Clears to Default");
+            this.btnCtrlSWLReset.Text = "SWL 复位";
+            this.toolTip1.SetToolTip(this.btnCtrlSWLReset, "清除为默认值");
             this.btnCtrlSWLReset.UseVisualStyleBackColor = true;
             this.btnCtrlSWLReset.Click += new System.EventHandler(this.btnCtrlSWLReset_Click);
             // 
@@ -20431,7 +20369,7 @@
             this.labelTS496.Name = "labelTS496";
             this.labelTS496.Size = new System.Drawing.Size(32, 16);
             this.labelTS496.TabIndex = 16;
-            this.labelTS496.Text = "Band";
+            this.labelTS496.Text = "波段";
             // 
             // labelTS497
             // 
@@ -20581,7 +20519,7 @@
             this.lblSWLTxControl.Name = "lblSWLTxControl";
             this.lblSWLTxControl.Size = new System.Drawing.Size(95, 16);
             this.lblSWLTxControl.TabIndex = 1;
-            this.lblSWLTxControl.Text = "J6 Transmit Pins";
+            this.lblSWLTxControl.Text = "J6 发射引脚";
             this.lblSWLTxControl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblSWLRxControl
@@ -20592,7 +20530,7 @@
             this.lblSWLRxControl.Name = "lblSWLRxControl";
             this.lblSWLRxControl.Size = new System.Drawing.Size(95, 16);
             this.lblSWLRxControl.TabIndex = 0;
-            this.lblSWLRxControl.Text = "J6 Receive Pins";
+            this.lblSWLRxControl.Text = "J6 接收引脚";
             this.lblSWLRxControl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tpHPSDR
@@ -20609,8 +20547,8 @@
             this.tpHPSDR.Padding = new System.Windows.Forms.Padding(3);
             this.tpHPSDR.Size = new System.Drawing.Size(724, 410);
             this.tpHPSDR.TabIndex = 7;
-            this.tpHPSDR.Text = "F/W Set";
-            this.toolTip1.SetToolTip(this.tpHPSDR, "Firmware Configuration");
+            this.tpHPSDR.Text = "固件设置";
+            this.toolTip1.SetToolTip(this.tpHPSDR, "固件配置");
             this.tpHPSDR.Paint += new System.Windows.Forms.PaintEventHandler(this.tpHPSDR_Paint);
             // 
             // chkIncludeOtherSampleRates
@@ -20620,7 +20558,7 @@
             this.chkIncludeOtherSampleRates.Name = "chkIncludeOtherSampleRates";
             this.chkIncludeOtherSampleRates.Size = new System.Drawing.Size(125, 20);
             this.chkIncludeOtherSampleRates.TabIndex = 54;
-            this.chkIncludeOtherSampleRates.Text = "Include other rates";
+            this.chkIncludeOtherSampleRates.Text = "包含其他速率";
             this.chkIncludeOtherSampleRates.UseVisualStyleBackColor = true;
             this.chkIncludeOtherSampleRates.Visible = false;
             this.chkIncludeOtherSampleRates.CheckedChanged += new System.EventHandler(this.chkIncludeOtherSampleRates_CheckedChanged);
@@ -20642,7 +20580,7 @@
             this.grpLEDMirror.Size = new System.Drawing.Size(289, 47);
             this.grpLEDMirror.TabIndex = 53;
             this.grpLEDMirror.TabStop = false;
-            this.grpLEDMirror.Text = "LED Mirror";
+            this.grpLEDMirror.Text = "LED 镜像";
             // 
             // lblLED10
             // 
@@ -20822,7 +20760,7 @@
             this.grpAudioSampleRateRX2.Size = new System.Drawing.Size(111, 56);
             this.grpAudioSampleRateRX2.TabIndex = 52;
             this.grpAudioSampleRateRX2.TabStop = false;
-            this.grpAudioSampleRateRX2.Text = "RX2 Sample Rate";
+            this.grpAudioSampleRateRX2.Text = "RX2 采样率";
             // 
             // comboAudioSampleRateRX2
             // 
@@ -20834,8 +20772,7 @@
             this.comboAudioSampleRateRX2.Name = "comboAudioSampleRateRX2";
             this.comboAudioSampleRateRX2.Size = new System.Drawing.Size(70, 21);
             this.comboAudioSampleRateRX2.TabIndex = 4;
-            this.toolTip1.SetToolTip(this.comboAudioSampleRateRX2, "Sample Rate -- Higher sampling rates yield a wider panadapter and less latency at" +
-        " a cost of CPU% and filter sharpness");
+            this.toolTip1.SetToolTip(this.comboAudioSampleRateRX2, "采样率 —— 采样率越高，频谱视图越宽、延迟越低，但会消耗更多 CPU% 并降低滤波器陡度。");
             this.comboAudioSampleRateRX2.SelectedIndexChanged += new System.EventHandler(this.comboAudioSampleRateRX2_SelectedIndexChanged);
             // 
             // grpVersion
@@ -20851,7 +20788,7 @@
             this.grpVersion.Size = new System.Drawing.Size(289, 145);
             this.grpVersion.TabIndex = 4;
             this.grpVersion.TabStop = false;
-            this.grpVersion.Text = "Firmware Versions";
+            this.grpVersion.Text = "固件版本";
             this.grpVersion.Visible = false;
             // 
             // chkFirmwareByp
@@ -20862,7 +20799,7 @@
             this.chkFirmwareByp.Name = "chkFirmwareByp";
             this.chkFirmwareByp.Size = new System.Drawing.Size(139, 17);
             this.chkFirmwareByp.TabIndex = 5;
-            this.chkFirmwareByp.Text = "Bypass Firmware Check";
+            this.chkFirmwareByp.Text = "绕过固件检查";
             this.chkFirmwareByp.UseVisualStyleBackColor = true;
             this.chkFirmwareByp.CheckedChanged += new System.EventHandler(this.chkFirmwareByp_CheckedChanged);
             // 
@@ -20927,7 +20864,7 @@
             this.groupBoxRXOptions.Size = new System.Drawing.Size(156, 104);
             this.groupBoxRXOptions.TabIndex = 3;
             this.groupBoxRXOptions.TabStop = false;
-            this.groupBoxRXOptions.Text = "Mercury Options";
+            this.groupBoxRXOptions.Text = "Mercury 选项";
             // 
             // udMaxFreq
             // 
@@ -20966,7 +20903,7 @@
             this.labelTS57.Name = "labelTS57";
             this.labelTS57.Size = new System.Drawing.Size(70, 16);
             this.labelTS57.TabIndex = 2;
-            this.labelTS57.Text = "MaxRXFreq:";
+            this.labelTS57.Text = "最大 RX 频率:";
             this.labelTS57.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // chkMercRandom
@@ -20976,7 +20913,7 @@
             this.chkMercRandom.Name = "chkMercRandom";
             this.chkMercRandom.Size = new System.Drawing.Size(112, 16);
             this.chkMercRandom.TabIndex = 1;
-            this.chkMercRandom.Text = "Random Enabled";
+            this.chkMercRandom.Text = "随机已启用";
             this.chkMercRandom.UseVisualStyleBackColor = true;
             this.chkMercRandom.CheckedChanged += new System.EventHandler(this.chkMercRandom_CheckedChanged);
             // 
@@ -20987,7 +20924,7 @@
             this.chkMercDither.Name = "chkMercDither";
             this.chkMercDither.Size = new System.Drawing.Size(104, 16);
             this.chkMercDither.TabIndex = 0;
-            this.chkMercDither.Text = "Dither Enabled";
+            this.chkMercDither.Text = "抖动已启用";
             this.chkMercDither.UseVisualStyleBackColor = true;
             this.chkMercDither.CheckedChanged += new System.EventHandler(this.chkMercDither_CheckedChanged);
             // 
@@ -20999,7 +20936,7 @@
             this.grpAudioSampleRate1.Size = new System.Drawing.Size(111, 56);
             this.grpAudioSampleRate1.TabIndex = 35;
             this.grpAudioSampleRate1.TabStop = false;
-            this.grpAudioSampleRate1.Text = "RX1 Sample Rate";
+            this.grpAudioSampleRate1.Text = "RX1 采样率";
             // 
             // comboAudioSampleRate1
             // 
@@ -21011,8 +20948,7 @@
             this.comboAudioSampleRate1.Name = "comboAudioSampleRate1";
             this.comboAudioSampleRate1.Size = new System.Drawing.Size(70, 21);
             this.comboAudioSampleRate1.TabIndex = 4;
-            this.toolTip1.SetToolTip(this.comboAudioSampleRate1, "Sample Rate -- Higher sampling rates yield a wider panadapter and less latency at" +
-        " a cost of CPU% and filter sharpness");
+            this.toolTip1.SetToolTip(this.comboAudioSampleRate1, "采样率 —— 采样率越高，频谱视图越宽、延迟越低，但会消耗更多 CPU% 并降低滤波器陡度。");
             this.comboAudioSampleRate1.SelectedIndexChanged += new System.EventHandler(this.comboAudioSampleRate1_SelectedIndexChanged);
             // 
             // tpAlexControl
@@ -21072,7 +21008,7 @@
             this.tpAlexFilterControl.Padding = new System.Windows.Forms.Padding(3);
             this.tpAlexFilterControl.Size = new System.Drawing.Size(708, 378);
             this.tpAlexFilterControl.TabIndex = 1;
-            this.tpAlexFilterControl.Text = "Alex-1 Filters";
+            this.tpAlexFilterControl.Text = "Alex-1 滤波器";
             // 
             // chkLPFBypass
             // 
@@ -21082,8 +21018,8 @@
             this.chkLPFBypass.Name = "chkLPFBypass";
             this.chkLPFBypass.Size = new System.Drawing.Size(113, 17);
             this.chkLPFBypass.TabIndex = 112;
-            this.chkLPFBypass.Text = "6m/ByPass on RX";
-            this.toolTip1.SetToolTip(this.chkLPFBypass, "Selects the 6m LPF during receive reguardless of frequency.");
+            this.chkLPFBypass.Text = "接收时 6m/旁路";
+            this.toolTip1.SetToolTip(this.chkLPFBypass, "接收时无论频率如何都选择 6m LPF。");
             this.chkLPFBypass.UseVisualStyleBackColor = true;
             this.chkLPFBypass.CheckedChanged += new System.EventHandler(this.chkLPFBypass_CheckedChanged);
             // 
@@ -21095,7 +21031,7 @@
             this.labelAlexFilterActive.Name = "labelAlexFilterActive";
             this.labelAlexFilterActive.Size = new System.Drawing.Size(56, 16);
             this.labelAlexFilterActive.TabIndex = 100;
-            this.labelAlexFilterActive.Text = "Active";
+            this.labelAlexFilterActive.Text = "激活";
             this.labelAlexFilterActive.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panelTS6
@@ -21277,7 +21213,7 @@
             this.labelTS120.Name = "labelTS120";
             this.labelTS120.Size = new System.Drawing.Size(62, 16);
             this.labelTS120.TabIndex = 68;
-            this.labelTS120.Text = "6m/ByPass";
+            this.labelTS120.Text = "6m/旁路";
             this.labelTS120.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelTS117
@@ -21760,7 +21696,7 @@
             this.labelTS321.Name = "labelTS321";
             this.labelTS321.Size = new System.Drawing.Size(83, 13);
             this.labelTS321.TabIndex = 111;
-            this.labelTS321.Text = "Disable 6m LNA";
+            this.labelTS321.Text = "禁用 6m LNA";
             this.labelTS321.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // chkDisable6mLNAonTX
@@ -21797,8 +21733,8 @@
             this.chkDisableHPFonTX.Name = "chkDisableHPFonTX";
             this.chkDisableHPFonTX.Size = new System.Drawing.Size(117, 17);
             this.chkDisableHPFonTX.TabIndex = 108;
-            this.chkDisableHPFonTX.Text = "HPF ByPass on TX";
-            this.toolTip1.SetToolTip(this.chkDisableHPFonTX, "ByPasses HPF during TX.");
+            this.chkDisableHPFonTX.Text = "发射时旁路 HPF";
+            this.toolTip1.SetToolTip(this.chkDisableHPFonTX, "发射时旁路 HPF。");
             this.chkDisableHPFonTX.UseVisualStyleBackColor = true;
             this.chkDisableHPFonTX.CheckedChanged += new System.EventHandler(this.chkDisableHPFonTX_CheckedChanged);
             // 
@@ -21810,7 +21746,7 @@
             this.labelTS134.Name = "labelTS134";
             this.labelTS134.Size = new System.Drawing.Size(56, 16);
             this.labelTS134.TabIndex = 101;
-            this.labelTS134.Text = "ByPass";
+            this.labelTS134.Text = "旁路";
             this.labelTS134.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // chkAlex20BPHPF
@@ -22493,7 +22429,7 @@
             this.labelTS116.Name = "labelTS116";
             this.labelTS116.Size = new System.Drawing.Size(83, 13);
             this.labelTS116.TabIndex = 111;
-            this.labelTS116.Text = "Disable 6m LNA";
+            this.labelTS116.Text = "禁用 6m LNA";
             this.labelTS116.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelTS457
@@ -22504,7 +22440,7 @@
             this.labelTS457.Name = "labelTS457";
             this.labelTS457.Size = new System.Drawing.Size(56, 16);
             this.labelTS457.TabIndex = 101;
-            this.labelTS457.Text = "ByPass";
+            this.labelTS457.Text = "旁路";
             this.labelTS457.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // chkBPF1_20BP
@@ -23167,7 +23103,7 @@
             this.tpAlex2FilterControl.Padding = new System.Windows.Forms.Padding(3);
             this.tpAlex2FilterControl.Size = new System.Drawing.Size(708, 378);
             this.tpAlex2FilterControl.TabIndex = 2;
-            this.tpAlex2FilterControl.Text = "Alex-2 Filters";
+            this.tpAlex2FilterControl.Text = "Alex-2 滤波器";
             // 
             // lblAlex2Active
             // 
@@ -23177,7 +23113,7 @@
             this.lblAlex2Active.Name = "lblAlex2Active";
             this.lblAlex2Active.Size = new System.Drawing.Size(56, 16);
             this.lblAlex2Active.TabIndex = 206;
-            this.lblAlex2Active.Text = "Active";
+            this.lblAlex2Active.Text = "激活";
             this.lblAlex2Active.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panelAlex2LPFControl
@@ -23732,7 +23668,7 @@
             this.lblAlex2LPF6m.Name = "lblAlex2LPF6m";
             this.lblAlex2LPF6m.Size = new System.Drawing.Size(62, 16);
             this.lblAlex2LPF6m.TabIndex = 188;
-            this.lblAlex2LPF6m.Text = "6m/ByPass";
+            this.lblAlex2LPF6m.Text = "6m/旁路";
             this.lblAlex2LPF6m.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblAlex2LPF12m
@@ -23886,7 +23822,7 @@
             this.lblAlex2ByPass.Name = "lblAlex2ByPass";
             this.lblAlex2ByPass.Size = new System.Drawing.Size(56, 16);
             this.lblAlex2ByPass.TabIndex = 207;
-            this.lblAlex2ByPass.Text = "ByPass";
+            this.lblAlex2ByPass.Text = "旁路";
             this.lblAlex2ByPass.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panelAlex2HPFActive
@@ -24485,7 +24421,7 @@
             this.grpApolloCtrl.Size = new System.Drawing.Size(133, 115);
             this.grpApolloCtrl.TabIndex = 2;
             this.grpApolloCtrl.TabStop = false;
-            this.grpApolloCtrl.Text = "Apollo Control";
+            this.grpApolloCtrl.Text = "Apollo 控制";
             // 
             // chkApolloFilter
             // 
@@ -24495,8 +24431,8 @@
             this.chkApolloFilter.Name = "chkApolloFilter";
             this.chkApolloFilter.Size = new System.Drawing.Size(89, 17);
             this.chkApolloFilter.TabIndex = 0;
-            this.chkApolloFilter.Text = "Enable Filters";
-            this.toolTip1.SetToolTip(this.chkApolloFilter, "Enables the LPF on Apollo");
+            this.chkApolloFilter.Text = "启用滤波器";
+            this.toolTip1.SetToolTip(this.chkApolloFilter, "启用 Apollo 上的 LPF");
             this.chkApolloFilter.UseVisualStyleBackColor = true;
             this.chkApolloFilter.CheckedChanged += new System.EventHandler(this.chkApolloFilter_CheckedChanged);
             // 
@@ -24508,8 +24444,8 @@
             this.chkApolloTuner.Name = "chkApolloTuner";
             this.chkApolloTuner.Size = new System.Drawing.Size(90, 17);
             this.chkApolloTuner.TabIndex = 1;
-            this.chkApolloTuner.Text = "Enable Tuner";
-            this.toolTip1.SetToolTip(this.chkApolloTuner, "Enables Apollo ATU");
+            this.chkApolloTuner.Text = "启用天调";
+            this.toolTip1.SetToolTip(this.chkApolloTuner, "启用 Apollo ATU");
             this.chkApolloTuner.UseVisualStyleBackColor = true;
             this.chkApolloTuner.CheckedChanged += new System.EventHandler(this.chkApolloTuner_CheckedChanged);
             // 
@@ -24551,7 +24487,7 @@
             this.grpAriesCtrl.Size = new System.Drawing.Size(556, 198);
             this.grpAriesCtrl.TabIndex = 4;
             this.grpAriesCtrl.TabStop = false;
-            this.grpAriesCtrl.Text = "Aries ATU Control";
+            this.grpAriesCtrl.Text = "Aries ATU 控制";
             // 
             // checkAriesStandalone
             // 
@@ -24561,7 +24497,7 @@
             this.checkAriesStandalone.Name = "checkAriesStandalone";
             this.checkAriesStandalone.Size = new System.Drawing.Size(105, 17);
             this.checkAriesStandalone.TabIndex = 120;
-            this.checkAriesStandalone.Text = "Standalone ATU";
+            this.checkAriesStandalone.Text = "独立 ATU";
             this.checkAriesStandalone.UseVisualStyleBackColor = true;
             this.checkAriesStandalone.CheckedChanged += new System.EventHandler(this.checkAriesStandalone_CheckedChanged);
             // 
@@ -24573,7 +24509,7 @@
             this.checkEnableAriesQuickTune.Name = "checkEnableAriesQuickTune";
             this.checkEnableAriesQuickTune.Size = new System.Drawing.Size(110, 17);
             this.checkEnableAriesQuickTune.TabIndex = 119;
-            this.checkEnableAriesQuickTune.Text = "Allow Quick Tune";
+            this.checkEnableAriesQuickTune.Text = "允许快速调谐";
             this.checkEnableAriesQuickTune.UseVisualStyleBackColor = true;
             this.checkEnableAriesQuickTune.CheckedChanged += new System.EventHandler(this.checkEnableAriesQuickTune_CheckedChanged);
             // 
@@ -24595,7 +24531,7 @@
             this.labelTS529.Name = "labelTS529";
             this.labelTS529.Size = new System.Drawing.Size(87, 13);
             this.labelTS529.TabIndex = 117;
-            this.labelTS529.Text = "Firmware Version";
+            this.labelTS529.Text = "固件版本";
             // 
             // lblAriesEraseStatus
             // 
@@ -24614,7 +24550,7 @@
             this.btnAriesErase3.Selectable = true;
             this.btnAriesErase3.Size = new System.Drawing.Size(59, 27);
             this.btnAriesErase3.TabIndex = 115;
-            this.btnAriesErase3.Text = "Erase";
+            this.btnAriesErase3.Text = "擦除";
             this.btnAriesErase3.UseVisualStyleBackColor = true;
             this.btnAriesErase3.Click += new System.EventHandler(this.BtnAriesErase3_Click);
             // 
@@ -24626,7 +24562,7 @@
             this.btnAriesErase2.Selectable = true;
             this.btnAriesErase2.Size = new System.Drawing.Size(59, 27);
             this.btnAriesErase2.TabIndex = 114;
-            this.btnAriesErase2.Text = "Erase";
+            this.btnAriesErase2.Text = "擦除";
             this.btnAriesErase2.UseVisualStyleBackColor = true;
             this.btnAriesErase2.Click += new System.EventHandler(this.BtnAriesErase2_Click);
             // 
@@ -24638,7 +24574,7 @@
             this.btnAriesErase1.Selectable = true;
             this.btnAriesErase1.Size = new System.Drawing.Size(59, 27);
             this.btnAriesErase1.TabIndex = 113;
-            this.btnAriesErase1.Text = "Erase";
+            this.btnAriesErase1.Text = "擦除";
             this.btnAriesErase1.UseVisualStyleBackColor = true;
             this.btnAriesErase1.Click += new System.EventHandler(this.BtnAriesErase1_Click);
             // 
@@ -24650,7 +24586,7 @@
             this.labelTS527.Name = "labelTS527";
             this.labelTS527.Size = new System.Drawing.Size(84, 13);
             this.labelTS527.TabIndex = 112;
-            this.labelTS527.Text = "Stored Solutions";
+            this.labelTS527.Text = "已存储方案";
             // 
             // chkAries3
             // 
@@ -24693,7 +24629,7 @@
             this.labelTS526.Name = "labelTS526";
             this.labelTS526.Size = new System.Drawing.Size(71, 13);
             this.labelTS526.TabIndex = 108;
-            this.labelTS526.Text = "ATU Enabled";
+            this.labelTS526.Text = "ATU 已启用";
             // 
             // labelTS525
             // 
@@ -24733,7 +24669,7 @@
             this.labelTS522.Name = "labelTS522";
             this.labelTS522.Size = new System.Drawing.Size(47, 13);
             this.labelTS522.TabIndex = 104;
-            this.labelTS522.Text = "Antenna";
+            this.labelTS522.Text = "天线";
             // 
             // comboAriesCATPort
             // 
@@ -24743,7 +24679,7 @@
             this.comboAriesCATPort.Name = "comboAriesCATPort";
             this.comboAriesCATPort.Size = new System.Drawing.Size(80, 21);
             this.comboAriesCATPort.TabIndex = 103;
-            this.toolTip1.SetToolTip(this.comboAriesCATPort, "Selects the COM port for use with PTT control");
+            this.toolTip1.SetToolTip(this.comboAriesCATPort, "选择用于 PTT 控制的 COM 端口");
             this.comboAriesCATPort.SelectedIndexChanged += new System.EventHandler(this.ComboAriesCATPort_SelectedIndexChanged);
             this.comboAriesCATPort.Click += new System.EventHandler(this.ComboAriesCATPort_Click);
             // 
@@ -24754,7 +24690,7 @@
             this.lblAriesCAT.Name = "lblAriesCAT";
             this.lblAriesCAT.Size = new System.Drawing.Size(40, 17);
             this.lblAriesCAT.TabIndex = 102;
-            this.lblAriesCAT.Text = "Port:";
+            this.lblAriesCAT.Text = "端口:";
             // 
             // chkEnableAries
             // 
@@ -24763,7 +24699,7 @@
             this.chkEnableAries.Name = "chkEnableAries";
             this.chkEnableAries.Size = new System.Drawing.Size(99, 24);
             this.chkEnableAries.TabIndex = 101;
-            this.chkEnableAries.Text = "Enable CAT";
+            this.chkEnableAries.Text = "启用 CAT";
             this.chkEnableAries.CheckedChanged += new System.EventHandler(this.ChkEnableAries_CheckedChanged);
             // 
             // tabPage3
@@ -24775,7 +24711,7 @@
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(576, 340);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Amp";
+            this.tabPage3.Text = "功放";
             // 
             // grpGanymedeCtrl
             // 
@@ -24792,7 +24728,7 @@
             this.grpGanymedeCtrl.Size = new System.Drawing.Size(388, 115);
             this.grpGanymedeCtrl.TabIndex = 3;
             this.grpGanymedeCtrl.TabStop = false;
-            this.grpGanymedeCtrl.Text = "Ganymede Amplifier Control";
+            this.grpGanymedeCtrl.Text = "Ganymede 功放控制";
             // 
             // comboGanymedeCATPort
             // 
@@ -24802,7 +24738,7 @@
             this.comboGanymedeCATPort.Name = "comboGanymedeCATPort";
             this.comboGanymedeCATPort.Size = new System.Drawing.Size(80, 21);
             this.comboGanymedeCATPort.TabIndex = 100;
-            this.toolTip1.SetToolTip(this.comboGanymedeCATPort, "Selects the COM port for use with PTT control");
+            this.toolTip1.SetToolTip(this.comboGanymedeCATPort, "选择用于 PTT 控制的 COM 端口");
             this.comboGanymedeCATPort.SelectedIndexChanged += new System.EventHandler(this.ComboGanymedeCATPort_SelectedIndexChanged);
             this.comboGanymedeCATPort.Click += new System.EventHandler(this.ComboGanymedeCATPort_Click);
             // 
@@ -24813,7 +24749,7 @@
             this.lblGanymedeCAT.Name = "lblGanymedeCAT";
             this.lblGanymedeCAT.Size = new System.Drawing.Size(40, 17);
             this.lblGanymedeCAT.TabIndex = 99;
-            this.lblGanymedeCAT.Text = "Port:";
+            this.lblGanymedeCAT.Text = "端口:";
             // 
             // chkEnableGanymede
             // 
@@ -24822,7 +24758,7 @@
             this.chkEnableGanymede.Name = "chkEnableGanymede";
             this.chkEnableGanymede.Size = new System.Drawing.Size(99, 24);
             this.chkEnableGanymede.TabIndex = 98;
-            this.chkEnableGanymede.Text = "Enable CAT";
+            this.chkEnableGanymede.Text = "启用 CAT";
             this.chkEnableGanymede.CheckedChanged += new System.EventHandler(this.ChkEnableGanymede_CheckedChanged);
             // 
             // btnGanymedeReset
@@ -24833,7 +24769,7 @@
             this.btnGanymedeReset.Selectable = true;
             this.btnGanymedeReset.Size = new System.Drawing.Size(79, 27);
             this.btnGanymedeReset.TabIndex = 4;
-            this.btnGanymedeReset.Text = "Reset";
+            this.btnGanymedeReset.Text = "复位";
             this.btnGanymedeReset.UseVisualStyleBackColor = true;
             this.btnGanymedeReset.Click += new System.EventHandler(this.BtnGanymedeReset_Click);
             // 
@@ -24863,7 +24799,7 @@
             this.lblGanymedeFWVersion.Name = "lblGanymedeFWVersion";
             this.lblGanymedeFWVersion.Size = new System.Drawing.Size(87, 13);
             this.lblGanymedeFWVersion.TabIndex = 1;
-            this.lblGanymedeFWVersion.Text = "Firmware Version";
+            this.lblGanymedeFWVersion.Text = "固件版本";
             // 
             // lblAmpStatus
             // 
@@ -24873,7 +24809,7 @@
             this.lblAmpStatus.Name = "lblAmpStatus";
             this.lblAmpStatus.Size = new System.Drawing.Size(79, 13);
             this.lblAmpStatus.TabIndex = 0;
-            this.lblAmpStatus.Text = "Amplifier Status";
+            this.lblAmpStatus.Text = "功放状态";
             // 
             // tpRX2
             // 
@@ -24895,8 +24831,8 @@
             this.chkRX1BlankDisplayOnVFOBTX.Name = "chkRX1BlankDisplayOnVFOBTX";
             this.chkRX1BlankDisplayOnVFOBTX.Size = new System.Drawing.Size(196, 24);
             this.chkRX1BlankDisplayOnVFOBTX.TabIndex = 4;
-            this.chkRX1BlankDisplayOnVFOBTX.Text = "Blank RX1 Display on VFO B TX";
-            this.toolTip1.SetToolTip(this.chkRX1BlankDisplayOnVFOBTX, "Blanks RX1 Display when transmitting on VFO B when checked. ");
+            this.chkRX1BlankDisplayOnVFOBTX.Text = "VFO B 发射时清空 RX1 显示";
+            this.toolTip1.SetToolTip(this.chkRX1BlankDisplayOnVFOBTX, "勾选后，在 VFO B 发射时清空 RX1 显示。 ");
             this.chkRX1BlankDisplayOnVFOBTX.CheckedChanged += new System.EventHandler(this.chkRX1BlankDisplayOnVFOBTX_CheckedChanged);
             // 
             // chkRX2BlankDisplayOnVFOATX
@@ -24906,8 +24842,8 @@
             this.chkRX2BlankDisplayOnVFOATX.Name = "chkRX2BlankDisplayOnVFOATX";
             this.chkRX2BlankDisplayOnVFOATX.Size = new System.Drawing.Size(196, 24);
             this.chkRX2BlankDisplayOnVFOATX.TabIndex = 3;
-            this.chkRX2BlankDisplayOnVFOATX.Text = "Blank RX2 Display on VFO A TX";
-            this.toolTip1.SetToolTip(this.chkRX2BlankDisplayOnVFOATX, "Blanks RX2 Display when transmitting on VFO A when checked. ");
+            this.chkRX2BlankDisplayOnVFOATX.Text = "VFO A 发射时清空 RX2 显示";
+            this.toolTip1.SetToolTip(this.chkRX2BlankDisplayOnVFOATX, "勾选后，在 VFO A 发射时清空 RX2 显示。 ");
             this.chkRX2BlankDisplayOnVFOATX.CheckedChanged += new System.EventHandler(this.chkRX2BlankDisplayOnVFOATX_CheckedChanged);
             // 
             // chkRX2AutoMuteRX1OnVFOBTX
@@ -24919,9 +24855,8 @@
             this.chkRX2AutoMuteRX1OnVFOBTX.Name = "chkRX2AutoMuteRX1OnVFOBTX";
             this.chkRX2AutoMuteRX1OnVFOBTX.Size = new System.Drawing.Size(196, 24);
             this.chkRX2AutoMuteRX1OnVFOBTX.TabIndex = 1;
-            this.chkRX2AutoMuteRX1OnVFOBTX.Text = "Auto Mute RX1 on VFO B TX";
-            this.toolTip1.SetToolTip(this.chkRX2AutoMuteRX1OnVFOBTX, "Mutes RX1 when transmitting on VFO B when checked.  Uncheck to continue to hear R" +
-        "X1 while operating with VFO B TX enabled");
+            this.chkRX2AutoMuteRX1OnVFOBTX.Text = "VFO B 发射时自动静音 RX1";
+            this.toolTip1.SetToolTip(this.chkRX2AutoMuteRX1OnVFOBTX, "勾选后，在 VFO B 发射时静音 RX1。取消勾选可在 VFO B 发射时继续收听 RX1。");
             this.chkRX2AutoMuteRX1OnVFOBTX.CheckedChanged += new System.EventHandler(this.chkRX2AutoMuteRX1OnVFOBTX_CheckedChanged);
             // 
             // chkRX2AutoMuteTX
@@ -24933,9 +24868,8 @@
             this.chkRX2AutoMuteTX.Name = "chkRX2AutoMuteTX";
             this.chkRX2AutoMuteTX.Size = new System.Drawing.Size(196, 24);
             this.chkRX2AutoMuteTX.TabIndex = 0;
-            this.chkRX2AutoMuteTX.Text = "Auto Mute RX2 on TX";
-            this.toolTip1.SetToolTip(this.chkRX2AutoMuteTX, "Mutes RX2 when transmitting when checked.  Uncheck to monitor your transmit signa" +
-        "l or other signals with RX2 while transmitting");
+            this.chkRX2AutoMuteTX.Text = "发射时自动静音 RX2";
+            this.toolTip1.SetToolTip(this.chkRX2AutoMuteTX, "勾选后发射时静音 RX2。取消勾选可在发射时用 RX2 监听自己的发射信号或其他信号。");
             this.chkRX2AutoMuteTX.CheckedChanged += new System.EventHandler(this.chkRX2AutoMuteTX_CheckedChanged);
             // 
             // tpGeneralNavigation
@@ -24946,8 +24880,8 @@
             this.tpGeneralNavigation.Name = "tpGeneralNavigation";
             this.tpGeneralNavigation.Size = new System.Drawing.Size(724, 410);
             this.tpGeneralNavigation.TabIndex = 5;
-            this.tpGeneralNavigation.Text = "Navigation";
-            this.toolTip1.SetToolTip(this.tpGeneralNavigation, "Will turn green on mouse wheel");
+            this.tpGeneralNavigation.Text = "导航";
+            this.toolTip1.SetToolTip(this.tpGeneralNavigation, "鼠标滚轮操作时变绿");
             // 
             // grpGlobalHIDConrtolOptions
             // 
@@ -24963,7 +24897,7 @@
             this.grpGlobalHIDConrtolOptions.Size = new System.Drawing.Size(378, 181);
             this.grpGlobalHIDConrtolOptions.TabIndex = 1;
             this.grpGlobalHIDConrtolOptions.TabStop = false;
-            this.grpGlobalHIDConrtolOptions.Text = "RawInput HID control - WIP";
+            this.grpGlobalHIDConrtolOptions.Text = "RawInput HID 控制 - 开发中";
             // 
             // txtDeviceHID_hidden
             // 
@@ -24984,7 +24918,7 @@
             this.lblWheelActive.Name = "lblWheelActive";
             this.lblWheelActive.Size = new System.Drawing.Size(75, 21);
             this.lblWheelActive.TabIndex = 6;
-            this.lblWheelActive.Text = "wheel test";
+            this.lblWheelActive.Text = "滚轮测试";
             this.lblWheelActive.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblDeviceHID
@@ -25004,8 +24938,8 @@
             this.chkWheelOnlyAdjustsVFO.Name = "chkWheelOnlyAdjustsVFO";
             this.chkWheelOnlyAdjustsVFO.Size = new System.Drawing.Size(139, 17);
             this.chkWheelOnlyAdjustsVFO.TabIndex = 4;
-            this.chkWheelOnlyAdjustsVFO.Text = "Wheel only adjusts VFO";
-            this.toolTip1.SetToolTip(this.chkWheelOnlyAdjustsVFO, "Prevent wheel from adjusting any other slider/control");
+            this.chkWheelOnlyAdjustsVFO.Text = "滚轮仅调整 VFO";
+            this.toolTip1.SetToolTip(this.chkWheelOnlyAdjustsVFO, "禁止滚轮调整其他滑块/控件");
             this.chkWheelOnlyAdjustsVFO.UseVisualStyleBackColor = true;
             this.chkWheelOnlyAdjustsVFO.CheckedChanged += new System.EventHandler(this.ChkWheelOnlyAdjustsVFO_CheckedChanged);
             // 
@@ -25017,8 +24951,8 @@
             this.chkGlobalListenForMouseWheel.Name = "chkGlobalListenForMouseWheel";
             this.chkGlobalListenForMouseWheel.Size = new System.Drawing.Size(194, 17);
             this.chkGlobalListenForMouseWheel.TabIndex = 2;
-            this.chkGlobalListenForMouseWheel.Text = "Listen for wheel when no app focus";
-            this.toolTip1.SetToolTip(this.chkGlobalListenForMouseWheel, "Listen globally to windows for mouse wheel");
+            this.chkGlobalListenForMouseWheel.Text = "无应用焦点时监听滚轮";
+            this.toolTip1.SetToolTip(this.chkGlobalListenForMouseWheel, "全局监听鼠标滚轮");
             this.chkGlobalListenForMouseWheel.UseVisualStyleBackColor = true;
             this.chkGlobalListenForMouseWheel.CheckedChanged += new System.EventHandler(this.ChkGlobalListenForMouseWheel_CheckedChanged);
             // 
@@ -25030,7 +24964,7 @@
             this.comboHIDMouseWheel.Name = "comboHIDMouseWheel";
             this.comboHIDMouseWheel.Size = new System.Drawing.Size(241, 21);
             this.comboHIDMouseWheel.TabIndex = 1;
-            this.toolTip1.SetToolTip(this.comboHIDMouseWheel, "List of mouse devices on the system");
+            this.toolTip1.SetToolTip(this.comboHIDMouseWheel, "系统上的鼠标设备列表");
             this.comboHIDMouseWheel.SelectedIndexChanged += new System.EventHandler(this.ComboHIDMouseWheel_SelectedIndexChanged);
             // 
             // chkAlsoUseSpecificMouseWheel
@@ -25041,8 +24975,8 @@
             this.chkAlsoUseSpecificMouseWheel.Name = "chkAlsoUseSpecificMouseWheel";
             this.chkAlsoUseSpecificMouseWheel.Size = new System.Drawing.Size(240, 17);
             this.chkAlsoUseSpecificMouseWheel.TabIndex = 0;
-            this.chkAlsoUseSpecificMouseWheel.Text = "Also use specific mouse wheel for VFO adjust";
-            this.toolTip1.SetToolTip(this.chkAlsoUseSpecificMouseWheel, "Use another mouse device to control VFO");
+            this.chkAlsoUseSpecificMouseWheel.Text = "同时使用指定鼠标滚轮调整 VFO";
+            this.toolTip1.SetToolTip(this.chkAlsoUseSpecificMouseWheel, "使用另一个鼠标设备控制 VFO");
             this.chkAlsoUseSpecificMouseWheel.UseVisualStyleBackColor = true;
             this.chkAlsoUseSpecificMouseWheel.CheckedChanged += new System.EventHandler(this.ChkAlsoUseSpecificMouseWheel_CheckedChanged);
             // 
@@ -25053,7 +24987,7 @@
             this.tpAudio.Name = "tpAudio";
             this.tpAudio.Size = new System.Drawing.Size(728, 436);
             this.tpAudio.TabIndex = 0;
-            this.tpAudio.Text = "Audio";
+            this.tpAudio.Text = "音频";
             // 
             // tcAudio
             // 
@@ -25103,7 +25037,7 @@
             this.chkVAC1WillMute.Name = "chkVAC1WillMute";
             this.chkVAC1WillMute.Size = new System.Drawing.Size(117, 17);
             this.chkVAC1WillMute.TabIndex = 89;
-            this.chkVAC1WillMute.Text = "Mute will mute VAC";
+            this.chkVAC1WillMute.Text = "静音将同时静音 VAC";
             this.chkVAC1WillMute.UseVisualStyleBackColor = true;
             this.chkVAC1WillMute.CheckedChanged += new System.EventHandler(this.chkVAC1WillMute_CheckedChanged);
             // 
@@ -25116,8 +25050,8 @@
             this.chkVAC1GrapherAuto.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.chkVAC1GrapherAuto.Size = new System.Drawing.Size(48, 17);
             this.chkVAC1GrapherAuto.TabIndex = 88;
-            this.chkVAC1GrapherAuto.Text = "Auto";
-            this.toolTip1.SetToolTip(this.chkVAC1GrapherAuto, "Auto scale the Min/Max around the 0 point");
+            this.chkVAC1GrapherAuto.Text = "自动";
+            this.toolTip1.SetToolTip(this.chkVAC1GrapherAuto, "围绕 0 点自动缩放最小/最大值");
             this.chkVAC1GrapherAuto.UseVisualStyleBackColor = true;
             this.chkVAC1GrapherAuto.CheckedChanged += new System.EventHandler(this.chkVAC1GrapherAuto_CheckedChanged);
             // 
@@ -25144,7 +25078,7 @@
             this.udVAC1GrapherSwing.Size = new System.Drawing.Size(72, 20);
             this.udVAC1GrapherSwing.TabIndex = 87;
             this.udVAC1GrapherSwing.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udVAC1GrapherSwing, "Min/Max above the 0 point");
+            this.toolTip1.SetToolTip(this.udVAC1GrapherSwing, "0 点以上的最小/最大值");
             this.udVAC1GrapherSwing.Value = new decimal(new int[] {
             4,
             0,
@@ -25156,7 +25090,7 @@
             // 
             this.ucVAC1VARGrapherIn.AutoSwing = false;
             this.ucVAC1VARGrapherIn.BackColor = System.Drawing.Color.Black;
-            this.ucVAC1VARGrapherIn.Caption = "In";
+            this.ucVAC1VARGrapherIn.Caption = "输入";
             this.ucVAC1VARGrapherIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ucVAC1VARGrapherIn.Location = new System.Drawing.Point(428, 338);
             this.ucVAC1VARGrapherIn.Margin = new System.Windows.Forms.Padding(2);
@@ -25171,7 +25105,7 @@
             // 
             this.ucVAC1VARGrapherOut.AutoSwing = false;
             this.ucVAC1VARGrapherOut.BackColor = System.Drawing.Color.Black;
-            this.ucVAC1VARGrapherOut.Caption = "Out";
+            this.ucVAC1VARGrapherOut.Caption = "输出";
             this.ucVAC1VARGrapherOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ucVAC1VARGrapherOut.Location = new System.Drawing.Point(428, 275);
             this.ucVAC1VARGrapherOut.Margin = new System.Windows.Forms.Padding(2);
@@ -25189,8 +25123,8 @@
             this.chkBypassVACPlayingRecording.Name = "chkBypassVACPlayingRecording";
             this.chkBypassVACPlayingRecording.Size = new System.Drawing.Size(271, 16);
             this.chkBypassVACPlayingRecording.TabIndex = 84;
-            this.chkBypassVACPlayingRecording.Text = "Bypass VAC for recording playback";
-            this.toolTip1.SetToolTip(this.chkBypassVACPlayingRecording, "If you are using VAC enable this to be able to play recordings");
+            this.chkBypassVACPlayingRecording.Text = "录音回放时绕过 VAC";
+            this.toolTip1.SetToolTip(this.chkBypassVACPlayingRecording, "如果使用 VAC，请启用此项以播放录音");
             this.chkBypassVACPlayingRecording.UseVisualStyleBackColor = true;
             this.chkBypassVACPlayingRecording.CheckedChanged += new System.EventHandler(this.chkBypassVACPlayingRecording_CheckedChanged);
             // 
@@ -25233,7 +25167,7 @@
             this.grpVAC1monitor.Size = new System.Drawing.Size(413, 133);
             this.grpVAC1monitor.TabIndex = 83;
             this.grpVAC1monitor.TabStop = false;
-            this.grpVAC1monitor.Text = "VAC1 Monitor";
+            this.grpVAC1monitor.Text = "VAC1 监听";
             // 
             // lblVAC1RingPercAV2
             // 
@@ -25247,7 +25181,7 @@
             this.lblVAC1RingPercAV2.Size = new System.Drawing.Size(27, 15);
             this.lblVAC1RingPercAV2.TabIndex = 33;
             this.lblVAC1RingPercAV2.Text = "000";
-            this.toolTip1.SetToolTip(this.lblVAC1RingPercAV2, "Moving average in percent");
+            this.toolTip1.SetToolTip(this.lblVAC1RingPercAV2, "滑动平均百分比");
             // 
             // lblVAC1RingPercAV1
             // 
@@ -25261,7 +25195,7 @@
             this.lblVAC1RingPercAV1.Size = new System.Drawing.Size(27, 15);
             this.lblVAC1RingPercAV1.TabIndex = 32;
             this.lblVAC1RingPercAV1.Text = "000";
-            this.toolTip1.SetToolTip(this.lblVAC1RingPercAV1, "Moving average in percent");
+            this.toolTip1.SetToolTip(this.lblVAC1RingPercAV1, "滑动平均百分比");
             // 
             // lblVAC1RingPerc2
             // 
@@ -25275,7 +25209,7 @@
             this.lblVAC1RingPerc2.Size = new System.Drawing.Size(27, 15);
             this.lblVAC1RingPerc2.TabIndex = 31;
             this.lblVAC1RingPerc2.Text = "000";
-            this.toolTip1.SetToolTip(this.lblVAC1RingPerc2, "Ringbuffer occupancy in percent");
+            this.toolTip1.SetToolTip(this.lblVAC1RingPerc2, "环形缓冲区占用百分比");
             // 
             // lblVAC1RingP2
             // 
@@ -25285,7 +25219,7 @@
             this.lblVAC1RingP2.Name = "lblVAC1RingP2";
             this.lblVAC1RingP2.Size = new System.Drawing.Size(59, 13);
             this.lblVAC1RingP2.TabIndex = 30;
-            this.lblVAC1RingP2.Text = "RingBuff %";
+            this.lblVAC1RingP2.Text = "环形缓冲 %";
             // 
             // lblVAC1RingPerc1
             // 
@@ -25299,7 +25233,7 @@
             this.lblVAC1RingPerc1.Size = new System.Drawing.Size(27, 15);
             this.lblVAC1RingPerc1.TabIndex = 29;
             this.lblVAC1RingPerc1.Text = "000";
-            this.toolTip1.SetToolTip(this.lblVAC1RingPerc1, "Ringbuffer occupancy in percent");
+            this.toolTip1.SetToolTip(this.lblVAC1RingPerc1, "环形缓冲区占用百分比");
             // 
             // lblVAC1RingP1
             // 
@@ -25309,7 +25243,7 @@
             this.lblVAC1RingP1.Name = "lblVAC1RingP1";
             this.lblVAC1RingP1.Size = new System.Drawing.Size(59, 13);
             this.lblVAC1RingP1.TabIndex = 28;
-            this.lblVAC1RingP1.Text = "RingBuff %";
+            this.lblVAC1RingP1.Text = "环形缓冲 %";
             // 
             // labelTS97
             // 
@@ -25333,7 +25267,7 @@
             this.lblVAC1RingSize2.Size = new System.Drawing.Size(39, 15);
             this.lblVAC1RingSize2.TabIndex = 26;
             this.lblVAC1RingSize2.Text = "00000";
-            this.toolTip1.SetToolTip(this.lblVAC1RingSize2, "Ringbuffer size");
+            this.toolTip1.SetToolTip(this.lblVAC1RingSize2, "环形缓冲区大小");
             // 
             // lblVAC1NRing2
             // 
@@ -25347,7 +25281,7 @@
             this.lblVAC1NRing2.Size = new System.Drawing.Size(39, 15);
             this.lblVAC1NRing2.TabIndex = 25;
             this.lblVAC1NRing2.Text = "00000";
-            this.toolTip1.SetToolTip(this.lblVAC1NRing2, "Samples in ringbuffer");
+            this.toolTip1.SetToolTip(this.lblVAC1NRing2, "环形缓冲区中的采样数");
             // 
             // labelTS101
             // 
@@ -25371,7 +25305,7 @@
             this.lblVAC1RingSize1.Size = new System.Drawing.Size(39, 15);
             this.lblVAC1RingSize1.TabIndex = 22;
             this.lblVAC1RingSize1.Text = "00000";
-            this.toolTip1.SetToolTip(this.lblVAC1RingSize1, "Ringbuffer size");
+            this.toolTip1.SetToolTip(this.lblVAC1RingSize1, "环形缓冲区大小");
             // 
             // lblVAC1Ring2
             // 
@@ -25381,7 +25315,7 @@
             this.lblVAC1Ring2.Name = "lblVAC1Ring2";
             this.lblVAC1Ring2.Size = new System.Drawing.Size(57, 13);
             this.lblVAC1Ring2.TabIndex = 20;
-            this.lblVAC1Ring2.Text = "RingBuffer";
+            this.lblVAC1Ring2.Text = "环形缓冲区";
             // 
             // lblVAC1NRing1
             // 
@@ -25395,7 +25329,7 @@
             this.lblVAC1NRing1.Size = new System.Drawing.Size(39, 15);
             this.lblVAC1NRing1.TabIndex = 19;
             this.lblVAC1NRing1.Text = "00000";
-            this.toolTip1.SetToolTip(this.lblVAC1NRing1, "Samples in ringbuffer");
+            this.toolTip1.SetToolTip(this.lblVAC1NRing1, "环形缓冲区中的采样数");
             // 
             // lblVAC1Ring1
             // 
@@ -25405,7 +25339,7 @@
             this.lblVAC1Ring1.Name = "lblVAC1Ring1";
             this.lblVAC1Ring1.Size = new System.Drawing.Size(57, 13);
             this.lblVAC1Ring1.TabIndex = 18;
-            this.lblVAC1Ring1.Text = "RingBuffer";
+            this.lblVAC1Ring1.Text = "环形缓冲区";
             // 
             // udVAC1_Force2
             // 
@@ -25430,7 +25364,7 @@
             this.udVAC1_Force2.Size = new System.Drawing.Size(72, 20);
             this.udVAC1_Force2.TabIndex = 17;
             this.udVAC1_Force2.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udVAC1_Force2, "Rate conversion ratio imposed when \"Force\" is checked");
+            this.toolTip1.SetToolTip(this.udVAC1_Force2, "勾选“强制”后施加的采样率转换比");
             this.udVAC1_Force2.Value = new decimal(new int[] {
             10,
             0,
@@ -25446,8 +25380,8 @@
             this.chkVAC1_Force2.Name = "chkVAC1_Force2";
             this.chkVAC1_Force2.Size = new System.Drawing.Size(53, 17);
             this.chkVAC1_Force2.TabIndex = 16;
-            this.chkVAC1_Force2.Text = "Force";
-            this.toolTip1.SetToolTip(this.chkVAC1_Force2, "Disable resampler matching loop and force to ratio setting below");
+            this.chkVAC1_Force2.Text = "强制";
+            this.toolTip1.SetToolTip(this.chkVAC1_Force2, "禁用重采样匹配环并强制使用下方比率设置");
             this.chkVAC1_Force2.UseVisualStyleBackColor = true;
             this.chkVAC1_Force2.CheckedChanged += new System.EventHandler(this.chkVAC1_Force2_CheckedChanged);
             // 
@@ -25459,8 +25393,8 @@
             this.lblVAC1_FROMVAC.Name = "lblVAC1_FROMVAC";
             this.lblVAC1_FROMVAC.Size = new System.Drawing.Size(83, 13);
             this.lblVAC1_FROMVAC.TabIndex = 15;
-            this.lblVAC1_FROMVAC.Text = "FROM VAC: (In)";
-            this.toolTip1.SetToolTip(this.lblVAC1_FROMVAC, "Transmit audio stream");
+            this.lblVAC1_FROMVAC.Text = "来自 VAC:（输入）";
+            this.toolTip1.SetToolTip(this.lblVAC1_FROMVAC, "发射音频流");
             // 
             // lblVAC1var2
             // 
@@ -25474,7 +25408,7 @@
             this.lblVAC1var2.Size = new System.Drawing.Size(24, 15);
             this.lblVAC1var2.TabIndex = 14;
             this.lblVAC1var2.Text = "var";
-            this.toolTip1.SetToolTip(this.lblVAC1var2, "Sampling rate conversion ratio being applied by matching loop");
+            this.toolTip1.SetToolTip(this.lblVAC1var2, "匹配环正在应用的采样率转换比");
             // 
             // lblVAC1VarRatio2
             // 
@@ -25484,7 +25418,7 @@
             this.lblVAC1VarRatio2.Name = "lblVAC1VarRatio2";
             this.lblVAC1VarRatio2.Size = new System.Drawing.Size(51, 13);
             this.lblVAC1VarRatio2.TabIndex = 13;
-            this.lblVAC1VarRatio2.Text = "Var Ratio";
+            this.lblVAC1VarRatio2.Text = "VAR 比率";
             // 
             // lblVAC1unfl2
             // 
@@ -25498,7 +25432,7 @@
             this.lblVAC1unfl2.Size = new System.Drawing.Size(26, 15);
             this.lblVAC1unfl2.TabIndex = 12;
             this.lblVAC1unfl2.Text = "unfl";
-            this.toolTip1.SetToolTip(this.lblVAC1unfl2, "Ringbuffer underflow counter (click to reset)");
+            this.toolTip1.SetToolTip(this.lblVAC1unfl2, "环形缓冲区欠载计数（点击重置）");
             this.lblVAC1unfl2.Click += new System.EventHandler(this.lblVAC1unfl2_Click);
             // 
             // lblVAC1ovfl2
@@ -25513,7 +25447,7 @@
             this.lblVAC1ovfl2.Size = new System.Drawing.Size(26, 15);
             this.lblVAC1ovfl2.TabIndex = 11;
             this.lblVAC1ovfl2.Text = "ovfl";
-            this.toolTip1.SetToolTip(this.lblVAC1ovfl2, "Ringbuffer overflow counter (click to reset)");
+            this.toolTip1.SetToolTip(this.lblVAC1ovfl2, "环形缓冲区溢出计数（点击重置）");
             this.lblVAC1ovfl2.Click += new System.EventHandler(this.lblVAC1ovfl2_Click);
             // 
             // lblVAC1underflows2
@@ -25524,7 +25458,7 @@
             this.lblVAC1underflows2.Name = "lblVAC1underflows2";
             this.lblVAC1underflows2.Size = new System.Drawing.Size(60, 13);
             this.lblVAC1underflows2.TabIndex = 10;
-            this.lblVAC1underflows2.Text = "Underflows";
+            this.lblVAC1underflows2.Text = "欠载";
             // 
             // lblVAC1overflows2
             // 
@@ -25534,7 +25468,7 @@
             this.lblVAC1overflows2.Name = "lblVAC1overflows2";
             this.lblVAC1overflows2.Size = new System.Drawing.Size(54, 13);
             this.lblVAC1overflows2.TabIndex = 9;
-            this.lblVAC1overflows2.Text = "Overflows";
+            this.lblVAC1overflows2.Text = "溢出";
             // 
             // udVAC1_Force
             // 
@@ -25559,7 +25493,7 @@
             this.udVAC1_Force.Size = new System.Drawing.Size(72, 20);
             this.udVAC1_Force.TabIndex = 8;
             this.udVAC1_Force.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udVAC1_Force, "Rate conversion ratio imposed when \"Force\" is checked");
+            this.toolTip1.SetToolTip(this.udVAC1_Force, "勾选“强制”后施加的采样率转换比");
             this.udVAC1_Force.Value = new decimal(new int[] {
             10,
             0,
@@ -25575,8 +25509,8 @@
             this.chkVAC1_Force.Name = "chkVAC1_Force";
             this.chkVAC1_Force.Size = new System.Drawing.Size(53, 17);
             this.chkVAC1_Force.TabIndex = 7;
-            this.chkVAC1_Force.Text = "Force";
-            this.toolTip1.SetToolTip(this.chkVAC1_Force, "Disable resampler matching loop and force to ratio setting below");
+            this.chkVAC1_Force.Text = "强制";
+            this.toolTip1.SetToolTip(this.chkVAC1_Force, "禁用重采样匹配环并强制使用下方比率设置");
             this.chkVAC1_Force.UseVisualStyleBackColor = true;
             this.chkVAC1_Force.CheckedChanged += new System.EventHandler(this.chkVAC1_Force_CheckedChanged);
             // 
@@ -25588,8 +25522,8 @@
             this.lblVAC1_TOVAC.Name = "lblVAC1_TOVAC";
             this.lblVAC1_TOVAC.Size = new System.Drawing.Size(75, 13);
             this.lblVAC1_TOVAC.TabIndex = 6;
-            this.lblVAC1_TOVAC.Text = "TO VAC: (Out)";
-            this.toolTip1.SetToolTip(this.lblVAC1_TOVAC, "Receive audio stream");
+            this.lblVAC1_TOVAC.Text = "至 VAC:（输出）";
+            this.toolTip1.SetToolTip(this.lblVAC1_TOVAC, "接收音频流");
             // 
             // lblVAC1var
             // 
@@ -25603,7 +25537,7 @@
             this.lblVAC1var.Size = new System.Drawing.Size(24, 15);
             this.lblVAC1var.TabIndex = 5;
             this.lblVAC1var.Text = "var";
-            this.toolTip1.SetToolTip(this.lblVAC1var, "Sampling rate conversion ratio being applied by matching loop");
+            this.toolTip1.SetToolTip(this.lblVAC1var, "匹配环正在应用的采样率转换比");
             // 
             // lblVAC1varratio
             // 
@@ -25613,7 +25547,7 @@
             this.lblVAC1varratio.Name = "lblVAC1varratio";
             this.lblVAC1varratio.Size = new System.Drawing.Size(51, 13);
             this.lblVAC1varratio.TabIndex = 4;
-            this.lblVAC1varratio.Text = "Var Ratio";
+            this.lblVAC1varratio.Text = "VAR 比率";
             // 
             // lblVAC1unfl
             // 
@@ -25627,7 +25561,7 @@
             this.lblVAC1unfl.Size = new System.Drawing.Size(26, 15);
             this.lblVAC1unfl.TabIndex = 3;
             this.lblVAC1unfl.Text = "unfl";
-            this.toolTip1.SetToolTip(this.lblVAC1unfl, "Ringbuffer underflow counter (click to reset)");
+            this.toolTip1.SetToolTip(this.lblVAC1unfl, "环形缓冲区欠载计数（点击重置）");
             this.lblVAC1unfl.Click += new System.EventHandler(this.lblVAC1unfl_Click);
             // 
             // lblVAC1ovfl
@@ -25642,7 +25576,7 @@
             this.lblVAC1ovfl.Size = new System.Drawing.Size(26, 15);
             this.lblVAC1ovfl.TabIndex = 2;
             this.lblVAC1ovfl.Text = "ovfl";
-            this.toolTip1.SetToolTip(this.lblVAC1ovfl, "Ringbuffer overflow counter (click to reset)");
+            this.toolTip1.SetToolTip(this.lblVAC1ovfl, "环形缓冲区溢出计数（点击重置）");
             this.lblVAC1ovfl.Click += new System.EventHandler(this.lblVAC1ovfl_Click);
             // 
             // lblVAC1underflows
@@ -25653,7 +25587,7 @@
             this.lblVAC1underflows.Name = "lblVAC1underflows";
             this.lblVAC1underflows.Size = new System.Drawing.Size(60, 13);
             this.lblVAC1underflows.TabIndex = 1;
-            this.lblVAC1underflows.Text = "Underflows";
+            this.lblVAC1underflows.Text = "欠载";
             // 
             // lblVAC1overflows
             // 
@@ -25663,7 +25597,7 @@
             this.lblVAC1overflows.Name = "lblVAC1overflows";
             this.lblVAC1overflows.Size = new System.Drawing.Size(54, 13);
             this.lblVAC1overflows.TabIndex = 0;
-            this.lblVAC1overflows.Text = "Overflows";
+            this.lblVAC1overflows.Text = "溢出";
             // 
             // chkMOXAllowBypass
             // 
@@ -25672,9 +25606,8 @@
             this.chkMOXAllowBypass.Name = "chkMOXAllowBypass";
             this.chkMOXAllowBypass.Size = new System.Drawing.Size(271, 16);
             this.chkMOXAllowBypass.TabIndex = 82;
-            this.chkMOXAllowBypass.Text = "Allow MOX to override/bypass VAC for Phone";
-            this.toolTip1.SetToolTip(this.chkMOXAllowBypass, "Using the MOX control will override the PTT input to allow for easy phone operati" +
-        "on while VAC is enabled.");
+            this.chkMOXAllowBypass.Text = "允许 MOX 在语音模式下覆盖/绕过 VAC";
+            this.toolTip1.SetToolTip(this.chkMOXAllowBypass, "使用 MOX 控件将绕过 PTT 输入，便于在 VAC 启用时进行语音操作。");
             this.chkMOXAllowBypass.CheckedChanged += new System.EventHandler(this.chkMOXAllowBypass_CheckedChanged);
             // 
             // chkSPACEAllowBypass
@@ -25684,9 +25617,8 @@
             this.chkSPACEAllowBypass.Name = "chkSPACEAllowBypass";
             this.chkSPACEAllowBypass.Size = new System.Drawing.Size(271, 16);
             this.chkSPACEAllowBypass.TabIndex = 81;
-            this.chkSPACEAllowBypass.Text = "Allow SPACE to override/bypass VAC for Phone";
-            this.toolTip1.SetToolTip(this.chkSPACEAllowBypass, "Using theSPACE BAR will override the PTT input to allow for easy phone operation " +
-        "while VAC is enabled.");
+            this.chkSPACEAllowBypass.Text = "允许空格键在语音模式下覆盖/绕过 VAC";
+            this.toolTip1.SetToolTip(this.chkSPACEAllowBypass, "使用空格键将绕过 PTT 输入，便于在 VAC 启用时进行语音操作。");
             this.chkSPACEAllowBypass.CheckedChanged += new System.EventHandler(this.chkSPACEAllowBypass_CheckedChanged);
             // 
             // grpDirectIQOutput
@@ -25699,7 +25631,7 @@
             this.grpDirectIQOutput.Size = new System.Drawing.Size(149, 94);
             this.grpDirectIQOutput.TabIndex = 78;
             this.grpDirectIQOutput.TabStop = false;
-            this.grpDirectIQOutput.Text = "Direct I/Q";
+            this.grpDirectIQOutput.Text = "直接 I/Q";
             // 
             // chkAudioRX2toVAC
             // 
@@ -25709,7 +25641,7 @@
             this.chkAudioRX2toVAC.Name = "chkAudioRX2toVAC";
             this.chkAudioRX2toVAC.Size = new System.Drawing.Size(88, 16);
             this.chkAudioRX2toVAC.TabIndex = 2;
-            this.chkAudioRX2toVAC.Text = "Use RX2";
+            this.chkAudioRX2toVAC.Text = "使用 RX2";
             this.chkAudioRX2toVAC.CheckedChanged += new System.EventHandler(this.chkAudioRX2toVAC_CheckedChanged);
             // 
             // chkAudioCorrectIQ
@@ -25720,7 +25652,7 @@
             this.chkAudioCorrectIQ.Name = "chkAudioCorrectIQ";
             this.chkAudioCorrectIQ.Size = new System.Drawing.Size(88, 16);
             this.chkAudioCorrectIQ.TabIndex = 1;
-            this.chkAudioCorrectIQ.Text = "Calibrate I/Q";
+            this.chkAudioCorrectIQ.Text = "校准 I/Q";
             this.chkAudioCorrectIQ.Visible = false;
             this.chkAudioCorrectIQ.CheckedChanged += new System.EventHandler(this.chkAudioCorrectIQ_CheckChanged);
             // 
@@ -25731,7 +25663,7 @@
             this.chkAudioIQtoVAC.Name = "chkAudioIQtoVAC";
             this.chkAudioIQtoVAC.Size = new System.Drawing.Size(96, 16);
             this.chkAudioIQtoVAC.TabIndex = 0;
-            this.chkAudioIQtoVAC.Text = "Output to VAC";
+            this.chkAudioIQtoVAC.Text = "输出到 VAC";
             this.chkAudioIQtoVAC.CheckedChanged += new System.EventHandler(this.chkAudioIQtoVAC_CheckedChanged);
             // 
             // chkVACCombine
@@ -25742,9 +25674,8 @@
             this.chkVACCombine.Name = "chkVACCombine";
             this.chkVACCombine.Size = new System.Drawing.Size(117, 40);
             this.chkVACCombine.TabIndex = 76;
-            this.chkVACCombine.Text = "Combine VAC Input Channels";
-            this.toolTip1.SetToolTip(this.chkVACCombine, "When this feature is enabled, the left and right VAC channels are combined into t" +
-        "he DSP transmit channel (left).");
+            this.chkVACCombine.Text = "合并 VAC 输入声道";
+            this.toolTip1.SetToolTip(this.chkVACCombine, "启用此功能后，左右 VAC 声道将合并到 DSP 发射通道（左声道）。");
             this.chkVACCombine.CheckedChanged += new System.EventHandler(this.chkVACCombine_CheckedChanged);
             // 
             // chkVACAllowBypass
@@ -25756,9 +25687,8 @@
             this.chkVACAllowBypass.Name = "chkVACAllowBypass";
             this.chkVACAllowBypass.Size = new System.Drawing.Size(271, 16);
             this.chkVACAllowBypass.TabIndex = 75;
-            this.chkVACAllowBypass.Text = "Allow PTT to override/bypass VAC for Phone";
-            this.toolTip1.SetToolTip(this.chkVACAllowBypass, "Using the hardware PTT inputs will override the PTT input to allow for easy phone" +
-        " operation while VAC is enabled.");
+            this.chkVACAllowBypass.Text = "允许 PTT 在语音模式下覆盖/绕过 VAC";
+            this.toolTip1.SetToolTip(this.chkVACAllowBypass, "使用硬件 PTT 输入将绕过 PTT 输入，便于在 VAC 启用时进行语音操作。");
             this.chkVACAllowBypass.CheckedChanged += new System.EventHandler(this.chkVACAllowBypass_CheckedChanged);
             // 
             // grpAudioVACAutoEnable
@@ -25769,7 +25699,7 @@
             this.grpAudioVACAutoEnable.Size = new System.Drawing.Size(224, 56);
             this.grpAudioVACAutoEnable.TabIndex = 74;
             this.grpAudioVACAutoEnable.TabStop = false;
-            this.grpAudioVACAutoEnable.Text = "Auto Enable";
+            this.grpAudioVACAutoEnable.Text = "自动启用";
             // 
             // chkAudioVACAutoEnable
             // 
@@ -25778,9 +25708,8 @@
             this.chkAudioVACAutoEnable.Name = "chkAudioVACAutoEnable";
             this.chkAudioVACAutoEnable.Size = new System.Drawing.Size(200, 32);
             this.chkAudioVACAutoEnable.TabIndex = 0;
-            this.chkAudioVACAutoEnable.Text = "Enable for Digital modes, Disable for all others";
-            this.toolTip1.SetToolTip(this.chkAudioVACAutoEnable, "Click this button to automatically enable VAC when in Digital modes (DIGL, DIGU, " +
-        "DRM)");
+            this.chkAudioVACAutoEnable.Text = "数字模式下启用，其他模式禁用";
+            this.toolTip1.SetToolTip(this.chkAudioVACAutoEnable, "点击此按钮可在数字模式（DIGL、DIGU、DRM）下自动启用 VAC。");
             this.chkAudioVACAutoEnable.CheckedChanged += new System.EventHandler(this.chkAudioVACAutoEnable_CheckedChanged);
             // 
             // grpAudioVACGain
@@ -25794,7 +25723,7 @@
             this.grpAudioVACGain.Size = new System.Drawing.Size(96, 72);
             this.grpAudioVACGain.TabIndex = 72;
             this.grpAudioVACGain.TabStop = false;
-            this.grpAudioVACGain.Text = "Gain (dB)";
+            this.grpAudioVACGain.Text = "增益 (dB)";
             // 
             // lblAudioVACGainTX
             // 
@@ -25803,7 +25732,7 @@
             this.lblAudioVACGainTX.Name = "lblAudioVACGainTX";
             this.lblAudioVACGainTX.Size = new System.Drawing.Size(32, 16);
             this.lblAudioVACGainTX.TabIndex = 39;
-            this.lblAudioVACGainTX.Text = "TX:";
+            this.lblAudioVACGainTX.Text = "发射:";
             // 
             // udAudioVACGainTX
             // 
@@ -25827,7 +25756,7 @@
             this.udAudioVACGainTX.Size = new System.Drawing.Size(40, 20);
             this.udAudioVACGainTX.TabIndex = 38;
             this.udAudioVACGainTX.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udAudioVACGainTX, "Controls the gain on the audio coming from third party applications.");
+            this.toolTip1.SetToolTip(this.udAudioVACGainTX, "控制来自第三方应用程序的音频增益。");
             this.udAudioVACGainTX.Value = new decimal(new int[] {
             0,
             0,
@@ -25843,7 +25772,7 @@
             this.lblAudioVACGainRX.Name = "lblAudioVACGainRX";
             this.lblAudioVACGainRX.Size = new System.Drawing.Size(24, 16);
             this.lblAudioVACGainRX.TabIndex = 37;
-            this.lblAudioVACGainRX.Text = "RX:";
+            this.lblAudioVACGainRX.Text = "接收:";
             // 
             // udAudioVACGainRX
             // 
@@ -25867,8 +25796,7 @@
             this.udAudioVACGainRX.Size = new System.Drawing.Size(40, 20);
             this.udAudioVACGainRX.TabIndex = 36;
             this.udAudioVACGainRX.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udAudioVACGainRX, "Controls the gain applied to the RX audio before it is sent to the third party ap" +
-        "plication.");
+            this.toolTip1.SetToolTip(this.udAudioVACGainRX, "控制发送到第三方应用程序之前的接收音频增益。");
             this.udAudioVACGainRX.Value = new decimal(new int[] {
             0,
             0,
@@ -25885,7 +25813,7 @@
             this.grpAudio2Stereo.Size = new System.Drawing.Size(96, 39);
             this.grpAudio2Stereo.TabIndex = 71;
             this.grpAudio2Stereo.TabStop = false;
-            this.grpAudio2Stereo.Text = "Mono/Stereo";
+            this.grpAudio2Stereo.Text = "单声道/立体声";
             // 
             // chkAudio2Stereo
             // 
@@ -25894,9 +25822,8 @@
             this.chkAudio2Stereo.Name = "chkAudio2Stereo";
             this.chkAudio2Stereo.Size = new System.Drawing.Size(64, 16);
             this.chkAudio2Stereo.TabIndex = 0;
-            this.chkAudio2Stereo.Text = "Stereo";
-            this.toolTip1.SetToolTip(this.chkAudio2Stereo, "Click this button if the third party software will open the Virtual Audio Cable i" +
-        "n 2 channel (stereo) mode.");
+            this.chkAudio2Stereo.Text = "立体声";
+            this.toolTip1.SetToolTip(this.chkAudio2Stereo, "如果第三方软件将以 2 声道（立体声）模式打开虚拟声卡（Virtual Audio Cable），请勾选此框。");
             this.chkAudio2Stereo.CheckedChanged += new System.EventHandler(this.chkAudio2Stereo_CheckedChanged);
             // 
             // grpAudioLatency2
@@ -25920,7 +25847,7 @@
             this.grpAudioLatency2.Size = new System.Drawing.Size(150, 155);
             this.grpAudioLatency2.TabIndex = 67;
             this.grpAudioLatency2.TabStop = false;
-            this.grpAudioLatency2.Text = "Buffer Latency (ms)";
+            this.grpAudioLatency2.Text = "缓冲延迟 (ms)";
             // 
             // labelTS364
             // 
@@ -25930,7 +25857,7 @@
             this.labelTS364.Name = "labelTS364";
             this.labelTS364.Size = new System.Drawing.Size(27, 13);
             this.labelTS364.TabIndex = 48;
-            this.labelTS364.Text = "Out:";
+            this.labelTS364.Text = "输出:";
             // 
             // labelTS365
             // 
@@ -25940,7 +25867,7 @@
             this.labelTS365.Name = "labelTS365";
             this.labelTS365.Size = new System.Drawing.Size(19, 13);
             this.labelTS365.TabIndex = 47;
-            this.labelTS365.Text = "In:";
+            this.labelTS365.Text = "输入:";
             // 
             // chkAudioLatencyPAOutManual
             // 
@@ -25949,7 +25876,7 @@
             this.chkAudioLatencyPAOutManual.Name = "chkAudioLatencyPAOutManual";
             this.chkAudioLatencyPAOutManual.Size = new System.Drawing.Size(64, 16);
             this.chkAudioLatencyPAOutManual.TabIndex = 46;
-            this.chkAudioLatencyPAOutManual.Text = "Manual";
+            this.chkAudioLatencyPAOutManual.Text = "手动";
             this.chkAudioLatencyPAOutManual.CheckedChanged += new System.EventHandler(this.chkAudioLatencyPAOutManual_CheckedChanged);
             // 
             // udAudioLatencyPAOut
@@ -25989,7 +25916,7 @@
             this.chkAudioLatencyPAInManual.Name = "chkAudioLatencyPAInManual";
             this.chkAudioLatencyPAInManual.Size = new System.Drawing.Size(64, 16);
             this.chkAudioLatencyPAInManual.TabIndex = 43;
-            this.chkAudioLatencyPAInManual.Text = "Manual";
+            this.chkAudioLatencyPAInManual.Text = "手动";
             this.chkAudioLatencyPAInManual.CheckedChanged += new System.EventHandler(this.chkAudioLatencyPAInManual_CheckedChanged);
             // 
             // udAudioLatencyPAIn
@@ -26040,7 +25967,7 @@
             this.labelTS362.Name = "labelTS362";
             this.labelTS362.Size = new System.Drawing.Size(57, 13);
             this.labelTS362.TabIndex = 41;
-            this.labelTS362.Text = "RingBuffer";
+            this.labelTS362.Text = "环形缓冲区";
             // 
             // labelTS361
             // 
@@ -26050,7 +25977,7 @@
             this.labelTS361.Name = "labelTS361";
             this.labelTS361.Size = new System.Drawing.Size(27, 13);
             this.labelTS361.TabIndex = 40;
-            this.labelTS361.Text = "Out:";
+            this.labelTS361.Text = "输出:";
             // 
             // labelTS360
             // 
@@ -26060,7 +25987,7 @@
             this.labelTS360.Name = "labelTS360";
             this.labelTS360.Size = new System.Drawing.Size(19, 13);
             this.labelTS360.TabIndex = 39;
-            this.labelTS360.Text = "In:";
+            this.labelTS360.Text = "输入:";
             // 
             // chkAudioLatencyManual2_Out
             // 
@@ -26069,7 +25996,7 @@
             this.chkAudioLatencyManual2_Out.Name = "chkAudioLatencyManual2_Out";
             this.chkAudioLatencyManual2_Out.Size = new System.Drawing.Size(64, 16);
             this.chkAudioLatencyManual2_Out.TabIndex = 38;
-            this.chkAudioLatencyManual2_Out.Text = "Manual";
+            this.chkAudioLatencyManual2_Out.Text = "手动";
             this.chkAudioLatencyManual2_Out.CheckedChanged += new System.EventHandler(this.chkAudioLatencyManual2_Out_CheckedChanged);
             // 
             // udAudioLatency2_Out
@@ -26109,7 +26036,7 @@
             this.chkAudioLatencyManual2.Name = "chkAudioLatencyManual2";
             this.chkAudioLatencyManual2.Size = new System.Drawing.Size(64, 16);
             this.chkAudioLatencyManual2.TabIndex = 5;
-            this.chkAudioLatencyManual2.Text = "Manual";
+            this.chkAudioLatencyManual2.Text = "手动";
             this.chkAudioLatencyManual2.CheckedChanged += new System.EventHandler(this.chkAudioLatencyManual2_CheckedChanged);
             // 
             // udAudioLatency2
@@ -26151,7 +26078,7 @@
             this.grpAudioSampleRate2.Size = new System.Drawing.Size(96, 56);
             this.grpAudioSampleRate2.TabIndex = 66;
             this.grpAudioSampleRate2.TabStop = false;
-            this.grpAudioSampleRate2.Text = "Sample Rate";
+            this.grpAudioSampleRate2.Text = "采样率";
             // 
             // comboAudioSampleRate2
             // 
@@ -26172,7 +26099,7 @@
             this.comboAudioSampleRate2.Name = "comboAudioSampleRate2";
             this.comboAudioSampleRate2.Size = new System.Drawing.Size(64, 21);
             this.comboAudioSampleRate2.TabIndex = 60;
-            this.toolTip1.SetToolTip(this.comboAudioSampleRate2, "Samples per second.  Set to match the third party software program.");
+            this.toolTip1.SetToolTip(this.comboAudioSampleRate2, "每秒采样数。设置以匹配第三方软件程序。");
             this.comboAudioSampleRate2.SelectedIndexChanged += new System.EventHandler(this.comboAudioSampleRate2_SelectedIndexChanged);
             // 
             // grpAudioBuffer2
@@ -26183,7 +26110,7 @@
             this.grpAudioBuffer2.Size = new System.Drawing.Size(96, 56);
             this.grpAudioBuffer2.TabIndex = 65;
             this.grpAudioBuffer2.TabStop = false;
-            this.grpAudioBuffer2.Text = "Buffer Size";
+            this.grpAudioBuffer2.Text = "缓冲区大小";
             // 
             // comboAudioBuffer2
             // 
@@ -26200,7 +26127,7 @@
             this.comboAudioBuffer2.Name = "comboAudioBuffer2";
             this.comboAudioBuffer2.Size = new System.Drawing.Size(56, 21);
             this.comboAudioBuffer2.TabIndex = 58;
-            this.toolTip1.SetToolTip(this.comboAudioBuffer2, "Samples per buffer.");
+            this.toolTip1.SetToolTip(this.comboAudioBuffer2, "每缓冲区采样数。");
             this.comboAudioBuffer2.SelectedIndexChanged += new System.EventHandler(this.comboAudioBuffer2_SelectedIndexChanged);
             // 
             // grpAudioDetails2
@@ -26216,7 +26143,7 @@
             this.grpAudioDetails2.Size = new System.Drawing.Size(224, 100);
             this.grpAudioDetails2.TabIndex = 35;
             this.grpAudioDetails2.TabStop = false;
-            this.grpAudioDetails2.Text = "Virtual Audio Cable Setup";
+            this.grpAudioDetails2.Text = "虚拟声卡设置";
             // 
             // lblAudioOutput2
             // 
@@ -26225,7 +26152,7 @@
             this.lblAudioOutput2.Name = "lblAudioOutput2";
             this.lblAudioOutput2.Size = new System.Drawing.Size(48, 16);
             this.lblAudioOutput2.TabIndex = 35;
-            this.lblAudioOutput2.Text = "Output:";
+            this.lblAudioOutput2.Text = "输出:";
             // 
             // comboAudioOutput2
             // 
@@ -26237,7 +26164,7 @@
             this.comboAudioOutput2.Name = "comboAudioOutput2";
             this.comboAudioOutput2.Size = new System.Drawing.Size(160, 21);
             this.comboAudioOutput2.TabIndex = 34;
-            this.toolTip1.SetToolTip(this.comboAudioOutput2, "Output Audio Device");
+            this.toolTip1.SetToolTip(this.comboAudioOutput2, "输出音频设备");
             this.comboAudioOutput2.SelectedIndexChanged += new System.EventHandler(this.comboAudioOutput2_SelectedIndexChanged);
             // 
             // lblAudioInput2
@@ -26247,7 +26174,7 @@
             this.lblAudioInput2.Name = "lblAudioInput2";
             this.lblAudioInput2.Size = new System.Drawing.Size(40, 16);
             this.lblAudioInput2.TabIndex = 33;
-            this.lblAudioInput2.Text = "Input:";
+            this.lblAudioInput2.Text = "输入:";
             // 
             // lblAudioDriver2
             // 
@@ -26256,7 +26183,7 @@
             this.lblAudioDriver2.Name = "lblAudioDriver2";
             this.lblAudioDriver2.Size = new System.Drawing.Size(40, 16);
             this.lblAudioDriver2.TabIndex = 32;
-            this.lblAudioDriver2.Text = "Driver:";
+            this.lblAudioDriver2.Text = "驱动:";
             // 
             // comboAudioInput2
             // 
@@ -26267,7 +26194,7 @@
             this.comboAudioInput2.Name = "comboAudioInput2";
             this.comboAudioInput2.Size = new System.Drawing.Size(160, 21);
             this.comboAudioInput2.TabIndex = 28;
-            this.toolTip1.SetToolTip(this.comboAudioInput2, "Input Audio Device");
+            this.toolTip1.SetToolTip(this.comboAudioInput2, "输入音频设备");
             this.comboAudioInput2.SelectedIndexChanged += new System.EventHandler(this.comboAudioInput2_SelectedIndexChanged);
             // 
             // comboAudioDriver2
@@ -26279,7 +26206,7 @@
             this.comboAudioDriver2.Name = "comboAudioDriver2";
             this.comboAudioDriver2.Size = new System.Drawing.Size(160, 21);
             this.comboAudioDriver2.TabIndex = 26;
-            this.toolTip1.SetToolTip(this.comboAudioDriver2, "Sound Card Driver Selection");
+            this.toolTip1.SetToolTip(this.comboAudioDriver2, "声卡驱动选择");
             this.comboAudioDriver2.SelectedIndexChanged += new System.EventHandler(this.comboAudioDriver2_SelectedIndexChanged);
             // 
             // chkAudioEnableVAC
@@ -26289,8 +26216,8 @@
             this.chkAudioEnableVAC.Name = "chkAudioEnableVAC";
             this.chkAudioEnableVAC.Size = new System.Drawing.Size(99, 24);
             this.chkAudioEnableVAC.TabIndex = 25;
-            this.chkAudioEnableVAC.Text = "Enable VAC 1";
-            this.toolTip1.SetToolTip(this.chkAudioEnableVAC, "Enable Virtual Audio Cable Support using the settings on this form.");
+            this.chkAudioEnableVAC.Text = "启用 VAC 1";
+            this.toolTip1.SetToolTip(this.chkAudioEnableVAC, "使用本窗体中的设置启用虚拟声卡支持。");
             this.chkAudioEnableVAC.CheckedChanged += new System.EventHandler(this.chkAudioEnableVAC_CheckedChanged);
             // 
             // tpVAC2
@@ -26329,7 +26256,7 @@
             this.chkVAC2WillMute.Name = "chkVAC2WillMute";
             this.chkVAC2WillMute.Size = new System.Drawing.Size(117, 17);
             this.chkVAC2WillMute.TabIndex = 96;
-            this.chkVAC2WillMute.Text = "Mute will mute VAC";
+            this.chkVAC2WillMute.Text = "静音将同时静音 VAC";
             this.chkVAC2WillMute.UseVisualStyleBackColor = true;
             this.chkVAC2WillMute.CheckedChanged += new System.EventHandler(this.chkVAC2WillMute_CheckedChanged);
             // 
@@ -26342,8 +26269,8 @@
             this.chkVAC2GrapherAuto.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.chkVAC2GrapherAuto.Size = new System.Drawing.Size(48, 17);
             this.chkVAC2GrapherAuto.TabIndex = 95;
-            this.chkVAC2GrapherAuto.Text = "Auto";
-            this.toolTip1.SetToolTip(this.chkVAC2GrapherAuto, "Auto scale the Min/Max around the 0 point");
+            this.chkVAC2GrapherAuto.Text = "自动";
+            this.toolTip1.SetToolTip(this.chkVAC2GrapherAuto, "围绕 0 点自动缩放最小/最大值");
             this.chkVAC2GrapherAuto.UseVisualStyleBackColor = true;
             this.chkVAC2GrapherAuto.CheckedChanged += new System.EventHandler(this.chkVAC2GrapherAuto_CheckedChanged);
             // 
@@ -26370,7 +26297,7 @@
             this.udVAC2GrapherSwing.Size = new System.Drawing.Size(72, 20);
             this.udVAC2GrapherSwing.TabIndex = 94;
             this.udVAC2GrapherSwing.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udVAC2GrapherSwing, "Min/Max above the 0 point");
+            this.toolTip1.SetToolTip(this.udVAC2GrapherSwing, "0 点以上的最小/最大值");
             this.udVAC2GrapherSwing.Value = new decimal(new int[] {
             4,
             0,
@@ -26382,7 +26309,7 @@
             // 
             this.ucVAC2VARGrapherIn.AutoSwing = false;
             this.ucVAC2VARGrapherIn.BackColor = System.Drawing.Color.Black;
-            this.ucVAC2VARGrapherIn.Caption = "In";
+            this.ucVAC2VARGrapherIn.Caption = "输入";
             this.ucVAC2VARGrapherIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ucVAC2VARGrapherIn.Location = new System.Drawing.Point(428, 338);
             this.ucVAC2VARGrapherIn.Margin = new System.Windows.Forms.Padding(2);
@@ -26397,7 +26324,7 @@
             // 
             this.ucVAC2VARGrapherOut.AutoSwing = false;
             this.ucVAC2VARGrapherOut.BackColor = System.Drawing.Color.Black;
-            this.ucVAC2VARGrapherOut.Caption = "Out";
+            this.ucVAC2VARGrapherOut.Caption = "输出";
             this.ucVAC2VARGrapherOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ucVAC2VARGrapherOut.Location = new System.Drawing.Point(428, 275);
             this.ucVAC2VARGrapherOut.Margin = new System.Windows.Forms.Padding(2);
@@ -26417,8 +26344,8 @@
             this.chkVAC2onSplit.Name = "chkVAC2onSplit";
             this.chkVAC2onSplit.Size = new System.Drawing.Size(117, 16);
             this.chkVAC2onSplit.TabIndex = 91;
-            this.chkVAC2onSplit.Text = "Use VAC2 on Split";
-            this.toolTip1.SetToolTip(this.chkVAC2onSplit, "Use VAC2 for transmit audio when VFOB is used for transmit.");
+            this.chkVAC2onSplit.Text = "Split 时使用 VAC2";
+            this.toolTip1.SetToolTip(this.chkVAC2onSplit, "当 VFOB 用于发射时，使用 VAC2 作为发射音频。");
             this.chkVAC2onSplit.CheckedChanged += new System.EventHandler(this.chkVAC2onSplit_CheckedChanged);
             // 
             // grpVAC2monitor
@@ -26460,7 +26387,7 @@
             this.grpVAC2monitor.Size = new System.Drawing.Size(413, 133);
             this.grpVAC2monitor.TabIndex = 90;
             this.grpVAC2monitor.TabStop = false;
-            this.grpVAC2monitor.Text = "VAC2 Monitor";
+            this.grpVAC2monitor.Text = "VAC2 监听";
             // 
             // lblVAC2RingPercAV2
             // 
@@ -26474,7 +26401,7 @@
             this.lblVAC2RingPercAV2.Size = new System.Drawing.Size(27, 15);
             this.lblVAC2RingPercAV2.TabIndex = 47;
             this.lblVAC2RingPercAV2.Text = "000";
-            this.toolTip1.SetToolTip(this.lblVAC2RingPercAV2, "Moving average in percent");
+            this.toolTip1.SetToolTip(this.lblVAC2RingPercAV2, "滑动平均百分比");
             // 
             // lblVAC2RingPercAV1
             // 
@@ -26488,7 +26415,7 @@
             this.lblVAC2RingPercAV1.Size = new System.Drawing.Size(27, 15);
             this.lblVAC2RingPercAV1.TabIndex = 46;
             this.lblVAC2RingPercAV1.Text = "000";
-            this.toolTip1.SetToolTip(this.lblVAC2RingPercAV1, "Moving average in percent");
+            this.toolTip1.SetToolTip(this.lblVAC2RingPercAV1, "滑动平均百分比");
             // 
             // lblVAC2RingPerc2
             // 
@@ -26502,7 +26429,7 @@
             this.lblVAC2RingPerc2.Size = new System.Drawing.Size(27, 15);
             this.lblVAC2RingPerc2.TabIndex = 45;
             this.lblVAC2RingPerc2.Text = "000";
-            this.toolTip1.SetToolTip(this.lblVAC2RingPerc2, "Ringbuffer occupancy in percent");
+            this.toolTip1.SetToolTip(this.lblVAC2RingPerc2, "环形缓冲区占用百分比");
             // 
             // lblVAC2RingP2
             // 
@@ -26512,7 +26439,7 @@
             this.lblVAC2RingP2.Name = "lblVAC2RingP2";
             this.lblVAC2RingP2.Size = new System.Drawing.Size(59, 13);
             this.lblVAC2RingP2.TabIndex = 44;
-            this.lblVAC2RingP2.Text = "RingBuff %";
+            this.lblVAC2RingP2.Text = "环形缓冲 %";
             // 
             // lblVAC2RingPerc1
             // 
@@ -26526,7 +26453,7 @@
             this.lblVAC2RingPerc1.Size = new System.Drawing.Size(27, 15);
             this.lblVAC2RingPerc1.TabIndex = 43;
             this.lblVAC2RingPerc1.Text = "000";
-            this.toolTip1.SetToolTip(this.lblVAC2RingPerc1, "Ringbuffer occupancy in percent");
+            this.toolTip1.SetToolTip(this.lblVAC2RingPerc1, "环形缓冲区占用百分比");
             // 
             // lblVAC2RingP1
             // 
@@ -26536,7 +26463,7 @@
             this.lblVAC2RingP1.Name = "lblVAC2RingP1";
             this.lblVAC2RingP1.Size = new System.Drawing.Size(59, 13);
             this.lblVAC2RingP1.TabIndex = 42;
-            this.lblVAC2RingP1.Text = "RingBuff %";
+            this.lblVAC2RingP1.Text = "环形缓冲 %";
             // 
             // labelTS531
             // 
@@ -26560,7 +26487,7 @@
             this.lblVAC2RingSize2.Size = new System.Drawing.Size(39, 15);
             this.lblVAC2RingSize2.TabIndex = 40;
             this.lblVAC2RingSize2.Text = "00000";
-            this.toolTip1.SetToolTip(this.lblVAC2RingSize2, "Ringbuffer size");
+            this.toolTip1.SetToolTip(this.lblVAC2RingSize2, "环形缓冲区大小");
             // 
             // lblVAC2NRing2
             // 
@@ -26574,7 +26501,7 @@
             this.lblVAC2NRing2.Size = new System.Drawing.Size(39, 15);
             this.lblVAC2NRing2.TabIndex = 39;
             this.lblVAC2NRing2.Text = "00000";
-            this.toolTip1.SetToolTip(this.lblVAC2NRing2, "Samples in ringbuffer");
+            this.toolTip1.SetToolTip(this.lblVAC2NRing2, "环形缓冲区中的采样数");
             // 
             // labelTS534
             // 
@@ -26598,7 +26525,7 @@
             this.lblVAC2RingSize1.Size = new System.Drawing.Size(39, 15);
             this.lblVAC2RingSize1.TabIndex = 37;
             this.lblVAC2RingSize1.Text = "00000";
-            this.toolTip1.SetToolTip(this.lblVAC2RingSize1, "Ringbuffer size");
+            this.toolTip1.SetToolTip(this.lblVAC2RingSize1, "环形缓冲区大小");
             // 
             // lblVAC2Ring2
             // 
@@ -26608,7 +26535,7 @@
             this.lblVAC2Ring2.Name = "lblVAC2Ring2";
             this.lblVAC2Ring2.Size = new System.Drawing.Size(57, 13);
             this.lblVAC2Ring2.TabIndex = 36;
-            this.lblVAC2Ring2.Text = "RingBuffer";
+            this.lblVAC2Ring2.Text = "环形缓冲区";
             // 
             // lblVAC2NRing1
             // 
@@ -26622,7 +26549,7 @@
             this.lblVAC2NRing1.Size = new System.Drawing.Size(39, 15);
             this.lblVAC2NRing1.TabIndex = 35;
             this.lblVAC2NRing1.Text = "00000";
-            this.toolTip1.SetToolTip(this.lblVAC2NRing1, "Samples in ringbuffer");
+            this.toolTip1.SetToolTip(this.lblVAC2NRing1, "环形缓冲区中的采样数");
             // 
             // lblVAC2Ring1
             // 
@@ -26632,7 +26559,7 @@
             this.lblVAC2Ring1.Name = "lblVAC2Ring1";
             this.lblVAC2Ring1.Size = new System.Drawing.Size(57, 13);
             this.lblVAC2Ring1.TabIndex = 34;
-            this.lblVAC2Ring1.Text = "RingBuffer";
+            this.lblVAC2Ring1.Text = "环形缓冲区";
             // 
             // udVAC2_Force2
             // 
@@ -26657,7 +26584,7 @@
             this.udVAC2_Force2.Size = new System.Drawing.Size(72, 20);
             this.udVAC2_Force2.TabIndex = 17;
             this.udVAC2_Force2.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udVAC2_Force2, "Rate conversion ratio imposed when \"Force\" is checked");
+            this.toolTip1.SetToolTip(this.udVAC2_Force2, "勾选“强制”后施加的采样率转换比");
             this.udVAC2_Force2.Value = new decimal(new int[] {
             10,
             0,
@@ -26673,8 +26600,8 @@
             this.chkVAC2_Force2.Name = "chkVAC2_Force2";
             this.chkVAC2_Force2.Size = new System.Drawing.Size(53, 17);
             this.chkVAC2_Force2.TabIndex = 16;
-            this.chkVAC2_Force2.Text = "Force";
-            this.toolTip1.SetToolTip(this.chkVAC2_Force2, "Disable resampler matching loop and force to ratio setting below");
+            this.chkVAC2_Force2.Text = "强制";
+            this.toolTip1.SetToolTip(this.chkVAC2_Force2, "禁用重采样匹配环并强制使用下方比率设置");
             this.chkVAC2_Force2.UseVisualStyleBackColor = true;
             this.chkVAC2_Force2.CheckedChanged += new System.EventHandler(this.chkVAC2_Force2_CheckedChanged);
             // 
@@ -26686,8 +26613,8 @@
             this.lblVAC2_FROMVAC.Name = "lblVAC2_FROMVAC";
             this.lblVAC2_FROMVAC.Size = new System.Drawing.Size(83, 13);
             this.lblVAC2_FROMVAC.TabIndex = 15;
-            this.lblVAC2_FROMVAC.Text = "FROM VAC: (In)";
-            this.toolTip1.SetToolTip(this.lblVAC2_FROMVAC, "Transmit audio stream");
+            this.lblVAC2_FROMVAC.Text = "来自 VAC:（输入）";
+            this.toolTip1.SetToolTip(this.lblVAC2_FROMVAC, "发射音频流");
             // 
             // lblVAC2var2
             // 
@@ -26701,7 +26628,7 @@
             this.lblVAC2var2.Size = new System.Drawing.Size(24, 15);
             this.lblVAC2var2.TabIndex = 14;
             this.lblVAC2var2.Text = "var";
-            this.toolTip1.SetToolTip(this.lblVAC2var2, "Sampling rate conversion ratio being applied by matching loop");
+            this.toolTip1.SetToolTip(this.lblVAC2var2, "匹配环正在应用的采样率转换比");
             // 
             // lblVAC2varratio2
             // 
@@ -26711,7 +26638,7 @@
             this.lblVAC2varratio2.Name = "lblVAC2varratio2";
             this.lblVAC2varratio2.Size = new System.Drawing.Size(51, 13);
             this.lblVAC2varratio2.TabIndex = 13;
-            this.lblVAC2varratio2.Text = "Var Ratio";
+            this.lblVAC2varratio2.Text = "VAR 比率";
             // 
             // lblVAC2unfl2
             // 
@@ -26725,7 +26652,7 @@
             this.lblVAC2unfl2.Size = new System.Drawing.Size(26, 15);
             this.lblVAC2unfl2.TabIndex = 12;
             this.lblVAC2unfl2.Text = "unfl";
-            this.toolTip1.SetToolTip(this.lblVAC2unfl2, "Ringbuffer underflow counter (click to reset)");
+            this.toolTip1.SetToolTip(this.lblVAC2unfl2, "环形缓冲区欠载计数（点击重置）");
             this.lblVAC2unfl2.Click += new System.EventHandler(this.lblVAC2unfl2_Click);
             // 
             // lblVAC2ovfl2
@@ -26740,7 +26667,7 @@
             this.lblVAC2ovfl2.Size = new System.Drawing.Size(26, 15);
             this.lblVAC2ovfl2.TabIndex = 11;
             this.lblVAC2ovfl2.Text = "ovfl";
-            this.toolTip1.SetToolTip(this.lblVAC2ovfl2, "Ringbuffer overflow counter (click to reset)");
+            this.toolTip1.SetToolTip(this.lblVAC2ovfl2, "环形缓冲区溢出计数（点击重置）");
             this.lblVAC2ovfl2.Click += new System.EventHandler(this.lblVAC2ovfl2_Click);
             // 
             // lblVAC2underflows2
@@ -26751,7 +26678,7 @@
             this.lblVAC2underflows2.Name = "lblVAC2underflows2";
             this.lblVAC2underflows2.Size = new System.Drawing.Size(60, 13);
             this.lblVAC2underflows2.TabIndex = 10;
-            this.lblVAC2underflows2.Text = "Underflows";
+            this.lblVAC2underflows2.Text = "欠载";
             // 
             // lblVAC2overflows2
             // 
@@ -26761,7 +26688,7 @@
             this.lblVAC2overflows2.Name = "lblVAC2overflows2";
             this.lblVAC2overflows2.Size = new System.Drawing.Size(54, 13);
             this.lblVAC2overflows2.TabIndex = 9;
-            this.lblVAC2overflows2.Text = "Overflows";
+            this.lblVAC2overflows2.Text = "溢出";
             // 
             // udVAC2_Force
             // 
@@ -26786,7 +26713,7 @@
             this.udVAC2_Force.Size = new System.Drawing.Size(72, 20);
             this.udVAC2_Force.TabIndex = 8;
             this.udVAC2_Force.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udVAC2_Force, "Rate conversion ratio imposed when \"Force\" is checked");
+            this.toolTip1.SetToolTip(this.udVAC2_Force, "勾选“强制”后施加的采样率转换比");
             this.udVAC2_Force.Value = new decimal(new int[] {
             10,
             0,
@@ -26802,8 +26729,8 @@
             this.chkVAC2_Force.Name = "chkVAC2_Force";
             this.chkVAC2_Force.Size = new System.Drawing.Size(53, 17);
             this.chkVAC2_Force.TabIndex = 7;
-            this.chkVAC2_Force.Text = "Force";
-            this.toolTip1.SetToolTip(this.chkVAC2_Force, "Disable resampler matching loop and force to ratio setting below");
+            this.chkVAC2_Force.Text = "强制";
+            this.toolTip1.SetToolTip(this.chkVAC2_Force, "禁用重采样匹配环并强制使用下方比率设置");
             this.chkVAC2_Force.UseVisualStyleBackColor = true;
             this.chkVAC2_Force.CheckedChanged += new System.EventHandler(this.chkVAC2_Force_CheckedChanged);
             // 
@@ -26815,8 +26742,8 @@
             this.lblVAC2_TOVAC.Name = "lblVAC2_TOVAC";
             this.lblVAC2_TOVAC.Size = new System.Drawing.Size(75, 13);
             this.lblVAC2_TOVAC.TabIndex = 6;
-            this.lblVAC2_TOVAC.Text = "TO VAC: (Out)";
-            this.toolTip1.SetToolTip(this.lblVAC2_TOVAC, "Receive audio stream");
+            this.lblVAC2_TOVAC.Text = "至 VAC:（输出）";
+            this.toolTip1.SetToolTip(this.lblVAC2_TOVAC, "接收音频流");
             // 
             // lblVAC2var
             // 
@@ -26830,7 +26757,7 @@
             this.lblVAC2var.Size = new System.Drawing.Size(24, 15);
             this.lblVAC2var.TabIndex = 5;
             this.lblVAC2var.Text = "var";
-            this.toolTip1.SetToolTip(this.lblVAC2var, "Sampling rate conversion ratio being applied by matching loop");
+            this.toolTip1.SetToolTip(this.lblVAC2var, "匹配环正在应用的采样率转换比");
             // 
             // lblVAC2varratio
             // 
@@ -26840,7 +26767,7 @@
             this.lblVAC2varratio.Name = "lblVAC2varratio";
             this.lblVAC2varratio.Size = new System.Drawing.Size(51, 13);
             this.lblVAC2varratio.TabIndex = 4;
-            this.lblVAC2varratio.Text = "Var Ratio";
+            this.lblVAC2varratio.Text = "VAR 比率";
             // 
             // lblVAC2unfl
             // 
@@ -26854,7 +26781,7 @@
             this.lblVAC2unfl.Size = new System.Drawing.Size(26, 15);
             this.lblVAC2unfl.TabIndex = 3;
             this.lblVAC2unfl.Text = "unfl";
-            this.toolTip1.SetToolTip(this.lblVAC2unfl, "Ringbuffer underflow counter (click to reset)");
+            this.toolTip1.SetToolTip(this.lblVAC2unfl, "环形缓冲区欠载计数（点击重置）");
             this.lblVAC2unfl.Click += new System.EventHandler(this.lblVAC2unfl_Click);
             // 
             // lblVAC2ovfl
@@ -26869,7 +26796,7 @@
             this.lblVAC2ovfl.Size = new System.Drawing.Size(26, 15);
             this.lblVAC2ovfl.TabIndex = 2;
             this.lblVAC2ovfl.Text = "ovfl";
-            this.toolTip1.SetToolTip(this.lblVAC2ovfl, "Ringbuffer overflow counter (click to reset)");
+            this.toolTip1.SetToolTip(this.lblVAC2ovfl, "环形缓冲区溢出计数（点击重置）");
             this.lblVAC2ovfl.Click += new System.EventHandler(this.lblVAC2ovfl_Click);
             // 
             // lblVAC2underflows
@@ -26880,7 +26807,7 @@
             this.lblVAC2underflows.Name = "lblVAC2underflows";
             this.lblVAC2underflows.Size = new System.Drawing.Size(60, 13);
             this.lblVAC2underflows.TabIndex = 1;
-            this.lblVAC2underflows.Text = "Underflows";
+            this.lblVAC2underflows.Text = "欠载";
             // 
             // lblVAC2overflows
             // 
@@ -26890,7 +26817,7 @@
             this.lblVAC2overflows.Name = "lblVAC2overflows";
             this.lblVAC2overflows.Size = new System.Drawing.Size(54, 13);
             this.lblVAC2overflows.TabIndex = 0;
-            this.lblVAC2overflows.Text = "Overflows";
+            this.lblVAC2overflows.Text = "溢出";
             // 
             // chkVAC2UseRX2
             // 
@@ -26902,8 +26829,8 @@
             this.chkVAC2UseRX2.Name = "chkVAC2UseRX2";
             this.chkVAC2UseRX2.Size = new System.Drawing.Size(88, 16);
             this.chkVAC2UseRX2.TabIndex = 2;
-            this.chkVAC2UseRX2.Text = "Use RX2";
-            this.toolTip1.SetToolTip(this.chkVAC2UseRX2, "Use RX2 for VAC 2");
+            this.chkVAC2UseRX2.Text = "使用 RX2";
+            this.toolTip1.SetToolTip(this.chkVAC2UseRX2, "VAC 2 使用 RX2");
             this.chkVAC2UseRX2.Visible = false;
             this.chkVAC2UseRX2.CheckedChanged += new System.EventHandler(this.chkVAC2UseRX2_CheckedChanged);
             // 
@@ -26916,7 +26843,7 @@
             this.grpVAC2DirectIQ.Size = new System.Drawing.Size(149, 94);
             this.grpVAC2DirectIQ.TabIndex = 89;
             this.grpVAC2DirectIQ.TabStop = false;
-            this.grpVAC2DirectIQ.Text = "Direct I/Q";
+            this.grpVAC2DirectIQ.Text = "直接 I/Q";
             // 
             // chkVAC2DirectIQCal
             // 
@@ -26926,7 +26853,7 @@
             this.chkVAC2DirectIQCal.Name = "chkVAC2DirectIQCal";
             this.chkVAC2DirectIQCal.Size = new System.Drawing.Size(88, 16);
             this.chkVAC2DirectIQCal.TabIndex = 1;
-            this.chkVAC2DirectIQCal.Text = "Calibrate I/Q";
+            this.chkVAC2DirectIQCal.Text = "校准 I/Q";
             this.chkVAC2DirectIQCal.Visible = false;
             this.chkVAC2DirectIQCal.CheckedChanged += new System.EventHandler(this.chkVAC2IQCal_CheckChanged);
             // 
@@ -26937,7 +26864,7 @@
             this.chkVAC2DirectIQ.Name = "chkVAC2DirectIQ";
             this.chkVAC2DirectIQ.Size = new System.Drawing.Size(96, 16);
             this.chkVAC2DirectIQ.TabIndex = 0;
-            this.chkVAC2DirectIQ.Text = "Output to VAC";
+            this.chkVAC2DirectIQ.Text = "输出到 VAC";
             this.chkVAC2DirectIQ.CheckedChanged += new System.EventHandler(this.chkVAC2DirectIQ_CheckedChanged);
             // 
             // chkVAC2Combine
@@ -26948,9 +26875,8 @@
             this.chkVAC2Combine.Name = "chkVAC2Combine";
             this.chkVAC2Combine.Size = new System.Drawing.Size(117, 40);
             this.chkVAC2Combine.TabIndex = 88;
-            this.chkVAC2Combine.Text = "Combine VAC Input Channels";
-            this.toolTip1.SetToolTip(this.chkVAC2Combine, "When this feature is enabled, the left and right VAC channels are combined into t" +
-        "he DSP transmit channel (left).");
+            this.chkVAC2Combine.Text = "合并 VAC 输入声道";
+            this.toolTip1.SetToolTip(this.chkVAC2Combine, "启用此功能后，左右 VAC 声道将合并到 DSP 发射通道（左声道）。");
             // 
             // grpVAC2AutoEnable
             // 
@@ -26960,7 +26886,7 @@
             this.grpVAC2AutoEnable.Size = new System.Drawing.Size(224, 56);
             this.grpVAC2AutoEnable.TabIndex = 86;
             this.grpVAC2AutoEnable.TabStop = false;
-            this.grpVAC2AutoEnable.Text = "Auto Enable";
+            this.grpVAC2AutoEnable.Text = "自动启用";
             // 
             // chkVAC2AutoEnable
             // 
@@ -26969,9 +26895,8 @@
             this.chkVAC2AutoEnable.Name = "chkVAC2AutoEnable";
             this.chkVAC2AutoEnable.Size = new System.Drawing.Size(200, 32);
             this.chkVAC2AutoEnable.TabIndex = 0;
-            this.chkVAC2AutoEnable.Text = "Enable for Digital modes, Disable for all others";
-            this.toolTip1.SetToolTip(this.chkVAC2AutoEnable, "Click this button to automatically enable VAC when in Digital modes (DIGL, DIGU, " +
-        "DRM)");
+            this.chkVAC2AutoEnable.Text = "数字模式下启用，其他模式禁用";
+            this.toolTip1.SetToolTip(this.chkVAC2AutoEnable, "点击此按钮可在数字模式（DIGL、DIGU、DRM）下自动启用 VAC。");
             this.chkVAC2AutoEnable.CheckedChanged += new System.EventHandler(this.chkVAC2AutoEnable_CheckedChanged);
             // 
             // grpVAC2Gain
@@ -26985,7 +26910,7 @@
             this.grpVAC2Gain.Size = new System.Drawing.Size(96, 72);
             this.grpVAC2Gain.TabIndex = 85;
             this.grpVAC2Gain.TabStop = false;
-            this.grpVAC2Gain.Text = "Gain (dB)";
+            this.grpVAC2Gain.Text = "增益 (dB)";
             // 
             // lblVAC2GainTX
             // 
@@ -26994,7 +26919,7 @@
             this.lblVAC2GainTX.Name = "lblVAC2GainTX";
             this.lblVAC2GainTX.Size = new System.Drawing.Size(32, 16);
             this.lblVAC2GainTX.TabIndex = 39;
-            this.lblVAC2GainTX.Text = "TX:";
+            this.lblVAC2GainTX.Text = "发射:";
             // 
             // udVAC2GainTX
             // 
@@ -27018,7 +26943,7 @@
             this.udVAC2GainTX.Size = new System.Drawing.Size(40, 20);
             this.udVAC2GainTX.TabIndex = 38;
             this.udVAC2GainTX.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udVAC2GainTX, "Controls the gain on the audio coming from third party applications.");
+            this.toolTip1.SetToolTip(this.udVAC2GainTX, "控制来自第三方应用程序的音频增益。");
             this.udVAC2GainTX.Value = new decimal(new int[] {
             0,
             0,
@@ -27033,7 +26958,7 @@
             this.lblVAC2GainRX.Name = "lblVAC2GainRX";
             this.lblVAC2GainRX.Size = new System.Drawing.Size(24, 16);
             this.lblVAC2GainRX.TabIndex = 37;
-            this.lblVAC2GainRX.Text = "RX:";
+            this.lblVAC2GainRX.Text = "接收:";
             // 
             // udVAC2GainRX
             // 
@@ -27057,8 +26982,7 @@
             this.udVAC2GainRX.Size = new System.Drawing.Size(40, 20);
             this.udVAC2GainRX.TabIndex = 36;
             this.udVAC2GainRX.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udVAC2GainRX, "Controls the gain applied to the RX audio before it is sent to the third party ap" +
-        "plication.");
+            this.toolTip1.SetToolTip(this.udVAC2GainRX, "控制发送到第三方应用程序之前的接收音频增益。");
             this.udVAC2GainRX.Value = new decimal(new int[] {
             0,
             0,
@@ -27074,7 +26998,7 @@
             this.grpAudioStereo3.Size = new System.Drawing.Size(96, 39);
             this.grpAudioStereo3.TabIndex = 84;
             this.grpAudioStereo3.TabStop = false;
-            this.grpAudioStereo3.Text = "Mono/Stereo";
+            this.grpAudioStereo3.Text = "单声道/立体声";
             // 
             // chkAudioStereo3
             // 
@@ -27083,9 +27007,8 @@
             this.chkAudioStereo3.Name = "chkAudioStereo3";
             this.chkAudioStereo3.Size = new System.Drawing.Size(64, 16);
             this.chkAudioStereo3.TabIndex = 0;
-            this.chkAudioStereo3.Text = "Stereo";
-            this.toolTip1.SetToolTip(this.chkAudioStereo3, "Click this button if the third party software will open the Virtual Audio Cable i" +
-        "n 2 channel (stereo) mode.");
+            this.chkAudioStereo3.Text = "立体声";
+            this.toolTip1.SetToolTip(this.chkAudioStereo3, "如果第三方软件将以 2 声道（立体声）模式打开虚拟声卡（Virtual Audio Cable），请勾选此框。");
             this.chkAudioStereo3.CheckedChanged += new System.EventHandler(this.chkAudioStereo3_CheckedChanged);
             // 
             // grpVAC2LatencyManual
@@ -27109,7 +27032,7 @@
             this.grpVAC2LatencyManual.Size = new System.Drawing.Size(150, 155);
             this.grpVAC2LatencyManual.TabIndex = 83;
             this.grpVAC2LatencyManual.TabStop = false;
-            this.grpVAC2LatencyManual.Text = "Buffer Latency (ms)";
+            this.grpVAC2LatencyManual.Text = "缓冲延迟 (ms)";
             // 
             // labelTS369
             // 
@@ -27119,7 +27042,7 @@
             this.labelTS369.Name = "labelTS369";
             this.labelTS369.Size = new System.Drawing.Size(27, 13);
             this.labelTS369.TabIndex = 55;
-            this.labelTS369.Text = "Out:";
+            this.labelTS369.Text = "输出:";
             // 
             // labelTS370
             // 
@@ -27129,7 +27052,7 @@
             this.labelTS370.Name = "labelTS370";
             this.labelTS370.Size = new System.Drawing.Size(19, 13);
             this.labelTS370.TabIndex = 54;
-            this.labelTS370.Text = "In:";
+            this.labelTS370.Text = "输入:";
             // 
             // chkVAC2LatencyPAOutManual
             // 
@@ -27138,7 +27061,7 @@
             this.chkVAC2LatencyPAOutManual.Name = "chkVAC2LatencyPAOutManual";
             this.chkVAC2LatencyPAOutManual.Size = new System.Drawing.Size(64, 16);
             this.chkVAC2LatencyPAOutManual.TabIndex = 53;
-            this.chkVAC2LatencyPAOutManual.Text = "Manual";
+            this.chkVAC2LatencyPAOutManual.Text = "手动";
             this.chkVAC2LatencyPAOutManual.CheckedChanged += new System.EventHandler(this.chkVAC2LatencyPAOutManual_CheckedChanged);
             // 
             // udVAC2LatencyPAOut
@@ -27178,7 +27101,7 @@
             this.chkVAC2LatencyPAInManual.Name = "chkVAC2LatencyPAInManual";
             this.chkVAC2LatencyPAInManual.Size = new System.Drawing.Size(64, 16);
             this.chkVAC2LatencyPAInManual.TabIndex = 50;
-            this.chkVAC2LatencyPAInManual.Text = "Manual";
+            this.chkVAC2LatencyPAInManual.Text = "手动";
             this.chkVAC2LatencyPAInManual.CheckedChanged += new System.EventHandler(this.chkVAC2LatencyPAInManual_CheckedChanged);
             // 
             // udVAC2LatencyPAIn
@@ -27228,7 +27151,7 @@
             this.chkVAC2LatencyOutManual.Name = "chkVAC2LatencyOutManual";
             this.chkVAC2LatencyOutManual.Size = new System.Drawing.Size(64, 16);
             this.chkVAC2LatencyOutManual.TabIndex = 46;
-            this.chkVAC2LatencyOutManual.Text = "Manual";
+            this.chkVAC2LatencyOutManual.Text = "手动";
             this.chkVAC2LatencyOutManual.CheckedChanged += new System.EventHandler(this.chkVAC2LatencyOutManual_CheckedChanged);
             // 
             // udVAC2LatencyOut
@@ -27269,7 +27192,7 @@
             this.labelTS368.Name = "labelTS368";
             this.labelTS368.Size = new System.Drawing.Size(27, 13);
             this.labelTS368.TabIndex = 44;
-            this.labelTS368.Text = "Out:";
+            this.labelTS368.Text = "输出:";
             // 
             // labelTS367
             // 
@@ -27279,7 +27202,7 @@
             this.labelTS367.Name = "labelTS367";
             this.labelTS367.Size = new System.Drawing.Size(19, 13);
             this.labelTS367.TabIndex = 43;
-            this.labelTS367.Text = "In:";
+            this.labelTS367.Text = "输入:";
             // 
             // labelTS366
             // 
@@ -27289,7 +27212,7 @@
             this.labelTS366.Name = "labelTS366";
             this.labelTS366.Size = new System.Drawing.Size(57, 13);
             this.labelTS366.TabIndex = 42;
-            this.labelTS366.Text = "RingBuffer";
+            this.labelTS366.Text = "环形缓冲区";
             // 
             // chkVAC2LatencyManual
             // 
@@ -27298,7 +27221,7 @@
             this.chkVAC2LatencyManual.Name = "chkVAC2LatencyManual";
             this.chkVAC2LatencyManual.Size = new System.Drawing.Size(64, 16);
             this.chkVAC2LatencyManual.TabIndex = 5;
-            this.chkVAC2LatencyManual.Text = "Manual";
+            this.chkVAC2LatencyManual.Text = "手动";
             this.chkVAC2LatencyManual.CheckedChanged += new System.EventHandler(this.chkVAC2LatencyManual_CheckedChanged);
             // 
             // udVAC2Latency
@@ -27339,7 +27262,7 @@
             this.grpAudioSampleRate3.Size = new System.Drawing.Size(96, 56);
             this.grpAudioSampleRate3.TabIndex = 82;
             this.grpAudioSampleRate3.TabStop = false;
-            this.grpAudioSampleRate3.Text = "Sample Rate";
+            this.grpAudioSampleRate3.Text = "采样率";
             // 
             // comboAudioSampleRate3
             // 
@@ -27360,8 +27283,7 @@
             this.comboAudioSampleRate3.Name = "comboAudioSampleRate3";
             this.comboAudioSampleRate3.Size = new System.Drawing.Size(64, 21);
             this.comboAudioSampleRate3.TabIndex = 60;
-            this.toolTip1.SetToolTip(this.comboAudioSampleRate3, "Samples per second.  Set the sampling rate of the VAC 2 I/O channel.  SR is deter" +
-        "mined by VAC driver type. Use WDM-KS for maximum sampling rate.");
+            this.toolTip1.SetToolTip(this.comboAudioSampleRate3, "每秒采样数。设置 VAC 2 I/O 通道的采样率。采样率由 VAC 驱动类型决定。使用 WDM-KS 可获得最高采样率。");
             this.comboAudioSampleRate3.SelectedIndexChanged += new System.EventHandler(this.comboAudioSampleRate3_SelectedIndexChanged);
             // 
             // grpAudioBuffer3
@@ -27372,7 +27294,7 @@
             this.grpAudioBuffer3.Size = new System.Drawing.Size(96, 56);
             this.grpAudioBuffer3.TabIndex = 81;
             this.grpAudioBuffer3.TabStop = false;
-            this.grpAudioBuffer3.Text = "Buffer Size";
+            this.grpAudioBuffer3.Text = "缓冲区大小";
             // 
             // comboAudioBuffer3
             // 
@@ -27389,7 +27311,7 @@
             this.comboAudioBuffer3.Name = "comboAudioBuffer3";
             this.comboAudioBuffer3.Size = new System.Drawing.Size(56, 21);
             this.comboAudioBuffer3.TabIndex = 58;
-            this.toolTip1.SetToolTip(this.comboAudioBuffer3, "Samples per buffer.");
+            this.toolTip1.SetToolTip(this.comboAudioBuffer3, "每缓冲区采样数。");
             this.comboAudioBuffer3.SelectedIndexChanged += new System.EventHandler(this.comboAudioBuffer3_SelectedIndexChanged);
             // 
             // grpAudioDetails3
@@ -27405,7 +27327,7 @@
             this.grpAudioDetails3.Size = new System.Drawing.Size(224, 100);
             this.grpAudioDetails3.TabIndex = 80;
             this.grpAudioDetails3.TabStop = false;
-            this.grpAudioDetails3.Text = "Virtual Audio Cable Setup";
+            this.grpAudioDetails3.Text = "虚拟声卡设置";
             // 
             // lblAudioOutput3
             // 
@@ -27414,7 +27336,7 @@
             this.lblAudioOutput3.Name = "lblAudioOutput3";
             this.lblAudioOutput3.Size = new System.Drawing.Size(48, 16);
             this.lblAudioOutput3.TabIndex = 35;
-            this.lblAudioOutput3.Text = "Output:";
+            this.lblAudioOutput3.Text = "输出:";
             // 
             // comboAudioOutput3
             // 
@@ -27426,7 +27348,7 @@
             this.comboAudioOutput3.Name = "comboAudioOutput3";
             this.comboAudioOutput3.Size = new System.Drawing.Size(160, 21);
             this.comboAudioOutput3.TabIndex = 34;
-            this.toolTip1.SetToolTip(this.comboAudioOutput3, "Output Audio Device");
+            this.toolTip1.SetToolTip(this.comboAudioOutput3, "输出音频设备");
             this.comboAudioOutput3.SelectedIndexChanged += new System.EventHandler(this.comboAudioOutput3_SelectedIndexChanged);
             // 
             // lblAudioInput3
@@ -27436,7 +27358,7 @@
             this.lblAudioInput3.Name = "lblAudioInput3";
             this.lblAudioInput3.Size = new System.Drawing.Size(40, 16);
             this.lblAudioInput3.TabIndex = 33;
-            this.lblAudioInput3.Text = "Input:";
+            this.lblAudioInput3.Text = "输入:";
             // 
             // lblAudioDriver3
             // 
@@ -27445,7 +27367,7 @@
             this.lblAudioDriver3.Name = "lblAudioDriver3";
             this.lblAudioDriver3.Size = new System.Drawing.Size(40, 16);
             this.lblAudioDriver3.TabIndex = 32;
-            this.lblAudioDriver3.Text = "Driver:";
+            this.lblAudioDriver3.Text = "驱动:";
             // 
             // comboAudioInput3
             // 
@@ -27456,7 +27378,7 @@
             this.comboAudioInput3.Name = "comboAudioInput3";
             this.comboAudioInput3.Size = new System.Drawing.Size(160, 21);
             this.comboAudioInput3.TabIndex = 28;
-            this.toolTip1.SetToolTip(this.comboAudioInput3, "Input Audio Device");
+            this.toolTip1.SetToolTip(this.comboAudioInput3, "输入音频设备");
             this.comboAudioInput3.SelectedIndexChanged += new System.EventHandler(this.comboAudioInput3_SelectedIndexChanged);
             // 
             // comboAudioDriver3
@@ -27468,7 +27390,7 @@
             this.comboAudioDriver3.Name = "comboAudioDriver3";
             this.comboAudioDriver3.Size = new System.Drawing.Size(160, 21);
             this.comboAudioDriver3.TabIndex = 26;
-            this.toolTip1.SetToolTip(this.comboAudioDriver3, "Sound Card Driver Selection");
+            this.toolTip1.SetToolTip(this.comboAudioDriver3, "声卡驱动选择");
             this.comboAudioDriver3.SelectedIndexChanged += new System.EventHandler(this.comboAudioDriver3_SelectedIndexChanged);
             // 
             // chkVAC2Enable
@@ -27478,8 +27400,8 @@
             this.chkVAC2Enable.Name = "chkVAC2Enable";
             this.chkVAC2Enable.Size = new System.Drawing.Size(99, 24);
             this.chkVAC2Enable.TabIndex = 79;
-            this.chkVAC2Enable.Text = "Enable VAC 2";
-            this.toolTip1.SetToolTip(this.chkVAC2Enable, "Enable Virtual Audio Cable for VAC 2 (RX2 Only)");
+            this.chkVAC2Enable.Text = "启用 VAC 2";
+            this.toolTip1.SetToolTip(this.chkVAC2Enable, "为 VAC 2 启用虚拟声卡（仅限 RX2）");
             this.chkVAC2Enable.CheckedChanged += new System.EventHandler(this.chkVAC2Enable_CheckedChanged);
             // 
             // tpAudioOptions
@@ -27493,7 +27415,7 @@
             this.tpAudioOptions.Padding = new System.Windows.Forms.Padding(3);
             this.tpAudioOptions.Size = new System.Drawing.Size(712, 404);
             this.tpAudioOptions.TabIndex = 4;
-            this.tpAudioOptions.Text = "Options";
+            this.tpAudioOptions.Text = "选项";
             // 
             // chkDisableRearSpeakerJacksAudioAmplifier
             // 
@@ -27503,8 +27425,8 @@
             this.chkDisableRearSpeakerJacksAudioAmplifier.Name = "chkDisableRearSpeakerJacksAudioAmplifier";
             this.chkDisableRearSpeakerJacksAudioAmplifier.Size = new System.Drawing.Size(239, 17);
             this.chkDisableRearSpeakerJacksAudioAmplifier.TabIndex = 2;
-            this.chkDisableRearSpeakerJacksAudioAmplifier.Text = "Disable audio amplifier (rear speaker sockets)";
-            this.toolTip1.SetToolTip(this.chkDisableRearSpeakerJacksAudioAmplifier, "Disable the internal audio amplifer. This is only available on 7000/8000\'s");
+            this.chkDisableRearSpeakerJacksAudioAmplifier.Text = "禁用音频放大器（后部扬声器插座）";
+            this.toolTip1.SetToolTip(this.chkDisableRearSpeakerJacksAudioAmplifier, "禁用内部音频放大器。仅 7000/8000 机型可用");
             this.chkDisableRearSpeakerJacksAudioAmplifier.UseVisualStyleBackColor = true;
             this.chkDisableRearSpeakerJacksAudioAmplifier.CheckedChanged += new System.EventHandler(this.chkDisableRearSpeakerJacksAudioAmplifier_CheckedChanged);
             // 
@@ -27516,9 +27438,8 @@
             this.chkNoFadeOverUnderWarning.Name = "chkNoFadeOverUnderWarning";
             this.chkNoFadeOverUnderWarning.Size = new System.Drawing.Size(184, 17);
             this.chkNoFadeOverUnderWarning.TabIndex = 1;
-            this.chkNoFadeOverUnderWarning.Text = "Overflow/Underflow click to clear";
-            this.toolTip1.SetToolTip(this.chkNoFadeOverUnderWarning, "You will need to click to clear any overflow / underflow VAC warning on the main " +
-        "UI (below the VAC buttons)");
+            this.chkNoFadeOverUnderWarning.Text = "溢出/欠载 点击清除";
+            this.toolTip1.SetToolTip(this.chkNoFadeOverUnderWarning, "需要点击以清除主界面（VAC 按钮下方）的任何 VAC 溢出/欠载警告。");
             this.chkNoFadeOverUnderWarning.UseVisualStyleBackColor = true;
             this.chkNoFadeOverUnderWarning.CheckedChanged += new System.EventHandler(this.chkNoFadeOverUnderWarning_CheckedChanged);
             // 
@@ -27530,8 +27451,8 @@
             this.chkAFSlidersMute.Name = "chkAFSlidersMute";
             this.chkAFSlidersMute.Size = new System.Drawing.Size(125, 17);
             this.chkAFSlidersMute.TabIndex = 0;
-            this.chkAFSlidersMute.Text = "RX AF slider un-mute";
-            this.toolTip1.SetToolTip(this.chkAFSlidersMute, "Moving AF sliders will un-mute");
+            this.chkAFSlidersMute.Text = "RX AF 滑块取消静音";
+            this.toolTip1.SetToolTip(this.chkAFSlidersMute, "移动 AF 滑块将取消静音");
             this.chkAFSlidersMute.UseVisualStyleBackColor = true;
             this.chkAFSlidersMute.CheckedChanged += new System.EventHandler(this.chkAFSlidersMute_CheckedChanged);
             // 
@@ -27546,7 +27467,7 @@
             this.tpAdvancedAudio.Padding = new System.Windows.Forms.Padding(3);
             this.tpAdvancedAudio.Size = new System.Drawing.Size(712, 404);
             this.tpAdvancedAudio.TabIndex = 3;
-            this.tpAdvancedAudio.Text = "Advanced";
+            this.tpAdvancedAudio.Text = "高级";
             // 
             // lblAdvancedAudioWarning
             // 
@@ -27557,8 +27478,7 @@
             this.lblAdvancedAudioWarning.Name = "lblAdvancedAudioWarning";
             this.lblAdvancedAudioWarning.Size = new System.Drawing.Size(593, 16);
             this.lblAdvancedAudioWarning.TabIndex = 93;
-            this.lblAdvancedAudioWarning.Text = "WARNING: these settings may cause undesirable side effects if changed from defaul" +
-    "t";
+            this.lblAdvancedAudioWarning.Text = "警告：这些设置若偏离默认值可能会产生不良副作用";
             // 
             // grpVAC2ResamplerAdvanced
             // 
@@ -27599,7 +27519,7 @@
             this.grpVAC2ResamplerAdvanced.Size = new System.Drawing.Size(346, 337);
             this.grpVAC2ResamplerAdvanced.TabIndex = 92;
             this.grpVAC2ResamplerAdvanced.TabStop = false;
-            this.grpVAC2ResamplerAdvanced.Text = "VAC2 Resampler (Advanced)";
+            this.grpVAC2ResamplerAdvanced.Text = "VAC2 重采样器（高级）";
             // 
             // chkVAC2OldVarOut
             // 
@@ -27609,7 +27529,7 @@
             this.chkVAC2OldVarOut.Name = "chkVAC2OldVarOut";
             this.chkVAC2OldVarOut.Size = new System.Drawing.Size(67, 17);
             this.chkVAC2OldVarOut.TabIndex = 100;
-            this.chkVAC2OldVarOut.Text = "Old VAR";
+            this.chkVAC2OldVarOut.Text = "旧 VAR";
             this.chkVAC2OldVarOut.UseVisualStyleBackColor = true;
             this.chkVAC2OldVarOut.CheckedChanged += new System.EventHandler(this.chkVAC2OldVarOut_CheckedChanged);
             // 
@@ -27621,7 +27541,7 @@
             this.chkVAC2OldVarIn.Name = "chkVAC2OldVarIn";
             this.chkVAC2OldVarIn.Size = new System.Drawing.Size(67, 17);
             this.chkVAC2OldVarIn.TabIndex = 99;
-            this.chkVAC2OldVarIn.Text = "Old VAR";
+            this.chkVAC2OldVarIn.Text = "旧 VAR";
             this.chkVAC2OldVarIn.UseVisualStyleBackColor = true;
             this.chkVAC2OldVarIn.CheckedChanged += new System.EventHandler(this.chkVAC2OldVarIn_CheckedChanged);
             // 
@@ -27733,7 +27653,7 @@
             this.labelTS542.Name = "labelTS542";
             this.labelTS542.Size = new System.Drawing.Size(93, 13);
             this.labelTS542.TabIndex = 92;
-            this.labelTS542.Text = "FF Moving Av Min";
+            this.labelTS542.Text = "前馈滑动平均最小值";
             this.labelTS542.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // udVAC2PropMaxOut
@@ -27802,7 +27722,7 @@
             this.labelTS543.Name = "labelTS543";
             this.labelTS543.Size = new System.Drawing.Size(103, 13);
             this.labelTS543.TabIndex = 89;
-            this.labelTS543.Text = "Prop Feedback Max";
+            this.labelTS543.Text = "比例反馈最大值";
             this.labelTS543.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // labelTS544
@@ -27813,7 +27733,7 @@
             this.labelTS544.Name = "labelTS544";
             this.labelTS544.Size = new System.Drawing.Size(103, 13);
             this.labelTS544.TabIndex = 88;
-            this.labelTS544.Text = "On VAC Enable Use";
+            this.labelTS544.Text = "VAC 启用时使用";
             this.labelTS544.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // udVAC2FFAlphaOut
@@ -27982,7 +27902,7 @@
             this.labelTS546.Name = "labelTS546";
             this.labelTS546.Size = new System.Drawing.Size(96, 13);
             this.labelTS546.TabIndex = 81;
-            this.labelTS546.Text = "FF Moving Av Max";
+            this.labelTS546.Text = "前馈滑动平均最大值";
             this.labelTS546.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // udVAC2PropMinIn
@@ -28022,7 +27942,7 @@
             this.labelTS547.Name = "labelTS547";
             this.labelTS547.Size = new System.Drawing.Size(100, 13);
             this.labelTS547.TabIndex = 79;
-            this.labelTS547.Text = "Prop Feedback Min";
+            this.labelTS547.Text = "比例反馈最小值";
             this.labelTS547.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // udVAC2SlewTimeOut
@@ -28063,7 +27983,7 @@
             this.labelTS95.Name = "labelTS95";
             this.labelTS95.Size = new System.Drawing.Size(30, 13);
             this.labelTS95.TabIndex = 66;
-            this.labelTS95.Text = "OUT";
+            this.labelTS95.Text = "输出";
             // 
             // udVAC2FeedbackGainOut
             // 
@@ -28103,7 +28023,7 @@
             this.labelTS96.Name = "labelTS96";
             this.labelTS96.Size = new System.Drawing.Size(18, 13);
             this.labelTS96.TabIndex = 65;
-            this.labelTS96.Text = "IN";
+            this.labelTS96.Text = "输入";
             // 
             // btnVAC2AdvancedDefault
             // 
@@ -28113,8 +28033,8 @@
             this.btnVAC2AdvancedDefault.Selectable = true;
             this.btnVAC2AdvancedDefault.Size = new System.Drawing.Size(65, 25);
             this.btnVAC2AdvancedDefault.TabIndex = 5;
-            this.btnVAC2AdvancedDefault.Text = "Default";
-            this.toolTip1.SetToolTip(this.btnVAC2AdvancedDefault, "VAC2 Reset all avanced settings to default");
+            this.btnVAC2AdvancedDefault.Text = "默认";
+            this.toolTip1.SetToolTip(this.btnVAC2AdvancedDefault, "VAC2 将所有高级设置重置为默认");
             this.btnVAC2AdvancedDefault.UseVisualStyleBackColor = true;
             this.btnVAC2AdvancedDefault.Click += new System.EventHandler(this.btnVAC2AdvancedDefault_Click);
             // 
@@ -28126,7 +28046,7 @@
             this.labelTS530.Name = "labelTS530";
             this.labelTS530.Size = new System.Drawing.Size(29, 13);
             this.labelTS530.TabIndex = 61;
-            this.labelTS530.Text = "secs";
+            this.labelTS530.Text = "秒";
             // 
             // udVAC2SlewTimeIn
             // 
@@ -28166,7 +28086,7 @@
             this.labelTS537.Name = "labelTS537";
             this.labelTS537.Size = new System.Drawing.Size(56, 13);
             this.labelTS537.TabIndex = 60;
-            this.labelTS537.Text = "Slew Time";
+            this.labelTS537.Text = "压摆时间";
             this.labelTS537.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // udVAC2FeedbackGainIn
@@ -28207,7 +28127,7 @@
             this.labelTS538.Name = "labelTS538";
             this.labelTS538.Size = new System.Drawing.Size(80, 13);
             this.labelTS538.TabIndex = 59;
-            this.labelTS538.Text = "Feedback Gain";
+            this.labelTS538.Text = "反馈增益";
             this.labelTS538.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // grpVAC1ResamplerAdvanced
@@ -28256,7 +28176,7 @@
             this.grpVAC1ResamplerAdvanced.Size = new System.Drawing.Size(346, 337);
             this.grpVAC1ResamplerAdvanced.TabIndex = 85;
             this.grpVAC1ResamplerAdvanced.TabStop = false;
-            this.grpVAC1ResamplerAdvanced.Text = "VAC1 Resampler (Advanced)";
+            this.grpVAC1ResamplerAdvanced.Text = "VAC1 重采样器（高级）";
             // 
             // chkVAC1OldVarOut
             // 
@@ -28266,8 +28186,8 @@
             this.chkVAC1OldVarOut.Name = "chkVAC1OldVarOut";
             this.chkVAC1OldVarOut.Size = new System.Drawing.Size(67, 17);
             this.chkVAC1OldVarOut.TabIndex = 78;
-            this.chkVAC1OldVarOut.Text = "Old VAR";
-            this.toolTip1.SetToolTip(this.chkVAC1OldVarOut, "VAC1 initialise the ring with previous calculated VAR ratio");
+            this.chkVAC1OldVarOut.Text = "旧 VAR";
+            this.toolTip1.SetToolTip(this.chkVAC1OldVarOut, "VAC1 用之前计算的 VAR 比率初始化环");
             this.chkVAC1OldVarOut.UseVisualStyleBackColor = true;
             this.chkVAC1OldVarOut.CheckedChanged += new System.EventHandler(this.chkVAC1OldVarOut_CheckedChanged);
             // 
@@ -28279,8 +28199,8 @@
             this.chkVAC1OldVarIn.Name = "chkVAC1OldVarIn";
             this.chkVAC1OldVarIn.Size = new System.Drawing.Size(67, 17);
             this.chkVAC1OldVarIn.TabIndex = 77;
-            this.chkVAC1OldVarIn.Text = "Old VAR";
-            this.toolTip1.SetToolTip(this.chkVAC1OldVarIn, "VAC1 initialise the ring with previous calculated VAR ratio");
+            this.chkVAC1OldVarIn.Text = "旧 VAR";
+            this.toolTip1.SetToolTip(this.chkVAC1OldVarIn, "VAC1 用之前计算的 VAR 比率初始化环");
             this.chkVAC1OldVarIn.UseVisualStyleBackColor = true;
             this.chkVAC1OldVarIn.CheckedChanged += new System.EventHandler(this.chkVAC1OldVarIn_CheckedChanged);
             // 
@@ -28333,7 +28253,7 @@
             this.pbVAC1FFAlphaInfo.Size = new System.Drawing.Size(20, 20);
             this.pbVAC1FFAlphaInfo.TabIndex = 71;
             this.pbVAC1FFAlphaInfo.TabStop = false;
-            this.toolTip1.SetToolTip(this.pbVAC1FFAlphaInfo, "Click for info");
+            this.toolTip1.SetToolTip(this.pbVAC1FFAlphaInfo, "点击查看信息");
             this.pbVAC1FFAlphaInfo.Click += new System.EventHandler(this.pbVAC1FFAlphaInfo_Click);
             // 
             // pbVAC1FFMaxInfo
@@ -28343,7 +28263,7 @@
             this.pbVAC1FFMaxInfo.Size = new System.Drawing.Size(20, 20);
             this.pbVAC1FFMaxInfo.TabIndex = 70;
             this.pbVAC1FFMaxInfo.TabStop = false;
-            this.toolTip1.SetToolTip(this.pbVAC1FFMaxInfo, "Click for info");
+            this.toolTip1.SetToolTip(this.pbVAC1FFMaxInfo, "点击查看信息");
             this.pbVAC1FFMaxInfo.Click += new System.EventHandler(this.pbVAC1FFMaxInfo_Click);
             // 
             // pbVAC1FFMinInfo
@@ -28353,7 +28273,7 @@
             this.pbVAC1FFMinInfo.Size = new System.Drawing.Size(20, 20);
             this.pbVAC1FFMinInfo.TabIndex = 69;
             this.pbVAC1FFMinInfo.TabStop = false;
-            this.toolTip1.SetToolTip(this.pbVAC1FFMinInfo, "Click for info");
+            this.toolTip1.SetToolTip(this.pbVAC1FFMinInfo, "点击查看信息");
             this.pbVAC1FFMinInfo.Click += new System.EventHandler(this.pbVAC1FFMinInfo_Click);
             // 
             // pbVAC1PropFeedbackMaxInfo
@@ -28363,7 +28283,7 @@
             this.pbVAC1PropFeedbackMaxInfo.Size = new System.Drawing.Size(20, 20);
             this.pbVAC1PropFeedbackMaxInfo.TabIndex = 68;
             this.pbVAC1PropFeedbackMaxInfo.TabStop = false;
-            this.toolTip1.SetToolTip(this.pbVAC1PropFeedbackMaxInfo, "Click for info");
+            this.toolTip1.SetToolTip(this.pbVAC1PropFeedbackMaxInfo, "点击查看信息");
             this.pbVAC1PropFeedbackMaxInfo.Click += new System.EventHandler(this.pbVAC1PropFeedbackMaxInfo_Click);
             // 
             // pbVAC1PropFeedbackMinInfo
@@ -28373,7 +28293,7 @@
             this.pbVAC1PropFeedbackMinInfo.Size = new System.Drawing.Size(20, 20);
             this.pbVAC1PropFeedbackMinInfo.TabIndex = 67;
             this.pbVAC1PropFeedbackMinInfo.TabStop = false;
-            this.toolTip1.SetToolTip(this.pbVAC1PropFeedbackMinInfo, "Click for info");
+            this.toolTip1.SetToolTip(this.pbVAC1PropFeedbackMinInfo, "点击查看信息");
             this.pbVAC1PropFeedbackMinInfo.Click += new System.EventHandler(this.pbVAC1PropFeedbackMinInfo_Click);
             // 
             // udVAC1FFMinOut
@@ -28398,7 +28318,7 @@
             this.udVAC1FFMinOut.Size = new System.Drawing.Size(84, 20);
             this.udVAC1FFMinOut.TabIndex = 66;
             this.udVAC1FFMinOut.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udVAC1FFMinOut, "VAC1 Feed-forward minimum");
+            this.toolTip1.SetToolTip(this.udVAC1FFMinOut, "VAC1 前馈最小值");
             this.udVAC1FFMinOut.Value = new decimal(new int[] {
             0,
             0,
@@ -28428,7 +28348,7 @@
             this.udVAC1FFMinIn.Size = new System.Drawing.Size(84, 20);
             this.udVAC1FFMinIn.TabIndex = 65;
             this.udVAC1FFMinIn.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udVAC1FFMinIn, "VAC1 Feed-forward minumum");
+            this.toolTip1.SetToolTip(this.udVAC1FFMinIn, "VAC1 前馈最小值");
             this.udVAC1FFMinIn.Value = new decimal(new int[] {
             0,
             0,
@@ -28444,7 +28364,7 @@
             this.labelTS102.Name = "labelTS102";
             this.labelTS102.Size = new System.Drawing.Size(93, 13);
             this.labelTS102.TabIndex = 64;
-            this.labelTS102.Text = "FF Moving Av Min";
+            this.labelTS102.Text = "前馈滑动平均最小值";
             this.labelTS102.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // udVAC1PropMaxOut
@@ -28469,7 +28389,7 @@
             this.udVAC1PropMaxOut.Size = new System.Drawing.Size(84, 20);
             this.udVAC1PropMaxOut.TabIndex = 63;
             this.udVAC1PropMaxOut.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udVAC1PropMaxOut, "VAC1 proportional maximum");
+            this.toolTip1.SetToolTip(this.udVAC1PropMaxOut, "VAC1 比例最大值");
             this.udVAC1PropMaxOut.Value = new decimal(new int[] {
             0,
             0,
@@ -28499,7 +28419,7 @@
             this.udVAC1PropMaxIn.Size = new System.Drawing.Size(84, 20);
             this.udVAC1PropMaxIn.TabIndex = 62;
             this.udVAC1PropMaxIn.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udVAC1PropMaxIn, "VAC1 proportional maximum");
+            this.toolTip1.SetToolTip(this.udVAC1PropMaxIn, "VAC1 比例最大值");
             this.udVAC1PropMaxIn.Value = new decimal(new int[] {
             0,
             0,
@@ -28515,7 +28435,7 @@
             this.labelTS100.Name = "labelTS100";
             this.labelTS100.Size = new System.Drawing.Size(103, 13);
             this.labelTS100.TabIndex = 61;
-            this.labelTS100.Text = "Prop Feedback Max";
+            this.labelTS100.Text = "比例反馈最大值";
             this.labelTS100.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // labelTS94
@@ -28526,7 +28446,7 @@
             this.labelTS94.Name = "labelTS94";
             this.labelTS94.Size = new System.Drawing.Size(103, 13);
             this.labelTS94.TabIndex = 60;
-            this.labelTS94.Text = "On VAC Enable Use";
+            this.labelTS94.Text = "VAC 启用时使用";
             this.labelTS94.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // labelTS99
@@ -28537,7 +28457,7 @@
             this.labelTS99.Name = "labelTS99";
             this.labelTS99.Size = new System.Drawing.Size(30, 13);
             this.labelTS99.TabIndex = 57;
-            this.labelTS99.Text = "OUT";
+            this.labelTS99.Text = "输出";
             // 
             // labelTS98
             // 
@@ -28547,7 +28467,7 @@
             this.labelTS98.Name = "labelTS98";
             this.labelTS98.Size = new System.Drawing.Size(18, 13);
             this.labelTS98.TabIndex = 56;
-            this.labelTS98.Text = "IN";
+            this.labelTS98.Text = "输入";
             // 
             // udVAC1FFAlphaOut
             // 
@@ -28572,7 +28492,7 @@
             this.udVAC1FFAlphaOut.Size = new System.Drawing.Size(84, 20);
             this.udVAC1FFAlphaOut.TabIndex = 55;
             this.udVAC1FFAlphaOut.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udVAC1FFAlphaOut, "VAC1 Feed-forward smoothing");
+            this.toolTip1.SetToolTip(this.udVAC1FFAlphaOut, "VAC1 前馈平滑");
             this.udVAC1FFAlphaOut.Value = new decimal(new int[] {
             0,
             0,
@@ -28603,7 +28523,7 @@
             this.udVAC1FFAlphaIn.Size = new System.Drawing.Size(84, 20);
             this.udVAC1FFAlphaIn.TabIndex = 54;
             this.udVAC1FFAlphaIn.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udVAC1FFAlphaIn, "VAC1 Feed-forward smoothing");
+            this.toolTip1.SetToolTip(this.udVAC1FFAlphaIn, "VAC1 前馈平滑");
             this.udVAC1FFAlphaIn.Value = new decimal(new int[] {
             0,
             0,
@@ -28633,7 +28553,7 @@
             this.udVAC1FFMaxOut.Size = new System.Drawing.Size(84, 20);
             this.udVAC1FFMaxOut.TabIndex = 52;
             this.udVAC1FFMaxOut.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udVAC1FFMaxOut, "VAC1 Feed-forward maximum");
+            this.toolTip1.SetToolTip(this.udVAC1FFMaxOut, "VAC1 前馈最大值");
             this.udVAC1FFMaxOut.Value = new decimal(new int[] {
             0,
             0,
@@ -28663,7 +28583,7 @@
             this.udVAC1FFMaxIn.Size = new System.Drawing.Size(84, 20);
             this.udVAC1FFMaxIn.TabIndex = 50;
             this.udVAC1FFMaxIn.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udVAC1FFMaxIn, "VAC1 Feed-forward maximum");
+            this.toolTip1.SetToolTip(this.udVAC1FFMaxIn, "VAC1 前馈最大值");
             this.udVAC1FFMaxIn.Value = new decimal(new int[] {
             0,
             0,
@@ -28704,7 +28624,7 @@
             this.udVAC1PropMinOut.Size = new System.Drawing.Size(84, 20);
             this.udVAC1PropMinOut.TabIndex = 48;
             this.udVAC1PropMinOut.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udVAC1PropMinOut, "VAC1 proportional minimum");
+            this.toolTip1.SetToolTip(this.udVAC1PropMinOut, "VAC1 比例最小值");
             this.udVAC1PropMinOut.Value = new decimal(new int[] {
             0,
             0,
@@ -28720,7 +28640,7 @@
             this.labelTS535.Name = "labelTS535";
             this.labelTS535.Size = new System.Drawing.Size(96, 13);
             this.labelTS535.TabIndex = 47;
-            this.labelTS535.Text = "FF Moving Av Max";
+            this.labelTS535.Text = "前馈滑动平均最大值";
             this.labelTS535.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // udVAC1PropMinIn
@@ -28745,7 +28665,7 @@
             this.udVAC1PropMinIn.Size = new System.Drawing.Size(84, 20);
             this.udVAC1PropMinIn.TabIndex = 46;
             this.udVAC1PropMinIn.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udVAC1PropMinIn, "VAC1 proportional minimum");
+            this.toolTip1.SetToolTip(this.udVAC1PropMinIn, "VAC1 比例最小值");
             this.udVAC1PropMinIn.Value = new decimal(new int[] {
             0,
             0,
@@ -28761,7 +28681,7 @@
             this.labelTS533.Name = "labelTS533";
             this.labelTS533.Size = new System.Drawing.Size(100, 13);
             this.labelTS533.TabIndex = 45;
-            this.labelTS533.Text = "Prop Feedback Min";
+            this.labelTS533.Text = "比例反馈最小值";
             this.labelTS533.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // udVAC1SlewTimeOut
@@ -28787,7 +28707,7 @@
             this.udVAC1SlewTimeOut.Size = new System.Drawing.Size(84, 20);
             this.udVAC1SlewTimeOut.TabIndex = 43;
             this.udVAC1SlewTimeOut.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udVAC1SlewTimeOut, "VAC1 resampler slew time in seconds");
+            this.toolTip1.SetToolTip(this.udVAC1SlewTimeOut, "VAC1 重采样器压摆时间（秒）");
             this.udVAC1SlewTimeOut.Value = new decimal(new int[] {
             3,
             0,
@@ -28818,7 +28738,7 @@
             this.udVAC1FeedbackGainOut.Size = new System.Drawing.Size(84, 20);
             this.udVAC1FeedbackGainOut.TabIndex = 42;
             this.udVAC1FeedbackGainOut.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udVAC1FeedbackGainOut, "VAC1 resampler proportional feedback gain");
+            this.toolTip1.SetToolTip(this.udVAC1FeedbackGainOut, "VAC1 重采样器比例反馈增益");
             this.udVAC1FeedbackGainOut.Value = new decimal(new int[] {
             4,
             0,
@@ -28833,7 +28753,7 @@
             this.pbVAC1SlewTimeInfo.Size = new System.Drawing.Size(20, 20);
             this.pbVAC1SlewTimeInfo.TabIndex = 39;
             this.pbVAC1SlewTimeInfo.TabStop = false;
-            this.toolTip1.SetToolTip(this.pbVAC1SlewTimeInfo, "Click for info");
+            this.toolTip1.SetToolTip(this.pbVAC1SlewTimeInfo, "点击查看信息");
             this.pbVAC1SlewTimeInfo.Click += new System.EventHandler(this.pbVAC1SlewTimeInfo_Click);
             // 
             // pbVAC1FeedbackGainInfo
@@ -28843,7 +28763,7 @@
             this.pbVAC1FeedbackGainInfo.Size = new System.Drawing.Size(20, 20);
             this.pbVAC1FeedbackGainInfo.TabIndex = 38;
             this.pbVAC1FeedbackGainInfo.TabStop = false;
-            this.toolTip1.SetToolTip(this.pbVAC1FeedbackGainInfo, "Click for info");
+            this.toolTip1.SetToolTip(this.pbVAC1FeedbackGainInfo, "点击查看信息");
             this.pbVAC1FeedbackGainInfo.Click += new System.EventHandler(this.pbVAC1FeedbackGainInfo_Click);
             // 
             // btnVAC1AdvancedDefault
@@ -28854,8 +28774,8 @@
             this.btnVAC1AdvancedDefault.Selectable = true;
             this.btnVAC1AdvancedDefault.Size = new System.Drawing.Size(65, 25);
             this.btnVAC1AdvancedDefault.TabIndex = 5;
-            this.btnVAC1AdvancedDefault.Text = "Default";
-            this.toolTip1.SetToolTip(this.btnVAC1AdvancedDefault, "VAC1 Reset all avanced settings to default");
+            this.btnVAC1AdvancedDefault.Text = "默认";
+            this.toolTip1.SetToolTip(this.btnVAC1AdvancedDefault, "VAC1 将所有高级设置重置为默认");
             this.btnVAC1AdvancedDefault.UseVisualStyleBackColor = true;
             this.btnVAC1AdvancedDefault.Click += new System.EventHandler(this.btnVAC1AdvancedDefault_Click);
             // 
@@ -28867,7 +28787,7 @@
             this.labelTS93.Name = "labelTS93";
             this.labelTS93.Size = new System.Drawing.Size(29, 13);
             this.labelTS93.TabIndex = 4;
-            this.labelTS93.Text = "secs";
+            this.labelTS93.Text = "秒";
             // 
             // udVAC1SlewTimeIn
             // 
@@ -28892,7 +28812,7 @@
             this.udVAC1SlewTimeIn.Size = new System.Drawing.Size(84, 20);
             this.udVAC1SlewTimeIn.TabIndex = 3;
             this.udVAC1SlewTimeIn.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udVAC1SlewTimeIn, "VAC1 resampler slew time in seconds");
+            this.toolTip1.SetToolTip(this.udVAC1SlewTimeIn, "VAC1 重采样器压摆时间（秒）");
             this.udVAC1SlewTimeIn.Value = new decimal(new int[] {
             3,
             0,
@@ -28923,7 +28843,7 @@
             this.udVAC1FeedbackGainIn.Size = new System.Drawing.Size(84, 20);
             this.udVAC1FeedbackGainIn.TabIndex = 2;
             this.udVAC1FeedbackGainIn.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udVAC1FeedbackGainIn, "VAC1 resampler proportional feedback gain");
+            this.toolTip1.SetToolTip(this.udVAC1FeedbackGainIn, "VAC1 重采样器比例反馈增益");
             this.udVAC1FeedbackGainIn.Value = new decimal(new int[] {
             4,
             0,
@@ -28939,7 +28859,7 @@
             this.labelTS54.Name = "labelTS54";
             this.labelTS54.Size = new System.Drawing.Size(56, 13);
             this.labelTS54.TabIndex = 1;
-            this.labelTS54.Text = "Slew Time";
+            this.labelTS54.Text = "压摆时间";
             this.labelTS54.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // labelTS53
@@ -28950,7 +28870,7 @@
             this.labelTS53.Name = "labelTS53";
             this.labelTS53.Size = new System.Drawing.Size(80, 13);
             this.labelTS53.TabIndex = 0;
-            this.labelTS53.Text = "Feedback Gain";
+            this.labelTS53.Text = "反馈增益";
             this.labelTS53.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // tpDisplay
@@ -28960,7 +28880,7 @@
             this.tpDisplay.Name = "tpDisplay";
             this.tpDisplay.Size = new System.Drawing.Size(728, 436);
             this.tpDisplay.TabIndex = 2;
-            this.tpDisplay.Text = "Display";
+            this.tpDisplay.Text = "显示";
             // 
             // tcDisplay
             // 
@@ -28991,7 +28911,7 @@
             this.tpDisplayGeneral.Padding = new System.Windows.Forms.Padding(3);
             this.tpDisplayGeneral.Size = new System.Drawing.Size(721, 403);
             this.tpDisplayGeneral.TabIndex = 0;
-            this.tpDisplayGeneral.Text = "General";
+            this.tpDisplayGeneral.Text = "常规";
             // 
             // grpSpectralWarningLeds
             // 
@@ -29002,7 +28922,7 @@
             this.grpSpectralWarningLeds.Size = new System.Drawing.Size(166, 72);
             this.grpSpectralWarningLeds.TabIndex = 94;
             this.grpSpectralWarningLeds.TabStop = false;
-            this.grpSpectralWarningLeds.Text = "Spectral Warning LEDs";
+            this.grpSpectralWarningLeds.Text = "频谱警告 LED";
             // 
             // chkSpecWarningLEDGetPixels
             // 
@@ -29012,8 +28932,8 @@
             this.chkSpecWarningLEDGetPixels.Name = "chkSpecWarningLEDGetPixels";
             this.chkSpecWarningLEDGetPixels.Size = new System.Drawing.Size(148, 17);
             this.chkSpecWarningLEDGetPixels.TabIndex = 52;
-            this.chkSpecWarningLEDGetPixels.Text = "GetPixels not ready";
-            this.toolTip1.SetToolTip(this.chkSpecWarningLEDGetPixels, "The analyser GetPixels does not have any data for this frame");
+            this.chkSpecWarningLEDGetPixels.Text = "GetPixels 未就绪";
+            this.toolTip1.SetToolTip(this.chkSpecWarningLEDGetPixels, "分析器 GetPixels 没有本帧数据");
             this.chkSpecWarningLEDGetPixels.UseVisualStyleBackColor = false;
             this.chkSpecWarningLEDGetPixels.CheckedChanged += new System.EventHandler(this.chkSpecWarningLEDGetPixels_CheckedChanged);
             // 
@@ -29027,8 +28947,8 @@
             this.chkSpecWarningLEDRenderDelay.Name = "chkSpecWarningLEDRenderDelay";
             this.chkSpecWarningLEDRenderDelay.Size = new System.Drawing.Size(148, 17);
             this.chkSpecWarningLEDRenderDelay.TabIndex = 51;
-            this.chkSpecWarningLEDRenderDelay.Text = "Unable to render in time";
-            this.toolTip1.SetToolTip(this.chkSpecWarningLEDRenderDelay, "The display engine is unable to render at the requested frame rate");
+            this.chkSpecWarningLEDRenderDelay.Text = "无法及时渲染";
+            this.toolTip1.SetToolTip(this.chkSpecWarningLEDRenderDelay, "显示引擎无法以请求的帧率渲染");
             this.chkSpecWarningLEDRenderDelay.UseVisualStyleBackColor = false;
             this.chkSpecWarningLEDRenderDelay.CheckedChanged += new System.EventHandler(this.chkSpecWarningLEDRenderDelay_CheckedChanged);
             // 
@@ -29048,7 +28968,7 @@
             this.groupBoxTS13.Size = new System.Drawing.Size(318, 97);
             this.groupBoxTS13.TabIndex = 48;
             this.groupBoxTS13.TabStop = false;
-            this.groupBoxTS13.Text = "Panadapter Peak Blobs";
+            this.groupBoxTS13.Text = "频谱峰值圆点";
             // 
             // udPeakBlobDropDBMs
             // 
@@ -29073,7 +28993,7 @@
             this.udPeakBlobDropDBMs.Size = new System.Drawing.Size(48, 20);
             this.udPeakBlobDropDBMs.TabIndex = 70;
             this.udPeakBlobDropDBMs.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udPeakBlobDropDBMs, "The speed of the drop in dBm per second");
+            this.toolTip1.SetToolTip(this.udPeakBlobDropDBMs, "下降速度（dBm/秒）");
             this.udPeakBlobDropDBMs.Value = new decimal(new int[] {
             6,
             0,
@@ -29088,7 +29008,7 @@
             this.lblPeakBlobDropDBMs.Name = "lblPeakBlobDropDBMs";
             this.lblPeakBlobDropDBMs.Size = new System.Drawing.Size(85, 17);
             this.lblPeakBlobDropDBMs.TabIndex = 71;
-            this.lblPeakBlobDropDBMs.Text = "Drop (dBm/s):";
+            this.lblPeakBlobDropDBMs.Text = "下落 (dBm/s):";
             this.lblPeakBlobDropDBMs.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // chkPeakHoldDrop
@@ -29099,8 +29019,8 @@
             this.chkPeakHoldDrop.Name = "chkPeakHoldDrop";
             this.chkPeakHoldDrop.Size = new System.Drawing.Size(49, 17);
             this.chkPeakHoldDrop.TabIndex = 6;
-            this.chkPeakHoldDrop.Text = "Drop";
-            this.toolTip1.SetToolTip(this.chkPeakHoldDrop, "Peak blobs, if held, drop at the end of the hold time");
+            this.chkPeakHoldDrop.Text = "下落";
+            this.toolTip1.SetToolTip(this.chkPeakHoldDrop, "峰值圆点在保持时间结束时消失（若启用保持）");
             this.chkPeakHoldDrop.UseVisualStyleBackColor = true;
             this.chkPeakHoldDrop.CheckedChanged += new System.EventHandler(this.chkPeakHoldDrop_CheckedChanged);
             // 
@@ -29136,7 +29056,7 @@
             this.udBlobPeakHoldMS.Size = new System.Drawing.Size(56, 20);
             this.udBlobPeakHoldMS.TabIndex = 4;
             this.udBlobPeakHoldMS.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udBlobPeakHoldMS, "Controls how long the peak blobs are shown/held for");
+            this.toolTip1.SetToolTip(this.udBlobPeakHoldMS, "控制峰值圆点显示/保持的时间");
             this.udBlobPeakHoldMS.Value = new decimal(new int[] {
             2000,
             0,
@@ -29152,7 +29072,7 @@
             this.chkBlobPeakHold.Name = "chkBlobPeakHold";
             this.chkBlobPeakHold.Size = new System.Drawing.Size(76, 17);
             this.chkBlobPeakHold.TabIndex = 3;
-            this.chkBlobPeakHold.Text = "Peak Hold";
+            this.chkBlobPeakHold.Text = "峰值保持";
             this.chkBlobPeakHold.UseVisualStyleBackColor = true;
             this.chkBlobPeakHold.CheckedChanged += new System.EventHandler(this.chkBlobPeakHold_CheckedChanged);
             // 
@@ -29164,8 +29084,8 @@
             this.chkPeakBlobInsideFilterOnly.Name = "chkPeakBlobInsideFilterOnly";
             this.chkPeakBlobInsideFilterOnly.Size = new System.Drawing.Size(103, 17);
             this.chkPeakBlobInsideFilterOnly.TabIndex = 2;
-            this.chkPeakBlobInsideFilterOnly.Text = "Only Inside Filter";
-            this.toolTip1.SetToolTip(this.chkPeakBlobInsideFilterOnly, "Only recalculate if inside the passband");
+            this.chkPeakBlobInsideFilterOnly.Text = "仅在滤波器内";
+            this.toolTip1.SetToolTip(this.chkPeakBlobInsideFilterOnly, "仅在通带内重新计算");
             this.chkPeakBlobInsideFilterOnly.UseVisualStyleBackColor = true;
             this.chkPeakBlobInsideFilterOnly.CheckedChanged += new System.EventHandler(this.chkPeakBlobInsideFilterOnly_CheckedChanged);
             // 
@@ -29206,7 +29126,7 @@
             this.chkPeakBlobsEnabled.Name = "chkPeakBlobsEnabled";
             this.chkPeakBlobsEnabled.Size = new System.Drawing.Size(65, 17);
             this.chkPeakBlobsEnabled.TabIndex = 0;
-            this.chkPeakBlobsEnabled.Text = "Enabled";
+            this.chkPeakBlobsEnabled.Text = "已启用";
             this.chkPeakBlobsEnabled.UseVisualStyleBackColor = true;
             this.chkPeakBlobsEnabled.CheckedChanged += new System.EventHandler(this.chkPeakBlobsEnabled_CheckedChanged);
             // 
@@ -29219,7 +29139,7 @@
             this.groupBoxTS11.Size = new System.Drawing.Size(200, 69);
             this.groupBoxTS11.TabIndex = 47;
             this.groupBoxTS11.TabStop = false;
-            this.groupBoxTS11.Text = "Other";
+            this.groupBoxTS11.Text = "其他";
             // 
             // chkShowMHzOnCursor
             // 
@@ -29229,9 +29149,8 @@
             this.chkShowMHzOnCursor.Name = "chkShowMHzOnCursor";
             this.chkShowMHzOnCursor.Size = new System.Drawing.Size(168, 17);
             this.chkShowMHzOnCursor.TabIndex = 2;
-            this.chkShowMHzOnCursor.Text = "Show additional info on cursor";
-            this.toolTip1.SetToolTip(this.chkShowMHzOnCursor, "Show MHz,  dBm/sec info, filter edges and other info  on the cursor (hold shift t" +
-        "o show on demand)");
+            this.chkShowMHzOnCursor.Text = "在光标上显示附加信息";
+            this.toolTip1.SetToolTip(this.chkShowMHzOnCursor, "在光标上显示 MHz、dBm/秒信息、滤波器边缘及其他信息（按住 Shift 键按需显示）。");
             this.chkShowMHzOnCursor.UseVisualStyleBackColor = true;
             this.chkShowMHzOnCursor.CheckedChanged += new System.EventHandler(this.chkShowMHzOnCursor_CheckedChanged);
             // 
@@ -29243,8 +29162,8 @@
             this.chkSmallModeFilteronVFOs.Name = "chkSmallModeFilteronVFOs";
             this.chkSmallModeFilteronVFOs.Size = new System.Drawing.Size(148, 17);
             this.chkSmallModeFilteronVFOs.TabIndex = 1;
-            this.chkSmallModeFilteronVFOs.Text = "Small mode/filter on VFOs";
-            this.toolTip1.SetToolTip(this.chkSmallModeFilteronVFOs, "Show small labels in the VFO boxes when in expanded display");
+            this.chkSmallModeFilteronVFOs.Text = "VFO 上小号模式/滤波器";
+            this.toolTip1.SetToolTip(this.chkSmallModeFilteronVFOs, "展开显示时在 VFO 框中显示小标签");
             this.chkSmallModeFilteronVFOs.UseVisualStyleBackColor = true;
             this.chkSmallModeFilteronVFOs.CheckedChanged += new System.EventHandler(this.chkSmallModeFilteronVFOs_CheckedChanged);
             // 
@@ -29268,8 +29187,8 @@
             this.chkANAN8000DLEDisplayVoltsAmps.Name = "chkANAN8000DLEDisplayVoltsAmps";
             this.chkANAN8000DLEDisplayVoltsAmps.Size = new System.Drawing.Size(110, 17);
             this.chkANAN8000DLEDisplayVoltsAmps.TabIndex = 41;
-            this.chkANAN8000DLEDisplayVoltsAmps.Text = "Show Volts/Amps";
-            this.toolTip1.SetToolTip(this.chkANAN8000DLEDisplayVoltsAmps, "Check to show detailed meter info");
+            this.chkANAN8000DLEDisplayVoltsAmps.Text = "显示电压/电流";
+            this.toolTip1.SetToolTip(this.chkANAN8000DLEDisplayVoltsAmps, "勾选以显示详细的仪表信息");
             this.chkANAN8000DLEDisplayVoltsAmps.CheckedChanged += new System.EventHandler(this.chkANAN8000DLEDisplayVoltsAmps_CheckedChanged);
             // 
             // grpDisplayDriverEngine
@@ -29285,7 +29204,7 @@
             this.grpDisplayDriverEngine.Size = new System.Drawing.Size(147, 198);
             this.grpDisplayDriverEngine.TabIndex = 46;
             this.grpDisplayDriverEngine.TabStop = false;
-            this.grpDisplayDriverEngine.Text = "DirectX Display Settings";
+            this.grpDisplayDriverEngine.Text = "DirectX 显示设置";
             // 
             // chkLegacyDXBuffers
             // 
@@ -29295,8 +29214,8 @@
             this.chkLegacyDXBuffers.Name = "chkLegacyDXBuffers";
             this.chkLegacyDXBuffers.Size = new System.Drawing.Size(114, 17);
             this.chkLegacyDXBuffers.TabIndex = 51;
-            this.chkLegacyDXBuffers.Text = "Legacy DX buffers";
-            this.toolTip1.SetToolTip(this.chkLegacyDXBuffers, "Try this if you are having flickering curssors or other display issues");
+            this.chkLegacyDXBuffers.Text = "旧版 DX 缓冲";
+            this.toolTip1.SetToolTip(this.chkLegacyDXBuffers, "如果光标闪烁或有其他显示问题，请尝试此项");
             this.chkLegacyDXBuffers.UseVisualStyleBackColor = true;
             this.chkLegacyDXBuffers.Visible = false;
             this.chkLegacyDXBuffers.CheckedChanged += new System.EventHandler(this.chkLegacyDXBuffers_CheckedChanged);
@@ -29310,7 +29229,7 @@
             this.chkVSyncDX.Size = new System.Drawing.Size(57, 17);
             this.chkVSyncDX.TabIndex = 50;
             this.chkVSyncDX.Text = "VSync";
-            this.toolTip1.SetToolTip(this.chkVSyncDX, "1 frame Vertical Sync when in DirectX only");
+            this.toolTip1.SetToolTip(this.chkVSyncDX, "仅 DirectX 下启用 1 帧垂直同步");
             this.chkVSyncDX.UseVisualStyleBackColor = true;
             this.chkVSyncDX.CheckedChanged += new System.EventHandler(this.chkVSyncDX_CheckedChanged);
             // 
@@ -29322,8 +29241,8 @@
             this.chkAccurateFrameTiming.Name = "chkAccurateFrameTiming";
             this.chkAccurateFrameTiming.Size = new System.Drawing.Size(128, 17);
             this.chkAccurateFrameTiming.TabIndex = 49;
-            this.chkAccurateFrameTiming.Text = "Accurate frame timing";
-            this.toolTip1.SetToolTip(this.chkAccurateFrameTiming, "Use accurate frame timing but could impact performance");
+            this.chkAccurateFrameTiming.Text = "精确帧时序";
+            this.toolTip1.SetToolTip(this.chkAccurateFrameTiming, "使用精确帧时序，但可能影响性能");
             this.chkAccurateFrameTiming.UseVisualStyleBackColor = true;
             this.chkAccurateFrameTiming.CheckedChanged += new System.EventHandler(this.chkAccurateFrameTiming_CheckedChanged);
             // 
@@ -29335,9 +29254,8 @@
             this.chkAntiAlias.Name = "chkAntiAlias";
             this.chkAntiAlias.Size = new System.Drawing.Size(80, 17);
             this.chkAntiAlias.TabIndex = 48;
-            this.chkAntiAlias.Text = "Anti-aliased";
-            this.toolTip1.SetToolTip(this.chkAntiAlias, "Enable anti-aliasing. Will allow sub pixel lines in DirectX and remove all the ja" +
-        "ggies in both DirectX and GDI+");
+            this.chkAntiAlias.Text = "抗锯齿";
+            this.toolTip1.SetToolTip(this.chkAntiAlias, "启用抗锯齿。允许 DirectX 中使用亚像素线条，并消除 DirectX 和 GDI+ 中的锯齿。");
             this.chkAntiAlias.UseVisualStyleBackColor = true;
             this.chkAntiAlias.CheckedChanged += new System.EventHandler(this.chkAntiAlias_CheckedChanged);
             // 
@@ -29355,7 +29273,7 @@
             this.comboDisplayThreadPriority.Name = "comboDisplayThreadPriority";
             this.comboDisplayThreadPriority.Size = new System.Drawing.Size(128, 21);
             this.comboDisplayThreadPriority.TabIndex = 47;
-            this.toolTip1.SetToolTip(this.comboDisplayThreadPriority, "Set the priority of the display thread");
+            this.toolTip1.SetToolTip(this.comboDisplayThreadPriority, "设置显示线程的优先级");
             this.comboDisplayThreadPriority.SelectedIndexChanged += new System.EventHandler(this.comboDisplayThreadPriority_SelectedIndexChanged);
             // 
             // chkShowFPS
@@ -29366,8 +29284,8 @@
             this.chkShowFPS.Name = "chkShowFPS";
             this.chkShowFPS.Size = new System.Drawing.Size(76, 17);
             this.chkShowFPS.TabIndex = 46;
-            this.chkShowFPS.Text = "Show FPS";
-            this.toolTip1.SetToolTip(this.chkShowFPS, "Show FPS reading in top left of spectrum area");
+            this.chkShowFPS.Text = "显示 FPS";
+            this.toolTip1.SetToolTip(this.chkShowFPS, "在频谱区域左上角显示 FPS 读数");
             this.chkShowFPS.UseVisualStyleBackColor = true;
             this.chkShowFPS.CheckedChanged += new System.EventHandler(this.chkShowFPS_CheckedChanged);
             // 
@@ -29395,7 +29313,7 @@
             this.grpDisplayMultimeter.Size = new System.Drawing.Size(384, 142);
             this.grpDisplayMultimeter.TabIndex = 41;
             this.grpDisplayMultimeter.TabStop = false;
-            this.grpDisplayMultimeter.Text = "Multimeter";
+            this.grpDisplayMultimeter.Text = "万用表";
             // 
             // lblSignalHistoryDurationMS
             // 
@@ -29429,7 +29347,7 @@
             this.udSignalHistoryDuration.Size = new System.Drawing.Size(48, 20);
             this.udSignalHistoryDuration.TabIndex = 46;
             this.udSignalHistoryDuration.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udSignalHistoryDuration, "Length of time history is recorded over");
+            this.toolTip1.SetToolTip(this.udSignalHistoryDuration, "历史记录的时间长度");
             this.udSignalHistoryDuration.Value = new decimal(new int[] {
             2000,
             0,
@@ -29445,8 +29363,8 @@
             this.chkSignalHistory.Name = "chkSignalHistory";
             this.chkSignalHistory.Size = new System.Drawing.Size(90, 17);
             this.chkSignalHistory.TabIndex = 45;
-            this.chkSignalHistory.Text = "Signal History";
-            this.toolTip1.SetToolTip(this.chkSignalHistory, "Show a history of SMeter reading on the SMeter");
+            this.chkSignalHistory.Text = "信号历史";
+            this.toolTip1.SetToolTip(this.chkSignalHistory, "在 S 表上显示读数历史");
             this.chkSignalHistory.UseVisualStyleBackColor = true;
             this.chkSignalHistory.CheckedChanged += new System.EventHandler(this.chkSignalHistory_CheckedChanged);
             // 
@@ -29485,7 +29403,7 @@
             this.radSReading.Size = new System.Drawing.Size(75, 17);
             this.radSReading.TabIndex = 42;
             this.radSReading.TabStop = true;
-            this.radSReading.Text = "S Reading";
+            this.radSReading.Text = "S 读数";
             this.radSReading.UseVisualStyleBackColor = true;
             this.radSReading.CheckedChanged += new System.EventHandler(this.radSReading_CheckedChanged);
             // 
@@ -29496,8 +29414,8 @@
             this.chkDisplayMeterShowDecimal.Name = "chkDisplayMeterShowDecimal";
             this.chkDisplayMeterShowDecimal.Size = new System.Drawing.Size(96, 16);
             this.chkDisplayMeterShowDecimal.TabIndex = 40;
-            this.chkDisplayMeterShowDecimal.Text = "Show Decimal";
-            this.toolTip1.SetToolTip(this.chkDisplayMeterShowDecimal, "Check to show detailed meter info");
+            this.chkDisplayMeterShowDecimal.Text = "显示小数";
+            this.toolTip1.SetToolTip(this.chkDisplayMeterShowDecimal, "勾选以显示详细的仪表信息");
             this.chkDisplayMeterShowDecimal.CheckedChanged += new System.EventHandler(this.chkDisplayMeterShowDecimal_CheckedChanged);
             // 
             // udMeterDigitalDelay
@@ -29522,7 +29440,7 @@
             this.udMeterDigitalDelay.Size = new System.Drawing.Size(56, 20);
             this.udMeterDigitalDelay.TabIndex = 36;
             this.udMeterDigitalDelay.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udMeterDigitalDelay, "Digital (text) Multimeter Refresh Rate.");
+            this.toolTip1.SetToolTip(this.udMeterDigitalDelay, "数字（文本）万用表刷新率。");
             this.udMeterDigitalDelay.Value = new decimal(new int[] {
             200,
             0,
@@ -29537,7 +29455,7 @@
             this.lblMultimeterDigitalDelay.Name = "lblMultimeterDigitalDelay";
             this.lblMultimeterDigitalDelay.Size = new System.Drawing.Size(120, 16);
             this.lblMultimeterDigitalDelay.TabIndex = 35;
-            this.lblMultimeterDigitalDelay.Text = "Digital Refresh (ms):";
+            this.lblMultimeterDigitalDelay.Text = "数字刷新 (ms):";
             // 
             // udDisplayMeterAvg
             // 
@@ -29561,7 +29479,7 @@
             this.udDisplayMeterAvg.Size = new System.Drawing.Size(56, 20);
             this.udDisplayMeterAvg.TabIndex = 8;
             this.udDisplayMeterAvg.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udDisplayMeterAvg, "Controls the length of time to average for the meter.");
+            this.toolTip1.SetToolTip(this.udDisplayMeterAvg, "控制仪表的平均时间长度。");
             this.udDisplayMeterAvg.Value = new decimal(new int[] {
             400,
             0,
@@ -29577,8 +29495,8 @@
             this.lblDisplayMeterAvg.Name = "lblDisplayMeterAvg";
             this.lblDisplayMeterAvg.Size = new System.Drawing.Size(112, 16);
             this.lblDisplayMeterAvg.TabIndex = 7;
-            this.lblDisplayMeterAvg.Text = "Average Time (ms):";
-            this.toolTip1.SetToolTip(this.lblDisplayMeterAvg, "The time to average the value when Sig Avg is selected on the RX Meter.");
+            this.lblDisplayMeterAvg.Text = "平均时间 (ms):";
+            this.toolTip1.SetToolTip(this.lblDisplayMeterAvg, "RX 仪表选择 Sig Avg 时求平均的时间。");
             // 
             // udDisplayMultiTextHoldTime
             // 
@@ -29602,8 +29520,7 @@
             this.udDisplayMultiTextHoldTime.Size = new System.Drawing.Size(56, 20);
             this.udDisplayMultiTextHoldTime.TabIndex = 4;
             this.udDisplayMultiTextHoldTime.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udDisplayMultiTextHoldTime, "Controls how long the meter will hold the digital peak value when in the Peak Pow" +
-        "er mode.");
+            this.toolTip1.SetToolTip(this.udDisplayMultiTextHoldTime, "控制峰值功率模式下仪表保持数字峰值的时间。");
             this.udDisplayMultiTextHoldTime.Value = new decimal(new int[] {
             500,
             0,
@@ -29619,7 +29536,7 @@
             this.lblDisplayMeterTextHoldTime.Name = "lblDisplayMeterTextHoldTime";
             this.lblDisplayMeterTextHoldTime.Size = new System.Drawing.Size(120, 16);
             this.lblDisplayMeterTextHoldTime.TabIndex = 3;
-            this.lblDisplayMeterTextHoldTime.Text = "Digital Peak Hold (ms):";
+            this.lblDisplayMeterTextHoldTime.Text = "数字峰值保持 (ms):";
             // 
             // udDisplayMultiPeakHoldTime
             // 
@@ -29643,7 +29560,7 @@
             this.udDisplayMultiPeakHoldTime.Size = new System.Drawing.Size(56, 20);
             this.udDisplayMultiPeakHoldTime.TabIndex = 1;
             this.udDisplayMultiPeakHoldTime.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udDisplayMultiPeakHoldTime, "Controls how long the analog peak red line will be held on the multimeter.");
+            this.toolTip1.SetToolTip(this.udDisplayMultiPeakHoldTime, "控制万用表上模拟峰值红线保持的时间。");
             this.udDisplayMultiPeakHoldTime.Value = new decimal(new int[] {
             500,
             0,
@@ -29659,7 +29576,7 @@
             this.lblDisplayMultiPeakHoldTime.Name = "lblDisplayMultiPeakHoldTime";
             this.lblDisplayMultiPeakHoldTime.Size = new System.Drawing.Size(128, 16);
             this.lblDisplayMultiPeakHoldTime.TabIndex = 0;
-            this.lblDisplayMultiPeakHoldTime.Text = "Analog Peak Hold (ms):";
+            this.lblDisplayMultiPeakHoldTime.Text = "模拟峰值保持 (ms):";
             // 
             // udDisplayMeterDelay
             // 
@@ -29683,7 +29600,7 @@
             this.udDisplayMeterDelay.Size = new System.Drawing.Size(56, 20);
             this.udDisplayMeterDelay.TabIndex = 34;
             this.udDisplayMeterDelay.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udDisplayMeterDelay, "Analog Multimeter Refresh Rate.");
+            this.toolTip1.SetToolTip(this.udDisplayMeterDelay, "模拟万用表刷新率。");
             this.udDisplayMeterDelay.Value = new decimal(new int[] {
             50,
             0,
@@ -29699,7 +29616,7 @@
             this.lblDisplayMeterDelay.Name = "lblDisplayMeterDelay";
             this.lblDisplayMeterDelay.Size = new System.Drawing.Size(128, 16);
             this.lblDisplayMeterDelay.TabIndex = 33;
-            this.lblDisplayMeterDelay.Text = "Analog Refresh (ms):";
+            this.lblDisplayMeterDelay.Text = "模拟刷新 (ms):";
             // 
             // grpDisplayScopeMode
             // 
@@ -29710,7 +29627,7 @@
             this.grpDisplayScopeMode.Size = new System.Drawing.Size(136, 47);
             this.grpDisplayScopeMode.TabIndex = 43;
             this.grpDisplayScopeMode.TabStop = false;
-            this.grpDisplayScopeMode.Text = "Scope Mode";
+            this.grpDisplayScopeMode.Text = "示波器模式";
             // 
             // udDisplayScopeTime
             // 
@@ -29734,7 +29651,7 @@
             this.udDisplayScopeTime.Size = new System.Drawing.Size(64, 20);
             this.udDisplayScopeTime.TabIndex = 0;
             this.udDisplayScopeTime.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udDisplayScopeTime, "Amount of time to display across the width of the scope display window.");
+            this.toolTip1.SetToolTip(this.udDisplayScopeTime, "示波器显示窗口宽度范围内显示的时间长度。");
             this.udDisplayScopeTime.Value = new decimal(new int[] {
             10000,
             0,
@@ -29750,7 +29667,7 @@
             this.lblDisplayScopeTime.Name = "lblDisplayScopeTime";
             this.lblDisplayScopeTime.Size = new System.Drawing.Size(64, 23);
             this.lblDisplayScopeTime.TabIndex = 1;
-            this.lblDisplayScopeTime.Text = "Time (us):";
+            this.lblDisplayScopeTime.Text = "时间 (us):";
             // 
             // grpDisplayPhase
             // 
@@ -29764,7 +29681,7 @@
             this.grpDisplayPhase.Size = new System.Drawing.Size(199, 72);
             this.grpDisplayPhase.TabIndex = 37;
             this.grpDisplayPhase.TabStop = false;
-            this.grpDisplayPhase.Text = "Phase Mode";
+            this.grpDisplayPhase.Text = "相位模式";
             // 
             // chkShowPhaseAngularMean
             // 
@@ -29774,8 +29691,8 @@
             this.chkShowPhaseAngularMean.Name = "chkShowPhaseAngularMean";
             this.chkShowPhaseAngularMean.Size = new System.Drawing.Size(53, 17);
             this.chkShowPhaseAngularMean.TabIndex = 4;
-            this.chkShowPhaseAngularMean.Text = "Mean";
-            this.toolTip1.SetToolTip(this.chkShowPhaseAngularMean, "Show the anular mean line on the phase display");
+            this.chkShowPhaseAngularMean.Text = "均值";
+            this.toolTip1.SetToolTip(this.chkShowPhaseAngularMean, "在相位显示上显示环形均值线");
             this.chkShowPhaseAngularMean.UseVisualStyleBackColor = true;
             this.chkShowPhaseAngularMean.CheckedChanged += new System.EventHandler(this.chkShowPhaseAngularMean_CheckedChanged);
             // 
@@ -29786,7 +29703,7 @@
             this.labelTS517.Name = "labelTS517";
             this.labelTS517.Size = new System.Drawing.Size(56, 23);
             this.labelTS517.TabIndex = 3;
-            this.labelTS517.Text = "Pt Size:";
+            this.labelTS517.Text = "点大小:";
             // 
             // udDisplayPhasePtSize
             // 
@@ -29810,7 +29727,7 @@
             this.udDisplayPhasePtSize.Size = new System.Drawing.Size(48, 20);
             this.udDisplayPhasePtSize.TabIndex = 2;
             this.udDisplayPhasePtSize.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udDisplayPhasePtSize, "Size of points to display in Phase Mode.");
+            this.toolTip1.SetToolTip(this.udDisplayPhasePtSize, "相位模式下显示的点的大小。");
             this.udDisplayPhasePtSize.Value = new decimal(new int[] {
             1,
             0,
@@ -29825,7 +29742,7 @@
             this.lblDisplayPhasePts.Name = "lblDisplayPhasePts";
             this.lblDisplayPhasePts.Size = new System.Drawing.Size(56, 23);
             this.lblDisplayPhasePts.TabIndex = 1;
-            this.lblDisplayPhasePts.Text = "Num Pts:";
+            this.lblDisplayPhasePts.Text = "点数:";
             // 
             // udDisplayPhasePts
             // 
@@ -29849,7 +29766,7 @@
             this.udDisplayPhasePts.Size = new System.Drawing.Size(48, 20);
             this.udDisplayPhasePts.TabIndex = 0;
             this.udDisplayPhasePts.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udDisplayPhasePts, "Number of points to display in Phase Mode.");
+            this.toolTip1.SetToolTip(this.udDisplayPhasePts, "相位模式下显示的点数。");
             this.udDisplayPhasePts.Value = new decimal(new int[] {
             100,
             0,
@@ -29874,7 +29791,7 @@
             this.grpDisplayRefreshRates.Size = new System.Drawing.Size(275, 136);
             this.grpDisplayRefreshRates.TabIndex = 39;
             this.grpDisplayRefreshRates.TabStop = false;
-            this.grpDisplayRefreshRates.Text = "Refresh Rates";
+            this.grpDisplayRefreshRates.Text = "刷新率";
             // 
             // labelTS608
             // 
@@ -29883,7 +29800,7 @@
             this.labelTS608.Name = "labelTS608";
             this.labelTS608.Size = new System.Drawing.Size(78, 16);
             this.labelTS608.TabIndex = 96;
-            this.labelTS608.Text = "Decimation:";
+            this.labelTS608.Text = "抽取:";
             // 
             // udDisplayDecimation
             // 
@@ -29907,7 +29824,7 @@
             this.udDisplayDecimation.Size = new System.Drawing.Size(48, 20);
             this.udDisplayDecimation.TabIndex = 95;
             this.udDisplayDecimation.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udDisplayDecimation, "Display decimation. Higher the number, the lower the resolution.");
+            this.toolTip1.SetToolTip(this.udDisplayDecimation, "显示抽取。数值越大，分辨率越低。");
             this.udDisplayDecimation.Value = new decimal(new int[] {
             1,
             0,
@@ -29922,8 +29839,8 @@
             this.chkDisplayPanFill.Name = "chkDisplayPanFill";
             this.chkDisplayPanFill.Size = new System.Drawing.Size(101, 16);
             this.chkDisplayPanFill.TabIndex = 40;
-            this.chkDisplayPanFill.Text = "Fill Panadapter";
-            this.toolTip1.SetToolTip(this.chkDisplayPanFill, "Check to fill the panadapter display line below the data.");
+            this.chkDisplayPanFill.Text = "填充频谱";
+            this.toolTip1.SetToolTip(this.chkDisplayPanFill, "勾选以填充数据下方的频谱显示线。");
             this.chkDisplayPanFill.CheckedChanged += new System.EventHandler(this.chkDisplayPanFill_CheckedChanged);
             // 
             // udDisplayCPUMeter
@@ -29948,7 +29865,7 @@
             this.udDisplayCPUMeter.Size = new System.Drawing.Size(48, 20);
             this.udDisplayCPUMeter.TabIndex = 38;
             this.udDisplayCPUMeter.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udDisplayCPUMeter, "CPU Meter Refresh Rate.");
+            this.toolTip1.SetToolTip(this.udDisplayCPUMeter, "CPU 仪表刷新率。");
             this.udDisplayCPUMeter.Value = new decimal(new int[] {
             1000,
             0,
@@ -29964,7 +29881,7 @@
             this.lblDisplayCPUMeter.Name = "lblDisplayCPUMeter";
             this.lblDisplayCPUMeter.Size = new System.Drawing.Size(100, 23);
             this.lblDisplayCPUMeter.TabIndex = 37;
-            this.lblDisplayCPUMeter.Text = "CPU Meter (ms)";
+            this.lblDisplayCPUMeter.Text = "CPU 仪表 (ms)";
             // 
             // udDisplayPeakText
             // 
@@ -29988,7 +29905,7 @@
             this.udDisplayPeakText.Size = new System.Drawing.Size(48, 20);
             this.udDisplayPeakText.TabIndex = 36;
             this.udDisplayPeakText.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udDisplayPeakText, "Peak Text Refresh Rate.");
+            this.toolTip1.SetToolTip(this.udDisplayPeakText, "峰值文本刷新率。");
             this.udDisplayPeakText.Value = new decimal(new int[] {
             500,
             0,
@@ -30004,7 +29921,7 @@
             this.lblDisplayPeakText.Name = "lblDisplayPeakText";
             this.lblDisplayPeakText.Size = new System.Drawing.Size(100, 23);
             this.lblDisplayPeakText.TabIndex = 35;
-            this.lblDisplayPeakText.Text = "Peak Text (ms)";
+            this.lblDisplayPeakText.Text = "峰值文本 (ms)";
             // 
             // udDisplayFPS
             // 
@@ -30028,7 +29945,7 @@
             this.udDisplayFPS.Size = new System.Drawing.Size(48, 20);
             this.udDisplayFPS.TabIndex = 32;
             this.udDisplayFPS.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udDisplayFPS, "Frames Per Second (approximate)");
+            this.toolTip1.SetToolTip(this.udDisplayFPS, "每秒帧数（近似值）");
             this.udDisplayFPS.Value = new decimal(new int[] {
             60,
             0,
@@ -30044,7 +29961,7 @@
             this.lblDisplayFPS.Name = "lblDisplayFPS";
             this.lblDisplayFPS.Size = new System.Drawing.Size(104, 16);
             this.lblDisplayFPS.TabIndex = 31;
-            this.lblDisplayFPS.Text = "Main Display FPS:";
+            this.lblDisplayFPS.Text = "主显示 FPS:";
             // 
             // tpDisplayTop
             // 
@@ -30061,7 +29978,7 @@
             this.tpDisplayTop.Size = new System.Drawing.Size(721, 403);
             this.tpDisplayTop.TabIndex = 1;
             this.tpDisplayTop.Text = " RX 1";
-            this.toolTip1.SetToolTip(this.tpDisplayTop, "Normalize to One Hz Bandwidth for Average & Sample Detectors");
+            this.toolTip1.SetToolTip(this.tpDisplayTop, "平均值与采样检波器归一化到 1Hz 带宽");
             // 
             // groupBoxTS21
             // 
@@ -30085,8 +30002,8 @@
             this.chkFillActivePeakHoldRX1.Name = "chkFillActivePeakHoldRX1";
             this.chkFillActivePeakHoldRX1.Size = new System.Drawing.Size(38, 17);
             this.chkFillActivePeakHoldRX1.TabIndex = 75;
-            this.chkFillActivePeakHoldRX1.Text = "Fill";
-            this.toolTip1.SetToolTip(this.chkFillActivePeakHoldRX1, "Fill the peak hold area");
+            this.chkFillActivePeakHoldRX1.Text = "填充";
+            this.toolTip1.SetToolTip(this.chkFillActivePeakHoldRX1, "填充峰值保持区域");
             this.chkFillActivePeakHoldRX1.UseVisualStyleBackColor = true;
             this.chkFillActivePeakHoldRX1.CheckedChanged += new System.EventHandler(this.chkFillActivePeakHoldRX1_CheckedChanged);
             // 
@@ -30113,7 +30030,7 @@
             this.udActivePeakHoldDropRX1.Size = new System.Drawing.Size(48, 20);
             this.udActivePeakHoldDropRX1.TabIndex = 68;
             this.udActivePeakHoldDropRX1.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udActivePeakHoldDropRX1, "The speed of the drop in dBm per second");
+            this.toolTip1.SetToolTip(this.udActivePeakHoldDropRX1, "下降速度（dBm/秒）");
             this.udActivePeakHoldDropRX1.Value = new decimal(new int[] {
             6,
             0,
@@ -30131,7 +30048,7 @@
             this.chkActivePeakHoldRX1.Name = "chkActivePeakHoldRX1";
             this.chkActivePeakHoldRX1.Size = new System.Drawing.Size(109, 17);
             this.chkActivePeakHoldRX1.TabIndex = 65;
-            this.chkActivePeakHoldRX1.Text = "Active Peak Hold";
+            this.chkActivePeakHoldRX1.Text = "活动峰值保持";
             this.chkActivePeakHoldRX1.UseVisualStyleBackColor = true;
             this.chkActivePeakHoldRX1.CheckedChanged += new System.EventHandler(this.chkActivePeakHoldRX1_CheckedChanged);
             // 
@@ -30142,7 +30059,7 @@
             this.lblActivePeakHoldDropRX1.Name = "lblActivePeakHoldDropRX1";
             this.lblActivePeakHoldDropRX1.Size = new System.Drawing.Size(85, 17);
             this.lblActivePeakHoldDropRX1.TabIndex = 69;
-            this.lblActivePeakHoldDropRX1.Text = "Drop (dBm/s):";
+            this.lblActivePeakHoldDropRX1.Text = "下落 (dBm/s):";
             this.lblActivePeakHoldDropRX1.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // lblActivePeakHoldRX1
@@ -30152,7 +30069,7 @@
             this.lblActivePeakHoldRX1.Name = "lblActivePeakHoldRX1";
             this.lblActivePeakHoldRX1.Size = new System.Drawing.Size(88, 18);
             this.lblActivePeakHoldRX1.TabIndex = 67;
-            this.lblActivePeakHoldRX1.Text = "Time (ms):";
+            this.lblActivePeakHoldRX1.Text = "时间 (ms):";
             this.lblActivePeakHoldRX1.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // udActivePeakHoldDurationRX1
@@ -30177,7 +30094,7 @@
             this.udActivePeakHoldDurationRX1.Size = new System.Drawing.Size(48, 20);
             this.udActivePeakHoldDurationRX1.TabIndex = 66;
             this.udActivePeakHoldDurationRX1.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udActivePeakHoldDurationRX1, "How long to hold the peaks");
+            this.toolTip1.SetToolTip(this.udActivePeakHoldDurationRX1, "峰值保持时长");
             this.udActivePeakHoldDurationRX1.Value = new decimal(new int[] {
             100,
             0,
@@ -30198,7 +30115,7 @@
             this.grpWaterfallAverage.Size = new System.Drawing.Size(123, 141);
             this.grpWaterfallAverage.TabIndex = 80;
             this.grpWaterfallAverage.TabStop = false;
-            this.grpWaterfallAverage.Text = "Waterfall";
+            this.grpWaterfallAverage.Text = "瀑布图";
             // 
             // labelTS372
             // 
@@ -30208,7 +30125,7 @@
             this.labelTS372.Name = "labelTS372";
             this.labelTS372.Size = new System.Drawing.Size(58, 13);
             this.labelTS372.TabIndex = 59;
-            this.labelTS372.Text = "Averaging:";
+            this.labelTS372.Text = "平均:";
             // 
             // comboDispWFAveraging
             // 
@@ -30237,7 +30154,7 @@
             this.labelTS373.Name = "labelTS373";
             this.labelTS373.Size = new System.Drawing.Size(51, 13);
             this.labelTS373.TabIndex = 57;
-            this.labelTS373.Text = "Detector:";
+            this.labelTS373.Text = "检波器:";
             // 
             // comboDispWFDetector
             // 
@@ -30276,7 +30193,7 @@
             this.udDisplayAVTimeWF.Size = new System.Drawing.Size(48, 20);
             this.udDisplayAVTimeWF.TabIndex = 2;
             this.udDisplayAVTimeWF.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udDisplayAVTimeWF, "When averaging, use this number of buffers to calculate the average.");
+            this.toolTip1.SetToolTip(this.udDisplayAVTimeWF, "求平均时，使用此缓冲区数来计算平均值。");
             this.udDisplayAVTimeWF.Value = new decimal(new int[] {
             120,
             0,
@@ -30291,7 +30208,7 @@
             this.labelTS374.Name = "labelTS374";
             this.labelTS374.Size = new System.Drawing.Size(64, 20);
             this.labelTS374.TabIndex = 3;
-            this.labelTS374.Text = "Time (ms):";
+            this.labelTS374.Text = "时间 (ms):";
             // 
             // grpDisplaySpectrumGrid
             // 
@@ -30314,7 +30231,7 @@
             this.grpDisplaySpectrumGrid.Size = new System.Drawing.Size(304, 165);
             this.grpDisplaySpectrumGrid.TabIndex = 47;
             this.grpDisplaySpectrumGrid.TabStop = false;
-            this.grpDisplaySpectrumGrid.Text = "Spectrum Grid";
+            this.grpDisplaySpectrumGrid.Text = "频谱网格";
             // 
             // label14
             // 
@@ -30323,8 +30240,8 @@
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(57, 13);
             this.label14.TabIndex = 86;
-            this.label14.Text = "dBm offset";
-            this.toolTip1.SetToolTip(this.label14, "Display Grid levels can be set by band. ");
+            this.label14.Text = "dBm 偏移";
+            this.toolTip1.SetToolTip(this.label14, "显示网格电平可按波段设置。 ");
             // 
             // chkMaintainNFAdjustDeltaRX1
             // 
@@ -30334,8 +30251,8 @@
             this.chkMaintainNFAdjustDeltaRX1.Name = "chkMaintainNFAdjustDeltaRX1";
             this.chkMaintainNFAdjustDeltaRX1.Size = new System.Drawing.Size(92, 17);
             this.chkMaintainNFAdjustDeltaRX1.TabIndex = 85;
-            this.chkMaintainNFAdjustDeltaRX1.Text = "Maintain delta";
-            this.toolTip1.SetToolTip(this.chkMaintainNFAdjustDeltaRX1, "If min is adjusted, max will be changed by same adjustment");
+            this.chkMaintainNFAdjustDeltaRX1.Text = "保持差值";
+            this.toolTip1.SetToolTip(this.chkMaintainNFAdjustDeltaRX1, "调整最小值时，最大值将按相同量变化");
             this.chkMaintainNFAdjustDeltaRX1.UseVisualStyleBackColor = true;
             this.chkMaintainNFAdjustDeltaRX1.CheckedChanged += new System.EventHandler(this.chkMaintainNFAdjustDeltaRX1_CheckedChanged);
             // 
@@ -30378,8 +30295,8 @@
             this.chkAdjustGridMinToNFRX1.Name = "chkAdjustGridMinToNFRX1";
             this.chkAdjustGridMinToNFRX1.Size = new System.Drawing.Size(143, 17);
             this.chkAdjustGridMinToNFRX1.TabIndex = 83;
-            this.chkAdjustGridMinToNFRX1.Text = "Adjust Min to Noise Floor";
-            this.toolTip1.SetToolTip(this.chkAdjustGridMinToNFRX1, "Keep min adjusted to Noise Floor");
+            this.chkAdjustGridMinToNFRX1.Text = "将最小值调整至噪底";
+            this.toolTip1.SetToolTip(this.chkAdjustGridMinToNFRX1, "保持最小值调整至噪底");
             this.chkAdjustGridMinToNFRX1.UseVisualStyleBackColor = true;
             this.chkAdjustGridMinToNFRX1.CheckedChanged += new System.EventHandler(this.chkAdjustGridMinToNFRX1_CheckedChanged);
             // 
@@ -30390,8 +30307,8 @@
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(129, 13);
             this.label15.TabIndex = 82;
-            this.label15.Text = "Band for Max/Min Levels:";
-            this.toolTip1.SetToolTip(this.label15, "Display Grid levels can be set by band. ");
+            this.label15.Text = "最大/最小电平波段:";
+            this.toolTip1.SetToolTip(this.label15, "显示网格电平可按波段设置。 ");
             // 
             // txtDisplayGridBandLevel
             // 
@@ -30400,8 +30317,8 @@
             this.txtDisplayGridBandLevel.ReadOnly = true;
             this.txtDisplayGridBandLevel.Size = new System.Drawing.Size(94, 20);
             this.txtDisplayGridBandLevel.TabIndex = 81;
-            this.txtDisplayGridBandLevel.Text = "Current Band";
-            this.toolTip1.SetToolTip(this.txtDisplayGridBandLevel, "Current RX1 band selected for setting Display Grid level settings");
+            this.txtDisplayGridBandLevel.Text = "当前波段";
+            this.toolTip1.SetToolTip(this.txtDisplayGridBandLevel, "当前选中的 RX1 波段，用于设置显示网格电平");
             // 
             // comboDisplayLabelAlign
             // 
@@ -30417,7 +30334,7 @@
             this.comboDisplayLabelAlign.Name = "comboDisplayLabelAlign";
             this.comboDisplayLabelAlign.Size = new System.Drawing.Size(56, 21);
             this.comboDisplayLabelAlign.TabIndex = 30;
-            this.toolTip1.SetToolTip(this.comboDisplayLabelAlign, "Sets the alignement of the grid callouts on the display.");
+            this.toolTip1.SetToolTip(this.comboDisplayLabelAlign, "设置显示上网格标注的对齐方式。");
             this.comboDisplayLabelAlign.SelectedIndexChanged += new System.EventHandler(this.comboDisplayLabelAlign_SelectedIndexChanged);
             // 
             // lblDisplayAlign
@@ -30427,7 +30344,7 @@
             this.lblDisplayAlign.Name = "lblDisplayAlign";
             this.lblDisplayAlign.Size = new System.Drawing.Size(40, 16);
             this.lblDisplayAlign.TabIndex = 29;
-            this.lblDisplayAlign.Text = "Align:";
+            this.lblDisplayAlign.Text = "对齐:";
             // 
             // udDisplayGridStep
             // 
@@ -30451,7 +30368,7 @@
             this.udDisplayGridStep.Size = new System.Drawing.Size(56, 20);
             this.udDisplayGridStep.TabIndex = 25;
             this.udDisplayGridStep.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udDisplayGridStep, "Horizontal Grid Step Size in dB.");
+            this.toolTip1.SetToolTip(this.udDisplayGridStep, "水平网格步进大小（dB）。");
             this.udDisplayGridStep.Value = new decimal(new int[] {
             2,
             0,
@@ -30482,7 +30399,7 @@
             this.udDisplayGridMin.Size = new System.Drawing.Size(56, 20);
             this.udDisplayGridMin.TabIndex = 24;
             this.udDisplayGridMin.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udDisplayGridMin, "Signal Level at bottom of display in dB.");
+            this.toolTip1.SetToolTip(this.udDisplayGridMin, "显示底部的信号电平 (dB)。");
             this.udDisplayGridMin.Value = new decimal(new int[] {
             140,
             0,
@@ -30513,7 +30430,7 @@
             this.udDisplayGridMax.Size = new System.Drawing.Size(56, 20);
             this.udDisplayGridMax.TabIndex = 23;
             this.udDisplayGridMax.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udDisplayGridMax, "Signal level at top of display in dB.");
+            this.toolTip1.SetToolTip(this.udDisplayGridMax, "显示顶部的信号电平 (dB)。");
             this.udDisplayGridMax.Value = new decimal(new int[] {
             40,
             0,
@@ -30529,7 +30446,7 @@
             this.lblDisplayGridStep.Name = "lblDisplayGridStep";
             this.lblDisplayGridStep.Size = new System.Drawing.Size(32, 16);
             this.lblDisplayGridStep.TabIndex = 28;
-            this.lblDisplayGridStep.Text = "Step:";
+            this.lblDisplayGridStep.Text = "步进:";
             // 
             // lblDisplayGridMin
             // 
@@ -30538,7 +30455,7 @@
             this.lblDisplayGridMin.Name = "lblDisplayGridMin";
             this.lblDisplayGridMin.Size = new System.Drawing.Size(32, 16);
             this.lblDisplayGridMin.TabIndex = 27;
-            this.lblDisplayGridMin.Text = "Min:";
+            this.lblDisplayGridMin.Text = "最小:";
             // 
             // lblDisplayGridMax
             // 
@@ -30547,7 +30464,7 @@
             this.lblDisplayGridMax.Name = "lblDisplayGridMax";
             this.lblDisplayGridMax.Size = new System.Drawing.Size(32, 16);
             this.lblDisplayGridMax.TabIndex = 26;
-            this.lblDisplayGridMax.Text = "Max:";
+            this.lblDisplayGridMax.Text = "最大:";
             // 
             // grpDisplayAverage
             // 
@@ -30564,7 +30481,7 @@
             this.grpDisplayAverage.Size = new System.Drawing.Size(153, 251);
             this.grpDisplayAverage.TabIndex = 38;
             this.grpDisplayAverage.TabStop = false;
-            this.grpDisplayAverage.Text = "Panadapter";
+            this.grpDisplayAverage.Text = "频谱";
             // 
             // chkDispNormalize
             // 
@@ -30576,7 +30493,7 @@
             this.chkDispNormalize.Name = "chkDispNormalize";
             this.chkDispNormalize.Size = new System.Drawing.Size(112, 17);
             this.chkDispNormalize.TabIndex = 64;
-            this.chkDispNormalize.Text = "1 Hz BW: Av / Sa";
+            this.chkDispNormalize.Text = "1 Hz 带宽: 均值/采样";
             this.chkDispNormalize.UseVisualStyleBackColor = true;
             this.chkDispNormalize.CheckedChanged += new System.EventHandler(this.chkDispNormalize_CheckedChanged);
             // 
@@ -30588,8 +30505,8 @@
             this.chkShowRX1NoiseFloor.Name = "chkShowRX1NoiseFloor";
             this.chkShowRX1NoiseFloor.Size = new System.Drawing.Size(109, 17);
             this.chkShowRX1NoiseFloor.TabIndex = 81;
-            this.chkShowRX1NoiseFloor.Text = "Show Noise Floor";
-            this.toolTip1.SetToolTip(this.chkShowRX1NoiseFloor, "Show the noise floor line on the panadaptor");
+            this.chkShowRX1NoiseFloor.Text = "显示噪底";
+            this.toolTip1.SetToolTip(this.chkShowRX1NoiseFloor, "在频谱上显示噪底线");
             this.chkShowRX1NoiseFloor.UseVisualStyleBackColor = true;
             this.chkShowRX1NoiseFloor.CheckedChanged += new System.EventHandler(this.chkShowRX1NoiseFloor_CheckedChanged);
             // 
@@ -30601,7 +30518,7 @@
             this.lblDispAv.Name = "lblDispAv";
             this.lblDispAv.Size = new System.Drawing.Size(58, 13);
             this.lblDispAv.TabIndex = 63;
-            this.lblDispAv.Text = "Averaging:";
+            this.lblDispAv.Text = "平均:";
             // 
             // comboDispPanAveraging
             // 
@@ -30630,7 +30547,7 @@
             this.lblDispDet.Name = "lblDispDet";
             this.lblDispDet.Size = new System.Drawing.Size(51, 13);
             this.lblDispDet.TabIndex = 61;
-            this.lblDispDet.Text = "Detector:";
+            this.lblDispDet.Text = "检波器:";
             // 
             // comboDispPanDetector
             // 
@@ -30670,7 +30587,7 @@
             this.udDisplayAVGTime.Size = new System.Drawing.Size(48, 20);
             this.udDisplayAVGTime.TabIndex = 2;
             this.udDisplayAVGTime.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udDisplayAVGTime, "When averaging, use this number of buffers to calculate the average.");
+            this.toolTip1.SetToolTip(this.udDisplayAVGTime, "求平均时，使用此缓冲区数来计算平均值。");
             this.udDisplayAVGTime.Value = new decimal(new int[] {
             30,
             0,
@@ -30686,7 +30603,7 @@
             this.lblDisplayAVGTime.Name = "lblDisplayAVGTime";
             this.lblDisplayAVGTime.Size = new System.Drawing.Size(64, 20);
             this.lblDisplayAVGTime.TabIndex = 3;
-            this.lblDisplayAVGTime.Text = "Time (ms):";
+            this.lblDisplayAVGTime.Text = "时间 (ms):";
             // 
             // grpDisplayRX1Pan
             // 
@@ -30703,7 +30620,7 @@
             this.grpDisplayRX1Pan.Size = new System.Drawing.Size(260, 128);
             this.grpDisplayRX1Pan.TabIndex = 45;
             this.grpDisplayRX1Pan.TabStop = false;
-            this.grpDisplayRX1Pan.Text = "Fast Fourier Transform";
+            this.grpDisplayRX1Pan.Text = "快速傅里叶变换";
             // 
             // comboDispWinType
             // 
@@ -30731,7 +30648,7 @@
             this.labelTS147.Name = "labelTS147";
             this.labelTS147.Size = new System.Drawing.Size(46, 13);
             this.labelTS147.TabIndex = 54;
-            this.labelTS147.Text = "Window";
+            this.labelTS147.Text = "窗函数";
             // 
             // labelTS146
             // 
@@ -30741,7 +30658,7 @@
             this.labelTS146.Name = "labelTS146";
             this.labelTS146.Size = new System.Drawing.Size(27, 13);
             this.labelTS146.TabIndex = 53;
-            this.labelTS146.Text = "Max";
+            this.labelTS146.Text = "最大";
             // 
             // labelTS145
             // 
@@ -30751,7 +30668,7 @@
             this.labelTS145.Name = "labelTS145";
             this.labelTS145.Size = new System.Drawing.Size(24, 13);
             this.labelTS145.TabIndex = 52;
-            this.labelTS145.Text = "Min";
+            this.labelTS145.Text = "最小";
             // 
             // lblDisplayBinWidth
             // 
@@ -30774,7 +30691,7 @@
             this.labelTS142.Name = "labelTS142";
             this.labelTS142.Size = new System.Drawing.Size(75, 13);
             this.labelTS142.TabIndex = 50;
-            this.labelTS142.Text = "Bin Width (Hz)";
+            this.labelTS142.Text = "分辨率带宽 (Hz)";
             // 
             // labelTS139
             // 
@@ -30784,7 +30701,7 @@
             this.labelTS139.Name = "labelTS139";
             this.labelTS139.Size = new System.Drawing.Size(27, 13);
             this.labelTS139.TabIndex = 49;
-            this.labelTS139.Text = "Size";
+            this.labelTS139.Text = "大小";
             // 
             // tbDisplayFFTSize
             // 
@@ -30831,7 +30748,7 @@
             this.grpDisplayWaterfall.Size = new System.Drawing.Size(304, 216);
             this.grpDisplayWaterfall.TabIndex = 40;
             this.grpDisplayWaterfall.TabStop = false;
-            this.grpDisplayWaterfall.Text = "Waterfall";
+            this.grpDisplayWaterfall.Text = "瀑布图";
             // 
             // chkWaterfallUseNFForAGCRX1
             // 
@@ -30841,8 +30758,8 @@
             this.chkWaterfallUseNFForAGCRX1.Name = "chkWaterfallUseNFForAGCRX1";
             this.chkWaterfallUseNFForAGCRX1.Size = new System.Drawing.Size(149, 17);
             this.chkWaterfallUseNFForAGCRX1.TabIndex = 92;
-            this.chkWaterfallUseNFForAGCRX1.Text = "Noise Floor Compensation";
-            this.toolTip1.SetToolTip(this.chkWaterfallUseNFForAGCRX1, "Use the noise floor to control the AGC Low Level");
+            this.chkWaterfallUseNFForAGCRX1.Text = "噪底补偿";
+            this.toolTip1.SetToolTip(this.chkWaterfallUseNFForAGCRX1, "使用噪底控制 AGC 低电平");
             this.chkWaterfallUseNFForAGCRX1.UseVisualStyleBackColor = true;
             this.chkWaterfallUseNFForAGCRX1.CheckedChanged += new System.EventHandler(this.chkWaterfallUseNFForAGCRX1_CheckedChanged);
             // 
@@ -30853,7 +30770,7 @@
             this.lblWaterfallAGCOffsetRX1.Name = "lblWaterfallAGCOffsetRX1";
             this.lblWaterfallAGCOffsetRX1.Size = new System.Drawing.Size(64, 16);
             this.lblWaterfallAGCOffsetRX1.TabIndex = 91;
-            this.lblWaterfallAGCOffsetRX1.Text = "AGC Offset";
+            this.lblWaterfallAGCOffsetRX1.Text = "AGC 偏移";
             // 
             // udWaterfallAGCOffsetRX1
             // 
@@ -30878,7 +30795,7 @@
             this.udWaterfallAGCOffsetRX1.Size = new System.Drawing.Size(48, 20);
             this.udWaterfallAGCOffsetRX1.TabIndex = 90;
             this.udWaterfallAGCOffsetRX1.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udWaterfallAGCOffsetRX1, "Apply dBm offset if using AGC");
+            this.toolTip1.SetToolTip(this.udWaterfallAGCOffsetRX1, "使用 AGC 时应用 dBm 偏移");
             this.udWaterfallAGCOffsetRX1.Value = new decimal(new int[] {
             0,
             0,
@@ -30894,7 +30811,7 @@
             this.labelTS91.Name = "labelTS91";
             this.labelTS91.Size = new System.Drawing.Size(46, 13);
             this.labelTS91.TabIndex = 81;
-            this.labelTS91.Text = "Opacity:";
+            this.labelTS91.Text = "不透明度:";
             // 
             // tbRX1WaterfallOpacity
             // 
@@ -30916,7 +30833,7 @@
             this.labelTS519.Name = "labelTS519";
             this.labelTS519.Size = new System.Drawing.Size(33, 13);
             this.labelTS519.TabIndex = 84;
-            this.labelTS519.Text = "frame";
+            this.labelTS519.Text = "帧";
             // 
             // lblRX1WaterFallCalulatedDelayMS
             // 
@@ -30936,8 +30853,8 @@
             this.chkWaterfallUseRX1SpectrumMinMax.Name = "chkWaterfallUseRX1SpectrumMinMax";
             this.chkWaterfallUseRX1SpectrumMinMax.Size = new System.Drawing.Size(118, 17);
             this.chkWaterfallUseRX1SpectrumMinMax.TabIndex = 82;
-            this.chkWaterfallUseRX1SpectrumMinMax.Text = "Use Spec Min/Max";
-            this.toolTip1.SetToolTip(this.chkWaterfallUseRX1SpectrumMinMax, "Spectrum Grid min/max used for low and high level");
+            this.chkWaterfallUseRX1SpectrumMinMax.Text = "使用频谱最小/最大值";
+            this.toolTip1.SetToolTip(this.chkWaterfallUseRX1SpectrumMinMax, "频谱网格最小/最大值用于低/高电平");
             this.chkWaterfallUseRX1SpectrumMinMax.UseVisualStyleBackColor = true;
             this.chkWaterfallUseRX1SpectrumMinMax.CheckedChanged += new System.EventHandler(this.chkWaterfallUseRX1SpectrumMinMax_CheckedChanged);
             // 
@@ -30952,8 +30869,7 @@
             this.clrbtnWaterfallMid.Selectable = true;
             this.clrbtnWaterfallMid.Size = new System.Drawing.Size(40, 23);
             this.clrbtnWaterfallMid.TabIndex = 78;
-            this.toolTip1.SetToolTip(this.clrbtnWaterfallMid, "The mid color used when the signal level is exactly between the low and high leve" +
-        "ls shown above.  A gradient is used if it is not eactly in the middle.");
+            this.toolTip1.SetToolTip(this.clrbtnWaterfallMid, "当信号电平恰好位于上方所示的低电平与高电平之间时使用的中间颜色。若不在正中间则使用渐变。");
             this.clrbtnWaterfallMid.Changed += new System.EventHandler(this.clrbtnWaterfallMid_Changed);
             // 
             // chkRX1WaterfallAGC
@@ -30966,8 +30882,8 @@
             this.chkRX1WaterfallAGC.Name = "chkRX1WaterfallAGC";
             this.chkRX1WaterfallAGC.Size = new System.Drawing.Size(93, 17);
             this.chkRX1WaterfallAGC.TabIndex = 81;
-            this.chkRX1WaterfallAGC.Text = "Waterfall AGC";
-            this.toolTip1.SetToolTip(this.chkRX1WaterfallAGC, "Automatically calculates Low Level Threshold for Waterfall.");
+            this.chkRX1WaterfallAGC.Text = "瀑布图 AGC";
+            this.toolTip1.SetToolTip(this.chkRX1WaterfallAGC, "自动计算瀑布图低电平阈值。");
             this.chkRX1WaterfallAGC.UseVisualStyleBackColor = true;
             this.chkRX1WaterfallAGC.CheckedChanged += new System.EventHandler(this.chkRX1WaterfallAGC_CheckedChanged);
             // 
@@ -30982,8 +30898,7 @@
             this.clrbtnWaterfallHigh.Selectable = true;
             this.clrbtnWaterfallHigh.Size = new System.Drawing.Size(40, 23);
             this.clrbtnWaterfallHigh.TabIndex = 77;
-            this.toolTip1.SetToolTip(this.clrbtnWaterfallHigh, "The color to display when the signal level is at or above the high level shown ab" +
-        "ove.");
+            this.toolTip1.SetToolTip(this.clrbtnWaterfallHigh, "当信号电平达到或超过上方所示高电平时的显示颜色。");
             this.clrbtnWaterfallHigh.Changed += new System.EventHandler(this.clrbtnWaterfallHigh_Changed);
             // 
             // lblWaterfallLevels
@@ -30993,9 +30908,8 @@
             this.lblWaterfallLevels.Name = "lblWaterfallLevels";
             this.lblWaterfallLevels.Size = new System.Drawing.Size(134, 13);
             this.lblWaterfallLevels.TabIndex = 80;
-            this.lblWaterfallLevels.Text = "Band for Low/High Levels:";
-            this.toolTip1.SetToolTip(this.lblWaterfallLevels, "Waterfall Low/High levels can be set by band.  RX2 bands inherit RX1 band\'s Water" +
-        "fall Settings.");
+            this.lblWaterfallLevels.Text = "低/高电平波段:";
+            this.toolTip1.SetToolTip(this.lblWaterfallLevels, "瀑布图低/高电平可按波段设置。RX2 波段继承 RX1 波段的瀑布图设置。");
             // 
             // txtWaterFallBandLevel
             // 
@@ -31004,8 +30918,8 @@
             this.txtWaterFallBandLevel.ReadOnly = true;
             this.txtWaterFallBandLevel.Size = new System.Drawing.Size(94, 20);
             this.txtWaterFallBandLevel.TabIndex = 79;
-            this.txtWaterFallBandLevel.Text = "Current Band";
-            this.toolTip1.SetToolTip(this.txtWaterFallBandLevel, "Current RX1 band selected for setting Waterfall Low/High level settings");
+            this.txtWaterFallBandLevel.Text = "当前波段";
+            this.toolTip1.SetToolTip(this.txtWaterFallBandLevel, "当前选中的 RX1 波段，用于设置瀑布图低/高电平");
             // 
             // lblDisplayWaterfallMidColor
             // 
@@ -31014,7 +30928,7 @@
             this.lblDisplayWaterfallMidColor.Name = "lblDisplayWaterfallMidColor";
             this.lblDisplayWaterfallMidColor.Size = new System.Drawing.Size(64, 16);
             this.lblDisplayWaterfallMidColor.TabIndex = 76;
-            this.lblDisplayWaterfallMidColor.Text = "Mid Color:";
+            this.lblDisplayWaterfallMidColor.Text = "中间颜色:";
             // 
             // comboColorPalette
             // 
@@ -31031,7 +30945,7 @@
             this.comboColorPalette.Name = "comboColorPalette";
             this.comboColorPalette.Size = new System.Drawing.Size(72, 21);
             this.comboColorPalette.TabIndex = 74;
-            this.toolTip1.SetToolTip(this.comboColorPalette, "Sets the color sheme");
+            this.toolTip1.SetToolTip(this.comboColorPalette, "设置配色方案");
             this.comboColorPalette.SelectedIndexChanged += new System.EventHandler(this.comboColorPalette_SelectedIndexChanged);
             // 
             // lblDisplayWaterfallHighColor
@@ -31041,7 +30955,7 @@
             this.lblDisplayWaterfallHighColor.Name = "lblDisplayWaterfallHighColor";
             this.lblDisplayWaterfallHighColor.Size = new System.Drawing.Size(64, 16);
             this.lblDisplayWaterfallHighColor.TabIndex = 75;
-            this.lblDisplayWaterfallHighColor.Text = "High Color:";
+            this.lblDisplayWaterfallHighColor.Text = "高电平颜色:";
             // 
             // label11
             // 
@@ -31050,8 +30964,8 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(40, 13);
             this.label11.TabIndex = 73;
-            this.label11.Text = "Palette";
-            this.toolTip1.SetToolTip(this.label11, "Color sheme");
+            this.label11.Text = "调色板";
+            this.toolTip1.SetToolTip(this.label11, "配色方案");
             // 
             // udDisplayWaterfallUpdatePeriod
             // 
@@ -31075,8 +30989,7 @@
             this.udDisplayWaterfallUpdatePeriod.Size = new System.Drawing.Size(48, 20);
             this.udDisplayWaterfallUpdatePeriod.TabIndex = 71;
             this.udDisplayWaterfallUpdatePeriod.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udDisplayWaterfallUpdatePeriod, "How often to update (scroll another pixel line) on the waterfall display.  Note t" +
-        "hat this is tamed by the FPS setting.");
+            this.toolTip1.SetToolTip(this.udDisplayWaterfallUpdatePeriod, "瀑布图更新频率（每更新一次滚动一行像素）。注意：此值受 FPS 设置约束。");
             this.udDisplayWaterfallUpdatePeriod.Value = new decimal(new int[] {
             2,
             0,
@@ -31091,9 +31004,8 @@
             this.lblDisplayWaterfallUpdatePeriod.Name = "lblDisplayWaterfallUpdatePeriod";
             this.lblDisplayWaterfallUpdatePeriod.Size = new System.Drawing.Size(76, 22);
             this.lblDisplayWaterfallUpdatePeriod.TabIndex = 72;
-            this.lblDisplayWaterfallUpdatePeriod.Text = "Update every";
-            this.toolTip1.SetToolTip(this.lblDisplayWaterfallUpdatePeriod, "How often to update (scroll another pixel line) on the waterfall display.  Note t" +
-        "hat this is tamed by the FPS setting.");
+            this.lblDisplayWaterfallUpdatePeriod.Text = "更新间隔";
+            this.toolTip1.SetToolTip(this.lblDisplayWaterfallUpdatePeriod, "瀑布图更新频率（每更新一次滚动一行像素）。注意：此值受 FPS 设置约束。");
             // 
             // clrbtnWaterfallLow
             // 
@@ -31106,7 +31018,7 @@
             this.clrbtnWaterfallLow.Selectable = true;
             this.clrbtnWaterfallLow.Size = new System.Drawing.Size(40, 23);
             this.clrbtnWaterfallLow.TabIndex = 68;
-            this.toolTip1.SetToolTip(this.clrbtnWaterfallLow, "The Color to use when the signal level is at or below the low level set above.");
+            this.toolTip1.SetToolTip(this.clrbtnWaterfallLow, "当信号电平达到或低于上方所设低电平时使用的颜色。");
             this.clrbtnWaterfallLow.Changed += new System.EventHandler(this.clrbtnWaterfallLow_Changed);
             // 
             // lblDisplayWaterfallLowColor
@@ -31116,7 +31028,7 @@
             this.lblDisplayWaterfallLowColor.Name = "lblDisplayWaterfallLowColor";
             this.lblDisplayWaterfallLowColor.Size = new System.Drawing.Size(64, 16);
             this.lblDisplayWaterfallLowColor.TabIndex = 57;
-            this.lblDisplayWaterfallLowColor.Text = "Low Color:";
+            this.lblDisplayWaterfallLowColor.Text = "低电平颜色:";
             // 
             // lblDisplayWaterfallLowLevel
             // 
@@ -31125,7 +31037,7 @@
             this.lblDisplayWaterfallLowLevel.Name = "lblDisplayWaterfallLowLevel";
             this.lblDisplayWaterfallLowLevel.Size = new System.Drawing.Size(64, 16);
             this.lblDisplayWaterfallLowLevel.TabIndex = 3;
-            this.lblDisplayWaterfallLowLevel.Text = "Low Level";
+            this.lblDisplayWaterfallLowLevel.Text = "低电平";
             // 
             // udDisplayWaterfallLowLevel
             // 
@@ -31149,7 +31061,7 @@
             this.udDisplayWaterfallLowLevel.Size = new System.Drawing.Size(48, 20);
             this.udDisplayWaterfallLowLevel.TabIndex = 2;
             this.udDisplayWaterfallLowLevel.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udDisplayWaterfallLowLevel, "Waterfall Low Signal - Show Low Color below this value (gradient in between).");
+            this.toolTip1.SetToolTip(this.udDisplayWaterfallLowLevel, "瀑布图低信号 - 低于此值时显示低电平颜色（之间使用渐变）。");
             this.udDisplayWaterfallLowLevel.Value = new decimal(new int[] {
             120,
             0,
@@ -31165,7 +31077,7 @@
             this.lblDisplayWaterfallHighLevel.Name = "lblDisplayWaterfallHighLevel";
             this.lblDisplayWaterfallHighLevel.Size = new System.Drawing.Size(64, 16);
             this.lblDisplayWaterfallHighLevel.TabIndex = 1;
-            this.lblDisplayWaterfallHighLevel.Text = "High Level";
+            this.lblDisplayWaterfallHighLevel.Text = "高电平";
             // 
             // udDisplayWaterfallHighLevel
             // 
@@ -31189,7 +31101,7 @@
             this.udDisplayWaterfallHighLevel.Size = new System.Drawing.Size(48, 20);
             this.udDisplayWaterfallHighLevel.TabIndex = 0;
             this.udDisplayWaterfallHighLevel.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udDisplayWaterfallHighLevel, "Waterfall High Signal - Show High Color above this value (gradient in between).");
+            this.toolTip1.SetToolTip(this.udDisplayWaterfallHighLevel, "瀑布图高信号 - 高于此值时显示高电平颜色（之间使用渐变）。");
             this.udDisplayWaterfallHighLevel.Value = new decimal(new int[] {
             80,
             0,
@@ -31236,8 +31148,8 @@
             this.chkFillActivePeakHoldRX2.Name = "chkFillActivePeakHoldRX2";
             this.chkFillActivePeakHoldRX2.Size = new System.Drawing.Size(38, 17);
             this.chkFillActivePeakHoldRX2.TabIndex = 74;
-            this.chkFillActivePeakHoldRX2.Text = "Fill";
-            this.toolTip1.SetToolTip(this.chkFillActivePeakHoldRX2, "Fill the peak hold area");
+            this.chkFillActivePeakHoldRX2.Text = "填充";
+            this.toolTip1.SetToolTip(this.chkFillActivePeakHoldRX2, "填充峰值保持区域");
             this.chkFillActivePeakHoldRX2.UseVisualStyleBackColor = true;
             this.chkFillActivePeakHoldRX2.CheckedChanged += new System.EventHandler(this.chkFillActivePeakHoldRX2_CheckedChanged);
             // 
@@ -31264,7 +31176,7 @@
             this.udActivePeakHoldDropRX2.Size = new System.Drawing.Size(48, 20);
             this.udActivePeakHoldDropRX2.TabIndex = 72;
             this.udActivePeakHoldDropRX2.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udActivePeakHoldDropRX2, "The speed of the drop in dBm per second");
+            this.toolTip1.SetToolTip(this.udActivePeakHoldDropRX2, "下降速度（dBm/秒）");
             this.udActivePeakHoldDropRX2.Value = new decimal(new int[] {
             6,
             0,
@@ -31282,8 +31194,8 @@
             this.chkActivePeakHoldRX2.Name = "chkActivePeakHoldRX2";
             this.chkActivePeakHoldRX2.Size = new System.Drawing.Size(109, 17);
             this.chkActivePeakHoldRX2.TabIndex = 69;
-            this.chkActivePeakHoldRX2.Text = "Active Peak Hold";
-            this.toolTip1.SetToolTip(this.chkActivePeakHoldRX2, "Actively peak hold the panadaptor display");
+            this.chkActivePeakHoldRX2.Text = "活动峰值保持";
+            this.toolTip1.SetToolTip(this.chkActivePeakHoldRX2, "主动保持频谱显示峰值");
             this.chkActivePeakHoldRX2.UseVisualStyleBackColor = true;
             this.chkActivePeakHoldRX2.CheckedChanged += new System.EventHandler(this.chkActivePeakHoldRX2_CheckedChanged);
             // 
@@ -31294,7 +31206,7 @@
             this.lblActivePeakHoldDropRX2.Name = "lblActivePeakHoldDropRX2";
             this.lblActivePeakHoldDropRX2.Size = new System.Drawing.Size(83, 20);
             this.lblActivePeakHoldDropRX2.TabIndex = 73;
-            this.lblActivePeakHoldDropRX2.Text = "Drop (dBm/s):";
+            this.lblActivePeakHoldDropRX2.Text = "下落 (dBm/s):";
             this.lblActivePeakHoldDropRX2.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // lblActivePeakHoldRX2
@@ -31304,7 +31216,7 @@
             this.lblActivePeakHoldRX2.Name = "lblActivePeakHoldRX2";
             this.lblActivePeakHoldRX2.Size = new System.Drawing.Size(74, 20);
             this.lblActivePeakHoldRX2.TabIndex = 71;
-            this.lblActivePeakHoldRX2.Text = "Time (ms):";
+            this.lblActivePeakHoldRX2.Text = "时间 (ms):";
             this.lblActivePeakHoldRX2.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // udActivePeakHoldDurationRX2
@@ -31329,7 +31241,7 @@
             this.udActivePeakHoldDurationRX2.Size = new System.Drawing.Size(48, 20);
             this.udActivePeakHoldDurationRX2.TabIndex = 70;
             this.udActivePeakHoldDurationRX2.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udActivePeakHoldDurationRX2, "How long to hold the peaks");
+            this.toolTip1.SetToolTip(this.udActivePeakHoldDurationRX2, "峰值保持时长");
             this.udActivePeakHoldDurationRX2.Value = new decimal(new int[] {
             100,
             0,
@@ -31350,7 +31262,7 @@
             this.grpRX2DisplayAveraging.Size = new System.Drawing.Size(123, 141);
             this.grpRX2DisplayAveraging.TabIndex = 80;
             this.grpRX2DisplayAveraging.TabStop = false;
-            this.grpRX2DisplayAveraging.Text = "Waterfall";
+            this.grpRX2DisplayAveraging.Text = "瀑布图";
             // 
             // labelTS375
             // 
@@ -31360,7 +31272,7 @@
             this.labelTS375.Name = "labelTS375";
             this.labelTS375.Size = new System.Drawing.Size(58, 13);
             this.labelTS375.TabIndex = 63;
-            this.labelTS375.Text = "Averaging:";
+            this.labelTS375.Text = "平均:";
             // 
             // comboRX2DispWFAveraging
             // 
@@ -31389,7 +31301,7 @@
             this.labelTS376.Name = "labelTS376";
             this.labelTS376.Size = new System.Drawing.Size(51, 13);
             this.labelTS376.TabIndex = 61;
-            this.labelTS376.Text = "Detector:";
+            this.labelTS376.Text = "检波器:";
             // 
             // comboRX2DispWFDetector
             // 
@@ -31428,7 +31340,7 @@
             this.udRX2DisplayWFAVTime.Size = new System.Drawing.Size(48, 20);
             this.udRX2DisplayWFAVTime.TabIndex = 2;
             this.udRX2DisplayWFAVTime.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udRX2DisplayWFAVTime, "When averaging, use this number of buffers to calculate the average.");
+            this.toolTip1.SetToolTip(this.udRX2DisplayWFAVTime, "求平均时，使用此缓冲区数来计算平均值。");
             this.udRX2DisplayWFAVTime.Value = new decimal(new int[] {
             120,
             0,
@@ -31443,7 +31355,7 @@
             this.labelTS377.Name = "labelTS377";
             this.labelTS377.Size = new System.Drawing.Size(64, 23);
             this.labelTS377.TabIndex = 3;
-            this.labelTS377.Text = "Time (ms):";
+            this.labelTS377.Text = "时间 (ms):";
             // 
             // grpRX2DisplayWaterfall
             // 
@@ -31477,7 +31389,7 @@
             this.grpRX2DisplayWaterfall.Size = new System.Drawing.Size(304, 216);
             this.grpRX2DisplayWaterfall.TabIndex = 50;
             this.grpRX2DisplayWaterfall.TabStop = false;
-            this.grpRX2DisplayWaterfall.Text = "Waterfall";
+            this.grpRX2DisplayWaterfall.Text = "瀑布图";
             // 
             // chkWaterfallUseNFForAGCRX2
             // 
@@ -31487,8 +31399,8 @@
             this.chkWaterfallUseNFForAGCRX2.Name = "chkWaterfallUseNFForAGCRX2";
             this.chkWaterfallUseNFForAGCRX2.Size = new System.Drawing.Size(149, 17);
             this.chkWaterfallUseNFForAGCRX2.TabIndex = 95;
-            this.chkWaterfallUseNFForAGCRX2.Text = "Noise Floor Compensation";
-            this.toolTip1.SetToolTip(this.chkWaterfallUseNFForAGCRX2, "Use the noise floor to control the AGC Low Level");
+            this.chkWaterfallUseNFForAGCRX2.Text = "噪底补偿";
+            this.toolTip1.SetToolTip(this.chkWaterfallUseNFForAGCRX2, "使用噪底控制 AGC 低电平");
             this.chkWaterfallUseNFForAGCRX2.UseVisualStyleBackColor = true;
             this.chkWaterfallUseNFForAGCRX2.CheckedChanged += new System.EventHandler(this.chkWaterfallUseNFForAGCRX2_CheckedChanged);
             // 
@@ -31499,7 +31411,7 @@
             this.lblWaterfallAGCOffsetRX2.Name = "lblWaterfallAGCOffsetRX2";
             this.lblWaterfallAGCOffsetRX2.Size = new System.Drawing.Size(64, 16);
             this.lblWaterfallAGCOffsetRX2.TabIndex = 94;
-            this.lblWaterfallAGCOffsetRX2.Text = "AGC Offset";
+            this.lblWaterfallAGCOffsetRX2.Text = "AGC 偏移";
             // 
             // udWaterfallAGCOffsetRX2
             // 
@@ -31524,7 +31436,7 @@
             this.udWaterfallAGCOffsetRX2.Size = new System.Drawing.Size(48, 20);
             this.udWaterfallAGCOffsetRX2.TabIndex = 93;
             this.udWaterfallAGCOffsetRX2.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udWaterfallAGCOffsetRX2, "Apply dBm offset if using AGC");
+            this.toolTip1.SetToolTip(this.udWaterfallAGCOffsetRX2, "使用 AGC 时应用 dBm 偏移");
             this.udWaterfallAGCOffsetRX2.Value = new decimal(new int[] {
             0,
             0,
@@ -31540,7 +31452,7 @@
             this.labelTS92.Name = "labelTS92";
             this.labelTS92.Size = new System.Drawing.Size(46, 13);
             this.labelTS92.TabIndex = 90;
-            this.labelTS92.Text = "Opacity:";
+            this.labelTS92.Text = "不透明度:";
             // 
             // tbRX2WaterfallOpacity
             // 
@@ -31562,7 +31474,7 @@
             this.labelTS520.Name = "labelTS520";
             this.labelTS520.Size = new System.Drawing.Size(33, 13);
             this.labelTS520.TabIndex = 85;
-            this.labelTS520.Text = "frame";
+            this.labelTS520.Text = "帧";
             // 
             // lblRX2WaterFallCalulatedDelayMS
             // 
@@ -31582,8 +31494,8 @@
             this.chkWaterfallUseRX2SpectrumMinMax.Name = "chkWaterfallUseRX2SpectrumMinMax";
             this.chkWaterfallUseRX2SpectrumMinMax.Size = new System.Drawing.Size(118, 17);
             this.chkWaterfallUseRX2SpectrumMinMax.TabIndex = 83;
-            this.chkWaterfallUseRX2SpectrumMinMax.Text = "Use Spec Min/Max";
-            this.toolTip1.SetToolTip(this.chkWaterfallUseRX2SpectrumMinMax, "Spectrum Grid min/max used for low and high level");
+            this.chkWaterfallUseRX2SpectrumMinMax.Text = "使用频谱最小/最大值";
+            this.toolTip1.SetToolTip(this.chkWaterfallUseRX2SpectrumMinMax, "频谱网格最小/最大值用于低/高电平");
             this.chkWaterfallUseRX2SpectrumMinMax.UseVisualStyleBackColor = true;
             this.chkWaterfallUseRX2SpectrumMinMax.CheckedChanged += new System.EventHandler(this.chkWaterfallUseRX2SpectrumMinMax_CheckedChanged);
             // 
@@ -31598,8 +31510,7 @@
             this.clrbtnRX2WaterfallMid.Selectable = true;
             this.clrbtnRX2WaterfallMid.Size = new System.Drawing.Size(40, 23);
             this.clrbtnRX2WaterfallMid.TabIndex = 78;
-            this.toolTip1.SetToolTip(this.clrbtnRX2WaterfallMid, "The mid color used when the signal level is exactly between the low and high leve" +
-        "ls shown above.  A gradient is used if it is not eactly in the middle.");
+            this.toolTip1.SetToolTip(this.clrbtnRX2WaterfallMid, "当信号电平恰好位于上方所示的低电平与高电平之间时使用的中间颜色。若不在正中间则使用渐变。");
             this.clrbtnRX2WaterfallMid.Changed += new System.EventHandler(this.clrbtnRX2WaterfallMid_Changed);
             // 
             // chkRX2WaterfallAGC
@@ -31612,8 +31523,8 @@
             this.chkRX2WaterfallAGC.Name = "chkRX2WaterfallAGC";
             this.chkRX2WaterfallAGC.Size = new System.Drawing.Size(93, 17);
             this.chkRX2WaterfallAGC.TabIndex = 82;
-            this.chkRX2WaterfallAGC.Text = "Waterfall AGC";
-            this.toolTip1.SetToolTip(this.chkRX2WaterfallAGC, "Automatically calculates Low Level Threshold for Waterfall.");
+            this.chkRX2WaterfallAGC.Text = "瀑布图 AGC";
+            this.toolTip1.SetToolTip(this.chkRX2WaterfallAGC, "自动计算瀑布图低电平阈值。");
             this.chkRX2WaterfallAGC.UseVisualStyleBackColor = true;
             this.chkRX2WaterfallAGC.CheckedChanged += new System.EventHandler(this.chkRX2WaterfallAGC_CheckedChanged);
             // 
@@ -31628,8 +31539,7 @@
             this.clrbtnRX2WaterfallHigh.Selectable = true;
             this.clrbtnRX2WaterfallHigh.Size = new System.Drawing.Size(40, 23);
             this.clrbtnRX2WaterfallHigh.TabIndex = 77;
-            this.toolTip1.SetToolTip(this.clrbtnRX2WaterfallHigh, "The color to display when the signal level is at or above the high level shown ab" +
-        "ove.");
+            this.toolTip1.SetToolTip(this.clrbtnRX2WaterfallHigh, "当信号电平达到或超过上方所示高电平时的显示颜色。");
             this.clrbtnRX2WaterfallHigh.Changed += new System.EventHandler(this.clrbtnRX2WaterfallHigh_Changed);
             // 
             // lblRX2WaterfallLevels
@@ -31639,9 +31549,8 @@
             this.lblRX2WaterfallLevels.Name = "lblRX2WaterfallLevels";
             this.lblRX2WaterfallLevels.Size = new System.Drawing.Size(134, 13);
             this.lblRX2WaterfallLevels.TabIndex = 80;
-            this.lblRX2WaterfallLevels.Text = "Band for Low/High Levels:";
-            this.toolTip1.SetToolTip(this.lblRX2WaterfallLevels, "Waterfall Low/High levels can be set by band.  RX2 bands inherit RX1 band\'s Water" +
-        "fall Settings.");
+            this.lblRX2WaterfallLevels.Text = "低/高电平波段:";
+            this.toolTip1.SetToolTip(this.lblRX2WaterfallLevels, "瀑布图低/高电平可按波段设置。RX2 波段继承 RX1 波段的瀑布图设置。");
             // 
             // lblRX2DisplayWaterfallMidColor
             // 
@@ -31650,7 +31559,7 @@
             this.lblRX2DisplayWaterfallMidColor.Name = "lblRX2DisplayWaterfallMidColor";
             this.lblRX2DisplayWaterfallMidColor.Size = new System.Drawing.Size(64, 16);
             this.lblRX2DisplayWaterfallMidColor.TabIndex = 76;
-            this.lblRX2DisplayWaterfallMidColor.Text = "Mid Color:";
+            this.lblRX2DisplayWaterfallMidColor.Text = "中间颜色:";
             // 
             // txtRX2WaterFallBandLevel
             // 
@@ -31659,8 +31568,8 @@
             this.txtRX2WaterFallBandLevel.ReadOnly = true;
             this.txtRX2WaterFallBandLevel.Size = new System.Drawing.Size(94, 20);
             this.txtRX2WaterFallBandLevel.TabIndex = 79;
-            this.txtRX2WaterFallBandLevel.Text = "Current Band";
-            this.toolTip1.SetToolTip(this.txtRX2WaterFallBandLevel, "Current RX1 band selected for setting Waterfall Low/High level settings");
+            this.txtRX2WaterFallBandLevel.Text = "当前波段";
+            this.toolTip1.SetToolTip(this.txtRX2WaterFallBandLevel, "当前选中的 RX1 波段，用于设置瀑布图低/高电平");
             // 
             // lblRX2DisplayWaterfallHighColor
             // 
@@ -31669,7 +31578,7 @@
             this.lblRX2DisplayWaterfallHighColor.Name = "lblRX2DisplayWaterfallHighColor";
             this.lblRX2DisplayWaterfallHighColor.Size = new System.Drawing.Size(64, 16);
             this.lblRX2DisplayWaterfallHighColor.TabIndex = 75;
-            this.lblRX2DisplayWaterfallHighColor.Text = "High Color:";
+            this.lblRX2DisplayWaterfallHighColor.Text = "高电平颜色:";
             // 
             // comboRX2ColorPalette
             // 
@@ -31686,7 +31595,7 @@
             this.comboRX2ColorPalette.Name = "comboRX2ColorPalette";
             this.comboRX2ColorPalette.Size = new System.Drawing.Size(72, 21);
             this.comboRX2ColorPalette.TabIndex = 74;
-            this.toolTip1.SetToolTip(this.comboRX2ColorPalette, "Sets the color sheme");
+            this.toolTip1.SetToolTip(this.comboRX2ColorPalette, "设置配色方案");
             this.comboRX2ColorPalette.SelectedIndexChanged += new System.EventHandler(this.comboRX2ColorPalette_SelectedIndexChanged);
             // 
             // label21
@@ -31696,8 +31605,8 @@
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(40, 13);
             this.label21.TabIndex = 73;
-            this.label21.Text = "Palette";
-            this.toolTip1.SetToolTip(this.label21, "Color sheme");
+            this.label21.Text = "调色板";
+            this.toolTip1.SetToolTip(this.label21, "配色方案");
             // 
             // udRX2DisplayWaterfallUpdatePeriod
             // 
@@ -31721,8 +31630,7 @@
             this.udRX2DisplayWaterfallUpdatePeriod.Size = new System.Drawing.Size(48, 20);
             this.udRX2DisplayWaterfallUpdatePeriod.TabIndex = 71;
             this.udRX2DisplayWaterfallUpdatePeriod.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udRX2DisplayWaterfallUpdatePeriod, "How often to update (scroll another pixel line) on the waterfall display.  Note t" +
-        "hat this is tamed by the FPS setting.");
+            this.toolTip1.SetToolTip(this.udRX2DisplayWaterfallUpdatePeriod, "瀑布图更新频率（每更新一次滚动一行像素）。注意：此值受 FPS 设置约束。");
             this.udRX2DisplayWaterfallUpdatePeriod.Value = new decimal(new int[] {
             2,
             0,
@@ -31737,9 +31645,8 @@
             this.lblRX2DisplayWaterfallUpdatePeriod.Name = "lblRX2DisplayWaterfallUpdatePeriod";
             this.lblRX2DisplayWaterfallUpdatePeriod.Size = new System.Drawing.Size(80, 20);
             this.lblRX2DisplayWaterfallUpdatePeriod.TabIndex = 72;
-            this.lblRX2DisplayWaterfallUpdatePeriod.Text = "Update every";
-            this.toolTip1.SetToolTip(this.lblRX2DisplayWaterfallUpdatePeriod, "How often to update (scroll another pixel line) on the waterfall display.  Note t" +
-        "hat this is tamed by the FPS setting.");
+            this.lblRX2DisplayWaterfallUpdatePeriod.Text = "更新间隔";
+            this.toolTip1.SetToolTip(this.lblRX2DisplayWaterfallUpdatePeriod, "瀑布图更新频率（每更新一次滚动一行像素）。注意：此值受 FPS 设置约束。");
             // 
             // clrbtnRX2WaterfallLow
             // 
@@ -31752,7 +31659,7 @@
             this.clrbtnRX2WaterfallLow.Selectable = true;
             this.clrbtnRX2WaterfallLow.Size = new System.Drawing.Size(40, 23);
             this.clrbtnRX2WaterfallLow.TabIndex = 68;
-            this.toolTip1.SetToolTip(this.clrbtnRX2WaterfallLow, "The Color to use when the signal level is at or below the low level set above.");
+            this.toolTip1.SetToolTip(this.clrbtnRX2WaterfallLow, "当信号电平达到或低于上方所设低电平时使用的颜色。");
             this.clrbtnRX2WaterfallLow.Changed += new System.EventHandler(this.clrbtnRX2WaterfallLow_Changed);
             // 
             // lblRX2DisplayWaterfallLowColor
@@ -31762,7 +31669,7 @@
             this.lblRX2DisplayWaterfallLowColor.Name = "lblRX2DisplayWaterfallLowColor";
             this.lblRX2DisplayWaterfallLowColor.Size = new System.Drawing.Size(64, 16);
             this.lblRX2DisplayWaterfallLowColor.TabIndex = 57;
-            this.lblRX2DisplayWaterfallLowColor.Text = "Low Color:";
+            this.lblRX2DisplayWaterfallLowColor.Text = "低电平颜色:";
             // 
             // lblRX2DisplayWaterfallLowLevel
             // 
@@ -31771,7 +31678,7 @@
             this.lblRX2DisplayWaterfallLowLevel.Name = "lblRX2DisplayWaterfallLowLevel";
             this.lblRX2DisplayWaterfallLowLevel.Size = new System.Drawing.Size(64, 16);
             this.lblRX2DisplayWaterfallLowLevel.TabIndex = 3;
-            this.lblRX2DisplayWaterfallLowLevel.Text = "Low Level";
+            this.lblRX2DisplayWaterfallLowLevel.Text = "低电平";
             // 
             // udRX2DisplayWaterfallLowLevel
             // 
@@ -31795,7 +31702,7 @@
             this.udRX2DisplayWaterfallLowLevel.Size = new System.Drawing.Size(48, 20);
             this.udRX2DisplayWaterfallLowLevel.TabIndex = 2;
             this.udRX2DisplayWaterfallLowLevel.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udRX2DisplayWaterfallLowLevel, "Waterfall Low Signal - Show Low Color below this value (gradient in between).");
+            this.toolTip1.SetToolTip(this.udRX2DisplayWaterfallLowLevel, "瀑布图低信号 - 低于此值时显示低电平颜色（之间使用渐变）。");
             this.udRX2DisplayWaterfallLowLevel.Value = new decimal(new int[] {
             120,
             0,
@@ -31810,7 +31717,7 @@
             this.lblRX2DisplayWaterfallHighLevel.Name = "lblRX2DisplayWaterfallHighLevel";
             this.lblRX2DisplayWaterfallHighLevel.Size = new System.Drawing.Size(64, 16);
             this.lblRX2DisplayWaterfallHighLevel.TabIndex = 1;
-            this.lblRX2DisplayWaterfallHighLevel.Text = "High Level";
+            this.lblRX2DisplayWaterfallHighLevel.Text = "高电平";
             // 
             // udRX2DisplayWaterfallHighLevel
             // 
@@ -31834,7 +31741,7 @@
             this.udRX2DisplayWaterfallHighLevel.Size = new System.Drawing.Size(48, 20);
             this.udRX2DisplayWaterfallHighLevel.TabIndex = 0;
             this.udRX2DisplayWaterfallHighLevel.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udRX2DisplayWaterfallHighLevel, "Waterfall High Signal - Show High Color above this value (gradient in between).");
+            this.toolTip1.SetToolTip(this.udRX2DisplayWaterfallHighLevel, "瀑布图高信号 - 高于此值时显示高电平颜色（之间使用渐变）。");
             this.udRX2DisplayWaterfallHighLevel.Value = new decimal(new int[] {
             80,
             0,
@@ -31863,7 +31770,7 @@
             this.grpRX2DisplaySpectrumGrid.Size = new System.Drawing.Size(304, 165);
             this.grpRX2DisplaySpectrumGrid.TabIndex = 49;
             this.grpRX2DisplaySpectrumGrid.TabStop = false;
-            this.grpRX2DisplaySpectrumGrid.Text = "Spectrum Grid";
+            this.grpRX2DisplaySpectrumGrid.Text = "频谱网格";
             // 
             // label20
             // 
@@ -31872,8 +31779,8 @@
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(57, 13);
             this.label20.TabIndex = 88;
-            this.label20.Text = "dBm offset";
-            this.toolTip1.SetToolTip(this.label20, "Display Grid levels can be set by band. ");
+            this.label20.Text = "dBm 偏移";
+            this.toolTip1.SetToolTip(this.label20, "显示网格电平可按波段设置。 ");
             // 
             // chkMaintainNFAdjustDeltaRX2
             // 
@@ -31883,8 +31790,8 @@
             this.chkMaintainNFAdjustDeltaRX2.Name = "chkMaintainNFAdjustDeltaRX2";
             this.chkMaintainNFAdjustDeltaRX2.Size = new System.Drawing.Size(92, 17);
             this.chkMaintainNFAdjustDeltaRX2.TabIndex = 87;
-            this.chkMaintainNFAdjustDeltaRX2.Text = "Maintain delta";
-            this.toolTip1.SetToolTip(this.chkMaintainNFAdjustDeltaRX2, "If min is adjusted, max will be changed by same adjustment");
+            this.chkMaintainNFAdjustDeltaRX2.Text = "保持差值";
+            this.toolTip1.SetToolTip(this.chkMaintainNFAdjustDeltaRX2, "调整最小值时，最大值将按相同量变化");
             this.chkMaintainNFAdjustDeltaRX2.UseVisualStyleBackColor = true;
             this.chkMaintainNFAdjustDeltaRX2.CheckedChanged += new System.EventHandler(this.chkMaintainNFAdjustDeltaRX2_CheckedChanged);
             // 
@@ -31927,8 +31834,8 @@
             this.chkAdjustGridMinToNFRX2.Name = "chkAdjustGridMinToNFRX2";
             this.chkAdjustGridMinToNFRX2.Size = new System.Drawing.Size(143, 17);
             this.chkAdjustGridMinToNFRX2.TabIndex = 85;
-            this.chkAdjustGridMinToNFRX2.Text = "Adjust Min to Noise Floor";
-            this.toolTip1.SetToolTip(this.chkAdjustGridMinToNFRX2, "Keep min adjusted to Noise Floor");
+            this.chkAdjustGridMinToNFRX2.Text = "将最小值调整至噪底";
+            this.toolTip1.SetToolTip(this.chkAdjustGridMinToNFRX2, "保持最小值调整至噪底");
             this.chkAdjustGridMinToNFRX2.UseVisualStyleBackColor = true;
             this.chkAdjustGridMinToNFRX2.CheckedChanged += new System.EventHandler(this.chkAdjustGridMinToNFRX2_CheckedChanged);
             // 
@@ -31939,8 +31846,8 @@
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(129, 13);
             this.label16.TabIndex = 84;
-            this.label16.Text = "Band for Max/Min Levels:";
-            this.toolTip1.SetToolTip(this.label16, "Display Grid levels can be set by band. ");
+            this.label16.Text = "最大/最小电平波段:";
+            this.toolTip1.SetToolTip(this.label16, "显示网格电平可按波段设置。 ");
             // 
             // txtRX2DisplayGridBandLevel
             // 
@@ -31949,8 +31856,8 @@
             this.txtRX2DisplayGridBandLevel.ReadOnly = true;
             this.txtRX2DisplayGridBandLevel.Size = new System.Drawing.Size(94, 20);
             this.txtRX2DisplayGridBandLevel.TabIndex = 83;
-            this.txtRX2DisplayGridBandLevel.Text = "Current Band";
-            this.toolTip1.SetToolTip(this.txtRX2DisplayGridBandLevel, "Current RX1 band selected for setting Display Grid level settings");
+            this.txtRX2DisplayGridBandLevel.Text = "当前波段";
+            this.toolTip1.SetToolTip(this.txtRX2DisplayGridBandLevel, "当前选中的 RX1 波段，用于设置显示网格电平");
             // 
             // comboBoxTS1
             // 
@@ -31966,7 +31873,7 @@
             this.comboBoxTS1.Name = "comboBoxTS1";
             this.comboBoxTS1.Size = new System.Drawing.Size(56, 21);
             this.comboBoxTS1.TabIndex = 30;
-            this.toolTip1.SetToolTip(this.comboBoxTS1, "Sets the alignement of the grid callouts on the display.");
+            this.toolTip1.SetToolTip(this.comboBoxTS1, "设置显示上网格标注的对齐方式。");
             this.comboBoxTS1.Visible = false;
             // 
             // labelTS133
@@ -31976,7 +31883,7 @@
             this.labelTS133.Name = "labelTS133";
             this.labelTS133.Size = new System.Drawing.Size(40, 16);
             this.labelTS133.TabIndex = 29;
-            this.labelTS133.Text = "Align:";
+            this.labelTS133.Text = "对齐:";
             this.labelTS133.Visible = false;
             // 
             // udRX2DisplayGridStep
@@ -32001,7 +31908,7 @@
             this.udRX2DisplayGridStep.Size = new System.Drawing.Size(56, 20);
             this.udRX2DisplayGridStep.TabIndex = 25;
             this.udRX2DisplayGridStep.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udRX2DisplayGridStep, "Horizontal Grid Step Size in dB.");
+            this.toolTip1.SetToolTip(this.udRX2DisplayGridStep, "水平网格步进大小（dB）。");
             this.udRX2DisplayGridStep.Value = new decimal(new int[] {
             2,
             0,
@@ -32031,7 +31938,7 @@
             this.udRX2DisplayGridMin.Size = new System.Drawing.Size(56, 20);
             this.udRX2DisplayGridMin.TabIndex = 24;
             this.udRX2DisplayGridMin.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udRX2DisplayGridMin, "Signal Level at bottom of display in dB.");
+            this.toolTip1.SetToolTip(this.udRX2DisplayGridMin, "显示底部的信号电平 (dB)。");
             this.udRX2DisplayGridMin.Value = new decimal(new int[] {
             140,
             0,
@@ -32061,7 +31968,7 @@
             this.udRX2DisplayGridMax.Size = new System.Drawing.Size(56, 20);
             this.udRX2DisplayGridMax.TabIndex = 23;
             this.udRX2DisplayGridMax.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udRX2DisplayGridMax, "Signal level at top of display in dB.");
+            this.toolTip1.SetToolTip(this.udRX2DisplayGridMax, "显示顶部的信号电平 (dB)。");
             this.udRX2DisplayGridMax.Value = new decimal(new int[] {
             40,
             0,
@@ -32076,7 +31983,7 @@
             this.lblRX2DisplayGridStep.Name = "lblRX2DisplayGridStep";
             this.lblRX2DisplayGridStep.Size = new System.Drawing.Size(32, 16);
             this.lblRX2DisplayGridStep.TabIndex = 28;
-            this.lblRX2DisplayGridStep.Text = "Step:";
+            this.lblRX2DisplayGridStep.Text = "步进:";
             // 
             // lblRX2DisplayGridMin
             // 
@@ -32085,7 +31992,7 @@
             this.lblRX2DisplayGridMin.Name = "lblRX2DisplayGridMin";
             this.lblRX2DisplayGridMin.Size = new System.Drawing.Size(32, 16);
             this.lblRX2DisplayGridMin.TabIndex = 27;
-            this.lblRX2DisplayGridMin.Text = "Min:";
+            this.lblRX2DisplayGridMin.Text = "最小:";
             // 
             // lblRX2DisplayGridMax
             // 
@@ -32094,7 +32001,7 @@
             this.lblRX2DisplayGridMax.Name = "lblRX2DisplayGridMax";
             this.lblRX2DisplayGridMax.Size = new System.Drawing.Size(32, 16);
             this.lblRX2DisplayGridMax.TabIndex = 26;
-            this.lblRX2DisplayGridMax.Text = "Max:";
+            this.lblRX2DisplayGridMax.Text = "最大:";
             // 
             // grpRX2DisplayAverage
             // 
@@ -32111,7 +32018,7 @@
             this.grpRX2DisplayAverage.Size = new System.Drawing.Size(153, 251);
             this.grpRX2DisplayAverage.TabIndex = 47;
             this.grpRX2DisplayAverage.TabStop = false;
-            this.grpRX2DisplayAverage.Text = "Panadapter";
+            this.grpRX2DisplayAverage.Text = "频谱";
             // 
             // chkDispRX2Normalize
             // 
@@ -32123,7 +32030,7 @@
             this.chkDispRX2Normalize.Name = "chkDispRX2Normalize";
             this.chkDispRX2Normalize.Size = new System.Drawing.Size(112, 17);
             this.chkDispRX2Normalize.TabIndex = 68;
-            this.chkDispRX2Normalize.Text = "1 Hz BW: Av / Sa";
+            this.chkDispRX2Normalize.Text = "1 Hz 带宽: 均值/采样";
             this.chkDispRX2Normalize.UseVisualStyleBackColor = true;
             this.chkDispRX2Normalize.CheckedChanged += new System.EventHandler(this.chkDispRX2Normalize_CheckedChanged);
             // 
@@ -32135,8 +32042,8 @@
             this.chkShowRX2NoiseFloor.Name = "chkShowRX2NoiseFloor";
             this.chkShowRX2NoiseFloor.Size = new System.Drawing.Size(109, 17);
             this.chkShowRX2NoiseFloor.TabIndex = 82;
-            this.chkShowRX2NoiseFloor.Text = "Show Noise Floor";
-            this.toolTip1.SetToolTip(this.chkShowRX2NoiseFloor, "Show the noise floor line on the panadaptor");
+            this.chkShowRX2NoiseFloor.Text = "显示噪底";
+            this.toolTip1.SetToolTip(this.chkShowRX2NoiseFloor, "在频谱上显示噪底线");
             this.chkShowRX2NoiseFloor.UseVisualStyleBackColor = true;
             this.chkShowRX2NoiseFloor.CheckedChanged += new System.EventHandler(this.chkShowRX2NoiseFloor_CheckedChanged);
             // 
@@ -32148,7 +32055,7 @@
             this.lblRX2PanAv.Name = "lblRX2PanAv";
             this.lblRX2PanAv.Size = new System.Drawing.Size(58, 13);
             this.lblRX2PanAv.TabIndex = 67;
-            this.lblRX2PanAv.Text = "Averaging:";
+            this.lblRX2PanAv.Text = "平均:";
             // 
             // comboRX2DispPanAveraging
             // 
@@ -32177,7 +32084,7 @@
             this.lblRX2PanDet.Name = "lblRX2PanDet";
             this.lblRX2PanDet.Size = new System.Drawing.Size(51, 13);
             this.lblRX2PanDet.TabIndex = 65;
-            this.lblRX2PanDet.Text = "Detector:";
+            this.lblRX2PanDet.Text = "检波器:";
             // 
             // comboRX2DispPanDetector
             // 
@@ -32217,7 +32124,7 @@
             this.udRX2DisplayAVGTime.Size = new System.Drawing.Size(48, 20);
             this.udRX2DisplayAVGTime.TabIndex = 2;
             this.udRX2DisplayAVGTime.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udRX2DisplayAVGTime, "When averaging, use this number of buffers to calculate the average.");
+            this.toolTip1.SetToolTip(this.udRX2DisplayAVGTime, "求平均时，使用此缓冲区数来计算平均值。");
             this.udRX2DisplayAVGTime.Value = new decimal(new int[] {
             30,
             0,
@@ -32232,7 +32139,7 @@
             this.labelTS143.Name = "labelTS143";
             this.labelTS143.Size = new System.Drawing.Size(64, 23);
             this.labelTS143.TabIndex = 3;
-            this.labelTS143.Text = "Time (ms):";
+            this.labelTS143.Text = "时间 (ms):";
             // 
             // grpDisplayRX2Pan
             // 
@@ -32249,7 +32156,7 @@
             this.grpDisplayRX2Pan.Size = new System.Drawing.Size(260, 128);
             this.grpDisplayRX2Pan.TabIndex = 46;
             this.grpDisplayRX2Pan.TabStop = false;
-            this.grpDisplayRX2Pan.Text = "Fast Fourier Transform";
+            this.grpDisplayRX2Pan.Text = "快速傅里叶变换";
             // 
             // comboRX2DispWinType
             // 
@@ -32277,7 +32184,7 @@
             this.labelTS150.Name = "labelTS150";
             this.labelTS150.Size = new System.Drawing.Size(46, 13);
             this.labelTS150.TabIndex = 56;
-            this.labelTS150.Text = "Window";
+            this.labelTS150.Text = "窗函数";
             // 
             // labelTS149
             // 
@@ -32287,7 +32194,7 @@
             this.labelTS149.Name = "labelTS149";
             this.labelTS149.Size = new System.Drawing.Size(27, 13);
             this.labelTS149.TabIndex = 53;
-            this.labelTS149.Text = "Max";
+            this.labelTS149.Text = "最大";
             // 
             // labelTS148
             // 
@@ -32297,7 +32204,7 @@
             this.labelTS148.Name = "labelTS148";
             this.labelTS148.Size = new System.Drawing.Size(24, 13);
             this.labelTS148.TabIndex = 52;
-            this.labelTS148.Text = "Min";
+            this.labelTS148.Text = "最小";
             // 
             // lblRX2DisplayBinWidth
             // 
@@ -32320,7 +32227,7 @@
             this.labelTS140.Name = "labelTS140";
             this.labelTS140.Size = new System.Drawing.Size(75, 13);
             this.labelTS140.TabIndex = 50;
-            this.labelTS140.Text = "Bin Width (Hz)";
+            this.labelTS140.Text = "分辨率带宽 (Hz)";
             // 
             // labelTS141
             // 
@@ -32330,7 +32237,7 @@
             this.labelTS141.Name = "labelTS141";
             this.labelTS141.Size = new System.Drawing.Size(27, 13);
             this.labelTS141.TabIndex = 49;
-            this.labelTS141.Text = "Size";
+            this.labelTS141.Text = "大小";
             // 
             // tbRX2DisplayFFTSize
             // 
@@ -32372,7 +32279,7 @@
             this.grpTXWFAmpScale.Size = new System.Drawing.Size(112, 92);
             this.grpTXWFAmpScale.TabIndex = 85;
             this.grpTXWFAmpScale.TabStop = false;
-            this.grpTXWFAmpScale.Text = "Waterfall";
+            this.grpTXWFAmpScale.Text = "瀑布图";
             // 
             // udTXWFAmpMin
             // 
@@ -32397,7 +32304,7 @@
             this.udTXWFAmpMin.Size = new System.Drawing.Size(45, 20);
             this.udTXWFAmpMin.TabIndex = 29;
             this.udTXWFAmpMin.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udTXWFAmpMin, "Waterfall Low Signal - Show Low Color below this value (gradient in between).");
+            this.toolTip1.SetToolTip(this.udTXWFAmpMin, "瀑布图低信号 - 低于此值时显示低电平颜色（之间使用渐变）。");
             this.udTXWFAmpMin.Value = new decimal(new int[] {
             70,
             0,
@@ -32428,7 +32335,7 @@
             this.udTXWFAmpMax.Size = new System.Drawing.Size(44, 20);
             this.udTXWFAmpMax.TabIndex = 28;
             this.udTXWFAmpMax.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udTXWFAmpMax, "Waterfall High Signal - Show High Color above this value (gradient in between).");
+            this.toolTip1.SetToolTip(this.udTXWFAmpMax, "瀑布图高信号 - 高于此值时显示高电平颜色（之间使用渐变）。");
             this.udTXWFAmpMax.Value = new decimal(new int[] {
             30,
             0,
@@ -32444,7 +32351,7 @@
             this.lblTXWFAmpMin.Name = "lblTXWFAmpMin";
             this.lblTXWFAmpMin.Size = new System.Drawing.Size(61, 18);
             this.lblTXWFAmpMin.TabIndex = 31;
-            this.lblTXWFAmpMin.Text = "Low Level:";
+            this.lblTXWFAmpMin.Text = "低电平:";
             // 
             // lblTXWFAmpMax
             // 
@@ -32454,7 +32361,7 @@
             this.lblTXWFAmpMax.Name = "lblTXWFAmpMax";
             this.lblTXWFAmpMax.Size = new System.Drawing.Size(61, 19);
             this.lblTXWFAmpMax.TabIndex = 30;
-            this.lblTXWFAmpMax.Text = "High Level:";
+            this.lblTXWFAmpMax.Text = "高电平:";
             // 
             // groupBoxTS9
             // 
@@ -32469,7 +32376,7 @@
             this.groupBoxTS9.Size = new System.Drawing.Size(123, 141);
             this.groupBoxTS9.TabIndex = 84;
             this.groupBoxTS9.TabStop = false;
-            this.groupBoxTS9.Text = "Waterfall";
+            this.groupBoxTS9.Text = "瀑布图";
             // 
             // labelTS384
             // 
@@ -32479,7 +32386,7 @@
             this.labelTS384.Name = "labelTS384";
             this.labelTS384.Size = new System.Drawing.Size(58, 13);
             this.labelTS384.TabIndex = 63;
-            this.labelTS384.Text = "Averaging:";
+            this.labelTS384.Text = "平均:";
             // 
             // comboTXDispWFAveraging
             // 
@@ -32508,7 +32415,7 @@
             this.labelTS387.Name = "labelTS387";
             this.labelTS387.Size = new System.Drawing.Size(51, 13);
             this.labelTS387.TabIndex = 61;
-            this.labelTS387.Text = "Detector:";
+            this.labelTS387.Text = "检波器:";
             // 
             // comboTXDispWFDetector
             // 
@@ -32547,7 +32454,7 @@
             this.udTXDisplayAVTime.Size = new System.Drawing.Size(48, 20);
             this.udTXDisplayAVTime.TabIndex = 2;
             this.udTXDisplayAVTime.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udTXDisplayAVTime, "When averaging, use this number of buffers to calculate the average.");
+            this.toolTip1.SetToolTip(this.udTXDisplayAVTime, "求平均时，使用此缓冲区数来计算平均值。");
             this.udTXDisplayAVTime.Value = new decimal(new int[] {
             120,
             0,
@@ -32562,7 +32469,7 @@
             this.labelTS388.Name = "labelTS388";
             this.labelTS388.Size = new System.Drawing.Size(64, 23);
             this.labelTS388.TabIndex = 3;
-            this.labelTS388.Text = "Time (ms):";
+            this.labelTS388.Text = "时间 (ms):";
             // 
             // groupBoxTS8
             // 
@@ -32579,7 +32486,7 @@
             this.groupBoxTS8.Size = new System.Drawing.Size(260, 128);
             this.groupBoxTS8.TabIndex = 83;
             this.groupBoxTS8.TabStop = false;
-            this.groupBoxTS8.Text = "Fast Fourier Transform";
+            this.groupBoxTS8.Text = "快速傅里叶变换";
             // 
             // comboTXDispWinType
             // 
@@ -32607,7 +32514,7 @@
             this.labelTS381.Name = "labelTS381";
             this.labelTS381.Size = new System.Drawing.Size(46, 13);
             this.labelTS381.TabIndex = 56;
-            this.labelTS381.Text = "Window";
+            this.labelTS381.Text = "窗函数";
             // 
             // labelTS382
             // 
@@ -32617,7 +32524,7 @@
             this.labelTS382.Name = "labelTS382";
             this.labelTS382.Size = new System.Drawing.Size(27, 13);
             this.labelTS382.TabIndex = 53;
-            this.labelTS382.Text = "Max";
+            this.labelTS382.Text = "最大";
             // 
             // labelTS383
             // 
@@ -32627,7 +32534,7 @@
             this.labelTS383.Name = "labelTS383";
             this.labelTS383.Size = new System.Drawing.Size(24, 13);
             this.labelTS383.TabIndex = 52;
-            this.labelTS383.Text = "Min";
+            this.labelTS383.Text = "最小";
             // 
             // lblTXDispBinWidth
             // 
@@ -32650,7 +32557,7 @@
             this.labelTS385.Name = "labelTS385";
             this.labelTS385.Size = new System.Drawing.Size(75, 13);
             this.labelTS385.TabIndex = 50;
-            this.labelTS385.Text = "Bin Width (Hz)";
+            this.labelTS385.Text = "分辨率带宽 (Hz)";
             // 
             // labelTS386
             // 
@@ -32660,7 +32567,7 @@
             this.labelTS386.Name = "labelTS386";
             this.labelTS386.Size = new System.Drawing.Size(27, 13);
             this.labelTS386.TabIndex = 49;
-            this.labelTS386.Text = "Size";
+            this.labelTS386.Text = "大小";
             // 
             // tbTXDisplayFFTSize
             // 
@@ -32689,7 +32596,7 @@
             this.groupBoxTS7.Size = new System.Drawing.Size(123, 179);
             this.groupBoxTS7.TabIndex = 82;
             this.groupBoxTS7.TabStop = false;
-            this.groupBoxTS7.Text = "Panadapter";
+            this.groupBoxTS7.Text = "频谱";
             // 
             // chkDispTXNormalize
             // 
@@ -32701,7 +32608,7 @@
             this.chkDispTXNormalize.Name = "chkDispTXNormalize";
             this.chkDispTXNormalize.Size = new System.Drawing.Size(112, 17);
             this.chkDispTXNormalize.TabIndex = 68;
-            this.chkDispTXNormalize.Text = "1 Hz BW: Av / Sa";
+            this.chkDispTXNormalize.Text = "1 Hz 带宽: 均值/采样";
             this.chkDispTXNormalize.UseVisualStyleBackColor = true;
             this.chkDispTXNormalize.CheckedChanged += new System.EventHandler(this.chkDispTXNormalize_CheckedChanged);
             // 
@@ -32713,7 +32620,7 @@
             this.labelTS378.Name = "labelTS378";
             this.labelTS378.Size = new System.Drawing.Size(58, 13);
             this.labelTS378.TabIndex = 67;
-            this.labelTS378.Text = "Averaging:";
+            this.labelTS378.Text = "平均:";
             // 
             // comboTXDispPanAveraging
             // 
@@ -32742,7 +32649,7 @@
             this.labelTS379.Name = "labelTS379";
             this.labelTS379.Size = new System.Drawing.Size(51, 13);
             this.labelTS379.TabIndex = 65;
-            this.labelTS379.Text = "Detector:";
+            this.labelTS379.Text = "检波器:";
             // 
             // comboTXDispPanDetector
             // 
@@ -32782,7 +32689,7 @@
             this.udTXDisplayAVGTime.Size = new System.Drawing.Size(48, 20);
             this.udTXDisplayAVGTime.TabIndex = 2;
             this.udTXDisplayAVGTime.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udTXDisplayAVGTime, "When averaging, use this number of buffers to calculate the average.");
+            this.toolTip1.SetToolTip(this.udTXDisplayAVGTime, "求平均时，使用此缓冲区数来计算平均值。");
             this.udTXDisplayAVGTime.Value = new decimal(new int[] {
             30,
             0,
@@ -32797,7 +32704,7 @@
             this.labelTS380.Name = "labelTS380";
             this.labelTS380.Size = new System.Drawing.Size(64, 23);
             this.labelTS380.TabIndex = 3;
-            this.labelTS380.Text = "Time (ms):";
+            this.labelTS380.Text = "时间 (ms):";
             // 
             // grpTXSpectrumGrid
             // 
@@ -32816,7 +32723,7 @@
             this.grpTXSpectrumGrid.Size = new System.Drawing.Size(112, 216);
             this.grpTXSpectrumGrid.TabIndex = 81;
             this.grpTXSpectrumGrid.TabStop = false;
-            this.grpTXSpectrumGrid.Text = "TX Grid Scale";
+            this.grpTXSpectrumGrid.Text = "TX 网格刻度";
             // 
             // chkTXGridControl
             // 
@@ -32827,8 +32734,8 @@
             this.chkTXGridControl.Name = "chkTXGridControl";
             this.chkTXGridControl.Size = new System.Drawing.Size(98, 16);
             this.chkTXGridControl.TabIndex = 83;
-            this.chkTXGridControl.Text = "Display Grid";
-            this.toolTip1.SetToolTip(this.chkTXGridControl, "Display the Grid on the Panadapter");
+            this.chkTXGridControl.Text = "显示网格";
+            this.toolTip1.SetToolTip(this.chkTXGridControl, "在频谱上显示网格");
             this.chkTXGridControl.CheckedChanged += new System.EventHandler(this.chkTXGridControl_CheckedChanged);
             // 
             // chkTXPanFill
@@ -32841,8 +32748,8 @@
             this.chkTXPanFill.Name = "chkTXPanFill";
             this.chkTXPanFill.Size = new System.Drawing.Size(100, 16);
             this.chkTXPanFill.TabIndex = 41;
-            this.chkTXPanFill.Text = "Fill Panadapter";
-            this.toolTip1.SetToolTip(this.chkTXPanFill, "Check to fill the panadapter display line below the data.");
+            this.chkTXPanFill.Text = "填充频谱";
+            this.toolTip1.SetToolTip(this.chkTXPanFill, "勾选以填充数据下方的频谱显示线。");
             this.chkTXPanFill.CheckedChanged += new System.EventHandler(this.chkTXPanFill_CheckedChanged);
             // 
             // comboTXLabelAlign
@@ -32859,7 +32766,7 @@
             this.comboTXLabelAlign.Name = "comboTXLabelAlign";
             this.comboTXLabelAlign.Size = new System.Drawing.Size(56, 21);
             this.comboTXLabelAlign.TabIndex = 30;
-            this.toolTip1.SetToolTip(this.comboTXLabelAlign, "Sets the alignement of the grid callouts on the display.");
+            this.toolTip1.SetToolTip(this.comboTXLabelAlign, "设置显示上网格标注的对齐方式。");
             this.comboTXLabelAlign.SelectedIndexChanged += new System.EventHandler(this.comboTXLabelAlign_SelectedIndexChanged);
             // 
             // lblTXAlign
@@ -32869,7 +32776,7 @@
             this.lblTXAlign.Name = "lblTXAlign";
             this.lblTXAlign.Size = new System.Drawing.Size(40, 16);
             this.lblTXAlign.TabIndex = 29;
-            this.lblTXAlign.Text = "Align:";
+            this.lblTXAlign.Text = "对齐:";
             // 
             // udTXGridStep
             // 
@@ -32893,7 +32800,7 @@
             this.udTXGridStep.Size = new System.Drawing.Size(56, 20);
             this.udTXGridStep.TabIndex = 25;
             this.udTXGridStep.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udTXGridStep, "Horizontal Grid Step Size in dB.");
+            this.toolTip1.SetToolTip(this.udTXGridStep, "水平网格步进大小（dB）。");
             this.udTXGridStep.Value = new decimal(new int[] {
             2,
             0,
@@ -32923,7 +32830,7 @@
             this.udTXGridMin.Size = new System.Drawing.Size(56, 20);
             this.udTXGridMin.TabIndex = 24;
             this.udTXGridMin.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udTXGridMin, "Signal Level at bottom of display in dB.");
+            this.toolTip1.SetToolTip(this.udTXGridMin, "显示底部的信号电平 (dB)。");
             this.udTXGridMin.Value = new decimal(new int[] {
             80,
             0,
@@ -32954,7 +32861,7 @@
             this.udTXGridMax.Size = new System.Drawing.Size(56, 20);
             this.udTXGridMax.TabIndex = 23;
             this.udTXGridMax.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udTXGridMax, "Signal level at top of display in dB.");
+            this.toolTip1.SetToolTip(this.udTXGridMax, "显示顶部的信号电平 (dB)。");
             this.udTXGridMax.Value = new decimal(new int[] {
             20,
             0,
@@ -32970,7 +32877,7 @@
             this.lblTXGridStep.Name = "lblTXGridStep";
             this.lblTXGridStep.Size = new System.Drawing.Size(32, 16);
             this.lblTXGridStep.TabIndex = 28;
-            this.lblTXGridStep.Text = "Step:";
+            this.lblTXGridStep.Text = "步进:";
             // 
             // lblTXGridMin
             // 
@@ -32979,7 +32886,7 @@
             this.lblTXGridMin.Name = "lblTXGridMin";
             this.lblTXGridMin.Size = new System.Drawing.Size(32, 16);
             this.lblTXGridMin.TabIndex = 27;
-            this.lblTXGridMin.Text = "Min:";
+            this.lblTXGridMin.Text = "最小:";
             // 
             // lblTXGridMax
             // 
@@ -32988,7 +32895,7 @@
             this.lblTXGridMax.Name = "lblTXGridMax";
             this.lblTXGridMax.Size = new System.Drawing.Size(32, 16);
             this.lblTXGridMax.TabIndex = 26;
-            this.lblTXGridMax.Text = "Max:";
+            this.lblTXGridMax.Text = "最大:";
             // 
             // tpDSP
             // 
@@ -33037,7 +32944,7 @@
             this.tpDSPOptions.Name = "tpDSPOptions";
             this.tpDSPOptions.Size = new System.Drawing.Size(724, 414);
             this.tpDSPOptions.TabIndex = 2;
-            this.tpDSPOptions.Text = "Options";
+            this.tpDSPOptions.Text = "选项";
             // 
             // lblWarningBufferType
             // 
@@ -33046,7 +32953,7 @@
             this.lblWarningBufferType.Name = "lblWarningBufferType";
             this.lblWarningBufferType.Size = new System.Drawing.Size(115, 46);
             this.lblWarningBufferType.TabIndex = 55;
-            this.lblWarningBufferType.Text = "Filter types are different. Slow mode change is possible";
+            this.lblWarningBufferType.Text = "滤波器类型不同，可能导致模式切换变慢";
             // 
             // lblWarningFilterSize
             // 
@@ -33055,7 +32962,7 @@
             this.lblWarningFilterSize.Name = "lblWarningFilterSize";
             this.lblWarningFilterSize.Size = new System.Drawing.Size(115, 46);
             this.lblWarningFilterSize.TabIndex = 54;
-            this.lblWarningFilterSize.Text = "Filter sizes are different. Slow mode change is possible";
+            this.lblWarningFilterSize.Text = "滤波器大小不同，可能导致模式切换变慢";
             // 
             // lblWarningBufferSize
             // 
@@ -33064,7 +32971,7 @@
             this.lblWarningBufferSize.Name = "lblWarningBufferSize";
             this.lblWarningBufferSize.Size = new System.Drawing.Size(115, 46);
             this.lblWarningBufferSize.TabIndex = 53;
-            this.lblWarningBufferSize.Text = "Buffer sizes are different. Slow mode change is possible";
+            this.lblWarningBufferSize.Text = "缓冲区大小不同，可能导致模式切换变慢";
             // 
             // pbWarningBufferType
             // 
@@ -33108,7 +33015,7 @@
             this.labelTS610.Name = "labelTS610";
             this.labelTS610.Size = new System.Drawing.Size(135, 13);
             this.labelTS610.TabIndex = 48;
-            this.labelTS610.Text = "Time to make last change :";
+            this.labelTS610.Text = "上次更改时间:";
             // 
             // grpDSPFilterType
             // 
@@ -33121,7 +33028,7 @@
             this.grpDSPFilterType.Size = new System.Drawing.Size(153, 320);
             this.grpDSPFilterType.TabIndex = 47;
             this.grpDSPFilterType.TabStop = false;
-            this.grpDSPFilterType.Text = "Filter Type";
+            this.grpDSPFilterType.Text = "滤波器类型";
             // 
             // grpDSPFiltTypeFM
             // 
@@ -33156,7 +33063,7 @@
             this.labelTS391.Name = "labelTS391";
             this.labelTS391.Size = new System.Drawing.Size(24, 16);
             this.labelTS391.TabIndex = 19;
-            this.labelTS391.Text = "RX:";
+            this.labelTS391.Text = "接收:";
             // 
             // comboDSPFMRXFiltType
             // 
@@ -33178,7 +33085,7 @@
             this.labelTS392.Name = "labelTS392";
             this.labelTS392.Size = new System.Drawing.Size(24, 16);
             this.labelTS392.TabIndex = 21;
-            this.labelTS392.Text = "TX:";
+            this.labelTS392.Text = "发射:";
             // 
             // grpDSPFiltTypeDig
             // 
@@ -33191,7 +33098,7 @@
             this.grpDSPFiltTypeDig.Size = new System.Drawing.Size(139, 72);
             this.grpDSPFiltTypeDig.TabIndex = 41;
             this.grpDSPFiltTypeDig.TabStop = false;
-            this.grpDSPFiltTypeDig.Text = "Digital";
+            this.grpDSPFiltTypeDig.Text = "数字";
             // 
             // comboDSPDigTXFiltType
             // 
@@ -33213,7 +33120,7 @@
             this.labelTS393.Name = "labelTS393";
             this.labelTS393.Size = new System.Drawing.Size(24, 16);
             this.labelTS393.TabIndex = 19;
-            this.labelTS393.Text = "RX:";
+            this.labelTS393.Text = "接收:";
             // 
             // comboDSPDigRXFiltType
             // 
@@ -33235,7 +33142,7 @@
             this.labelTS394.Name = "labelTS394";
             this.labelTS394.Size = new System.Drawing.Size(24, 16);
             this.labelTS394.TabIndex = 21;
-            this.labelTS394.Text = "TX:";
+            this.labelTS394.Text = "发射:";
             // 
             // grpDSPFiltTypeCW
             // 
@@ -33255,7 +33162,7 @@
             this.labelTS395.Name = "labelTS395";
             this.labelTS395.Size = new System.Drawing.Size(24, 16);
             this.labelTS395.TabIndex = 19;
-            this.labelTS395.Text = "RX:";
+            this.labelTS395.Text = "接收:";
             // 
             // comboDSPCWRXFiltType
             // 
@@ -33303,7 +33210,7 @@
             this.labelTS396.Name = "labelTS396";
             this.labelTS396.Size = new System.Drawing.Size(24, 16);
             this.labelTS396.TabIndex = 19;
-            this.labelTS396.Text = "RX:";
+            this.labelTS396.Text = "接收:";
             // 
             // comboDSPPhoneRXFiltType
             // 
@@ -33325,7 +33232,7 @@
             this.labelTS397.Name = "labelTS397";
             this.labelTS397.Size = new System.Drawing.Size(24, 16);
             this.labelTS397.TabIndex = 21;
-            this.labelTS397.Text = "TX:";
+            this.labelTS397.Text = "发射:";
             // 
             // grpDSPFilterSize
             // 
@@ -33338,7 +33245,7 @@
             this.grpDSPFilterSize.Size = new System.Drawing.Size(120, 320);
             this.grpDSPFilterSize.TabIndex = 46;
             this.grpDSPFilterSize.TabStop = false;
-            this.grpDSPFilterSize.Text = "Filter Size";
+            this.grpDSPFilterSize.Text = "滤波器大小";
             // 
             // grpDSPFiltSizeFM
             // 
@@ -33368,7 +33275,7 @@
             this.comboDSPFMTXFiltSize.Name = "comboDSPFMTXFiltSize";
             this.comboDSPFMTXFiltSize.Size = new System.Drawing.Size(64, 21);
             this.comboDSPFMTXFiltSize.TabIndex = 20;
-            this.toolTip1.SetToolTip(this.comboDSPFMTXFiltSize, "Sets DSP internal Buffer Size -- larger yields sharper filters, more latency");
+            this.toolTip1.SetToolTip(this.comboDSPFMTXFiltSize, "设置 DSP 内部缓冲区大小 —— 越大滤波器越陡，延迟越高");
             this.comboDSPFMTXFiltSize.ValueMember = "1024";
             this.comboDSPFMTXFiltSize.SelectedIndexChanged += new System.EventHandler(this.comboDSPFMTXFiltSize_SelectedIndexChanged);
             // 
@@ -33379,7 +33286,7 @@
             this.labelTS398.Name = "labelTS398";
             this.labelTS398.Size = new System.Drawing.Size(24, 16);
             this.labelTS398.TabIndex = 19;
-            this.labelTS398.Text = "RX:";
+            this.labelTS398.Text = "接收:";
             // 
             // comboDSPFMRXFiltSize
             // 
@@ -33396,7 +33303,7 @@
             this.comboDSPFMRXFiltSize.Name = "comboDSPFMRXFiltSize";
             this.comboDSPFMRXFiltSize.Size = new System.Drawing.Size(64, 21);
             this.comboDSPFMRXFiltSize.TabIndex = 18;
-            this.toolTip1.SetToolTip(this.comboDSPFMRXFiltSize, "Sets DSP internal Buffer Size -- larger yields sharper filters, more latency");
+            this.toolTip1.SetToolTip(this.comboDSPFMRXFiltSize, "设置 DSP 内部缓冲区大小 —— 越大滤波器越陡，延迟越高");
             this.comboDSPFMRXFiltSize.ValueMember = "256";
             this.comboDSPFMRXFiltSize.SelectedIndexChanged += new System.EventHandler(this.comboDSPFMRXFiltSize_SelectedIndexChanged);
             // 
@@ -33407,7 +33314,7 @@
             this.labelTS399.Name = "labelTS399";
             this.labelTS399.Size = new System.Drawing.Size(24, 16);
             this.labelTS399.TabIndex = 21;
-            this.labelTS399.Text = "TX:";
+            this.labelTS399.Text = "发射:";
             // 
             // grpDSPFiltSizeDig
             // 
@@ -33420,7 +33327,7 @@
             this.grpDSPFiltSizeDig.Size = new System.Drawing.Size(104, 72);
             this.grpDSPFiltSizeDig.TabIndex = 41;
             this.grpDSPFiltSizeDig.TabStop = false;
-            this.grpDSPFiltSizeDig.Text = "Digital";
+            this.grpDSPFiltSizeDig.Text = "数字";
             // 
             // comboDSPDigTXFiltSize
             // 
@@ -33437,7 +33344,7 @@
             this.comboDSPDigTXFiltSize.Name = "comboDSPDigTXFiltSize";
             this.comboDSPDigTXFiltSize.Size = new System.Drawing.Size(64, 21);
             this.comboDSPDigTXFiltSize.TabIndex = 20;
-            this.toolTip1.SetToolTip(this.comboDSPDigTXFiltSize, "Sets DSP internal Buffer Size -- larger yields sharper filters, more latency");
+            this.toolTip1.SetToolTip(this.comboDSPDigTXFiltSize, "设置 DSP 内部缓冲区大小 —— 越大滤波器越陡，延迟越高");
             this.comboDSPDigTXFiltSize.ValueMember = "1024";
             this.comboDSPDigTXFiltSize.SelectedIndexChanged += new System.EventHandler(this.comboDSPDigTXFiltSize_SelectedIndexChanged);
             // 
@@ -33448,7 +33355,7 @@
             this.labelTS400.Name = "labelTS400";
             this.labelTS400.Size = new System.Drawing.Size(24, 16);
             this.labelTS400.TabIndex = 19;
-            this.labelTS400.Text = "RX:";
+            this.labelTS400.Text = "接收:";
             // 
             // comboDSPDigRXFiltSize
             // 
@@ -33465,7 +33372,7 @@
             this.comboDSPDigRXFiltSize.Name = "comboDSPDigRXFiltSize";
             this.comboDSPDigRXFiltSize.Size = new System.Drawing.Size(64, 21);
             this.comboDSPDigRXFiltSize.TabIndex = 18;
-            this.toolTip1.SetToolTip(this.comboDSPDigRXFiltSize, "Sets DSP internal Buffer Size -- larger yields sharper filters, more latency");
+            this.toolTip1.SetToolTip(this.comboDSPDigRXFiltSize, "设置 DSP 内部缓冲区大小 —— 越大滤波器越陡，延迟越高");
             this.comboDSPDigRXFiltSize.ValueMember = "1024";
             this.comboDSPDigRXFiltSize.SelectedIndexChanged += new System.EventHandler(this.comboDSPDigRXFiltSize_SelectedIndexChanged);
             // 
@@ -33476,7 +33383,7 @@
             this.labelTS401.Name = "labelTS401";
             this.labelTS401.Size = new System.Drawing.Size(24, 16);
             this.labelTS401.TabIndex = 21;
-            this.labelTS401.Text = "TX:";
+            this.labelTS401.Text = "发射:";
             // 
             // grpDSPFiltSizeCW
             // 
@@ -33496,7 +33403,7 @@
             this.labelTS402.Name = "labelTS402";
             this.labelTS402.Size = new System.Drawing.Size(24, 16);
             this.labelTS402.TabIndex = 19;
-            this.labelTS402.Text = "RX:";
+            this.labelTS402.Text = "接收:";
             // 
             // comboDSPCWRXFiltSize
             // 
@@ -33513,7 +33420,7 @@
             this.comboDSPCWRXFiltSize.Name = "comboDSPCWRXFiltSize";
             this.comboDSPCWRXFiltSize.Size = new System.Drawing.Size(64, 21);
             this.comboDSPCWRXFiltSize.TabIndex = 18;
-            this.toolTip1.SetToolTip(this.comboDSPCWRXFiltSize, "Sets DSP internal Buffer Size -- larger yields sharper filters, more latency");
+            this.toolTip1.SetToolTip(this.comboDSPCWRXFiltSize, "设置 DSP 内部缓冲区大小 —— 越大滤波器越陡，延迟越高");
             this.comboDSPCWRXFiltSize.ValueMember = "1024";
             this.comboDSPCWRXFiltSize.SelectedIndexChanged += new System.EventHandler(this.comboDSPCWRXFiltSize_SelectedIndexChanged);
             // 
@@ -33545,7 +33452,7 @@
             this.comboDSPPhoneTXFiltSize.Name = "comboDSPPhoneTXFiltSize";
             this.comboDSPPhoneTXFiltSize.Size = new System.Drawing.Size(64, 21);
             this.comboDSPPhoneTXFiltSize.TabIndex = 20;
-            this.toolTip1.SetToolTip(this.comboDSPPhoneTXFiltSize, "Sets DSP internal Buffer Size -- larger yields sharper filters, more latency");
+            this.toolTip1.SetToolTip(this.comboDSPPhoneTXFiltSize, "设置 DSP 内部缓冲区大小 —— 越大滤波器越陡，延迟越高");
             this.comboDSPPhoneTXFiltSize.ValueMember = "128";
             this.comboDSPPhoneTXFiltSize.SelectedIndexChanged += new System.EventHandler(this.comboDSPPhoneTXFiltSize_SelectedIndexChanged);
             // 
@@ -33556,7 +33463,7 @@
             this.labelTS403.Name = "labelTS403";
             this.labelTS403.Size = new System.Drawing.Size(24, 16);
             this.labelTS403.TabIndex = 19;
-            this.labelTS403.Text = "RX:";
+            this.labelTS403.Text = "接收:";
             // 
             // comboDSPPhoneRXFiltSize
             // 
@@ -33582,7 +33489,7 @@
             this.labelTS404.Name = "labelTS404";
             this.labelTS404.Size = new System.Drawing.Size(24, 16);
             this.labelTS404.TabIndex = 21;
-            this.labelTS404.Text = "TX:";
+            this.labelTS404.Text = "发射:";
             // 
             // grpDSPBufferSize
             // 
@@ -33595,7 +33502,7 @@
             this.grpDSPBufferSize.Size = new System.Drawing.Size(120, 320);
             this.grpDSPBufferSize.TabIndex = 37;
             this.grpDSPBufferSize.TabStop = false;
-            this.grpDSPBufferSize.Text = "Buffer Size";
+            this.grpDSPBufferSize.Text = "缓冲区大小";
             // 
             // grpDSPBufFM
             // 
@@ -33625,7 +33532,7 @@
             this.comboDSPFMTXBuf.Name = "comboDSPFMTXBuf";
             this.comboDSPFMTXBuf.Size = new System.Drawing.Size(64, 21);
             this.comboDSPFMTXBuf.TabIndex = 20;
-            this.toolTip1.SetToolTip(this.comboDSPFMTXBuf, "Sets DSP internal Buffer Size -- larger yields sharper filters, more latency");
+            this.toolTip1.SetToolTip(this.comboDSPFMTXBuf, "设置 DSP 内部缓冲区大小 —— 越大滤波器越陡，延迟越高");
             this.comboDSPFMTXBuf.SelectedIndexChanged += new System.EventHandler(this.comboDSPFMTXBuf_SelectedIndexChanged);
             // 
             // labelTS405
@@ -33635,7 +33542,7 @@
             this.labelTS405.Name = "labelTS405";
             this.labelTS405.Size = new System.Drawing.Size(24, 16);
             this.labelTS405.TabIndex = 19;
-            this.labelTS405.Text = "RX:";
+            this.labelTS405.Text = "接收:";
             // 
             // comboDSPFMRXBuf
             // 
@@ -33652,7 +33559,7 @@
             this.comboDSPFMRXBuf.Name = "comboDSPFMRXBuf";
             this.comboDSPFMRXBuf.Size = new System.Drawing.Size(64, 21);
             this.comboDSPFMRXBuf.TabIndex = 18;
-            this.toolTip1.SetToolTip(this.comboDSPFMRXBuf, "Sets DSP internal Buffer Size -- larger yields sharper filters, more latency");
+            this.toolTip1.SetToolTip(this.comboDSPFMRXBuf, "设置 DSP 内部缓冲区大小 —— 越大滤波器越陡，延迟越高");
             this.comboDSPFMRXBuf.ValueMember = "1024";
             this.comboDSPFMRXBuf.SelectedIndexChanged += new System.EventHandler(this.comboDSPFMRXBuf_SelectedIndexChanged);
             // 
@@ -33663,7 +33570,7 @@
             this.labelTS406.Name = "labelTS406";
             this.labelTS406.Size = new System.Drawing.Size(24, 16);
             this.labelTS406.TabIndex = 21;
-            this.labelTS406.Text = "TX:";
+            this.labelTS406.Text = "发射:";
             // 
             // grpDSPBufDig
             // 
@@ -33676,7 +33583,7 @@
             this.grpDSPBufDig.Size = new System.Drawing.Size(104, 72);
             this.grpDSPBufDig.TabIndex = 41;
             this.grpDSPBufDig.TabStop = false;
-            this.grpDSPBufDig.Text = "Digital";
+            this.grpDSPBufDig.Text = "数字";
             // 
             // comboDSPDigTXBuf
             // 
@@ -33693,7 +33600,7 @@
             this.comboDSPDigTXBuf.Name = "comboDSPDigTXBuf";
             this.comboDSPDigTXBuf.Size = new System.Drawing.Size(64, 21);
             this.comboDSPDigTXBuf.TabIndex = 20;
-            this.toolTip1.SetToolTip(this.comboDSPDigTXBuf, "Sets DSP internal Buffer Size -- larger yields sharper filters, more latency");
+            this.toolTip1.SetToolTip(this.comboDSPDigTXBuf, "设置 DSP 内部缓冲区大小 —— 越大滤波器越陡，延迟越高");
             this.comboDSPDigTXBuf.SelectedIndexChanged += new System.EventHandler(this.comboDSPDigTXBuf_SelectedIndexChanged);
             // 
             // lblDSPDigBufferRX
@@ -33703,7 +33610,7 @@
             this.lblDSPDigBufferRX.Name = "lblDSPDigBufferRX";
             this.lblDSPDigBufferRX.Size = new System.Drawing.Size(24, 16);
             this.lblDSPDigBufferRX.TabIndex = 19;
-            this.lblDSPDigBufferRX.Text = "RX:";
+            this.lblDSPDigBufferRX.Text = "接收:";
             // 
             // comboDSPDigRXBuf
             // 
@@ -33720,7 +33627,7 @@
             this.comboDSPDigRXBuf.Name = "comboDSPDigRXBuf";
             this.comboDSPDigRXBuf.Size = new System.Drawing.Size(64, 21);
             this.comboDSPDigRXBuf.TabIndex = 18;
-            this.toolTip1.SetToolTip(this.comboDSPDigRXBuf, "Sets DSP internal Buffer Size -- larger yields sharper filters, more latency");
+            this.toolTip1.SetToolTip(this.comboDSPDigRXBuf, "设置 DSP 内部缓冲区大小 —— 越大滤波器越陡，延迟越高");
             this.comboDSPDigRXBuf.ValueMember = "1024";
             this.comboDSPDigRXBuf.SelectedIndexChanged += new System.EventHandler(this.comboDSPDigRXBuf_SelectedIndexChanged);
             // 
@@ -33731,7 +33638,7 @@
             this.lblDSPDigBufferTX.Name = "lblDSPDigBufferTX";
             this.lblDSPDigBufferTX.Size = new System.Drawing.Size(24, 16);
             this.lblDSPDigBufferTX.TabIndex = 21;
-            this.lblDSPDigBufferTX.Text = "TX:";
+            this.lblDSPDigBufferTX.Text = "发射:";
             // 
             // grpDSPBufCW
             // 
@@ -33751,7 +33658,7 @@
             this.lblDSPCWBufferRX.Name = "lblDSPCWBufferRX";
             this.lblDSPCWBufferRX.Size = new System.Drawing.Size(24, 16);
             this.lblDSPCWBufferRX.TabIndex = 19;
-            this.lblDSPCWBufferRX.Text = "RX:";
+            this.lblDSPCWBufferRX.Text = "接收:";
             // 
             // comboDSPCWRXBuf
             // 
@@ -33768,7 +33675,7 @@
             this.comboDSPCWRXBuf.Name = "comboDSPCWRXBuf";
             this.comboDSPCWRXBuf.Size = new System.Drawing.Size(64, 21);
             this.comboDSPCWRXBuf.TabIndex = 18;
-            this.toolTip1.SetToolTip(this.comboDSPCWRXBuf, "Sets DSP internal Buffer Size -- larger yields sharper filters, more latency");
+            this.toolTip1.SetToolTip(this.comboDSPCWRXBuf, "设置 DSP 内部缓冲区大小 —— 越大滤波器越陡，延迟越高");
             this.comboDSPCWRXBuf.ValueMember = "1024";
             this.comboDSPCWRXBuf.SelectedIndexChanged += new System.EventHandler(this.comboDSPCWRXBuf_SelectedIndexChanged);
             // 
@@ -33800,7 +33707,7 @@
             this.comboDSPPhoneTXBuf.Name = "comboDSPPhoneTXBuf";
             this.comboDSPPhoneTXBuf.Size = new System.Drawing.Size(64, 21);
             this.comboDSPPhoneTXBuf.TabIndex = 20;
-            this.toolTip1.SetToolTip(this.comboDSPPhoneTXBuf, "Sets DSP internal Buffer Size -- larger yields sharper filters, more latency");
+            this.toolTip1.SetToolTip(this.comboDSPPhoneTXBuf, "设置 DSP 内部缓冲区大小 —— 越大滤波器越陡，延迟越高");
             this.comboDSPPhoneTXBuf.ValueMember = "1024";
             this.comboDSPPhoneTXBuf.SelectedIndexChanged += new System.EventHandler(this.comboDSPPhoneTXBuf_SelectedIndexChanged);
             // 
@@ -33811,7 +33718,7 @@
             this.lblDSPPhoneBufferRX.Name = "lblDSPPhoneBufferRX";
             this.lblDSPPhoneBufferRX.Size = new System.Drawing.Size(24, 16);
             this.lblDSPPhoneBufferRX.TabIndex = 19;
-            this.lblDSPPhoneBufferRX.Text = "RX:";
+            this.lblDSPPhoneBufferRX.Text = "接收:";
             // 
             // comboDSPPhoneRXBuf
             // 
@@ -33828,7 +33735,7 @@
             this.comboDSPPhoneRXBuf.Name = "comboDSPPhoneRXBuf";
             this.comboDSPPhoneRXBuf.Size = new System.Drawing.Size(64, 21);
             this.comboDSPPhoneRXBuf.TabIndex = 18;
-            this.toolTip1.SetToolTip(this.comboDSPPhoneRXBuf, "Sets DSP internal Buffer Size -- larger yields sharper filters, more latency");
+            this.toolTip1.SetToolTip(this.comboDSPPhoneRXBuf, "设置 DSP 内部缓冲区大小 —— 越大滤波器越陡，延迟越高");
             this.comboDSPPhoneRXBuf.SelectedIndexChanged += new System.EventHandler(this.comboDSPPhoneRXBuf_SelectedIndexChanged);
             // 
             // lblDSPPhoneBufferTX
@@ -33838,7 +33745,7 @@
             this.lblDSPPhoneBufferTX.Name = "lblDSPPhoneBufferTX";
             this.lblDSPPhoneBufferTX.Size = new System.Drawing.Size(24, 16);
             this.lblDSPPhoneBufferTX.TabIndex = 21;
-            this.lblDSPPhoneBufferTX.Text = "TX:";
+            this.lblDSPPhoneBufferTX.Text = "发射:";
             // 
             // grpDSPWintype
             // 
@@ -33851,7 +33758,7 @@
             this.grpDSPWintype.Size = new System.Drawing.Size(109, 85);
             this.grpDSPWintype.TabIndex = 34;
             this.grpDSPWintype.TabStop = false;
-            this.grpDSPWintype.Text = "Filter Windows";
+            this.grpDSPWintype.Text = "滤波器窗函数";
             // 
             // labelTS144
             // 
@@ -33918,9 +33825,8 @@
             this.chkCWDisableUI.Name = "chkCWDisableUI";
             this.chkCWDisableUI.Size = new System.Drawing.Size(109, 32);
             this.chkCWDisableUI.TabIndex = 42;
-            this.chkCWDisableUI.Text = "Disable UI MOX Changes";
-            this.toolTip1.SetToolTip(this.chkCWDisableUI, "If enabled, will automatically switch to CW mode when paddles are used no matter " +
-        "the current mode ");
+            this.chkCWDisableUI.Text = "禁用界面 MOX 更改";
+            this.toolTip1.SetToolTip(this.chkCWDisableUI, "启用后，无论当前是什么模式，使用自动键时都会自动切换到 CW 模式。");
             this.chkCWDisableUI.CheckedChanged += new System.EventHandler(this.chkCWDisableUI_CheckedChanged);
             // 
             // grpKeyerConnections
@@ -33938,7 +33844,7 @@
             this.grpKeyerConnections.Size = new System.Drawing.Size(176, 128);
             this.grpKeyerConnections.TabIndex = 40;
             this.grpKeyerConnections.TabStop = false;
-            this.grpKeyerConnections.Text = "Connections";
+            this.grpKeyerConnections.Text = "连接";
             // 
             // comboKeyerConnKeyLine
             // 
@@ -33953,7 +33859,7 @@
             this.comboKeyerConnKeyLine.Name = "comboKeyerConnKeyLine";
             this.comboKeyerConnKeyLine.Size = new System.Drawing.Size(64, 21);
             this.comboKeyerConnKeyLine.TabIndex = 51;
-            this.toolTip1.SetToolTip(this.comboKeyerConnKeyLine, "Sets the COM port line that triggers the tone on the Keyer Port selected above.");
+            this.toolTip1.SetToolTip(this.comboKeyerConnKeyLine, "设置触发上方所选电键端口音调的 COM 端口线。");
             this.comboKeyerConnKeyLine.ValueMember = "None";
             this.comboKeyerConnKeyLine.Visible = false;
             this.comboKeyerConnKeyLine.SelectedIndexChanged += new System.EventHandler(this.comboKeyerConnKeyLine_SelectedIndexChanged);
@@ -33969,8 +33875,7 @@
             this.comboKeyerConnSecondary.Name = "comboKeyerConnSecondary";
             this.comboKeyerConnSecondary.Size = new System.Drawing.Size(64, 21);
             this.comboKeyerConnSecondary.TabIndex = 53;
-            this.toolTip1.SetToolTip(this.comboKeyerConnSecondary, "Sets Keyer Input COM port.  This can be an external keyer or a virtual COM port b" +
-        "eing driven by a third party program.");
+            this.toolTip1.SetToolTip(this.comboKeyerConnSecondary, "设置电键输入 COM 端口。可以是外部电键，也可以是由第三方程序驱动的虚拟 COM 端口。");
             this.comboKeyerConnSecondary.ValueMember = "None";
             this.comboKeyerConnSecondary.SelectedIndexChanged += new System.EventHandler(this.comboKeyerConnSecondary_SelectedIndexChanged);
             this.comboKeyerConnSecondary.MouseClick += new System.Windows.Forms.MouseEventHandler(this.comboKeyerConnSecondary_MouseClick);
@@ -33982,7 +33887,7 @@
             this.lblKeyerConnSecondary.Name = "lblKeyerConnSecondary";
             this.lblKeyerConnSecondary.Size = new System.Drawing.Size(68, 16);
             this.lblKeyerConnSecondary.TabIndex = 52;
-            this.lblKeyerConnSecondary.Text = "Secondary:";
+            this.lblKeyerConnSecondary.Text = "副:";
             // 
             // lblKeyerConnKeyLine
             // 
@@ -33991,7 +33896,7 @@
             this.lblKeyerConnKeyLine.Name = "lblKeyerConnKeyLine";
             this.lblKeyerConnKeyLine.Size = new System.Drawing.Size(68, 16);
             this.lblKeyerConnKeyLine.TabIndex = 50;
-            this.lblKeyerConnKeyLine.Text = "Key Line:";
+            this.lblKeyerConnKeyLine.Text = "电键线:";
             this.lblKeyerConnKeyLine.Visible = false;
             // 
             // comboKeyerConnPTTLine
@@ -34007,7 +33912,7 @@
             this.comboKeyerConnPTTLine.Name = "comboKeyerConnPTTLine";
             this.comboKeyerConnPTTLine.Size = new System.Drawing.Size(64, 21);
             this.comboKeyerConnPTTLine.TabIndex = 49;
-            this.toolTip1.SetToolTip(this.comboKeyerConnPTTLine, "Sets the line on the Keyer Port above that triggers PTT.");
+            this.toolTip1.SetToolTip(this.comboKeyerConnPTTLine, "设置上方电键端口上触发 PTT 的线。");
             this.comboKeyerConnPTTLine.ValueMember = "None";
             this.comboKeyerConnPTTLine.Visible = false;
             this.comboKeyerConnPTTLine.SelectedIndexChanged += new System.EventHandler(this.comboKeyerConnPTTLine_SelectedIndexChanged);
@@ -34019,7 +33924,7 @@
             this.lblKeyerConnPrimary.Name = "lblKeyerConnPrimary";
             this.lblKeyerConnPrimary.Size = new System.Drawing.Size(88, 16);
             this.lblKeyerConnPrimary.TabIndex = 41;
-            this.lblKeyerConnPrimary.Text = "Primary:";
+            this.lblKeyerConnPrimary.Text = "主:";
             // 
             // lblKeyerConnPTTLine
             // 
@@ -34028,7 +33933,7 @@
             this.lblKeyerConnPTTLine.Name = "lblKeyerConnPTTLine";
             this.lblKeyerConnPTTLine.Size = new System.Drawing.Size(68, 16);
             this.lblKeyerConnPTTLine.TabIndex = 48;
-            this.lblKeyerConnPTTLine.Text = "PTT Line:";
+            this.lblKeyerConnPTTLine.Text = "PTT 线:";
             this.lblKeyerConnPTTLine.Visible = false;
             // 
             // comboKeyerConnPrimary
@@ -34042,7 +33947,7 @@
             this.comboKeyerConnPrimary.Name = "comboKeyerConnPrimary";
             this.comboKeyerConnPrimary.Size = new System.Drawing.Size(64, 21);
             this.comboKeyerConnPrimary.TabIndex = 40;
-            this.toolTip1.SetToolTip(this.comboKeyerConnPrimary, "Sets Key Paddle Input port");
+            this.toolTip1.SetToolTip(this.comboKeyerConnPrimary, "设置电键桨输入端口");
             this.comboKeyerConnPrimary.ValueMember = "LPT";
             this.comboKeyerConnPrimary.SelectedIndexChanged += new System.EventHandler(this.comboKeyerConnPrimary_SelectedIndexChanged);
             // 
@@ -34055,7 +33960,7 @@
             this.grpDSPCWPitch.Size = new System.Drawing.Size(96, 57);
             this.grpDSPCWPitch.TabIndex = 39;
             this.grpDSPCWPitch.TabStop = false;
-            this.grpDSPCWPitch.Text = "CW Pitch (Hz)";
+            this.grpDSPCWPitch.Text = "CW 音调 (Hz)";
             // 
             // lblDSPCWPitchFreq
             // 
@@ -34064,7 +33969,7 @@
             this.lblDSPCWPitchFreq.Name = "lblDSPCWPitchFreq";
             this.lblDSPCWPitchFreq.Size = new System.Drawing.Size(32, 16);
             this.lblDSPCWPitchFreq.TabIndex = 8;
-            this.lblDSPCWPitchFreq.Text = "Freq:";
+            this.lblDSPCWPitchFreq.Text = "频率:";
             // 
             // udDSPCWPitch
             // 
@@ -34088,7 +33993,7 @@
             this.udDSPCWPitch.Size = new System.Drawing.Size(48, 20);
             this.udDSPCWPitch.TabIndex = 7;
             this.udDSPCWPitch.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udDSPCWPitch, "Selects the preferred CW tone frequency.");
+            this.toolTip1.SetToolTip(this.udDSPCWPitch, "选择首选 CW 音调频率。");
             this.udDSPCWPitch.Value = new decimal(new int[] {
             600,
             0,
@@ -34112,7 +34017,7 @@
             this.grpDSPKeyerOptions.Size = new System.Drawing.Size(142, 204);
             this.grpDSPKeyerOptions.TabIndex = 37;
             this.grpDSPKeyerOptions.TabStop = false;
-            this.grpDSPKeyerOptions.Text = "Options";
+            this.grpDSPKeyerOptions.Text = "选项";
             // 
             // udCWKeyerWeight
             // 
@@ -34136,7 +34041,7 @@
             this.udCWKeyerWeight.Size = new System.Drawing.Size(40, 20);
             this.udCWKeyerWeight.TabIndex = 40;
             this.udCWKeyerWeight.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udCWKeyerWeight, "Sets the weight of the tones when sending Iambic.");
+            this.toolTip1.SetToolTip(this.udCWKeyerWeight, "设置捏式发送时音调的权重。");
             this.udCWKeyerWeight.Value = new decimal(new int[] {
             50,
             0,
@@ -34155,8 +34060,8 @@
             this.chkDSPKeyerSidetone.Name = "chkDSPKeyerSidetone";
             this.chkDSPKeyerSidetone.Size = new System.Drawing.Size(113, 16);
             this.chkDSPKeyerSidetone.TabIndex = 47;
-            this.chkDSPKeyerSidetone.Text = "Sidetone";
-            this.toolTip1.SetToolTip(this.chkDSPKeyerSidetone, "Turns the sidetone in the speakers on/off");
+            this.chkDSPKeyerSidetone.Text = "侧音";
+            this.toolTip1.SetToolTip(this.chkDSPKeyerSidetone, "开关扬声器中的侧音");
             this.chkDSPKeyerSidetone.CheckedChanged += new System.EventHandler(this.chkDSPKeyerSidetone_CheckedChanged);
             // 
             // chkStrictCharSpacing
@@ -34167,8 +34072,8 @@
             this.chkStrictCharSpacing.Name = "chkStrictCharSpacing";
             this.chkStrictCharSpacing.Size = new System.Drawing.Size(113, 16);
             this.chkStrictCharSpacing.TabIndex = 46;
-            this.chkStrictCharSpacing.Text = "Strict Char Space";
-            this.toolTip1.SetToolTip(this.chkStrictCharSpacing, "If enabled, will automatically force a full space after each character.");
+            this.chkStrictCharSpacing.Text = "严格字符间距";
+            this.toolTip1.SetToolTip(this.chkStrictCharSpacing, "启用后，每个字符后自动强制插入完整空格。");
             this.chkStrictCharSpacing.CheckedChanged += new System.EventHandler(this.chkStrictCharSpacing_CheckedChanged);
             // 
             // chkCWKeyerMode
@@ -34181,8 +34086,8 @@
             this.chkCWKeyerMode.Name = "chkCWKeyerMode";
             this.chkCWKeyerMode.Size = new System.Drawing.Size(96, 16);
             this.chkCWKeyerMode.TabIndex = 40;
-            this.chkCWKeyerMode.Text = "Mode B";
-            this.toolTip1.SetToolTip(this.chkCWKeyerMode, "Set Keyer Mode");
+            this.chkCWKeyerMode.Text = "模式 B";
+            this.toolTip1.SetToolTip(this.chkCWKeyerMode, "设置电键模式");
             this.chkCWKeyerMode.CheckedChanged += new System.EventHandler(this.chkCWKeyerMode_CheckedChanged);
             // 
             // chkCWKeyerRevPdl
@@ -34193,8 +34098,8 @@
             this.chkCWKeyerRevPdl.Name = "chkCWKeyerRevPdl";
             this.chkCWKeyerRevPdl.Size = new System.Drawing.Size(113, 16);
             this.chkCWKeyerRevPdl.TabIndex = 38;
-            this.chkCWKeyerRevPdl.Text = "Reverse Paddles";
-            this.toolTip1.SetToolTip(this.chkCWKeyerRevPdl, "Reverses the input paddle -- Dot becomes Dash and vice versa.");
+            this.chkCWKeyerRevPdl.Text = "反向自动键";
+            this.toolTip1.SetToolTip(this.chkCWKeyerRevPdl, "反转自动键输入 —— 点变划、划变点。");
             this.chkCWKeyerRevPdl.CheckedChanged += new System.EventHandler(this.chkCWKeyerRevPdl_CheckedChanged);
             // 
             // lblCWWeight
@@ -34204,7 +34109,7 @@
             this.lblCWWeight.Name = "lblCWWeight";
             this.lblCWWeight.Size = new System.Drawing.Size(48, 16);
             this.lblCWWeight.TabIndex = 39;
-            this.lblCWWeight.Text = "Weight:";
+            this.lblCWWeight.Text = "权重:";
             // 
             // chkCWKeyerIambic
             // 
@@ -34216,8 +34121,8 @@
             this.chkCWKeyerIambic.Name = "chkCWKeyerIambic";
             this.chkCWKeyerIambic.Size = new System.Drawing.Size(64, 16);
             this.chkCWKeyerIambic.TabIndex = 36;
-            this.chkCWKeyerIambic.Text = "Iambic";
-            this.toolTip1.SetToolTip(this.chkCWKeyerIambic, "Iambic or External/Bug Key");
+            this.chkCWKeyerIambic.Text = "捏式（Iambic）";
+            this.toolTip1.SetToolTip(this.chkCWKeyerIambic, "捏式或外部/半自动键");
             this.chkCWKeyerIambic.CheckedChanged += new System.EventHandler(this.chkCWKeyerIambic_CheckedChanged);
             // 
             // chkCWAutoSwitchMode
@@ -34228,9 +34133,8 @@
             this.chkCWAutoSwitchMode.Name = "chkCWAutoSwitchMode";
             this.chkCWAutoSwitchMode.Size = new System.Drawing.Size(109, 16);
             this.chkCWAutoSwitchMode.TabIndex = 41;
-            this.chkCWAutoSwitchMode.Text = "Auto Mode Swch";
-            this.toolTip1.SetToolTip(this.chkCWAutoSwitchMode, "If enabled, will automatically switch to CW mode when paddles are used no matter " +
-        "the current mode ");
+            this.chkCWAutoSwitchMode.Text = "自动模式切换";
+            this.toolTip1.SetToolTip(this.chkCWAutoSwitchMode, "启用后，无论当前是什么模式，使用自动键时都会自动切换到 CW 模式。");
             this.chkCWAutoSwitchMode.CheckedChanged += new System.EventHandler(this.chkCWAutoSwitchMode_CheckedChanged);
             // 
             // grpDSPKeyerSemiBreakIn
@@ -34243,7 +34147,7 @@
             this.grpDSPKeyerSemiBreakIn.Size = new System.Drawing.Size(136, 76);
             this.grpDSPKeyerSemiBreakIn.TabIndex = 38;
             this.grpDSPKeyerSemiBreakIn.TabStop = false;
-            this.grpDSPKeyerSemiBreakIn.Text = "CW Break-In";
+            this.grpDSPKeyerSemiBreakIn.Text = "CW 半插入";
             // 
             // chkCWBreakInEnabled
             // 
@@ -34256,9 +34160,9 @@
             this.chkCWBreakInEnabled.Name = "chkCWBreakInEnabled";
             this.chkCWBreakInEnabled.Size = new System.Drawing.Size(92, 17);
             this.chkCWBreakInEnabled.TabIndex = 36;
-            this.chkCWBreakInEnabled.Text = "Semi Break-In";
+            this.chkCWBreakInEnabled.Text = "半插入";
             this.chkCWBreakInEnabled.ThreeState = true;
-            this.toolTip1.SetToolTip(this.chkCWBreakInEnabled, "Enables Semi Break In operation.");
+            this.toolTip1.SetToolTip(this.chkCWBreakInEnabled, "启用半插入操作。");
             this.chkCWBreakInEnabled.CheckedChanged += new System.EventHandler(this.chkDSPKeyerSemiBreakInEnabled_CheckedChanged);
             this.chkCWBreakInEnabled.CheckStateChanged += new System.EventHandler(this.chkCWBreakInEnabled_CheckStateChanged);
             // 
@@ -34269,7 +34173,7 @@
             this.lblCWBreakInDelay.Name = "lblCWBreakInDelay";
             this.lblCWBreakInDelay.Size = new System.Drawing.Size(64, 16);
             this.lblCWBreakInDelay.TabIndex = 34;
-            this.lblCWBreakInDelay.Text = "Delay (ms):";
+            this.lblCWBreakInDelay.Text = "延迟 (ms):";
             // 
             // udCWBreakInDelay
             // 
@@ -34293,7 +34197,7 @@
             this.udCWBreakInDelay.Size = new System.Drawing.Size(48, 20);
             this.udCWBreakInDelay.TabIndex = 35;
             this.udCWBreakInDelay.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udCWBreakInDelay, "Amount of time to stay in TX after the last detected CW signal.");
+            this.toolTip1.SetToolTip(this.udCWBreakInDelay, "检测到最后一个 CW 信号后保持 TX 的时间。");
             this.udCWBreakInDelay.Value = new decimal(new int[] {
             300,
             0,
@@ -34331,7 +34235,7 @@
             this.groupBoxTS17.Size = new System.Drawing.Size(296, 146);
             this.groupBoxTS17.TabIndex = 40;
             this.groupBoxTS17.TabStop = false;
-            this.groupBoxTS17.Text = "AGC with automatic noise floor compensation";
+            this.groupBoxTS17.Text = "带自动噪底补偿的 AGC";
             // 
             // udNoiseFloorAttackRX2
             // 
@@ -34355,7 +34259,7 @@
             this.udNoiseFloorAttackRX2.Size = new System.Drawing.Size(58, 20);
             this.udNoiseFloorAttackRX2.TabIndex = 137;
             this.udNoiseFloorAttackRX2.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udNoiseFloorAttackRX2, "Time it takes to reach the noise floor");
+            this.toolTip1.SetToolTip(this.udNoiseFloorAttackRX2, "达到噪底所需时间");
             this.udNoiseFloorAttackRX2.Value = new decimal(new int[] {
             2000,
             0,
@@ -34370,7 +34274,7 @@
             this.labelTS603.Name = "labelTS603";
             this.labelTS603.Size = new System.Drawing.Size(162, 16);
             this.labelTS603.TabIndex = 136;
-            this.labelTS603.Text = "RX2 Noise Floor Attack (ms):";
+            this.labelTS603.Text = "RX2 噪底启动 (ms):";
             this.labelTS603.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // udNoiseFloorAttackRX1
@@ -34395,7 +34299,7 @@
             this.udNoiseFloorAttackRX1.Size = new System.Drawing.Size(58, 20);
             this.udNoiseFloorAttackRX1.TabIndex = 135;
             this.udNoiseFloorAttackRX1.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udNoiseFloorAttackRX1, "Time it takes to reach the noise floor");
+            this.toolTip1.SetToolTip(this.udNoiseFloorAttackRX1, "达到噪底所需时间");
             this.udNoiseFloorAttackRX1.Value = new decimal(new int[] {
             2000,
             0,
@@ -34410,7 +34314,7 @@
             this.labelTS602.Name = "labelTS602";
             this.labelTS602.Size = new System.Drawing.Size(165, 16);
             this.labelTS602.TabIndex = 134;
-            this.labelTS602.Text = "RX1 Noise Floor Attack (ms):";
+            this.labelTS602.Text = "RX1 噪底启动 (ms):";
             this.labelTS602.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // udRX2AutoAGCOffset
@@ -34451,7 +34355,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 12);
             this.label1.TabIndex = 132;
-            this.label1.Text = "± Shift";
+            this.label1.Text = "± 偏移";
             // 
             // udRX1AutoAGCOffset
             // 
@@ -34490,7 +34394,7 @@
             this.chkAutoAGCRX2.Name = "chkAutoAGCRX2";
             this.chkAutoAGCRX2.Size = new System.Drawing.Size(201, 17);
             this.chkAutoAGCRX2.TabIndex = 131;
-            this.chkAutoAGCRX2.Text = "Auto AGC RX2 (requires pana/water)";
+            this.chkAutoAGCRX2.Text = "自动 AGC RX2（需要频谱/瀑布图）";
             this.chkAutoAGCRX2.UseVisualStyleBackColor = true;
             this.chkAutoAGCRX2.CheckedChanged += new System.EventHandler(this.chkAutoAGCRX2_CheckedChanged);
             // 
@@ -34502,7 +34406,7 @@
             this.chkAutoAGCRX1.Name = "chkAutoAGCRX1";
             this.chkAutoAGCRX1.Size = new System.Drawing.Size(201, 17);
             this.chkAutoAGCRX1.TabIndex = 130;
-            this.chkAutoAGCRX1.Text = "Auto AGC RX1 (requires pana/water)";
+            this.chkAutoAGCRX1.Text = "自动 AGC RX1（需要频谱/瀑布图）";
             this.chkAutoAGCRX1.UseVisualStyleBackColor = true;
             this.chkAutoAGCRX1.CheckedChanged += new System.EventHandler(this.chkAutoAGCRX1_CheckedChanged);
             // 
@@ -34526,7 +34430,7 @@
             this.grpDSPLeveler.Size = new System.Drawing.Size(144, 216);
             this.grpDSPLeveler.TabIndex = 39;
             this.grpDSPLeveler.TabStop = false;
-            this.grpDSPLeveler.Text = "Leveler";
+            this.grpDSPLeveler.Text = "限幅器";
             // 
             // chkDSPLevelerEnabled
             // 
@@ -34537,8 +34441,8 @@
             this.chkDSPLevelerEnabled.Name = "chkDSPLevelerEnabled";
             this.chkDSPLevelerEnabled.Size = new System.Drawing.Size(104, 16);
             this.chkDSPLevelerEnabled.TabIndex = 42;
-            this.chkDSPLevelerEnabled.Text = "Enabled";
-            this.toolTip1.SetToolTip(this.chkDSPLevelerEnabled, "Check this box to Enable (activate) the leveler feature.");
+            this.chkDSPLevelerEnabled.Text = "已启用";
+            this.toolTip1.SetToolTip(this.chkDSPLevelerEnabled, "勾选以启用（激活）限幅器功能。");
             this.chkDSPLevelerEnabled.CheckedChanged += new System.EventHandler(this.chkDSPLevelerEnabled_CheckedChanged);
             // 
             // lblDSPLevelerHangThreshold
@@ -34548,7 +34452,7 @@
             this.lblDSPLevelerHangThreshold.Name = "lblDSPLevelerHangThreshold";
             this.lblDSPLevelerHangThreshold.Size = new System.Drawing.Size(88, 16);
             this.lblDSPLevelerHangThreshold.TabIndex = 41;
-            this.lblDSPLevelerHangThreshold.Text = "Hang Threshold:";
+            this.lblDSPLevelerHangThreshold.Text = "悬挂阈值:";
             this.lblDSPLevelerHangThreshold.Visible = false;
             // 
             // udDSPLevelerHangTime
@@ -34589,7 +34493,7 @@
             this.lblDSPLevelerHangTime.Name = "lblDSPLevelerHangTime";
             this.lblDSPLevelerHangTime.Size = new System.Drawing.Size(72, 16);
             this.lblDSPLevelerHangTime.TabIndex = 14;
-            this.lblDSPLevelerHangTime.Text = "Hang (ms):";
+            this.lblDSPLevelerHangTime.Text = "保持 (ms):";
             this.lblDSPLevelerHangTime.Visible = false;
             // 
             // udDSPLevelerThreshold
@@ -34614,8 +34518,7 @@
             this.udDSPLevelerThreshold.Size = new System.Drawing.Size(40, 20);
             this.udDSPLevelerThreshold.TabIndex = 6;
             this.udDSPLevelerThreshold.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udDSPLevelerThreshold, "This provides for a “threshold” AGC.  Irrespective of how weak a signal is, no ga" +
-        "in over this Max Gain is applied.");
+            this.toolTip1.SetToolTip(this.udDSPLevelerThreshold, "提供“阈值”AGC。无论信号多弱，超过此最大增益的增益都不会被应用。");
             this.udDSPLevelerThreshold.Value = new decimal(new int[] {
             15,
             0,
@@ -34693,7 +34596,7 @@
             this.lblDSPLevelerSlope.Name = "lblDSPLevelerSlope";
             this.lblDSPLevelerSlope.Size = new System.Drawing.Size(64, 16);
             this.lblDSPLevelerSlope.TabIndex = 11;
-            this.lblDSPLevelerSlope.Text = "Slope (dB):";
+            this.lblDSPLevelerSlope.Text = "斜率 (dB):";
             this.lblDSPLevelerSlope.Visible = false;
             // 
             // udDSPLevelerAttack
@@ -34734,7 +34637,7 @@
             this.lblDSPLevelerDecay.Name = "lblDSPLevelerDecay";
             this.lblDSPLevelerDecay.Size = new System.Drawing.Size(72, 16);
             this.lblDSPLevelerDecay.TabIndex = 9;
-            this.lblDSPLevelerDecay.Text = "Decay (ms):";
+            this.lblDSPLevelerDecay.Text = "衰减 (ms):";
             // 
             // lblDSPLevelerAttack
             // 
@@ -34743,7 +34646,7 @@
             this.lblDSPLevelerAttack.Name = "lblDSPLevelerAttack";
             this.lblDSPLevelerAttack.Size = new System.Drawing.Size(64, 16);
             this.lblDSPLevelerAttack.TabIndex = 8;
-            this.lblDSPLevelerAttack.Text = "Attack (ms):";
+            this.lblDSPLevelerAttack.Text = "启动 (ms):";
             this.lblDSPLevelerAttack.Visible = false;
             // 
             // lblDSPLevelerThreshold
@@ -34753,7 +34656,7 @@
             this.lblDSPLevelerThreshold.Name = "lblDSPLevelerThreshold";
             this.lblDSPLevelerThreshold.Size = new System.Drawing.Size(88, 24);
             this.lblDSPLevelerThreshold.TabIndex = 7;
-            this.lblDSPLevelerThreshold.Text = "Max.Gain (dB):";
+            this.lblDSPLevelerThreshold.Text = "最大增益 (dB):";
             // 
             // tbDSPLevelerHangThreshold
             // 
@@ -34796,7 +34699,7 @@
             this.lblDSPALCHangThreshold.Name = "lblDSPALCHangThreshold";
             this.lblDSPALCHangThreshold.Size = new System.Drawing.Size(88, 16);
             this.lblDSPALCHangThreshold.TabIndex = 43;
-            this.lblDSPALCHangThreshold.Text = "Hang Threshold:";
+            this.lblDSPALCHangThreshold.Text = "悬挂阈值:";
             this.lblDSPALCHangThreshold.Visible = false;
             // 
             // tbDSPALCHangThreshold
@@ -34850,7 +34753,7 @@
             this.lblDSPALCHangTime.Name = "lblDSPALCHangTime";
             this.lblDSPALCHangTime.Size = new System.Drawing.Size(72, 16);
             this.lblDSPALCHangTime.TabIndex = 16;
-            this.lblDSPALCHangTime.Text = "Hang (ms):";
+            this.lblDSPALCHangTime.Text = "保持 (ms):";
             this.lblDSPALCHangTime.Visible = false;
             // 
             // udDSPALCMaximumGain
@@ -34875,8 +34778,7 @@
             this.udDSPALCMaximumGain.Size = new System.Drawing.Size(48, 20);
             this.udDSPALCMaximumGain.TabIndex = 6;
             this.udDSPALCMaximumGain.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udDSPALCMaximumGain, "This provides for a “threshold” AGC.  Irrespective of how weak a signal is, no ga" +
-        "in over this Max Gain is applied.");
+            this.toolTip1.SetToolTip(this.udDSPALCMaximumGain, "提供“阈值”AGC。无论信号多弱，超过此最大增益的增益都不会被应用。");
             this.udDSPALCMaximumGain.Value = new decimal(new int[] {
             3,
             0,
@@ -34953,7 +34855,7 @@
             this.lblDSPALCSlope.Name = "lblDSPALCSlope";
             this.lblDSPALCSlope.Size = new System.Drawing.Size(64, 16);
             this.lblDSPALCSlope.TabIndex = 11;
-            this.lblDSPALCSlope.Text = "Slope (dB):";
+            this.lblDSPALCSlope.Text = "斜率 (dB):";
             this.lblDSPALCSlope.Visible = false;
             // 
             // udDSPALCAttack
@@ -34994,7 +34896,7 @@
             this.lblDSPALCDecay.Name = "lblDSPALCDecay";
             this.lblDSPALCDecay.Size = new System.Drawing.Size(72, 16);
             this.lblDSPALCDecay.TabIndex = 9;
-            this.lblDSPALCDecay.Text = "Decay (ms):";
+            this.lblDSPALCDecay.Text = "衰减 (ms):";
             // 
             // lblDSPALCAttack
             // 
@@ -35003,7 +34905,7 @@
             this.lblDSPALCAttack.Name = "lblDSPALCAttack";
             this.lblDSPALCAttack.Size = new System.Drawing.Size(64, 16);
             this.lblDSPALCAttack.TabIndex = 8;
-            this.lblDSPALCAttack.Text = "Attack (ms):";
+            this.lblDSPALCAttack.Text = "启动 (ms):";
             this.lblDSPALCAttack.Visible = false;
             // 
             // lblDSPALCThreshold
@@ -35013,7 +34915,7 @@
             this.lblDSPALCThreshold.Name = "lblDSPALCThreshold";
             this.lblDSPALCThreshold.Size = new System.Drawing.Size(88, 24);
             this.lblDSPALCThreshold.TabIndex = 7;
-            this.lblDSPALCThreshold.Text = "Max Gain (dB):";
+            this.lblDSPALCThreshold.Text = "最大增益 (dB):";
             this.lblDSPALCThreshold.VisibleChanged += new System.EventHandler(this.udDSPALCMaximumGain_ValueChanged);
             // 
             // grpDSPAGC
@@ -35067,8 +34969,8 @@
             this.chkRX2HangSpectrumLine.Name = "chkRX2HangSpectrumLine";
             this.chkRX2HangSpectrumLine.Size = new System.Drawing.Size(79, 16);
             this.chkRX2HangSpectrumLine.TabIndex = 129;
-            this.chkRX2HangSpectrumLine.Text = "Spectrum";
-            this.toolTip1.SetToolTip(this.chkRX2HangSpectrumLine, "Check this box to show AGC Hang Threshold line across the spectrum.");
+            this.chkRX2HangSpectrumLine.Text = "频谱";
+            this.toolTip1.SetToolTip(this.chkRX2HangSpectrumLine, "勾选以在频谱上显示 AGC 悬挂阈值线。");
             this.chkRX2HangSpectrumLine.CheckedChanged += new System.EventHandler(this.chkRX2HangSpectrumLine_CheckedChanged);
             // 
             // chkAGCHangSpectrumLine
@@ -35080,8 +34982,8 @@
             this.chkAGCHangSpectrumLine.Name = "chkAGCHangSpectrumLine";
             this.chkAGCHangSpectrumLine.Size = new System.Drawing.Size(79, 16);
             this.chkAGCHangSpectrumLine.TabIndex = 125;
-            this.chkAGCHangSpectrumLine.Text = "Spectrum";
-            this.toolTip1.SetToolTip(this.chkAGCHangSpectrumLine, "Check this box to show AGC Hang Threshold line across the spectrum.");
+            this.chkAGCHangSpectrumLine.Text = "频谱";
+            this.toolTip1.SetToolTip(this.chkAGCHangSpectrumLine, "勾选以在频谱上显示 AGC 悬挂阈值线。");
             this.chkAGCHangSpectrumLine.CheckedChanged += new System.EventHandler(this.chkAGCHangSpectrumLine_CheckedChanged);
             // 
             // chkDisplayRX2HangLine
@@ -35093,8 +34995,8 @@
             this.chkDisplayRX2HangLine.Name = "chkDisplayRX2HangLine";
             this.chkDisplayRX2HangLine.Size = new System.Drawing.Size(151, 18);
             this.chkDisplayRX2HangLine.TabIndex = 128;
-            this.chkDisplayRX2HangLine.Text = "Display RX2 Hang Line";
-            this.toolTip1.SetToolTip(this.chkDisplayRX2HangLine, "Check this box to Display the AGC Hang Threshold Control on the bandscope.");
+            this.chkDisplayRX2HangLine.Text = "显示 RX2 悬挂线";
+            this.toolTip1.SetToolTip(this.chkDisplayRX2HangLine, "勾选以在频谱上显示 AGC 悬挂阈值控件。");
             this.chkDisplayRX2HangLine.CheckedChanged += new System.EventHandler(this.chkDisplayRX2HangLine_CheckedChanged);
             // 
             // chkAGCDisplayHangLine
@@ -35106,8 +35008,8 @@
             this.chkAGCDisplayHangLine.Name = "chkAGCDisplayHangLine";
             this.chkAGCDisplayHangLine.Size = new System.Drawing.Size(144, 18);
             this.chkAGCDisplayHangLine.TabIndex = 124;
-            this.chkAGCDisplayHangLine.Text = "Display RX1 Hang Line";
-            this.toolTip1.SetToolTip(this.chkAGCDisplayHangLine, "Check this box to Display the AGC Hang Threshold Control on the bandscope.");
+            this.chkAGCDisplayHangLine.Text = "显示 RX1 悬挂线";
+            this.toolTip1.SetToolTip(this.chkAGCDisplayHangLine, "勾选以在频谱上显示 AGC 悬挂阈值控件。");
             this.chkAGCDisplayHangLine.CheckedChanged += new System.EventHandler(this.chkAGCDisplayHangLine_CheckedChanged);
             // 
             // chkRX2GainSpectrumLine
@@ -35119,8 +35021,8 @@
             this.chkRX2GainSpectrumLine.Name = "chkRX2GainSpectrumLine";
             this.chkRX2GainSpectrumLine.Size = new System.Drawing.Size(79, 16);
             this.chkRX2GainSpectrumLine.TabIndex = 127;
-            this.chkRX2GainSpectrumLine.Text = "Spectrum";
-            this.toolTip1.SetToolTip(this.chkRX2GainSpectrumLine, "Check this box to show AGC lines across spectrum.");
+            this.chkRX2GainSpectrumLine.Text = "频谱";
+            this.toolTip1.SetToolTip(this.chkRX2GainSpectrumLine, "勾选以在频谱上显示 AGC 线。");
             this.chkRX2GainSpectrumLine.CheckedChanged += new System.EventHandler(this.chkRX2GainSpectrumLine_CheckedChanged);
             // 
             // chkSpectrumLine
@@ -35132,8 +35034,8 @@
             this.chkSpectrumLine.Name = "chkSpectrumLine";
             this.chkSpectrumLine.Size = new System.Drawing.Size(79, 16);
             this.chkSpectrumLine.TabIndex = 123;
-            this.chkSpectrumLine.Text = "Spectrum";
-            this.toolTip1.SetToolTip(this.chkSpectrumLine, "Check this box to show AGC lines across spectrum.");
+            this.chkSpectrumLine.Text = "频谱";
+            this.toolTip1.SetToolTip(this.chkSpectrumLine, "勾选以在频谱上显示 AGC 线。");
             this.chkSpectrumLine.CheckedChanged += new System.EventHandler(this.chkSpectrumLine_CheckedChanged);
             // 
             // chkDisplayRX2GainLine
@@ -35145,8 +35047,8 @@
             this.chkDisplayRX2GainLine.Name = "chkDisplayRX2GainLine";
             this.chkDisplayRX2GainLine.Size = new System.Drawing.Size(151, 16);
             this.chkDisplayRX2GainLine.TabIndex = 126;
-            this.chkDisplayRX2GainLine.Text = "Display RX2 Gain Line";
-            this.toolTip1.SetToolTip(this.chkDisplayRX2GainLine, "Check this box to Display the AGC Controls on the bandscope.");
+            this.chkDisplayRX2GainLine.Text = "显示 RX2 增益线";
+            this.toolTip1.SetToolTip(this.chkDisplayRX2GainLine, "勾选以在频谱上显示 AGC 控件。");
             this.chkDisplayRX2GainLine.CheckedChanged += new System.EventHandler(this.chkDisplayRX2GainLine_CheckedChanged);
             // 
             // chkShowAGC
@@ -35158,8 +35060,8 @@
             this.chkShowAGC.Name = "chkShowAGC";
             this.chkShowAGC.Size = new System.Drawing.Size(144, 16);
             this.chkShowAGC.TabIndex = 122;
-            this.chkShowAGC.Text = "Display RX1 Gain Line";
-            this.toolTip1.SetToolTip(this.chkShowAGC, "Check this box to Display the AGC Controls on the bandscope.");
+            this.chkShowAGC.Text = "显示 RX1 增益线";
+            this.toolTip1.SetToolTip(this.chkShowAGC, "勾选以在频谱上显示 AGC 控件。");
             this.chkShowAGC.CheckedChanged += new System.EventHandler(this.chkShowAGC_CheckedChanged);
             // 
             // labelTS138
@@ -35357,8 +35259,7 @@
             this.udDSPAGCRX2MaxGaindB.Size = new System.Drawing.Size(48, 20);
             this.udDSPAGCRX2MaxGaindB.TabIndex = 49;
             this.udDSPAGCRX2MaxGaindB.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udDSPAGCRX2MaxGaindB, "This provides for a “threshold” AGC.  Irrespective of how weak a signal is, no ga" +
-        "in over this Max Gain is applied.");
+            this.toolTip1.SetToolTip(this.udDSPAGCRX2MaxGaindB, "提供“阈值”AGC。无论信号多弱，超过此最大增益的增益都不会被应用。");
             this.udDSPAGCRX2MaxGaindB.Value = new decimal(new int[] {
             90,
             0,
@@ -35388,8 +35289,7 @@
             this.udDSPAGCRX2FixedGaindB.Size = new System.Drawing.Size(40, 20);
             this.udDSPAGCRX2FixedGaindB.TabIndex = 48;
             this.udDSPAGCRX2FixedGaindB.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udDSPAGCRX2FixedGaindB, "When you choose Fixed AGC on the front panel, this number is used to multiply the" +
-        " signal.");
+            this.toolTip1.SetToolTip(this.udDSPAGCRX2FixedGaindB, "当前面板选择固定 AGC 时，用此数值乘以信号。");
             this.udDSPAGCRX2FixedGaindB.Value = new decimal(new int[] {
             20,
             0,
@@ -35417,7 +35317,7 @@
             this.lblDSPAGCHangThreshold.Name = "lblDSPAGCHangThreshold";
             this.lblDSPAGCHangThreshold.Size = new System.Drawing.Size(88, 16);
             this.lblDSPAGCHangThreshold.TabIndex = 46;
-            this.lblDSPAGCHangThreshold.Text = "Hang Threshold:";
+            this.lblDSPAGCHangThreshold.Text = "悬挂阈值:";
             // 
             // lblDSPAGCHangTime
             // 
@@ -35426,7 +35326,7 @@
             this.lblDSPAGCHangTime.Name = "lblDSPAGCHangTime";
             this.lblDSPAGCHangTime.Size = new System.Drawing.Size(72, 16);
             this.lblDSPAGCHangTime.TabIndex = 45;
-            this.lblDSPAGCHangTime.Text = "Hang (ms):";
+            this.lblDSPAGCHangTime.Text = "保持 (ms):";
             // 
             // udDSPAGCHangTime
             // 
@@ -35481,8 +35381,7 @@
             this.udDSPAGCMaxGaindB.Size = new System.Drawing.Size(48, 20);
             this.udDSPAGCMaxGaindB.TabIndex = 6;
             this.udDSPAGCMaxGaindB.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udDSPAGCMaxGaindB, "This provides for a “threshold” AGC.  Irrespective of how weak a signal is, no ga" +
-        "in over this Max Gain is applied.");
+            this.toolTip1.SetToolTip(this.udDSPAGCMaxGaindB, "提供“阈值”AGC。无论信号多弱，超过此最大增益的增益都不会被应用。");
             this.udDSPAGCMaxGaindB.Value = new decimal(new int[] {
             90,
             0,
@@ -35560,7 +35459,7 @@
             this.lblDSPAGCSlope.Name = "lblDSPAGCSlope";
             this.lblDSPAGCSlope.Size = new System.Drawing.Size(80, 16);
             this.lblDSPAGCSlope.TabIndex = 11;
-            this.lblDSPAGCSlope.Text = "Slope (dB):";
+            this.lblDSPAGCSlope.Text = "斜率 (dB):";
             // 
             // udDSPAGCAttack
             // 
@@ -35600,7 +35499,7 @@
             this.lblDSPAGCDecay.Name = "lblDSPAGCDecay";
             this.lblDSPAGCDecay.Size = new System.Drawing.Size(72, 16);
             this.lblDSPAGCDecay.TabIndex = 9;
-            this.lblDSPAGCDecay.Text = "Decay (ms):";
+            this.lblDSPAGCDecay.Text = "衰减 (ms):";
             // 
             // lblDSPAGCAttack
             // 
@@ -35609,7 +35508,7 @@
             this.lblDSPAGCAttack.Name = "lblDSPAGCAttack";
             this.lblDSPAGCAttack.Size = new System.Drawing.Size(64, 16);
             this.lblDSPAGCAttack.TabIndex = 8;
-            this.lblDSPAGCAttack.Text = "Attack (ms):";
+            this.lblDSPAGCAttack.Text = "启动 (ms):";
             this.lblDSPAGCAttack.Visible = false;
             // 
             // lblDSPAGCMaxGain
@@ -35619,7 +35518,7 @@
             this.lblDSPAGCMaxGain.Name = "lblDSPAGCMaxGain";
             this.lblDSPAGCMaxGain.Size = new System.Drawing.Size(88, 24);
             this.lblDSPAGCMaxGain.TabIndex = 7;
-            this.lblDSPAGCMaxGain.Text = "Max Gain (dB):";
+            this.lblDSPAGCMaxGain.Text = "最大增益 (dB):";
             // 
             // udDSPAGCFixedGaindB
             // 
@@ -35643,8 +35542,7 @@
             this.udDSPAGCFixedGaindB.Size = new System.Drawing.Size(40, 20);
             this.udDSPAGCFixedGaindB.TabIndex = 4;
             this.udDSPAGCFixedGaindB.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udDSPAGCFixedGaindB, "When you choose Fixed AGC on the front panel, this number is used to multiply the" +
-        " signal.");
+            this.toolTip1.SetToolTip(this.udDSPAGCFixedGaindB, "当前面板选择固定 AGC 时，用此数值乘以信号。");
             this.udDSPAGCFixedGaindB.Value = new decimal(new int[] {
             20,
             0,
@@ -35660,7 +35558,7 @@
             this.lblDSPAGCFixed.Name = "lblDSPAGCFixed";
             this.lblDSPAGCFixed.Size = new System.Drawing.Size(88, 16);
             this.lblDSPAGCFixed.TabIndex = 5;
-            this.lblDSPAGCFixed.Text = "Fixed Gain (dB):";
+            this.lblDSPAGCFixed.Text = "固定增益 (dB):";
             // 
             // chkDSPTXMeterPeak
             // 
@@ -35671,7 +35569,7 @@
             this.chkDSPTXMeterPeak.Name = "chkDSPTXMeterPeak";
             this.chkDSPTXMeterPeak.Size = new System.Drawing.Size(144, 48);
             this.chkDSPTXMeterPeak.TabIndex = 38;
-            this.chkDSPTXMeterPeak.Text = "Use Peak Meter Readings for TX COMP and ALC";
+            this.chkDSPTXMeterPeak.Text = "TX COMP 和 ALC 使用峰值仪表读数";
             this.chkDSPTXMeterPeak.CheckedChanged += new System.EventHandler(this.chkDSPTXMeterPeak_CheckedChanged);
             // 
             // tpDSPAMSAM
@@ -35702,7 +35600,7 @@
             this.groupBoxTS28.Size = new System.Drawing.Size(201, 98);
             this.groupBoxTS28.TabIndex = 45;
             this.groupBoxTS28.TabStop = false;
-            this.groupBoxTS28.Text = "RX Voice Squelch Time Constants";
+            this.groupBoxTS28.Text = "RX 语音静噪时间常数";
             // 
             // labelTS180
             // 
@@ -35736,7 +35634,7 @@
             this.udVSQLUnMuteTimeConstant.Size = new System.Drawing.Size(53, 20);
             this.udVSQLUnMuteTimeConstant.TabIndex = 49;
             this.udVSQLUnMuteTimeConstant.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udVSQLUnMuteTimeConstant, "Time constant (milliseconds) to be used in un-muting the squelch");
+            this.toolTip1.SetToolTip(this.udVSQLUnMuteTimeConstant, "静噪取消静音使用的时间常数（毫秒）");
             this.udVSQLUnMuteTimeConstant.Value = new decimal(new int[] {
             100,
             0,
@@ -35762,7 +35660,7 @@
             this.labelTS178.Name = "labelTS178";
             this.labelTS178.Size = new System.Drawing.Size(51, 13);
             this.labelTS178.TabIndex = 3;
-            this.labelTS178.Text = "Un-Mute:";
+            this.labelTS178.Text = "取消静音:";
             // 
             // labelTS161
             // 
@@ -35772,7 +35670,7 @@
             this.labelTS161.Name = "labelTS161";
             this.labelTS161.Size = new System.Drawing.Size(34, 13);
             this.labelTS161.TabIndex = 1;
-            this.labelTS161.Text = "Mute:";
+            this.labelTS161.Text = "静音:";
             // 
             // udVSQLMuteTimeConstant
             // 
@@ -35796,7 +35694,7 @@
             this.udVSQLMuteTimeConstant.Size = new System.Drawing.Size(53, 20);
             this.udVSQLMuteTimeConstant.TabIndex = 0;
             this.udVSQLMuteTimeConstant.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udVSQLMuteTimeConstant, "Time constant (milliseconds) to be used in muting the squelch");
+            this.toolTip1.SetToolTip(this.udVSQLMuteTimeConstant, "静噪静音使用的时间常数（毫秒）");
             this.udVSQLMuteTimeConstant.Value = new decimal(new int[] {
             100,
             0,
@@ -35814,7 +35712,7 @@
             this.grpAMTX.Size = new System.Drawing.Size(172, 92);
             this.grpAMTX.TabIndex = 44;
             this.grpAMTX.TabStop = false;
-            this.grpAMTX.Text = "AM Transmit Sideband Select";
+            this.grpAMTX.Text = "AM 发射边带选择";
             // 
             // radTXUSB
             // 
@@ -35864,7 +35762,7 @@
             this.grpAMSQMaxTail.Size = new System.Drawing.Size(201, 64);
             this.grpAMSQMaxTail.TabIndex = 43;
             this.grpAMSQMaxTail.TabStop = false;
-            this.grpAMSQMaxTail.Text = "RX AM/SSB Max Squelch Tail";
+            this.grpAMSQMaxTail.Text = "RX AM/SSB 最大静噪尾";
             // 
             // labelTS181
             // 
@@ -35884,7 +35782,7 @@
             this.labelTS355.Name = "labelTS355";
             this.labelTS355.Size = new System.Drawing.Size(43, 13);
             this.labelTS355.TabIndex = 1;
-            this.labelTS355.Text = "Length:";
+            this.labelTS355.Text = "长度:";
             // 
             // udRXAMSQMaxTail
             // 
@@ -35926,7 +35824,7 @@
             this.grpAMSAM.Size = new System.Drawing.Size(240, 92);
             this.grpAMSAM.TabIndex = 42;
             this.grpAMSAM.TabStop = false;
-            this.grpAMSAM.Text = "RX1 - AM / SAM Demodulation";
+            this.grpAMSAM.Text = "RX1 - AM / SAM 解调";
             // 
             // chkCBlock
             // 
@@ -35938,7 +35836,7 @@
             this.chkCBlock.Name = "chkCBlock";
             this.chkCBlock.Size = new System.Drawing.Size(71, 17);
             this.chkCBlock.TabIndex = 2;
-            this.chkCBlock.Text = "DC Block";
+            this.chkCBlock.Text = "直流隔断";
             this.chkCBlock.UseVisualStyleBackColor = true;
             this.chkCBlock.CheckedChanged += new System.EventHandler(this.chkCBlock_CheckedChanged);
             // 
@@ -35952,7 +35850,7 @@
             this.chkLevelFades.Name = "chkLevelFades";
             this.chkLevelFades.Size = new System.Drawing.Size(88, 17);
             this.chkLevelFades.TabIndex = 1;
-            this.chkLevelFades.Text = "Fade Leveler";
+            this.chkLevelFades.Text = "渐变限幅器";
             this.chkLevelFades.UseVisualStyleBackColor = true;
             this.chkLevelFades.CheckedChanged += new System.EventHandler(this.chkLevelFades_CheckedChanged);
             // 
@@ -35966,7 +35864,7 @@
             this.grpAMSBSEL.Size = new System.Drawing.Size(228, 40);
             this.grpAMSBSEL.TabIndex = 0;
             this.grpAMSBSEL.TabStop = false;
-            this.grpAMSBSEL.Text = "Sideband Select (SAM ONLY)";
+            this.grpAMSBSEL.Text = "边带选择（仅限 SAM）";
             // 
             // radUSB
             // 
@@ -36016,7 +35914,7 @@
             this.grpRX2AMSAM.Size = new System.Drawing.Size(240, 92);
             this.grpRX2AMSAM.TabIndex = 41;
             this.grpRX2AMSAM.TabStop = false;
-            this.grpRX2AMSAM.Text = "RX2 - AM / SAM Demodulation";
+            this.grpRX2AMSAM.Text = "RX2 - AM / SAM 解调";
             // 
             // chkRX2CBlock
             // 
@@ -36028,7 +35926,7 @@
             this.chkRX2CBlock.Name = "chkRX2CBlock";
             this.chkRX2CBlock.Size = new System.Drawing.Size(71, 17);
             this.chkRX2CBlock.TabIndex = 2;
-            this.chkRX2CBlock.Text = "DC Block";
+            this.chkRX2CBlock.Text = "直流隔断";
             this.chkRX2CBlock.UseVisualStyleBackColor = true;
             this.chkRX2CBlock.CheckedChanged += new System.EventHandler(this.chkRX2CBlock_CheckedChanged);
             // 
@@ -36042,7 +35940,7 @@
             this.chkRX2LevelFades.Name = "chkRX2LevelFades";
             this.chkRX2LevelFades.Size = new System.Drawing.Size(88, 17);
             this.chkRX2LevelFades.TabIndex = 1;
-            this.chkRX2LevelFades.Text = "Fade Leveler";
+            this.chkRX2LevelFades.Text = "渐变限幅器";
             this.chkRX2LevelFades.UseVisualStyleBackColor = true;
             this.chkRX2LevelFades.CheckedChanged += new System.EventHandler(this.chkRX2LevelFades_CheckedChanged);
             // 
@@ -36056,7 +35954,7 @@
             this.grpRX2AMSBSEL.Size = new System.Drawing.Size(228, 40);
             this.grpRX2AMSBSEL.TabIndex = 0;
             this.grpRX2AMSBSEL.TabStop = false;
-            this.grpRX2AMSBSEL.Text = "Sideband Select (SAM ONLY)";
+            this.grpRX2AMSBSEL.Text = "边带选择（仅限 SAM）";
             // 
             // radRX2USB
             // 
@@ -36123,7 +36021,7 @@
             this.grpFMRX.Size = new System.Drawing.Size(335, 174);
             this.grpFMRX.TabIndex = 1;
             this.grpFMRX.TabStop = false;
-            this.grpFMRX.Text = "FM Receiver";
+            this.grpFMRX.Text = "FM 接收机";
             // 
             // lblFMLimGain30dB
             // 
@@ -36153,7 +36051,7 @@
             this.lblFMDetLimGain.Name = "lblFMDetLimGain";
             this.lblFMDetLimGain.Size = new System.Drawing.Size(62, 13);
             this.lblFMDetLimGain.TabIndex = 52;
-            this.lblFMDetLimGain.Text = "Limiter Gain";
+            this.lblFMDetLimGain.Text = "限幅器增益";
             // 
             // tbDSPFMDetLimGain
             // 
@@ -36178,7 +36076,7 @@
             this.chkFMDetLimON.Name = "chkFMDetLimON";
             this.chkFMDetLimON.Size = new System.Drawing.Size(100, 17);
             this.chkFMDetLimON.TabIndex = 1;
-            this.chkFMDetLimON.Text = "Limiter ON/OFF";
+            this.chkFMDetLimON.Text = "限幅器 开/关";
             this.chkFMDetLimON.UseVisualStyleBackColor = true;
             this.chkFMDetLimON.CheckedChanged += new System.EventHandler(this.chkFMDetLimON_CheckedChanged);
             // 
@@ -36192,7 +36090,7 @@
             this.chkRemoveTone.Name = "chkRemoveTone";
             this.chkRemoveTone.Size = new System.Drawing.Size(132, 17);
             this.chkRemoveTone.TabIndex = 0;
-            this.chkRemoveTone.Text = "Remove CTCSS Tone";
+            this.chkRemoveTone.Text = "移除 CTCSS 音";
             this.chkRemoveTone.UseVisualStyleBackColor = true;
             this.chkRemoveTone.CheckedChanged += new System.EventHandler(this.chkRemoveTone_CheckedChanged);
             // 
@@ -36204,7 +36102,7 @@
             this.grpFMTX.Size = new System.Drawing.Size(268, 139);
             this.grpFMTX.TabIndex = 0;
             this.grpFMTX.TabStop = false;
-            this.grpFMTX.Text = "FM Transmitter";
+            this.grpFMTX.Text = "FM 发射机";
             // 
             // chkEmphPos
             // 
@@ -36214,7 +36112,7 @@
             this.chkEmphPos.Name = "chkEmphPos";
             this.chkEmphPos.Size = new System.Drawing.Size(167, 17);
             this.chkEmphPos.TabIndex = 0;
-            this.chkEmphPos.Text = "Pre-emphasize Before Limiting";
+            this.chkEmphPos.Text = "限幅前预加重";
             this.chkEmphPos.UseVisualStyleBackColor = true;
             this.chkEmphPos.CheckedChanged += new System.EventHandler(this.chkEmphPos_CheckedChanged);
             // 
@@ -36233,7 +36131,7 @@
             this.tpDSPAudio.Padding = new System.Windows.Forms.Padding(3);
             this.tpDSPAudio.Size = new System.Drawing.Size(724, 414);
             this.tpDSPAudio.TabIndex = 7;
-            this.tpDSPAudio.Text = "Audio";
+            this.tpDSPAudio.Text = "音频";
             // 
             // grpDSPAudRX2Dolly
             // 
@@ -36247,7 +36145,7 @@
             this.grpDSPAudRX2Dolly.Size = new System.Drawing.Size(321, 45);
             this.grpDSPAudRX2Dolly.TabIndex = 49;
             this.grpDSPAudRX2Dolly.TabStop = false;
-            this.grpDSPAudRX2Dolly.Text = "RX2 - Dolly Filter";
+            this.grpDSPAudRX2Dolly.Text = "RX2 - Dolly 滤波器";
             // 
             // labelDSPRX2DollyF1
             // 
@@ -36335,7 +36233,7 @@
             this.chkDSPRX2DollyEnable.Name = "chkDSPRX2DollyEnable";
             this.chkDSPRX2DollyEnable.Size = new System.Drawing.Size(59, 17);
             this.chkDSPRX2DollyEnable.TabIndex = 1;
-            this.chkDSPRX2DollyEnable.Text = "Enable";
+            this.chkDSPRX2DollyEnable.Text = "启用";
             this.chkDSPRX2DollyEnable.UseVisualStyleBackColor = true;
             this.chkDSPRX2DollyEnable.CheckedChanged += new System.EventHandler(this.chkDSPRX2DollyEnable_CheckedChanged);
             // 
@@ -36351,7 +36249,7 @@
             this.grpDSPAudRX1SubDolly.Size = new System.Drawing.Size(321, 45);
             this.grpDSPAudRX1SubDolly.TabIndex = 48;
             this.grpDSPAudRX1SubDolly.TabStop = false;
-            this.grpDSPAudRX1SubDolly.Text = "RX1 Sub - Dolly Filter";
+            this.grpDSPAudRX1SubDolly.Text = "RX1 子 - Dolly 滤波器";
             // 
             // labelDSPRX1SubDollyF1
             // 
@@ -36439,7 +36337,7 @@
             this.chkDSPRX1SubDollyEnable.Name = "chkDSPRX1SubDollyEnable";
             this.chkDSPRX1SubDollyEnable.Size = new System.Drawing.Size(59, 17);
             this.chkDSPRX1SubDollyEnable.TabIndex = 1;
-            this.chkDSPRX1SubDollyEnable.Text = "Enable";
+            this.chkDSPRX1SubDollyEnable.Text = "启用";
             this.chkDSPRX1SubDollyEnable.UseVisualStyleBackColor = true;
             this.chkDSPRX1SubDollyEnable.CheckedChanged += new System.EventHandler(this.chkDSPRX1DollySubEnable_CheckedChanged);
             // 
@@ -36455,7 +36353,7 @@
             this.grpDSPAudRX1Dolly.Size = new System.Drawing.Size(321, 45);
             this.grpDSPAudRX1Dolly.TabIndex = 3;
             this.grpDSPAudRX1Dolly.TabStop = false;
-            this.grpDSPAudRX1Dolly.Text = "RX1 - Dolly Filter";
+            this.grpDSPAudRX1Dolly.Text = "RX1 - Dolly 滤波器";
             // 
             // labelDSPRX1DollyF1
             // 
@@ -36543,7 +36441,7 @@
             this.chkDSPRX1DollyEnable.Name = "chkDSPRX1DollyEnable";
             this.chkDSPRX1DollyEnable.Size = new System.Drawing.Size(59, 17);
             this.chkDSPRX1DollyEnable.TabIndex = 1;
-            this.chkDSPRX1DollyEnable.Text = "Enable";
+            this.chkDSPRX1DollyEnable.Text = "启用";
             this.chkDSPRX1DollyEnable.UseVisualStyleBackColor = true;
             this.chkDSPRX1DollyEnable.CheckedChanged += new System.EventHandler(this.chkDSPRX1DollyEnable_CheckedChanged);
             // 
@@ -36557,7 +36455,7 @@
             this.grpDSPAudAPFControls.Size = new System.Drawing.Size(187, 42);
             this.grpDSPAudAPFControls.TabIndex = 47;
             this.grpDSPAudAPFControls.TabStop = false;
-            this.grpDSPAudAPFControls.Text = "Console APF Controls";
+            this.grpDSPAudAPFControls.Text = "控制台 APF 控件";
             // 
             // radDSPRX1APFControls
             // 
@@ -36593,7 +36491,7 @@
             this.radDSPRX1subAPFControls.Name = "radDSPRX1subAPFControls";
             this.radDSPRX1subAPFControls.Size = new System.Drawing.Size(68, 17);
             this.radDSPRX1subAPFControls.TabIndex = 51;
-            this.radDSPRX1subAPFControls.Text = "RX1 Sub";
+            this.radDSPRX1subAPFControls.Text = "RX1 子";
             this.radDSPRX1subAPFControls.UseVisualStyleBackColor = true;
             this.radDSPRX1subAPFControls.CheckedChanged += new System.EventHandler(this.radDSPRX1subAPFControls_CheckedChanged);
             // 
@@ -36685,7 +36583,7 @@
             this.labelRX2APFTuneC.Name = "labelRX2APFTuneC";
             this.labelRX2APFTuneC.Size = new System.Drawing.Size(91, 12);
             this.labelRX2APFTuneC.TabIndex = 55;
-            this.labelRX2APFTuneC.Text = "Relative to CW Pitch";
+            this.labelRX2APFTuneC.Text = "相对 CW 音调";
             // 
             // labelRX2APFBW
             // 
@@ -36705,7 +36603,7 @@
             this.labelRX2APFTune.Name = "labelRX2APFTune";
             this.labelRX2APFTune.Size = new System.Drawing.Size(32, 13);
             this.labelRX2APFTune.TabIndex = 53;
-            this.labelRX2APFTune.Text = "Tune";
+            this.labelRX2APFTune.Text = "调谐";
             // 
             // tbRX2APFBW
             // 
@@ -36743,7 +36641,7 @@
             this.labelRX2APFGain.Name = "labelRX2APFGain";
             this.labelRX2APFGain.Size = new System.Drawing.Size(55, 16);
             this.labelRX2APFGain.TabIndex = 36;
-            this.labelRX2APFGain.Text = "Gain (dB)";
+            this.labelRX2APFGain.Text = "增益 (dB)";
             // 
             // chkDSPRX2APFEnable
             // 
@@ -36754,7 +36652,7 @@
             this.chkDSPRX2APFEnable.Name = "chkDSPRX2APFEnable";
             this.chkDSPRX2APFEnable.Size = new System.Drawing.Size(59, 17);
             this.chkDSPRX2APFEnable.TabIndex = 0;
-            this.chkDSPRX2APFEnable.Text = "Enable";
+            this.chkDSPRX2APFEnable.Text = "启用";
             this.chkDSPRX2APFEnable.UseVisualStyleBackColor = true;
             this.chkDSPRX2APFEnable.CheckedChanged += new System.EventHandler(this.chkDSPRX2APFEnable_CheckedChanged);
             // 
@@ -36777,7 +36675,7 @@
             this.grpDSPAudRX1subAPF.Size = new System.Drawing.Size(244, 102);
             this.grpDSPAudRX1subAPF.TabIndex = 45;
             this.grpDSPAudRX1subAPF.TabStop = false;
-            this.grpDSPAudRX1subAPF.Text = "RX1 Sub - APF";
+            this.grpDSPAudRX1subAPF.Text = "RX1 子 - APF";
             // 
             // tbDSPAudRX1subAPFGain
             // 
@@ -36846,7 +36744,7 @@
             this.labelRX1subAPFTuneC.Name = "labelRX1subAPFTuneC";
             this.labelRX1subAPFTuneC.Size = new System.Drawing.Size(91, 12);
             this.labelRX1subAPFTuneC.TabIndex = 55;
-            this.labelRX1subAPFTuneC.Text = "Relative to CW Pitch";
+            this.labelRX1subAPFTuneC.Text = "相对 CW 音调";
             // 
             // labelRX1subAPFBW
             // 
@@ -36866,7 +36764,7 @@
             this.labelRX1subAPFTune.Name = "labelRX1subAPFTune";
             this.labelRX1subAPFTune.Size = new System.Drawing.Size(32, 13);
             this.labelRX1subAPFTune.TabIndex = 53;
-            this.labelRX1subAPFTune.Text = "Tune";
+            this.labelRX1subAPFTune.Text = "调谐";
             // 
             // tbRX1subAPFBW
             // 
@@ -36904,7 +36802,7 @@
             this.labelRX1subAPFGain.Name = "labelRX1subAPFGain";
             this.labelRX1subAPFGain.Size = new System.Drawing.Size(55, 16);
             this.labelRX1subAPFGain.TabIndex = 36;
-            this.labelRX1subAPFGain.Text = "Gain (dB)";
+            this.labelRX1subAPFGain.Text = "增益 (dB)";
             // 
             // chkDSPRX1subAPFEnable
             // 
@@ -36915,7 +36813,7 @@
             this.chkDSPRX1subAPFEnable.Name = "chkDSPRX1subAPFEnable";
             this.chkDSPRX1subAPFEnable.Size = new System.Drawing.Size(59, 17);
             this.chkDSPRX1subAPFEnable.TabIndex = 0;
-            this.chkDSPRX1subAPFEnable.Text = "Enable";
+            this.chkDSPRX1subAPFEnable.Text = "启用";
             this.chkDSPRX1subAPFEnable.UseVisualStyleBackColor = true;
             this.chkDSPRX1subAPFEnable.CheckedChanged += new System.EventHandler(this.chkDSPRX1subAPFEnable_CheckedChanged);
             // 
@@ -37007,7 +36905,7 @@
             this.labelRX1APFTuneC.Name = "labelRX1APFTuneC";
             this.labelRX1APFTuneC.Size = new System.Drawing.Size(91, 12);
             this.labelRX1APFTuneC.TabIndex = 55;
-            this.labelRX1APFTuneC.Text = "Relative to CW Pitch";
+            this.labelRX1APFTuneC.Text = "相对 CW 音调";
             // 
             // labelRX1APFBW
             // 
@@ -37027,7 +36925,7 @@
             this.labelRX1APFTune.Name = "labelRX1APFTune";
             this.labelRX1APFTune.Size = new System.Drawing.Size(32, 13);
             this.labelRX1APFTune.TabIndex = 53;
-            this.labelRX1APFTune.Text = "Tune";
+            this.labelRX1APFTune.Text = "调谐";
             // 
             // tbRX1APFBW
             // 
@@ -37065,7 +36963,7 @@
             this.labelRX1APFGain.Name = "labelRX1APFGain";
             this.labelRX1APFGain.Size = new System.Drawing.Size(55, 16);
             this.labelRX1APFGain.TabIndex = 36;
-            this.labelRX1APFGain.Text = "Gain (dB)";
+            this.labelRX1APFGain.Text = "增益 (dB)";
             // 
             // chkDSPRX1APFEnable
             // 
@@ -37076,7 +36974,7 @@
             this.chkDSPRX1APFEnable.Name = "chkDSPRX1APFEnable";
             this.chkDSPRX1APFEnable.Size = new System.Drawing.Size(59, 17);
             this.chkDSPRX1APFEnable.TabIndex = 0;
-            this.chkDSPRX1APFEnable.Text = "Enable";
+            this.chkDSPRX1APFEnable.Text = "启用";
             this.chkDSPRX1APFEnable.UseVisualStyleBackColor = true;
             this.chkDSPRX1APFEnable.CheckedChanged += new System.EventHandler(this.chkDSPRX1APFEnable_CheckedChanged);
             // 
@@ -37112,7 +37010,7 @@
             this.grpDSPEERpwm.Size = new System.Drawing.Size(231, 100);
             this.grpDSPEERpwm.TabIndex = 11;
             this.grpDSPEERpwm.TabStop = false;
-            this.grpDSPEERpwm.Text = "PWM Control";
+            this.grpDSPEERpwm.Text = "PWM 控制";
             // 
             // udDSPEERpwmMin
             // 
@@ -37180,7 +37078,7 @@
             this.labelTS329.Name = "labelTS329";
             this.labelTS329.Size = new System.Drawing.Size(96, 13);
             this.labelTS329.TabIndex = 1;
-            this.labelTS329.Text = "Minimum (0 - 1023)";
+            this.labelTS329.Text = "最小值 (0 - 1023)";
             // 
             // labelTS328
             // 
@@ -37190,7 +37088,7 @@
             this.labelTS328.Name = "labelTS328";
             this.labelTS328.Size = new System.Drawing.Size(99, 13);
             this.labelTS328.TabIndex = 0;
-            this.labelTS328.Text = "Maximum (0 - 1023)";
+            this.labelTS328.Text = "最大值 (0 - 1023)";
             // 
             // chkDSPEERRunDelays
             // 
@@ -37202,7 +37100,7 @@
             this.chkDSPEERRunDelays.Name = "chkDSPEERRunDelays";
             this.chkDSPEERRunDelays.Size = new System.Drawing.Size(80, 17);
             this.chkDSPEERRunDelays.TabIndex = 10;
-            this.chkDSPEERRunDelays.Text = "Use Delays";
+            this.chkDSPEERRunDelays.Text = "使用延迟";
             this.chkDSPEERRunDelays.UseVisualStyleBackColor = true;
             this.chkDSPEERRunDelays.CheckedChanged += new System.EventHandler(this.chkDSPEERRunDelays_CheckedChanged);
             // 
@@ -37214,7 +37112,7 @@
             this.labelTS327.Name = "labelTS327";
             this.labelTS327.Size = new System.Drawing.Size(87, 13);
             this.labelTS327.TabIndex = 9;
-            this.labelTS327.Text = "Phase Delay (us)";
+            this.labelTS327.Text = "相位延迟 (us)";
             // 
             // udDSPEERpdelay
             // 
@@ -37239,7 +37137,7 @@
             this.udDSPEERpdelay.Size = new System.Drawing.Size(61, 20);
             this.udDSPEERpdelay.TabIndex = 8;
             this.udDSPEERpdelay.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udDSPEERpdelay, "Sets software delay of the phase signal.");
+            this.toolTip1.SetToolTip(this.udDSPEERpdelay, "设置相位信号的软件延迟。");
             this.udDSPEERpdelay.Value = new decimal(new int[] {
             2000,
             0,
@@ -37257,8 +37155,8 @@
             this.chkDSPEERamIQ.Name = "chkDSPEERamIQ";
             this.chkDSPEERamIQ.Size = new System.Drawing.Size(133, 17);
             this.chkDSPEERamIQ.TabIndex = 7;
-            this.chkDSPEERamIQ.Text = "Amplitude Modulate IQ";
-            this.toolTip1.SetToolTip(this.chkDSPEERamIQ, "Turns on amplitude modulation of I&Q -- if off, they contain only phase.");
+            this.chkDSPEERamIQ.Text = "幅度调制 IQ";
+            this.toolTip1.SetToolTip(this.chkDSPEERamIQ, "开启 I 和 Q 的幅度调制 —— 关闭时它们只包含相位。");
             this.chkDSPEERamIQ.UseVisualStyleBackColor = true;
             this.chkDSPEERamIQ.CheckedChanged += new System.EventHandler(this.chkDSPEERamIQ_CheckedChanged);
             // 
@@ -37270,7 +37168,7 @@
             this.labelTS320.Name = "labelTS320";
             this.labelTS320.Size = new System.Drawing.Size(76, 13);
             this.labelTS320.TabIndex = 6;
-            this.labelTS320.Text = "Env Delay (us)";
+            this.labelTS320.Text = "包络延迟 (us)";
             // 
             // udDSPEERmdelay
             // 
@@ -37295,7 +37193,7 @@
             this.udDSPEERmdelay.Size = new System.Drawing.Size(61, 20);
             this.udDSPEERmdelay.TabIndex = 5;
             this.udDSPEERmdelay.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udDSPEERmdelay, "Sets software delay of the magnitude (envelope) signal.");
+            this.toolTip1.SetToolTip(this.udDSPEERmdelay, "设置幅度（包络）信号的软件延迟。");
             this.udDSPEERmdelay.Value = new decimal(new int[] {
             2000,
             0,
@@ -37311,7 +37209,7 @@
             this.labelTS319.Name = "labelTS319";
             this.labelTS319.Size = new System.Drawing.Size(62, 13);
             this.labelTS319.TabIndex = 4;
-            this.labelTS319.Text = "Phase Gain";
+            this.labelTS319.Text = "相位增益";
             // 
             // udDSPEERpgain
             // 
@@ -37336,7 +37234,7 @@
             this.udDSPEERpgain.Size = new System.Drawing.Size(61, 20);
             this.udDSPEERpgain.TabIndex = 3;
             this.udDSPEERpgain.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udDSPEERpgain, "Sets maximum level of the I & Q signals.");
+            this.toolTip1.SetToolTip(this.udDSPEERpgain, "设置 I 和 Q 信号的最大电平。");
             this.udDSPEERpgain.Value = new decimal(new int[] {
             5,
             0,
@@ -37352,7 +37250,7 @@
             this.labelTS318.Name = "labelTS318";
             this.labelTS318.Size = new System.Drawing.Size(51, 13);
             this.labelTS318.TabIndex = 2;
-            this.labelTS318.Text = "Env Gain";
+            this.labelTS318.Text = "包络增益";
             // 
             // udDSPEERmgain
             // 
@@ -37377,7 +37275,7 @@
             this.udDSPEERmgain.Size = new System.Drawing.Size(61, 20);
             this.udDSPEERmgain.TabIndex = 1;
             this.udDSPEERmgain.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udDSPEERmgain, "Sets maximum level of the magnitude (envelope) signal.");
+            this.toolTip1.SetToolTip(this.udDSPEERmgain, "设置幅度（包络）信号的最大电平。");
             this.udDSPEERmgain.Value = new decimal(new int[] {
             5,
             0,
@@ -37393,8 +37291,8 @@
             this.chkDSPEERon.Name = "chkDSPEERon";
             this.chkDSPEERon.Size = new System.Drawing.Size(132, 17);
             this.chkDSPEERon.TabIndex = 0;
-            this.chkDSPEERon.Text = "Transmit in EER Mode";
-            this.toolTip1.SetToolTip(this.chkDSPEERon, "Turns on EER Mode for transmit.");
+            this.chkDSPEERon.Text = "EER 模式发射";
+            this.toolTip1.SetToolTip(this.chkDSPEERon, "开启发射 EER 模式。");
             this.chkDSPEERon.UseVisualStyleBackColor = true;
             this.chkDSPEERon.CheckedChanged += new System.EventHandler(this.chkDSPEERon_CheckedChanged);
             // 
@@ -37437,7 +37335,7 @@
             this.grpDSPNR2NPEMethodRX2.Size = new System.Drawing.Size(89, 69);
             this.grpDSPNR2NPEMethodRX2.TabIndex = 2;
             this.grpDSPNR2NPEMethodRX2.TabStop = false;
-            this.grpDSPNR2NPEMethodRX2.Text = "NPE Method";
+            this.grpDSPNR2NPEMethodRX2.Text = "NPE 方法";
             // 
             // radDSPNR2MMSERX2
             // 
@@ -37475,7 +37373,7 @@
             this.chkDSPNR2AERX2.Name = "chkDSPNR2AERX2";
             this.chkDSPNR2AERX2.Size = new System.Drawing.Size(65, 17);
             this.chkDSPNR2AERX2.TabIndex = 1;
-            this.chkDSPNR2AERX2.Text = "AE Filter";
+            this.chkDSPNR2AERX2.Text = "AE 滤波器";
             this.chkDSPNR2AERX2.UseVisualStyleBackColor = true;
             this.chkDSPNR2AERX2.CheckedChanged += new System.EventHandler(this.chkDSPNR2AERX2_CheckedChanged);
             // 
@@ -37489,7 +37387,7 @@
             this.grpDSPGainMethodRX2.Size = new System.Drawing.Size(89, 96);
             this.grpDSPGainMethodRX2.TabIndex = 0;
             this.grpDSPGainMethodRX2.TabStop = false;
-            this.grpDSPGainMethodRX2.Text = "Gain Method";
+            this.grpDSPGainMethodRX2.Text = "增益方法";
             // 
             // radDSPNR2GammaRX2
             // 
@@ -37513,7 +37411,7 @@
             this.radDSPNR2LogRX2.Name = "radDSPNR2LogRX2";
             this.radDSPNR2LogRX2.Size = new System.Drawing.Size(43, 17);
             this.radDSPNR2LogRX2.TabIndex = 1;
-            this.radDSPNR2LogRX2.Text = "Log";
+            this.radDSPNR2LogRX2.Text = "日志";
             this.radDSPNR2LogRX2.UseVisualStyleBackColor = true;
             this.radDSPNR2LogRX2.CheckedChanged += new System.EventHandler(this.radDSPNR2LogRX2_CheckedChanged);
             // 
@@ -37525,7 +37423,7 @@
             this.radDSPNR2LinearRX2.Name = "radDSPNR2LinearRX2";
             this.radDSPNR2LinearRX2.Size = new System.Drawing.Size(54, 17);
             this.radDSPNR2LinearRX2.TabIndex = 0;
-            this.radDSPNR2LinearRX2.Text = "Linear";
+            this.radDSPNR2LinearRX2.Text = "线性";
             this.radDSPNR2LinearRX2.UseVisualStyleBackColor = true;
             this.radDSPNR2LinearRX2.CheckedChanged += new System.EventHandler(this.radDSPNR2LinearRX2_CheckedChanged);
             // 
@@ -37586,7 +37484,7 @@
             this.grpDSPNR2NPEMethod.Size = new System.Drawing.Size(89, 69);
             this.grpDSPNR2NPEMethod.TabIndex = 2;
             this.grpDSPNR2NPEMethod.TabStop = false;
-            this.grpDSPNR2NPEMethod.Text = "NPE Method";
+            this.grpDSPNR2NPEMethod.Text = "NPE 方法";
             // 
             // radDSPNR2MMSE
             // 
@@ -37624,7 +37522,7 @@
             this.chkDSPNR2AE.Name = "chkDSPNR2AE";
             this.chkDSPNR2AE.Size = new System.Drawing.Size(65, 17);
             this.chkDSPNR2AE.TabIndex = 1;
-            this.chkDSPNR2AE.Text = "AE Filter";
+            this.chkDSPNR2AE.Text = "AE 滤波器";
             this.chkDSPNR2AE.UseVisualStyleBackColor = true;
             this.chkDSPNR2AE.CheckedChanged += new System.EventHandler(this.chkDSPNR2AE_CheckedChanged);
             // 
@@ -37638,7 +37536,7 @@
             this.grpDSPGainMethod.Size = new System.Drawing.Size(89, 96);
             this.grpDSPGainMethod.TabIndex = 0;
             this.grpDSPGainMethod.TabStop = false;
-            this.grpDSPGainMethod.Text = "Gain Method";
+            this.grpDSPGainMethod.Text = "增益方法";
             // 
             // radDSPNR2Gamma
             // 
@@ -37662,7 +37560,7 @@
             this.radDSPNR2Log.Name = "radDSPNR2Log";
             this.radDSPNR2Log.Size = new System.Drawing.Size(43, 17);
             this.radDSPNR2Log.TabIndex = 1;
-            this.radDSPNR2Log.Text = "Log";
+            this.radDSPNR2Log.Text = "日志";
             this.radDSPNR2Log.UseVisualStyleBackColor = true;
             this.radDSPNR2Log.CheckedChanged += new System.EventHandler(this.radDSPNR2Log_CheckedChanged);
             // 
@@ -37674,7 +37572,7 @@
             this.radDSPNR2Linear.Name = "radDSPNR2Linear";
             this.radDSPNR2Linear.Size = new System.Drawing.Size(54, 17);
             this.radDSPNR2Linear.TabIndex = 0;
-            this.radDSPNR2Linear.Text = "Linear";
+            this.radDSPNR2Linear.Text = "线性";
             this.radDSPNR2Linear.UseVisualStyleBackColor = true;
             this.radDSPNR2Linear.CheckedChanged += new System.EventHandler(this.radDSPNR2Linear_CheckedChanged);
             // 
@@ -37702,7 +37600,7 @@
             this.lblLMSNRLeak.Name = "lblLMSNRLeak";
             this.lblLMSNRLeak.Size = new System.Drawing.Size(40, 16);
             this.lblLMSNRLeak.TabIndex = 11;
-            this.lblLMSNRLeak.Text = "Leak:";
+            this.lblLMSNRLeak.Text = "泄漏:";
             // 
             // udLMSNRLeak
             // 
@@ -37726,7 +37624,7 @@
             this.udLMSNRLeak.Size = new System.Drawing.Size(48, 20);
             this.udLMSNRLeak.TabIndex = 10;
             this.udLMSNRLeak.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udLMSNRLeak, "Determines the adaptation rate of the filter.");
+            this.toolTip1.SetToolTip(this.udLMSNRLeak, "决定滤波器的自适应速率。");
             this.udLMSNRLeak.Value = new decimal(new int[] {
             100,
             0,
@@ -37741,7 +37639,7 @@
             this.lblLMSNRgain.Name = "lblLMSNRgain";
             this.lblLMSNRgain.Size = new System.Drawing.Size(40, 16);
             this.lblLMSNRgain.TabIndex = 9;
-            this.lblLMSNRgain.Text = "Gain:";
+            this.lblLMSNRgain.Text = "增益:";
             // 
             // udLMSNRgain
             // 
@@ -37765,7 +37663,7 @@
             this.udLMSNRgain.Size = new System.Drawing.Size(48, 20);
             this.udLMSNRgain.TabIndex = 7;
             this.udLMSNRgain.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udLMSNRgain, "Determines the adaptation rate of the filter.");
+            this.toolTip1.SetToolTip(this.udLMSNRgain, "决定滤波器的自适应速率。");
             this.udLMSNRgain.Value = new decimal(new int[] {
             100,
             0,
@@ -37796,8 +37694,7 @@
             this.udLMSNRdelay.Size = new System.Drawing.Size(48, 20);
             this.udLMSNRdelay.TabIndex = 6;
             this.udLMSNRdelay.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udLMSNRdelay, "Determines how far back you look in the signal before you begin to compute a cohe" +
-        "rent signal enhancement filter.  ");
+            this.toolTip1.SetToolTip(this.udLMSNRdelay, "决定在开始计算相干信号增强滤波器之前，向前回看信号多长时间。");
             this.udLMSNRdelay.Value = new decimal(new int[] {
             16,
             0,
@@ -37813,7 +37710,7 @@
             this.lblLMSNRdelay.Name = "lblLMSNRdelay";
             this.lblLMSNRdelay.Size = new System.Drawing.Size(40, 16);
             this.lblLMSNRdelay.TabIndex = 5;
-            this.lblLMSNRdelay.Text = "Delay:";
+            this.lblLMSNRdelay.Text = "延迟:";
             // 
             // udLMSNRtaps
             // 
@@ -37837,7 +37734,7 @@
             this.udLMSNRtaps.Size = new System.Drawing.Size(48, 20);
             this.udLMSNRtaps.TabIndex = 5;
             this.udLMSNRtaps.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udLMSNRtaps, "Determines the length of the NR computed filter.  ");
+            this.toolTip1.SetToolTip(this.udLMSNRtaps, "决定计算出的 NR 滤波器长度。");
             this.udLMSNRtaps.Value = new decimal(new int[] {
             64,
             0,
@@ -37853,7 +37750,7 @@
             this.lblLMSNRtaps.Name = "lblLMSNRtaps";
             this.lblLMSNRtaps.Size = new System.Drawing.Size(40, 16);
             this.lblLMSNRtaps.TabIndex = 3;
-            this.lblLMSNRtaps.Text = "Taps:";
+            this.lblLMSNRtaps.Text = "抽头:";
             // 
             // groupBoxTS4
             // 
@@ -37864,7 +37761,7 @@
             this.groupBoxTS4.Size = new System.Drawing.Size(99, 128);
             this.groupBoxTS4.TabIndex = 41;
             this.groupBoxTS4.TabStop = false;
-            this.groupBoxTS4.Text = "NR/NR2/ANF Position";
+            this.groupBoxTS4.Text = "NR/NR2/ANF 位置";
             // 
             // radANFPreAGC
             // 
@@ -37915,7 +37812,7 @@
             this.lblLMSANFLeak.Name = "lblLMSANFLeak";
             this.lblLMSANFLeak.Size = new System.Drawing.Size(40, 16);
             this.lblLMSANFLeak.TabIndex = 9;
-            this.lblLMSANFLeak.Text = "Leak:";
+            this.lblLMSANFLeak.Text = "泄漏:";
             // 
             // udLMSANFLeak
             // 
@@ -37939,7 +37836,7 @@
             this.udLMSANFLeak.Size = new System.Drawing.Size(48, 20);
             this.udLMSANFLeak.TabIndex = 8;
             this.udLMSANFLeak.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udLMSANFLeak, "Determines the adaptation rate of the filter.");
+            this.toolTip1.SetToolTip(this.udLMSANFLeak, "决定滤波器的自适应速率。");
             this.udLMSANFLeak.Value = new decimal(new int[] {
             100,
             0,
@@ -37954,7 +37851,7 @@
             this.lblLMSANFgain.Name = "lblLMSANFgain";
             this.lblLMSANFgain.Size = new System.Drawing.Size(40, 16);
             this.lblLMSANFgain.TabIndex = 6;
-            this.lblLMSANFgain.Text = "Gain:";
+            this.lblLMSANFgain.Text = "增益:";
             // 
             // udLMSANFgain
             // 
@@ -37978,7 +37875,7 @@
             this.udLMSANFgain.Size = new System.Drawing.Size(48, 20);
             this.udLMSANFgain.TabIndex = 3;
             this.udLMSANFgain.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udLMSANFgain, "Determines the adaptation rate of the filter.");
+            this.toolTip1.SetToolTip(this.udLMSANFgain, "决定滤波器的自适应速率。");
             this.udLMSANFgain.Value = new decimal(new int[] {
             100,
             0,
@@ -37994,7 +37891,7 @@
             this.lblLMSANFdelay.Name = "lblLMSANFdelay";
             this.lblLMSANFdelay.Size = new System.Drawing.Size(40, 16);
             this.lblLMSANFdelay.TabIndex = 4;
-            this.lblLMSANFdelay.Text = "Delay:";
+            this.lblLMSANFdelay.Text = "延迟:";
             // 
             // udLMSANFdelay
             // 
@@ -38018,8 +37915,7 @@
             this.udLMSANFdelay.Size = new System.Drawing.Size(48, 20);
             this.udLMSANFdelay.TabIndex = 2;
             this.udLMSANFdelay.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udLMSANFdelay, "Determines how far back you look in the signal before you begin to compute a canc" +
-        "ellation filter");
+            this.toolTip1.SetToolTip(this.udLMSANFdelay, "决定在开始计算抵消滤波器之前，向前回看信号多长时间。");
             this.udLMSANFdelay.Value = new decimal(new int[] {
             16,
             0,
@@ -38035,7 +37931,7 @@
             this.lblLMSANFTaps.Name = "lblLMSANFTaps";
             this.lblLMSANFTaps.Size = new System.Drawing.Size(40, 16);
             this.lblLMSANFTaps.TabIndex = 2;
-            this.lblLMSANFTaps.Text = "Taps:";
+            this.lblLMSANFTaps.Text = "抽头:";
             // 
             // udLMSANFtaps
             // 
@@ -38059,7 +37955,7 @@
             this.udLMSANFtaps.Size = new System.Drawing.Size(48, 20);
             this.udLMSANFtaps.TabIndex = 1;
             this.udLMSANFtaps.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udLMSANFtaps, "Determines the length of the computed notch filter.");
+            this.toolTip1.SetToolTip(this.udLMSANFtaps, "决定计算出的陷波滤波器长度。");
             this.udLMSANFtaps.Value = new decimal(new int[] {
             64,
             0,
@@ -38092,7 +37988,7 @@
             this.lblLMSANF2Leak.Name = "lblLMSANF2Leak";
             this.lblLMSANF2Leak.Size = new System.Drawing.Size(40, 16);
             this.lblLMSANF2Leak.TabIndex = 9;
-            this.lblLMSANF2Leak.Text = "Leak:";
+            this.lblLMSANF2Leak.Text = "泄漏:";
             // 
             // udLMSANF2Leak
             // 
@@ -38116,7 +38012,7 @@
             this.udLMSANF2Leak.Size = new System.Drawing.Size(48, 20);
             this.udLMSANF2Leak.TabIndex = 8;
             this.udLMSANF2Leak.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udLMSANF2Leak, "Determines the adaptation rate of the filter.");
+            this.toolTip1.SetToolTip(this.udLMSANF2Leak, "决定滤波器的自适应速率。");
             this.udLMSANF2Leak.Value = new decimal(new int[] {
             100,
             0,
@@ -38131,7 +38027,7 @@
             this.lblLMSANF2gain.Name = "lblLMSANF2gain";
             this.lblLMSANF2gain.Size = new System.Drawing.Size(40, 16);
             this.lblLMSANF2gain.TabIndex = 6;
-            this.lblLMSANF2gain.Text = "Gain:";
+            this.lblLMSANF2gain.Text = "增益:";
             // 
             // udLMSANF2gain
             // 
@@ -38155,7 +38051,7 @@
             this.udLMSANF2gain.Size = new System.Drawing.Size(48, 20);
             this.udLMSANF2gain.TabIndex = 3;
             this.udLMSANF2gain.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udLMSANF2gain, "Determines the adaptation rate of the filter.");
+            this.toolTip1.SetToolTip(this.udLMSANF2gain, "决定滤波器的自适应速率。");
             this.udLMSANF2gain.Value = new decimal(new int[] {
             100,
             0,
@@ -38170,7 +38066,7 @@
             this.lblLMSANF2delay.Name = "lblLMSANF2delay";
             this.lblLMSANF2delay.Size = new System.Drawing.Size(40, 16);
             this.lblLMSANF2delay.TabIndex = 4;
-            this.lblLMSANF2delay.Text = "Delay:";
+            this.lblLMSANF2delay.Text = "延迟:";
             // 
             // udLMSANF2delay
             // 
@@ -38194,8 +38090,7 @@
             this.udLMSANF2delay.Size = new System.Drawing.Size(48, 20);
             this.udLMSANF2delay.TabIndex = 2;
             this.udLMSANF2delay.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udLMSANF2delay, "Determines how far back you look in the signal before you begin to compute a canc" +
-        "ellation filter");
+            this.toolTip1.SetToolTip(this.udLMSANF2delay, "决定在开始计算抵消滤波器之前，向前回看信号多长时间。");
             this.udLMSANF2delay.Value = new decimal(new int[] {
             16,
             0,
@@ -38210,7 +38105,7 @@
             this.lblLMSANF2Taps.Name = "lblLMSANF2Taps";
             this.lblLMSANF2Taps.Size = new System.Drawing.Size(40, 16);
             this.lblLMSANF2Taps.TabIndex = 2;
-            this.lblLMSANF2Taps.Text = "Taps:";
+            this.lblLMSANF2Taps.Text = "抽头:";
             // 
             // udLMSANF2taps
             // 
@@ -38234,7 +38129,7 @@
             this.udLMSANF2taps.Size = new System.Drawing.Size(48, 20);
             this.udLMSANF2taps.TabIndex = 1;
             this.udLMSANF2taps.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udLMSANF2taps, "Determines the length of the computed notch filter.");
+            this.toolTip1.SetToolTip(this.udLMSANF2taps, "决定计算出的陷波滤波器长度。");
             this.udLMSANF2taps.Value = new decimal(new int[] {
             64,
             0,
@@ -38266,7 +38161,7 @@
             this.lblLMSNR2Leak.Name = "lblLMSNR2Leak";
             this.lblLMSNR2Leak.Size = new System.Drawing.Size(40, 16);
             this.lblLMSNR2Leak.TabIndex = 11;
-            this.lblLMSNR2Leak.Text = "Leak:";
+            this.lblLMSNR2Leak.Text = "泄漏:";
             // 
             // udLMSNR2Leak
             // 
@@ -38290,7 +38185,7 @@
             this.udLMSNR2Leak.Size = new System.Drawing.Size(48, 20);
             this.udLMSNR2Leak.TabIndex = 10;
             this.udLMSNR2Leak.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udLMSNR2Leak, "Determines the adaptation rate of the filter.");
+            this.toolTip1.SetToolTip(this.udLMSNR2Leak, "决定滤波器的自适应速率。");
             this.udLMSNR2Leak.Value = new decimal(new int[] {
             100,
             0,
@@ -38305,7 +38200,7 @@
             this.lblLMSNR2gain.Name = "lblLMSNR2gain";
             this.lblLMSNR2gain.Size = new System.Drawing.Size(40, 16);
             this.lblLMSNR2gain.TabIndex = 9;
-            this.lblLMSNR2gain.Text = "Gain:";
+            this.lblLMSNR2gain.Text = "增益:";
             // 
             // udLMSNR2gain
             // 
@@ -38329,7 +38224,7 @@
             this.udLMSNR2gain.Size = new System.Drawing.Size(48, 20);
             this.udLMSNR2gain.TabIndex = 7;
             this.udLMSNR2gain.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udLMSNR2gain, "Determines the adaptation rate of the filter.");
+            this.toolTip1.SetToolTip(this.udLMSNR2gain, "决定滤波器的自适应速率。");
             this.udLMSNR2gain.Value = new decimal(new int[] {
             100,
             0,
@@ -38359,8 +38254,7 @@
             this.udLMSNR2delay.Size = new System.Drawing.Size(48, 20);
             this.udLMSNR2delay.TabIndex = 6;
             this.udLMSNR2delay.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udLMSNR2delay, "Determines how far back you look in the signal before you begin to compute a cohe" +
-        "rent signal enhancement filter.  ");
+            this.toolTip1.SetToolTip(this.udLMSNR2delay, "决定在开始计算相干信号增强滤波器之前，向前回看信号多长时间。");
             this.udLMSNR2delay.Value = new decimal(new int[] {
             16,
             0,
@@ -38375,7 +38269,7 @@
             this.lblLMSNR2delay.Name = "lblLMSNR2delay";
             this.lblLMSNR2delay.Size = new System.Drawing.Size(40, 16);
             this.lblLMSNR2delay.TabIndex = 5;
-            this.lblLMSNR2delay.Text = "Delay:";
+            this.lblLMSNR2delay.Text = "延迟:";
             // 
             // udLMSNR2taps
             // 
@@ -38399,7 +38293,7 @@
             this.udLMSNR2taps.Size = new System.Drawing.Size(48, 20);
             this.udLMSNR2taps.TabIndex = 5;
             this.udLMSNR2taps.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udLMSNR2taps, "Determines the length of the NR computed filter.  ");
+            this.toolTip1.SetToolTip(this.udLMSNR2taps, "决定计算出的 NR 滤波器长度。");
             this.udLMSNR2taps.Value = new decimal(new int[] {
             64,
             0,
@@ -38414,7 +38308,7 @@
             this.lblLMSNR2taps.Name = "lblLMSNR2taps";
             this.lblLMSNR2taps.Size = new System.Drawing.Size(40, 16);
             this.lblLMSNR2taps.TabIndex = 3;
-            this.lblLMSNR2taps.Text = "Taps:";
+            this.lblLMSNR2taps.Text = "抽头:";
             // 
             // tpDSPMNF
             // 
@@ -38451,7 +38345,7 @@
             this.grpDSPMNF.Size = new System.Drawing.Size(571, 224);
             this.grpDSPMNF.TabIndex = 1;
             this.grpDSPMNF.TabStop = false;
-            this.grpDSPMNF.Text = "Multi Notch Filter";
+            this.grpDSPMNF.Text = "多陷波滤波器";
             // 
             // chkVisualNotch
             // 
@@ -38461,9 +38355,8 @@
             this.chkVisualNotch.Name = "chkVisualNotch";
             this.chkVisualNotch.Size = new System.Drawing.Size(444, 17);
             this.chkVisualNotch.TabIndex = 16;
-            this.chkVisualNotch.Text = "Visual approximation of notch (NOTE: this is not 100% representation of the activ" +
-    "e notch)";
-            this.toolTip1.SetToolTip(this.chkVisualNotch, "This is a simple approximation and does not accurately represent the notch");
+            this.chkVisualNotch.Text = "陷波器视觉近似（注意：并非活动陷波器的 100% 精确表示）";
+            this.toolTip1.SetToolTip(this.chkVisualNotch, "这只是简单近似，并不精确代表陷波");
             this.chkVisualNotch.UseVisualStyleBackColor = true;
             this.chkVisualNotch.CheckedChanged += new System.EventHandler(this.chkVisualNotch_CheckedChanged);
             // 
@@ -38476,7 +38369,7 @@
             this.btnVFOFreq.Size = new System.Drawing.Size(58, 23);
             this.btnVFOFreq.TabIndex = 15;
             this.btnVFOFreq.Text = "VFOA";
-            this.toolTip1.SetToolTip(this.btnVFOFreq, "Enter the Frequency from VFOA");
+            this.toolTip1.SetToolTip(this.btnVFOFreq, "输入 VFOA 的频率");
             this.btnVFOFreq.UseVisualStyleBackColor = true;
             this.btnVFOFreq.Click += new System.EventHandler(this.btnVFOFreq_Click);
             // 
@@ -38489,7 +38382,7 @@
             this.chkMNFRun.Name = "chkMNFRun";
             this.chkMNFRun.Size = new System.Drawing.Size(75, 23);
             this.chkMNFRun.TabIndex = 14;
-            this.chkMNFRun.Text = "OFF";
+            this.chkMNFRun.Text = "关";
             this.chkMNFRun.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.chkMNFRun.UseVisualStyleBackColor = true;
             this.chkMNFRun.Visible = false;
@@ -38505,7 +38398,7 @@
             this.chkMNFAutoIncrease.Name = "chkMNFAutoIncrease";
             this.chkMNFAutoIncrease.Size = new System.Drawing.Size(322, 17);
             this.chkMNFAutoIncrease.TabIndex = 13;
-            this.chkMNFAutoIncrease.Text = "Auto-Increase width (if needed) to achieve >100dB attenuation";
+            this.chkMNFAutoIncrease.Text = "自动增大宽度（如需要）以达到 >100dB 衰减";
             this.chkMNFAutoIncrease.UseVisualStyleBackColor = true;
             this.chkMNFAutoIncrease.CheckedChanged += new System.EventHandler(this.chkMNFAutoIncrease_CheckedChanged);
             // 
@@ -38518,7 +38411,7 @@
             this.btnMNFDelete.Selectable = true;
             this.btnMNFDelete.Size = new System.Drawing.Size(75, 23);
             this.btnMNFDelete.TabIndex = 12;
-            this.btnMNFDelete.Text = "Delete";
+            this.btnMNFDelete.Text = "删除";
             this.btnMNFDelete.UseVisualStyleBackColor = true;
             this.btnMNFDelete.Click += new System.EventHandler(this.btnMNFDelete_Click);
             // 
@@ -38530,7 +38423,7 @@
             this.btnMNFCancel.Selectable = true;
             this.btnMNFCancel.Size = new System.Drawing.Size(75, 23);
             this.btnMNFCancel.TabIndex = 11;
-            this.btnMNFCancel.Text = "Cancel";
+            this.btnMNFCancel.Text = "取消";
             this.btnMNFCancel.UseVisualStyleBackColor = true;
             this.btnMNFCancel.Click += new System.EventHandler(this.btnMNFCancel_Click);
             // 
@@ -38542,7 +38435,7 @@
             this.btnMNFEdit.Selectable = true;
             this.btnMNFEdit.Size = new System.Drawing.Size(75, 23);
             this.btnMNFEdit.TabIndex = 10;
-            this.btnMNFEdit.Text = "Edit";
+            this.btnMNFEdit.Text = "编辑";
             this.btnMNFEdit.UseVisualStyleBackColor = true;
             this.btnMNFEdit.Click += new System.EventHandler(this.btnMNFEdit_Click);
             // 
@@ -38557,7 +38450,7 @@
             this.chkMNFActive.Name = "chkMNFActive";
             this.chkMNFActive.Size = new System.Drawing.Size(56, 17);
             this.chkMNFActive.TabIndex = 9;
-            this.chkMNFActive.Text = "Active";
+            this.chkMNFActive.Text = "激活";
             this.chkMNFActive.UseVisualStyleBackColor = true;
             // 
             // btnMNFRun
@@ -38569,7 +38462,7 @@
             this.btnMNFRun.Selectable = true;
             this.btnMNFRun.Size = new System.Drawing.Size(75, 23);
             this.btnMNFRun.TabIndex = 8;
-            this.btnMNFRun.Text = "OFF";
+            this.btnMNFRun.Text = "关";
             this.btnMNFRun.UseVisualStyleBackColor = true;
             this.btnMNFRun.Visible = false;
             this.btnMNFRun.Click += new System.EventHandler(this.btnMNFRun_Click);
@@ -38594,7 +38487,7 @@
             this.btnMNFAdd.Selectable = true;
             this.btnMNFAdd.Size = new System.Drawing.Size(75, 23);
             this.btnMNFAdd.TabIndex = 6;
-            this.btnMNFAdd.Text = "Add";
+            this.btnMNFAdd.Text = "添加";
             this.btnMNFAdd.UseVisualStyleBackColor = true;
             this.btnMNFAdd.Click += new System.EventHandler(this.btnMNFAdd_Click);
             // 
@@ -38606,7 +38499,7 @@
             this.lblMNFWidth.Name = "lblMNFWidth";
             this.lblMNFWidth.Size = new System.Drawing.Size(57, 13);
             this.lblMNFWidth.TabIndex = 5;
-            this.lblMNFWidth.Text = "Width (Hz)";
+            this.lblMNFWidth.Text = "宽度 (Hz)";
             // 
             // lblMNFFreq
             // 
@@ -38616,7 +38509,7 @@
             this.lblMNFFreq.Name = "lblMNFFreq";
             this.lblMNFFreq.Size = new System.Drawing.Size(120, 13);
             this.lblMNFFreq.TabIndex = 4;
-            this.lblMNFFreq.Text = "Center Frequency (Mhz)";
+            this.lblMNFFreq.Text = "中心频率 (MHz)";
             // 
             // lblMNFName
             // 
@@ -38626,7 +38519,7 @@
             this.lblMNFName.Name = "lblMNFName";
             this.lblMNFName.Size = new System.Drawing.Size(46, 13);
             this.lblMNFName.TabIndex = 3;
-            this.lblMNFName.Text = "Notch #";
+            this.lblMNFName.Text = "陷波 #";
             // 
             // udMNFWidth
             // 
@@ -38764,7 +38657,7 @@
             this.udDSPSNBThresh2.Size = new System.Drawing.Size(56, 20);
             this.udDSPSNBThresh2.TabIndex = 12;
             this.udDSPSNBThresh2.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udDSPSNBThresh2, "Controls the detection threshold for impulse noise.  ");
+            this.toolTip1.SetToolTip(this.udDSPSNBThresh2, "控制脉冲噪声的检测阈值。");
             this.udDSPSNBThresh2.Value = new decimal(new int[] {
             200,
             0,
@@ -38779,7 +38672,7 @@
             this.lblDSPSNBThresh2.Name = "lblDSPSNBThresh2";
             this.lblDSPSNBThresh2.Size = new System.Drawing.Size(80, 16);
             this.lblDSPSNBThresh2.TabIndex = 13;
-            this.lblDSPSNBThresh2.Text = "Threshold 2";
+            this.lblDSPSNBThresh2.Text = "阈值 2";
             // 
             // udDSPSNBThresh1
             // 
@@ -38804,7 +38697,7 @@
             this.udDSPSNBThresh1.Size = new System.Drawing.Size(56, 20);
             this.udDSPSNBThresh1.TabIndex = 10;
             this.udDSPSNBThresh1.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udDSPSNBThresh1, "Controls the detection threshold for impulse noise.  ");
+            this.toolTip1.SetToolTip(this.udDSPSNBThresh1, "控制脉冲噪声的检测阈值。");
             this.udDSPSNBThresh1.Value = new decimal(new int[] {
             80,
             0,
@@ -38819,7 +38712,7 @@
             this.lblDSPSNBThresh1.Name = "lblDSPSNBThresh1";
             this.lblDSPSNBThresh1.Size = new System.Drawing.Size(80, 16);
             this.lblDSPSNBThresh1.TabIndex = 11;
-            this.lblDSPSNBThresh1.Text = "Threshold 1";
+            this.lblDSPSNBThresh1.Text = "阈值 1";
             // 
             // grpDSPNB
             // 
@@ -38839,7 +38732,7 @@
             this.grpDSPNB.Size = new System.Drawing.Size(109, 211);
             this.grpDSPNB.TabIndex = 35;
             this.grpDSPNB.TabStop = false;
-            this.grpDSPNB.Text = "Noise Blanker";
+            this.grpDSPNB.Text = "噪声消除器";
             // 
             // labelTS326
             // 
@@ -38875,7 +38768,7 @@
             this.labelTS154.Name = "labelTS154";
             this.labelTS154.Size = new System.Drawing.Size(65, 13);
             this.labelTS154.TabIndex = 16;
-            this.labelTS154.Text = "TIMES (ms):";
+            this.labelTS154.Text = "次数 (ms):";
             // 
             // udDSPNBLag
             // 
@@ -38900,7 +38793,7 @@
             this.udDSPNBLag.Size = new System.Drawing.Size(64, 20);
             this.udDSPNBLag.TabIndex = 14;
             this.udDSPNBLag.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udDSPNBLag, "Controls the detection threshold for impulse noise.  ");
+            this.toolTip1.SetToolTip(this.udDSPNBLag, "控制脉冲噪声的检测阈值。");
             this.udDSPNBLag.Value = new decimal(new int[] {
             1,
             0,
@@ -38915,7 +38808,7 @@
             this.labelTS153.Name = "labelTS153";
             this.labelTS153.Size = new System.Drawing.Size(64, 16);
             this.labelTS153.TabIndex = 15;
-            this.labelTS153.Text = "Lag";
+            this.labelTS153.Text = "滞后";
             // 
             // udDSPNBLead
             // 
@@ -38940,7 +38833,7 @@
             this.udDSPNBLead.Size = new System.Drawing.Size(64, 20);
             this.udDSPNBLead.TabIndex = 12;
             this.udDSPNBLead.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udDSPNBLead, "Controls the detection threshold for impulse noise.  ");
+            this.toolTip1.SetToolTip(this.udDSPNBLead, "控制脉冲噪声的检测阈值。");
             this.udDSPNBLead.Value = new decimal(new int[] {
             1,
             0,
@@ -38955,7 +38848,7 @@
             this.labelTS152.Name = "labelTS152";
             this.labelTS152.Size = new System.Drawing.Size(64, 16);
             this.labelTS152.TabIndex = 13;
-            this.labelTS152.Text = "Lead";
+            this.labelTS152.Text = "超前";
             // 
             // udDSPNBTransition
             // 
@@ -38980,7 +38873,7 @@
             this.udDSPNBTransition.Size = new System.Drawing.Size(64, 20);
             this.udDSPNBTransition.TabIndex = 10;
             this.udDSPNBTransition.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udDSPNBTransition, "Controls the detection threshold for impulse noise.  ");
+            this.toolTip1.SetToolTip(this.udDSPNBTransition, "控制脉冲噪声的检测阈值。");
             this.udDSPNBTransition.Value = new decimal(new int[] {
             1,
             0,
@@ -38995,7 +38888,7 @@
             this.labelTS151.Name = "labelTS151";
             this.labelTS151.Size = new System.Drawing.Size(64, 16);
             this.labelTS151.TabIndex = 11;
-            this.labelTS151.Text = "Slew";
+            this.labelTS151.Text = "压摆";
             // 
             // udDSPNB
             // 
@@ -39019,7 +38912,7 @@
             this.udDSPNB.Size = new System.Drawing.Size(40, 20);
             this.udDSPNB.TabIndex = 0;
             this.udDSPNB.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udDSPNB, "Controls the detection threshold for impulse noise.  ");
+            this.toolTip1.SetToolTip(this.udDSPNB, "控制脉冲噪声的检测阈值。");
             this.udDSPNB.Value = new decimal(new int[] {
             30,
             0,
@@ -39035,7 +38928,7 @@
             this.lblDSPNBThreshold.Name = "lblDSPNBThreshold";
             this.lblDSPNBThreshold.Size = new System.Drawing.Size(64, 16);
             this.lblDSPNBThreshold.TabIndex = 9;
-            this.lblDSPNBThreshold.Text = "Threshold";
+            this.lblDSPNBThreshold.Text = "阈值";
             // 
             // tpDSPVOXDE
             // 
@@ -39074,7 +38967,7 @@
             this.chkAntiVoxSource.Name = "chkAntiVoxSource";
             this.chkAntiVoxSource.Size = new System.Drawing.Size(99, 17);
             this.chkAntiVoxSource.TabIndex = 20;
-            this.chkAntiVoxSource.Text = "Use VAC Audio";
+            this.chkAntiVoxSource.Text = "使用 VAC 音频";
             this.chkAntiVoxSource.UseVisualStyleBackColor = true;
             this.chkAntiVoxSource.CheckedChanged += new System.EventHandler(this.chkAntiVoxSource_CheckedChanged);
             // 
@@ -39115,7 +39008,7 @@
             this.lblAntiVoxTau.Name = "lblAntiVoxTau";
             this.lblAntiVoxTau.Size = new System.Drawing.Size(48, 13);
             this.lblAntiVoxTau.TabIndex = 18;
-            this.lblAntiVoxTau.Text = "Tau (ms)";
+            this.lblAntiVoxTau.Text = "时间常数 (ms)";
             // 
             // udAntiVoxGain
             // 
@@ -39155,7 +39048,7 @@
             this.lblAntiVoxGain.Name = "lblAntiVoxGain";
             this.lblAntiVoxGain.Size = new System.Drawing.Size(51, 13);
             this.lblAntiVoxGain.TabIndex = 16;
-            this.lblAntiVoxGain.Text = "Gain (dB)";
+            this.lblAntiVoxGain.Text = "增益 (dB)";
             // 
             // chkAntiVoxEnable
             // 
@@ -39165,7 +39058,7 @@
             this.chkAntiVoxEnable.Name = "chkAntiVoxEnable";
             this.chkAntiVoxEnable.Size = new System.Drawing.Size(105, 17);
             this.chkAntiVoxEnable.TabIndex = 0;
-            this.chkAntiVoxEnable.Text = "Anti-VOX Enable";
+            this.chkAntiVoxEnable.Text = "启用 Anti-VOX";
             this.chkAntiVoxEnable.UseVisualStyleBackColor = true;
             this.chkAntiVoxEnable.CheckedChanged += new System.EventHandler(this.chkAntiVoxEnable_CheckedChanged);
             // 
@@ -39179,7 +39072,7 @@
             this.grpDEXPLookAhead.Size = new System.Drawing.Size(167, 78);
             this.grpDEXPLookAhead.TabIndex = 2;
             this.grpDEXPLookAhead.TabStop = false;
-            this.grpDEXPLookAhead.Text = "Audio LookAhead";
+            this.grpDEXPLookAhead.Text = "音频前视";
             // 
             // udDEXPLookAhead
             // 
@@ -39218,7 +39111,7 @@
             this.lblDEXPAudioLookAhead.Name = "lblDEXPAudioLookAhead";
             this.lblDEXPAudioLookAhead.Size = new System.Drawing.Size(87, 13);
             this.lblDEXPAudioLookAhead.TabIndex = 1;
-            this.lblDEXPAudioLookAhead.Text = "Look Ahead (ms)";
+            this.lblDEXPAudioLookAhead.Text = "前视 (ms)";
             // 
             // chkDEXPLookAheadEnable
             // 
@@ -39230,7 +39123,7 @@
             this.chkDEXPLookAheadEnable.Name = "chkDEXPLookAheadEnable";
             this.chkDEXPLookAheadEnable.Size = new System.Drawing.Size(59, 17);
             this.chkDEXPLookAheadEnable.TabIndex = 0;
-            this.chkDEXPLookAheadEnable.Text = "Enable";
+            this.chkDEXPLookAheadEnable.Text = "启用";
             this.chkDEXPLookAheadEnable.UseVisualStyleBackColor = true;
             this.chkDEXPLookAheadEnable.CheckedChanged += new System.EventHandler(this.chkDEXPLookAheadEnable_CheckedChanged);
             // 
@@ -39356,7 +39249,7 @@
             this.lblDEXPThreshold.Name = "lblDEXPThreshold";
             this.lblDEXPThreshold.Size = new System.Drawing.Size(83, 13);
             this.lblDEXPThreshold.TabIndex = 13;
-            this.lblDEXPThreshold.Text = "Threshold (dBV)";
+            this.lblDEXPThreshold.Text = "阈值 (dBV)";
             // 
             // lblDEXPHystRatio
             // 
@@ -39366,7 +39259,7 @@
             this.lblDEXPHystRatio.Name = "lblDEXPHystRatio";
             this.lblDEXPHystRatio.Size = new System.Drawing.Size(78, 13);
             this.lblDEXPHystRatio.TabIndex = 12;
-            this.lblDEXPHystRatio.Text = "Hyst.Ratio (dB)";
+            this.lblDEXPHystRatio.Text = "滞后比 (dB)";
             // 
             // lblDEXPExpRatio
             // 
@@ -39376,7 +39269,7 @@
             this.lblDEXPExpRatio.Name = "lblDEXPExpRatio";
             this.lblDEXPExpRatio.Size = new System.Drawing.Size(78, 13);
             this.lblDEXPExpRatio.TabIndex = 11;
-            this.lblDEXPExpRatio.Text = "Exp. Ratio (dB)";
+            this.lblDEXPExpRatio.Text = "扩展比 (dB)";
             // 
             // udDEXPRelease
             // 
@@ -39473,7 +39366,7 @@
             this.chkVOXEnable.Name = "chkVOXEnable";
             this.chkVOXEnable.Size = new System.Drawing.Size(84, 17);
             this.chkVOXEnable.TabIndex = 7;
-            this.chkVOXEnable.Text = "Enable VOX";
+            this.chkVOXEnable.Text = "启用 VOX";
             this.chkVOXEnable.UseVisualStyleBackColor = true;
             this.chkVOXEnable.CheckedChanged += new System.EventHandler(this.chkVOXEnable_CheckedChanged);
             // 
@@ -39514,7 +39407,7 @@
             this.lblDEXPRelease.Name = "lblDEXPRelease";
             this.lblDEXPRelease.Size = new System.Drawing.Size(68, 13);
             this.lblDEXPRelease.TabIndex = 5;
-            this.lblDEXPRelease.Text = "Release (ms)";
+            this.lblDEXPRelease.Text = "释放 (ms)";
             // 
             // lblDEXPHold
             // 
@@ -39524,7 +39417,7 @@
             this.lblDEXPHold.Name = "lblDEXPHold";
             this.lblDEXPHold.Size = new System.Drawing.Size(51, 13);
             this.lblDEXPHold.TabIndex = 4;
-            this.lblDEXPHold.Text = "Hold (ms)";
+            this.lblDEXPHold.Text = "保持 (ms)";
             // 
             // lblDEXPAttack
             // 
@@ -39534,7 +39427,7 @@
             this.lblDEXPAttack.Name = "lblDEXPAttack";
             this.lblDEXPAttack.Size = new System.Drawing.Size(60, 13);
             this.lblDEXPAttack.TabIndex = 3;
-            this.lblDEXPAttack.Text = "Attack (ms)";
+            this.lblDEXPAttack.Text = "启动 (ms)";
             // 
             // lblDetTau
             // 
@@ -39544,7 +39437,7 @@
             this.lblDetTau.Name = "lblDetTau";
             this.lblDetTau.Size = new System.Drawing.Size(68, 13);
             this.lblDetTau.TabIndex = 2;
-            this.lblDetTau.Text = "Det.Tau (ms)";
+            this.lblDetTau.Text = "检波时间常数 (ms)";
             // 
             // chkDEXPEnable
             // 
@@ -39554,7 +39447,7 @@
             this.chkDEXPEnable.Name = "chkDEXPEnable";
             this.chkDEXPEnable.Size = new System.Drawing.Size(91, 17);
             this.chkDEXPEnable.TabIndex = 1;
-            this.chkDEXPEnable.Text = "Enable DEXP";
+            this.chkDEXPEnable.Text = "启用 DEXP";
             this.chkDEXPEnable.UseVisualStyleBackColor = true;
             this.chkDEXPEnable.CheckedChanged += new System.EventHandler(this.chkDEXPEnable_CheckedChanged);
             // 
@@ -39570,7 +39463,7 @@
             this.grpSCF.Size = new System.Drawing.Size(211, 78);
             this.grpSCF.TabIndex = 0;
             this.grpSCF.TabStop = false;
-            this.grpSCF.Text = "Side-Channel Trigger Filter";
+            this.grpSCF.Text = "侧通道触发滤波器";
             // 
             // lblSCFHighCut
             // 
@@ -39580,7 +39473,7 @@
             this.lblSCFHighCut.Name = "lblSCFHighCut";
             this.lblSCFHighCut.Size = new System.Drawing.Size(70, 13);
             this.lblSCFHighCut.TabIndex = 4;
-            this.lblSCFHighCut.Text = "High Cut (Hz)";
+            this.lblSCFHighCut.Text = "高切 (Hz)";
             // 
             // lblSCFLowCut
             // 
@@ -39590,7 +39483,7 @@
             this.lblSCFLowCut.Name = "lblSCFLowCut";
             this.lblSCFLowCut.Size = new System.Drawing.Size(71, 13);
             this.lblSCFLowCut.TabIndex = 3;
-            this.lblSCFLowCut.Text = "Low  Cut (Hz)";
+            this.lblSCFLowCut.Text = "低切 (Hz)";
             // 
             // udSCFHighCut
             // 
@@ -39660,7 +39553,7 @@
             this.chkSCFEnable.Name = "chkSCFEnable";
             this.chkSCFEnable.Size = new System.Drawing.Size(59, 17);
             this.chkSCFEnable.TabIndex = 0;
-            this.chkSCFEnable.Text = "Enable";
+            this.chkSCFEnable.Text = "启用";
             this.chkSCFEnable.UseVisualStyleBackColor = true;
             this.chkSCFEnable.CheckedChanged += new System.EventHandler(this.chkSCFEnable_CheckedChanged);
             // 
@@ -39784,7 +39677,7 @@
             this.chkCFCDisplayAutoScale.Name = "chkCFCDisplayAutoScale";
             this.chkCFCDisplayAutoScale.Size = new System.Drawing.Size(133, 17);
             this.chkCFCDisplayAutoScale.TabIndex = 176;
-            this.chkCFCDisplayAutoScale.Text = "Auto Scale (10dB/line)";
+            this.chkCFCDisplayAutoScale.Text = "自动缩放（10dB/格）";
             this.chkCFCDisplayAutoScale.UseVisualStyleBackColor = true;
             this.chkCFCDisplayAutoScale.CheckedChanged += new System.EventHandler(this.chkCFCDisplayAutoScale_CheckedChanged);
             // 
@@ -39857,7 +39750,7 @@
             this.grpPhRot.Size = new System.Drawing.Size(124, 100);
             this.grpPhRot.TabIndex = 170;
             this.grpPhRot.TabStop = false;
-            this.grpPhRot.Text = "Phase Rotator";
+            this.grpPhRot.Text = "相位旋转器";
             // 
             // lblPHROTStages
             // 
@@ -39947,7 +39840,7 @@
             this.chkPHROTEnable.Name = "chkPHROTEnable";
             this.chkPHROTEnable.Size = new System.Drawing.Size(59, 17);
             this.chkPHROTEnable.TabIndex = 152;
-            this.chkPHROTEnable.Text = "Enable";
+            this.chkPHROTEnable.Text = "启用";
             this.chkPHROTEnable.UseVisualStyleBackColor = true;
             this.chkPHROTEnable.CheckedChanged += new System.EventHandler(this.chkPHROTEnable_CheckedChanged);
             // 
@@ -39959,7 +39852,7 @@
             this.chkCFCPeqEnable.Name = "chkCFCPeqEnable";
             this.chkCFCPeqEnable.Size = new System.Drawing.Size(124, 17);
             this.chkCFCPeqEnable.TabIndex = 169;
-            this.chkCFCPeqEnable.Text = "Post-CFC EQ Enable";
+            this.chkCFCPeqEnable.Text = "启用后置 CFC EQ";
             this.chkCFCPeqEnable.UseVisualStyleBackColor = true;
             this.chkCFCPeqEnable.CheckedChanged += new System.EventHandler(this.chkCFCPeqEnable_CheckedChanged);
             // 
@@ -40188,7 +40081,7 @@
             this.chkCFCEnable.Name = "chkCFCEnable";
             this.chkCFCEnable.Size = new System.Drawing.Size(82, 17);
             this.chkCFCEnable.TabIndex = 149;
-            this.chkCFCEnable.Text = "CFC Enable";
+            this.chkCFCEnable.Text = "启用 CFC";
             this.chkCFCEnable.UseVisualStyleBackColor = true;
             this.chkCFCEnable.CheckedChanged += new System.EventHandler(this.chkCFCEnable_CheckedChanged);
             // 
@@ -40681,7 +40574,7 @@
             this.tpTransmit.Name = "tpTransmit";
             this.tpTransmit.Size = new System.Drawing.Size(728, 436);
             this.tpTransmit.TabIndex = 5;
-            this.tpTransmit.Text = "Transmit";
+            this.tpTransmit.Text = "发射";
             // 
             // chkHighlightTXProfileSaveItems
             // 
@@ -40691,7 +40584,7 @@
             this.chkHighlightTXProfileSaveItems.Name = "chkHighlightTXProfileSaveItems";
             this.chkHighlightTXProfileSaveItems.Size = new System.Drawing.Size(175, 17);
             this.chkHighlightTXProfileSaveItems.TabIndex = 76;
-            this.chkHighlightTXProfileSaveItems.Text = "Hightlight TX Profile Save Items";
+            this.chkHighlightTXProfileSaveItems.Text = "高亮 TX 配置文件保存项";
             this.chkHighlightTXProfileSaveItems.UseVisualStyleBackColor = true;
             this.chkHighlightTXProfileSaveItems.CheckedChanged += new System.EventHandler(this.chkHighlightTXProfileSaveItems_CheckedChanged);
             // 
@@ -40702,8 +40595,8 @@
             this.chkRestoreVAC2DeviceDetailsFromTXProfile.Name = "chkRestoreVAC2DeviceDetailsFromTXProfile";
             this.chkRestoreVAC2DeviceDetailsFromTXProfile.Size = new System.Drawing.Size(321, 18);
             this.chkRestoreVAC2DeviceDetailsFromTXProfile.TabIndex = 75;
-            this.chkRestoreVAC2DeviceDetailsFromTXProfile.Text = "Restore VAC2 device details from TX Profile";
-            this.toolTip1.SetToolTip(this.chkRestoreVAC2DeviceDetailsFromTXProfile, "Restore VAC device details that were stored against a TX Profile");
+            this.chkRestoreVAC2DeviceDetailsFromTXProfile.Text = "从 TX 配置文件恢复 VAC2 设备详情";
+            this.toolTip1.SetToolTip(this.chkRestoreVAC2DeviceDetailsFromTXProfile, "恢复存储在 TX 配置文件中的 VAC 设备详情");
             // 
             // chkRestoreVAC1DeviceDetailsFromTXProfile
             // 
@@ -40712,8 +40605,8 @@
             this.chkRestoreVAC1DeviceDetailsFromTXProfile.Name = "chkRestoreVAC1DeviceDetailsFromTXProfile";
             this.chkRestoreVAC1DeviceDetailsFromTXProfile.Size = new System.Drawing.Size(321, 18);
             this.chkRestoreVAC1DeviceDetailsFromTXProfile.TabIndex = 74;
-            this.chkRestoreVAC1DeviceDetailsFromTXProfile.Text = "Restore VAC1 device details from TX Profile";
-            this.toolTip1.SetToolTip(this.chkRestoreVAC1DeviceDetailsFromTXProfile, "Restore VAC device details that were stored against a TX Profile");
+            this.chkRestoreVAC1DeviceDetailsFromTXProfile.Text = "从 TX 配置文件恢复 VAC1 设备详情";
+            this.toolTip1.SetToolTip(this.chkRestoreVAC1DeviceDetailsFromTXProfile, "恢复存储在 TX 配置文件中的 VAC 设备详情");
             // 
             // btnExportCurrentTXProfile
             // 
@@ -40721,8 +40614,8 @@
             this.btnExportCurrentTXProfile.Name = "btnExportCurrentTXProfile";
             this.btnExportCurrentTXProfile.Size = new System.Drawing.Size(64, 54);
             this.btnExportCurrentTXProfile.TabIndex = 73;
-            this.btnExportCurrentTXProfile.Text = "Export Current Profile";
-            this.toolTip1.SetToolTip(this.btnExportCurrentTXProfile, "Export the curent profile and save to a file.");
+            this.btnExportCurrentTXProfile.Text = "导出当前配置文件";
+            this.toolTip1.SetToolTip(this.btnExportCurrentTXProfile, "导出当前配置文件并保存到文件。");
             this.btnExportCurrentTXProfile.UseVisualStyleBackColor = true;
             this.btnExportCurrentTXProfile.Click += new System.EventHandler(this.btnExportCurrentTXProfile_Click);
             // 
@@ -40734,7 +40627,7 @@
             this.chkLimitExtAmpOnOverload.Name = "chkLimitExtAmpOnOverload";
             this.chkLimitExtAmpOnOverload.Size = new System.Drawing.Size(184, 17);
             this.chkLimitExtAmpOnOverload.TabIndex = 72;
-            this.chkLimitExtAmpOnOverload.Text = "Limit Drive on Ext. Amp. Overload";
+            this.chkLimitExtAmpOnOverload.Text = "外部功放过载时限制驱动";
             this.chkLimitExtAmpOnOverload.UseVisualStyleBackColor = true;
             this.chkLimitExtAmpOnOverload.CheckedChanged += new System.EventHandler(this.chkLimitExtAmpOnOverload_CheckedChanged);
             // 
@@ -40746,7 +40639,7 @@
             this.grpDSPSpeechProcessor.Size = new System.Drawing.Size(179, 48);
             this.grpDSPSpeechProcessor.TabIndex = 43;
             this.grpDSPSpeechProcessor.TabStop = false;
-            this.grpDSPSpeechProcessor.Text = "Speech Processor";
+            this.grpDSPSpeechProcessor.Text = "语音处理器";
             // 
             // chkDSPCESSB
             // 
@@ -40756,7 +40649,7 @@
             this.chkDSPCESSB.Name = "chkDSPCESSB";
             this.chkDSPCESSB.Size = new System.Drawing.Size(149, 17);
             this.chkDSPCESSB.TabIndex = 0;
-            this.chkDSPCESSB.Text = "CESSB Overshoot Control";
+            this.chkDSPCESSB.Text = "CESSB 过冲控制";
             this.chkDSPCESSB.UseVisualStyleBackColor = true;
             this.chkDSPCESSB.CheckedChanged += new System.EventHandler(this.chkDSPCESSB_CheckedChanged);
             // 
@@ -40769,7 +40662,7 @@
             this.grpExtTXInhibit.Size = new System.Drawing.Size(178, 72);
             this.grpExtTXInhibit.TabIndex = 71;
             this.grpExtTXInhibit.TabStop = false;
-            this.grpExtTXInhibit.Text = "External TX Inhibit";
+            this.grpExtTXInhibit.Text = "外部 TX 抑制";
             // 
             // chkTXInhibit
             // 
@@ -40778,8 +40671,8 @@
             this.chkTXInhibit.Name = "chkTXInhibit";
             this.chkTXInhibit.Size = new System.Drawing.Size(161, 16);
             this.chkTXInhibit.TabIndex = 68;
-            this.chkTXInhibit.Text = "Update with TX Inhibit state";
-            this.toolTip1.SetToolTip(this.chkTXInhibit, "Thetis will update on TX inhibit state change");
+            this.chkTXInhibit.Text = "随 TX 抑制状态更新";
+            this.toolTip1.SetToolTip(this.chkTXInhibit, "TX 抑制状态改变时 Thetis 将更新");
             this.chkTXInhibit.CheckedChanged += new System.EventHandler(this.chkTXInhibit_CheckedChanged);
             // 
             // chkTXInhibitReverse
@@ -40789,8 +40682,8 @@
             this.chkTXInhibitReverse.Name = "chkTXInhibitReverse";
             this.chkTXInhibitReverse.Size = new System.Drawing.Size(109, 20);
             this.chkTXInhibitReverse.TabIndex = 69;
-            this.chkTXInhibitReverse.Text = "Reversed logic";
-            this.toolTip1.SetToolTip(this.chkTXInhibitReverse, "Reverse the input state logic");
+            this.chkTXInhibitReverse.Text = "逻辑反转";
+            this.toolTip1.SetToolTip(this.chkTXInhibitReverse, "反转输入状态逻辑");
             this.chkTXInhibitReverse.CheckedChanged += new System.EventHandler(this.chkTXInhibitReverse_CheckedChanged);
             // 
             // chkSaveTXProfileOnExit
@@ -40800,8 +40693,8 @@
             this.chkSaveTXProfileOnExit.Name = "chkSaveTXProfileOnExit";
             this.chkSaveTXProfileOnExit.Size = new System.Drawing.Size(235, 18);
             this.chkSaveTXProfileOnExit.TabIndex = 67;
-            this.chkSaveTXProfileOnExit.Text = "Auto Save TX Profile on Thetis close";
-            this.toolTip1.SetToolTip(this.chkSaveTXProfileOnExit, "Automatically saves the current TX Profile when Thetis is closed");
+            this.chkSaveTXProfileOnExit.Text = "Thetis 关闭时自动保存 TX 配置文件";
+            this.toolTip1.SetToolTip(this.chkSaveTXProfileOnExit, "Thetis 关闭时自动保存当前 TX 配置文件");
             this.chkSaveTXProfileOnExit.CheckedChanged += new System.EventHandler(this.chkSaveTXProfileOnExit_CheckedChanged);
             // 
             // chkAutoSaveTXProfile
@@ -40811,8 +40704,8 @@
             this.chkAutoSaveTXProfile.Name = "chkAutoSaveTXProfile";
             this.chkAutoSaveTXProfile.Size = new System.Drawing.Size(189, 18);
             this.chkAutoSaveTXProfile.TabIndex = 66;
-            this.chkAutoSaveTXProfile.Text = "Auto Save TX Profile on change";
-            this.toolTip1.SetToolTip(this.chkAutoSaveTXProfile, "Automatically saves the current TX Profile if another profile is selected");
+            this.chkAutoSaveTXProfile.Text = "更改时自动保存 TX 配置文件";
+            this.toolTip1.SetToolTip(this.chkAutoSaveTXProfile, "选择其他配置文件时自动保存当前 TX 配置文件");
             // 
             // udTXFilterLowSave
             // 
@@ -40836,7 +40729,7 @@
             this.udTXFilterLowSave.Size = new System.Drawing.Size(56, 20);
             this.udTXFilterLowSave.TabIndex = 60;
             this.udTXFilterLowSave.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udTXFilterLowSave, "Saved Low Frequency TX Filter Cutoff");
+            this.toolTip1.SetToolTip(this.udTXFilterLowSave, "已保存的发射滤波器低频截止");
             this.udTXFilterLowSave.Value = new decimal(new int[] {
             200,
             0,
@@ -40866,7 +40759,7 @@
             this.udTXFilterHighSave.Size = new System.Drawing.Size(56, 20);
             this.udTXFilterHighSave.TabIndex = 59;
             this.udTXFilterHighSave.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udTXFilterHighSave, "Saved High Frequency TX Filter Cutoff");
+            this.toolTip1.SetToolTip(this.udTXFilterHighSave, "已保存的发射滤波器高频截止");
             this.udTXFilterHighSave.Value = new decimal(new int[] {
             3100,
             0,
@@ -40892,7 +40785,7 @@
             this.grpBoxMic.Size = new System.Drawing.Size(189, 137);
             this.grpBoxMic.TabIndex = 58;
             this.grpBoxMic.TabStop = false;
-            this.grpBoxMic.Text = "Mic";
+            this.grpBoxMic.Text = "麦克风";
             // 
             // labelTS617
             // 
@@ -40902,7 +40795,7 @@
             this.labelTS617.Name = "labelTS617";
             this.labelTS617.Size = new System.Drawing.Size(41, 13);
             this.labelTS617.TabIndex = 15;
-            this.labelTS617.Text = "Source";
+            this.labelTS617.Text = "源";
             // 
             // labelTS616
             // 
@@ -40912,7 +40805,7 @@
             this.labelTS616.Name = "labelTS616";
             this.labelTS616.Size = new System.Drawing.Size(29, 13);
             this.labelTS616.TabIndex = 14;
-            this.labelTS616.Text = "Gain";
+            this.labelTS616.Text = "增益";
             // 
             // radLineIn
             // 
@@ -40921,9 +40814,9 @@
             this.radLineIn.Name = "radLineIn";
             this.radLineIn.Size = new System.Drawing.Size(57, 16);
             this.radLineIn.TabIndex = 13;
-            this.radLineIn.Text = "Line In";
+            this.radLineIn.Text = "线路输入";
             this.radLineIn.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.toolTip1.SetToolTip(this.radLineIn, "Enables Line Input to Penelope");
+            this.toolTip1.SetToolTip(this.radLineIn, "启用 Penelope 线路输入");
             this.radLineIn.UseVisualStyleBackColor = true;
             this.radLineIn.CheckedChanged += new System.EventHandler(this.radLineIn_CheckedChanged);
             // 
@@ -40936,9 +40829,9 @@
             this.radMicIn.Size = new System.Drawing.Size(55, 16);
             this.radMicIn.TabIndex = 12;
             this.radMicIn.TabStop = true;
-            this.radMicIn.Text = "Mic In";
+            this.radMicIn.Text = "麦克风输入";
             this.radMicIn.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.toolTip1.SetToolTip(this.radMicIn, "Enable Microphone Input on Penelope");
+            this.toolTip1.SetToolTip(this.radMicIn, "启用 Penelope 麦克风输入");
             this.radMicIn.UseVisualStyleBackColor = true;
             this.radMicIn.CheckedChanged += new System.EventHandler(this.radMicIn_CheckedChanged);
             // 
@@ -41009,7 +40902,7 @@
             this.labelTS21.Name = "labelTS21";
             this.labelTS21.Size = new System.Drawing.Size(30, 16);
             this.labelTS21.TabIndex = 5;
-            this.labelTS21.Text = "Min:";
+            this.labelTS21.Text = "最小:";
             // 
             // labelTS20
             // 
@@ -41018,7 +40911,7 @@
             this.labelTS20.Name = "labelTS20";
             this.labelTS20.Size = new System.Drawing.Size(30, 16);
             this.labelTS20.TabIndex = 4;
-            this.labelTS20.Text = "Max:";
+            this.labelTS20.Text = "最大:";
             // 
             // udLineInBoost
             // 
@@ -41064,8 +40957,8 @@
             this.chk20dbMicBoost.Name = "chk20dbMicBoost";
             this.chk20dbMicBoost.Size = new System.Drawing.Size(110, 16);
             this.chk20dbMicBoost.TabIndex = 11;
-            this.chk20dbMicBoost.Text = "20dB Mic Boost";
-            this.toolTip1.SetToolTip(this.chk20dbMicBoost, "Controls 20dB Hardware Preamp");
+            this.chk20dbMicBoost.Text = "20dB 麦克风提升";
+            this.toolTip1.SetToolTip(this.chk20dbMicBoost, "控制 20dB 硬件前置放大器");
             this.chk20dbMicBoost.CheckedChanged += new System.EventHandler(this.chk20dbMicBoost_CheckedChanged);
             // 
             // lblLineInBoost
@@ -41075,9 +40968,9 @@
             this.lblLineInBoost.Name = "lblLineInBoost";
             this.lblLineInBoost.Size = new System.Drawing.Size(119, 16);
             this.lblLineInBoost.TabIndex = 11;
-            this.lblLineInBoost.Text = "Line In Gain (dB)";
+            this.lblLineInBoost.Text = "线路输入增益 (dB)";
             this.lblLineInBoost.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.toolTip1.SetToolTip(this.lblLineInBoost, "Sets the hardware gain");
+            this.toolTip1.SetToolTip(this.lblLineInBoost, "设置硬件增益");
             this.lblLineInBoost.Visible = false;
             // 
             // chkTXExpert
@@ -41089,8 +40982,8 @@
             this.chkTXExpert.Name = "chkTXExpert";
             this.chkTXExpert.Size = new System.Drawing.Size(96, 24);
             this.chkTXExpert.TabIndex = 55;
-            this.chkTXExpert.Text = "More Profiles";
-            this.toolTip1.SetToolTip(this.chkTXExpert, "Check to display additional default preset TX Profiles");
+            this.chkTXExpert.Text = "更多配置文件";
+            this.toolTip1.SetToolTip(this.chkTXExpert, "勾选以显示额外的默认预设 TX 配置文件");
             this.chkTXExpert.CheckedChanged += new System.EventHandler(this.chkTXExpert_CheckedChanged);
             // 
             // grpTXProfileDef
@@ -41102,7 +40995,7 @@
             this.grpTXProfileDef.Size = new System.Drawing.Size(136, 152);
             this.grpTXProfileDef.TabIndex = 54;
             this.grpTXProfileDef.TabStop = false;
-            this.grpTXProfileDef.Text = "Additional TX Profiles";
+            this.grpTXProfileDef.Text = "附加 TX 配置文件";
             // 
             // btnTXProfileDefImport
             // 
@@ -41112,8 +41005,8 @@
             this.btnTXProfileDefImport.Selectable = true;
             this.btnTXProfileDefImport.Size = new System.Drawing.Size(64, 24);
             this.btnTXProfileDefImport.TabIndex = 54;
-            this.btnTXProfileDefImport.Text = "Include";
-            this.toolTip1.SetToolTip(this.btnTXProfileDefImport, "Include the selected profile from the above list into my own list of profiles.");
+            this.btnTXProfileDefImport.Text = "包含";
+            this.toolTip1.SetToolTip(this.btnTXProfileDefImport, "将上方列表中选择的配置文件包含到自己的配置文件列表中。");
             this.btnTXProfileDefImport.Click += new System.EventHandler(this.btnTXProfileDefImport_Click);
             // 
             // lstTXProfileDef
@@ -41141,7 +41034,7 @@
             this.lblTXAMCarrierLevel.Name = "lblTXAMCarrierLevel";
             this.lblTXAMCarrierLevel.Size = new System.Drawing.Size(77, 16);
             this.lblTXAMCarrierLevel.TabIndex = 5;
-            this.lblTXAMCarrierLevel.Text = "Carrier Level:";
+            this.lblTXAMCarrierLevel.Text = "载波电平:";
             // 
             // udTXAMCarrierLevel
             // 
@@ -41166,7 +41059,7 @@
             this.udTXAMCarrierLevel.Size = new System.Drawing.Size(56, 20);
             this.udTXAMCarrierLevel.TabIndex = 4;
             this.udTXAMCarrierLevel.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udTXAMCarrierLevel, "Adjusts the carrier level on AM (pecentage of full 1/4 carrier) .");
+            this.toolTip1.SetToolTip(this.udTXAMCarrierLevel, "调整 AM 载波电平（占 1/4 满载波的百分比）。");
             this.udTXAMCarrierLevel.Value = new decimal(new int[] {
             100,
             0,
@@ -41185,7 +41078,7 @@
             this.grpTXMonitor.Size = new System.Drawing.Size(180, 80);
             this.grpTXMonitor.TabIndex = 51;
             this.grpTXMonitor.TabStop = false;
-            this.grpTXMonitor.Text = "Monitor";
+            this.grpTXMonitor.Text = "监听";
             // 
             // chkIgnoreMasterAFChangeForMonitor
             // 
@@ -41195,8 +41088,8 @@
             this.chkIgnoreMasterAFChangeForMonitor.Name = "chkIgnoreMasterAFChangeForMonitor";
             this.chkIgnoreMasterAFChangeForMonitor.Size = new System.Drawing.Size(147, 17);
             this.chkIgnoreMasterAFChangeForMonitor.TabIndex = 6;
-            this.chkIgnoreMasterAFChangeForMonitor.Text = "Ignore Master AF Change";
-            this.toolTip1.SetToolTip(this.chkIgnoreMasterAFChangeForMonitor, "Changes made to MasterAF when in MOX are not applied to TX AF");
+            this.chkIgnoreMasterAFChangeForMonitor.Text = "忽略主 AF 更改";
+            this.toolTip1.SetToolTip(this.chkIgnoreMasterAFChangeForMonitor, "MOX 状态下对主 AF 的更改不应用于 TX AF");
             this.chkIgnoreMasterAFChangeForMonitor.UseVisualStyleBackColor = true;
             this.chkIgnoreMasterAFChangeForMonitor.CheckedChanged += new System.EventHandler(this.chkIgnoreMasterAFChangeForMonitor_CheckedChanged);
             // 
@@ -41231,7 +41124,7 @@
             this.udTXAF.Size = new System.Drawing.Size(48, 20);
             this.udTXAF.TabIndex = 4;
             this.udTXAF.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udTXAF, "AF value to use when in TX mode (with the Delta 44 only).");
+            this.toolTip1.SetToolTip(this.udTXAF, "TX 模式使用的 AF 值（仅限 Delta 44）。");
             this.udTXAF.Value = new decimal(new int[] {
             50,
             0,
@@ -41250,7 +41143,7 @@
             this.grpTXProfile.Size = new System.Drawing.Size(143, 75);
             this.grpTXProfile.TabIndex = 23;
             this.grpTXProfile.TabStop = false;
-            this.grpTXProfile.Text = "Profiles";
+            this.grpTXProfile.Text = "配置文件";
             // 
             // btnTXProfileDelete
             // 
@@ -41260,8 +41153,8 @@
             this.btnTXProfileDelete.Selectable = true;
             this.btnTXProfileDelete.Size = new System.Drawing.Size(48, 21);
             this.btnTXProfileDelete.TabIndex = 2;
-            this.btnTXProfileDelete.Text = "Delete";
-            this.toolTip1.SetToolTip(this.btnTXProfileDelete, "Click to delete the currently selected TX Profile.");
+            this.btnTXProfileDelete.Text = "删除";
+            this.toolTip1.SetToolTip(this.btnTXProfileDelete, "点击删除当前选中的 TX 配置文件。");
             this.btnTXProfileDelete.Click += new System.EventHandler(this.btnTXProfileDelete_Click);
             // 
             // btnTXProfileSave
@@ -41272,8 +41165,8 @@
             this.btnTXProfileSave.Selectable = true;
             this.btnTXProfileSave.Size = new System.Drawing.Size(48, 21);
             this.btnTXProfileSave.TabIndex = 1;
-            this.btnTXProfileSave.Text = "Save";
-            this.toolTip1.SetToolTip(this.btnTXProfileSave, "Click to save the current settings to a TX Profile.");
+            this.btnTXProfileSave.Text = "保存";
+            this.toolTip1.SetToolTip(this.btnTXProfileSave, "点击将当前设置保存到 TX 配置文件。");
             this.btnTXProfileSave.Click += new System.EventHandler(this.btnTXProfileSave_Click);
             // 
             // comboTXProfileName
@@ -41284,7 +41177,7 @@
             this.comboTXProfileName.Name = "comboTXProfileName";
             this.comboTXProfileName.Size = new System.Drawing.Size(104, 21);
             this.comboTXProfileName.TabIndex = 0;
-            this.toolTip1.SetToolTip(this.comboTXProfileName, "Sets the current Transmit Profile to be used.");
+            this.toolTip1.SetToolTip(this.comboTXProfileName, "设置要使用的当前发射配置文件。");
             this.comboTXProfileName.SelectedIndexChanged += new System.EventHandler(this.comboTXProfileName_SelectedIndexChanged);
             // 
             // grpPATune
@@ -41300,7 +41193,7 @@
             this.grpPATune.Size = new System.Drawing.Size(143, 151);
             this.grpPATune.TabIndex = 22;
             this.grpPATune.TabStop = false;
-            this.grpPATune.Text = "Tune";
+            this.grpPATune.Text = "调谐";
             // 
             // radUseFixedDriveTune
             // 
@@ -41311,7 +41204,7 @@
             this.radUseFixedDriveTune.Size = new System.Drawing.Size(100, 17);
             this.radUseFixedDriveTune.TabIndex = 12;
             this.radUseFixedDriveTune.TabStop = true;
-            this.radUseFixedDriveTune.Text = "Use Fixed Drive";
+            this.radUseFixedDriveTune.Text = "使用固定驱动";
             this.radUseFixedDriveTune.UseVisualStyleBackColor = true;
             this.radUseFixedDriveTune.CheckedChanged += new System.EventHandler(this.radUseFixedDriveTune_CheckedChanged);
             // 
@@ -41324,7 +41217,7 @@
             this.radUseDriveSliderTune.Size = new System.Drawing.Size(101, 17);
             this.radUseDriveSliderTune.TabIndex = 11;
             this.radUseDriveSliderTune.TabStop = true;
-            this.radUseDriveSliderTune.Text = "Use Drive Slider";
+            this.radUseDriveSliderTune.Text = "使用驱动滑块";
             this.radUseDriveSliderTune.UseVisualStyleBackColor = true;
             this.radUseDriveSliderTune.CheckedChanged += new System.EventHandler(this.radUseDriveSliderTune_CheckedChanged);
             // 
@@ -41337,7 +41230,7 @@
             this.radUseTuneSliderTune.Size = new System.Drawing.Size(101, 17);
             this.radUseTuneSliderTune.TabIndex = 10;
             this.radUseTuneSliderTune.TabStop = true;
-            this.radUseTuneSliderTune.Text = "Use Tune Slider";
+            this.radUseTuneSliderTune.Text = "使用调谐滑块";
             this.radUseTuneSliderTune.UseVisualStyleBackColor = true;
             this.radUseTuneSliderTune.CheckedChanged += new System.EventHandler(this.radUseTuneSliderTune_CheckedChanged);
             // 
@@ -41356,7 +41249,7 @@
             this.comboTXTUNMeter.Name = "comboTXTUNMeter";
             this.comboTXTUNMeter.Size = new System.Drawing.Size(73, 21);
             this.comboTXTUNMeter.TabIndex = 9;
-            this.toolTip1.SetToolTip(this.comboTXTUNMeter, "Sets the current Transmit Profile to be used.");
+            this.toolTip1.SetToolTip(this.comboTXTUNMeter, "设置要使用的当前发射配置文件。");
             this.comboTXTUNMeter.SelectedIndexChanged += new System.EventHandler(this.comboTXTUNMeter_SelectedIndexChanged);
             // 
             // lblTXTUNMeter
@@ -41366,7 +41259,7 @@
             this.lblTXTUNMeter.Name = "lblTXTUNMeter";
             this.lblTXTUNMeter.Size = new System.Drawing.Size(56, 24);
             this.lblTXTUNMeter.TabIndex = 8;
-            this.lblTXTUNMeter.Text = "TX Meter:";
+            this.lblTXTUNMeter.Text = "TX 仪表:";
             this.lblTXTUNMeter.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // udTXTunePower
@@ -41391,7 +41284,7 @@
             this.udTXTunePower.Size = new System.Drawing.Size(48, 20);
             this.udTXTunePower.TabIndex = 4;
             this.udTXTunePower.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udTXTunePower, "Power used when using the TUN button on the front panel.");
+            this.toolTip1.SetToolTip(this.udTXTunePower, "使用前面板 TUN 按钮时的功率。");
             this.udTXTunePower.Value = new decimal(new int[] {
             0,
             0,
@@ -41411,7 +41304,7 @@
             this.grpTXFilter.Size = new System.Drawing.Size(128, 75);
             this.grpTXFilter.TabIndex = 19;
             this.grpTXFilter.TabStop = false;
-            this.grpTXFilter.Text = "Transmit Filter";
+            this.grpTXFilter.Text = "发射滤波器";
             // 
             // lblTXFilterHigh
             // 
@@ -41420,7 +41313,7 @@
             this.lblTXFilterHigh.Name = "lblTXFilterHigh";
             this.lblTXFilterHigh.Size = new System.Drawing.Size(40, 23);
             this.lblTXFilterHigh.TabIndex = 3;
-            this.lblTXFilterHigh.Text = "High:";
+            this.lblTXFilterHigh.Text = "高:";
             // 
             // udTXFilterLow
             // 
@@ -41444,7 +41337,7 @@
             this.udTXFilterLow.Size = new System.Drawing.Size(56, 20);
             this.udTXFilterLow.TabIndex = 2;
             this.udTXFilterLow.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udTXFilterLow, "Low Frequency TX Filter Cutoff");
+            this.toolTip1.SetToolTip(this.udTXFilterLow, "发射滤波器低频截止");
             this.udTXFilterLow.Value = new decimal(new int[] {
             100,
             0,
@@ -41460,7 +41353,7 @@
             this.lblTXFilterLow.Name = "lblTXFilterLow";
             this.lblTXFilterLow.Size = new System.Drawing.Size(40, 23);
             this.lblTXFilterLow.TabIndex = 1;
-            this.lblTXFilterLow.Text = "Low:";
+            this.lblTXFilterLow.Text = "低:";
             // 
             // udTXFilterHigh
             // 
@@ -41484,7 +41377,7 @@
             this.udTXFilterHigh.Size = new System.Drawing.Size(56, 20);
             this.udTXFilterHigh.TabIndex = 0;
             this.udTXFilterHigh.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udTXFilterHigh, "High Frequency TX Filter Cutoff");
+            this.toolTip1.SetToolTip(this.udTXFilterHigh, "发射滤波器高频截止");
             this.udTXFilterHigh.Value = new decimal(new int[] {
             3000,
             0,
@@ -41500,7 +41393,7 @@
             this.tpPowerAmplifier.Name = "tpPowerAmplifier";
             this.tpPowerAmplifier.Size = new System.Drawing.Size(728, 436);
             this.tpPowerAmplifier.TabIndex = 8;
-            this.tpPowerAmplifier.Text = "PA Settings";
+            this.tpPowerAmplifier.Text = "PA 设置";
             // 
             // tcPowerAmplifier
             // 
@@ -41524,7 +41417,7 @@
             this.tpGainByBand.Padding = new System.Windows.Forms.Padding(3);
             this.tpGainByBand.Size = new System.Drawing.Size(724, 413);
             this.tpGainByBand.TabIndex = 0;
-            this.tpGainByBand.Text = "PA Gain";
+            this.tpGainByBand.Text = "PA 增益";
             // 
             // chkPANewCal
             // 
@@ -41534,7 +41427,7 @@
             this.chkPANewCal.Name = "chkPANewCal";
             this.chkPANewCal.Size = new System.Drawing.Size(63, 17);
             this.chkPANewCal.TabIndex = 120;
-            this.chkPANewCal.Text = "NewCal";
+            this.chkPANewCal.Text = "新建校准";
             this.chkPANewCal.UseVisualStyleBackColor = true;
             this.chkPANewCal.Visible = false;
             this.chkPANewCal.CheckedChanged += new System.EventHandler(this.chkPANewCal_CheckedChanged);
@@ -41603,7 +41496,7 @@
             this.grpGainByBandPA.Size = new System.Drawing.Size(540, 389);
             this.grpGainByBandPA.TabIndex = 119;
             this.grpGainByBandPA.TabStop = false;
-            this.grpGainByBandPA.Text = "PA Gain By Band (dB)";
+            this.grpGainByBandPA.Text = "PA 增益按波段 (dB)";
             // 
             // panelTS1
             // 
@@ -41626,8 +41519,8 @@
             this.chkUsePowerOnDrvTunPA.Name = "chkUsePowerOnDrvTunPA";
             this.chkUsePowerOnDrvTunPA.Size = new System.Drawing.Size(111, 39);
             this.chkUsePowerOnDrvTunPA.TabIndex = 127;
-            this.chkUsePowerOnDrvTunPA.Text = "Use watts on Drive/Tune slider";
-            this.toolTip1.SetToolTip(this.chkUsePowerOnDrvTunPA, "Use watts on the drive/tune sliders. Requires a max 100% value to be assigned.");
+            this.chkUsePowerOnDrvTunPA.Text = "驱动/调谐滑块使用瓦特";
+            this.toolTip1.SetToolTip(this.chkUsePowerOnDrvTunPA, "驱动/调谐滑块使用瓦特。需要指定最大 100% 值。");
             this.chkUsePowerOnDrvTunPA.UseVisualStyleBackColor = true;
             this.chkUsePowerOnDrvTunPA.CheckedChanged += new System.EventHandler(this.chkUsePowerOnDrvTunPA_CheckedChanged);
             // 
@@ -41640,7 +41533,7 @@
             this.labelTS165.Name = "labelTS165";
             this.labelTS165.Size = new System.Drawing.Size(32, 13);
             this.labelTS165.TabIndex = 126;
-            this.labelTS165.Text = "watts";
+            this.labelTS165.Text = "瓦特";
             // 
             // nudMaxPowerForBandPA
             // 
@@ -41666,7 +41559,7 @@
             this.nudMaxPowerForBandPA.Size = new System.Drawing.Size(61, 20);
             this.nudMaxPowerForBandPA.TabIndex = 125;
             this.nudMaxPowerForBandPA.TinyStep = true;
-            this.toolTip1.SetToolTip(this.nudMaxPowerForBandPA, "If this is non zero, it can be used for the Drive/Tune sliders");
+            this.toolTip1.SetToolTip(this.nudMaxPowerForBandPA, "若非零，可用于驱动/调谐滑块");
             this.nudMaxPowerForBandPA.Value = new decimal(new int[] {
             1500,
             0,
@@ -41682,7 +41575,7 @@
             this.lblMaxPowerForBandPA.Name = "lblMaxPowerForBandPA";
             this.lblMaxPowerForBandPA.Size = new System.Drawing.Size(244, 18);
             this.lblMaxPowerForBandPA.TabIndex = 0;
-            this.lblMaxPowerForBandPA.Text = "Actual Power @ 100% slider:      ";
+            this.lblMaxPowerForBandPA.Text = "100% 滑块处实际功率:      ";
             this.lblMaxPowerForBandPA.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // panelAdjustGain
@@ -41722,7 +41615,7 @@
             this.lblDriveHeader.Name = "lblDriveHeader";
             this.lblDriveHeader.Size = new System.Drawing.Size(56, 13);
             this.lblDriveHeader.TabIndex = 161;
-            this.lblDriveHeader.Text = "Drive";
+            this.lblDriveHeader.Text = "驱动";
             this.lblDriveHeader.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblAdjustBand
@@ -41732,7 +41625,7 @@
             this.lblAdjustBand.Name = "lblAdjustBand";
             this.lblAdjustBand.Size = new System.Drawing.Size(123, 15);
             this.lblAdjustBand.TabIndex = 160;
-            this.lblAdjustBand.Text = "Offset for:";
+            this.lblAdjustBand.Text = "偏移对象:";
             this.lblAdjustBand.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblPAAdjust90
@@ -42112,8 +42005,8 @@
             this.btnCopyPAProfile.Selectable = true;
             this.btnCopyPAProfile.Size = new System.Drawing.Size(65, 23);
             this.btnCopyPAProfile.TabIndex = 166;
-            this.btnCopyPAProfile.Text = "Copy";
-            this.toolTip1.SetToolTip(this.btnCopyPAProfile, "Copy a profile to a new name");
+            this.btnCopyPAProfile.Text = "复制";
+            this.toolTip1.SetToolTip(this.btnCopyPAProfile, "将配置文件复制为新名称");
             this.btnCopyPAProfile.UseVisualStyleBackColor = true;
             this.btnCopyPAProfile.Click += new System.EventHandler(this.btnCopyPAProfile_Click);
             // 
@@ -42125,7 +42018,7 @@
             this.btnNewPAProfile.Selectable = true;
             this.btnNewPAProfile.Size = new System.Drawing.Size(65, 23);
             this.btnNewPAProfile.TabIndex = 165;
-            this.btnNewPAProfile.Text = "New";
+            this.btnNewPAProfile.Text = "新建";
             this.btnNewPAProfile.UseVisualStyleBackColor = true;
             this.btnNewPAProfile.Click += new System.EventHandler(this.btnNewPAProfile_Click);
             // 
@@ -43162,7 +43055,7 @@
             this.btnResetPAProfile.Selectable = true;
             this.btnResetPAProfile.Size = new System.Drawing.Size(90, 52);
             this.btnResetPAProfile.TabIndex = 2;
-            this.btnResetPAProfile.Text = "Reset To Defaults";
+            this.btnResetPAProfile.Text = "重置为默认值";
             this.btnResetPAProfile.UseVisualStyleBackColor = true;
             this.btnResetPAProfile.Click += new System.EventHandler(this.btnResetPAProfile_Click);
             // 
@@ -43174,7 +43067,7 @@
             this.btnDeletePAProfile.Selectable = true;
             this.btnDeletePAProfile.Size = new System.Drawing.Size(65, 23);
             this.btnDeletePAProfile.TabIndex = 1;
-            this.btnDeletePAProfile.Text = "Delete";
+            this.btnDeletePAProfile.Text = "删除";
             this.btnDeletePAProfile.UseVisualStyleBackColor = true;
             this.btnDeletePAProfile.Click += new System.EventHandler(this.btnDeletePAProfile_Click);
             // 
@@ -43195,7 +43088,7 @@
             this.chkAutoPACalibrate.Name = "chkAutoPACalibrate";
             this.chkAutoPACalibrate.Size = new System.Drawing.Size(120, 32);
             this.chkAutoPACalibrate.TabIndex = 116;
-            this.chkAutoPACalibrate.Text = "Use Advanced Calibration Routine";
+            this.chkAutoPACalibrate.Text = "使用高级校准程序";
             this.chkAutoPACalibrate.CheckedChanged += new System.EventHandler(this.chkAutoPACalibrate_CheckedChanged);
             // 
             // panelAutoPACalibrate
@@ -43243,7 +43136,7 @@
             this.btnPAGainCalibration.Selectable = true;
             this.btnPAGainCalibration.Size = new System.Drawing.Size(64, 23);
             this.btnPAGainCalibration.TabIndex = 20;
-            this.btnPAGainCalibration.Text = "Calibrate";
+            this.btnPAGainCalibration.Text = "校准";
             this.btnPAGainCalibration.Click += new System.EventHandler(this.btnPAGainCalibration_Click);
             // 
             // lblPACalTarget
@@ -43254,7 +43147,7 @@
             this.lblPACalTarget.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblPACalTarget.Size = new System.Drawing.Size(64, 16);
             this.lblPACalTarget.TabIndex = 34;
-            this.lblPACalTarget.Text = "Cal Target:";
+            this.lblPACalTarget.Text = "校准目标:";
             this.lblPACalTarget.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // udPACalPower
@@ -43294,7 +43187,7 @@
             this.radPACalAllBands.Size = new System.Drawing.Size(72, 16);
             this.radPACalAllBands.TabIndex = 22;
             this.radPACalAllBands.TabStop = true;
-            this.radPACalAllBands.Text = "All Bands";
+            this.radPACalAllBands.Text = "所有波段";
             this.radPACalAllBands.CheckedChanged += new System.EventHandler(this.radPACalAllBands_CheckedChanged);
             // 
             // radPACalSelBands
@@ -43304,7 +43197,7 @@
             this.radPACalSelBands.Name = "radPACalSelBands";
             this.radPACalSelBands.Size = new System.Drawing.Size(120, 32);
             this.radPACalSelBands.TabIndex = 23;
-            this.radPACalSelBands.Text = "Selected Bands (checked below)";
+            this.radPACalSelBands.Text = "已选波段（下方勾选）";
             // 
             // chkPA160
             // 
@@ -43419,7 +43312,7 @@
             this.tpWattMeter.Padding = new System.Windows.Forms.Padding(3);
             this.tpWattMeter.Size = new System.Drawing.Size(724, 413);
             this.tpWattMeter.TabIndex = 1;
-            this.tpWattMeter.Text = "Watt Meter";
+            this.tpWattMeter.Text = "瓦特表";
             // 
             // richTextBox1
             // 
@@ -43466,7 +43359,7 @@
             this.grp10WattMeterTrim.Size = new System.Drawing.Size(249, 231);
             this.grp10WattMeterTrim.TabIndex = 23;
             this.grp10WattMeterTrim.TabStop = false;
-            this.grp10WattMeterTrim.Text = "10 Watt Meter Trim";
+            this.grp10WattMeterTrim.Text = "10 瓦功率表校准";
             // 
             // btnResetWattMeterValues
             // 
@@ -43476,8 +43369,8 @@
             this.btnResetWattMeterValues.Selectable = true;
             this.btnResetWattMeterValues.Size = new System.Drawing.Size(50, 23);
             this.btnResetWattMeterValues.TabIndex = 6;
-            this.btnResetWattMeterValues.Text = "Reset";
-            this.toolTip1.SetToolTip(this.btnResetWattMeterValues, "Reset trim values to default.");
+            this.btnResetWattMeterValues.Text = "复位";
+            this.toolTip1.SetToolTip(this.btnResetWattMeterValues, "将微调值重置为默认。");
             this.btnResetWattMeterValues.UseVisualStyleBackColor = true;
             this.btnResetWattMeterValues.Click += new System.EventHandler(this.btnResetWattMeterValues_Click);
             // 
@@ -44080,7 +43973,7 @@
             this.grp100WattMeterTrim.Size = new System.Drawing.Size(249, 198);
             this.grp100WattMeterTrim.TabIndex = 0;
             this.grp100WattMeterTrim.TabStop = false;
-            this.grp100WattMeterTrim.Text = "100 Watt Meter Trim";
+            this.grp100WattMeterTrim.Text = "100 瓦功率表校准";
             // 
             // ud100PA10W
             // 
@@ -44685,7 +44578,7 @@
             this.grp200WattMeterTrim.Size = new System.Drawing.Size(249, 198);
             this.grp200WattMeterTrim.TabIndex = 7;
             this.grp200WattMeterTrim.TabStop = false;
-            this.grp200WattMeterTrim.Text = "200 Watt Meter Trim";
+            this.grp200WattMeterTrim.Text = "200 瓦功率表校准";
             // 
             // ud200PA20W
             // 
@@ -45329,7 +45222,7 @@
             this.labelTS255.Name = "labelTS255";
             this.labelTS255.Size = new System.Drawing.Size(93, 16);
             this.labelTS255.TabIndex = 186;
-            this.labelTS255.Text = "Cal\'d Fwd Power";
+            this.labelTS255.Text = "校准后正向功率";
             this.labelTS255.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btnResetPAValues
@@ -45340,8 +45233,8 @@
             this.btnResetPAValues.Selectable = true;
             this.btnResetPAValues.Size = new System.Drawing.Size(50, 23);
             this.btnResetPAValues.TabIndex = 5;
-            this.btnResetPAValues.Text = "Reset";
-            this.toolTip1.SetToolTip(this.btnResetPAValues, "Clears all text boxes.");
+            this.btnResetPAValues.Text = "复位";
+            this.toolTip1.SetToolTip(this.btnResetPAValues, "清除所有文本框。");
             this.btnResetPAValues.UseVisualStyleBackColor = true;
             this.btnResetPAValues.Click += new System.EventHandler(this.btnResetPAValues_Click);
             // 
@@ -45353,7 +45246,7 @@
             this.labelTS254.Name = "labelTS254";
             this.labelTS254.Size = new System.Drawing.Size(92, 16);
             this.labelTS254.TabIndex = 180;
-            this.labelTS254.Text = "DC Voltage";
+            this.labelTS254.Text = "直流电压";
             this.labelTS254.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.labelTS254.Visible = false;
             // 
@@ -45377,7 +45270,7 @@
             this.labelTS276.Name = "labelTS276";
             this.labelTS276.Size = new System.Drawing.Size(93, 16);
             this.labelTS276.TabIndex = 178;
-            this.labelTS276.Text = "Rev ADC Value";
+            this.labelTS276.Text = "反向 ADC 值";
             this.labelTS276.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelTS271
@@ -45388,7 +45281,7 @@
             this.labelTS271.Name = "labelTS271";
             this.labelTS271.Size = new System.Drawing.Size(93, 16);
             this.labelTS271.TabIndex = 172;
-            this.labelTS271.Text = "Fwd ADC Value";
+            this.labelTS271.Text = "正向 ADC 值";
             this.labelTS271.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // textPAFwdPower
@@ -45443,7 +45336,7 @@
             this.labelTS275.Name = "labelTS275";
             this.labelTS275.Size = new System.Drawing.Size(93, 16);
             this.labelTS275.TabIndex = 176;
-            this.labelTS275.Text = "Drive ADC Value";
+            this.labelTS275.Text = "驱动 ADC 值";
             this.labelTS275.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelTS274
@@ -45454,7 +45347,7 @@
             this.labelTS274.Name = "labelTS274";
             this.labelTS274.Size = new System.Drawing.Size(81, 16);
             this.labelTS274.TabIndex = 166;
-            this.labelTS274.Text = "Drive Power";
+            this.labelTS274.Text = "驱动功率";
             this.labelTS274.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelTS273
@@ -45465,7 +45358,7 @@
             this.labelTS273.Name = "labelTS273";
             this.labelTS273.Size = new System.Drawing.Size(93, 16);
             this.labelTS273.TabIndex = 167;
-            this.labelTS273.Text = "PA Fwd Power";
+            this.labelTS273.Text = "PA 正向功率";
             this.labelTS273.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // textDriveFwdADCValue
@@ -45487,7 +45380,7 @@
             this.labelTS272.Name = "labelTS272";
             this.labelTS272.Size = new System.Drawing.Size(93, 16);
             this.labelTS272.TabIndex = 168;
-            this.labelTS272.Text = "PA Rev Power";
+            this.labelTS272.Text = "PA 反向功率";
             this.labelTS272.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // textFwdADCValue
@@ -45509,7 +45402,7 @@
             this.labelTS269.Name = "labelTS269";
             this.labelTS269.Size = new System.Drawing.Size(93, 16);
             this.labelTS269.TabIndex = 174;
-            this.labelTS269.Text = "Rev Voltage";
+            this.labelTS269.Text = "反向电压";
             this.labelTS269.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // textFwdVoltage
@@ -45542,7 +45435,7 @@
             this.labelTS270.Name = "labelTS270";
             this.labelTS270.Size = new System.Drawing.Size(93, 16);
             this.labelTS270.TabIndex = 173;
-            this.labelTS270.Text = "Fwd Voltage";
+            this.labelTS270.Text = "正向电压";
             this.labelTS270.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // chkPAValues
@@ -45554,8 +45447,8 @@
             this.chkPAValues.Name = "chkPAValues";
             this.chkPAValues.Size = new System.Drawing.Size(66, 23);
             this.chkPAValues.TabIndex = 1;
-            this.chkPAValues.Text = "PA Values";
-            this.toolTip1.SetToolTip(this.chkPAValues, "Show PA power and voltage.");
+            this.chkPAValues.Text = "PA 数值";
+            this.toolTip1.SetToolTip(this.chkPAValues, "显示 PA 功率和电压。");
             this.chkPAValues.UseVisualStyleBackColor = true;
             this.chkPAValues.CheckedChanged += new System.EventHandler(this.chkPAValues_CheckedChanged);
             // 
@@ -45566,7 +45459,7 @@
             this.tpAppearance.Name = "tpAppearance";
             this.tpAppearance.Size = new System.Drawing.Size(728, 436);
             this.tpAppearance.TabIndex = 6;
-            this.tpAppearance.Text = "Appearance";
+            this.tpAppearance.Text = "外观";
             // 
             // tcAppearance
             // 
@@ -45602,7 +45495,7 @@
             this.tpAppearanceGeneral.Name = "tpAppearanceGeneral";
             this.tpAppearanceGeneral.Size = new System.Drawing.Size(724, 410);
             this.tpAppearanceGeneral.TabIndex = 0;
-            this.tpAppearanceGeneral.Text = "General";
+            this.tpAppearanceGeneral.Text = "常规";
             // 
             // chkConsoleDarkModeTitleBar
             // 
@@ -45612,8 +45505,8 @@
             this.chkConsoleDarkModeTitleBar.Name = "chkConsoleDarkModeTitleBar";
             this.chkConsoleDarkModeTitleBar.Size = new System.Drawing.Size(156, 17);
             this.chkConsoleDarkModeTitleBar.TabIndex = 92;
-            this.chkConsoleDarkModeTitleBar.Text = "Dark mode Console title bar";
-            this.toolTip1.SetToolTip(this.chkConsoleDarkModeTitleBar, "Dark mode Console title bar (only on Windows 10 and later)");
+            this.chkConsoleDarkModeTitleBar.Text = "深色模式控制台标题栏";
+            this.toolTip1.SetToolTip(this.chkConsoleDarkModeTitleBar, "深色模式控制台标题栏（仅限 Windows 10 及更高版本）");
             this.chkConsoleDarkModeTitleBar.UseVisualStyleBackColor = true;
             this.chkConsoleDarkModeTitleBar.Visible = false;
             this.chkConsoleDarkModeTitleBar.CheckedChanged += new System.EventHandler(this.chkConsoleDarkModeTitleBar_CheckedChanged);
@@ -45625,7 +45518,7 @@
             this.labelTS8.Name = "labelTS8";
             this.labelTS8.Size = new System.Drawing.Size(86, 23);
             this.labelTS8.TabIndex = 91;
-            this.labelTS8.Text = "Slider Limit Bar:";
+            this.labelTS8.Text = "滑块限幅条:";
             this.labelTS8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // clrbtnSliderLimitBar
@@ -45639,7 +45532,7 @@
             this.clrbtnSliderLimitBar.Selectable = true;
             this.clrbtnSliderLimitBar.Size = new System.Drawing.Size(40, 23);
             this.clrbtnSliderLimitBar.TabIndex = 90;
-            this.toolTip1.SetToolTip(this.clrbtnSliderLimitBar, "Colour of the Limit bar area in the Drive/Tune sliders");
+            this.toolTip1.SetToolTip(this.clrbtnSliderLimitBar, "驱动/调谐滑块中限幅条区域的颜色");
             this.clrbtnSliderLimitBar.Changed += new System.EventHandler(this.clrbtnSliderLimitBar_Changed);
             // 
             // groupBoxTS12
@@ -45653,7 +45546,7 @@
             this.groupBoxTS12.Size = new System.Drawing.Size(144, 89);
             this.groupBoxTS12.TabIndex = 89;
             this.groupBoxTS12.TabStop = false;
-            this.groupBoxTS12.Text = "Status Bar";
+            this.groupBoxTS12.Text = "状态栏";
             // 
             // clrbtnStatusBarText
             // 
@@ -45675,7 +45568,7 @@
             this.nlblStatusBarTextColour.Name = "nlblStatusBarTextColour";
             this.nlblStatusBarTextColour.Size = new System.Drawing.Size(72, 23);
             this.nlblStatusBarTextColour.TabIndex = 76;
-            this.nlblStatusBarTextColour.Text = "Text:";
+            this.nlblStatusBarTextColour.Text = "文本:";
             this.nlblStatusBarTextColour.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // clrbtnStatusBarBackground
@@ -45698,7 +45591,7 @@
             this.nlblStatusBarBackground.Name = "nlblStatusBarBackground";
             this.nlblStatusBarBackground.Size = new System.Drawing.Size(72, 23);
             this.nlblStatusBarBackground.TabIndex = 74;
-            this.nlblStatusBarBackground.Text = "Background:";
+            this.nlblStatusBarBackground.Text = "背景:";
             this.nlblStatusBarBackground.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // chkEnableLEDFont
@@ -45709,8 +45602,8 @@
             this.chkEnableLEDFont.Name = "chkEnableLEDFont";
             this.chkEnableLEDFont.Size = new System.Drawing.Size(71, 17);
             this.chkEnableLEDFont.TabIndex = 88;
-            this.chkEnableLEDFont.Text = "LED Font";
-            this.toolTip1.SetToolTip(this.chkEnableLEDFont, "Use 7-segment LED fonts for VFO and Meter displays.");
+            this.chkEnableLEDFont.Text = "LED 字体";
+            this.toolTip1.SetToolTip(this.chkEnableLEDFont, "VFO 和仪表显示使用 7 段 LED 字体。");
             this.chkEnableLEDFont.UseVisualStyleBackColor = true;
             this.chkEnableLEDFont.CheckedChanged += new System.EventHandler(this.chkEnableLEDFont_CheckedChanged);
             // 
@@ -45722,7 +45615,7 @@
             this.btnSkinExport.Selectable = true;
             this.btnSkinExport.Size = new System.Drawing.Size(51, 23);
             this.btnSkinExport.TabIndex = 86;
-            this.btnSkinExport.Text = "Export";
+            this.btnSkinExport.Text = "导出";
             this.btnSkinExport.UseVisualStyleBackColor = true;
             this.btnSkinExport.Visible = false;
             this.btnSkinExport.Click += new System.EventHandler(this.btnSkinExport_Click);
@@ -45736,7 +45629,7 @@
             this.grpAppSkins.Size = new System.Drawing.Size(128, 77);
             this.grpAppSkins.TabIndex = 85;
             this.grpAppSkins.TabStop = false;
-            this.grpAppSkins.Text = "Skins";
+            this.grpAppSkins.Text = "皮肤";
             // 
             // chkDisablePicDisplayBackgroundImage
             // 
@@ -45746,8 +45639,8 @@
             this.chkDisablePicDisplayBackgroundImage.Name = "chkDisablePicDisplayBackgroundImage";
             this.chkDisablePicDisplayBackgroundImage.Size = new System.Drawing.Size(112, 17);
             this.chkDisablePicDisplayBackgroundImage.TabIndex = 90;
-            this.chkDisablePicDisplayBackgroundImage.Text = "Disable picDisplay";
-            this.toolTip1.SetToolTip(this.chkDisablePicDisplayBackgroundImage, "Disables picDisplay background image on pana/waterfall");
+            this.chkDisablePicDisplayBackgroundImage.Text = "禁用 picDisplay";
+            this.toolTip1.SetToolTip(this.chkDisablePicDisplayBackgroundImage, "在频谱/瀑布图上禁用 picDisplay 背景图像");
             this.chkDisablePicDisplayBackgroundImage.UseVisualStyleBackColor = true;
             this.chkDisablePicDisplayBackgroundImage.CheckedChanged += new System.EventHandler(this.chkDisablePicDisplayBackgroundImage_CheckedChanged);
             // 
@@ -45768,7 +45661,7 @@
             this.lblGenBackground.Name = "lblGenBackground";
             this.lblGenBackground.Size = new System.Drawing.Size(72, 32);
             this.lblGenBackground.TabIndex = 84;
-            this.lblGenBackground.Text = "Overall Background:";
+            this.lblGenBackground.Text = "整体背景:";
             this.lblGenBackground.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblGenBackground.Visible = false;
             // 
@@ -45801,7 +45694,7 @@
             this.grpAppearanceBand.Size = new System.Drawing.Size(144, 152);
             this.grpAppearanceBand.TabIndex = 74;
             this.grpAppearanceBand.TabStop = false;
-            this.grpAppearanceBand.Text = "Band Data";
+            this.grpAppearanceBand.Text = "波段数据";
             // 
             // clrbtnBandBackground
             // 
@@ -45823,7 +45716,7 @@
             this.lblBandBackground.Name = "lblBandBackground";
             this.lblBandBackground.Size = new System.Drawing.Size(72, 24);
             this.lblBandBackground.TabIndex = 74;
-            this.lblBandBackground.Text = "Background:";
+            this.lblBandBackground.Text = "背景:";
             // 
             // clrbtnBandLight
             // 
@@ -45858,7 +45751,7 @@
             this.lblBandLight.Name = "lblBandLight";
             this.lblBandLight.Size = new System.Drawing.Size(64, 24);
             this.lblBandLight.TabIndex = 63;
-            this.lblBandLight.Text = "Active:";
+            this.lblBandLight.Text = "激活:";
             // 
             // lblBandDark
             // 
@@ -45867,7 +45760,7 @@
             this.lblBandDark.Name = "lblBandDark";
             this.lblBandDark.Size = new System.Drawing.Size(64, 24);
             this.lblBandDark.TabIndex = 61;
-            this.lblBandDark.Text = "Inactive:";
+            this.lblBandDark.Text = "未激活:";
             // 
             // clrbtnOutOfBand
             // 
@@ -45889,7 +45782,7 @@
             this.lblOutOfBand.Name = "lblOutOfBand";
             this.lblOutOfBand.Size = new System.Drawing.Size(72, 24);
             this.lblOutOfBand.TabIndex = 72;
-            this.lblOutOfBand.Text = "Out Of Band:";
+            this.lblOutOfBand.Text = "带外:";
             // 
             // grpAppearanceVFO
             // 
@@ -45931,7 +45824,7 @@
             this.labelTS58.Name = "labelTS58";
             this.labelTS58.Size = new System.Drawing.Size(60, 23);
             this.labelTS58.TabIndex = 74;
-            this.labelTS58.Text = "Info Color:";
+            this.labelTS58.Text = "信息颜色:";
             // 
             // clrbtnVFOBackground
             // 
@@ -45953,7 +45846,7 @@
             this.lblVFOBackground.Name = "lblVFOBackground";
             this.lblVFOBackground.Size = new System.Drawing.Size(72, 24);
             this.lblVFOBackground.TabIndex = 72;
-            this.lblVFOBackground.Text = "Background:";
+            this.lblVFOBackground.Text = "背景:";
             // 
             // clrbtnVFOSmallColor
             // 
@@ -45975,7 +45868,7 @@
             this.lblVFOSmallColor.Name = "lblVFOSmallColor";
             this.lblVFOSmallColor.Size = new System.Drawing.Size(72, 24);
             this.lblVFOSmallColor.TabIndex = 70;
-            this.lblVFOSmallColor.Text = "Small Color:";
+            this.lblVFOSmallColor.Text = "小号颜色:";
             // 
             // chkVFOSmallLSD
             // 
@@ -45986,7 +45879,7 @@
             this.chkVFOSmallLSD.Name = "chkVFOSmallLSD";
             this.chkVFOSmallLSD.Size = new System.Drawing.Size(104, 24);
             this.chkVFOSmallLSD.TabIndex = 69;
-            this.chkVFOSmallLSD.Text = "Small 3 Digits";
+            this.chkVFOSmallLSD.Text = "小号 3 位数字";
             this.chkVFOSmallLSD.CheckedChanged += new System.EventHandler(this.chkVFOSmallLSD_CheckedChanged);
             // 
             // clrbtnVFOLight
@@ -46022,7 +45915,7 @@
             this.lblVFOPowerOn.Name = "lblVFOPowerOn";
             this.lblVFOPowerOn.Size = new System.Drawing.Size(64, 24);
             this.lblVFOPowerOn.TabIndex = 59;
-            this.lblVFOPowerOn.Text = "Active:";
+            this.lblVFOPowerOn.Text = "激活:";
             // 
             // lblVFOPowerOff
             // 
@@ -46031,7 +45924,7 @@
             this.lblVFOPowerOff.Name = "lblVFOPowerOff";
             this.lblVFOPowerOff.Size = new System.Drawing.Size(64, 24);
             this.lblVFOPowerOff.TabIndex = 57;
-            this.lblVFOPowerOff.Text = "Inactive:";
+            this.lblVFOPowerOff.Text = "未激活:";
             // 
             // clrbtnBtnSel
             // 
@@ -46053,7 +45946,7 @@
             this.lblAppearanceGenBtnSel.Name = "lblAppearanceGenBtnSel";
             this.lblAppearanceGenBtnSel.Size = new System.Drawing.Size(64, 32);
             this.lblAppearanceGenBtnSel.TabIndex = 55;
-            this.lblAppearanceGenBtnSel.Text = "Button Selected:";
+            this.lblAppearanceGenBtnSel.Text = "已选按钮:";
             // 
             // tpAppearanceDisplay
             // 
@@ -46069,7 +45962,7 @@
             this.tpAppearanceDisplay.Name = "tpAppearanceDisplay";
             this.tpAppearanceDisplay.Size = new System.Drawing.Size(724, 410);
             this.tpAppearanceDisplay.TabIndex = 1;
-            this.tpAppearanceDisplay.Text = "RX Display";
+            this.tpAppearanceDisplay.Text = "RX 显示";
             // 
             // groupBoxTS18
             // 
@@ -46084,7 +45977,7 @@
             this.groupBoxTS18.Size = new System.Drawing.Size(254, 97);
             this.groupBoxTS18.TabIndex = 97;
             this.groupBoxTS18.TabStop = false;
-            this.groupBoxTS18.Text = "Panadapter Noise Floor";
+            this.groupBoxTS18.Text = "频谱噪底";
             // 
             // chkNFShowDecimal
             // 
@@ -46094,8 +45987,8 @@
             this.chkNFShowDecimal.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.chkNFShowDecimal.Size = new System.Drawing.Size(96, 18);
             this.chkNFShowDecimal.TabIndex = 97;
-            this.chkNFShowDecimal.Text = "Show decimal";
-            this.toolTip1.SetToolTip(this.chkNFShowDecimal, "Show the dBm reading and heading line");
+            this.chkNFShowDecimal.Text = "显示小数";
+            this.toolTip1.SetToolTip(this.chkNFShowDecimal, "显示 dBm 读数和方位线");
             this.chkNFShowDecimal.CheckedChanged += new System.EventHandler(this.chkNFShowDecimal_CheckedChanged);
             // 
             // clrbtnNoiseFloor
@@ -46148,7 +46041,7 @@
             this.labelTS605.Name = "labelTS605";
             this.labelTS605.Size = new System.Drawing.Size(64, 20);
             this.labelTS605.TabIndex = 96;
-            this.labelTS605.Text = "Line Width:";
+            this.labelTS605.Text = "线宽:";
             this.labelTS605.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // labelTS604
@@ -46158,7 +46051,7 @@
             this.labelTS604.Name = "labelTS604";
             this.labelTS604.Size = new System.Drawing.Size(100, 23);
             this.labelTS604.TabIndex = 92;
-            this.labelTS604.Text = "Noise Floor Line:";
+            this.labelTS604.Text = "噪底线:";
             this.labelTS604.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // chkNoiseFloorShowDBM
@@ -46171,8 +46064,8 @@
             this.chkNoiseFloorShowDBM.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.chkNoiseFloorShowDBM.Size = new System.Drawing.Size(96, 18);
             this.chkNoiseFloorShowDBM.TabIndex = 94;
-            this.chkNoiseFloorShowDBM.Text = "Show dBm";
-            this.toolTip1.SetToolTip(this.chkNoiseFloorShowDBM, "Show the dBm reading and heading line");
+            this.chkNoiseFloorShowDBM.Text = "显示 dBm";
+            this.toolTip1.SetToolTip(this.chkNoiseFloorShowDBM, "显示 dBm 读数和方位线");
             this.chkNoiseFloorShowDBM.CheckedChanged += new System.EventHandler(this.chkNoiseFloorShowDBM_CheckedChanged);
             // 
             // chkPanadpatorGradient
@@ -46183,7 +46076,7 @@
             this.chkPanadpatorGradient.Name = "chkPanadpatorGradient";
             this.chkPanadpatorGradient.Size = new System.Drawing.Size(15, 14);
             this.chkPanadpatorGradient.TabIndex = 91;
-            this.toolTip1.SetToolTip(this.chkPanadpatorGradient, "Use gradient for data fill and dataline");
+            this.toolTip1.SetToolTip(this.chkPanadpatorGradient, "数据填充和数据线使用渐变");
             this.chkPanadpatorGradient.UseVisualStyleBackColor = true;
             this.chkPanadpatorGradient.CheckedChanged += new System.EventHandler(this.chkPanadpatorGradient_CheckedChanged);
             // 
@@ -46202,7 +46095,7 @@
             this.grpPanadaptorGradient.Size = new System.Drawing.Size(433, 91);
             this.grpPanadaptorGradient.TabIndex = 90;
             this.grpPanadaptorGradient.TabStop = false;
-            this.grpPanadaptorGradient.Text = "Panadaptor Gradient";
+            this.grpPanadaptorGradient.Text = "频谱渐变";
             // 
             // btnLoadGradient
             // 
@@ -46213,7 +46106,7 @@
             this.btnLoadGradient.Size = new System.Drawing.Size(31, 23);
             this.btnLoadGradient.TabIndex = 91;
             this.btnLoadGradient.Text = "L";
-            this.toolTip1.SetToolTip(this.btnLoadGradient, "Load a gradient");
+            this.toolTip1.SetToolTip(this.btnLoadGradient, "加载渐变");
             this.btnLoadGradient.Click += new System.EventHandler(this.btnLoadGradient_Click);
             // 
             // btnSaveGradient
@@ -46225,7 +46118,7 @@
             this.btnSaveGradient.Size = new System.Drawing.Size(31, 23);
             this.btnSaveGradient.TabIndex = 90;
             this.btnSaveGradient.Text = "S";
-            this.toolTip1.SetToolTip(this.btnSaveGradient, "Save a gradient");
+            this.toolTip1.SetToolTip(this.btnSaveGradient, "保存渐变");
             this.btnSaveGradient.Click += new System.EventHandler(this.btnSaveGradient_Click);
             // 
             // chkDataLineGradient
@@ -46235,8 +46128,8 @@
             this.chkDataLineGradient.Name = "chkDataLineGradient";
             this.chkDataLineGradient.Size = new System.Drawing.Size(82, 18);
             this.chkDataLineGradient.TabIndex = 89;
-            this.chkDataLineGradient.Text = "Data Line";
-            this.toolTip1.SetToolTip(this.chkDataLineGradient, "The data line is also uses the gradient if checked");
+            this.chkDataLineGradient.Text = "数据线";
+            this.toolTip1.SetToolTip(this.chkDataLineGradient, "勾选后数据线也使用渐变");
             this.chkDataLineGradient.CheckedChanged += new System.EventHandler(this.chkDataLineGradient_CheckedChanged);
             // 
             // btnDefaultGradient
@@ -46247,7 +46140,7 @@
             this.btnDefaultGradient.Selectable = true;
             this.btnDefaultGradient.Size = new System.Drawing.Size(64, 23);
             this.btnDefaultGradient.TabIndex = 88;
-            this.btnDefaultGradient.Text = "Default";
+            this.btnDefaultGradient.Text = "默认";
             this.btnDefaultGradient.Click += new System.EventHandler(this.btnDefaultGradient_Click);
             // 
             // clrbtnGripperColour
@@ -46288,7 +46181,7 @@
             this.btnDeleteColourGripper.Selectable = true;
             this.btnDeleteColourGripper.Size = new System.Drawing.Size(64, 23);
             this.btnDeleteColourGripper.TabIndex = 86;
-            this.btnDeleteColourGripper.Text = "Delete";
+            this.btnDeleteColourGripper.Text = "删除";
             this.btnDeleteColourGripper.Click += new System.EventHandler(this.btnDeleteColourGripper_Click);
             // 
             // btnClearColourGrippers
@@ -46299,7 +46192,7 @@
             this.btnClearColourGrippers.Selectable = true;
             this.btnClearColourGrippers.Size = new System.Drawing.Size(64, 23);
             this.btnClearColourGrippers.TabIndex = 24;
-            this.btnClearColourGrippers.Text = "Clear";
+            this.btnClearColourGrippers.Text = "清除";
             this.btnClearColourGrippers.Click += new System.EventHandler(this.btnClearColourGrippers_Click);
             // 
             // grpAppRXWaterfall
@@ -46312,7 +46205,7 @@
             this.grpAppRXWaterfall.Size = new System.Drawing.Size(132, 88);
             this.grpAppRXWaterfall.TabIndex = 84;
             this.grpAppRXWaterfall.TabStop = false;
-            this.grpAppRXWaterfall.Text = "Waterfall";
+            this.grpAppRXWaterfall.Text = "瀑布图";
             // 
             // chkShowTXFilterOnRXWaterfall
             // 
@@ -46322,7 +46215,7 @@
             this.chkShowTXFilterOnRXWaterfall.Name = "chkShowTXFilterOnRXWaterfall";
             this.chkShowTXFilterOnRXWaterfall.Size = new System.Drawing.Size(95, 17);
             this.chkShowTXFilterOnRXWaterfall.TabIndex = 2;
-            this.chkShowTXFilterOnRXWaterfall.Text = "Show TX Filter";
+            this.chkShowTXFilterOnRXWaterfall.Text = "显示 TX 滤波器";
             this.chkShowTXFilterOnRXWaterfall.UseVisualStyleBackColor = true;
             this.chkShowTXFilterOnRXWaterfall.CheckedChanged += new System.EventHandler(this.chkShowTXFilterOnRXWaterfall_CheckedChanged);
             // 
@@ -46334,7 +46227,7 @@
             this.chkShowRXZeroLineOnWaterfall.Name = "chkShowRXZeroLineOnWaterfall";
             this.chkShowRXZeroLineOnWaterfall.Size = new System.Drawing.Size(101, 17);
             this.chkShowRXZeroLineOnWaterfall.TabIndex = 1;
-            this.chkShowRXZeroLineOnWaterfall.Text = "Show Zero Line";
+            this.chkShowRXZeroLineOnWaterfall.Text = "显示零线";
             this.chkShowRXZeroLineOnWaterfall.UseVisualStyleBackColor = true;
             this.chkShowRXZeroLineOnWaterfall.CheckedChanged += new System.EventHandler(this.chkShowRXZeroLineOnWaterfall_CheckedChanged);
             // 
@@ -46346,7 +46239,7 @@
             this.chkShowRXFilterOnWaterfall.Name = "chkShowRXFilterOnWaterfall";
             this.chkShowRXFilterOnWaterfall.Size = new System.Drawing.Size(78, 17);
             this.chkShowRXFilterOnWaterfall.TabIndex = 0;
-            this.chkShowRXFilterOnWaterfall.Text = "Show Filter";
+            this.chkShowRXFilterOnWaterfall.Text = "显示滤波器";
             this.chkShowRXFilterOnWaterfall.UseVisualStyleBackColor = true;
             this.chkShowRXFilterOnWaterfall.CheckedChanged += new System.EventHandler(this.chkShowRXFilterOnWaterfall_CheckedChanged);
             // 
@@ -46407,7 +46300,7 @@
             this.lblHGrid.Name = "lblHGrid";
             this.lblHGrid.Size = new System.Drawing.Size(68, 20);
             this.lblHGrid.TabIndex = 86;
-            this.lblHGrid.Text = "H-Grid:";
+            this.lblHGrid.Text = "水平网格:";
             this.lblHGrid.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // tbGridFineAlpha
@@ -46466,7 +46359,7 @@
             this.lblGridFine.Name = "lblGridFine";
             this.lblGridFine.Size = new System.Drawing.Size(72, 20);
             this.lblGridFine.TabIndex = 74;
-            this.lblGridFine.Text = "V-Grid Fine:";
+            this.lblGridFine.Text = "垂直网格细调:";
             this.lblGridFine.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblDisplayGridColor
@@ -46476,7 +46369,7 @@
             this.lblDisplayGridColor.Name = "lblDisplayGridColor";
             this.lblDisplayGridColor.Size = new System.Drawing.Size(72, 20);
             this.lblDisplayGridColor.TabIndex = 35;
-            this.lblDisplayGridColor.Text = "V-Grid:";
+            this.lblDisplayGridColor.Text = "垂直网格:";
             this.lblDisplayGridColor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // clrbtnBackground
@@ -46512,7 +46405,7 @@
             this.lblDisplayBackgroundColor.Name = "lblDisplayBackgroundColor";
             this.lblDisplayBackgroundColor.Size = new System.Drawing.Size(72, 20);
             this.lblDisplayBackgroundColor.TabIndex = 34;
-            this.lblDisplayBackgroundColor.Text = "Background:";
+            this.lblDisplayBackgroundColor.Text = "背景:";
             this.lblDisplayBackgroundColor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // clrbtnZeroLine
@@ -46535,7 +46428,7 @@
             this.lblDisplayZeroLineColor.Name = "lblDisplayZeroLineColor";
             this.lblDisplayZeroLineColor.Size = new System.Drawing.Size(68, 20);
             this.lblDisplayZeroLineColor.TabIndex = 36;
-            this.lblDisplayZeroLineColor.Text = "Zero Line:";
+            this.lblDisplayZeroLineColor.Text = "零线:";
             this.lblDisplayZeroLineColor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // clrbtnText
@@ -46558,7 +46451,7 @@
             this.lblDisplayTextColor.Name = "lblDisplayTextColor";
             this.lblDisplayTextColor.Size = new System.Drawing.Size(68, 20);
             this.lblDisplayTextColor.TabIndex = 39;
-            this.lblDisplayTextColor.Text = "Text:";
+            this.lblDisplayTextColor.Text = "文本:";
             this.lblDisplayTextColor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // grpAppPanadapter
@@ -46600,7 +46493,7 @@
             this.grpAppPanadapter.Size = new System.Drawing.Size(264, 390);
             this.grpAppPanadapter.TabIndex = 77;
             this.grpAppPanadapter.TabStop = false;
-            this.grpAppPanadapter.Text = "Panadapter                         Alpha";
+            this.grpAppPanadapter.Text = "频谱                                Alpha";
             // 
             // tbBandstackOverlayAlpha
             // 
@@ -46634,7 +46527,7 @@
             this.labelTS532.Name = "labelTS532";
             this.labelTS532.Size = new System.Drawing.Size(105, 23);
             this.labelTS532.TabIndex = 97;
-            this.labelTS532.Text = "Bandstack Overlay:";
+            this.labelTS532.Text = "波段堆栈叠加:";
             this.labelTS532.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // tbDataLineAlpha
@@ -46670,7 +46563,7 @@
             this.tbActiveSpectralPeakAlpha.Size = new System.Drawing.Size(66, 18);
             this.tbActiveSpectralPeakAlpha.TabIndex = 95;
             this.tbActiveSpectralPeakAlpha.TickFrequency = 50;
-            this.toolTip1.SetToolTip(this.tbActiveSpectralPeakAlpha, "Transparency of Grayline dark area over the map");
+            this.toolTip1.SetToolTip(this.tbActiveSpectralPeakAlpha, "地图上灰线暗区的透明度");
             this.tbActiveSpectralPeakAlpha.Value = 70;
             this.tbActiveSpectralPeakAlpha.Scroll += new System.EventHandler(this.tbActiveSpectralPeakAlpha_Scroll);
             // 
@@ -46707,7 +46600,7 @@
             this.lblDisplayDataFill.Name = "lblDisplayDataFill";
             this.lblDisplayDataFill.Size = new System.Drawing.Size(64, 20);
             this.lblDisplayDataFill.TabIndex = 89;
-            this.lblDisplayDataFill.Text = "Data Fill:";
+            this.lblDisplayDataFill.Text = "数据填充:";
             this.lblDisplayDataFill.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblActiveSpectralPeakColour
@@ -46717,7 +46610,7 @@
             this.lblActiveSpectralPeakColour.Name = "lblActiveSpectralPeakColour";
             this.lblActiveSpectralPeakColour.Size = new System.Drawing.Size(83, 23);
             this.lblActiveSpectralPeakColour.TabIndex = 93;
-            this.lblActiveSpectralPeakColour.Text = "Active Peak:";
+            this.lblActiveSpectralPeakColour.Text = "活动峰值:";
             this.lblActiveSpectralPeakColour.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // chkShowZeroLine
@@ -46728,7 +46621,7 @@
             this.chkShowZeroLine.Name = "chkShowZeroLine";
             this.chkShowZeroLine.Size = new System.Drawing.Size(101, 17);
             this.chkShowZeroLine.TabIndex = 84;
-            this.chkShowZeroLine.Text = "Show Zero Line";
+            this.chkShowZeroLine.Text = "显示零线";
             this.chkShowZeroLine.UseVisualStyleBackColor = true;
             this.chkShowZeroLine.CheckedChanged += new System.EventHandler(this.chkShowZeroLine_CheckedChanged);
             // 
@@ -46741,7 +46634,7 @@
             this.tbGrayLineAlpha.Size = new System.Drawing.Size(66, 18);
             this.tbGrayLineAlpha.TabIndex = 92;
             this.tbGrayLineAlpha.TickFrequency = 50;
-            this.toolTip1.SetToolTip(this.tbGrayLineAlpha, "Transparency of Grayline dark area over the map");
+            this.toolTip1.SetToolTip(this.tbGrayLineAlpha, "地图上灰线暗区的透明度");
             this.tbGrayLineAlpha.Value = 70;
             this.tbGrayLineAlpha.Scroll += new System.EventHandler(this.tbGrayLineAlpha_Scroll);
             // 
@@ -46765,7 +46658,7 @@
             this.labelgrayline.Name = "labelgrayline";
             this.labelgrayline.Size = new System.Drawing.Size(64, 23);
             this.labelgrayline.TabIndex = 89;
-            this.labelgrayline.Text = "GrayLine:\r\n";
+            this.labelgrayline.Text = "灰线:\r\n";
             this.labelgrayline.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // chkGridControl
@@ -46775,8 +46668,8 @@
             this.chkGridControl.Name = "chkGridControl";
             this.chkGridControl.Size = new System.Drawing.Size(120, 18);
             this.chkGridControl.TabIndex = 83;
-            this.chkGridControl.Text = "Display Grid";
-            this.toolTip1.SetToolTip(this.chkGridControl, "Display the Grid on the Panadapter");
+            this.chkGridControl.Text = "显示网格";
+            this.toolTip1.SetToolTip(this.chkGridControl, "在频谱上显示网格");
             this.chkGridControl.CheckedChanged += new System.EventHandler(this.chkGridControl_CheckedChanged);
             // 
             // tbMultiRXFilterAlpha
@@ -46811,9 +46704,8 @@
             this.chkShowFreqOffset.Name = "chkShowFreqOffset";
             this.chkShowFreqOffset.Size = new System.Drawing.Size(120, 18);
             this.chkShowFreqOffset.TabIndex = 77;
-            this.chkShowFreqOffset.Text = "Show Freq Offset";
-            this.toolTip1.SetToolTip(this.chkShowFreqOffset, "Show the frequency offset from the VFO rather than the actual frequency in MHz on" +
-        " the display.");
+            this.chkShowFreqOffset.Text = "显示频率偏移";
+            this.toolTip1.SetToolTip(this.chkShowFreqOffset, "在显示上显示相对 VFO 的频率偏移量，而非实际 MHz 频率。");
             this.chkShowFreqOffset.CheckedChanged += new System.EventHandler(this.chkShowFreqOffset_CheckedChanged);
             // 
             // tbRX1FilterAlpha
@@ -46835,7 +46727,7 @@
             this.lblSubRXZeroLine.Name = "lblSubRXZeroLine";
             this.lblSubRXZeroLine.Size = new System.Drawing.Size(83, 23);
             this.lblSubRXZeroLine.TabIndex = 80;
-            this.lblSubRXZeroLine.Text = "MultiRX 0 Line:";
+            this.lblSubRXZeroLine.Text = "MultiRX 零线:";
             this.lblSubRXZeroLine.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // udDisplayLineWidth
@@ -46889,7 +46781,7 @@
             this.lblSubRXFilterColor.Name = "lblSubRXFilterColor";
             this.lblSubRXFilterColor.Size = new System.Drawing.Size(83, 23);
             this.lblSubRXFilterColor.TabIndex = 78;
-            this.lblSubRXFilterColor.Text = "MultiRX Filter:";
+            this.lblSubRXFilterColor.Text = "MultiRX 滤波器:";
             this.lblSubRXFilterColor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblDisplayLineWidth
@@ -46899,7 +46791,7 @@
             this.lblDisplayLineWidth.Name = "lblDisplayLineWidth";
             this.lblDisplayLineWidth.Size = new System.Drawing.Size(64, 20);
             this.lblDisplayLineWidth.TabIndex = 43;
-            this.lblDisplayLineWidth.Text = "Line Width:";
+            this.lblDisplayLineWidth.Text = "线宽:";
             this.lblDisplayLineWidth.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // clrbtnBandEdge
@@ -46922,7 +46814,7 @@
             this.lblBandEdge.Name = "lblBandEdge";
             this.lblBandEdge.Size = new System.Drawing.Size(64, 23);
             this.lblBandEdge.TabIndex = 65;
-            this.lblBandEdge.Text = "Band Edge:";
+            this.lblBandEdge.Text = "波段边缘:";
             this.lblBandEdge.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // clrbtnDataLine
@@ -46958,7 +46850,7 @@
             this.lblDisplayDataLineColor.Name = "lblDisplayDataLineColor";
             this.lblDisplayDataLineColor.Size = new System.Drawing.Size(64, 20);
             this.lblDisplayDataLineColor.TabIndex = 41;
-            this.lblDisplayDataLineColor.Text = "Data Line:";
+            this.lblDisplayDataLineColor.Text = "数据线:";
             this.lblDisplayDataLineColor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblTXFilterColor
@@ -46968,7 +46860,7 @@
             this.lblTXFilterColor.Name = "lblTXFilterColor";
             this.lblTXFilterColor.Size = new System.Drawing.Size(64, 23);
             this.lblTXFilterColor.TabIndex = 75;
-            this.lblTXFilterColor.Text = "TX Filter:";
+            this.lblTXFilterColor.Text = "TX 滤波器:";
             this.lblTXFilterColor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblDisplayFilterColor
@@ -46978,7 +46870,7 @@
             this.lblDisplayFilterColor.Name = "lblDisplayFilterColor";
             this.lblDisplayFilterColor.Size = new System.Drawing.Size(83, 23);
             this.lblDisplayFilterColor.TabIndex = 45;
-            this.lblDisplayFilterColor.Text = "Main RX Filter:";
+            this.lblDisplayFilterColor.Text = "主 RX 滤波器:";
             this.lblDisplayFilterColor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // clrbtnFilter
@@ -47005,7 +46897,7 @@
             this.grpDisplayPeakCursor.Size = new System.Drawing.Size(136, 96);
             this.grpDisplayPeakCursor.TabIndex = 74;
             this.grpDisplayPeakCursor.TabStop = false;
-            this.grpDisplayPeakCursor.Text = "Cursor/Peak Readout";
+            this.grpDisplayPeakCursor.Text = "光标/峰值读数";
             // 
             // clrbtnPeakBackground
             // 
@@ -47027,7 +46919,7 @@
             this.lblPeakBackground.Name = "lblPeakBackground";
             this.lblPeakBackground.Size = new System.Drawing.Size(72, 20);
             this.lblPeakBackground.TabIndex = 72;
-            this.lblPeakBackground.Text = "Background:";
+            this.lblPeakBackground.Text = "背景:";
             this.lblPeakBackground.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // clrbtnPeakText
@@ -47050,7 +46942,7 @@
             this.lblPeakText.Name = "lblPeakText";
             this.lblPeakText.Size = new System.Drawing.Size(64, 20);
             this.lblPeakText.TabIndex = 65;
-            this.lblPeakText.Text = "Peak Text:";
+            this.lblPeakText.Text = "峰值文本:";
             this.lblPeakText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tpAppearanceMeter
@@ -47069,7 +46961,7 @@
             this.tpAppearanceMeter.Name = "tpAppearanceMeter";
             this.tpAppearanceMeter.Size = new System.Drawing.Size(724, 410);
             this.tpAppearanceMeter.TabIndex = 2;
-            this.tpAppearanceMeter.Text = "Meter";
+            this.tpAppearanceMeter.Text = "仪表";
             // 
             // groupBoxTS14
             // 
@@ -47081,7 +46973,7 @@
             this.groupBoxTS14.Size = new System.Drawing.Size(206, 67);
             this.groupBoxTS14.TabIndex = 85;
             this.groupBoxTS14.TabStop = false;
-            this.groupBoxTS14.Text = "Signal History";
+            this.groupBoxTS14.Text = "信号历史";
             // 
             // tbSignalHistoryAlpha
             // 
@@ -47107,7 +46999,7 @@
             this.clrbtnSignalHistoryColour.Selectable = true;
             this.clrbtnSignalHistoryColour.Size = new System.Drawing.Size(40, 23);
             this.clrbtnSignalHistoryColour.TabIndex = 91;
-            this.toolTip1.SetToolTip(this.clrbtnSignalHistoryColour, "The fill colour of the signal history on the multimeter");
+            this.toolTip1.SetToolTip(this.clrbtnSignalHistoryColour, "万用表上信号历史的填充颜色");
             this.clrbtnSignalHistoryColour.Changed += new System.EventHandler(this.clrbtnSignalHistoryColour_Changed);
             // 
             // labelTS518
@@ -47117,7 +47009,7 @@
             this.labelTS518.Name = "labelTS518";
             this.labelTS518.Size = new System.Drawing.Size(72, 18);
             this.labelTS518.TabIndex = 90;
-            this.labelTS518.Text = "Background:";
+            this.labelTS518.Text = "背景:";
             // 
             // labelTS2
             // 
@@ -47126,7 +47018,7 @@
             this.labelTS2.Name = "labelTS2";
             this.labelTS2.Size = new System.Drawing.Size(72, 32);
             this.labelTS2.TabIndex = 83;
-            this.labelTS2.Text = "Digital Background:";
+            this.labelTS2.Text = "数字背景:";
             // 
             // clrbtnMeterDigBackground
             // 
@@ -47148,7 +47040,7 @@
             this.lblMeterDigitalText.Name = "lblMeterDigitalText";
             this.lblMeterDigitalText.Size = new System.Drawing.Size(72, 24);
             this.lblMeterDigitalText.TabIndex = 81;
-            this.lblMeterDigitalText.Text = "Digital Text:";
+            this.lblMeterDigitalText.Text = "数字文本:";
             // 
             // clrbtnMeterDigText
             // 
@@ -47179,7 +47071,7 @@
             this.grpMeterEdge.Size = new System.Drawing.Size(206, 160);
             this.grpMeterEdge.TabIndex = 80;
             this.grpMeterEdge.TabStop = false;
-            this.grpMeterEdge.Text = "Edge Style";
+            this.grpMeterEdge.Text = "边缘样式";
             // 
             // tbMeterEdgeBackgroundAlpha
             // 
@@ -47214,7 +47106,7 @@
             this.labelTS1.Name = "labelTS1";
             this.labelTS1.Size = new System.Drawing.Size(56, 24);
             this.labelTS1.TabIndex = 78;
-            this.labelTS1.Text = "Indicator:";
+            this.labelTS1.Text = "指示器:";
             // 
             // clrbtnMeterEdgeBackground
             // 
@@ -47237,7 +47129,7 @@
             this.lblMeterEdgeBackground.Name = "lblMeterEdgeBackground";
             this.lblMeterEdgeBackground.Size = new System.Drawing.Size(72, 24);
             this.lblMeterEdgeBackground.TabIndex = 76;
-            this.lblMeterEdgeBackground.Text = "Background:";
+            this.lblMeterEdgeBackground.Text = "背景:";
             // 
             // clrbtnMeterEdgeHigh
             // 
@@ -47259,7 +47151,7 @@
             this.lblMeterEdgeHigh.Name = "lblMeterEdgeHigh";
             this.lblMeterEdgeHigh.Size = new System.Drawing.Size(72, 24);
             this.lblMeterEdgeHigh.TabIndex = 53;
-            this.lblMeterEdgeHigh.Text = "High Color:";
+            this.lblMeterEdgeHigh.Text = "高电平颜色:";
             // 
             // lblMeterEdgeLow
             // 
@@ -47268,7 +47160,7 @@
             this.lblMeterEdgeLow.Name = "lblMeterEdgeLow";
             this.lblMeterEdgeLow.Size = new System.Drawing.Size(72, 24);
             this.lblMeterEdgeLow.TabIndex = 51;
-            this.lblMeterEdgeLow.Text = "Low Color:";
+            this.lblMeterEdgeLow.Text = "低电平颜色:";
             // 
             // clrbtnMeterEdgeLow
             // 
@@ -47296,7 +47188,7 @@
             this.grpAppearanceMeter.Size = new System.Drawing.Size(136, 120);
             this.grpAppearanceMeter.TabIndex = 38;
             this.grpAppearanceMeter.TabStop = false;
-            this.grpAppearanceMeter.Text = "Original Style";
+            this.grpAppearanceMeter.Text = "原始样式";
             // 
             // clrbtnMeterBackground
             // 
@@ -47318,7 +47210,7 @@
             this.lblMeterBackground.Name = "lblMeterBackground";
             this.lblMeterBackground.Size = new System.Drawing.Size(72, 24);
             this.lblMeterBackground.TabIndex = 76;
-            this.lblMeterBackground.Text = "Background:";
+            this.lblMeterBackground.Text = "背景:";
             // 
             // clrbtnMeterRight
             // 
@@ -47340,7 +47232,7 @@
             this.lblAppearanceMeterRight.Name = "lblAppearanceMeterRight";
             this.lblAppearanceMeterRight.Size = new System.Drawing.Size(72, 24);
             this.lblAppearanceMeterRight.TabIndex = 53;
-            this.lblAppearanceMeterRight.Text = "Right Color:";
+            this.lblAppearanceMeterRight.Text = "右侧颜色:";
             // 
             // lblAppearanceMeterLeft
             // 
@@ -47349,7 +47241,7 @@
             this.lblAppearanceMeterLeft.Name = "lblAppearanceMeterLeft";
             this.lblAppearanceMeterLeft.Size = new System.Drawing.Size(72, 24);
             this.lblAppearanceMeterLeft.TabIndex = 51;
-            this.lblAppearanceMeterLeft.Text = "Left Color:";
+            this.lblAppearanceMeterLeft.Text = "左侧颜色:";
             // 
             // clrbtnMeterLeft
             // 
@@ -47371,7 +47263,7 @@
             this.lblMeterType.Name = "lblMeterType";
             this.lblMeterType.Size = new System.Drawing.Size(64, 24);
             this.lblMeterType.TabIndex = 79;
-            this.lblMeterType.Text = "Meter Type:";
+            this.lblMeterType.Text = "仪表类型:";
             // 
             // comboMeterType
             // 
@@ -47384,7 +47276,7 @@
             this.comboMeterType.Name = "comboMeterType";
             this.comboMeterType.Size = new System.Drawing.Size(80, 21);
             this.comboMeterType.TabIndex = 78;
-            this.toolTip1.SetToolTip(this.comboMeterType, "Changes the appearance of the Multimeter on the front panel.");
+            this.toolTip1.SetToolTip(this.comboMeterType, "更改前面板万用表的外观。");
             this.comboMeterType.SelectedIndexChanged += new System.EventHandler(this.comboMeterType_SelectedIndexChanged);
             // 
             // tpAppearanceMeter2
@@ -47395,7 +47287,7 @@
             this.tpAppearanceMeter2.Name = "tpAppearanceMeter2";
             this.tpAppearanceMeter2.Size = new System.Drawing.Size(724, 410);
             this.tpAppearanceMeter2.TabIndex = 5;
-            this.tpAppearanceMeter2.Text = "Multi Meters";
+            this.tpAppearanceMeter2.Text = "多仪表";
             // 
             // grpMultiMeterHolder
             // 
@@ -47432,7 +47324,7 @@
             this.btnMeterCopySettings.Selectable = true;
             this.btnMeterCopySettings.Size = new System.Drawing.Size(32, 32);
             this.btnMeterCopySettings.TabIndex = 103;
-            this.toolTip1.SetToolTip(this.btnMeterCopySettings, "Copy settings and colours");
+            this.toolTip1.SetToolTip(this.btnMeterCopySettings, "复制设置和颜色");
             this.btnMeterCopySettings.UseVisualStyleBackColor = true;
             this.btnMeterCopySettings.Click += new System.EventHandler(this.btnMeterCopySettings_Click);
             // 
@@ -47444,7 +47336,7 @@
             this.btnMeterPasteSettings.Selectable = true;
             this.btnMeterPasteSettings.Size = new System.Drawing.Size(32, 32);
             this.btnMeterPasteSettings.TabIndex = 102;
-            this.toolTip1.SetToolTip(this.btnMeterPasteSettings, "Paste settings and colours into suitable meter item");
+            this.toolTip1.SetToolTip(this.btnMeterPasteSettings, "将设置和颜色粘贴到合适的仪表项");
             this.btnMeterPasteSettings.UseVisualStyleBackColor = true;
             this.btnMeterPasteSettings.Click += new System.EventHandler(this.btnMeterPasteSettings_Click);
             // 
@@ -47475,7 +47367,7 @@
             this.grpMeterItemVfoDisplaySettings.Size = new System.Drawing.Size(323, 364);
             this.grpMeterItemVfoDisplaySettings.TabIndex = 101;
             this.grpMeterItemVfoDisplaySettings.TabStop = false;
-            this.grpMeterItemVfoDisplaySettings.Text = "VFO Display Settings";
+            this.grpMeterItemVfoDisplaySettings.Text = "VFO 显示设置";
             this.grpMeterItemVfoDisplaySettings.Visible = false;
             // 
             // labelTS177
@@ -47486,7 +47378,7 @@
             this.labelTS177.Name = "labelTS177";
             this.labelTS177.Size = new System.Drawing.Size(32, 13);
             this.labelTS177.TabIndex = 129;
-            this.labelTS177.Text = "Titles";
+            this.labelTS177.Text = "标题";
             // 
             // labelTS176
             // 
@@ -47496,7 +47388,7 @@
             this.labelTS176.Name = "labelTS176";
             this.labelTS176.Size = new System.Drawing.Size(68, 13);
             this.labelTS176.TabIndex = 128;
-            this.labelTS176.Text = "Background:";
+            this.labelTS176.Text = "背景:";
             // 
             // clrbtnMMVfoDisplayBackground
             // 
@@ -47510,7 +47402,7 @@
             this.clrbtnMMVfoDisplayBackground.Selectable = true;
             this.clrbtnMMVfoDisplayBackground.Size = new System.Drawing.Size(40, 23);
             this.clrbtnMMVfoDisplayBackground.TabIndex = 127;
-            this.toolTip1.SetToolTip(this.clrbtnMMVfoDisplayBackground, "Background colour");
+            this.toolTip1.SetToolTip(this.clrbtnMMVfoDisplayBackground, "背景颜色");
             this.clrbtnMMVfoDisplayBackground.Changed += new System.EventHandler(this.clrbtnMMVfoDisplayBackground_Changed);
             // 
             // labelTS175
@@ -47521,7 +47413,7 @@
             this.labelTS175.Name = "labelTS175";
             this.labelTS175.Size = new System.Drawing.Size(60, 13);
             this.labelTS175.TabIndex = 126;
-            this.labelTS175.Text = "Frequency:";
+            this.labelTS175.Text = "频率:";
             // 
             // clrbtnMMVfoDisplayFrequency
             // 
@@ -47535,7 +47427,7 @@
             this.clrbtnMMVfoDisplayFrequency.Selectable = true;
             this.clrbtnMMVfoDisplayFrequency.Size = new System.Drawing.Size(40, 23);
             this.clrbtnMMVfoDisplayFrequency.TabIndex = 125;
-            this.toolTip1.SetToolTip(this.clrbtnMMVfoDisplayFrequency, "Frequency Colour");
+            this.toolTip1.SetToolTip(this.clrbtnMMVfoDisplayFrequency, "频率颜色");
             this.clrbtnMMVfoDisplayFrequency.Changed += new System.EventHandler(this.clrbtnMMVfoDisplayFrequency_Changed);
             // 
             // labelTS174
@@ -47546,7 +47438,7 @@
             this.labelTS174.Name = "labelTS174";
             this.labelTS174.Size = new System.Drawing.Size(35, 13);
             this.labelTS174.TabIndex = 124;
-            this.labelTS174.Text = "Band:";
+            this.labelTS174.Text = "波段:";
             // 
             // clrbtnMMVfoDisplayBand
             // 
@@ -47560,7 +47452,7 @@
             this.clrbtnMMVfoDisplayBand.Selectable = true;
             this.clrbtnMMVfoDisplayBand.Size = new System.Drawing.Size(40, 23);
             this.clrbtnMMVfoDisplayBand.TabIndex = 123;
-            this.toolTip1.SetToolTip(this.clrbtnMMVfoDisplayBand, "Band colour");
+            this.toolTip1.SetToolTip(this.clrbtnMMVfoDisplayBand, "波段颜色");
             this.clrbtnMMVfoDisplayBand.Changed += new System.EventHandler(this.clrbtnMMVfoDisplayBand_Changed);
             // 
             // labelTS173
@@ -47571,7 +47463,7 @@
             this.labelTS173.Name = "labelTS173";
             this.labelTS173.Size = new System.Drawing.Size(32, 13);
             this.labelTS173.TabIndex = 122;
-            this.labelTS173.Text = "Filter:";
+            this.labelTS173.Text = "滤波器:";
             // 
             // clrbtnMMVfoDisplayFilter
             // 
@@ -47585,7 +47477,7 @@
             this.clrbtnMMVfoDisplayFilter.Selectable = true;
             this.clrbtnMMVfoDisplayFilter.Size = new System.Drawing.Size(40, 23);
             this.clrbtnMMVfoDisplayFilter.TabIndex = 121;
-            this.toolTip1.SetToolTip(this.clrbtnMMVfoDisplayFilter, "Filter colour");
+            this.toolTip1.SetToolTip(this.clrbtnMMVfoDisplayFilter, "滤波器颜色");
             this.clrbtnMMVfoDisplayFilter.Changed += new System.EventHandler(this.clrbtnMMVfoDisplayFilter_Changed);
             // 
             // labelTS172
@@ -47596,7 +47488,7 @@
             this.labelTS172.Name = "labelTS172";
             this.labelTS172.Size = new System.Drawing.Size(24, 13);
             this.labelTS172.TabIndex = 120;
-            this.labelTS172.Text = "TX:";
+            this.labelTS172.Text = "发射:";
             // 
             // clrbtnMMVfoDisplayTx
             // 
@@ -47610,7 +47502,7 @@
             this.clrbtnMMVfoDisplayTx.Selectable = true;
             this.clrbtnMMVfoDisplayTx.Size = new System.Drawing.Size(40, 23);
             this.clrbtnMMVfoDisplayTx.TabIndex = 119;
-            this.toolTip1.SetToolTip(this.clrbtnMMVfoDisplayTx, "TX box colour");
+            this.toolTip1.SetToolTip(this.clrbtnMMVfoDisplayTx, "TX 框颜色");
             this.clrbtnMMVfoDisplayTx.Changed += new System.EventHandler(this.clrbtnMMVfoDisplayTx_Changed);
             // 
             // labelTS171
@@ -47621,7 +47513,7 @@
             this.labelTS171.Name = "labelTS171";
             this.labelTS171.Size = new System.Drawing.Size(25, 13);
             this.labelTS171.TabIndex = 118;
-            this.labelTS171.Text = "RX:";
+            this.labelTS171.Text = "接收:";
             // 
             // clrbtnMMVfoDisplayRx
             // 
@@ -47635,7 +47527,7 @@
             this.clrbtnMMVfoDisplayRx.Selectable = true;
             this.clrbtnMMVfoDisplayRx.Size = new System.Drawing.Size(40, 23);
             this.clrbtnMMVfoDisplayRx.TabIndex = 117;
-            this.toolTip1.SetToolTip(this.clrbtnMMVfoDisplayRx, "RX box colour");
+            this.toolTip1.SetToolTip(this.clrbtnMMVfoDisplayRx, "RX 框颜色");
             this.clrbtnMMVfoDisplayRx.Changed += new System.EventHandler(this.clrbtnMMVfoDisplayRx_Changed);
             // 
             // labelTS170
@@ -47660,7 +47552,7 @@
             this.clrbtnMMVfoDisplaySplit.Selectable = true;
             this.clrbtnMMVfoDisplaySplit.Size = new System.Drawing.Size(40, 23);
             this.clrbtnMMVfoDisplaySplit.TabIndex = 115;
-            this.toolTip1.SetToolTip(this.clrbtnMMVfoDisplaySplit, "Split colour");
+            this.toolTip1.SetToolTip(this.clrbtnMMVfoDisplaySplit, "分割颜色");
             this.clrbtnMMVfoDisplaySplit.Changed += new System.EventHandler(this.clrbtnMMVfoDisplaySplit_Changed);
             // 
             // labelTS163
@@ -47671,7 +47563,7 @@
             this.labelTS163.Name = "labelTS163";
             this.labelTS163.Size = new System.Drawing.Size(58, 13);
             this.labelTS163.TabIndex = 114;
-            this.labelTS163.Text = "Split Back:";
+            this.labelTS163.Text = "分割背景:";
             // 
             // clrbtnMMVfoDisplaySplitBack
             // 
@@ -47685,7 +47577,7 @@
             this.clrbtnMMVfoDisplaySplitBack.Selectable = true;
             this.clrbtnMMVfoDisplaySplitBack.Size = new System.Drawing.Size(40, 23);
             this.clrbtnMMVfoDisplaySplitBack.TabIndex = 113;
-            this.toolTip1.SetToolTip(this.clrbtnMMVfoDisplaySplitBack, "Background of the split");
+            this.toolTip1.SetToolTip(this.clrbtnMMVfoDisplaySplitBack, "分割背景");
             this.clrbtnMMVfoDisplaySplitBack.Changed += new System.EventHandler(this.clrbtnMMVfoDisplaySplitBack_Changed);
             // 
             // labelTS166
@@ -47696,7 +47588,7 @@
             this.labelTS166.Name = "labelTS166";
             this.labelTS166.Size = new System.Drawing.Size(37, 13);
             this.labelTS166.TabIndex = 112;
-            this.labelTS166.Text = "Mode:";
+            this.labelTS166.Text = "模式:";
             // 
             // clrbtnMMVfoDisplayMode
             // 
@@ -47710,7 +47602,7 @@
             this.clrbtnMMVfoDisplayMode.Selectable = true;
             this.clrbtnMMVfoDisplayMode.Size = new System.Drawing.Size(40, 23);
             this.clrbtnMMVfoDisplayMode.TabIndex = 111;
-            this.toolTip1.SetToolTip(this.clrbtnMMVfoDisplayMode, "Mode colour");
+            this.toolTip1.SetToolTip(this.clrbtnMMVfoDisplayMode, "模式颜色");
             this.clrbtnMMVfoDisplayMode.Changed += new System.EventHandler(this.clrbtnMMVfoDisplayMode_Changed);
             // 
             // clrbtnMMVfoDisplayTitle
@@ -47725,7 +47617,7 @@
             this.clrbtnMMVfoDisplayTitle.Selectable = true;
             this.clrbtnMMVfoDisplayTitle.Size = new System.Drawing.Size(40, 23);
             this.clrbtnMMVfoDisplayTitle.TabIndex = 110;
-            this.toolTip1.SetToolTip(this.clrbtnMMVfoDisplayTitle, "Titles colour");
+            this.toolTip1.SetToolTip(this.clrbtnMMVfoDisplayTitle, "标题颜色");
             this.clrbtnMMVfoDisplayTitle.Changed += new System.EventHandler(this.clrbtnMMVfoDisplayTitle_Changed);
             // 
             // grpMeterItemClockSettings
@@ -47745,7 +47637,7 @@
             this.grpMeterItemClockSettings.Size = new System.Drawing.Size(323, 364);
             this.grpMeterItemClockSettings.TabIndex = 100;
             this.grpMeterItemClockSettings.TabStop = false;
-            this.grpMeterItemClockSettings.Text = "Clock Settings";
+            this.grpMeterItemClockSettings.Text = "时钟设置";
             this.grpMeterItemClockSettings.Visible = false;
             // 
             // lblMMClockBackground
@@ -47756,7 +47648,7 @@
             this.lblMMClockBackground.Name = "lblMMClockBackground";
             this.lblMMClockBackground.Size = new System.Drawing.Size(68, 13);
             this.lblMMClockBackground.TabIndex = 116;
-            this.lblMMClockBackground.Text = "Background:";
+            this.lblMMClockBackground.Text = "背景:";
             // 
             // clrbtnMMClockBackground
             // 
@@ -47770,7 +47662,7 @@
             this.clrbtnMMClockBackground.Selectable = true;
             this.clrbtnMMClockBackground.Size = new System.Drawing.Size(40, 23);
             this.clrbtnMMClockBackground.TabIndex = 115;
-            this.toolTip1.SetToolTip(this.clrbtnMMClockBackground, "Background colour");
+            this.toolTip1.SetToolTip(this.clrbtnMMClockBackground, "背景颜色");
             this.clrbtnMMClockBackground.Changed += new System.EventHandler(this.clrbtnMMClockBackground_Changed);
             // 
             // labelTS164
@@ -47781,7 +47673,7 @@
             this.labelTS164.Name = "labelTS164";
             this.labelTS164.Size = new System.Drawing.Size(33, 13);
             this.labelTS164.TabIndex = 114;
-            this.labelTS164.Text = "Date:";
+            this.labelTS164.Text = "日期:";
             // 
             // clrbtnMMDate
             // 
@@ -47795,7 +47687,7 @@
             this.clrbtnMMDate.Selectable = true;
             this.clrbtnMMDate.Size = new System.Drawing.Size(40, 23);
             this.clrbtnMMDate.TabIndex = 113;
-            this.toolTip1.SetToolTip(this.clrbtnMMDate, "Date colour");
+            this.toolTip1.SetToolTip(this.clrbtnMMDate, "日期颜色");
             this.clrbtnMMDate.Changed += new System.EventHandler(this.clrbtnMMDate_Changed);
             // 
             // labelTS162
@@ -47806,7 +47698,7 @@
             this.labelTS162.Name = "labelTS162";
             this.labelTS162.Size = new System.Drawing.Size(33, 13);
             this.labelTS162.TabIndex = 112;
-            this.labelTS162.Text = "Time:";
+            this.labelTS162.Text = "时间:";
             // 
             // clrbtnMMTime
             // 
@@ -47820,7 +47712,7 @@
             this.clrbtnMMTime.Selectable = true;
             this.clrbtnMMTime.Size = new System.Drawing.Size(40, 23);
             this.clrbtnMMTime.TabIndex = 111;
-            this.toolTip1.SetToolTip(this.clrbtnMMTime, "Time");
+            this.toolTip1.SetToolTip(this.clrbtnMMTime, "时间");
             this.clrbtnMMTime.Changed += new System.EventHandler(this.clrbtnMMTime_Changed);
             // 
             // clrbtnMMClockTitle
@@ -47835,7 +47727,7 @@
             this.clrbtnMMClockTitle.Selectable = true;
             this.clrbtnMMClockTitle.Size = new System.Drawing.Size(40, 23);
             this.clrbtnMMClockTitle.TabIndex = 110;
-            this.toolTip1.SetToolTip(this.clrbtnMMClockTitle, "Meter title colour");
+            this.toolTip1.SetToolTip(this.clrbtnMMClockTitle, "仪表标题颜色");
             this.clrbtnMMClockTitle.Changed += new System.EventHandler(this.clrbtnMMClockTitle_Changed);
             // 
             // chkMMClockTitle
@@ -47846,8 +47738,8 @@
             this.chkMMClockTitle.Name = "chkMMClockTitle";
             this.chkMMClockTitle.Size = new System.Drawing.Size(76, 17);
             this.chkMMClockTitle.TabIndex = 109;
-            this.chkMMClockTitle.Text = "Meter Title";
-            this.toolTip1.SetToolTip(this.chkMMClockTitle, "Show meter title");
+            this.chkMMClockTitle.Text = "仪表标题";
+            this.toolTip1.SetToolTip(this.chkMMClockTitle, "显示仪表标题");
             this.chkMMClockTitle.UseVisualStyleBackColor = true;
             this.chkMMClockTitle.CheckedChanged += new System.EventHandler(this.chkMMClockTitle_CheckedChanged);
             // 
@@ -47860,8 +47752,8 @@
             this.radMM24Clock.Size = new System.Drawing.Size(49, 17);
             this.radMM24Clock.TabIndex = 1;
             this.radMM24Clock.TabStop = true;
-            this.radMM24Clock.Text = "24 hr";
-            this.toolTip1.SetToolTip(this.radMM24Clock, "24 hr clock");
+            this.radMM24Clock.Text = "24 小时制";
+            this.toolTip1.SetToolTip(this.radMM24Clock, "24 小时制时钟");
             this.radMM24Clock.UseVisualStyleBackColor = true;
             this.radMM24Clock.CheckedChanged += new System.EventHandler(this.radMM24Clock_CheckedChanged);
             // 
@@ -47874,8 +47766,8 @@
             this.radMM12Clock.Size = new System.Drawing.Size(49, 17);
             this.radMM12Clock.TabIndex = 0;
             this.radMM12Clock.TabStop = true;
-            this.radMM12Clock.Text = "12 hr";
-            this.toolTip1.SetToolTip(this.radMM12Clock, "12 hr clock");
+            this.radMM12Clock.Text = "12 小时制";
+            this.toolTip1.SetToolTip(this.radMM12Clock, "12 小时制时钟");
             this.radMM12Clock.UseVisualStyleBackColor = true;
             this.radMM12Clock.CheckedChanged += new System.EventHandler(this.radMM12Clock_CheckedChanged);
             // 
@@ -47887,7 +47779,7 @@
             this.lblMMContainerBackground.Name = "lblMMContainerBackground";
             this.lblMMContainerBackground.Size = new System.Drawing.Size(41, 13);
             this.lblMMContainerBackground.TabIndex = 99;
-            this.lblMMContainerBackground.Text = "Backg:";
+            this.lblMMContainerBackground.Text = "背景:";
             // 
             // clrbtnContainerBackground
             // 
@@ -47900,7 +47792,7 @@
             this.clrbtnContainerBackground.Selectable = true;
             this.clrbtnContainerBackground.Size = new System.Drawing.Size(40, 23);
             this.clrbtnContainerBackground.TabIndex = 98;
-            this.toolTip1.SetToolTip(this.clrbtnContainerBackground, "Container Background Colour");
+            this.toolTip1.SetToolTip(this.clrbtnContainerBackground, "容器背景颜色");
             this.clrbtnContainerBackground.Changed += new System.EventHandler(this.clrbtnContainerBackground_Changed);
             // 
             // chkContainerBorder
@@ -47912,8 +47804,8 @@
             this.chkContainerBorder.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.chkContainerBorder.Size = new System.Drawing.Size(57, 17);
             this.chkContainerBorder.TabIndex = 97;
-            this.chkContainerBorder.Text = "Border";
-            this.toolTip1.SetToolTip(this.chkContainerBorder, "Container has a border");
+            this.chkContainerBorder.Text = "边框";
+            this.toolTip1.SetToolTip(this.chkContainerBorder, "容器带边框");
             this.chkContainerBorder.UseVisualStyleBackColor = true;
             this.chkContainerBorder.CheckedChanged += new System.EventHandler(this.chkContainerBorder_CheckedChanged);
             // 
@@ -47973,7 +47865,7 @@
             this.grpMeterItemSettings.Size = new System.Drawing.Size(323, 364);
             this.grpMeterItemSettings.TabIndex = 96;
             this.grpMeterItemSettings.TabStop = false;
-            this.grpMeterItemSettings.Text = "Settings";
+            this.grpMeterItemSettings.Text = "设置";
             this.grpMeterItemSettings.Visible = false;
             // 
             // nudMeterItemIgnoreHistoryDuration
@@ -47998,8 +47890,7 @@
             this.nudMeterItemIgnoreHistoryDuration.Size = new System.Drawing.Size(56, 20);
             this.nudMeterItemIgnoreHistoryDuration.TabIndex = 127;
             this.nudMeterItemIgnoreHistoryDuration.TinyStep = false;
-            this.toolTip1.SetToolTip(this.nudMeterItemIgnoreHistoryDuration, "When rx/tx transition or band change let meters settle before gathering history/p" +
-        "eak values");
+            this.toolTip1.SetToolTip(this.nudMeterItemIgnoreHistoryDuration, "在接收/发射切换或换波段时，让仪表稳定后再采集历史/峰值数据。");
             this.nudMeterItemIgnoreHistoryDuration.Value = new decimal(new int[] {
             2000,
             0,
@@ -48014,7 +47905,7 @@
             this.lblMMHistoryIgnore.Name = "lblMMHistoryIgnore";
             this.lblMMHistoryIgnore.Size = new System.Drawing.Size(134, 16);
             this.lblMMHistoryIgnore.TabIndex = 126;
-            this.lblMMHistoryIgnore.Text = "Ignore History/Peak (ms):";
+            this.lblMMHistoryIgnore.Text = "忽略历史/峰值 (ms):";
             this.lblMMHistoryIgnore.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // clrbtnMeterItemPowerScale
@@ -48054,7 +47945,7 @@
             this.nudMeterItemEyeBezelScale.Size = new System.Drawing.Size(56, 20);
             this.nudMeterItemEyeBezelScale.TabIndex = 124;
             this.nudMeterItemEyeBezelScale.TinyStep = false;
-            this.toolTip1.SetToolTip(this.nudMeterItemEyeBezelScale, "Size of the eye bezel, 1.0 is full width of container");
+            this.toolTip1.SetToolTip(this.nudMeterItemEyeBezelScale, "眼图表圈大小，1.0 为容器全宽");
             this.nudMeterItemEyeBezelScale.Value = new decimal(new int[] {
             1,
             0,
@@ -48069,7 +47960,7 @@
             this.lblMMEyeBezelSize.Name = "lblMMEyeBezelSize";
             this.lblMMEyeBezelSize.Size = new System.Drawing.Size(64, 16);
             this.lblMMEyeBezelSize.TabIndex = 123;
-            this.lblMMEyeBezelSize.Text = "Bezel Size:";
+            this.lblMMEyeBezelSize.Text = "表圈大小:";
             this.lblMMEyeBezelSize.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // chkMeterItemShowSubIndicator
@@ -48080,8 +47971,8 @@
             this.chkMeterItemShowSubIndicator.Name = "chkMeterItemShowSubIndicator";
             this.chkMeterItemShowSubIndicator.Size = new System.Drawing.Size(53, 17);
             this.chkMeterItemShowSubIndicator.TabIndex = 122;
-            this.chkMeterItemShowSubIndicator.Text = "Show";
-            this.toolTip1.SetToolTip(this.chkMeterItemShowSubIndicator, "Show sub indicators");
+            this.chkMeterItemShowSubIndicator.Text = "显示";
+            this.toolTip1.SetToolTip(this.chkMeterItemShowSubIndicator, "显示副指示器");
             this.chkMeterItemShowSubIndicator.UseVisualStyleBackColor = true;
             this.chkMeterItemShowSubIndicator.CheckedChanged += new System.EventHandler(this.chkMeterItemShowSubIndicator_CheckedChanged);
             // 
@@ -48093,7 +47984,7 @@
             this.lblMMIndicatorSub.Name = "lblMMIndicatorSub";
             this.lblMMIndicatorSub.Size = new System.Drawing.Size(40, 13);
             this.lblMMIndicatorSub.TabIndex = 121;
-            this.lblMMIndicatorSub.Text = "Sub(s):";
+            this.lblMMIndicatorSub.Text = "副:";
             // 
             // clrbtnMeterItemSubIndiciator
             // 
@@ -48107,7 +47998,7 @@
             this.clrbtnMeterItemSubIndiciator.Selectable = true;
             this.clrbtnMeterItemSubIndiciator.Size = new System.Drawing.Size(40, 23);
             this.clrbtnMeterItemSubIndiciator.TabIndex = 120;
-            this.toolTip1.SetToolTip(this.clrbtnMeterItemSubIndiciator, "Sub Indicator colour for sub needles and avg markers on some horizontal meters");
+            this.toolTip1.SetToolTip(this.clrbtnMeterItemSubIndiciator, "某些水平仪表上副指针和均值标记的副指示器颜色");
             this.clrbtnMeterItemSubIndiciator.Changed += new System.EventHandler(this.clrbtnMeterItemSubIndiciator_Changed);
             // 
             // chkMeterItemShowIndicator
@@ -48118,8 +48009,8 @@
             this.chkMeterItemShowIndicator.Name = "chkMeterItemShowIndicator";
             this.chkMeterItemShowIndicator.Size = new System.Drawing.Size(53, 17);
             this.chkMeterItemShowIndicator.TabIndex = 119;
-            this.chkMeterItemShowIndicator.Text = "Show";
-            this.toolTip1.SetToolTip(this.chkMeterItemShowIndicator, "Show the indicator line on horizontal bar meters");
+            this.chkMeterItemShowIndicator.Text = "显示";
+            this.toolTip1.SetToolTip(this.chkMeterItemShowIndicator, "在水平条形仪表上显示指示线");
             this.chkMeterItemShowIndicator.UseVisualStyleBackColor = true;
             this.chkMeterItemShowIndicator.CheckedChanged += new System.EventHandler(this.chkMeterItemShowIndicator_CheckedChanged);
             // 
@@ -48131,7 +48022,7 @@
             this.lblMMsegSolHigh.Name = "lblMMsegSolHigh";
             this.lblMMsegSolHigh.Size = new System.Drawing.Size(27, 13);
             this.lblMMsegSolHigh.TabIndex = 118;
-            this.lblMMsegSolHigh.Text = "high";
+            this.lblMMsegSolHigh.Text = "高";
             // 
             // lblMMsegSolLow
             // 
@@ -48141,7 +48032,7 @@
             this.lblMMsegSolLow.Name = "lblMMsegSolLow";
             this.lblMMsegSolLow.Size = new System.Drawing.Size(23, 13);
             this.lblMMsegSolLow.TabIndex = 117;
-            this.lblMMsegSolLow.Text = "low";
+            this.lblMMsegSolLow.Text = "低";
             // 
             // clrbtnMeterItemSegmentedSolidColourHigh
             // 
@@ -48155,7 +48046,7 @@
             this.clrbtnMeterItemSegmentedSolidColourHigh.Selectable = true;
             this.clrbtnMeterItemSegmentedSolidColourHigh.Size = new System.Drawing.Size(40, 23);
             this.clrbtnMeterItemSegmentedSolidColourHigh.TabIndex = 116;
-            this.toolTip1.SetToolTip(this.clrbtnMeterItemSegmentedSolidColourHigh, "High section colour");
+            this.toolTip1.SetToolTip(this.clrbtnMeterItemSegmentedSolidColourHigh, "高段颜色");
             this.clrbtnMeterItemSegmentedSolidColourHigh.Changed += new System.EventHandler(this.clrbtnMeterItemSegmentedSolidColourHigh_Changed);
             // 
             // chkMeterItemSolid
@@ -48166,8 +48057,8 @@
             this.chkMeterItemSolid.Name = "chkMeterItemSolid";
             this.chkMeterItemSolid.Size = new System.Drawing.Size(49, 17);
             this.chkMeterItemSolid.TabIndex = 115;
-            this.chkMeterItemSolid.Text = "Solid";
-            this.toolTip1.SetToolTip(this.chkMeterItemSolid, "Solid bar");
+            this.chkMeterItemSolid.Text = "实心";
+            this.toolTip1.SetToolTip(this.chkMeterItemSolid, "实心条");
             this.chkMeterItemSolid.UseVisualStyleBackColor = true;
             this.chkMeterItemSolid.CheckedChanged += new System.EventHandler(this.chkMeterItemSolid_CheckedChanged);
             // 
@@ -48194,7 +48085,7 @@
             this.nudMeterItemsPowerLimit.Size = new System.Drawing.Size(56, 20);
             this.nudMeterItemsPowerLimit.TabIndex = 114;
             this.nudMeterItemsPowerLimit.TinyStep = false;
-            this.toolTip1.SetToolTip(this.nudMeterItemsPowerLimit, "Power limit of scale");
+            this.toolTip1.SetToolTip(this.nudMeterItemsPowerLimit, "刻度功率上限");
             this.nudMeterItemsPowerLimit.Value = new decimal(new int[] {
             100,
             0,
@@ -48209,7 +48100,7 @@
             this.lblMMPowerLimit.Name = "lblMMPowerLimit";
             this.lblMMPowerLimit.Size = new System.Drawing.Size(44, 16);
             this.lblMMPowerLimit.TabIndex = 113;
-            this.lblMMPowerLimit.Text = "Power:";
+            this.lblMMPowerLimit.Text = "功率:";
             this.lblMMPowerLimit.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // chkMeterItemDarkMode
@@ -48220,7 +48111,7 @@
             this.chkMeterItemDarkMode.Name = "chkMeterItemDarkMode";
             this.chkMeterItemDarkMode.Size = new System.Drawing.Size(79, 17);
             this.chkMeterItemDarkMode.TabIndex = 112;
-            this.chkMeterItemDarkMode.Text = "Dark Mode";
+            this.chkMeterItemDarkMode.Text = "深色模式";
             this.chkMeterItemDarkMode.UseVisualStyleBackColor = true;
             this.chkMeterItemDarkMode.CheckedChanged += new System.EventHandler(this.chkMeterItemDarkMode_CheckedChanged);
             // 
@@ -48232,8 +48123,8 @@
             this.chkMeterItemSignalAverage.Name = "chkMeterItemSignalAverage";
             this.chkMeterItemSignalAverage.Size = new System.Drawing.Size(98, 17);
             this.chkMeterItemSignalAverage.TabIndex = 111;
-            this.chkMeterItemSignalAverage.Text = "Signal Average";
-            this.toolTip1.SetToolTip(this.chkMeterItemSignalAverage, "Use sig average instead of sig");
+            this.chkMeterItemSignalAverage.Text = "信号均值";
+            this.toolTip1.SetToolTip(this.chkMeterItemSignalAverage, "使用信号均值代替信号");
             this.chkMeterItemSignalAverage.UseVisualStyleBackColor = true;
             this.chkMeterItemSignalAverage.CheckedChanged += new System.EventHandler(this.chkMeterItemSignalAverage_CheckedChanged);
             // 
@@ -48260,7 +48151,7 @@
             this.nudMeterItemEyeScale.Size = new System.Drawing.Size(56, 20);
             this.nudMeterItemEyeScale.TabIndex = 110;
             this.nudMeterItemEyeScale.TinyStep = false;
-            this.toolTip1.SetToolTip(this.nudMeterItemEyeScale, "Size of the eye, 1.0 is full width of container");
+            this.toolTip1.SetToolTip(this.nudMeterItemEyeScale, "眼图大小，1.0 为容器全宽");
             this.nudMeterItemEyeScale.Value = new decimal(new int[] {
             1,
             0,
@@ -48275,7 +48166,7 @@
             this.lblMMEyeSize.Name = "lblMMEyeSize";
             this.lblMMEyeSize.Size = new System.Drawing.Size(64, 16);
             this.lblMMEyeSize.TabIndex = 109;
-            this.lblMMEyeSize.Text = "Eye Size:";
+            this.lblMMEyeSize.Text = "眼图大小:";
             this.lblMMEyeSize.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // clrbtnMeterItemMeterTitle
@@ -48290,7 +48181,7 @@
             this.clrbtnMeterItemMeterTitle.Selectable = true;
             this.clrbtnMeterItemMeterTitle.Size = new System.Drawing.Size(40, 23);
             this.clrbtnMeterItemMeterTitle.TabIndex = 108;
-            this.toolTip1.SetToolTip(this.clrbtnMeterItemMeterTitle, "Meter title colour");
+            this.toolTip1.SetToolTip(this.clrbtnMeterItemMeterTitle, "仪表标题颜色");
             this.clrbtnMeterItemMeterTitle.Changed += new System.EventHandler(this.clrbtnMeterItemMeterTitle_Changed);
             // 
             // clrbtnMeterItemPeakValueColour
@@ -48305,7 +48196,7 @@
             this.clrbtnMeterItemPeakValueColour.Selectable = true;
             this.clrbtnMeterItemPeakValueColour.Size = new System.Drawing.Size(40, 23);
             this.clrbtnMeterItemPeakValueColour.TabIndex = 107;
-            this.toolTip1.SetToolTip(this.clrbtnMeterItemPeakValueColour, "Peak value colour");
+            this.toolTip1.SetToolTip(this.clrbtnMeterItemPeakValueColour, "峰值颜色");
             this.clrbtnMeterItemPeakValueColour.Changed += new System.EventHandler(this.clrbtnMeterItemPeakValueColour_Changed);
             // 
             // clrbtnMeterItemSegmentedSolidColourLow
@@ -48320,7 +48211,7 @@
             this.clrbtnMeterItemSegmentedSolidColourLow.Selectable = true;
             this.clrbtnMeterItemSegmentedSolidColourLow.Size = new System.Drawing.Size(40, 23);
             this.clrbtnMeterItemSegmentedSolidColourLow.TabIndex = 106;
-            this.toolTip1.SetToolTip(this.clrbtnMeterItemSegmentedSolidColourLow, "Low section colour");
+            this.toolTip1.SetToolTip(this.clrbtnMeterItemSegmentedSolidColourLow, "低段颜色");
             this.clrbtnMeterItemSegmentedSolidColourLow.Changed += new System.EventHandler(this.clrbtnMeterItemSegmentedSolidColourLow_Changed);
             // 
             // nudMeterItemDecayRate
@@ -48346,7 +48237,7 @@
             this.nudMeterItemDecayRate.Size = new System.Drawing.Size(56, 20);
             this.nudMeterItemDecayRate.TabIndex = 105;
             this.nudMeterItemDecayRate.TinyStep = false;
-            this.toolTip1.SetToolTip(this.nudMeterItemDecayRate, "The \'speed of fall\' to the new value if below current");
+            this.toolTip1.SetToolTip(this.nudMeterItemDecayRate, "低于当前值时下降到新值的速度");
             this.nudMeterItemDecayRate.Value = new decimal(new int[] {
             1,
             0,
@@ -48361,7 +48252,7 @@
             this.labelTS169.Name = "labelTS169";
             this.labelTS169.Size = new System.Drawing.Size(50, 16);
             this.labelTS169.TabIndex = 104;
-            this.labelTS169.Text = "Decay:";
+            this.labelTS169.Text = "衰减:";
             this.labelTS169.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // nudMeterItemAttackRate
@@ -48387,7 +48278,7 @@
             this.nudMeterItemAttackRate.Size = new System.Drawing.Size(56, 20);
             this.nudMeterItemAttackRate.TabIndex = 103;
             this.nudMeterItemAttackRate.TinyStep = false;
-            this.toolTip1.SetToolTip(this.nudMeterItemAttackRate, "The \'speed of rise\' to the new value if above current");
+            this.toolTip1.SetToolTip(this.nudMeterItemAttackRate, "高于当前值时上升到新值的速度");
             this.nudMeterItemAttackRate.Value = new decimal(new int[] {
             1,
             0,
@@ -48402,7 +48293,7 @@
             this.labelTS168.Name = "labelTS168";
             this.labelTS168.Size = new System.Drawing.Size(79, 16);
             this.labelTS168.TabIndex = 102;
-            this.labelTS168.Text = "Attack:";
+            this.labelTS168.Text = "启动:";
             this.labelTS168.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // nudMeterItemUpdateRate
@@ -48427,7 +48318,7 @@
             this.nudMeterItemUpdateRate.Size = new System.Drawing.Size(56, 20);
             this.nudMeterItemUpdateRate.TabIndex = 101;
             this.nudMeterItemUpdateRate.TinyStep = false;
-            this.toolTip1.SetToolTip(this.nudMeterItemUpdateRate, "Reading update and is related to screen update");
+            this.toolTip1.SetToolTip(this.nudMeterItemUpdateRate, "读数更新，与屏幕更新相关");
             this.nudMeterItemUpdateRate.Value = new decimal(new int[] {
             100,
             0,
@@ -48442,7 +48333,7 @@
             this.labelTS167.Name = "labelTS167";
             this.labelTS167.Size = new System.Drawing.Size(79, 16);
             this.labelTS167.TabIndex = 100;
-            this.labelTS167.Text = "Update (ms):";
+            this.labelTS167.Text = "更新 (ms):";
             this.labelTS167.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // tbMeterItemHistoryAlpha
@@ -48479,7 +48370,7 @@
             this.nudMeterItemHistoryDuration.Size = new System.Drawing.Size(56, 20);
             this.nudMeterItemHistoryDuration.TabIndex = 98;
             this.nudMeterItemHistoryDuration.TinyStep = false;
-            this.toolTip1.SetToolTip(this.nudMeterItemHistoryDuration, "History duration for history display and peak hold");
+            this.toolTip1.SetToolTip(this.nudMeterItemHistoryDuration, "历史显示和峰值保持的历史时长");
             this.nudMeterItemHistoryDuration.Value = new decimal(new int[] {
             2000,
             0,
@@ -48494,7 +48385,7 @@
             this.lblMMHistory.Name = "lblMMHistory";
             this.lblMMHistory.Size = new System.Drawing.Size(79, 16);
             this.lblMMHistory.TabIndex = 97;
-            this.lblMMHistory.Text = "History (ms):";
+            this.lblMMHistory.Text = "历史 (ms):";
             this.lblMMHistory.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // chkMeterItemPeakValue
@@ -48505,8 +48396,8 @@
             this.chkMeterItemPeakValue.Name = "chkMeterItemPeakValue";
             this.chkMeterItemPeakValue.Size = new System.Drawing.Size(81, 17);
             this.chkMeterItemPeakValue.TabIndex = 96;
-            this.chkMeterItemPeakValue.Text = "Peak Value";
-            this.toolTip1.SetToolTip(this.chkMeterItemPeakValue, "Show peak value");
+            this.chkMeterItemPeakValue.Text = "峰值";
+            this.toolTip1.SetToolTip(this.chkMeterItemPeakValue, "显示峰值");
             this.chkMeterItemPeakValue.UseVisualStyleBackColor = true;
             this.chkMeterItemPeakValue.CheckedChanged += new System.EventHandler(this.chkMeterItemPeakValue_CheckedChanged);
             // 
@@ -48518,8 +48409,8 @@
             this.chkMeterItemTitle.Name = "chkMeterItemTitle";
             this.chkMeterItemTitle.Size = new System.Drawing.Size(76, 17);
             this.chkMeterItemTitle.TabIndex = 95;
-            this.chkMeterItemTitle.Text = "Meter Title";
-            this.toolTip1.SetToolTip(this.chkMeterItemTitle, "Show meter title");
+            this.chkMeterItemTitle.Text = "仪表标题";
+            this.toolTip1.SetToolTip(this.chkMeterItemTitle, "显示仪表标题");
             this.chkMeterItemTitle.UseVisualStyleBackColor = true;
             this.chkMeterItemTitle.CheckedChanged += new System.EventHandler(this.chkMeterItemTitle_CheckedChanged);
             // 
@@ -48531,8 +48422,8 @@
             this.chkMeterItemSegmented.Name = "chkMeterItemSegmented";
             this.chkMeterItemSegmented.Size = new System.Drawing.Size(80, 17);
             this.chkMeterItemSegmented.TabIndex = 94;
-            this.chkMeterItemSegmented.Text = "Segmented";
-            this.toolTip1.SetToolTip(this.chkMeterItemSegmented, "Segmented bar");
+            this.chkMeterItemSegmented.Text = "分段";
+            this.toolTip1.SetToolTip(this.chkMeterItemSegmented, "分段条");
             this.chkMeterItemSegmented.UseVisualStyleBackColor = true;
             this.chkMeterItemSegmented.CheckedChanged += new System.EventHandler(this.chkMeterItemSegmented_CheckedChanged);
             // 
@@ -48544,7 +48435,7 @@
             this.lblMMBackground.Name = "lblMMBackground";
             this.lblMMBackground.Size = new System.Drawing.Size(68, 13);
             this.lblMMBackground.TabIndex = 93;
-            this.lblMMBackground.Text = "Background:";
+            this.lblMMBackground.Text = "背景:";
             // 
             // clrbtnMeterItemHBackground
             // 
@@ -48558,7 +48449,7 @@
             this.clrbtnMeterItemHBackground.Selectable = true;
             this.clrbtnMeterItemHBackground.Size = new System.Drawing.Size(40, 23);
             this.clrbtnMeterItemHBackground.TabIndex = 92;
-            this.toolTip1.SetToolTip(this.clrbtnMeterItemHBackground, "Background colour");
+            this.toolTip1.SetToolTip(this.clrbtnMeterItemHBackground, "背景颜色");
             this.clrbtnMeterItemHBackground.Changed += new System.EventHandler(this.clrbtnMeterItemHBackground_Changed);
             // 
             // clrbtnMeterItemHistory
@@ -48597,7 +48488,7 @@
             this.lblMMIndicator.Name = "lblMMIndicator";
             this.lblMMIndicator.Size = new System.Drawing.Size(51, 13);
             this.lblMMIndicator.TabIndex = 81;
-            this.lblMMIndicator.Text = "Indicator:";
+            this.lblMMIndicator.Text = "指示器:";
             // 
             // clrbtnMeterItemIndiciator
             // 
@@ -48611,7 +48502,7 @@
             this.clrbtnMeterItemIndiciator.Selectable = true;
             this.clrbtnMeterItemIndiciator.Size = new System.Drawing.Size(40, 23);
             this.clrbtnMeterItemIndiciator.TabIndex = 80;
-            this.toolTip1.SetToolTip(this.clrbtnMeterItemIndiciator, "Indicator colour");
+            this.toolTip1.SetToolTip(this.clrbtnMeterItemIndiciator, "指示器颜色");
             this.clrbtnMeterItemIndiciator.Changed += new System.EventHandler(this.clrbtnMeterItemIndiciator_Changed);
             // 
             // lblMMHigh
@@ -48622,7 +48513,7 @@
             this.lblMMHigh.Name = "lblMMHigh";
             this.lblMMHigh.Size = new System.Drawing.Size(32, 13);
             this.lblMMHigh.TabIndex = 79;
-            this.lblMMHigh.Text = "High:";
+            this.lblMMHigh.Text = "高:";
             // 
             // lblMMLow
             // 
@@ -48632,7 +48523,7 @@
             this.lblMMLow.Name = "lblMMLow";
             this.lblMMLow.Size = new System.Drawing.Size(30, 13);
             this.lblMMLow.TabIndex = 78;
-            this.lblMMLow.Text = "Low:";
+            this.lblMMLow.Text = "低:";
             // 
             // clrbtnMeterItemHigh
             // 
@@ -48645,7 +48536,7 @@
             this.clrbtnMeterItemHigh.Selectable = true;
             this.clrbtnMeterItemHigh.Size = new System.Drawing.Size(40, 23);
             this.clrbtnMeterItemHigh.TabIndex = 77;
-            this.toolTip1.SetToolTip(this.clrbtnMeterItemHigh, "High scale colour");
+            this.toolTip1.SetToolTip(this.clrbtnMeterItemHigh, "高刻度颜色");
             this.clrbtnMeterItemHigh.Changed += new System.EventHandler(this.clrbtnMeterItemHigh_Changed);
             // 
             // clrbtnMeterItemLow
@@ -48659,7 +48550,7 @@
             this.clrbtnMeterItemLow.Selectable = true;
             this.clrbtnMeterItemLow.Size = new System.Drawing.Size(40, 23);
             this.clrbtnMeterItemLow.TabIndex = 76;
-            this.toolTip1.SetToolTip(this.clrbtnMeterItemLow, "Low scale colour and value");
+            this.toolTip1.SetToolTip(this.clrbtnMeterItemLow, "低刻度颜色和数值");
             this.clrbtnMeterItemLow.Changed += new System.EventHandler(this.clrbtnMeterItemLow_Changed);
             // 
             // chkMeterItemShadow
@@ -48670,8 +48561,8 @@
             this.chkMeterItemShadow.Name = "chkMeterItemShadow";
             this.chkMeterItemShadow.Size = new System.Drawing.Size(65, 17);
             this.chkMeterItemShadow.TabIndex = 4;
-            this.chkMeterItemShadow.Text = "Shadow";
-            this.toolTip1.SetToolTip(this.chkMeterItemShadow, "Show shadow on needles");
+            this.chkMeterItemShadow.Text = "阴影";
+            this.toolTip1.SetToolTip(this.chkMeterItemShadow, "指针显示阴影");
             this.chkMeterItemShadow.UseVisualStyleBackColor = true;
             this.chkMeterItemShadow.CheckedChanged += new System.EventHandler(this.chkMeterItemShadow_CheckedChanged);
             // 
@@ -48683,7 +48574,7 @@
             this.chkMeterItemPeakHold.Name = "chkMeterItemPeakHold";
             this.chkMeterItemPeakHold.Size = new System.Drawing.Size(106, 17);
             this.chkMeterItemPeakHold.TabIndex = 3;
-            this.chkMeterItemPeakHold.Text = "Show Peak Hold";
+            this.chkMeterItemPeakHold.Text = "显示峰值保持";
             this.chkMeterItemPeakHold.UseVisualStyleBackColor = true;
             this.chkMeterItemPeakHold.CheckedChanged += new System.EventHandler(this.chkMeterItemPeakHold_CheckedChanged);
             // 
@@ -48695,7 +48586,7 @@
             this.chkMeterItemHistory.Name = "chkMeterItemHistory";
             this.chkMeterItemHistory.Size = new System.Drawing.Size(88, 17);
             this.chkMeterItemHistory.TabIndex = 2;
-            this.chkMeterItemHistory.Text = "Show History";
+            this.chkMeterItemHistory.Text = "显示历史";
             this.chkMeterItemHistory.UseVisualStyleBackColor = true;
             this.chkMeterItemHistory.CheckedChanged += new System.EventHandler(this.chkMeterItemHistory_CheckedChanged);
             // 
@@ -48707,7 +48598,7 @@
             this.chkMeterItemFadeOnTx.Name = "chkMeterItemFadeOnTx";
             this.chkMeterItemFadeOnTx.Size = new System.Drawing.Size(82, 17);
             this.chkMeterItemFadeOnTx.TabIndex = 1;
-            this.chkMeterItemFadeOnTx.Text = "Fade on TX";
+            this.chkMeterItemFadeOnTx.Text = "发射时渐变";
             this.chkMeterItemFadeOnTx.UseVisualStyleBackColor = true;
             this.chkMeterItemFadeOnTx.CheckedChanged += new System.EventHandler(this.chkMeterItemFadeOnTx_CheckedChanged);
             // 
@@ -48719,7 +48610,7 @@
             this.chkMeterItemFadeOnRx.Name = "chkMeterItemFadeOnRx";
             this.chkMeterItemFadeOnRx.Size = new System.Drawing.Size(83, 17);
             this.chkMeterItemFadeOnRx.TabIndex = 0;
-            this.chkMeterItemFadeOnRx.Text = "Fade on RX";
+            this.chkMeterItemFadeOnRx.Text = "接收时渐变";
             this.chkMeterItemFadeOnRx.UseVisualStyleBackColor = true;
             this.chkMeterItemFadeOnRx.CheckedChanged += new System.EventHandler(this.chkMeterItemFadeOnRx_CheckedChanged);
             // 
@@ -48731,7 +48622,7 @@
             this.btnMeterUp.Selectable = true;
             this.btnMeterUp.Size = new System.Drawing.Size(32, 32);
             this.btnMeterUp.TabIndex = 95;
-            this.toolTip1.SetToolTip(this.btnMeterUp, "Move item up");
+            this.toolTip1.SetToolTip(this.btnMeterUp, "上移项目");
             this.btnMeterUp.UseVisualStyleBackColor = true;
             this.btnMeterUp.Click += new System.EventHandler(this.btnMeterUp_Click);
             // 
@@ -48743,7 +48634,7 @@
             this.btnMeterDown.Selectable = true;
             this.btnMeterDown.Size = new System.Drawing.Size(32, 32);
             this.btnMeterDown.TabIndex = 94;
-            this.toolTip1.SetToolTip(this.btnMeterDown, "Move item down");
+            this.toolTip1.SetToolTip(this.btnMeterDown, "下移项目");
             this.btnMeterDown.UseVisualStyleBackColor = true;
             this.btnMeterDown.Click += new System.EventHandler(this.btnMeterDown_Click);
             // 
@@ -48755,7 +48646,7 @@
             this.btnRemoveMeterItem.Selectable = true;
             this.btnRemoveMeterItem.Size = new System.Drawing.Size(32, 32);
             this.btnRemoveMeterItem.TabIndex = 93;
-            this.toolTip1.SetToolTip(this.btnRemoveMeterItem, "Remove the item");
+            this.toolTip1.SetToolTip(this.btnRemoveMeterItem, "移除该项");
             this.btnRemoveMeterItem.UseVisualStyleBackColor = true;
             this.btnRemoveMeterItem.Click += new System.EventHandler(this.btnRemoveMeterItem_Click);
             // 
@@ -48767,7 +48658,7 @@
             this.btnAddMeterItem.Selectable = true;
             this.btnAddMeterItem.Size = new System.Drawing.Size(32, 32);
             this.btnAddMeterItem.TabIndex = 92;
-            this.toolTip1.SetToolTip(this.btnAddMeterItem, "Include the item");
+            this.toolTip1.SetToolTip(this.btnAddMeterItem, "包含该项");
             this.btnAddMeterItem.UseVisualStyleBackColor = true;
             this.btnAddMeterItem.Click += new System.EventHandler(this.btnAddMeterItem_Click);
             // 
@@ -48804,8 +48695,8 @@
             this.chkContainerHighlight.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.chkContainerHighlight.Size = new System.Drawing.Size(67, 17);
             this.chkContainerHighlight.TabIndex = 89;
-            this.chkContainerHighlight.Text = "Highlight";
-            this.toolTip1.SetToolTip(this.chkContainerHighlight, "Highlight selected container");
+            this.chkContainerHighlight.Text = "高亮";
+            this.toolTip1.SetToolTip(this.chkContainerHighlight, "高亮选中的容器");
             this.chkContainerHighlight.UseVisualStyleBackColor = true;
             this.chkContainerHighlight.CheckedChanged += new System.EventHandler(this.chkContainerHighlight_CheckedChanged);
             // 
@@ -48817,8 +48708,8 @@
             this.btnContainerDelete.Selectable = true;
             this.btnContainerDelete.Size = new System.Drawing.Size(59, 32);
             this.btnContainerDelete.TabIndex = 88;
-            this.btnContainerDelete.Text = "Remove";
-            this.toolTip1.SetToolTip(this.btnContainerDelete, "Removes the selected container and all meter items contained within");
+            this.btnContainerDelete.Text = "移除";
+            this.toolTip1.SetToolTip(this.btnContainerDelete, "移除选中的容器及其包含的所有仪表项");
             this.btnContainerDelete.UseVisualStyleBackColor = true;
             this.btnContainerDelete.Click += new System.EventHandler(this.btnContainerDelete_Click);
             // 
@@ -48830,7 +48721,7 @@
             this.comboContainerSelect.Name = "comboContainerSelect";
             this.comboContainerSelect.Size = new System.Drawing.Size(193, 21);
             this.comboContainerSelect.TabIndex = 87;
-            this.toolTip1.SetToolTip(this.comboContainerSelect, "Selected container. Note: each will get own id in the title text when undocked");
+            this.toolTip1.SetToolTip(this.comboContainerSelect, "选中的容器。注意：取消停靠时每个容器会在标题文本中获得自己的 ID");
             this.comboContainerSelect.SelectedIndexChanged += new System.EventHandler(this.comboContainerSelect_SelectedIndexChanged);
             // 
             // btnAddRX2Container
@@ -48841,8 +48732,8 @@
             this.btnAddRX2Container.Selectable = true;
             this.btnAddRX2Container.Size = new System.Drawing.Size(70, 56);
             this.btnAddRX2Container.TabIndex = 1;
-            this.btnAddRX2Container.Text = "Add TRX2 Container";
-            this.toolTip1.SetToolTip(this.btnAddRX2Container, "Add a meter item container that uses RX2 readings");
+            this.btnAddRX2Container.Text = "添加 TRX2 容器";
+            this.toolTip1.SetToolTip(this.btnAddRX2Container, "添加一个使用 RX2 读数的仪表项容器");
             this.btnAddRX2Container.UseVisualStyleBackColor = true;
             this.btnAddRX2Container.Click += new System.EventHandler(this.btnAddRX2Container_Click);
             // 
@@ -48854,8 +48745,8 @@
             this.btnAddRX1Container.Selectable = true;
             this.btnAddRX1Container.Size = new System.Drawing.Size(70, 56);
             this.btnAddRX1Container.TabIndex = 0;
-            this.btnAddRX1Container.Text = "Add TRX1 Container";
-            this.toolTip1.SetToolTip(this.btnAddRX1Container, "Add a meter item container that uses RX1 readings");
+            this.btnAddRX1Container.Text = "添加 TRX1 容器";
+            this.toolTip1.SetToolTip(this.btnAddRX1Container, "添加一个使用 RX1 读数的仪表项容器");
             this.btnAddRX1Container.UseVisualStyleBackColor = true;
             this.btnAddRX1Container.Click += new System.EventHandler(this.btnAddRX1Container_Click);
             // 
@@ -48870,7 +48761,7 @@
             this.tcAppearanceTXDisplay.Padding = new System.Windows.Forms.Padding(3);
             this.tcAppearanceTXDisplay.Size = new System.Drawing.Size(724, 410);
             this.tcAppearanceTXDisplay.TabIndex = 3;
-            this.tcAppearanceTXDisplay.Text = "TX Display";
+            this.tcAppearanceTXDisplay.Text = "TX 显示";
             // 
             // grpAppTXWaterfall
             // 
@@ -48881,7 +48772,7 @@
             this.grpAppTXWaterfall.Size = new System.Drawing.Size(132, 67);
             this.grpAppTXWaterfall.TabIndex = 85;
             this.grpAppTXWaterfall.TabStop = false;
-            this.grpAppTXWaterfall.Text = "Waterfall";
+            this.grpAppTXWaterfall.Text = "瀑布图";
             // 
             // chkShowTXZeroLineOnWaterfall
             // 
@@ -48891,7 +48782,7 @@
             this.chkShowTXZeroLineOnWaterfall.Name = "chkShowTXZeroLineOnWaterfall";
             this.chkShowTXZeroLineOnWaterfall.Size = new System.Drawing.Size(101, 17);
             this.chkShowTXZeroLineOnWaterfall.TabIndex = 1;
-            this.chkShowTXZeroLineOnWaterfall.Text = "Show Zero Line";
+            this.chkShowTXZeroLineOnWaterfall.Text = "显示零线";
             this.chkShowTXZeroLineOnWaterfall.UseVisualStyleBackColor = true;
             this.chkShowTXZeroLineOnWaterfall.CheckedChanged += new System.EventHandler(this.ChkShowTXZeroLineOnWaterfall_CheckedChanged);
             // 
@@ -48903,7 +48794,7 @@
             this.chkShowTXFilterOnWaterfall.Name = "chkShowTXFilterOnWaterfall";
             this.chkShowTXFilterOnWaterfall.Size = new System.Drawing.Size(78, 17);
             this.chkShowTXFilterOnWaterfall.TabIndex = 0;
-            this.chkShowTXFilterOnWaterfall.Text = "Show Filter";
+            this.chkShowTXFilterOnWaterfall.Text = "显示滤波器";
             this.chkShowTXFilterOnWaterfall.UseVisualStyleBackColor = true;
             this.chkShowTXFilterOnWaterfall.CheckedChanged += new System.EventHandler(this.ChkShowTXFilterOnWaterfall_CheckedChanged);
             // 
@@ -48921,7 +48812,7 @@
             this.groupBoxTS3.Size = new System.Drawing.Size(227, 128);
             this.groupBoxTS3.TabIndex = 80;
             this.groupBoxTS3.TabStop = false;
-            this.groupBoxTS3.Text = "Panadapter                         Alpha";
+            this.groupBoxTS3.Text = "频谱                                Alpha";
             // 
             // tbTXFilterAlpha
             // 
@@ -48942,7 +48833,7 @@
             this.lblDispTXFilterColor.Name = "lblDispTXFilterColor";
             this.lblDispTXFilterColor.Size = new System.Drawing.Size(64, 23);
             this.lblDispTXFilterColor.TabIndex = 45;
-            this.lblDispTXFilterColor.Text = "TX Filter:";
+            this.lblDispTXFilterColor.Text = "TX 滤波器:";
             this.lblDispTXFilterColor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // clrbtnGridTXFilter
@@ -48965,7 +48856,7 @@
             this.lblTXDataLineColor.Name = "lblTXDataLineColor";
             this.lblTXDataLineColor.Size = new System.Drawing.Size(64, 20);
             this.lblTXDataLineColor.TabIndex = 41;
-            this.lblTXDataLineColor.Text = "Data Line:";
+            this.lblTXDataLineColor.Text = "数据线:";
             this.lblTXDataLineColor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // clrbtnTXDataLine
@@ -48988,7 +48879,7 @@
             this.lblTXLineWidth.Name = "lblTXLineWidth";
             this.lblTXLineWidth.Size = new System.Drawing.Size(64, 30);
             this.lblTXLineWidth.TabIndex = 43;
-            this.lblTXLineWidth.Text = "Data Line Width:";
+            this.lblTXLineWidth.Text = "数据线宽度:";
             // 
             // udTXLineWidth
             // 
@@ -49048,7 +48939,7 @@
             this.groupBoxTS2.Size = new System.Drawing.Size(256, 256);
             this.groupBoxTS2.TabIndex = 79;
             this.groupBoxTS2.TabStop = false;
-            this.groupBoxTS2.Text = "Grid                                    Alpha";
+            this.groupBoxTS2.Text = "网格                                    Alpha";
             // 
             // tbTXTextAlpha
             // 
@@ -49069,7 +48960,7 @@
             this.lblTXBandEdge.Name = "lblTXBandEdge";
             this.lblTXBandEdge.Size = new System.Drawing.Size(64, 24);
             this.lblTXBandEdge.TabIndex = 65;
-            this.lblTXBandEdge.Text = "Band Edge:";
+            this.lblTXBandEdge.Text = "波段边缘:";
             this.lblTXBandEdge.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // clrbtnTXBandEdge
@@ -49129,7 +49020,7 @@
             this.lblTXHGridColor.Name = "lblTXHGridColor";
             this.lblTXHGridColor.Size = new System.Drawing.Size(60, 20);
             this.lblTXHGridColor.TabIndex = 86;
-            this.lblTXHGridColor.Text = "H-Grid:";
+            this.lblTXHGridColor.Text = "水平网格:";
             this.lblTXHGridColor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tbTXVGridFineAlpha
@@ -49188,7 +49079,7 @@
             this.lblTXVGridFine.Name = "lblTXVGridFine";
             this.lblTXVGridFine.Size = new System.Drawing.Size(72, 20);
             this.lblTXVGridFine.TabIndex = 74;
-            this.lblTXVGridFine.Text = "V-Grid Fine:";
+            this.lblTXVGridFine.Text = "垂直网格细调:";
             this.lblTXVGridFine.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblTXVGridColor
@@ -49198,7 +49089,7 @@
             this.lblTXVGridColor.Name = "lblTXVGridColor";
             this.lblTXVGridColor.Size = new System.Drawing.Size(72, 20);
             this.lblTXVGridColor.TabIndex = 35;
-            this.lblTXVGridColor.Text = "V-Grid:";
+            this.lblTXVGridColor.Text = "垂直网格:";
             this.lblTXVGridColor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // clrbtnTXBackground
@@ -49234,7 +49125,7 @@
             this.lblTXBackgroundColor.Name = "lblTXBackgroundColor";
             this.lblTXBackgroundColor.Size = new System.Drawing.Size(72, 20);
             this.lblTXBackgroundColor.TabIndex = 34;
-            this.lblTXBackgroundColor.Text = "Background:";
+            this.lblTXBackgroundColor.Text = "背景:";
             this.lblTXBackgroundColor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // clrbtnTXZeroLine
@@ -49257,7 +49148,7 @@
             this.lblTXZeroLineColor.Name = "lblTXZeroLineColor";
             this.lblTXZeroLineColor.Size = new System.Drawing.Size(72, 20);
             this.lblTXZeroLineColor.TabIndex = 36;
-            this.lblTXZeroLineColor.Text = "Zero Line:";
+            this.lblTXZeroLineColor.Text = "零线:";
             this.lblTXZeroLineColor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // clrbtnTXText
@@ -49280,7 +49171,7 @@
             this.lblTXTextColor.Name = "lblTXTextColor";
             this.lblTXTextColor.Size = new System.Drawing.Size(64, 20);
             this.lblTXTextColor.TabIndex = 39;
-            this.lblTXTextColor.Text = "Text:";
+            this.lblTXTextColor.Text = "文本:";
             this.lblTXTextColor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tpAppearanceCollapsible
@@ -49294,7 +49185,7 @@
             this.tpAppearanceCollapsible.Padding = new System.Windows.Forms.Padding(3);
             this.tpAppearanceCollapsible.Size = new System.Drawing.Size(724, 410);
             this.tpAppearanceCollapsible.TabIndex = 4;
-            this.tpAppearanceCollapsible.Text = "Collapsible Display";
+            this.tpAppearanceCollapsible.Text = "可折叠显示";
             // 
             // txtCollapsedHeight
             // 
@@ -49328,7 +49219,7 @@
             this.grpBoxCollapsible.Size = new System.Drawing.Size(162, 141);
             this.grpBoxCollapsible.TabIndex = 1;
             this.grpBoxCollapsible.TabStop = false;
-            this.grpBoxCollapsible.Text = "Show Additional Controls";
+            this.grpBoxCollapsible.Text = "显示附加控件";
             // 
             // chkShowAndromedaBar
             // 
@@ -49338,7 +49229,7 @@
             this.chkShowAndromedaBar.Name = "chkShowAndromedaBar";
             this.chkShowAndromedaBar.Size = new System.Drawing.Size(119, 17);
             this.chkShowAndromedaBar.TabIndex = 16;
-            this.chkShowAndromedaBar.Text = "Andromeda Buttons";
+            this.chkShowAndromedaBar.Text = "Andromeda 按钮";
             this.chkShowAndromedaBar.UseVisualStyleBackColor = true;
             this.chkShowAndromedaBar.CheckedChanged += new System.EventHandler(this.chkShowAndromedaBar_CheckedChanged);
             // 
@@ -49350,7 +49241,7 @@
             this.chkShowAndromedaTop.Name = "chkShowAndromedaTop";
             this.chkShowAndromedaTop.Size = new System.Drawing.Size(102, 17);
             this.chkShowAndromedaTop.TabIndex = 15;
-            this.chkShowAndromedaTop.Text = "Andromeda Top";
+            this.chkShowAndromedaTop.Text = "Andromeda 顶部";
             this.chkShowAndromedaTop.UseVisualStyleBackColor = true;
             this.chkShowAndromedaTop.CheckedChanged += new System.EventHandler(this.chkShowAndromedaTop_CheckedChanged);
             // 
@@ -49364,7 +49255,7 @@
             this.chkShowModeControls.Name = "chkShowModeControls";
             this.chkShowModeControls.Size = new System.Drawing.Size(94, 17);
             this.chkShowModeControls.TabIndex = 14;
-            this.chkShowModeControls.Text = "Mode Controls";
+            this.chkShowModeControls.Text = "模式控制";
             this.chkShowModeControls.UseVisualStyleBackColor = true;
             this.chkShowModeControls.CheckedChanged += new System.EventHandler(this.chkModeControls_CheckedChanged);
             // 
@@ -49378,7 +49269,7 @@
             this.chkShowBandControls.Name = "chkShowBandControls";
             this.chkShowBandControls.Size = new System.Drawing.Size(92, 17);
             this.chkShowBandControls.TabIndex = 11;
-            this.chkShowBandControls.Text = "Band Controls";
+            this.chkShowBandControls.Text = "波段控制";
             this.chkShowBandControls.UseVisualStyleBackColor = true;
             this.chkShowBandControls.CheckedChanged += new System.EventHandler(this.chkShowBandControls_CheckedChanged);
             // 
@@ -49392,7 +49283,7 @@
             this.chkShowTopControls.Name = "chkShowTopControls";
             this.chkShowTopControls.Size = new System.Drawing.Size(86, 17);
             this.chkShowTopControls.TabIndex = 10;
-            this.chkShowTopControls.Text = "Top Controls";
+            this.chkShowTopControls.Text = "顶部控件";
             this.chkShowTopControls.UseVisualStyleBackColor = true;
             this.chkShowTopControls.CheckedChanged += new System.EventHandler(this.chkShowTopControls_CheckedChanged);
             // 
@@ -49412,7 +49303,7 @@
             this.tpKeyboard.Name = "tpKeyboard";
             this.tpKeyboard.Size = new System.Drawing.Size(728, 436);
             this.tpKeyboard.TabIndex = 4;
-            this.tpKeyboard.Text = "Keyboard";
+            this.tpKeyboard.Text = "键盘";
             // 
             // grpKBPTT
             // 
@@ -49434,7 +49325,7 @@
             this.labelTS389.Name = "labelTS389";
             this.labelTS389.Size = new System.Drawing.Size(40, 16);
             this.labelTS389.TabIndex = 10;
-            this.labelTS389.Text = "Tx:";
+            this.labelTS389.Text = "发射:";
             this.labelTS389.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // labelTS390
@@ -49444,7 +49335,7 @@
             this.labelTS390.Name = "labelTS390";
             this.labelTS390.Size = new System.Drawing.Size(40, 16);
             this.labelTS390.TabIndex = 9;
-            this.labelTS390.Text = "Rx:";
+            this.labelTS390.Text = "接收:";
             this.labelTS390.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // comboKBPTTTx
@@ -49478,7 +49369,7 @@
             this.grpBoxSpaceBarPTT.Size = new System.Drawing.Size(168, 112);
             this.grpBoxSpaceBarPTT.TabIndex = 41;
             this.grpBoxSpaceBarPTT.TabStop = false;
-            this.grpBoxSpaceBarPTT.Text = "SpaceBar Control";
+            this.grpBoxSpaceBarPTT.Text = "空格键控制";
             // 
             // radSpaceBarLastBtn
             // 
@@ -49488,8 +49379,8 @@
             this.radSpaceBarLastBtn.Name = "radSpaceBarLastBtn";
             this.radSpaceBarLastBtn.Size = new System.Drawing.Size(102, 17);
             this.radSpaceBarLastBtn.TabIndex = 44;
-            this.radSpaceBarLastBtn.Text = "Last Btn Clicked";
-            this.toolTip1.SetToolTip(this.radSpaceBarLastBtn, "SpaceBar selects the Last Button Clicked");
+            this.radSpaceBarLastBtn.Text = "上次点击的按钮";
+            this.toolTip1.SetToolTip(this.radSpaceBarLastBtn, "空格键选择上次点击的按钮");
             this.radSpaceBarLastBtn.UseVisualStyleBackColor = true;
             this.radSpaceBarLastBtn.CheckedChanged += new System.EventHandler(this.radSpaceBarLastBtn_CheckedChanged);
             // 
@@ -49501,8 +49392,8 @@
             this.radSpaceBarMicMute.Name = "radSpaceBarMicMute";
             this.radSpaceBarMicMute.Size = new System.Drawing.Size(69, 17);
             this.radSpaceBarMicMute.TabIndex = 43;
-            this.radSpaceBarMicMute.Text = "Mic Mute";
-            this.toolTip1.SetToolTip(this.radSpaceBarMicMute, "SpaceBar Controls Mic Mute");
+            this.radSpaceBarMicMute.Text = "麦克风静音";
+            this.toolTip1.SetToolTip(this.radSpaceBarMicMute, "空格键控制麦克风静音");
             this.radSpaceBarMicMute.UseVisualStyleBackColor = true;
             this.radSpaceBarMicMute.CheckedChanged += new System.EventHandler(this.radSpaceBarMicMute_CheckedChanged);
             // 
@@ -49515,7 +49406,7 @@
             this.radSpaceBarVOX.Size = new System.Drawing.Size(47, 17);
             this.radSpaceBarVOX.TabIndex = 42;
             this.radSpaceBarVOX.Text = "VOX";
-            this.toolTip1.SetToolTip(this.radSpaceBarVOX, "SpaceBar Controls VOX");
+            this.toolTip1.SetToolTip(this.radSpaceBarVOX, "空格键控制 VOX");
             this.radSpaceBarVOX.UseVisualStyleBackColor = true;
             this.radSpaceBarVOX.CheckedChanged += new System.EventHandler(this.radSpaceBarVOX_CheckedChanged);
             // 
@@ -49530,7 +49421,7 @@
             this.radSpaceBarPTT.TabIndex = 41;
             this.radSpaceBarPTT.TabStop = true;
             this.radSpaceBarPTT.Text = "PTT/MOX";
-            this.toolTip1.SetToolTip(this.radSpaceBarPTT, "SpaceBar controls PTT");
+            this.toolTip1.SetToolTip(this.radSpaceBarPTT, "空格键控制 PTT");
             this.radSpaceBarPTT.UseVisualStyleBackColor = true;
             this.radSpaceBarPTT.CheckedChanged += new System.EventHandler(this.radSpaceBarPTT_CheckedChanged);
             // 
@@ -49554,7 +49445,7 @@
             this.lblKBXITUp.Name = "lblKBXITUp";
             this.lblKBXITUp.Size = new System.Drawing.Size(40, 16);
             this.lblKBXITUp.TabIndex = 10;
-            this.lblKBXITUp.Text = "Up:";
+            this.lblKBXITUp.Text = "向上:";
             this.lblKBXITUp.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblKBXITDown
@@ -49564,7 +49455,7 @@
             this.lblKBXITDown.Name = "lblKBXITDown";
             this.lblKBXITDown.Size = new System.Drawing.Size(40, 16);
             this.lblKBXITDown.TabIndex = 9;
-            this.lblKBXITDown.Text = "Down:";
+            this.lblKBXITDown.Text = "向下:";
             this.lblKBXITDown.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // comboKBXITUp
@@ -49575,7 +49466,7 @@
             this.comboKBXITUp.Name = "comboKBXITUp";
             this.comboKBXITUp.Size = new System.Drawing.Size(56, 21);
             this.comboKBXITUp.TabIndex = 6;
-            this.toolTip1.SetToolTip(this.comboKBXITUp, "Adjust XIT control up 1kHz.");
+            this.toolTip1.SetToolTip(this.comboKBXITUp, "XIT 控制上调 1kHz。");
             this.comboKBXITUp.SelectedIndexChanged += new System.EventHandler(this.comboKBXITUp_SelectedIndexChanged);
             // 
             // comboKBXITDown
@@ -49586,7 +49477,7 @@
             this.comboKBXITDown.Name = "comboKBXITDown";
             this.comboKBXITDown.Size = new System.Drawing.Size(56, 21);
             this.comboKBXITDown.TabIndex = 5;
-            this.toolTip1.SetToolTip(this.comboKBXITDown, "Adjust the XIT control down 1kHz.");
+            this.toolTip1.SetToolTip(this.comboKBXITDown, "XIT 控制下调 1kHz。");
             this.comboKBXITDown.SelectedIndexChanged += new System.EventHandler(this.comboKBXITDown_SelectedIndexChanged);
             // 
             // grpKBRIT
@@ -49609,7 +49500,7 @@
             this.lblKBRitUp.Name = "lblKBRitUp";
             this.lblKBRitUp.Size = new System.Drawing.Size(40, 16);
             this.lblKBRitUp.TabIndex = 10;
-            this.lblKBRitUp.Text = "Up:";
+            this.lblKBRitUp.Text = "向上:";
             this.lblKBRitUp.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblKBRITDown
@@ -49619,7 +49510,7 @@
             this.lblKBRITDown.Name = "lblKBRITDown";
             this.lblKBRITDown.Size = new System.Drawing.Size(40, 16);
             this.lblKBRITDown.TabIndex = 9;
-            this.lblKBRITDown.Text = "Down:";
+            this.lblKBRITDown.Text = "向下:";
             this.lblKBRITDown.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // comboKBRITUp
@@ -49630,7 +49521,7 @@
             this.comboKBRITUp.Name = "comboKBRITUp";
             this.comboKBRITUp.Size = new System.Drawing.Size(56, 21);
             this.comboKBRITUp.TabIndex = 6;
-            this.toolTip1.SetToolTip(this.comboKBRITUp, "Adjust RIT control up 1kHz.");
+            this.toolTip1.SetToolTip(this.comboKBRITUp, "RIT 控制上调 1kHz。");
             this.comboKBRITUp.SelectedIndexChanged += new System.EventHandler(this.comboKBRITUp_SelectedIndexChanged);
             // 
             // comboKBRITDown
@@ -49641,7 +49532,7 @@
             this.comboKBRITDown.Name = "comboKBRITDown";
             this.comboKBRITDown.Size = new System.Drawing.Size(56, 21);
             this.comboKBRITDown.TabIndex = 5;
-            this.toolTip1.SetToolTip(this.comboKBRITDown, "Adjust RIT control down 1kHz.");
+            this.toolTip1.SetToolTip(this.comboKBRITDown, "RIT 控制下调 1kHz。");
             this.comboKBRITDown.SelectedIndexChanged += new System.EventHandler(this.comboKBRITDown_SelectedIndexChanged);
             // 
             // grpKBMode
@@ -49655,7 +49546,7 @@
             this.grpKBMode.Size = new System.Drawing.Size(112, 72);
             this.grpKBMode.TabIndex = 14;
             this.grpKBMode.TabStop = false;
-            this.grpKBMode.Text = "Mode";
+            this.grpKBMode.Text = "模式";
             // 
             // lblKBModeUp
             // 
@@ -49664,7 +49555,7 @@
             this.lblKBModeUp.Name = "lblKBModeUp";
             this.lblKBModeUp.Size = new System.Drawing.Size(40, 16);
             this.lblKBModeUp.TabIndex = 10;
-            this.lblKBModeUp.Text = "Up:";
+            this.lblKBModeUp.Text = "向上:";
             this.lblKBModeUp.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblKBModeDown
@@ -49674,7 +49565,7 @@
             this.lblKBModeDown.Name = "lblKBModeDown";
             this.lblKBModeDown.Size = new System.Drawing.Size(40, 16);
             this.lblKBModeDown.TabIndex = 9;
-            this.lblKBModeDown.Text = "Down:";
+            this.lblKBModeDown.Text = "向下:";
             this.lblKBModeDown.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // comboKBModeUp
@@ -49685,7 +49576,7 @@
             this.comboKBModeUp.Name = "comboKBModeUp";
             this.comboKBModeUp.Size = new System.Drawing.Size(56, 21);
             this.comboKBModeUp.TabIndex = 6;
-            this.toolTip1.SetToolTip(this.comboKBModeUp, "Select the Next mode.");
+            this.toolTip1.SetToolTip(this.comboKBModeUp, "选择下一个模式。");
             this.comboKBModeUp.SelectedIndexChanged += new System.EventHandler(this.comboKBModeUp_SelectedIndexChanged);
             // 
             // comboKBModeDown
@@ -49696,7 +49587,7 @@
             this.comboKBModeDown.Name = "comboKBModeDown";
             this.comboKBModeDown.Size = new System.Drawing.Size(56, 21);
             this.comboKBModeDown.TabIndex = 5;
-            this.toolTip1.SetToolTip(this.comboKBModeDown, "Select the Previous mode.");
+            this.toolTip1.SetToolTip(this.comboKBModeDown, "选择上一个模式。");
             this.comboKBModeDown.SelectedIndexChanged += new System.EventHandler(this.comboKBModeDown_SelectedIndexChanged);
             // 
             // grpKeyboardOptions
@@ -49708,7 +49599,7 @@
             this.grpKeyboardOptions.Size = new System.Drawing.Size(168, 72);
             this.grpKeyboardOptions.TabIndex = 27;
             this.grpKeyboardOptions.TabStop = false;
-            this.grpKeyboardOptions.Text = "Keyboard";
+            this.grpKeyboardOptions.Text = "键盘";
             // 
             // chkOptEnableKBShortcuts
             // 
@@ -49717,9 +49608,8 @@
             this.chkOptEnableKBShortcuts.Name = "chkOptEnableKBShortcuts";
             this.chkOptEnableKBShortcuts.Size = new System.Drawing.Size(109, 16);
             this.chkOptEnableKBShortcuts.TabIndex = 1;
-            this.chkOptEnableKBShortcuts.Text = "Enable Shortcuts";
-            this.toolTip1.SetToolTip(this.chkOptEnableKBShortcuts, "Enable keyboard shortcuts.  If this box is not checked, none of the keyboard shor" +
-        "tcuts other than those that are built into windows will function.");
+            this.chkOptEnableKBShortcuts.Text = "启用快捷键";
+            this.toolTip1.SetToolTip(this.chkOptEnableKBShortcuts, "启用键盘快捷键。如果不勾选此框，除 Windows 内置快捷键外，其他快捷键均不可用。");
             this.chkOptEnableKBShortcuts.CheckedChanged += new System.EventHandler(this.chkOptEnableKBShortcuts_CheckedChanged);
             // 
             // chkOptQuickQSY
@@ -49729,9 +49619,8 @@
             this.chkOptQuickQSY.Name = "chkOptQuickQSY";
             this.chkOptQuickQSY.Size = new System.Drawing.Size(80, 16);
             this.chkOptQuickQSY.TabIndex = 0;
-            this.chkOptQuickQSY.Text = "Quick QSY";
-            this.toolTip1.SetToolTip(this.chkOptQuickQSY, "Enabled the Quick QSY feature -- directly enter the frequency in MHz while the ma" +
-        "in form has the focus and hit enter.");
+            this.chkOptQuickQSY.Text = "快速 QSY";
+            this.toolTip1.SetToolTip(this.chkOptQuickQSY, "启用快速 QSY 功能 —— 在主窗体获得焦点时直接输入 MHz 频率并按回车。");
             this.chkOptQuickQSY.CheckedChanged += new System.EventHandler(this.chkOptQuickQSY_CheckedChanged);
             // 
             // grpKBBand
@@ -49745,7 +49634,7 @@
             this.grpKBBand.Size = new System.Drawing.Size(112, 72);
             this.grpKBBand.TabIndex = 12;
             this.grpKBBand.TabStop = false;
-            this.grpKBBand.Text = "Band";
+            this.grpKBBand.Text = "波段";
             // 
             // lblKBBandUp
             // 
@@ -49754,7 +49643,7 @@
             this.lblKBBandUp.Name = "lblKBBandUp";
             this.lblKBBandUp.Size = new System.Drawing.Size(40, 16);
             this.lblKBBandUp.TabIndex = 10;
-            this.lblKBBandUp.Text = "Up:";
+            this.lblKBBandUp.Text = "向上:";
             this.lblKBBandUp.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblKBBandDown
@@ -49764,7 +49653,7 @@
             this.lblKBBandDown.Name = "lblKBBandDown";
             this.lblKBBandDown.Size = new System.Drawing.Size(40, 16);
             this.lblKBBandDown.TabIndex = 9;
-            this.lblKBBandDown.Text = "Down:";
+            this.lblKBBandDown.Text = "向下:";
             this.lblKBBandDown.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // comboKBBandUp
@@ -49775,7 +49664,7 @@
             this.comboKBBandUp.Name = "comboKBBandUp";
             this.comboKBBandUp.Size = new System.Drawing.Size(56, 21);
             this.comboKBBandUp.TabIndex = 6;
-            this.toolTip1.SetToolTip(this.comboKBBandUp, "Jump to the next band stack memory.");
+            this.toolTip1.SetToolTip(this.comboKBBandUp, "跳到下一个波段堆栈存储。");
             this.comboKBBandUp.SelectedIndexChanged += new System.EventHandler(this.comboKBBandUp_SelectedIndexChanged);
             // 
             // comboKBBandDown
@@ -49786,7 +49675,7 @@
             this.comboKBBandDown.Name = "comboKBBandDown";
             this.comboKBBandDown.Size = new System.Drawing.Size(56, 21);
             this.comboKBBandDown.TabIndex = 5;
-            this.toolTip1.SetToolTip(this.comboKBBandDown, "Jump to the previous band stack memory.");
+            this.toolTip1.SetToolTip(this.comboKBBandDown, "跳到上一个波段堆栈存储。");
             this.comboKBBandDown.SelectedIndexChanged += new System.EventHandler(this.comboKBBandDown_SelectedIndexChanged);
             // 
             // grpKBTune
@@ -49820,7 +49709,7 @@
             this.grpKBTune.Size = new System.Drawing.Size(456, 96);
             this.grpKBTune.TabIndex = 11;
             this.grpKBTune.TabStop = false;
-            this.grpKBTune.Text = "Tune";
+            this.grpKBTune.Text = "调谐";
             // 
             // lblKBTuneDigit
             // 
@@ -49829,7 +49718,7 @@
             this.lblKBTuneDigit.Name = "lblKBTuneDigit";
             this.lblKBTuneDigit.Size = new System.Drawing.Size(32, 16);
             this.lblKBTuneDigit.TabIndex = 26;
-            this.lblKBTuneDigit.Text = "Digit";
+            this.lblKBTuneDigit.Text = "数字";
             // 
             // lblKBTune7
             // 
@@ -49899,7 +49788,7 @@
             this.comboKBTuneUp7.Name = "comboKBTuneUp7";
             this.comboKBTuneUp7.Size = new System.Drawing.Size(56, 21);
             this.comboKBTuneUp7.TabIndex = 19;
-            this.toolTip1.SetToolTip(this.comboKBTuneUp7, "Tune Up 1Hz");
+            this.toolTip1.SetToolTip(this.comboKBTuneUp7, "向上调谐 1Hz");
             this.comboKBTuneUp7.SelectedIndexChanged += new System.EventHandler(this.comboKBTuneUp7_SelectedIndexChanged);
             // 
             // comboKBTuneDown7
@@ -49910,7 +49799,7 @@
             this.comboKBTuneDown7.Name = "comboKBTuneDown7";
             this.comboKBTuneDown7.Size = new System.Drawing.Size(56, 21);
             this.comboKBTuneDown7.TabIndex = 18;
-            this.toolTip1.SetToolTip(this.comboKBTuneDown7, "Tune Down 1Hz");
+            this.toolTip1.SetToolTip(this.comboKBTuneDown7, "向下调谐 1Hz");
             this.comboKBTuneDown7.SelectedIndexChanged += new System.EventHandler(this.comboKBTuneDown7_SelectedIndexChanged);
             // 
             // comboKBTuneUp6
@@ -49921,7 +49810,7 @@
             this.comboKBTuneUp6.Name = "comboKBTuneUp6";
             this.comboKBTuneUp6.Size = new System.Drawing.Size(56, 21);
             this.comboKBTuneUp6.TabIndex = 17;
-            this.toolTip1.SetToolTip(this.comboKBTuneUp6, "Tune Up 10Hz");
+            this.toolTip1.SetToolTip(this.comboKBTuneUp6, "向上调谐 10Hz");
             this.comboKBTuneUp6.SelectedIndexChanged += new System.EventHandler(this.comboKBTuneUp6_SelectedIndexChanged);
             // 
             // comboKBTuneDown6
@@ -49932,7 +49821,7 @@
             this.comboKBTuneDown6.Name = "comboKBTuneDown6";
             this.comboKBTuneDown6.Size = new System.Drawing.Size(56, 21);
             this.comboKBTuneDown6.TabIndex = 16;
-            this.toolTip1.SetToolTip(this.comboKBTuneDown6, "Tune Down 10Hz");
+            this.toolTip1.SetToolTip(this.comboKBTuneDown6, "向下调谐 10Hz");
             this.comboKBTuneDown6.SelectedIndexChanged += new System.EventHandler(this.comboKBTuneDown6_SelectedIndexChanged);
             // 
             // comboKBTuneUp5
@@ -49943,7 +49832,7 @@
             this.comboKBTuneUp5.Name = "comboKBTuneUp5";
             this.comboKBTuneUp5.Size = new System.Drawing.Size(56, 21);
             this.comboKBTuneUp5.TabIndex = 15;
-            this.toolTip1.SetToolTip(this.comboKBTuneUp5, "Tune Up 100Hz");
+            this.toolTip1.SetToolTip(this.comboKBTuneUp5, "向上调谐 100Hz");
             this.comboKBTuneUp5.SelectedIndexChanged += new System.EventHandler(this.comboKBTuneUp5_SelectedIndexChanged);
             // 
             // comboKBTuneDown5
@@ -49954,7 +49843,7 @@
             this.comboKBTuneDown5.Name = "comboKBTuneDown5";
             this.comboKBTuneDown5.Size = new System.Drawing.Size(56, 21);
             this.comboKBTuneDown5.TabIndex = 14;
-            this.toolTip1.SetToolTip(this.comboKBTuneDown5, "Tune Down 100Hz");
+            this.toolTip1.SetToolTip(this.comboKBTuneDown5, "向下调谐 100Hz");
             this.comboKBTuneDown5.SelectedIndexChanged += new System.EventHandler(this.comboKBTuneDown5_SelectedIndexChanged);
             // 
             // comboKBTuneUp4
@@ -49965,7 +49854,7 @@
             this.comboKBTuneUp4.Name = "comboKBTuneUp4";
             this.comboKBTuneUp4.Size = new System.Drawing.Size(56, 21);
             this.comboKBTuneUp4.TabIndex = 13;
-            this.toolTip1.SetToolTip(this.comboKBTuneUp4, "Tune Up 1kHz");
+            this.toolTip1.SetToolTip(this.comboKBTuneUp4, "向上调谐 1kHz");
             this.comboKBTuneUp4.SelectedIndexChanged += new System.EventHandler(this.comboKBTuneUp4_SelectedIndexChanged);
             // 
             // comboKBTuneDown4
@@ -49976,7 +49865,7 @@
             this.comboKBTuneDown4.Name = "comboKBTuneDown4";
             this.comboKBTuneDown4.Size = new System.Drawing.Size(56, 21);
             this.comboKBTuneDown4.TabIndex = 12;
-            this.toolTip1.SetToolTip(this.comboKBTuneDown4, "Tune Down 1kHz");
+            this.toolTip1.SetToolTip(this.comboKBTuneDown4, "向下调谐 1kHz");
             this.comboKBTuneDown4.SelectedIndexChanged += new System.EventHandler(this.comboKBTuneDown4_SelectedIndexChanged);
             // 
             // lblKBTune1
@@ -49996,7 +49885,7 @@
             this.lblKBTuneUp.Name = "lblKBTuneUp";
             this.lblKBTuneUp.Size = new System.Drawing.Size(40, 16);
             this.lblKBTuneUp.TabIndex = 8;
-            this.lblKBTuneUp.Text = "Up:";
+            this.lblKBTuneUp.Text = "向上:";
             this.lblKBTuneUp.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblKBTuneDown
@@ -50006,7 +49895,7 @@
             this.lblKBTuneDown.Name = "lblKBTuneDown";
             this.lblKBTuneDown.Size = new System.Drawing.Size(40, 16);
             this.lblKBTuneDown.TabIndex = 7;
-            this.lblKBTuneDown.Text = "Down:";
+            this.lblKBTuneDown.Text = "向下:";
             this.lblKBTuneDown.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // comboKBTuneUp3
@@ -50017,7 +49906,7 @@
             this.comboKBTuneUp3.Name = "comboKBTuneUp3";
             this.comboKBTuneUp3.Size = new System.Drawing.Size(56, 21);
             this.comboKBTuneUp3.TabIndex = 6;
-            this.toolTip1.SetToolTip(this.comboKBTuneUp3, "Tune Up 10kHz");
+            this.toolTip1.SetToolTip(this.comboKBTuneUp3, "向上调谐 10kHz");
             this.comboKBTuneUp3.SelectedIndexChanged += new System.EventHandler(this.comboKBTuneUp3_SelectedIndexChanged);
             // 
             // comboKBTuneDown3
@@ -50028,7 +49917,7 @@
             this.comboKBTuneDown3.Name = "comboKBTuneDown3";
             this.comboKBTuneDown3.Size = new System.Drawing.Size(56, 21);
             this.comboKBTuneDown3.TabIndex = 1;
-            this.toolTip1.SetToolTip(this.comboKBTuneDown3, "Tune Down 10kHz");
+            this.toolTip1.SetToolTip(this.comboKBTuneDown3, "向下调谐 10kHz");
             this.comboKBTuneDown3.SelectedIndexChanged += new System.EventHandler(this.comboKBTuneDown3_SelectedIndexChanged);
             // 
             // comboKBTuneUp1
@@ -50039,7 +49928,7 @@
             this.comboKBTuneUp1.Name = "comboKBTuneUp1";
             this.comboKBTuneUp1.Size = new System.Drawing.Size(56, 21);
             this.comboKBTuneUp1.TabIndex = 4;
-            this.toolTip1.SetToolTip(this.comboKBTuneUp1, "Tune Up 1MHz");
+            this.toolTip1.SetToolTip(this.comboKBTuneUp1, "向上调谐 1MHz");
             this.comboKBTuneUp1.SelectedIndexChanged += new System.EventHandler(this.comboKBTuneUp1_SelectedIndexChanged);
             // 
             // comboKBTuneUp2
@@ -50050,7 +49939,7 @@
             this.comboKBTuneUp2.Name = "comboKBTuneUp2";
             this.comboKBTuneUp2.Size = new System.Drawing.Size(56, 21);
             this.comboKBTuneUp2.TabIndex = 5;
-            this.toolTip1.SetToolTip(this.comboKBTuneUp2, "Tune Up 100kHz");
+            this.toolTip1.SetToolTip(this.comboKBTuneUp2, "向上调谐 100kHz");
             this.comboKBTuneUp2.SelectedIndexChanged += new System.EventHandler(this.comboKBTuneUp2_SelectedIndexChanged);
             // 
             // comboKBTuneDown1
@@ -50061,7 +49950,7 @@
             this.comboKBTuneDown1.Name = "comboKBTuneDown1";
             this.comboKBTuneDown1.Size = new System.Drawing.Size(56, 21);
             this.comboKBTuneDown1.TabIndex = 0;
-            this.toolTip1.SetToolTip(this.comboKBTuneDown1, "Tune Down 1MHz");
+            this.toolTip1.SetToolTip(this.comboKBTuneDown1, "向下调谐 1MHz");
             this.comboKBTuneDown1.SelectedIndexChanged += new System.EventHandler(this.comboKBTuneDown1_SelectedIndexChanged);
             // 
             // comboKBTuneDown2
@@ -50072,7 +49961,7 @@
             this.comboKBTuneDown2.Name = "comboKBTuneDown2";
             this.comboKBTuneDown2.Size = new System.Drawing.Size(56, 21);
             this.comboKBTuneDown2.TabIndex = 2;
-            this.toolTip1.SetToolTip(this.comboKBTuneDown2, "Tune Down 100kHz");
+            this.toolTip1.SetToolTip(this.comboKBTuneDown2, "向下调谐 100kHz");
             this.comboKBTuneDown2.SelectedIndexChanged += new System.EventHandler(this.comboKBTuneDown2_SelectedIndexChanged);
             // 
             // grpKBFilter
@@ -50086,7 +49975,7 @@
             this.grpKBFilter.Size = new System.Drawing.Size(112, 72);
             this.grpKBFilter.TabIndex = 13;
             this.grpKBFilter.TabStop = false;
-            this.grpKBFilter.Text = "Filter";
+            this.grpKBFilter.Text = "滤波器";
             // 
             // lblKBFilterUp
             // 
@@ -50095,7 +49984,7 @@
             this.lblKBFilterUp.Name = "lblKBFilterUp";
             this.lblKBFilterUp.Size = new System.Drawing.Size(40, 16);
             this.lblKBFilterUp.TabIndex = 10;
-            this.lblKBFilterUp.Text = "Up:";
+            this.lblKBFilterUp.Text = "向上:";
             this.lblKBFilterUp.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblKBFilterDown
@@ -50105,7 +49994,7 @@
             this.lblKBFilterDown.Name = "lblKBFilterDown";
             this.lblKBFilterDown.Size = new System.Drawing.Size(40, 16);
             this.lblKBFilterDown.TabIndex = 9;
-            this.lblKBFilterDown.Text = "Down:";
+            this.lblKBFilterDown.Text = "向下:";
             this.lblKBFilterDown.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // comboKBFilterUp
@@ -50116,7 +50005,7 @@
             this.comboKBFilterUp.Name = "comboKBFilterUp";
             this.comboKBFilterUp.Size = new System.Drawing.Size(56, 21);
             this.comboKBFilterUp.TabIndex = 6;
-            this.toolTip1.SetToolTip(this.comboKBFilterUp, "Select the Next filter.");
+            this.toolTip1.SetToolTip(this.comboKBFilterUp, "选择下一个滤波器。");
             this.comboKBFilterUp.SelectedIndexChanged += new System.EventHandler(this.comboKBFilterUp_SelectedIndexChanged);
             // 
             // comboKBFilterDown
@@ -50127,7 +50016,7 @@
             this.comboKBFilterDown.Name = "comboKBFilterDown";
             this.comboKBFilterDown.Size = new System.Drawing.Size(56, 21);
             this.comboKBFilterDown.TabIndex = 5;
-            this.toolTip1.SetToolTip(this.comboKBFilterDown, "Select the Previous filter.");
+            this.toolTip1.SetToolTip(this.comboKBFilterDown, "选择上一个滤波器。");
             this.comboKBFilterDown.SelectedIndexChanged += new System.EventHandler(this.comboKBFilterDown_SelectedIndexChanged);
             // 
             // grpKBCW
@@ -50151,7 +50040,7 @@
             this.lblKBCWDot.Name = "lblKBCWDot";
             this.lblKBCWDot.Size = new System.Drawing.Size(40, 16);
             this.lblKBCWDot.TabIndex = 10;
-            this.lblKBCWDot.Text = "Dot:";
+            this.lblKBCWDot.Text = "点:";
             this.lblKBCWDot.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblKBCWDash
@@ -50161,7 +50050,7 @@
             this.lblKBCWDash.Name = "lblKBCWDash";
             this.lblKBCWDash.Size = new System.Drawing.Size(40, 16);
             this.lblKBCWDash.TabIndex = 9;
-            this.lblKBCWDash.Text = "Dash:";
+            this.lblKBCWDash.Text = "划:";
             this.lblKBCWDash.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // comboKBCWDot
@@ -50172,7 +50061,7 @@
             this.comboKBCWDot.Name = "comboKBCWDot";
             this.comboKBCWDot.Size = new System.Drawing.Size(56, 21);
             this.comboKBCWDot.TabIndex = 6;
-            this.toolTip1.SetToolTip(this.comboKBCWDot, "Note: Only works with old keyer.");
+            this.toolTip1.SetToolTip(this.comboKBCWDot, "注意：仅适用于旧版电键器。");
             this.comboKBCWDot.SelectedIndexChanged += new System.EventHandler(this.comboKBCWDot_SelectedIndexChanged);
             // 
             // comboKBCWDash
@@ -50183,7 +50072,7 @@
             this.comboKBCWDash.Name = "comboKBCWDash";
             this.comboKBCWDash.Size = new System.Drawing.Size(56, 21);
             this.comboKBCWDash.TabIndex = 5;
-            this.toolTip1.SetToolTip(this.comboKBCWDash, "Note: Only works with old keyer.");
+            this.toolTip1.SetToolTip(this.comboKBCWDash, "注意：仅适用于旧版电键器。");
             this.comboKBCWDash.SelectedIndexChanged += new System.EventHandler(this.comboKBCWDash_SelectedIndexChanged);
             // 
             // tpCATControl
@@ -50193,7 +50082,7 @@
             this.tpCATControl.Name = "tpCATControl";
             this.tpCATControl.Size = new System.Drawing.Size(728, 436);
             this.tpCATControl.TabIndex = 10;
-            this.tpCATControl.Text = "Serial/Network/Midi CAT";
+            this.tpCATControl.Text = "串口/网络/MIDI CAT";
             // 
             // tcCAT
             // 
@@ -50226,7 +50115,7 @@
             this.tpCATSerialPorts.Padding = new System.Windows.Forms.Padding(3);
             this.tpCATSerialPorts.Size = new System.Drawing.Size(724, 407);
             this.tpCATSerialPorts.TabIndex = 2;
-            this.tpCATSerialPorts.Text = "Serial";
+            this.tpCATSerialPorts.Text = "串口";
             // 
             // txtCAT1
             // 
@@ -50236,7 +50125,7 @@
             this.txtCAT1.Name = "txtCAT1";
             this.txtCAT1.Size = new System.Drawing.Size(160, 40);
             this.txtCAT1.TabIndex = 108;
-            this.toolTip1.SetToolTip(this.txtCAT1, "You can add a discription for that CAT port.");
+            this.toolTip1.SetToolTip(this.txtCAT1, "可以为该 CAT 端口添加描述。");
             // 
             // txtCAT4
             // 
@@ -50246,7 +50135,7 @@
             this.txtCAT4.Name = "txtCAT4";
             this.txtCAT4.Size = new System.Drawing.Size(160, 40);
             this.txtCAT4.TabIndex = 96;
-            this.toolTip1.SetToolTip(this.txtCAT4, "You can add a discription for that CAT port.");
+            this.toolTip1.SetToolTip(this.txtCAT4, "可以为该 CAT 端口添加描述。");
             // 
             // txtCAT3
             // 
@@ -50256,7 +50145,7 @@
             this.txtCAT3.Name = "txtCAT3";
             this.txtCAT3.Size = new System.Drawing.Size(160, 40);
             this.txtCAT3.TabIndex = 95;
-            this.toolTip1.SetToolTip(this.txtCAT3, "You can add a discription for that CAT port.");
+            this.toolTip1.SetToolTip(this.txtCAT3, "可以为该 CAT 端口添加描述。");
             // 
             // txtCAT2
             // 
@@ -50266,7 +50155,7 @@
             this.txtCAT2.Name = "txtCAT2";
             this.txtCAT2.Size = new System.Drawing.Size(160, 40);
             this.txtCAT2.TabIndex = 94;
-            this.toolTip1.SetToolTip(this.txtCAT2, "You can add a discription for that CAT port.");
+            this.toolTip1.SetToolTip(this.txtCAT2, "可以为该 CAT 端口添加描述。");
             // 
             // grpPTTBitBang
             // 
@@ -50280,7 +50169,7 @@
             this.grpPTTBitBang.Size = new System.Drawing.Size(160, 112);
             this.grpPTTBitBang.TabIndex = 91;
             this.grpPTTBitBang.TabStop = false;
-            this.grpPTTBitBang.Text = "PTT Control";
+            this.grpPTTBitBang.Text = "PTT 控制";
             // 
             // comboCATPTTPort
             // 
@@ -50290,7 +50179,7 @@
             this.comboCATPTTPort.Name = "comboCATPTTPort";
             this.comboCATPTTPort.Size = new System.Drawing.Size(95, 21);
             this.comboCATPTTPort.TabIndex = 96;
-            this.toolTip1.SetToolTip(this.comboCATPTTPort, "Selects the COM port for use with PTT control");
+            this.toolTip1.SetToolTip(this.comboCATPTTPort, "选择用于 PTT 控制的 COM 端口");
             this.comboCATPTTPort.SelectedIndexChanged += new System.EventHandler(this.comboCATPTTPort_SelectedIndexChanged);
             this.comboCATPTTPort.Click += new System.EventHandler(this.comboCATPTTPort_Click);
             // 
@@ -50301,7 +50190,7 @@
             this.lblCATPTTPort.Name = "lblCATPTTPort";
             this.lblCATPTTPort.Size = new System.Drawing.Size(40, 23);
             this.lblCATPTTPort.TabIndex = 6;
-            this.lblCATPTTPort.Text = "Port:";
+            this.lblCATPTTPort.Text = "端口:";
             // 
             // chkCATPTT_RTS
             // 
@@ -50330,7 +50219,7 @@
             this.chkCATPTTEnabled.Name = "chkCATPTTEnabled";
             this.chkCATPTTEnabled.Size = new System.Drawing.Size(104, 24);
             this.chkCATPTTEnabled.TabIndex = 4;
-            this.chkCATPTTEnabled.Text = "Enable PTT";
+            this.chkCATPTTEnabled.Text = "启用 PTT";
             this.chkCATPTTEnabled.CheckedChanged += new System.EventHandler(this.chkCATPTTEnabled_CheckedChanged);
             // 
             // grpCat4ControlBox
@@ -50351,7 +50240,7 @@
             this.grpCat4ControlBox.Size = new System.Drawing.Size(160, 216);
             this.grpCat4ControlBox.TabIndex = 93;
             this.grpCat4ControlBox.TabStop = false;
-            this.grpCat4ControlBox.Text = "CAT4 Control";
+            this.grpCat4ControlBox.Text = "CAT4 控制";
             // 
             // comboCAT4Port
             // 
@@ -50361,7 +50250,7 @@
             this.comboCAT4Port.Name = "comboCAT4Port";
             this.comboCAT4Port.Size = new System.Drawing.Size(72, 21);
             this.comboCAT4Port.TabIndex = 95;
-            this.toolTip1.SetToolTip(this.comboCAT4Port, "Sets the COM port to be used for the CAT interface.");
+            this.toolTip1.SetToolTip(this.comboCAT4Port, "设置用于 CAT 接口的 COM 端口。");
             this.comboCAT4Port.SelectedIndexChanged += new System.EventHandler(this.comboCAT4Port_SelectedIndexChanged);
             this.comboCAT4Port.Click += new System.EventHandler(this.comboCAT4Port_Click);
             // 
@@ -50401,7 +50290,7 @@
             this.lblCAT4Port.Name = "lblCAT4Port";
             this.lblCAT4Port.Size = new System.Drawing.Size(40, 23);
             this.lblCAT4Port.TabIndex = 3;
-            this.lblCAT4Port.Text = "Port:";
+            this.lblCAT4Port.Text = "端口:";
             // 
             // chkCAT4Enable
             // 
@@ -50410,7 +50299,7 @@
             this.chkCAT4Enable.Name = "chkCAT4Enable";
             this.chkCAT4Enable.Size = new System.Drawing.Size(104, 24);
             this.chkCAT4Enable.TabIndex = 0;
-            this.chkCAT4Enable.Text = "Enable CAT4";
+            this.chkCAT4Enable.Text = "启用 CAT4";
             this.chkCAT4Enable.CheckedChanged += new System.EventHandler(this.chkCAT4Enable_CheckedChanged);
             // 
             // lblCAT4Parity
@@ -50420,7 +50309,7 @@
             this.lblCAT4Parity.Name = "lblCAT4Parity";
             this.lblCAT4Parity.Size = new System.Drawing.Size(48, 23);
             this.lblCAT4Parity.TabIndex = 92;
-            this.lblCAT4Parity.Text = "Parity";
+            this.lblCAT4Parity.Text = "校验位";
             // 
             // lblCAT4Data
             // 
@@ -50429,7 +50318,7 @@
             this.lblCAT4Data.Name = "lblCAT4Data";
             this.lblCAT4Data.Size = new System.Drawing.Size(40, 23);
             this.lblCAT4Data.TabIndex = 92;
-            this.lblCAT4Data.Text = "Data";
+            this.lblCAT4Data.Text = "数据";
             // 
             // lblCAT4Stop
             // 
@@ -50438,7 +50327,7 @@
             this.lblCAT4Stop.Name = "lblCAT4Stop";
             this.lblCAT4Stop.Size = new System.Drawing.Size(40, 23);
             this.lblCAT4Stop.TabIndex = 92;
-            this.lblCAT4Stop.Text = "Stop";
+            this.lblCAT4Stop.Text = "停止";
             // 
             // comboCAT4parity
             // 
@@ -50502,7 +50391,7 @@
             this.grpCat3ControlBox.Size = new System.Drawing.Size(160, 216);
             this.grpCat3ControlBox.TabIndex = 92;
             this.grpCat3ControlBox.TabStop = false;
-            this.grpCat3ControlBox.Text = "CAT3 Control";
+            this.grpCat3ControlBox.Text = "CAT3 控制";
             // 
             // comboCAT3Port
             // 
@@ -50512,7 +50401,7 @@
             this.comboCAT3Port.Name = "comboCAT3Port";
             this.comboCAT3Port.Size = new System.Drawing.Size(72, 21);
             this.comboCAT3Port.TabIndex = 95;
-            this.toolTip1.SetToolTip(this.comboCAT3Port, "Sets the COM port to be used for the CAT interface.");
+            this.toolTip1.SetToolTip(this.comboCAT3Port, "设置用于 CAT 接口的 COM 端口。");
             this.comboCAT3Port.SelectedIndexChanged += new System.EventHandler(this.comboCAT3Port_SelectedIndexChanged);
             this.comboCAT3Port.Click += new System.EventHandler(this.comboCAT3Port_Click);
             // 
@@ -50552,7 +50441,7 @@
             this.lblCAT3Port.Name = "lblCAT3Port";
             this.lblCAT3Port.Size = new System.Drawing.Size(40, 23);
             this.lblCAT3Port.TabIndex = 3;
-            this.lblCAT3Port.Text = "Port:";
+            this.lblCAT3Port.Text = "端口:";
             // 
             // chkCAT3Enable
             // 
@@ -50561,7 +50450,7 @@
             this.chkCAT3Enable.Name = "chkCAT3Enable";
             this.chkCAT3Enable.Size = new System.Drawing.Size(104, 24);
             this.chkCAT3Enable.TabIndex = 0;
-            this.chkCAT3Enable.Text = "Enable CAT3";
+            this.chkCAT3Enable.Text = "启用 CAT3";
             this.chkCAT3Enable.CheckedChanged += new System.EventHandler(this.chkCAT3Enable_CheckedChanged);
             // 
             // lblCAT3Parity
@@ -50571,7 +50460,7 @@
             this.lblCAT3Parity.Name = "lblCAT3Parity";
             this.lblCAT3Parity.Size = new System.Drawing.Size(48, 23);
             this.lblCAT3Parity.TabIndex = 92;
-            this.lblCAT3Parity.Text = "Parity";
+            this.lblCAT3Parity.Text = "校验位";
             // 
             // lblCAT3Data
             // 
@@ -50580,7 +50469,7 @@
             this.lblCAT3Data.Name = "lblCAT3Data";
             this.lblCAT3Data.Size = new System.Drawing.Size(40, 23);
             this.lblCAT3Data.TabIndex = 92;
-            this.lblCAT3Data.Text = "Data";
+            this.lblCAT3Data.Text = "数据";
             // 
             // lblCAT3Stop
             // 
@@ -50589,7 +50478,7 @@
             this.lblCAT3Stop.Name = "lblCAT3Stop";
             this.lblCAT3Stop.Size = new System.Drawing.Size(40, 23);
             this.lblCAT3Stop.TabIndex = 92;
-            this.lblCAT3Stop.Text = "Stop";
+            this.lblCAT3Stop.Text = "停止";
             // 
             // comboCAT3parity
             // 
@@ -50653,7 +50542,7 @@
             this.grpCat2ControlBox.Size = new System.Drawing.Size(160, 216);
             this.grpCat2ControlBox.TabIndex = 91;
             this.grpCat2ControlBox.TabStop = false;
-            this.grpCat2ControlBox.Text = "CAT2 Control";
+            this.grpCat2ControlBox.Text = "CAT2 控制";
             // 
             // comboCAT2Port
             // 
@@ -50663,7 +50552,7 @@
             this.comboCAT2Port.Name = "comboCAT2Port";
             this.comboCAT2Port.Size = new System.Drawing.Size(72, 21);
             this.comboCAT2Port.TabIndex = 95;
-            this.toolTip1.SetToolTip(this.comboCAT2Port, "Sets the COM port to be used for the CAT interface.");
+            this.toolTip1.SetToolTip(this.comboCAT2Port, "设置用于 CAT 接口的 COM 端口。");
             this.comboCAT2Port.SelectedIndexChanged += new System.EventHandler(this.comboCAT2Port_SelectedIndexChanged);
             this.comboCAT2Port.Click += new System.EventHandler(this.comboCAT2Port_Click);
             // 
@@ -50703,7 +50592,7 @@
             this.lblCAT2Port.Name = "lblCAT2Port";
             this.lblCAT2Port.Size = new System.Drawing.Size(40, 23);
             this.lblCAT2Port.TabIndex = 3;
-            this.lblCAT2Port.Text = "Port:";
+            this.lblCAT2Port.Text = "端口:";
             // 
             // chkCAT2Enable
             // 
@@ -50712,7 +50601,7 @@
             this.chkCAT2Enable.Name = "chkCAT2Enable";
             this.chkCAT2Enable.Size = new System.Drawing.Size(104, 24);
             this.chkCAT2Enable.TabIndex = 0;
-            this.chkCAT2Enable.Text = "Enable CAT2";
+            this.chkCAT2Enable.Text = "启用 CAT2";
             this.chkCAT2Enable.CheckedChanged += new System.EventHandler(this.chkCAT2Enable_CheckedChanged);
             // 
             // lblCAT2Parity
@@ -50722,7 +50611,7 @@
             this.lblCAT2Parity.Name = "lblCAT2Parity";
             this.lblCAT2Parity.Size = new System.Drawing.Size(48, 23);
             this.lblCAT2Parity.TabIndex = 92;
-            this.lblCAT2Parity.Text = "Parity";
+            this.lblCAT2Parity.Text = "校验位";
             // 
             // lblCAT2Data
             // 
@@ -50731,7 +50620,7 @@
             this.lblCAT2Data.Name = "lblCAT2Data";
             this.lblCAT2Data.Size = new System.Drawing.Size(40, 23);
             this.lblCAT2Data.TabIndex = 92;
-            this.lblCAT2Data.Text = "Data";
+            this.lblCAT2Data.Text = "数据";
             // 
             // lblCAT2Stop
             // 
@@ -50740,7 +50629,7 @@
             this.lblCAT2Stop.Name = "lblCAT2Stop";
             this.lblCAT2Stop.Size = new System.Drawing.Size(40, 23);
             this.lblCAT2Stop.TabIndex = 92;
-            this.lblCAT2Stop.Text = "Stop";
+            this.lblCAT2Stop.Text = "停止";
             // 
             // comboCAT2parity
             // 
@@ -50804,7 +50693,7 @@
             this.grpCatControlBox.Size = new System.Drawing.Size(160, 216);
             this.grpCatControlBox.TabIndex = 90;
             this.grpCatControlBox.TabStop = false;
-            this.grpCatControlBox.Text = "CAT1 Control";
+            this.grpCatControlBox.Text = "CAT1 控制";
             // 
             // comboCATPort
             // 
@@ -50814,7 +50703,7 @@
             this.comboCATPort.Name = "comboCATPort";
             this.comboCATPort.Size = new System.Drawing.Size(72, 21);
             this.comboCATPort.TabIndex = 95;
-            this.toolTip1.SetToolTip(this.comboCATPort, "Sets the COM port to be used for the CAT interface.");
+            this.toolTip1.SetToolTip(this.comboCATPort, "设置用于 CAT 接口的 COM 端口。");
             this.comboCATPort.SelectedIndexChanged += new System.EventHandler(this.comboCATPort_SelectedIndexChanged);
             this.comboCATPort.Click += new System.EventHandler(this.comboCATPort_Click);
             // 
@@ -50854,7 +50743,7 @@
             this.lblCATPort.Name = "lblCATPort";
             this.lblCATPort.Size = new System.Drawing.Size(40, 23);
             this.lblCATPort.TabIndex = 3;
-            this.lblCATPort.Text = "Port:";
+            this.lblCATPort.Text = "端口:";
             // 
             // chkCATEnable
             // 
@@ -50863,7 +50752,7 @@
             this.chkCATEnable.Name = "chkCATEnable";
             this.chkCATEnable.Size = new System.Drawing.Size(104, 24);
             this.chkCATEnable.TabIndex = 0;
-            this.chkCATEnable.Text = "Enable CAT1";
+            this.chkCATEnable.Text = "启用 CAT1";
             this.chkCATEnable.CheckedChanged += new System.EventHandler(this.chkCATEnable_CheckedChanged);
             // 
             // lblCATParity
@@ -50873,7 +50762,7 @@
             this.lblCATParity.Name = "lblCATParity";
             this.lblCATParity.Size = new System.Drawing.Size(48, 23);
             this.lblCATParity.TabIndex = 92;
-            this.lblCATParity.Text = "Parity";
+            this.lblCATParity.Text = "校验位";
             // 
             // lblCATData
             // 
@@ -50882,7 +50771,7 @@
             this.lblCATData.Name = "lblCATData";
             this.lblCATData.Size = new System.Drawing.Size(40, 23);
             this.lblCATData.TabIndex = 92;
-            this.lblCATData.Text = "Data";
+            this.lblCATData.Text = "数据";
             // 
             // lblCATStop
             // 
@@ -50891,7 +50780,7 @@
             this.lblCATStop.Name = "lblCATStop";
             this.lblCATStop.Size = new System.Drawing.Size(40, 23);
             this.lblCATStop.TabIndex = 92;
-            this.lblCATStop.Text = "Stop";
+            this.lblCATStop.Text = "停止";
             // 
             // comboCATparity
             // 
@@ -50948,7 +50837,7 @@
             this.tpTCITCPIPN1MM.Padding = new System.Windows.Forms.Padding(3);
             this.tpTCITCPIPN1MM.Size = new System.Drawing.Size(724, 407);
             this.tpTCITCPIPN1MM.TabIndex = 3;
-            this.tpTCITCPIPN1MM.Text = "Network";
+            this.tpTCITCPIPN1MM.Text = "网络";
             // 
             // grpTCIServer
             // 
@@ -50981,7 +50870,7 @@
             this.grpTCIServer.Size = new System.Drawing.Size(373, 389);
             this.grpTCIServer.TabIndex = 98;
             this.grpTCIServer.TabStop = false;
-            this.grpTCIServer.Text = "TCI Server (0 clients)";
+            this.grpTCIServer.Text = "TCI 服务器 (0 个客户端)";
             // 
             // chkEmulateExpertSDR3Protocol
             // 
@@ -50991,8 +50880,8 @@
             this.chkEmulateExpertSDR3Protocol.Name = "chkEmulateExpertSDR3Protocol";
             this.chkEmulateExpertSDR3Protocol.Size = new System.Drawing.Size(167, 17);
             this.chkEmulateExpertSDR3Protocol.TabIndex = 72;
-            this.chkEmulateExpertSDR3Protocol.Text = "Emulate ExpertSDR3 protocol";
-            this.toolTip1.SetToolTip(this.chkEmulateExpertSDR3Protocol, "Causes the TCI protocol message to send \'ExpertSDR3\' instead of \'Thetis\'");
+            this.chkEmulateExpertSDR3Protocol.Text = "模拟 ExpertSDR3 协议";
+            this.toolTip1.SetToolTip(this.chkEmulateExpertSDR3Protocol, "使 TCI 协议消息发送 'ExpertSDR3' 而非 'Thetis'");
             this.chkEmulateExpertSDR3Protocol.UseVisualStyleBackColor = true;
             this.chkEmulateExpertSDR3Protocol.CheckedChanged += new System.EventHandler(this.chkEmulateExpertSDR3Protocol_CheckedChanged);
             // 
@@ -51004,8 +50893,8 @@
             this.chkEmulateSunSDR2Pro.Name = "chkEmulateSunSDR2Pro";
             this.chkEmulateSunSDR2Pro.Size = new System.Drawing.Size(166, 17);
             this.chkEmulateSunSDR2Pro.TabIndex = 71;
-            this.chkEmulateSunSDR2Pro.Text = "Emulate SunSDR2Pro device";
-            this.toolTip1.SetToolTip(this.chkEmulateSunSDR2Pro, "Causes the TCI device message to send \'SunSDR2PRO\' instead of Anan model");
+            this.chkEmulateSunSDR2Pro.Text = "模拟 SunSDR2Pro 设备";
+            this.toolTip1.SetToolTip(this.chkEmulateSunSDR2Pro, "使 TCI 设备消息发送 'SunSDR2PRO' 而非 Anan 型号");
             this.chkEmulateSunSDR2Pro.UseVisualStyleBackColor = true;
             this.chkEmulateSunSDR2Pro.CheckedChanged += new System.EventHandler(this.chkEmulateSunSDR2Pro_CheckedChanged);
             // 
@@ -51018,7 +50907,7 @@
             this.btnIPv4TCI.Size = new System.Drawing.Size(42, 26);
             this.btnIPv4TCI.TabIndex = 70;
             this.btnIPv4TCI.Text = "IPv4";
-            this.toolTip1.SetToolTip(this.btnIPv4TCI, "Show list if IPv4 addresses.");
+            this.toolTip1.SetToolTip(this.btnIPv4TCI, "显示 IPv4 地址列表。");
             this.btnIPv4TCI.UseVisualStyleBackColor = true;
             this.btnIPv4TCI.Click += new System.EventHandler(this.btnIPv4TCI_Click);
             // 
@@ -51030,7 +50919,7 @@
             this.btnShowLog.Selectable = true;
             this.btnShowLog.Size = new System.Drawing.Size(82, 26);
             this.btnShowLog.TabIndex = 69;
-            this.btnShowLog.Text = "Show Log";
+            this.btnShowLog.Text = "显示日志";
             this.btnShowLog.UseVisualStyleBackColor = true;
             this.btnShowLog.Click += new System.EventHandler(this.btnShowLog_Click);
             // 
@@ -51042,8 +50931,8 @@
             this.chkCWLUbecomesCW.Name = "chkCWLUbecomesCW";
             this.chkCWLUbecomesCW.Size = new System.Drawing.Size(172, 17);
             this.chkCWLUbecomesCW.TabIndex = 68;
-            this.chkCWLUbecomesCW.Text = "CWL/CWU becomes CW (out)";
-            this.toolTip1.SetToolTip(this.chkCWLUbecomesCW, "CWL or CWU converts into CW in the outbound mode message");
+            this.chkCWLUbecomesCW.Text = "CWL/CWU 转为 CW（输出）";
+            this.toolTip1.SetToolTip(this.chkCWLUbecomesCW, "在输出模式消息中将 CWL 或 CWU 转换为 CW");
             this.chkCWLUbecomesCW.UseVisualStyleBackColor = true;
             this.chkCWLUbecomesCW.CheckedChanged += new System.EventHandler(this.chkCWLUbecomesCW_CheckedChanged);
             // 
@@ -51058,7 +50947,7 @@
             this.clrbtnOwnCallApearance.Selectable = true;
             this.clrbtnOwnCallApearance.Size = new System.Drawing.Size(40, 23);
             this.clrbtnOwnCallApearance.TabIndex = 67;
-            this.toolTip1.SetToolTip(this.clrbtnOwnCallApearance, "The colour of your callsign if it appears as a spot");
+            this.toolTip1.SetToolTip(this.clrbtnOwnCallApearance, "本机呼号出现在信标中时的颜色");
             this.clrbtnOwnCallApearance.Changed += new System.EventHandler(this.clrbtnOwnCallApearance_Changed);
             // 
             // txtOwnCallsign
@@ -51067,7 +50956,7 @@
             this.txtOwnCallsign.Name = "txtOwnCallsign";
             this.txtOwnCallsign.Size = new System.Drawing.Size(100, 20);
             this.txtOwnCallsign.TabIndex = 28;
-            this.toolTip1.SetToolTip(this.txtOwnCallsign, "Your callsign");
+            this.toolTip1.SetToolTip(this.txtOwnCallsign, "您的呼号");
             this.txtOwnCallsign.TextChanged += new System.EventHandler(this.txtOwnCallsign_TextChanged);
             // 
             // chkSpotOwnCallAppearance
@@ -51078,8 +50967,8 @@
             this.chkSpotOwnCallAppearance.Name = "chkSpotOwnCallAppearance";
             this.chkSpotOwnCallAppearance.Size = new System.Drawing.Size(129, 17);
             this.chkSpotOwnCallAppearance.TabIndex = 27;
-            this.chkSpotOwnCallAppearance.Text = "Own Call Appearance";
-            this.toolTip1.SetToolTip(this.chkSpotOwnCallAppearance, "Change the colour of your callsign if it appears as a spot");
+            this.chkSpotOwnCallAppearance.Text = "本机呼号外观";
+            this.toolTip1.SetToolTip(this.chkSpotOwnCallAppearance, "当自己的呼号出现在信标中时，改变其颜色");
             this.chkSpotOwnCallAppearance.UseVisualStyleBackColor = true;
             this.chkSpotOwnCallAppearance.CheckedChanged += new System.EventHandler(this.chkSpotOwnCallAppearance_CheckedChanged);
             // 
@@ -51091,8 +50980,8 @@
             this.chkShowTCISpots.Name = "chkShowTCISpots";
             this.chkShowTCISpots.Size = new System.Drawing.Size(103, 17);
             this.chkShowTCISpots.TabIndex = 26;
-            this.chkShowTCISpots.Text = "Show TCI Spots";
-            this.toolTip1.SetToolTip(this.chkShowTCISpots, "Show spots that are sent via TCI");
+            this.chkShowTCISpots.Text = "显示 TCI 信标";
+            this.toolTip1.SetToolTip(this.chkShowTCISpots, "显示通过 TCI 发送的信标");
             this.chkShowTCISpots.UseVisualStyleBackColor = true;
             this.chkShowTCISpots.CheckedChanged += new System.EventHandler(this.chkShowTCISpots_CheckedChanged);
             // 
@@ -51104,7 +50993,7 @@
             this.labelTS615.Name = "labelTS615";
             this.labelTS615.Size = new System.Drawing.Size(28, 13);
             this.labelTS615.TabIndex = 25;
-            this.labelTS615.Text = "mins";
+            this.labelTS615.Text = "分钟";
             // 
             // udTCISpotLifetime
             // 
@@ -51172,7 +51061,7 @@
             this.labelTS614.Name = "labelTS614";
             this.labelTS614.Size = new System.Drawing.Size(74, 13);
             this.labelTS614.TabIndex = 22;
-            this.labelTS614.Text = "Spot Lifetime :";
+            this.labelTS614.Text = "信标保留时间:";
             // 
             // labelTS613
             // 
@@ -51182,7 +51071,7 @@
             this.labelTS613.Name = "labelTS613";
             this.labelTS613.Size = new System.Drawing.Size(63, 13);
             this.labelTS613.TabIndex = 21;
-            this.labelTS613.Text = "Max Spots :";
+            this.labelTS613.Text = "最大信标数:";
             // 
             // chkTCIsendInitialStateOnConnect
             // 
@@ -51192,8 +51081,8 @@
             this.chkTCIsendInitialStateOnConnect.Name = "chkTCIsendInitialStateOnConnect";
             this.chkTCIsendInitialStateOnConnect.Size = new System.Drawing.Size(208, 17);
             this.chkTCIsendInitialStateOnConnect.TabIndex = 20;
-            this.chkTCIsendInitialStateOnConnect.Text = "Send initial VFO state on connect (out)";
-            this.toolTip1.SetToolTip(this.chkTCIsendInitialStateOnConnect, "Send initial VFO state on connect");
+            this.chkTCIsendInitialStateOnConnect.Text = "连接时发送初始 VFO 状态（输出）";
+            this.toolTip1.SetToolTip(this.chkTCIsendInitialStateOnConnect, "连接时发送初始 VFO 状态");
             this.chkTCIsendInitialStateOnConnect.UseVisualStyleBackColor = true;
             this.chkTCIsendInitialStateOnConnect.CheckedChanged += new System.EventHandler(this.chkTCIsendInitialStateOnConnect_CheckedChanged);
             // 
@@ -51205,8 +51094,8 @@
             this.chkUseRX1vfoaForRX2vfoa.Name = "chkUseRX1vfoaForRX2vfoa";
             this.chkUseRX1vfoaForRX2vfoa.Size = new System.Drawing.Size(206, 17);
             this.chkUseRX1vfoaForRX2vfoa.TabIndex = 19;
-            this.chkUseRX1vfoaForRX2vfoa.Text = "Use RX1 VFOa for RX2 VFOa (in+out)";
-            this.toolTip1.SetToolTip(this.chkUseRX1vfoaForRX2vfoa, "Thetis does not have VFOa for RX2. Use RX1 VFOa for RX2 VFOa");
+            this.chkUseRX1vfoaForRX2vfoa.Text = "使用 RX1 VFOa 作为 RX2 VFOa（输入+输出）";
+            this.toolTip1.SetToolTip(this.chkUseRX1vfoaForRX2vfoa, "Thetis 没有 RX2 的 VFOa。使用 RX1 VFOa 作为 RX2 VFOa");
             this.chkUseRX1vfoaForRX2vfoa.UseVisualStyleBackColor = true;
             this.chkUseRX1vfoaForRX2vfoa.CheckedChanged += new System.EventHandler(this.chkUseRX1vfoaForRX2vfoa_CheckedChanged);
             // 
@@ -51218,8 +51107,8 @@
             this.chkCopyRX2VFObToVFOa.Name = "chkCopyRX2VFObToVFOa";
             this.chkCopyRX2VFObToVFOa.Size = new System.Drawing.Size(215, 17);
             this.chkCopyRX2VFObToVFOa.TabIndex = 18;
-            this.chkCopyRX2VFObToVFOa.Text = "Duplicate RX2 VFOb to RX2 VFOa (out)";
-            this.toolTip1.SetToolTip(this.chkCopyRX2VFObToVFOa, "Thetis does not have VFOa for RX2. This option will duplicate vfob to vfoa");
+            this.chkCopyRX2VFObToVFOa.Text = "将 RX2 VFOb 复制到 RX2 VFOa（输出）";
+            this.toolTip1.SetToolTip(this.chkCopyRX2VFObToVFOa, "Thetis 没有 RX2 的 VFOa。此选项将把 vfob 复制到 vfoa");
             this.chkCopyRX2VFObToVFOa.UseVisualStyleBackColor = true;
             this.chkCopyRX2VFObToVFOa.CheckedChanged += new System.EventHandler(this.chkCopyRX2VFObToVFOa_CheckedChanged);
             // 
@@ -51231,7 +51120,7 @@
             this.labelTS611.Name = "labelTS611";
             this.labelTS611.Size = new System.Drawing.Size(76, 13);
             this.labelTS611.TabIndex = 17;
-            this.labelTS611.Text = "Rate Limit (ms)";
+            this.labelTS611.Text = "速率限制 (ms)";
             // 
             // udTCIRateLimit
             // 
@@ -51255,7 +51144,7 @@
             this.udTCIRateLimit.Size = new System.Drawing.Size(62, 20);
             this.udTCIRateLimit.TabIndex = 16;
             this.udTCIRateLimit.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udTCIRateLimit, "The maximum rate VFO/IF/DDS messages can be sent to clients");
+            this.toolTip1.SetToolTip(this.udTCIRateLimit, "向客户端发送 VFO/IF/DDS 消息的最大速率");
             this.udTCIRateLimit.Value = new decimal(new int[] {
             100,
             0,
@@ -51273,7 +51162,7 @@
             this.lblToggleToUseTCI.Name = "lblToggleToUseTCI";
             this.lblToggleToUseTCI.Size = new System.Drawing.Size(120, 13);
             this.lblToggleToUseTCI.TabIndex = 15;
-            this.lblToggleToUseTCI.Text = "toggle off/on to use";
+            this.lblToggleToUseTCI.Text = "切换开/关以使用";
             this.lblToggleToUseTCI.Visible = false;
             // 
             // labelTS612
@@ -51284,7 +51173,7 @@
             this.labelTS612.Name = "labelTS612";
             this.labelTS612.Size = new System.Drawing.Size(63, 13);
             this.labelTS612.TabIndex = 14;
-            this.labelTS612.Text = "Bind IP:Port";
+            this.labelTS612.Text = "绑定 IP:端口";
             // 
             // chkTCIServerListening
             // 
@@ -51295,8 +51184,8 @@
             this.chkTCIServerListening.Name = "chkTCIServerListening";
             this.chkTCIServerListening.Size = new System.Drawing.Size(114, 17);
             this.chkTCIServerListening.TabIndex = 13;
-            this.chkTCIServerListening.Text = "Server Running";
-            this.toolTip1.SetToolTip(this.chkTCIServerListening, "Checked to listen for client connections");
+            this.chkTCIServerListening.Text = "服务器运行中";
+            this.toolTip1.SetToolTip(this.chkTCIServerListening, "勾选以监听客户端连接");
             this.chkTCIServerListening.UseVisualStyleBackColor = true;
             this.chkTCIServerListening.CheckedChanged += new System.EventHandler(this.chkTCIServerListening_CheckedChanged);
             // 
@@ -51309,7 +51198,7 @@
             this.btnDefaultBindPortForTCI.Size = new System.Drawing.Size(37, 26);
             this.btnDefaultBindPortForTCI.TabIndex = 12;
             this.btnDefaultBindPortForTCI.Text = "Def";
-            this.toolTip1.SetToolTip(this.btnDefaultBindPortForTCI, "Default value");
+            this.toolTip1.SetToolTip(this.btnDefaultBindPortForTCI, "默认值");
             this.btnDefaultBindPortForTCI.UseVisualStyleBackColor = true;
             this.btnDefaultBindPortForTCI.Click += new System.EventHandler(this.btnDefaultBindPortForTCI_Click);
             // 
@@ -51320,7 +51209,7 @@
             this.txtTCIServerBindIPPort.Size = new System.Drawing.Size(122, 20);
             this.txtTCIServerBindIPPort.TabIndex = 11;
             this.txtTCIServerBindIPPort.Text = "127.0.0.1:50001";
-            this.toolTip1.SetToolTip(this.txtTCIServerBindIPPort, "The bind IP and the port that the server uses to listen on");
+            this.toolTip1.SetToolTip(this.txtTCIServerBindIPPort, "服务器监听的绑定 IP 和端口");
             this.txtTCIServerBindIPPort.TextChanged += new System.EventHandler(this.txtTCIServerBindIPPort_TextChanged);
             // 
             // grpTCPIPcatServer
@@ -51338,7 +51227,7 @@
             this.grpTCPIPcatServer.Size = new System.Drawing.Size(323, 152);
             this.grpTCPIPcatServer.TabIndex = 97;
             this.grpTCPIPcatServer.TabStop = false;
-            this.grpTCPIPcatServer.Text = "TCP/IP CAT Server (0 clients)";
+            this.grpTCPIPcatServer.Text = "TCP/IP CAT 服务器 (0 个客户端)";
             // 
             // btnIPv4TCPCat
             // 
@@ -51349,7 +51238,7 @@
             this.btnIPv4TCPCat.Size = new System.Drawing.Size(42, 26);
             this.btnIPv4TCPCat.TabIndex = 99;
             this.btnIPv4TCPCat.Text = "IPv4";
-            this.toolTip1.SetToolTip(this.btnIPv4TCPCat, "Show list if IPv4 addresses.");
+            this.toolTip1.SetToolTip(this.btnIPv4TCPCat, "显示 IPv4 地址列表。");
             this.btnIPv4TCPCat.UseVisualStyleBackColor = true;
             this.btnIPv4TCPCat.Click += new System.EventHandler(this.btnIPv4TCPCat_Click);
             // 
@@ -51361,7 +51250,7 @@
             this.btnShowTCPIPCatLog.Selectable = true;
             this.btnShowTCPIPCatLog.Size = new System.Drawing.Size(82, 26);
             this.btnShowTCPIPCatLog.TabIndex = 98;
-            this.btnShowTCPIPCatLog.Text = "Show Log";
+            this.btnShowTCPIPCatLog.Text = "显示日志";
             this.btnShowTCPIPCatLog.UseVisualStyleBackColor = true;
             this.btnShowTCPIPCatLog.Click += new System.EventHandler(this.btnShowTCPIPCatLog_Click);
             // 
@@ -51373,9 +51262,8 @@
             this.chkWelcomeMessageTCPIPCat.Name = "chkWelcomeMessageTCPIPCat";
             this.chkWelcomeMessageTCPIPCat.Size = new System.Drawing.Size(173, 17);
             this.chkWelcomeMessageTCPIPCat.TabIndex = 16;
-            this.chkWelcomeMessageTCPIPCat.Text = "Send version on client connect";
-            this.toolTip1.SetToolTip(this.chkWelcomeMessageTCPIPCat, "Instantly send a version message to the client on connect (semi colon terminated)" +
-        "");
+            this.chkWelcomeMessageTCPIPCat.Text = "客户端连接时发送版本";
+            this.toolTip1.SetToolTip(this.chkWelcomeMessageTCPIPCat, "客户端连接时立即发送版本消息（以分号结尾）。");
             this.chkWelcomeMessageTCPIPCat.UseVisualStyleBackColor = true;
             this.chkWelcomeMessageTCPIPCat.CheckedChanged += new System.EventHandler(this.chkWelcomeMessageTCPIPCat_CheckedChanged);
             // 
@@ -51389,7 +51277,7 @@
             this.lblToggleToUse.Name = "lblToggleToUse";
             this.lblToggleToUse.Size = new System.Drawing.Size(120, 13);
             this.lblToggleToUse.TabIndex = 15;
-            this.lblToggleToUse.Text = "toggle off/on to use";
+            this.lblToggleToUse.Text = "切换开/关以使用";
             this.lblToggleToUse.Visible = false;
             // 
             // labelTS609
@@ -51400,7 +51288,7 @@
             this.labelTS609.Name = "labelTS609";
             this.labelTS609.Size = new System.Drawing.Size(63, 13);
             this.labelTS609.TabIndex = 14;
-            this.labelTS609.Text = "Bind IP:Port";
+            this.labelTS609.Text = "绑定 IP:端口";
             // 
             // chkTCPIPCatServerListening
             // 
@@ -51411,8 +51299,8 @@
             this.chkTCPIPCatServerListening.Name = "chkTCPIPCatServerListening";
             this.chkTCPIPCatServerListening.Size = new System.Drawing.Size(114, 17);
             this.chkTCPIPCatServerListening.TabIndex = 13;
-            this.chkTCPIPCatServerListening.Text = "Server Running";
-            this.toolTip1.SetToolTip(this.chkTCPIPCatServerListening, "Checked to listen for client connections");
+            this.chkTCPIPCatServerListening.Text = "服务器运行中";
+            this.toolTip1.SetToolTip(this.chkTCPIPCatServerListening, "勾选以监听客户端连接");
             this.chkTCPIPCatServerListening.UseVisualStyleBackColor = true;
             this.chkTCPIPCatServerListening.CheckedChanged += new System.EventHandler(this.chkTCPIPCatServerListening_CheckedChanged);
             // 
@@ -51425,7 +51313,7 @@
             this.btnDefaultBindPortForTCPIPCat.Size = new System.Drawing.Size(37, 26);
             this.btnDefaultBindPortForTCPIPCat.TabIndex = 12;
             this.btnDefaultBindPortForTCPIPCat.Text = "Def";
-            this.toolTip1.SetToolTip(this.btnDefaultBindPortForTCPIPCat, "Default value");
+            this.toolTip1.SetToolTip(this.btnDefaultBindPortForTCPIPCat, "默认值");
             this.btnDefaultBindPortForTCPIPCat.UseVisualStyleBackColor = true;
             this.btnDefaultBindPortForTCPIPCat.Click += new System.EventHandler(this.btnDefaultBindPortForTCPIPCat_Click);
             // 
@@ -51436,7 +51324,7 @@
             this.txtTCPIPCATServerBindIPPort.Size = new System.Drawing.Size(122, 20);
             this.txtTCPIPCATServerBindIPPort.TabIndex = 11;
             this.txtTCPIPCATServerBindIPPort.Text = "127.0.0.1:13013";
-            this.toolTip1.SetToolTip(this.txtTCPIPCATServerBindIPPort, "The bind IP and the port that the server uses to listen on");
+            this.toolTip1.SetToolTip(this.txtTCPIPCATServerBindIPPort, "服务器监听的绑定 IP 和端口");
             this.txtTCPIPCATServerBindIPPort.TextChanged += new System.EventHandler(this.txtTCPIPCATServerBindIPPort_TextChanged);
             // 
             // groupBoxTS16
@@ -51468,7 +51356,7 @@
             this.btnIPv4N1MM.Size = new System.Drawing.Size(42, 26);
             this.btnIPv4N1MM.TabIndex = 71;
             this.btnIPv4N1MM.Text = "IPv4";
-            this.toolTip1.SetToolTip(this.btnIPv4N1MM, "Show list if IPv4 addresses.");
+            this.toolTip1.SetToolTip(this.btnIPv4N1MM, "显示 IPv4 地址列表。");
             this.btnIPv4N1MM.UseVisualStyleBackColor = true;
             this.btnIPv4N1MM.Click += new System.EventHandler(this.btnIPv4N1MM_Click);
             // 
@@ -51492,7 +51380,7 @@
             this.labelTS90.Name = "labelTS90";
             this.labelTS90.Size = new System.Drawing.Size(61, 13);
             this.labelTS90.TabIndex = 9;
-            this.labelTS90.Text = "Send Rate:";
+            this.labelTS90.Text = "发送速率:";
             // 
             // udN1MMSendRate
             // 
@@ -51531,7 +51419,7 @@
             this.labelTS89.Name = "labelTS89";
             this.labelTS89.Size = new System.Drawing.Size(56, 13);
             this.labelTS89.TabIndex = 6;
-            this.labelTS89.Text = "dB scaling";
+            this.labelTS89.Text = "dB 缩放";
             // 
             // udN1MMRX2Scaling
             // 
@@ -51601,7 +51489,7 @@
             this.labelTS19.Name = "labelTS19";
             this.labelTS19.Size = new System.Drawing.Size(73, 13);
             this.labelTS19.TabIndex = 3;
-            this.labelTS19.Text = "Send UDP to:";
+            this.labelTS19.Text = "UDP 发送至:";
             // 
             // txtN1MMSendTo
             // 
@@ -51620,7 +51508,7 @@
             this.chkN1MMEnableRX2.Name = "chkN1MMEnableRX2";
             this.chkN1MMEnableRX2.Size = new System.Drawing.Size(83, 17);
             this.chkN1MMEnableRX2.TabIndex = 1;
-            this.chkN1MMEnableRX2.Text = "Enable RX2";
+            this.chkN1MMEnableRX2.Text = "启用 RX2";
             this.chkN1MMEnableRX2.UseVisualStyleBackColor = true;
             this.chkN1MMEnableRX2.CheckedChanged += new System.EventHandler(this.chkN1MMEnableRX2_CheckedChanged);
             // 
@@ -51632,7 +51520,7 @@
             this.chkN1MMEnableRX1.Name = "chkN1MMEnableRX1";
             this.chkN1MMEnableRX1.Size = new System.Drawing.Size(83, 17);
             this.chkN1MMEnableRX1.TabIndex = 0;
-            this.chkN1MMEnableRX1.Text = "Enable RX1";
+            this.chkN1MMEnableRX1.Text = "启用 RX1";
             this.chkN1MMEnableRX1.UseVisualStyleBackColor = true;
             this.chkN1MMEnableRX1.CheckedChanged += new System.EventHandler(this.chkN1MMEnableRX1_CheckedChanged);
             // 
@@ -51659,7 +51547,7 @@
             this.groupBox1.Size = new System.Drawing.Size(339, 121);
             this.groupBox1.TabIndex = 105;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "MIDI Configuration";
+            this.groupBox1.Text = "MIDI 配置";
             // 
             // udUpdatesPerStepMin
             // 
@@ -51683,8 +51571,7 @@
             this.udUpdatesPerStepMin.Size = new System.Drawing.Size(31, 20);
             this.udUpdatesPerStepMin.TabIndex = 112;
             this.udUpdatesPerStepMin.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udUpdatesPerStepMin, "Minimum number of MIDI wheel updates required to produce one frequency step - det" +
-        "ermines the highest sensitivity to wheel rotation.");
+            this.toolTip1.SetToolTip(this.udUpdatesPerStepMin, "产生一个频率步进所需的最少 MIDI 滚轮更新次数 —— 决定滚轮旋转的最高灵敏度。");
             this.udUpdatesPerStepMin.Value = new decimal(new int[] {
             1,
             0,
@@ -51700,7 +51587,7 @@
             this.labelTS511.Name = "labelTS511";
             this.labelTS511.Size = new System.Drawing.Size(130, 13);
             this.labelTS511.TabIndex = 108;
-            this.labelTS511.Text = "MIDI Wheel updates/step";
+            this.labelTS511.Text = "MIDI 滚轮更新次数/步进";
             // 
             // labelTS512
             // 
@@ -51710,7 +51597,7 @@
             this.labelTS512.Name = "labelTS512";
             this.labelTS512.Size = new System.Drawing.Size(27, 13);
             this.labelTS512.TabIndex = 110;
-            this.labelTS512.Text = "Max";
+            this.labelTS512.Text = "最大";
             // 
             // labelTS515
             // 
@@ -51720,7 +51607,7 @@
             this.labelTS515.Name = "labelTS515";
             this.labelTS515.Size = new System.Drawing.Size(24, 13);
             this.labelTS515.TabIndex = 111;
-            this.labelTS515.Text = "Min";
+            this.labelTS515.Text = "最小";
             // 
             // udUpdatesPerStepMax
             // 
@@ -51744,8 +51631,7 @@
             this.udUpdatesPerStepMax.Size = new System.Drawing.Size(34, 20);
             this.udUpdatesPerStepMax.TabIndex = 109;
             this.udUpdatesPerStepMax.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udUpdatesPerStepMax, "Maximum number of MIDI wheel updates required to produce one frequency step - det" +
-        "ermines the lowest sensitivity to wheel rotation.");
+            this.toolTip1.SetToolTip(this.udUpdatesPerStepMax, "产生一个频率步进所需的最多 MIDI 滚轮更新次数 —— 决定滚轮旋转的最低灵敏度。");
             this.udUpdatesPerStepMax.Value = new decimal(new int[] {
             10,
             0,
@@ -51759,7 +51645,7 @@
             this.btnConfigure.Name = "btnConfigure";
             this.btnConfigure.Size = new System.Drawing.Size(139, 66);
             this.btnConfigure.TabIndex = 5;
-            this.btnConfigure.Text = "Configure MIDI";
+            this.btnConfigure.Text = "配置 MIDI";
             this.btnConfigure.UseVisualStyleBackColor = true;
             this.btnConfigure.Click += new System.EventHandler(this.btnConfigure_Click);
             // 
@@ -51775,7 +51661,7 @@
             this.tpCAToptions.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tpCAToptions.Size = new System.Drawing.Size(724, 407);
             this.tpCAToptions.TabIndex = 0;
-            this.tpCAToptions.Text = "Options";
+            this.tpCAToptions.Text = "选项";
             // 
             // groupBoxTS25
             // 
@@ -51790,7 +51676,7 @@
             this.groupBoxTS25.Size = new System.Drawing.Size(201, 185);
             this.groupBoxTS25.TabIndex = 109;
             this.groupBoxTS25.TabStop = false;
-            this.groupBoxTS25.Text = "Other";
+            this.groupBoxTS25.Text = "其他";
             // 
             // chkLimitPowerCATTCIMsgs
             // 
@@ -51800,7 +51686,7 @@
             this.chkLimitPowerCATTCIMsgs.Name = "chkLimitPowerCATTCIMsgs";
             this.chkLimitPowerCATTCIMsgs.Size = new System.Drawing.Size(176, 33);
             this.chkLimitPowerCATTCIMsgs.TabIndex = 108;
-            this.chkLimitPowerCATTCIMsgs.Text = "Apply power limits to CAT/TCI power related queries (out)";
+            this.chkLimitPowerCATTCIMsgs.Text = "对 CAT/TCI 功率相关查询应用功率限制（输出）";
             this.chkLimitPowerCATTCIMsgs.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.chkLimitPowerCATTCIMsgs.CheckedChanged += new System.EventHandler(this.chkLimitPowerCATTCIMsgs_CheckedChanged);
             // 
@@ -51812,7 +51698,7 @@
             this.chkRecenterOnZZFx.Name = "chkRecenterOnZZFx";
             this.chkRecenterOnZZFx.Size = new System.Drawing.Size(130, 17);
             this.chkRecenterOnZZFx.TabIndex = 107;
-            this.chkRecenterOnZZFx.Text = "Always recenter VFOs";
+            this.chkRecenterOnZZFx.Text = "始终重新居中 VFO";
             this.chkRecenterOnZZFx.UseVisualStyleBackColor = true;
             this.chkRecenterOnZZFx.CheckedChanged += new System.EventHandler(this.chkRecenterOnZZFx_CheckedChanged);
             // 
@@ -51823,8 +51709,8 @@
             this.chkDigUIsUSB.Name = "chkDigUIsUSB";
             this.chkDigUIsUSB.Size = new System.Drawing.Size(160, 24);
             this.chkDigUIsUSB.TabIndex = 96;
-            this.chkDigUIsUSB.Text = "DigL/U Returns LSB/USB";
-            this.toolTip1.SetToolTip(this.chkDigUIsUSB, "Lies to the Kenwood CAT Interface to fool certain programs");
+            this.chkDigUIsUSB.Text = "DigL/U 返回 LSB/USB";
+            this.toolTip1.SetToolTip(this.chkDigUIsUSB, "向 Kenwood CAT 接口伪装以欺骗某些程序");
             // 
             // chkKWAI
             // 
@@ -51833,8 +51719,8 @@
             this.chkKWAI.Name = "chkKWAI";
             this.chkKWAI.Size = new System.Drawing.Size(176, 24);
             this.chkKWAI.TabIndex = 98;
-            this.chkKWAI.Text = "Allow Kenwood AI Command";
-            this.toolTip1.SetToolTip(this.chkKWAI, "Check only if your logger does not poll for frequency");
+            this.chkKWAI.Text = "允许 Kenwood AI 命令";
+            this.toolTip1.SetToolTip(this.chkKWAI, "仅当电台日志软件不轮询频率时勾选");
             this.chkKWAI.CheckedChanged += new System.EventHandler(this.chkKWAI_CheckedChanged);
             // 
             // txtZZSN
@@ -51845,7 +51731,7 @@
             this.txtZZSN.TabIndex = 99;
             this.txtZZSN.Text = "0000-0000";
             this.txtZZSN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.toolTip1.SetToolTip(this.txtZZSN, "Enter valid serial number .");
+            this.toolTip1.SetToolTip(this.txtZZSN, "请输入有效的序列号。");
             // 
             // labelTS323
             // 
@@ -51867,7 +51753,7 @@
             this.groupBoxTS24.Size = new System.Drawing.Size(241, 100);
             this.groupBoxTS24.TabIndex = 108;
             this.groupBoxTS24.TabStop = false;
-            this.groupBoxTS24.Text = "CAT Testing";
+            this.groupBoxTS24.Text = "CAT 测试";
             // 
             // btnCATTest
             // 
@@ -51877,8 +51763,8 @@
             this.btnCATTest.Selectable = true;
             this.btnCATTest.Size = new System.Drawing.Size(77, 40);
             this.btnCATTest.TabIndex = 92;
-            this.btnCATTest.Text = "Test CAT Commands";
-            this.toolTip1.SetToolTip(this.btnCATTest, "A test utility to verify CAT command responses");
+            this.btnCATTest.Text = "测试 CAT 命令";
+            this.toolTip1.SetToolTip(this.btnCATTest, "用于验证 CAT 命令响应的测试工具");
             this.btnCATTest.Click += new System.EventHandler(this.btnCATTest_Click);
             // 
             // comboCATRigType
@@ -51894,7 +51780,7 @@
             this.comboCATRigType.Name = "comboCATRigType";
             this.comboCATRigType.Size = new System.Drawing.Size(88, 21);
             this.comboCATRigType.TabIndex = 94;
-            this.toolTip1.SetToolTip(this.comboCATRigType, "Sets the CAT protocol for programs that do not have SDR-1000 specific setups.");
+            this.toolTip1.SetToolTip(this.comboCATRigType, "为没有 SDR-1000 特定设置的程序设置 CAT 协议。");
             this.comboCATRigType.SelectedIndexChanged += new System.EventHandler(this.comboCATRigType_SelectedIndexChanged);
             // 
             // lblCATRigType
@@ -51904,7 +51790,7 @@
             this.lblCATRigType.Name = "lblCATRigType";
             this.lblCATRigType.Size = new System.Drawing.Size(36, 23);
             this.lblCATRigType.TabIndex = 95;
-            this.lblCATRigType.Text = "ID as:";
+            this.lblCATRigType.Text = "识别为:";
             // 
             // grpRTTYOffset
             // 
@@ -51919,7 +51805,7 @@
             this.grpRTTYOffset.Size = new System.Drawing.Size(201, 131);
             this.grpRTTYOffset.TabIndex = 97;
             this.grpRTTYOffset.TabStop = false;
-            this.grpRTTYOffset.Text = "RTTY Offset";
+            this.grpRTTYOffset.Text = "RTTY 偏移";
             // 
             // labelTS4
             // 
@@ -51961,7 +51847,7 @@
             this.udRTTYU.Size = new System.Drawing.Size(48, 20);
             this.udRTTYU.TabIndex = 99;
             this.udRTTYU.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udRTTYU, "Sets the DIGU frequency offset");
+            this.toolTip1.SetToolTip(this.udRTTYU, "设置 DIGU 频率偏移");
             this.udRTTYU.Value = new decimal(new int[] {
             2125,
             0,
@@ -51991,7 +51877,7 @@
             this.udRTTYL.Size = new System.Drawing.Size(48, 20);
             this.udRTTYL.TabIndex = 98;
             this.udRTTYL.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udRTTYL, "Sets the DIGL frequency offset");
+            this.toolTip1.SetToolTip(this.udRTTYL, "设置 DIGL 频率偏移");
             this.udRTTYL.Value = new decimal(new int[] {
             2125,
             0,
@@ -52006,7 +51892,7 @@
             this.chkRTTYOffsetEnableB.Name = "chkRTTYOffsetEnableB";
             this.chkRTTYOffsetEnableB.Size = new System.Drawing.Size(136, 24);
             this.chkRTTYOffsetEnableB.TabIndex = 97;
-            this.chkRTTYOffsetEnableB.Text = "Enable Offset VFO B";
+            this.chkRTTYOffsetEnableB.Text = "启用偏移 VFO B";
             this.chkRTTYOffsetEnableB.CheckedChanged += new System.EventHandler(this.chkRTTYOffsetEnableB_CheckedChanged);
             // 
             // chkRTTYOffsetEnableA
@@ -52016,7 +51902,7 @@
             this.chkRTTYOffsetEnableA.Name = "chkRTTYOffsetEnableA";
             this.chkRTTYOffsetEnableA.Size = new System.Drawing.Size(136, 24);
             this.chkRTTYOffsetEnableA.TabIndex = 96;
-            this.chkRTTYOffsetEnableA.Text = "Enable Offset VFO A";
+            this.chkRTTYOffsetEnableA.Text = "启用偏移 VFO A";
             this.chkRTTYOffsetEnableA.CheckedChanged += new System.EventHandler(this.chkRTTYOffsetEnableA_CheckedChanged);
             // 
             // tpUserInterface
@@ -52029,7 +51915,7 @@
             this.tpUserInterface.Name = "tpUserInterface";
             this.tpUserInterface.Size = new System.Drawing.Size(724, 407);
             this.tpUserInterface.TabIndex = 5;
-            this.tpUserInterface.Text = "User Interface";
+            this.tpUserInterface.Text = "用户界面";
             // 
             // groupBox2
             // 
@@ -52070,9 +51956,8 @@
             this.chkBoxHttp2.Name = "chkBoxHttp2";
             this.chkBoxHttp2.Size = new System.Drawing.Size(105, 28);
             this.chkBoxHttp2.TabIndex = 14;
-            this.chkBoxHttp2.Text = "On: Advanced";
-            this.toolTip1.SetToolTip(this.chkBoxHttp2, "Check to turn ON/OFF Http Server.\r\n\r\nAdvanced: View Display and control Frequency" +
-        ", Mode and Filter\r\n");
+            this.chkBoxHttp2.Text = "开: 高级";
+            this.toolTip1.SetToolTip(this.chkBoxHttp2, "勾选以开/关 Http 服务器。\r\n\r\n高级：查看显示并控制频率、模式和滤波器\r\n");
             this.chkBoxHttp2.CheckedChanged += new System.EventHandler(this.chkBoxHttp2_CheckedChanged);
             // 
             // labelTS465
@@ -52082,7 +51967,7 @@
             this.labelTS465.Name = "labelTS465";
             this.labelTS465.Size = new System.Drawing.Size(97, 16);
             this.labelTS465.TabIndex = 13;
-            this.labelTS465.Text = "Refresh Rate (ms):";
+            this.labelTS465.Text = "刷新率 (ms):";
             // 
             // udHttpRefresh
             // 
@@ -52121,7 +52006,7 @@
             this.txtHttpPass.Size = new System.Drawing.Size(90, 20);
             this.txtHttpPass.TabIndex = 11;
             this.txtHttpPass.Text = "powersdr";
-            this.toolTip1.SetToolTip(this.txtHttpPass, "Select Password to login with Remotely");
+            this.toolTip1.SetToolTip(this.txtHttpPass, "选择远程登录密码");
             this.txtHttpPass.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtHttpPass_MouseDown);
             // 
             // txtHttpUser
@@ -52132,7 +52017,7 @@
             this.txtHttpUser.Size = new System.Drawing.Size(90, 20);
             this.txtHttpUser.TabIndex = 10;
             this.txtHttpUser.Text = "powersdr";
-            this.toolTip1.SetToolTip(this.txtHttpUser, "User Name to login with Remotely");
+            this.toolTip1.SetToolTip(this.txtHttpUser, "远程登录用户名");
             this.txtHttpUser.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtHttpUser_MouseDown);
             // 
             // labelTS466
@@ -52142,7 +52027,7 @@
             this.labelTS466.Name = "labelTS466";
             this.labelTS466.Size = new System.Drawing.Size(73, 16);
             this.labelTS466.TabIndex = 9;
-            this.labelTS466.Text = "Password:";
+            this.labelTS466.Text = "密码:";
             // 
             // labelTS467
             // 
@@ -52151,7 +52036,7 @@
             this.labelTS467.Name = "labelTS467";
             this.labelTS467.Size = new System.Drawing.Size(81, 16);
             this.labelTS467.TabIndex = 8;
-            this.labelTS467.Text = "User Name:";
+            this.labelTS467.Text = "用户名:";
             this.labelTS467.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelTS468
@@ -52161,7 +52046,7 @@
             this.labelTS468.Name = "labelTS468";
             this.labelTS468.Size = new System.Drawing.Size(34, 16);
             this.labelTS468.TabIndex = 7;
-            this.labelTS468.Text = "Port:";
+            this.labelTS468.Text = "端口:";
             // 
             // udHttpPort
             // 
@@ -52201,8 +52086,8 @@
             this.chkBoxHTTP.Name = "chkBoxHTTP";
             this.chkBoxHTTP.Size = new System.Drawing.Size(88, 31);
             this.chkBoxHTTP.TabIndex = 7;
-            this.chkBoxHTTP.Text = "On: Basic";
-            this.toolTip1.SetToolTip(this.chkBoxHTTP, "Check to turn ON Http Server.\r\n\r\nBasic: view Display only\r\n");
+            this.chkBoxHTTP.Text = "开: 基础";
+            this.toolTip1.SetToolTip(this.chkBoxHTTP, "勾选以开/关 Http 服务器。\r\n\r\n基础：仅查看显示\r\n");
             this.chkBoxHTTP.CheckedChanged += new System.EventHandler(this.chkBoxHTTP_CheckedChanged);
             // 
             // groupBoxTS10
@@ -52237,7 +52122,7 @@
             this.btnTuneStepChangeLarger2.Size = new System.Drawing.Size(16, 19);
             this.btnTuneStepChangeLarger2.TabIndex = 79;
             this.btnTuneStepChangeLarger2.Text = "+";
-            this.toolTip1.SetToolTip(this.btnTuneStepChangeLarger2, "Change to the next larger tuning step");
+            this.toolTip1.SetToolTip(this.btnTuneStepChangeLarger2, "切换到下一较大的调谐步进");
             // 
             // btnTuneStepChangeSmaller2
             // 
@@ -52253,7 +52138,7 @@
             this.btnTuneStepChangeSmaller2.Size = new System.Drawing.Size(16, 19);
             this.btnTuneStepChangeSmaller2.TabIndex = 78;
             this.btnTuneStepChangeSmaller2.Text = "-";
-            this.toolTip1.SetToolTip(this.btnTuneStepChangeSmaller2, "Change to the next smaller tuning step");
+            this.toolTip1.SetToolTip(this.btnTuneStepChangeSmaller2, "切换到下一较小的调谐步进");
             // 
             // txtWheelTune2
             // 
@@ -52268,7 +52153,7 @@
             this.txtWheelTune2.Size = new System.Drawing.Size(48, 20);
             this.txtWheelTune2.TabIndex = 16;
             this.txtWheelTune2.Text = "1kHz";
-            this.toolTip1.SetToolTip(this.txtWheelTune2, "Amount to tune when rotating the mouse wheel.");
+            this.toolTip1.SetToolTip(this.txtWheelTune2, "旋转鼠标滚轮时的调谐量。");
             // 
             // chkBoxIND
             // 
@@ -52277,9 +52162,8 @@
             this.chkBoxIND.Name = "chkBoxIND";
             this.chkBoxIND.Size = new System.Drawing.Size(111, 31);
             this.chkBoxIND.TabIndex = 7;
-            this.chkBoxIND.Text = "Independent";
-            this.toolTip1.SetToolTip(this.chkBoxIND, "Check to use the PowerMate Tune Step \r\n\r\nUncheck to use the main Thetis Tune Step" +
-        "");
+            this.chkBoxIND.Text = "独立";
+            this.toolTip1.SetToolTip(this.chkBoxIND, "勾选使用 PowerMate 调谐步进\r\n\r\n取消勾选使用 Thetis 主调谐步进");
             // 
             // labelTS469
             // 
@@ -52288,7 +52172,7 @@
             this.labelTS469.Name = "labelTS469";
             this.labelTS469.Size = new System.Drawing.Size(54, 16);
             this.labelTS469.TabIndex = 5;
-            this.labelTS469.Text = "Speed:";
+            this.labelTS469.Text = "速度:";
             // 
             // chkBoxPM
             // 
@@ -52297,7 +52181,7 @@
             this.chkBoxPM.Name = "chkBoxPM";
             this.chkBoxPM.Size = new System.Drawing.Size(62, 31);
             this.chkBoxPM.TabIndex = 6;
-            this.chkBoxPM.Text = "Active";
+            this.chkBoxPM.Text = "激活";
             // 
             // udSpeedPM
             // 
@@ -52322,7 +52206,7 @@
             this.udSpeedPM.Size = new System.Drawing.Size(54, 20);
             this.udSpeedPM.TabIndex = 4;
             this.udSpeedPM.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udSpeedPM, "Speed of Freq Change");
+            this.toolTip1.SetToolTip(this.udSpeedPM, "频率变化速度");
             this.udSpeedPM.Value = new decimal(new int[] {
             2,
             0,
@@ -52364,7 +52248,7 @@
             this.labelTS359.Name = "labelTS359";
             this.labelTS359.Size = new System.Drawing.Size(58, 13);
             this.labelTS359.TabIndex = 105;
-            this.labelTS359.Text = "Delay (mS)";
+            this.labelTS359.Text = "延迟 (mS)";
             // 
             // labelTS358
             // 
@@ -52374,7 +52258,7 @@
             this.labelTS358.Name = "labelTS358";
             this.labelTS358.Size = new System.Drawing.Size(69, 13);
             this.labelTS358.TabIndex = 104;
-            this.labelTS358.Text = "Window Title";
+            this.labelTS358.Text = "窗口标题";
             // 
             // labelTS357
             // 
@@ -52394,7 +52278,7 @@
             this.labelTS356.Name = "labelTS356";
             this.labelTS356.Size = new System.Drawing.Size(34, 13);
             this.labelTS356.TabIndex = 104;
-            this.labelTS356.Text = "Mode";
+            this.labelTS356.Text = "模式";
             // 
             // txtFocusMasterWinTitle
             // 
@@ -52454,7 +52338,7 @@
             this.grpAndrOptions.Size = new System.Drawing.Size(244, 187);
             this.grpAndrOptions.TabIndex = 107;
             this.grpAndrOptions.TabStop = false;
-            this.grpAndrOptions.Text = "Andromeda Options";
+            this.grpAndrOptions.Text = "Andromeda 选项";
             // 
             // chkAndrStickyMenus
             // 
@@ -52464,7 +52348,7 @@
             this.chkAndrStickyMenus.Name = "chkAndrStickyMenus";
             this.chkAndrStickyMenus.Size = new System.Drawing.Size(104, 17);
             this.chkAndrStickyMenus.TabIndex = 6;
-            this.chkAndrStickyMenus.Text = "Sticky Menu Bar";
+            this.chkAndrStickyMenus.Text = "固定菜单栏";
             this.chkAndrStickyMenus.UseVisualStyleBackColor = true;
             this.chkAndrStickyMenus.CheckedChanged += new System.EventHandler(this.chkAndrStickyMenus_CheckedChanged);
             // 
@@ -52476,7 +52360,7 @@
             this.chkAndrStickyShift.Name = "chkAndrStickyShift";
             this.chkAndrStickyShift.Size = new System.Drawing.Size(113, 17);
             this.chkAndrStickyShift.TabIndex = 5;
-            this.chkAndrStickyShift.Text = "Sticky Shift Button";
+            this.chkAndrStickyShift.Text = "固定 Shift 按钮";
             this.chkAndrStickyShift.UseVisualStyleBackColor = true;
             this.chkAndrStickyShift.CheckedChanged += new System.EventHandler(this.chkAndrStickyShift_CheckedChanged);
             // 
@@ -52488,7 +52372,7 @@
             this.chkAndrBandBtnDefault.Name = "chkAndrBandBtnDefault";
             this.chkAndrBandBtnDefault.Size = new System.Drawing.Size(202, 17);
             this.chkAndrBandBtnDefault.TabIndex = 4;
-            this.chkAndrBandBtnDefault.Text = "Dual function buttons default to Band";
+            this.chkAndrBandBtnDefault.Text = "双功能按钮默认为波段";
             this.chkAndrBandBtnDefault.UseVisualStyleBackColor = true;
             this.chkAndrBandBtnDefault.CheckedChanged += new System.EventHandler(this.chkAndrBandBtnDefault_CheckedChanged);
             // 
@@ -52500,7 +52384,7 @@
             this.chkAndrFastStepTune.Name = "chkAndrFastStepTune";
             this.chkAndrFastStepTune.Size = new System.Drawing.Size(110, 17);
             this.chkAndrFastStepTune.TabIndex = 3;
-            this.chkAndrFastStepTune.Text = "Allow Fast Tuning";
+            this.chkAndrFastStepTune.Text = "允许快速调谐";
             this.chkAndrFastStepTune.UseVisualStyleBackColor = true;
             // 
             // chkAndrDiversityLandscape
@@ -52511,7 +52395,7 @@
             this.chkAndrDiversityLandscape.Name = "chkAndrDiversityLandscape";
             this.chkAndrDiversityLandscape.Size = new System.Drawing.Size(183, 17);
             this.chkAndrDiversityLandscape.TabIndex = 2;
-            this.chkAndrDiversityLandscape.Text = "Diversity Form Landscape Format";
+            this.chkAndrDiversityLandscape.Text = "分集接收窗体横向布局";
             this.chkAndrDiversityLandscape.UseVisualStyleBackColor = true;
             // 
             // chkAndrDiversityAutoshow
@@ -52522,7 +52406,7 @@
             this.chkAndrDiversityAutoshow.Name = "chkAndrDiversityAutoshow";
             this.chkAndrDiversityAutoshow.Size = new System.Drawing.Size(174, 17);
             this.chkAndrDiversityAutoshow.TabIndex = 1;
-            this.chkAndrDiversityAutoshow.Text = "Diversity Form Auto Show/Hide";
+            this.chkAndrDiversityAutoshow.Text = "分集接收窗体自动显示/隐藏";
             this.chkAndrDiversityAutoshow.UseVisualStyleBackColor = true;
             // 
             // chkAndrGainAutoshow
@@ -52533,7 +52417,7 @@
             this.chkAndrGainAutoshow.Name = "chkAndrGainAutoshow";
             this.chkAndrGainAutoshow.Size = new System.Drawing.Size(156, 17);
             this.chkAndrGainAutoshow.TabIndex = 0;
-            this.chkAndrGainAutoshow.Text = "Gain Form Auto Show/Hide";
+            this.chkAndrGainAutoshow.Text = "增益窗体自动显示/隐藏";
             this.chkAndrGainAutoshow.UseVisualStyleBackColor = true;
             // 
             // grpAndr
@@ -52559,7 +52443,7 @@
             this.labelTS528.Name = "labelTS528";
             this.labelTS528.Size = new System.Drawing.Size(87, 13);
             this.labelTS528.TabIndex = 118;
-            this.labelTS528.Text = "Firmware Version";
+            this.labelTS528.Text = "固件版本";
             // 
             // lblAndromedaVersion
             // 
@@ -52577,7 +52461,7 @@
             this.buttonAndromeda.Selectable = true;
             this.buttonAndromeda.Size = new System.Drawing.Size(91, 30);
             this.buttonAndromeda.TabIndex = 98;
-            this.buttonAndromeda.Text = "Edit Controls";
+            this.buttonAndromeda.Text = "编辑控件";
             this.buttonAndromeda.UseVisualStyleBackColor = true;
             this.buttonAndromeda.Click += new System.EventHandler(this.ButtonAndromeda_Click);
             // 
@@ -52589,7 +52473,7 @@
             this.comboAndromedaCATPort.Name = "comboAndromedaCATPort";
             this.comboAndromedaCATPort.Size = new System.Drawing.Size(80, 21);
             this.comboAndromedaCATPort.TabIndex = 97;
-            this.toolTip1.SetToolTip(this.comboAndromedaCATPort, "Selects the COM port for use with PTT control");
+            this.toolTip1.SetToolTip(this.comboAndromedaCATPort, "选择用于 PTT 控制的 COM 端口");
             this.comboAndromedaCATPort.SelectedIndexChanged += new System.EventHandler(this.ComboAndromedaCATPort_SelectedIndexChanged);
             this.comboAndromedaCATPort.Click += new System.EventHandler(this.ComboAndromedaCATPort_Click);
             // 
@@ -52600,7 +52484,7 @@
             this.labelTSPort.Name = "labelTSPort";
             this.labelTSPort.Size = new System.Drawing.Size(40, 15);
             this.labelTSPort.TabIndex = 7;
-            this.labelTSPort.Text = "Port:";
+            this.labelTSPort.Text = "端口:";
             // 
             // chkEnableAndromeda
             // 
@@ -52609,7 +52493,7 @@
             this.chkEnableAndromeda.Name = "chkEnableAndromeda";
             this.chkEnableAndromeda.Size = new System.Drawing.Size(99, 24);
             this.chkEnableAndromeda.TabIndex = 1;
-            this.chkEnableAndromeda.Text = "Enable Panel";
+            this.chkEnableAndromeda.Text = "启用面板";
             this.chkEnableAndromeda.CheckedChanged += new System.EventHandler(this.ChkEnableAndromeda_CheckedChanged);
             // 
             // tpTests
@@ -52625,7 +52509,7 @@
             this.tpTests.Name = "tpTests";
             this.tpTests.Size = new System.Drawing.Size(728, 436);
             this.tpTests.TabIndex = 7;
-            this.tpTests.Text = "Tests";
+            this.tpTests.Text = "测试";
             // 
             // chkShowDisplayDebug
             // 
@@ -52634,8 +52518,8 @@
             this.chkShowDisplayDebug.Name = "chkShowDisplayDebug";
             this.chkShowDisplayDebug.Size = new System.Drawing.Size(131, 24);
             this.chkShowDisplayDebug.TabIndex = 119;
-            this.chkShowDisplayDebug.Text = "Show Display Debug";
-            this.toolTip1.SetToolTip(this.chkShowDisplayDebug, "Show some debug info in the spectral area");
+            this.chkShowDisplayDebug.Text = "显示显示调试";
+            this.toolTip1.SetToolTip(this.chkShowDisplayDebug, "在频谱区域显示一些调试信息");
             this.chkShowDisplayDebug.CheckedChanged += new System.EventHandler(this.chkShowDisplayDebug_CheckedChanged);
             // 
             // chkShowControlDebug
@@ -52645,9 +52529,8 @@
             this.chkShowControlDebug.Name = "chkShowControlDebug";
             this.chkShowControlDebug.Size = new System.Drawing.Size(131, 24);
             this.chkShowControlDebug.TabIndex = 118;
-            this.chkShowControlDebug.Text = "Show Control Debug";
-            this.toolTip1.SetToolTip(this.chkShowControlDebug, "Show the control name that is being hovered over with the mouse as debug in the s" +
-        "pectrum display area");
+            this.chkShowControlDebug.Text = "显示控件调试";
+            this.toolTip1.SetToolTip(this.chkShowControlDebug, "在频谱显示区域以调试信息显示鼠标悬停的控件名称。");
             this.chkShowControlDebug.CheckedChanged += new System.EventHandler(this.chkShowControlDebug_CheckedChanged);
             // 
             // btnShowSeqLog
@@ -52658,7 +52541,7 @@
             this.btnShowSeqLog.Selectable = true;
             this.btnShowSeqLog.Size = new System.Drawing.Size(97, 46);
             this.btnShowSeqLog.TabIndex = 92;
-            this.btnShowSeqLog.Text = "Show SEQ log";
+            this.btnShowSeqLog.Text = "显示 SEQ 日志";
             this.btnShowSeqLog.UseVisualStyleBackColor = true;
             this.btnShowSeqLog.Click += new System.EventHandler(this.btnShowSeqLog_Click);
             // 
@@ -52671,7 +52554,7 @@
             this.grpBoxTS1.Size = new System.Drawing.Size(432, 350);
             this.grpBoxTS1.TabIndex = 88;
             this.grpBoxTS1.TabStop = false;
-            this.grpBoxTS1.Text = "Signal Generator";
+            this.grpBoxTS1.Text = "信号发生器";
             // 
             // grpSigGenTransmit
             // 
@@ -52689,7 +52572,7 @@
             this.grpSigGenTransmit.Size = new System.Drawing.Size(176, 326);
             this.grpSigGenTransmit.TabIndex = 102;
             this.grpSigGenTransmit.TabStop = false;
-            this.grpSigGenTransmit.Text = "Transmit";
+            this.grpSigGenTransmit.Text = "发射";
             // 
             // grpPulse
             // 
@@ -52704,7 +52587,7 @@
             this.grpPulse.Size = new System.Drawing.Size(152, 100);
             this.grpPulse.TabIndex = 119;
             this.grpPulse.TabStop = false;
-            this.grpPulse.Text = "Pulse";
+            this.grpPulse.Text = "脉冲";
             // 
             // udTXGenPulseTransition
             // 
@@ -52729,7 +52612,7 @@
             this.udTXGenPulseTransition.Size = new System.Drawing.Size(56, 20);
             this.udTXGenPulseTransition.TabIndex = 115;
             this.udTXGenPulseTransition.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udTXGenPulseTransition, "Tone Frequency.");
+            this.toolTip1.SetToolTip(this.udTXGenPulseTransition, "音调频率。");
             this.udTXGenPulseTransition.Value = new decimal(new int[] {
             5,
             0,
@@ -52744,7 +52627,7 @@
             this.labelTS317.Name = "labelTS317";
             this.labelTS317.Size = new System.Drawing.Size(78, 16);
             this.labelTS317.TabIndex = 114;
-            this.labelTS317.Text = "Trans. (sec)";
+            this.labelTS317.Text = "过渡 (秒)";
             // 
             // udTXGenPulseDutyCycle
             // 
@@ -52769,7 +52652,7 @@
             this.udTXGenPulseDutyCycle.Size = new System.Drawing.Size(56, 20);
             this.udTXGenPulseDutyCycle.TabIndex = 113;
             this.udTXGenPulseDutyCycle.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udTXGenPulseDutyCycle, "Tone Frequency.");
+            this.toolTip1.SetToolTip(this.udTXGenPulseDutyCycle, "音调频率。");
             this.udTXGenPulseDutyCycle.Value = new decimal(new int[] {
             1,
             0,
@@ -52784,7 +52667,7 @@
             this.labelTS316.Name = "labelTS316";
             this.labelTS316.Size = new System.Drawing.Size(64, 16);
             this.labelTS316.TabIndex = 112;
-            this.labelTS316.Text = "Duty Cycle";
+            this.labelTS316.Text = "占空比";
             // 
             // udTXGenPulseFreq
             // 
@@ -52809,7 +52692,7 @@
             this.udTXGenPulseFreq.Size = new System.Drawing.Size(56, 20);
             this.udTXGenPulseFreq.TabIndex = 111;
             this.udTXGenPulseFreq.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udTXGenPulseFreq, "Tone Frequency.");
+            this.toolTip1.SetToolTip(this.udTXGenPulseFreq, "音调频率。");
             this.udTXGenPulseFreq.Value = new decimal(new int[] {
             10,
             0,
@@ -52824,7 +52707,7 @@
             this.labelTS315.Name = "labelTS315";
             this.labelTS315.Size = new System.Drawing.Size(55, 16);
             this.labelTS315.TabIndex = 110;
-            this.labelTS315.Text = "Freq (Hz):";
+            this.labelTS315.Text = "频率 (Hz):";
             // 
             // labelTS313
             // 
@@ -52835,7 +52718,7 @@
             this.labelTS313.Name = "labelTS313";
             this.labelTS313.Size = new System.Drawing.Size(119, 13);
             this.labelTS313.TabIndex = 118;
-            this.labelTS313.Text = "Applied:  DSP Input";
+            this.labelTS313.Text = "应用位置: DSP 输入";
             // 
             // grpTXGenSweep
             // 
@@ -52850,7 +52733,7 @@
             this.grpTXGenSweep.Size = new System.Drawing.Size(152, 102);
             this.grpTXGenSweep.TabIndex = 110;
             this.grpTXGenSweep.TabStop = false;
-            this.grpTXGenSweep.Text = "Sweep";
+            this.grpTXGenSweep.Text = "扫描";
             // 
             // labelTS306
             // 
@@ -52859,7 +52742,7 @@
             this.labelTS306.Name = "labelTS306";
             this.labelTS306.Size = new System.Drawing.Size(81, 16);
             this.labelTS306.TabIndex = 90;
-            this.labelTS306.Text = "Rate (Hz/s):";
+            this.labelTS306.Text = "速率 (Hz/s):";
             // 
             // udTXGenSweepRate
             // 
@@ -52883,7 +52766,7 @@
             this.udTXGenSweepRate.Size = new System.Drawing.Size(56, 20);
             this.udTXGenSweepRate.TabIndex = 89;
             this.udTXGenSweepRate.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udTXGenSweepRate, "See the Sweep Button to the right.");
+            this.toolTip1.SetToolTip(this.udTXGenSweepRate, "请参见右侧的扫描按钮。");
             this.udTXGenSweepRate.Value = new decimal(new int[] {
             100,
             0,
@@ -52898,7 +52781,7 @@
             this.labelTS305.Name = "labelTS305";
             this.labelTS305.Size = new System.Drawing.Size(60, 16);
             this.labelTS305.TabIndex = 88;
-            this.labelTS305.Text = "High (Hz):";
+            this.labelTS305.Text = "高 (Hz):";
             // 
             // udTXGenSweepHigh
             // 
@@ -52922,7 +52805,7 @@
             this.udTXGenSweepHigh.Size = new System.Drawing.Size(56, 20);
             this.udTXGenSweepHigh.TabIndex = 87;
             this.udTXGenSweepHigh.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udTXGenSweepHigh, "See the Sweep Button to the right.");
+            this.toolTip1.SetToolTip(this.udTXGenSweepHigh, "请参见右侧的扫描按钮。");
             this.udTXGenSweepHigh.Value = new decimal(new int[] {
             4000,
             0,
@@ -52937,7 +52820,7 @@
             this.labelTS52.Name = "labelTS52";
             this.labelTS52.Size = new System.Drawing.Size(60, 16);
             this.labelTS52.TabIndex = 86;
-            this.labelTS52.Text = "Low (Hz):";
+            this.labelTS52.Text = "低 (Hz):";
             // 
             // udTXGenSweepLow
             // 
@@ -52961,7 +52844,7 @@
             this.udTXGenSweepLow.Size = new System.Drawing.Size(56, 20);
             this.udTXGenSweepLow.TabIndex = 85;
             this.udTXGenSweepLow.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udTXGenSweepLow, "See the Sweep Button to the right.");
+            this.toolTip1.SetToolTip(this.udTXGenSweepLow, "请参见右侧的扫描按钮。");
             this.udTXGenSweepLow.Value = new decimal(new int[] {
             0,
             0,
@@ -52991,7 +52874,7 @@
             this.udTXGenFreq.Size = new System.Drawing.Size(56, 20);
             this.udTXGenFreq.TabIndex = 109;
             this.udTXGenFreq.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udTXGenFreq, "Tone Frequency.");
+            this.toolTip1.SetToolTip(this.udTXGenFreq, "音调频率。");
             this.udTXGenFreq.Value = new decimal(new int[] {
             1000,
             0,
@@ -53006,7 +52889,7 @@
             this.labelTS304.Name = "labelTS304";
             this.labelTS304.Size = new System.Drawing.Size(55, 16);
             this.labelTS304.TabIndex = 108;
-            this.labelTS304.Text = "Freq (Hz):";
+            this.labelTS304.Text = "频率 (Hz):";
             // 
             // udTXGenScale
             // 
@@ -53031,7 +52914,7 @@
             this.udTXGenScale.Size = new System.Drawing.Size(56, 20);
             this.udTXGenScale.TabIndex = 102;
             this.udTXGenScale.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udTXGenScale, "Sets the amplitude of the signal (typically between 0 and 1.0)");
+            this.toolTip1.SetToolTip(this.udTXGenScale, "设置信号幅度（通常为 0 到 1.0）");
             this.udTXGenScale.Value = new decimal(new int[] {
             0,
             0,
@@ -53046,7 +52929,7 @@
             this.labelTS303.Name = "labelTS303";
             this.labelTS303.Size = new System.Drawing.Size(60, 16);
             this.labelTS303.TabIndex = 101;
-            this.labelTS303.Text = "Level (dB):";
+            this.labelTS303.Text = "电平 (dB):";
             // 
             // lblSigGenTXMode
             // 
@@ -53055,7 +52938,7 @@
             this.lblSigGenTXMode.Name = "lblSigGenTXMode";
             this.lblSigGenTXMode.Size = new System.Drawing.Size(40, 16);
             this.lblSigGenTXMode.TabIndex = 96;
-            this.lblSigGenTXMode.Text = "Mode:";
+            this.lblSigGenTXMode.Text = "模式:";
             // 
             // cmboSigGenTXMode
             // 
@@ -53074,7 +52957,7 @@
             this.cmboSigGenTXMode.Name = "cmboSigGenTXMode";
             this.cmboSigGenTXMode.Size = new System.Drawing.Size(88, 21);
             this.cmboSigGenTXMode.TabIndex = 91;
-            this.toolTip1.SetToolTip(this.cmboSigGenTXMode, "Select the signal type.");
+            this.toolTip1.SetToolTip(this.cmboSigGenTXMode, "选择信号类型。");
             this.cmboSigGenTXMode.SelectedIndexChanged += new System.EventHandler(this.cmboSigGenTXMode_SelectedIndexChanged);
             // 
             // grpSigGenReceive
@@ -53094,7 +52977,7 @@
             this.grpSigGenReceive.Size = new System.Drawing.Size(189, 326);
             this.grpSigGenReceive.TabIndex = 101;
             this.grpSigGenReceive.TabStop = false;
-            this.grpSigGenReceive.Text = "Receive";
+            this.grpSigGenReceive.Text = "接收";
             // 
             // labelTS312
             // 
@@ -53105,7 +52988,7 @@
             this.labelTS312.Name = "labelTS312";
             this.labelTS312.Size = new System.Drawing.Size(119, 13);
             this.labelTS312.TabIndex = 117;
-            this.labelTS312.Text = "Applied:  DSP Input";
+            this.labelTS312.Text = "应用位置: DSP 输入";
             // 
             // chkSigGenRX1
             // 
@@ -53132,7 +53015,7 @@
             this.grpRXGenSweep.Size = new System.Drawing.Size(163, 102);
             this.grpRXGenSweep.TabIndex = 115;
             this.grpRXGenSweep.TabStop = false;
-            this.grpRXGenSweep.Text = "Sweep";
+            this.grpRXGenSweep.Text = "扫描";
             // 
             // labelTS307
             // 
@@ -53141,7 +53024,7 @@
             this.labelTS307.Name = "labelTS307";
             this.labelTS307.Size = new System.Drawing.Size(85, 16);
             this.labelTS307.TabIndex = 90;
-            this.labelTS307.Text = "Rate (Hz/s):";
+            this.labelTS307.Text = "速率 (Hz/s):";
             // 
             // udRXGenSweepRate
             // 
@@ -53165,7 +53048,7 @@
             this.udRXGenSweepRate.Size = new System.Drawing.Size(56, 20);
             this.udRXGenSweepRate.TabIndex = 89;
             this.udRXGenSweepRate.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udRXGenSweepRate, "See the Sweep Button to the right.");
+            this.toolTip1.SetToolTip(this.udRXGenSweepRate, "请参见右侧的扫描按钮。");
             this.udRXGenSweepRate.Value = new decimal(new int[] {
             100,
             0,
@@ -53180,7 +53063,7 @@
             this.labelTS308.Name = "labelTS308";
             this.labelTS308.Size = new System.Drawing.Size(60, 16);
             this.labelTS308.TabIndex = 88;
-            this.labelTS308.Text = "High (Hz):";
+            this.labelTS308.Text = "高 (Hz):";
             // 
             // udRXGenSweepHigh
             // 
@@ -53204,7 +53087,7 @@
             this.udRXGenSweepHigh.Size = new System.Drawing.Size(56, 20);
             this.udRXGenSweepHigh.TabIndex = 87;
             this.udRXGenSweepHigh.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udRXGenSweepHigh, "See the Sweep Button to the right.");
+            this.toolTip1.SetToolTip(this.udRXGenSweepHigh, "请参见右侧的扫描按钮。");
             this.udRXGenSweepHigh.Value = new decimal(new int[] {
             4000,
             0,
@@ -53219,7 +53102,7 @@
             this.labelTS309.Name = "labelTS309";
             this.labelTS309.Size = new System.Drawing.Size(60, 16);
             this.labelTS309.TabIndex = 86;
-            this.labelTS309.Text = "Low (Hz):";
+            this.labelTS309.Text = "低 (Hz):";
             // 
             // udRXGenSweepLow
             // 
@@ -53243,7 +53126,7 @@
             this.udRXGenSweepLow.Size = new System.Drawing.Size(56, 20);
             this.udRXGenSweepLow.TabIndex = 85;
             this.udRXGenSweepLow.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udRXGenSweepLow, "See the Sweep Button to the right.");
+            this.toolTip1.SetToolTip(this.udRXGenSweepLow, "请参见右侧的扫描按钮。");
             this.udRXGenSweepLow.Value = new decimal(new int[] {
             0,
             0,
@@ -53273,7 +53156,7 @@
             this.udRXGenFreq.Size = new System.Drawing.Size(56, 20);
             this.udRXGenFreq.TabIndex = 114;
             this.udRXGenFreq.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udRXGenFreq, "Tone Frequency.");
+            this.toolTip1.SetToolTip(this.udRXGenFreq, "音调频率。");
             this.udRXGenFreq.Value = new decimal(new int[] {
             1000,
             0,
@@ -53288,7 +53171,7 @@
             this.labelTS310.Name = "labelTS310";
             this.labelTS310.Size = new System.Drawing.Size(55, 16);
             this.labelTS310.TabIndex = 113;
-            this.labelTS310.Text = "Freq (Hz):";
+            this.labelTS310.Text = "频率 (Hz):";
             // 
             // udRXGenScale
             // 
@@ -53313,7 +53196,7 @@
             this.udRXGenScale.Size = new System.Drawing.Size(56, 20);
             this.udRXGenScale.TabIndex = 112;
             this.udRXGenScale.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udRXGenScale, "Sets the amplitude of the signal (typically between 0 and 1.0)");
+            this.toolTip1.SetToolTip(this.udRXGenScale, "设置信号幅度（通常为 0 到 1.0）");
             this.udRXGenScale.Value = new decimal(new int[] {
             500,
             0,
@@ -53328,7 +53211,7 @@
             this.labelTS311.Name = "labelTS311";
             this.labelTS311.Size = new System.Drawing.Size(60, 16);
             this.labelTS311.TabIndex = 111;
-            this.labelTS311.Text = "Level (dB):";
+            this.labelTS311.Text = "电平 (dB):";
             // 
             // chkSigGenRX2
             // 
@@ -53347,7 +53230,7 @@
             this.lblSigGenRXMode.Name = "lblSigGenRXMode";
             this.lblSigGenRXMode.Size = new System.Drawing.Size(40, 16);
             this.lblSigGenRXMode.TabIndex = 96;
-            this.lblSigGenRXMode.Text = "Mode:";
+            this.lblSigGenRXMode.Text = "模式:";
             // 
             // cmboSigGenRXMode
             // 
@@ -53363,7 +53246,7 @@
             this.cmboSigGenRXMode.Name = "cmboSigGenRXMode";
             this.cmboSigGenRXMode.Size = new System.Drawing.Size(88, 21);
             this.cmboSigGenRXMode.TabIndex = 91;
-            this.toolTip1.SetToolTip(this.cmboSigGenRXMode, "Select the signal type.");
+            this.toolTip1.SetToolTip(this.cmboSigGenRXMode, "选择信号类型。");
             this.cmboSigGenRXMode.SelectedIndexChanged += new System.EventHandler(this.cmboSigGenRXMode_SelectedIndexChanged);
             // 
             // grpTestTXIMD
@@ -53389,7 +53272,7 @@
             this.grpTestTXIMD.Size = new System.Drawing.Size(162, 326);
             this.grpTestTXIMD.TabIndex = 83;
             this.grpTestTXIMD.TabStop = false;
-            this.grpTestTXIMD.Text = "Two Tone Test";
+            this.grpTestTXIMD.Text = "双音测试";
             // 
             // radUseFixedDrive2Tone
             // 
@@ -53400,7 +53283,7 @@
             this.radUseFixedDrive2Tone.Size = new System.Drawing.Size(100, 17);
             this.radUseFixedDrive2Tone.TabIndex = 125;
             this.radUseFixedDrive2Tone.TabStop = true;
-            this.radUseFixedDrive2Tone.Text = "Use Fixed Drive";
+            this.radUseFixedDrive2Tone.Text = "使用固定驱动";
             this.radUseFixedDrive2Tone.UseVisualStyleBackColor = true;
             this.radUseFixedDrive2Tone.CheckedChanged += new System.EventHandler(this.radUseFixedDrive2Tone_CheckedChanged);
             // 
@@ -53413,7 +53296,7 @@
             this.radUseDriveSlider2Tone.Size = new System.Drawing.Size(101, 17);
             this.radUseDriveSlider2Tone.TabIndex = 124;
             this.radUseDriveSlider2Tone.TabStop = true;
-            this.radUseDriveSlider2Tone.Text = "Use Drive Slider";
+            this.radUseDriveSlider2Tone.Text = "使用驱动滑块";
             this.radUseDriveSlider2Tone.UseVisualStyleBackColor = true;
             this.radUseDriveSlider2Tone.CheckedChanged += new System.EventHandler(this.radUseDriveSlider2Tone_CheckedChanged);
             // 
@@ -53426,7 +53309,7 @@
             this.radUseTuneSlider2Tone.Size = new System.Drawing.Size(101, 17);
             this.radUseTuneSlider2Tone.TabIndex = 123;
             this.radUseTuneSlider2Tone.TabStop = true;
-            this.radUseTuneSlider2Tone.Text = "Use Tune Slider";
+            this.radUseTuneSlider2Tone.Text = "使用调谐滑块";
             this.radUseTuneSlider2Tone.UseVisualStyleBackColor = true;
             this.radUseTuneSlider2Tone.CheckedChanged += new System.EventHandler(this.radUseTuneSlider2Tone_CheckedChanged);
             // 
@@ -53437,7 +53320,7 @@
             this.labelTS18.Name = "labelTS18";
             this.labelTS18.Size = new System.Drawing.Size(60, 20);
             this.labelTS18.TabIndex = 121;
-            this.labelTS18.Text = "F#2 delay:";
+            this.labelTS18.Text = "F#2 延迟:";
             this.labelTS18.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
             // labelTS17
@@ -53471,7 +53354,7 @@
             this.udFreq2Delay.Size = new System.Drawing.Size(56, 20);
             this.udFreq2Delay.TabIndex = 120;
             this.udFreq2Delay.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udFreq2Delay, "Applies a wait delay before Freq#2 is enabled");
+            this.toolTip1.SetToolTip(this.udFreq2Delay, "在启用 2 号频率之前施加等待延迟");
             this.udFreq2Delay.Value = new decimal(new int[] {
             0,
             0,
@@ -53487,7 +53370,7 @@
             this.labelTS314.Name = "labelTS314";
             this.labelTS314.Size = new System.Drawing.Size(128, 13);
             this.labelTS314.TabIndex = 118;
-            this.labelTS314.Text = "Applied:  DSP Output";
+            this.labelTS314.Text = "应用位置: DSP 输出";
             // 
             // chkInvertTones
             // 
@@ -53499,7 +53382,7 @@
             this.chkInvertTones.Name = "chkInvertTones";
             this.chkInvertTones.Size = new System.Drawing.Size(119, 17);
             this.chkInvertTones.TabIndex = 97;
-            this.chkInvertTones.Text = "Invert for LS Modes";
+            this.chkInvertTones.Text = "下边带模式反相";
             this.chkInvertTones.UseVisualStyleBackColor = true;
             // 
             // lblTwoToneLevel
@@ -53509,7 +53392,7 @@
             this.lblTwoToneLevel.Name = "lblTwoToneLevel";
             this.lblTwoToneLevel.Size = new System.Drawing.Size(60, 16);
             this.lblTwoToneLevel.TabIndex = 96;
-            this.lblTwoToneLevel.Text = "Level (dB):";
+            this.lblTwoToneLevel.Text = "电平 (dB):";
             this.lblTwoToneLevel.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
             // udTwoToneLevel
@@ -53535,7 +53418,7 @@
             this.udTwoToneLevel.Size = new System.Drawing.Size(56, 20);
             this.udTwoToneLevel.TabIndex = 95;
             this.udTwoToneLevel.TinyStep = false;
-            this.toolTip1.SetToolTip(this.udTwoToneLevel, "Sets the amplitude of the two tone test.");
+            this.toolTip1.SetToolTip(this.udTwoToneLevel, "设置双音测试的幅度。");
             this.udTwoToneLevel.Value = new decimal(new int[] {
             0,
             0,
@@ -53550,7 +53433,7 @@
             this.lblTestToneFreq2.Name = "lblTestToneFreq2";
             this.lblTestToneFreq2.Size = new System.Drawing.Size(50, 16);
             this.lblTestToneFreq2.TabIndex = 88;
-            this.lblTestToneFreq2.Text = "Freq #2:";
+            this.lblTestToneFreq2.Text = "频率 #2:";
             this.lblTestToneFreq2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // udTestIMDFreq2
@@ -53620,7 +53503,7 @@
             this.chkTestIMD.Name = "chkTestIMD";
             this.chkTestIMD.Size = new System.Drawing.Size(76, 31);
             this.chkTestIMD.TabIndex = 84;
-            this.chkTestIMD.Text = "Start";
+            this.chkTestIMD.Text = "开始";
             this.chkTestIMD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.chkTestIMD.CheckedChanged += new System.EventHandler(this.chkTestIMD_CheckedChanged);
             // 
@@ -53631,7 +53514,7 @@
             this.lblTestToneFreq1.Name = "lblTestToneFreq1";
             this.lblTestToneFreq1.Size = new System.Drawing.Size(50, 16);
             this.lblTestToneFreq1.TabIndex = 83;
-            this.lblTestToneFreq1.Text = "Freq #1:";
+            this.lblTestToneFreq1.Text = "频率 #1:";
             this.lblTestToneFreq1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // udTestIMDFreq1
@@ -53673,7 +53556,7 @@
             this.grpImpulseTest.Size = new System.Drawing.Size(160, 64);
             this.grpImpulseTest.TabIndex = 91;
             this.grpImpulseTest.TabStop = false;
-            this.grpImpulseTest.Text = "Impulse Test";
+            this.grpImpulseTest.Text = "脉冲测试";
             this.grpImpulseTest.Visible = false;
             // 
             // udImpulseNum
@@ -53715,7 +53598,7 @@
             this.btnImpulse.Selectable = true;
             this.btnImpulse.Size = new System.Drawing.Size(75, 23);
             this.btnImpulse.TabIndex = 90;
-            this.btnImpulse.Text = "Impulse";
+            this.btnImpulse.Text = "脉冲";
             this.btnImpulse.Click += new System.EventHandler(this.btnImpulse_Click);
             // 
             // grpTestAudioBalance
@@ -53726,7 +53609,7 @@
             this.grpTestAudioBalance.Size = new System.Drawing.Size(120, 64);
             this.grpTestAudioBalance.TabIndex = 86;
             this.grpTestAudioBalance.TabStop = false;
-            this.grpTestAudioBalance.Text = "Audio Balance Test";
+            this.grpTestAudioBalance.Text = "音频平衡测试";
             this.grpTestAudioBalance.Visible = false;
             // 
             // btnTestAudioBalStart
@@ -53737,7 +53620,7 @@
             this.btnTestAudioBalStart.Selectable = true;
             this.btnTestAudioBalStart.Size = new System.Drawing.Size(75, 23);
             this.btnTestAudioBalStart.TabIndex = 0;
-            this.btnTestAudioBalStart.Text = "Start";
+            this.btnTestAudioBalStart.Text = "开始";
             // 
             // openFileDialog1
             // 
@@ -53751,8 +53634,8 @@
             this.btnExportDB.Selectable = true;
             this.btnExportDB.Size = new System.Drawing.Size(112, 23);
             this.btnExportDB.TabIndex = 22;
-            this.btnExportDB.Text = "Export Database...";
-            this.toolTip1.SetToolTip(this.btnExportDB, "Export the current Thetis Database to the location of your choice.");
+            this.btnExportDB.Text = "导出数据库...";
+            this.toolTip1.SetToolTip(this.btnExportDB, "将当前 Thetis 数据库导出到您选择的位置。");
             this.btnExportDB.Click += new System.EventHandler(this.btnExportDB_Click);
             // 
             // btnImportDB
@@ -53763,8 +53646,8 @@
             this.btnImportDB.Selectable = true;
             this.btnImportDB.Size = new System.Drawing.Size(112, 23);
             this.btnImportDB.TabIndex = 21;
-            this.btnImportDB.Text = "Import Database...";
-            this.toolTip1.SetToolTip(this.btnImportDB, "Import a database file, or partial database file such as an exported TX Profile");
+            this.btnImportDB.Text = "导入数据库...";
+            this.toolTip1.SetToolTip(this.btnImportDB, "导入数据库文件，或部分数据库文件（如导出的 TX 配置文件）");
             this.btnImportDB.Click += new System.EventHandler(this.btnImportDB_Click);
             // 
             // btnResetDB
@@ -53775,9 +53658,8 @@
             this.btnResetDB.Selectable = true;
             this.btnResetDB.Size = new System.Drawing.Size(96, 23);
             this.btnResetDB.TabIndex = 20;
-            this.btnResetDB.Text = "Reset Database";
-            this.toolTip1.SetToolTip(this.btnResetDB, "Copies the current database to the desktop and resets to the defaults (after rest" +
-        "arting)");
+            this.btnResetDB.Text = "重置数据库";
+            this.toolTip1.SetToolTip(this.btnResetDB, "将当前数据库复制到桌面并重置为默认值（重启后生效）。");
             this.btnResetDB.Click += new System.EventHandler(this.btnResetDB_Click);
             // 
             // btnApply
@@ -53788,8 +53670,8 @@
             this.btnApply.Selectable = true;
             this.btnApply.Size = new System.Drawing.Size(75, 23);
             this.btnApply.TabIndex = 19;
-            this.btnApply.Text = "Apply";
-            this.toolTip1.SetToolTip(this.btnApply, "Save current settings to the database.");
+            this.btnApply.Text = "应用";
+            this.toolTip1.SetToolTip(this.btnApply, "将当前设置保存到数据库。");
             this.btnApply.Click += new System.EventHandler(this.btnApply_Click);
             // 
             // btnCancel
@@ -53800,8 +53682,8 @@
             this.btnCancel.Selectable = true;
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 18;
-            this.btnCancel.Text = "Cancel";
-            this.toolTip1.SetToolTip(this.btnCancel, "Load settings that have changed from database and close form.");
+            this.btnCancel.Text = "取消";
+            this.toolTip1.SetToolTip(this.btnCancel, "从数据库加载已更改的设置并关闭窗体。");
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnOK
@@ -53813,7 +53695,7 @@
             this.btnOK.Size = new System.Drawing.Size(75, 23);
             this.btnOK.TabIndex = 17;
             this.btnOK.Text = "OK";
-            this.toolTip1.SetToolTip(this.btnOK, "Save current settings and close form.");
+            this.toolTip1.SetToolTip(this.btnOK, "保存当前设置并关闭窗体。");
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // chkEnableRFEPATR
@@ -53823,8 +53705,8 @@
             this.chkEnableRFEPATR.Name = "chkEnableRFEPATR";
             this.chkEnableRFEPATR.Size = new System.Drawing.Size(120, 16);
             this.chkEnableRFEPATR.TabIndex = 12;
-            this.chkEnableRFEPATR.Text = "Enable RFE PA TR";
-            this.toolTip1.SetToolTip(this.chkEnableRFEPATR, "Enabled the RFE PA TR line to toggle with MOX (for use with non-FLEX PA).");
+            this.chkEnableRFEPATR.Text = "启用 RFE PA TR";
+            this.toolTip1.SetToolTip(this.chkEnableRFEPATR, "启用 RFE PA TR 线随 MOX 切换（用于非 FLEX 功放）。");
             this.chkEnableRFEPATR.CheckedChanged += new System.EventHandler(this.chkEnableRFEPATR_CheckedChanged);
             // 
             // saveFileDialog1
@@ -53871,7 +53753,7 @@
             this.labelSavingLoading.Name = "labelSavingLoading";
             this.labelSavingLoading.Size = new System.Drawing.Size(100, 10);
             this.labelSavingLoading.TabIndex = 23;
-            this.labelSavingLoading.Text = "SAVING";
+            this.labelSavingLoading.Text = "保存中";
             this.labelSavingLoading.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // grpDiagInfo
@@ -53882,7 +53764,7 @@
             this.grpDiagInfo.Size = new System.Drawing.Size(118, 104);
             this.grpDiagInfo.TabIndex = 5;
             this.grpDiagInfo.TabStop = false;
-            this.grpDiagInfo.Text = "Diag Info";
+            this.grpDiagInfo.Text = "诊断信息";
             this.grpDiagInfo.Visible = false;
             // 
             // lblSyncData
@@ -53892,7 +53774,7 @@
             this.lblSyncData.Name = "lblSyncData";
             this.lblSyncData.Size = new System.Drawing.Size(97, 16);
             this.lblSyncData.TabIndex = 0;
-            this.lblSyncData.Text = "Frame Sync: ";
+            this.lblSyncData.Text = "帧同步: ";
             // 
             // numericUpDownTS5
             // 
@@ -54001,7 +53883,7 @@
             this.radioButtonTS1.Size = new System.Drawing.Size(60, 17);
             this.radioButtonTS1.TabIndex = 1;
             this.radioButtonTS1.TabStop = true;
-            this.radioButtonTS1.Text = "Manual";
+            this.radioButtonTS1.Text = "手动";
             this.radioButtonTS1.UseVisualStyleBackColor = true;
             // 
             // radioButtonTS2
@@ -54014,7 +53896,7 @@
             this.radioButtonTS2.Size = new System.Drawing.Size(47, 17);
             this.radioButtonTS2.TabIndex = 1;
             this.radioButtonTS2.TabStop = true;
-            this.radioButtonTS2.Text = "Auto";
+            this.radioButtonTS2.Text = "自动";
             this.radioButtonTS2.UseVisualStyleBackColor = true;
             // 
             // numericUpDownTS11
@@ -54124,7 +54006,7 @@
             this.radioButtonTS3.Size = new System.Drawing.Size(60, 17);
             this.radioButtonTS3.TabIndex = 1;
             this.radioButtonTS3.TabStop = true;
-            this.radioButtonTS3.Text = "Manual";
+            this.radioButtonTS3.Text = "手动";
             this.radioButtonTS3.UseVisualStyleBackColor = true;
             // 
             // radioButtonTS4
@@ -54137,7 +54019,7 @@
             this.radioButtonTS4.Size = new System.Drawing.Size(47, 17);
             this.radioButtonTS4.TabIndex = 1;
             this.radioButtonTS4.TabStop = true;
-            this.radioButtonTS4.Text = "Auto";
+            this.radioButtonTS4.Text = "自动";
             this.radioButtonTS4.UseVisualStyleBackColor = true;
             // 
             // labelTS118
@@ -54878,7 +54760,7 @@
             this.radioButtonTS5.Size = new System.Drawing.Size(60, 17);
             this.radioButtonTS5.TabIndex = 1;
             this.radioButtonTS5.TabStop = true;
-            this.radioButtonTS5.Text = "Manual";
+            this.radioButtonTS5.Text = "手动";
             this.radioButtonTS5.UseVisualStyleBackColor = true;
             // 
             // radioButtonTS6
@@ -54891,7 +54773,7 @@
             this.radioButtonTS6.Size = new System.Drawing.Size(47, 17);
             this.radioButtonTS6.TabIndex = 1;
             this.radioButtonTS6.TabStop = true;
-            this.radioButtonTS6.Text = "Auto";
+            this.radioButtonTS6.Text = "自动";
             this.radioButtonTS6.UseVisualStyleBackColor = true;
             // 
             // Setup
@@ -54915,7 +54797,7 @@
             this.MaximumSize = new System.Drawing.Size(760, 550);
             this.MinimumSize = new System.Drawing.Size(760, 550);
             this.Name = "Setup";
-            this.Text = "Setup";
+            this.Text = "设置";
             this.Closing += new System.ComponentModel.CancelEventHandler(this.Setup_Closing);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Setup_KeyDown);
             tpAlexAntCtrl.ResumeLayout(false);

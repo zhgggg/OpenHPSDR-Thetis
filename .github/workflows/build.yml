@@ -22,7 +22,7 @@ jobs:
         run: choco install wixtoolset -y --no-progress
 
       - name: Restore NuGet packages
-        run: nuget restore "Project Files\Source\Thetis_VS2022.sln" -MSBuildVersion 17
+        run: nuget restore "Project Files\Source\Thetis_VS2022.sln"
 
       - name: Build solution (Release x86)
         run: msbuild "Project Files\Source\Thetis_VS2022.sln" /m /p:Configuration=Release /p:Platform=x86 /v:minimal

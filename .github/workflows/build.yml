@@ -29,3 +29,22 @@ jobs:
 
       - name: Build solution (Release x64)
         run: msbuild "Project Files\Source\Thetis_VS2022.sln" /m /p:Configuration=Release /p:Platform=x64 /v:minimal
+
+      - name: Upload x86 binaries
+        uses: actions/upload-artifact@v4
+        with:
+          name: Thetis-x86
+          path: "Project Files/bin/x86/Release/"
+
+      - name: Upload x64 binaries
+        uses: actions/upload-artifact@v4
+        with:
+          name: Thetis-x64
+          path: "Project Files/bin/x64/Release/"
+
+      - name: Upload MSI installers
+        uses: actions/upload-artifact@v4
+        with:
+          name: Thetis-Installers
+          path: "Project Files/bin/Installers/*.msi"
+          if-no-files-found: ignore

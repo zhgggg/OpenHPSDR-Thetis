@@ -59,7 +59,7 @@
             this.lblFB.TabIndex = 34;
             this.lblFB.Text = "FB";
             this.lblFB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.toolTip1.SetToolTip(this.lblFB, "Feedback level in order. Blue > 181, Green > 128, Yellow > 90, Red >= 0");
+            this.toolTip1.SetToolTip(this.lblFB, "反馈电平顺序：蓝 > 181，绿 > 128，黄 > 90，红 >= 0");
             this.lblFB.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblFB_MouseDown);
             // 
             // lblPS
@@ -76,7 +76,7 @@
             this.lblPS.TabIndex = 33;
             this.lblPS.Text = "Pure Signal2";
             this.lblPS.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.toolTip1.SetToolTip(this.lblPS, "PS2 is correcting if \'Correct\' is shown");
+            this.toolTip1.SetToolTip(this.lblPS, "若显示 'Correct' 则 PS2 正在校正");
             // 
             // chkButton2
             // 
@@ -94,9 +94,9 @@
             this.chkButton2.Name = "chkButton2";
             this.chkButton2.Size = new System.Drawing.Size(50, 23);
             this.chkButton2.TabIndex = 32;
-            this.chkButton2.Text = "Peak";
+            this.chkButton2.Text = "峰值";
             this.chkButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.toolTip1.SetToolTip(this.chkButton2, "Show/hide active peaks");
+            this.toolTip1.SetToolTip(this.chkButton2, "显示/隐藏活动峰值");
             this.chkButton2.CheckedChanged += new System.EventHandler(this.chkButton2_CheckedChanged);
             this.chkButton2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.chkButton2_MouseDown);
             // 
@@ -116,9 +116,9 @@
             this.chkButton1.Name = "chkButton1";
             this.chkButton1.Size = new System.Drawing.Size(50, 23);
             this.chkButton1.TabIndex = 31;
-            this.chkButton1.Text = "Blobs";
+            this.chkButton1.Text = "圆点";
             this.chkButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.toolTip1.SetToolTip(this.chkButton1, "Show/hide spectrum peak blobs");
+            this.toolTip1.SetToolTip(this.chkButton1, "显示/隐藏频谱峰值圆点");
             this.chkButton1.CheckedChanged += new System.EventHandler(this.chkButton1_CheckedChanged);
             this.chkButton1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.chkButton1_MouseDown);
             // 
@@ -162,7 +162,7 @@
             this.lblWarning.Name = "lblWarning";
             this.lblWarning.Size = new System.Drawing.Size(654, 24);
             this.lblWarning.TabIndex = 41;
-            this.lblWarning.Text = "Warning";
+            this.lblWarning.Text = "警告";
             this.lblWarning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblWarning.Visible = false;
             // 

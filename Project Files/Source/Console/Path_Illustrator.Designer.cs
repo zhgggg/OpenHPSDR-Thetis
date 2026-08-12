@@ -207,7 +207,7 @@
             this.label_XVTR_VHF.Name = "label_XVTR_VHF";
             this.label_XVTR_VHF.Size = new System.Drawing.Size(281, 13);
             this.label_XVTR_VHF.TabIndex = 224;
-            this.label_XVTR_VHF.Text = "assumes VHF+ is setup and  IF is within RX band selected";
+            this.label_XVTR_VHF.Text = "假设已设置 VHF+ 且中频位于所选接收波段内";
             // 
             // label_DUAL_MERCURY
             // 
@@ -218,7 +218,7 @@
             this.label_DUAL_MERCURY.Name = "label_DUAL_MERCURY";
             this.label_DUAL_MERCURY.Size = new System.Drawing.Size(352, 13);
             this.label_DUAL_MERCURY.TabIndex = 223;
-            this.label_DUAL_MERCURY.Text = "* assumes \"Multiple Mercury\" jumpers are installed on the Mercury boards";
+            this.label_DUAL_MERCURY.Text = "* 假设 Mercury 板上安装了“Multiple Mercury”跳线";
             // 
             // cb_DUAL_MERCURY_ALEX
             // 
@@ -241,8 +241,7 @@
             this.label_UNCHECK.Name = "label_UNCHECK";
             this.label_UNCHECK.Size = new System.Drawing.Size(461, 13);
             this.label_UNCHECK.TabIndex = 221;
-            this.label_UNCHECK.Text = "UNCHECK Setup > Ant/Filters > Antenna \"Disable BYPASS\" checkbox  if PA_rev15/16 p" +
-    "resent";
+            this.label_UNCHECK.Text = "如果存在 PA_rev15/16，请取消勾选 设置 > 天线/滤波器 > 天线 中的“禁用旁路”复选框";
             // 
             // label_NOTE
             // 
@@ -252,8 +251,7 @@
             this.label_NOTE.Name = "label_NOTE";
             this.label_NOTE.Size = new System.Drawing.Size(449, 13);
             this.label_NOTE.TabIndex = 220;
-            this.label_NOTE.Text = "CHECK      Setup > Ant/Filters > Antenna  \"Disable BYPASS\" checkbox  if PA_rev24 " +
-    "present,";
+            this.label_NOTE.Text = "如果存在 PA_rev24，请勾选 设置 > 天线/滤波器 > 天线 中的“禁用旁路”复选框，";
             // 
             // groupBox10
             // 
@@ -265,7 +263,7 @@
             this.groupBox10.Size = new System.Drawing.Size(229, 71);
             this.groupBox10.TabIndex = 71;
             this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "Signal paths for current option settings";
+            this.groupBox10.Text = "当前选项设置的信号路径";
             // 
             // rb_tx
             // 
@@ -275,7 +273,7 @@
             this.rb_tx.Name = "rb_tx";
             this.rb_tx.Size = new System.Drawing.Size(68, 17);
             this.rb_tx.TabIndex = 20;
-            this.rb_tx.Text = "TX mode";
+            this.rb_tx.Text = "TX 模式";
             this.rb_tx.UseVisualStyleBackColor = true;
             this.rb_tx.CheckedChanged += new System.EventHandler(this.rb_tx_CheckedChanged);
             // 
@@ -289,7 +287,7 @@
             this.rb_rx.Size = new System.Drawing.Size(72, 17);
             this.rb_rx.TabIndex = 19;
             this.rb_rx.TabStop = true;
-            this.rb_rx.Text = "RX mode ";
+            this.rb_rx.Text = "RX 模式";
             this.rb_rx.UseVisualStyleBackColor = true;
             this.rb_rx.CheckedChanged += new System.EventHandler(this.rb_rx_CheckedChanged);
             // 
@@ -521,7 +519,7 @@
             this.label_ext_amp2.Name = "label_ext_amp2";
             this.label_ext_amp2.Size = new System.Drawing.Size(117, 15);
             this.label_ext_amp2.TabIndex = 423;
-            this.label_ext_amp2.Text = " insert in series here";
+            this.label_ext_amp2.Text = " 串联插入此处";
             // 
             // label_ext_amp1
             // 
@@ -532,7 +530,7 @@
             this.label_ext_amp1.Name = "label_ext_amp1";
             this.label_ext_amp1.Size = new System.Drawing.Size(171, 15);
             this.label_ext_amp1.TabIndex = 422;
-            this.label_ext_amp1.Text = "* if ext amp used (100W max),";
+            this.label_ext_amp1.Text = "* 如果使用外部功放（最大 100W），";
             // 
             // label_PENELOPE_MIC
             // 
@@ -543,7 +541,7 @@
             this.label_PENELOPE_MIC.Name = "label_PENELOPE_MIC";
             this.label_PENELOPE_MIC.Size = new System.Drawing.Size(28, 15);
             this.label_PENELOPE_MIC.TabIndex = 421;
-            this.label_PENELOPE_MIC.Text = "MIC";
+            this.label_PENELOPE_MIC.Text = "麦克风";
             // 
             // label_DSP_HPSDR
             // 
@@ -575,7 +573,7 @@
             this.label_PENELOPE_IN.Name = "label_PENELOPE_IN";
             this.label_PENELOPE_IN.Size = new System.Drawing.Size(18, 15);
             this.label_PENELOPE_IN.TabIndex = 418;
-            this.label_PENELOPE_IN.Text = "IN";
+            this.label_PENELOPE_IN.Text = "输入";
             // 
             // label_PENELOPE_LINE
             // 
@@ -627,7 +625,7 @@
             this.label_MERCURY_2_OUT.Name = "label_MERCURY_2_OUT";
             this.label_MERCURY_2_OUT.Size = new System.Drawing.Size(31, 15);
             this.label_MERCURY_2_OUT.TabIndex = 413;
-            this.label_MERCURY_2_OUT.Text = "OUT";
+            this.label_MERCURY_2_OUT.Text = "输出";
             // 
             // label_MERCURY_2_LINE
             // 
@@ -647,7 +645,7 @@
             this.label_MERCURY_OUT.Name = "label_MERCURY_OUT";
             this.label_MERCURY_OUT.Size = new System.Drawing.Size(31, 15);
             this.label_MERCURY_OUT.TabIndex = 411;
-            this.label_MERCURY_OUT.Text = "OUT";
+            this.label_MERCURY_OUT.Text = "输出";
             // 
             // label_MERCURY_LINE
             // 
@@ -667,7 +665,7 @@
             this.label_MERCURY_2_P_OUT.Name = "label_MERCURY_2_P_OUT";
             this.label_MERCURY_2_P_OUT.Size = new System.Drawing.Size(31, 15);
             this.label_MERCURY_2_P_OUT.TabIndex = 409;
-            this.label_MERCURY_2_P_OUT.Text = "OUT";
+            this.label_MERCURY_2_P_OUT.Text = "输出";
             // 
             // label_MERCURY_2_PHONES
             // 
@@ -687,7 +685,7 @@
             this.label_MERCURY_P_OUT.Name = "label_MERCURY_P_OUT";
             this.label_MERCURY_P_OUT.Size = new System.Drawing.Size(31, 15);
             this.label_MERCURY_P_OUT.TabIndex = 407;
-            this.label_MERCURY_P_OUT.Text = "OUT";
+            this.label_MERCURY_P_OUT.Text = "输出";
             // 
             // label_MERCURY_PHONES
             // 
@@ -906,7 +904,7 @@
             this.label_PENELOPE_FILTER.Name = "label_PENELOPE_FILTER";
             this.label_PENELOPE_FILTER.Size = new System.Drawing.Size(42, 14);
             this.label_PENELOPE_FILTER.TabIndex = 385;
-            this.label_PENELOPE_FILTER.Text = "FILTER";
+            this.label_PENELOPE_FILTER.Text = "滤波器";
             // 
             // label_PENELOPE_AMPF
             // 
@@ -977,7 +975,7 @@
             this.label_ALEX_2_To_RX.Name = "label_ALEX_2_To_RX";
             this.label_ALEX_2_To_RX.Size = new System.Drawing.Size(39, 15);
             this.label_ALEX_2_To_RX.TabIndex = 378;
-            this.label_ALEX_2_To_RX.Text = "To RX";
+            this.label_ALEX_2_To_RX.Text = "至 RX";
             // 
             // label_ALEX_2_LPF
             // 
@@ -1057,7 +1055,7 @@
             this.label_ALEX_To_RX.Name = "label_ALEX_To_RX";
             this.label_ALEX_To_RX.Size = new System.Drawing.Size(39, 15);
             this.label_ALEX_To_RX.TabIndex = 370;
-            this.label_ALEX_To_RX.Text = "To RX";
+            this.label_ALEX_To_RX.Text = "至 RX";
             // 
             // label_MERCURY_FPGA
             // 
@@ -1197,7 +1195,7 @@
             this.label_RX2_LR_audio.Name = "label_RX2_LR_audio";
             this.label_RX2_LR_audio.Size = new System.Drawing.Size(78, 14);
             this.label_RX2_LR_audio.TabIndex = 356;
-            this.label_RX2_LR_audio.Text = "RX2 L/R audio";
+            this.label_RX2_LR_audio.Text = "RX2 左/右声道音频";
             // 
             // label_RX1_LR_audio
             // 
@@ -1207,7 +1205,7 @@
             this.label_RX1_LR_audio.Name = "label_RX1_LR_audio";
             this.label_RX1_LR_audio.Size = new System.Drawing.Size(78, 14);
             this.label_RX1_LR_audio.TabIndex = 355;
-            this.label_RX1_LR_audio.Text = "RX1 L/R audio";
+            this.label_RX1_LR_audio.Text = "RX1 左/右声道音频";
             // 
             // label_AUDIO_MIXER
             // 
@@ -1217,7 +1215,7 @@
             this.label_AUDIO_MIXER.Name = "label_AUDIO_MIXER";
             this.label_AUDIO_MIXER.Size = new System.Drawing.Size(82, 15);
             this.label_AUDIO_MIXER.TabIndex = 354;
-            this.label_AUDIO_MIXER.Text = "AUDIO MIXER";
+            this.label_AUDIO_MIXER.Text = "音频混合器";
             this.label_AUDIO_MIXER.UseMnemonic = false;
             // 
             // label_AUDIO_AMP
@@ -1228,7 +1226,7 @@
             this.label_AUDIO_AMP.Name = "label_AUDIO_AMP";
             this.label_AUDIO_AMP.Size = new System.Drawing.Size(33, 15);
             this.label_AUDIO_AMP.TabIndex = 353;
-            this.label_AUDIO_AMP.Text = "AMP";
+            this.label_AUDIO_AMP.Text = "功放";
             // 
             // label_LR_audio
             // 
@@ -1238,7 +1236,7 @@
             this.label_LR_audio.Name = "label_LR_audio";
             this.label_LR_audio.Size = new System.Drawing.Size(60, 15);
             this.label_LR_audio.TabIndex = 352;
-            this.label_LR_audio.Text = "L/R audio";
+            this.label_LR_audio.Text = "左/右声道音频";
             // 
             // label_L_audio_only
             // 
@@ -1248,7 +1246,7 @@
             this.label_L_audio_only.Name = "label_L_audio_only";
             this.label_L_audio_only.Size = new System.Drawing.Size(74, 15);
             this.label_L_audio_only.TabIndex = 351;
-            this.label_L_audio_only.Text = "L audio only";
+            this.label_L_audio_only.Text = "仅左声道音频";
             // 
             // label_C25
             // 
@@ -1298,7 +1296,7 @@
             this.label_front_panel.Name = "label_front_panel";
             this.label_front_panel.Size = new System.Drawing.Size(65, 15);
             this.label_front_panel.TabIndex = 346;
-            this.label_front_panel.Text = "front panel";
+            this.label_front_panel.Text = "前面板";
             // 
             // label_rear_panel
             // 
@@ -1308,7 +1306,7 @@
             this.label_rear_panel.Name = "label_rear_panel";
             this.label_rear_panel.Size = new System.Drawing.Size(63, 15);
             this.label_rear_panel.TabIndex = 345;
-            this.label_rear_panel.Text = "rear panel";
+            this.label_rear_panel.Text = "后面板";
             // 
             // label4
             // 
@@ -1435,7 +1433,7 @@
             this.label_FILTER.Name = "label_FILTER";
             this.label_FILTER.Size = new System.Drawing.Size(42, 14);
             this.label_FILTER.TabIndex = 332;
-            this.label_FILTER.Text = "FILTER";
+            this.label_FILTER.Text = "滤波器";
             // 
             // label_AMP
             // 
@@ -1506,7 +1504,7 @@
             this.label_hardware_selected.Name = "label_hardware_selected";
             this.label_hardware_selected.Size = new System.Drawing.Size(227, 16);
             this.label_hardware_selected.TabIndex = 325;
-            this.label_hardware_selected.Text = "Routing for HARDWARE SELECTED";
+            this.label_hardware_selected.Text = "所选硬件的信号路由";
             // 
             // label_ADC2_atten
             // 
@@ -1716,7 +1714,7 @@
             this.label_RX2_DISPLAY.Name = "label_RX2_DISPLAY";
             this.label_RX2_DISPLAY.Size = new System.Drawing.Size(81, 15);
             this.label_RX2_DISPLAY.TabIndex = 304;
-            this.label_RX2_DISPLAY.Text = "RX2 DISPLAY";
+            this.label_RX2_DISPLAY.Text = "RX2 显示";
             this.label_RX2_DISPLAY.UseMnemonic = false;
             // 
             // label_RX1_DISPLAY
@@ -1727,7 +1725,7 @@
             this.label_RX1_DISPLAY.Name = "label_RX1_DISPLAY";
             this.label_RX1_DISPLAY.Size = new System.Drawing.Size(87, 13);
             this.label_RX1_DISPLAY.TabIndex = 303;
-            this.label_RX1_DISPLAY.Text = "RX1 DISPLAY";
+            this.label_RX1_DISPLAY.Text = "RX1 显示";
             this.label_RX1_DISPLAY.UseMnemonic = false;
             // 
             // label_Rx6

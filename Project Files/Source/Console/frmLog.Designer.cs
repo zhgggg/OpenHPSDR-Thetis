@@ -56,7 +56,7 @@
             this.chkLog.Name = "chkLog";
             this.chkLog.Size = new System.Drawing.Size(44, 17);
             this.chkLog.TabIndex = 1;
-            this.chkLog.Text = "Log";
+            this.chkLog.Text = "日志";
             this.chkLog.UseVisualStyleBackColor = true;
             this.chkLog.CheckedChanged += new System.EventHandler(this.chkLog_CheckedChanged);
             // 
@@ -68,7 +68,7 @@
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 23);
             this.btnClear.TabIndex = 2;
-            this.btnClear.Text = "Clear";
+            this.btnClear.Text = "清除";
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
@@ -96,7 +96,7 @@
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(320, 320);
             this.Name = "frmLog";
-            this.Text = "Log";
+            this.Text = "日志";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmLog_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -155,7 +155,7 @@
             this.chkAVShowGain.Name = "chkAVShowGain";
             this.chkAVShowGain.Size = new System.Drawing.Size(78, 17);
             this.chkAVShowGain.TabIndex = 1;
-            this.chkAVShowGain.Text = "Show Gain";
+            this.chkAVShowGain.Text = "显示增益";
             this.chkAVShowGain.UseVisualStyleBackColor = false;
             this.chkAVShowGain.CheckedChanged += new System.EventHandler(this.chkAVShowGain_CheckedChanged);
             // 
@@ -172,7 +172,7 @@
             this.chkAVLowRes.Name = "chkAVLowRes";
             this.chkAVLowRes.Size = new System.Drawing.Size(68, 17);
             this.chkAVLowRes.TabIndex = 2;
-            this.chkAVLowRes.Text = "Low Res";
+            this.chkAVLowRes.Text = "低分辨率";
             this.chkAVLowRes.UseVisualStyleBackColor = false;
             this.chkAVLowRes.CheckedChanged += new System.EventHandler(this.chkAVLowRes_CheckedChanged);
             // 
@@ -187,7 +187,7 @@
             this.chkAVPhaseZoom.Name = "chkAVPhaseZoom";
             this.chkAVPhaseZoom.Size = new System.Drawing.Size(86, 17);
             this.chkAVPhaseZoom.TabIndex = 3;
-            this.chkAVPhaseZoom.Text = "Phase Zoom";
+            this.chkAVPhaseZoom.Text = "相位缩放";
             this.chkAVPhaseZoom.UseVisualStyleBackColor = false;
             this.chkAVPhaseZoom.CheckedChanged += new System.EventHandler(this.chkAVPhaseZoom_CheckedChanged);
             // 
@@ -202,7 +202,7 @@
             this.chkStayOnTop.Name = "chkStayOnTop";
             this.chkStayOnTop.Size = new System.Drawing.Size(62, 17);
             this.chkStayOnTop.TabIndex = 4;
-            this.chkStayOnTop.Text = "On Top";
+            this.chkStayOnTop.Text = "总在最前";
             this.chkStayOnTop.UseVisualStyleBackColor = false;
             this.chkStayOnTop.CheckedChanged += new System.EventHandler(this.chkStayOnTop_CheckedChanged);
             // 

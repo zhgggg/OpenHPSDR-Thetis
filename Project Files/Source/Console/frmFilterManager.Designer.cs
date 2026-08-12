@@ -100,11 +100,11 @@ namespace Thetis
             treeNode1.Name = "Node0";
             treeNode1.Text = "Node0";
             treeNode2.Name = "Node0";
-            treeNode2.Text = "System Filters";
+            treeNode2.Text = "系统筛选器";
             treeNode3.Name = "Node1";
             treeNode3.Text = "Node1";
             treeNode4.Name = "Node1";
-            treeNode4.Text = "User Filters";
+            treeNode4.Text = "用户筛选器";
             this.treeFilters.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             treeNode2,
             treeNode4});
@@ -117,7 +117,7 @@ namespace Thetis
             this.btnMore.Name = "btnMore";
             this.btnMore.Size = new System.Drawing.Size(92, 23);
             this.btnMore.TabIndex = 18;
-            this.btnMore.Text = "More >>";
+            this.btnMore.Text = "更多 >>";
             this.btnMore.UseVisualStyleBackColor = true;
             this.btnMore.Click += new System.EventHandler(this.btnMore_Click);
             // 
@@ -149,7 +149,7 @@ namespace Thetis
             this.labelTS10.Name = "labelTS10";
             this.labelTS10.Size = new System.Drawing.Size(42, 13);
             this.labelTS10.TabIndex = 21;
-            this.labelTS10.Text = "Entries:";
+            this.labelTS10.Text = "条目:";
             // 
             // groupBoxTS5
             // 
@@ -164,7 +164,7 @@ namespace Thetis
             this.groupBoxTS5.Size = new System.Drawing.Size(319, 169);
             this.groupBoxTS5.TabIndex = 20;
             this.groupBoxTS5.TabStop = false;
-            this.groupBoxTS5.Text = "Last Visted Info";
+            this.groupBoxTS5.Text = "最近访问信息";
             // 
             // labelTS9
             // 
@@ -174,7 +174,7 @@ namespace Thetis
             this.labelTS9.Name = "labelTS9";
             this.labelTS9.Size = new System.Drawing.Size(62, 13);
             this.labelTS9.TabIndex = 5;
-            this.labelTS9.Text = "CenterFreq:";
+            this.labelTS9.Text = "中心频率:";
             // 
             // labelTS8
             // 
@@ -184,7 +184,7 @@ namespace Thetis
             this.labelTS8.Name = "labelTS8";
             this.labelTS8.Size = new System.Drawing.Size(60, 13);
             this.labelTS8.TabIndex = 4;
-            this.labelTS8.Text = "Frequency:";
+            this.labelTS8.Text = "频率:";
             // 
             // labelTS7
             // 
@@ -194,7 +194,7 @@ namespace Thetis
             this.labelTS7.Name = "labelTS7";
             this.labelTS7.Size = new System.Drawing.Size(63, 13);
             this.labelTS7.TabIndex = 3;
-            this.labelTS7.Text = "Description:";
+            this.labelTS7.Text = "描述:";
             // 
             // textBoxTS8
             // 
@@ -240,7 +240,7 @@ namespace Thetis
             this.labelTS6.Name = "labelTS6";
             this.labelTS6.Size = new System.Drawing.Size(45, 13);
             this.labelTS6.TabIndex = 17;
-            this.labelTS6.Text = "(unique)";
+            this.labelTS6.Text = "（唯一）";
             // 
             // btnUpdate
             // 
@@ -249,7 +249,7 @@ namespace Thetis
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnUpdate.TabIndex = 16;
-            this.btnUpdate.Text = "Update";
+            this.btnUpdate.Text = "更新";
             this.btnUpdate.UseVisualStyleBackColor = true;
             // 
             // btnAddNew
@@ -259,7 +259,7 @@ namespace Thetis
             this.btnAddNew.Name = "btnAddNew";
             this.btnAddNew.Size = new System.Drawing.Size(75, 23);
             this.btnAddNew.TabIndex = 15;
-            this.btnAddNew.Text = "Add New";
+            this.btnAddNew.Text = "新建";
             this.btnAddNew.UseVisualStyleBackColor = true;
             // 
             // groupBoxTS4
@@ -275,7 +275,7 @@ namespace Thetis
             this.groupBoxTS4.Size = new System.Drawing.Size(341, 153);
             this.groupBoxTS4.TabIndex = 14;
             this.groupBoxTS4.TabStop = false;
-            this.groupBoxTS4.Text = "Filter on SubModes";
+            this.groupBoxTS4.Text = "按子模式筛选";
             // 
             // buttonTS8
             // 
@@ -338,7 +338,7 @@ namespace Thetis
             this.groupBoxTS3.Size = new System.Drawing.Size(341, 153);
             this.groupBoxTS3.TabIndex = 13;
             this.groupBoxTS3.TabStop = false;
-            this.groupBoxTS3.Text = "Filter on Modes";
+            this.groupBoxTS3.Text = "按模式筛选";
             // 
             // buttonTS6
             // 
@@ -404,7 +404,7 @@ namespace Thetis
             this.groupBoxTS2.Size = new System.Drawing.Size(341, 105);
             this.groupBoxTS2.TabIndex = 9;
             this.groupBoxTS2.TabStop = false;
-            this.groupBoxTS2.Text = "Filter on Frequencies";
+            this.groupBoxTS2.Text = "按频率筛选";
             // 
             // buttonTS5
             // 
@@ -434,7 +434,7 @@ namespace Thetis
             this.labelTS5.Name = "labelTS5";
             this.labelTS5.Size = new System.Drawing.Size(23, 13);
             this.labelTS5.TabIndex = 13;
-            this.labelTS5.Text = "To:";
+            this.labelTS5.Text = "至:";
             // 
             // labelTS4
             // 
@@ -444,7 +444,7 @@ namespace Thetis
             this.labelTS4.Name = "labelTS4";
             this.labelTS4.Size = new System.Drawing.Size(33, 13);
             this.labelTS4.TabIndex = 10;
-            this.labelTS4.Text = "From:";
+            this.labelTS4.Text = "自:";
             // 
             // txtToFreq
             // 
@@ -492,7 +492,7 @@ namespace Thetis
             this.groupBoxTS1.Size = new System.Drawing.Size(341, 153);
             this.groupBoxTS1.TabIndex = 8;
             this.groupBoxTS1.TabStop = false;
-            this.groupBoxTS1.Text = "Filter on Bands";
+            this.groupBoxTS1.Text = "按波段筛选";
             // 
             // buttonTS3
             // 
@@ -550,7 +550,7 @@ namespace Thetis
             this.labelTS3.Name = "labelTS3";
             this.labelTS3.Size = new System.Drawing.Size(63, 13);
             this.labelTS3.TabIndex = 7;
-            this.labelTS3.Text = "Description:";
+            this.labelTS3.Text = "描述:";
             // 
             // labelTS2
             // 
@@ -560,7 +560,7 @@ namespace Thetis
             this.labelTS2.Name = "labelTS2";
             this.labelTS2.Size = new System.Drawing.Size(38, 13);
             this.labelTS2.TabIndex = 6;
-            this.labelTS2.Text = "Name:";
+            this.labelTS2.Text = "名称:";
             // 
             // labelTS1
             // 
@@ -602,7 +602,7 @@ namespace Thetis
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 1;
-            this.btnDelete.Text = "Delete";
+            this.btnDelete.Text = "删除";
             this.btnDelete.UseVisualStyleBackColor = true;
             // 
             // frmFilterManager
@@ -635,7 +635,7 @@ namespace Thetis
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximumSize = new System.Drawing.Size(1272, 450);
             this.Name = "frmFilterManager";
-            this.Text = "BandStack2 Filter Manager";
+            this.Text = "波段堆栈 2 筛选管理器";
             this.groupBoxTS5.ResumeLayout(false);
             this.groupBoxTS5.PerformLayout();
             this.groupBoxTS4.ResumeLayout(false);

@@ -156,7 +156,7 @@
             this.groupBox_Rx_select.Size = new System.Drawing.Size(90, 83);
             this.groupBox_Rx_select.TabIndex = 39;
             this.groupBox_Rx_select.TabStop = false;
-            this.groupBox_Rx_select.Text = "display";
+            this.groupBox_Rx_select.Text = "显示";
             // 
             // radioButton_Rx2_only
             // 
@@ -166,7 +166,7 @@
             this.radioButton_Rx2_only.Name = "radioButton_Rx2_only";
             this.radioButton_Rx2_only.Size = new System.Drawing.Size(66, 17);
             this.radioButton_Rx2_only.TabIndex = 10;
-            this.radioButton_Rx2_only.Text = "Rx2 only";
+            this.radioButton_Rx2_only.Text = "仅 Rx2";
             this.radioButton_Rx2_only.UseVisualStyleBackColor = true;
             // 
             // radioButton_Rx1_only
@@ -177,7 +177,7 @@
             this.radioButton_Rx1_only.Name = "radioButton_Rx1_only";
             this.radioButton_Rx1_only.Size = new System.Drawing.Size(66, 17);
             this.radioButton_Rx1_only.TabIndex = 9;
-            this.radioButton_Rx1_only.Text = "Rx1 only";
+            this.radioButton_Rx1_only.Text = "仅 Rx1";
             this.radioButton_Rx1_only.UseVisualStyleBackColor = true;
             // 
             // radioButton_both
@@ -190,7 +190,7 @@
             this.radioButton_both.Size = new System.Drawing.Size(47, 17);
             this.radioButton_both.TabIndex = 3;
             this.radioButton_both.TabStop = true;
-            this.radioButton_both.Text = "Both";
+            this.radioButton_both.Text = "两者";
             this.radioButton_both.UseVisualStyleBackColor = true;
             // 
             // groupBox_Rx2
@@ -203,7 +203,7 @@
             this.groupBox_Rx2.Size = new System.Drawing.Size(200, 56);
             this.groupBox_Rx2.TabIndex = 38;
             this.groupBox_Rx2.TabStop = false;
-            this.groupBox_Rx2.Text = "Rx2 signal (dBm)";
+            this.groupBox_Rx2.Text = "Rx2 信号 (dBm)";
             // 
             // textBox_Rx2
             // 
@@ -222,7 +222,7 @@
             this.button_writeFile.Name = "button_writeFile";
             this.button_writeFile.Size = new System.Drawing.Size(127, 23);
             this.button_writeFile.TabIndex = 36;
-            this.button_writeFile.Text = "write  data  file";
+            this.button_writeFile.Text = "写入数据文件";
             this.button_writeFile.UseVisualStyleBackColor = false;
             this.button_writeFile.Click += new System.EventHandler(this.button_writeFile_Click);
             // 
@@ -234,7 +234,7 @@
             this.button_readFile.Name = "button_readFile";
             this.button_readFile.Size = new System.Drawing.Size(127, 23);
             this.button_readFile.TabIndex = 35;
-            this.button_readFile.Text = "read  data  file";
+            this.button_readFile.Text = "读取数据文件";
             this.button_readFile.UseVisualStyleBackColor = false;
             this.button_readFile.Click += new System.EventHandler(this.button_readFile_Click);
             // 
@@ -248,7 +248,7 @@
             this.labelTS13.Name = "labelTS13";
             this.labelTS13.Size = new System.Drawing.Size(79, 13);
             this.labelTS13.TabIndex = 33;
-            this.labelTS13.Text = "Time (seconds)";
+            this.labelTS13.Text = "时间（秒）";
             this.labelTS13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // labelTS12
@@ -261,7 +261,7 @@
             this.labelTS12.Name = "labelTS12";
             this.labelTS12.Size = new System.Drawing.Size(126, 13);
             this.labelTS12.TabIndex = 32;
-            this.labelTS12.Text = "                    Signal (dBm)";
+            this.labelTS12.Text = "                    信号 (dBm)";
             this.labelTS12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // labelTS10
@@ -316,7 +316,7 @@
             this.groupBoxTS8.Size = new System.Drawing.Size(122, 117);
             this.groupBoxTS8.TabIndex = 27;
             this.groupBoxTS8.TabStop = false;
-            this.groupBoxTS8.Text = "X axis";
+            this.groupBoxTS8.Text = "X 轴";
             // 
             // labelTS7
             // 
@@ -326,7 +326,7 @@
             this.labelTS7.Name = "labelTS7";
             this.labelTS7.Size = new System.Drawing.Size(79, 13);
             this.labelTS7.TabIndex = 11;
-            this.labelTS7.Text = "Xmin (seconds)";
+            this.labelTS7.Text = "X 轴最小值（秒）";
             // 
             // manual_xmin
             // 
@@ -364,7 +364,7 @@
             this.labelTS6.Name = "labelTS6";
             this.labelTS6.Size = new System.Drawing.Size(82, 13);
             this.labelTS6.TabIndex = 9;
-            this.labelTS6.Text = "Xmax (seconds)";
+            this.labelTS6.Text = "X 轴最大值（秒）";
             // 
             // manual_xmax
             // 
@@ -454,7 +454,7 @@
             this.groupBoxTS6.Size = new System.Drawing.Size(122, 267);
             this.groupBoxTS6.TabIndex = 20;
             this.groupBoxTS6.TabStop = false;
-            this.groupBoxTS6.Text = "Y axis";
+            this.groupBoxTS6.Text = "Y 轴";
             // 
             // groupBoxTS7
             // 
@@ -466,7 +466,7 @@
             this.groupBoxTS7.Size = new System.Drawing.Size(108, 59);
             this.groupBoxTS7.TabIndex = 10;
             this.groupBoxTS7.TabStop = false;
-            this.groupBoxTS7.Text = "scaling mode";
+            this.groupBoxTS7.Text = "缩放模式";
             // 
             // manual_rescale
             // 
@@ -478,7 +478,7 @@
             this.manual_rescale.Size = new System.Drawing.Size(59, 17);
             this.manual_rescale.TabIndex = 9;
             this.manual_rescale.TabStop = true;
-            this.manual_rescale.Text = "manual";
+            this.manual_rescale.Text = "手动";
             this.manual_rescale.UseVisualStyleBackColor = true;
             // 
             // auto_rescale
@@ -489,7 +489,7 @@
             this.auto_rescale.Name = "auto_rescale";
             this.auto_rescale.Size = new System.Drawing.Size(71, 17);
             this.auto_rescale.TabIndex = 3;
-            this.auto_rescale.Text = "automatic";
+            this.auto_rescale.Text = "自动";
             this.auto_rescale.UseVisualStyleBackColor = true;
             // 
             // groupBox_scaling
@@ -504,7 +504,7 @@
             this.groupBox_scaling.Size = new System.Drawing.Size(106, 110);
             this.groupBox_scaling.TabIndex = 8;
             this.groupBox_scaling.TabStop = false;
-            this.groupBox_scaling.Text = "manual scaling";
+            this.groupBox_scaling.Text = "手动缩放";
             // 
             // manual_ymax
             // 
@@ -570,7 +570,7 @@
             this.labelTS2.Name = "labelTS2";
             this.labelTS2.Size = new System.Drawing.Size(97, 13);
             this.labelTS2.TabIndex = 5;
-            this.labelTS2.Text = "manual Ymin (dBm)";
+            this.labelTS2.Text = "手动 Y 轴最小值 (dBm)";
             // 
             // labelTS3
             // 
@@ -580,7 +580,7 @@
             this.labelTS3.Name = "labelTS3";
             this.labelTS3.Size = new System.Drawing.Size(100, 13);
             this.labelTS3.TabIndex = 6;
-            this.labelTS3.Text = "manual Ymax (dBm)";
+            this.labelTS3.Text = "手动 Y 轴最大值 (dBm)";
             // 
             // groupBoxTS5
             // 
@@ -600,7 +600,7 @@
             this.button_linear.Name = "button_linear";
             this.button_linear.Size = new System.Drawing.Size(50, 17);
             this.button_linear.TabIndex = 0;
-            this.button_linear.Text = "linear";
+            this.button_linear.Text = "线性";
             this.button_linear.UseVisualStyleBackColor = true;
             this.button_linear.CheckedChanged += new System.EventHandler(this.button_linear_CheckedChanged);
             // 
@@ -628,7 +628,7 @@
             this.groupBox_signal.Size = new System.Drawing.Size(200, 56);
             this.groupBox_signal.TabIndex = 19;
             this.groupBox_signal.TabStop = false;
-            this.groupBox_signal.Text = "Rx1 signal (dBm)";
+            this.groupBox_signal.Text = "Rx1 信号 (dBm)";
             // 
             // textBox_Rx1
             // 
@@ -649,7 +649,7 @@
             this.groupBoxTS4.Size = new System.Drawing.Size(184, 56);
             this.groupBoxTS4.TabIndex = 18;
             this.groupBoxTS4.TabStop = false;
-            this.groupBoxTS4.Text = "elapsed time (sec)";
+            this.groupBoxTS4.Text = "已用时间（秒）";
             // 
             // textBoxTS3
             // 
@@ -670,7 +670,7 @@
             this.groupBoxTS3.Size = new System.Drawing.Size(127, 59);
             this.groupBoxTS3.TabIndex = 12;
             this.groupBoxTS3.TabStop = false;
-            this.groupBoxTS3.Text = "mSec between measurements";
+            this.groupBoxTS3.Text = "测量间隔（毫秒）";
             // 
             // numericUpDown_mSec_between_measurements
             // 
@@ -712,7 +712,7 @@
             this.groupBoxTS2.Size = new System.Drawing.Size(127, 76);
             this.groupBoxTS2.TabIndex = 10;
             this.groupBoxTS2.TabStop = false;
-            this.groupBoxTS2.Text = "# of averaged  points collected/saved";
+            this.groupBoxTS2.Text = "采集/保存的平均点数";
             // 
             // labelTS1
             // 
@@ -722,7 +722,7 @@
             this.labelTS1.Name = "labelTS1";
             this.labelTS1.Size = new System.Drawing.Size(83, 13);
             this.labelTS1.TabIndex = 20;
-            this.labelTS1.Text = "(2,000,000 max)";
+            this.labelTS1.Text = "（最大 2,000,000）";
             // 
             // textBox_pts_collected
             // 
@@ -742,7 +742,7 @@
             this.groupBoxTS1.Size = new System.Drawing.Size(127, 65);
             this.groupBoxTS1.TabIndex = 8;
             this.groupBoxTS1.TabStop = false;
-            this.groupBoxTS1.Text = "# of measurements to average per point";
+            this.groupBoxTS1.Text = "每点平均的测量次数";
             // 
             // numericUpDown_measurements_per_point
             // 
@@ -783,7 +783,7 @@
             this.groupBox2.Size = new System.Drawing.Size(127, 64);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Acquire Data";
+            this.groupBox2.Text = "采集数据";
             // 
             // RArecordCheckBox
             // 
@@ -795,7 +795,7 @@
             this.RArecordCheckBox.Name = "RArecordCheckBox";
             this.RArecordCheckBox.Size = new System.Drawing.Size(106, 39);
             this.RArecordCheckBox.TabIndex = 0;
-            this.RArecordCheckBox.Text = "Start";
+            this.RArecordCheckBox.Text = "开始";
             this.RArecordCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.RArecordCheckBox.CheckedChanged += new System.EventHandler(this.RArecordCheckBox_CheckedChanged);
             // 

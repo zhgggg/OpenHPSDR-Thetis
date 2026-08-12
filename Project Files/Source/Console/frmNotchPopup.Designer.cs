@@ -111,7 +111,7 @@
             this.chkActive.Name = "chkActive";
             this.chkActive.Size = new System.Drawing.Size(56, 17);
             this.chkActive.TabIndex = 1;
-            this.chkActive.Text = "Active";
+            this.chkActive.Text = "激活";
             this.chkActive.UseVisualStyleBackColor = true;
             this.chkActive.CheckedChanged += new System.EventHandler(this.ChkActive_CheckedChanged);
             // 
@@ -124,7 +124,7 @@
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(129, 31);
             this.btnDelete.TabIndex = 0;
-            this.btnDelete.Text = "Delete";
+            this.btnDelete.Text = "删除";
             this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
             // 

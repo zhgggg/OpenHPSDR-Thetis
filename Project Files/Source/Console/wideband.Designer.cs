@@ -70,7 +70,7 @@
             this.canceltoolStripMenuItem1.ForeColor = System.Drawing.Color.White;
             this.canceltoolStripMenuItem1.Name = "canceltoolStripMenuItem1";
             this.canceltoolStripMenuItem1.Size = new System.Drawing.Size(135, 22);
-            this.canceltoolStripMenuItem1.Text = "Cancel";
+            this.canceltoolStripMenuItem1.Text = "取消";
             this.canceltoolStripMenuItem1.MouseEnter += new System.EventHandler(this.ToolStripMenuItem_MouseEnter);
             this.canceltoolStripMenuItem1.MouseLeave += new System.EventHandler(this.ToolStripMenuItem_MouseLeave);
             // 
@@ -88,7 +88,7 @@
             this.wbAvgtoolStripMenuItem.ForeColor = System.Drawing.Color.Goldenrod;
             this.wbAvgtoolStripMenuItem.Name = "wbAvgtoolStripMenuItem";
             this.wbAvgtoolStripMenuItem.Size = new System.Drawing.Size(135, 22);
-            this.wbAvgtoolStripMenuItem.Text = "Average";
+            this.wbAvgtoolStripMenuItem.Text = "平均值";
             this.wbAvgtoolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.wbAvgtoolStripMenuItem.Click += new System.EventHandler(this.wbAvgtoolStripMenuItem_Click);
             this.wbAvgtoolStripMenuItem.MouseEnter += new System.EventHandler(this.ToolStripMenuItem_MouseEnter);
@@ -102,7 +102,7 @@
             this.wbUpdatetoolStripMenuItem.ForeColor = System.Drawing.Color.Goldenrod;
             this.wbUpdatetoolStripMenuItem.Name = "wbUpdatetoolStripMenuItem";
             this.wbUpdatetoolStripMenuItem.Size = new System.Drawing.Size(135, 22);
-            this.wbUpdatetoolStripMenuItem.Text = "Update Rate";
+            this.wbUpdatetoolStripMenuItem.Text = "更新速率";
             this.wbUpdatetoolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.wbUpdatetoolStripMenuItem.MouseEnter += new System.EventHandler(this.ToolStripMenuItem_MouseEnter);
             this.wbUpdatetoolStripMenuItem.MouseLeave += new System.EventHandler(this.ToolStripMenuItem_MouseLeave);
@@ -137,7 +137,7 @@
             this.wbFrameSizetoolStripMenuItem.ForeColor = System.Drawing.Color.Goldenrod;
             this.wbFrameSizetoolStripMenuItem.Name = "wbFrameSizetoolStripMenuItem";
             this.wbFrameSizetoolStripMenuItem.Size = new System.Drawing.Size(135, 22);
-            this.wbFrameSizetoolStripMenuItem.Text = "Frame Size";
+            this.wbFrameSizetoolStripMenuItem.Text = "帧大小";
             this.wbFrameSizetoolStripMenuItem.MouseEnter += new System.EventHandler(this.ToolStripMenuItem_MouseEnter);
             this.wbFrameSizetoolStripMenuItem.MouseLeave += new System.EventHandler(this.ToolStripMenuItem_MouseLeave);
             // 

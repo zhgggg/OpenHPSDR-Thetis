@@ -96,7 +96,7 @@
             this.chkPSOnTop.Name = "chkPSOnTop";
             this.chkPSOnTop.Size = new System.Drawing.Size(98, 17);
             this.chkPSOnTop.TabIndex = 48;
-            this.chkPSOnTop.Text = "Always On Top";
+            this.chkPSOnTop.Text = "总在最前";
             this.chkPSOnTop.UseVisualStyleBackColor = true;
             this.chkPSOnTop.CheckedChanged += new System.EventHandler(this.chkPSOnTop_CheckedChanged);
             // 
@@ -120,7 +120,7 @@
             this.btnPSRestore.Name = "btnPSRestore";
             this.btnPSRestore.Size = new System.Drawing.Size(71, 20);
             this.btnPSRestore.TabIndex = 0;
-            this.btnPSRestore.Text = "Restore";
+            this.btnPSRestore.Text = "恢复";
             this.btnPSRestore.UseVisualStyleBackColor = false;
             this.btnPSRestore.Click += new System.EventHandler(this.btnPSRestore_Click);
             // 
@@ -133,7 +133,7 @@
             this.btnPSSave.Name = "btnPSSave";
             this.btnPSSave.Size = new System.Drawing.Size(71, 20);
             this.btnPSSave.TabIndex = 4;
-            this.btnPSSave.Text = "Save";
+            this.btnPSSave.Text = "保存";
             this.btnPSSave.UseVisualStyleBackColor = false;
             this.btnPSSave.Click += new System.EventHandler(this.btnPSSave_Click);
             // 
@@ -145,7 +145,7 @@
             this.btnPSAdvanced.Name = "btnPSAdvanced";
             this.btnPSAdvanced.Size = new System.Drawing.Size(71, 20);
             this.btnPSAdvanced.TabIndex = 46;
-            this.btnPSAdvanced.Text = "Advanced";
+            this.btnPSAdvanced.Text = "高级";
             this.btnPSAdvanced.UseVisualStyleBackColor = false;
             this.btnPSAdvanced.Click += new System.EventHandler(this.btnPSAdvanced_Click);
             // 
@@ -219,7 +219,7 @@
             this.chkPSAutoAttenuate.Name = "chkPSAutoAttenuate";
             this.chkPSAutoAttenuate.Size = new System.Drawing.Size(97, 17);
             this.chkPSAutoAttenuate.TabIndex = 41;
-            this.chkPSAutoAttenuate.Text = "Auto-Attenuate";
+            this.chkPSAutoAttenuate.Text = "自动衰减";
             this.chkPSAutoAttenuate.UseVisualStyleBackColor = true;
             this.chkPSAutoAttenuate.CheckedChanged += new System.EventHandler(this.chkPSAutoAttenuate_CheckedChanged);
             // 
@@ -246,7 +246,7 @@
             this.chkPSRelaxPtol.Name = "chkPSRelaxPtol";
             this.chkPSRelaxPtol.Size = new System.Drawing.Size(104, 17);
             this.chkPSRelaxPtol.TabIndex = 39;
-            this.chkPSRelaxPtol.Text = "Relax Tolerance";
+            this.chkPSRelaxPtol.Text = "放宽容差";
             this.chkPSRelaxPtol.UseVisualStyleBackColor = true;
             this.chkPSRelaxPtol.CheckedChanged += new System.EventHandler(this.chkPSRelaxPtol_CheckedChanged);
             // 
@@ -259,7 +259,7 @@
             this.btnPSTwoToneGen.Name = "btnPSTwoToneGen";
             this.btnPSTwoToneGen.Size = new System.Drawing.Size(71, 20);
             this.btnPSTwoToneGen.TabIndex = 37;
-            this.btnPSTwoToneGen.Text = "Two-tone";
+            this.btnPSTwoToneGen.Text = "双音";
             this.btnPSTwoToneGen.UseVisualStyleBackColor = false;
             this.btnPSTwoToneGen.Click += new System.EventHandler(this.btnPSTwoToneGen_Click);
             // 
@@ -272,7 +272,7 @@
             this.labelTS8.Name = "labelTS8";
             this.labelTS8.Size = new System.Drawing.Size(84, 13);
             this.labelTS8.TabIndex = 10;
-            this.labelTS8.Text = "Feedback Level";
+            this.labelTS8.Text = "反馈电平";
             // 
             // lblPSInfoFB
             // 
@@ -305,7 +305,7 @@
             this.labelTS9.Name = "labelTS9";
             this.labelTS9.Size = new System.Drawing.Size(55, 13);
             this.labelTS9.TabIndex = 12;
-            this.labelTS9.Text = "Correcting";
+            this.labelTS9.Text = "正在校正";
             // 
             // labelTS4
             // 
@@ -316,7 +316,7 @@
             this.labelTS4.Name = "labelTS4";
             this.labelTS4.Size = new System.Drawing.Size(82, 13);
             this.labelTS4.TabIndex = 30;
-            this.labelTS4.Text = "MOX Wait (sec)";
+            this.labelTS4.Text = "MOX 等待（秒）";
             // 
             // udPSMoxDelay
             // 
@@ -357,7 +357,7 @@
             this.labelTS2.Name = "labelTS2";
             this.labelTS2.Size = new System.Drawing.Size(80, 13);
             this.labelTS2.TabIndex = 26;
-            this.labelTS2.Text = "AMP Delay (ns)";
+            this.labelTS2.Text = "功放延迟 (ns)";
             // 
             // udPSPhnum
             // 
@@ -420,7 +420,7 @@
             this.grpPSInfo.Size = new System.Drawing.Size(358, 148);
             this.grpPSInfo.TabIndex = 21;
             this.grpPSInfo.TabStop = false;
-            this.grpPSInfo.Text = "Calibration Information";
+            this.grpPSInfo.Text = "校准信息";
             // 
             // btnDefaultPeaks
             // 
@@ -431,7 +431,7 @@
             this.btnDefaultPeaks.Name = "btnDefaultPeaks";
             this.btnDefaultPeaks.Size = new System.Drawing.Size(67, 23);
             this.btnDefaultPeaks.TabIndex = 41;
-            this.btnDefaultPeaks.Text = "Default";
+            this.btnDefaultPeaks.Text = "默认";
             this.btnDefaultPeaks.UseVisualStyleBackColor = false;
             this.btnDefaultPeaks.Click += new System.EventHandler(this.btnDefaultPeaks_Click);
             // 
@@ -445,7 +445,7 @@
             this.checkLoopback.Name = "checkLoopback";
             this.checkLoopback.Size = new System.Drawing.Size(188, 17);
             this.checkLoopback.TabIndex = 40;
-            this.checkLoopback.Text = "Display PS-RX and PS-TX spectra";
+            this.checkLoopback.Text = "显示 PS-RX 和 PS-TX 频谱";
             this.checkLoopback.UseVisualStyleBackColor = true;
             this.checkLoopback.CheckedChanged += new System.EventHandler(this.checkLoopback_CheckedChanged);
             // 
@@ -532,7 +532,7 @@
             this.labelTS3.Name = "labelTS3";
             this.labelTS3.Size = new System.Drawing.Size(37, 13);
             this.labelTS3.TabIndex = 14;
-            this.labelTS3.Text = "GetPk";
+            this.labelTS3.Text = "读取峰值";
             // 
             // txtPSpeak
             // 
@@ -551,7 +551,7 @@
             this.labelTS5.Name = "labelTS5";
             this.labelTS5.Size = new System.Drawing.Size(36, 13);
             this.labelTS5.TabIndex = 12;
-            this.labelTS5.Text = "SetPk";
+            this.labelTS5.Text = "设置峰值";
             // 
             // lblPSfb2
             // 
@@ -693,7 +693,7 @@
             this.btnPSReset.Name = "btnPSReset";
             this.btnPSReset.Size = new System.Drawing.Size(71, 20);
             this.btnPSReset.TabIndex = 20;
-            this.btnPSReset.Text = "OFF";
+            this.btnPSReset.Text = "关";
             this.btnPSReset.UseVisualStyleBackColor = false;
             this.btnPSReset.Click += new System.EventHandler(this.btnPSReset_Click);
             // 
@@ -705,7 +705,7 @@
             this.btnPSCalibrate.Name = "btnPSCalibrate";
             this.btnPSCalibrate.Size = new System.Drawing.Size(71, 20);
             this.btnPSCalibrate.TabIndex = 19;
-            this.btnPSCalibrate.Text = "Single Cal";
+            this.btnPSCalibrate.Text = "单次校准";
             this.btnPSCalibrate.UseVisualStyleBackColor = false;
             this.btnPSCalibrate.Click += new System.EventHandler(this.btnPSCalibrate_Click);
             // 
@@ -718,7 +718,7 @@
             this.labelTS140.Name = "labelTS140";
             this.labelTS140.Size = new System.Drawing.Size(78, 13);
             this.labelTS140.TabIndex = 17;
-            this.labelTS140.Text = "CAL Wait (sec)";
+            this.labelTS140.Text = "校准等待（秒）";
             // 
             // udPSCalWait
             // 
@@ -759,7 +759,7 @@
             this.chkQuickAttenuate.Name = "chkQuickAttenuate";
             this.chkQuickAttenuate.Size = new System.Drawing.Size(154, 17);
             this.chkQuickAttenuate.TabIndex = 49;
-            this.chkQuickAttenuate.Text = "Quick Attenuate Response";
+            this.chkQuickAttenuate.Text = "快速衰减响应";
             this.chkQuickAttenuate.UseVisualStyleBackColor = true;
             this.chkQuickAttenuate.CheckedChanged += new System.EventHandler(this.chkQuickAttenuate_CheckedChanged);
             // 

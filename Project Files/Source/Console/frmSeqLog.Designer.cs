@@ -83,7 +83,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(844, 520);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "SEQ Errors";
+            this.tabPage1.Text = "SEQ 错误";
             // 
             // txtLog
             // 
@@ -134,8 +134,7 @@
             this.labelTS9.Name = "labelTS9";
             this.labelTS9.Size = new System.Drawing.Size(239, 38);
             this.labelTS9.TabIndex = 6;
-            this.labelTS9.Text = "obtained by running DumpCap.exe -D on command line and using number on left of li" +
-    "st";
+            this.labelTS9.Text = "通过命令行运行 DumpCap.exe -D 并使用列表左侧的数字获得";
             // 
             // btnShowDumpCapFolder
             // 
@@ -144,7 +143,7 @@
             this.btnShowDumpCapFolder.Name = "btnShowDumpCapFolder";
             this.btnShowDumpCapFolder.Size = new System.Drawing.Size(147, 50);
             this.btnShowDumpCapFolder.TabIndex = 5;
-            this.btnShowDumpCapFolder.Text = "Open DumpCap Folder";
+            this.btnShowDumpCapFolder.Text = "打开 DumpCap 文件夹";
             this.btnShowDumpCapFolder.UseVisualStyleBackColor = true;
             this.btnShowDumpCapFolder.Click += new System.EventHandler(this.btnShowDumpCapFolder_Click);
             // 
@@ -156,7 +155,7 @@
             this.chkClearRingBufferFolderOnRestart.Name = "chkClearRingBufferFolderOnRestart";
             this.chkClearRingBufferFolderOnRestart.Size = new System.Drawing.Size(211, 17);
             this.chkClearRingBufferFolderOnRestart.TabIndex = 4;
-            this.chkClearRingBufferFolderOnRestart.Text = "Clear DumpCap folder on Thetis startup";
+            this.chkClearRingBufferFolderOnRestart.Text = "Thetis 启动时清空 DumpCap 文件夹";
             this.chkClearRingBufferFolderOnRestart.UseVisualStyleBackColor = true;
             this.chkClearRingBufferFolderOnRestart.CheckedChanged += new System.EventHandler(this.chkClearRingBufferFolderOnRestart_CheckedChanged);
             // 
@@ -168,7 +167,7 @@
             this.chkKillOnNegativeOnly.Name = "chkKillOnNegativeOnly";
             this.chkKillOnNegativeOnly.Size = new System.Drawing.Size(202, 17);
             this.chkKillOnNegativeOnly.TabIndex = 3;
-            this.chkKillOnNegativeOnly.Text = "New ringbuffer files for -ve deltas only";
+            this.chkKillOnNegativeOnly.Text = "仅为负差值新建环形缓冲文件";
             this.chkKillOnNegativeOnly.UseVisualStyleBackColor = true;
             this.chkKillOnNegativeOnly.CheckedChanged += new System.EventHandler(this.chkKillOnNegativeOnly_CheckedChanged);
             // 
@@ -180,7 +179,7 @@
             this.labelTS8.Name = "labelTS8";
             this.labelTS8.Size = new System.Drawing.Size(87, 13);
             this.labelTS8.TabIndex = 2;
-            this.labelTS8.Text = "Interface number";
+            this.labelTS8.Text = "接口编号";
             this.labelTS8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // udInterface
@@ -219,7 +218,7 @@
             this.chkDumpCapEnabled.Name = "chkDumpCapEnabled";
             this.chkDumpCapEnabled.Size = new System.Drawing.Size(65, 17);
             this.chkDumpCapEnabled.TabIndex = 0;
-            this.chkDumpCapEnabled.Text = "Enabled";
+            this.chkDumpCapEnabled.Text = "已启用";
             this.chkDumpCapEnabled.UseVisualStyleBackColor = true;
             this.chkDumpCapEnabled.CheckedChanged += new System.EventHandler(this.chkDumpCapEnabled_CheckedChanged);
             // 
@@ -231,7 +230,7 @@
             this.labelTS7.Name = "labelTS7";
             this.labelTS7.Size = new System.Drawing.Size(92, 13);
             this.labelTS7.TabIndex = 2;
-            this.labelTS7.Text = "WireShark folder :";
+            this.labelTS7.Text = "WireShark 文件夹 :";
             this.labelTS7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // btnSetWireSharkFolder
@@ -241,7 +240,7 @@
             this.btnSetWireSharkFolder.Name = "btnSetWireSharkFolder";
             this.btnSetWireSharkFolder.Size = new System.Drawing.Size(102, 34);
             this.btnSetWireSharkFolder.TabIndex = 1;
-            this.btnSetWireSharkFolder.Text = "Select Folder";
+            this.btnSetWireSharkFolder.Text = "选择文件夹";
             this.btnSetWireSharkFolder.UseVisualStyleBackColor = true;
             this.btnSetWireSharkFolder.Click += new System.EventHandler(this.btnSetWireSharkFolder_Click);
             // 
@@ -283,7 +282,7 @@
             this.chkStatusBarWarningNegativeOnly.Name = "chkStatusBarWarningNegativeOnly";
             this.chkStatusBarWarningNegativeOnly.Size = new System.Drawing.Size(171, 17);
             this.chkStatusBarWarningNegativeOnly.TabIndex = 12;
-            this.chkStatusBarWarningNegativeOnly.Text = "Status bar warning on -VE only";
+            this.chkStatusBarWarningNegativeOnly.Text = "仅在负差值时状态栏警告";
             this.chkStatusBarWarningNegativeOnly.UseVisualStyleBackColor = true;
             this.chkStatusBarWarningNegativeOnly.CheckedChanged += new System.EventHandler(this.chkStatusBarWarningNegativeOnly_CheckedChanged);
             // 
@@ -295,8 +294,7 @@
             this.labelTS1.Name = "labelTS1";
             this.labelTS1.Size = new System.Drawing.Size(621, 13);
             this.labelTS1.TabIndex = 2;
-            this.labelTS1.Text = "This log shows inbound (radio->pc) UDP packet sequence errors. The numbers are a " +
-    "delta from the next expected packet number.";
+            this.labelTS1.Text = "此日志显示入站（电台->PC）UDP 数据包序列错误。数字是与下一个预期数据包号的差值。";
             // 
             // labelTS2
             // 
@@ -306,7 +304,7 @@
             this.labelTS2.Name = "labelTS2";
             this.labelTS2.Size = new System.Drawing.Size(281, 13);
             this.labelTS2.TabIndex = 3;
-            this.labelTS2.Text = "0 = there is no delta so expected packet number is correct";
+            this.labelTS2.Text = "0 = 无差值，说明预期数据包号正确";
             // 
             // panelTS2
             // 
@@ -327,8 +325,7 @@
             this.labelTS3.Name = "labelTS3";
             this.labelTS3.Size = new System.Drawing.Size(398, 13);
             this.labelTS3.TabIndex = 4;
-            this.labelTS3.Text = "-ve = the packet arriving is older, and has a sequence number lower than expected" +
-    "";
+            this.labelTS3.Text = "负值 = 到达的数据包比预期的旧，其序列号低于预期值";
             // 
             // panelTS1
             // 
@@ -350,8 +347,7 @@
             this.labelTS4.Name = "labelTS4";
             this.labelTS4.Size = new System.Drawing.Size(388, 13);
             this.labelTS4.TabIndex = 5;
-            this.labelTS4.Text = "+ve = the packet arriving is greater than expected. This is likely to be packet l" +
-    "oss";
+            this.labelTS4.Text = "正值 = 到达的数据包比预期的大。这很可能是丢包";
             // 
             // btnCopyImageToClipboard
             // 
@@ -361,7 +357,7 @@
             this.btnCopyImageToClipboard.Name = "btnCopyImageToClipboard";
             this.btnCopyImageToClipboard.Size = new System.Drawing.Size(97, 61);
             this.btnCopyImageToClipboard.TabIndex = 9;
-            this.btnCopyImageToClipboard.Text = "Copy Image To Clipboard";
+            this.btnCopyImageToClipboard.Text = "复制图像到剪贴板";
             this.btnCopyImageToClipboard.UseVisualStyleBackColor = true;
             this.btnCopyImageToClipboard.Click += new System.EventHandler(this.btnCopyImageToClipboard_Click);
             // 
@@ -373,7 +369,7 @@
             this.labelTS5.Name = "labelTS5";
             this.labelTS5.Size = new System.Drawing.Size(343, 13);
             this.labelTS5.TabIndex = 6;
-            this.labelTS5.Text = "A snapshot is taken when a sequence error is detected. s0 is the latest.";
+            this.labelTS5.Text = "检测到序列错误时会拍摄快照。s0 是最新的。";
             // 
             // btnCopyToClipboard
             // 
@@ -383,7 +379,7 @@
             this.btnCopyToClipboard.Name = "btnCopyToClipboard";
             this.btnCopyToClipboard.Size = new System.Drawing.Size(97, 61);
             this.btnCopyToClipboard.TabIndex = 8;
-            this.btnCopyToClipboard.Text = "Copy Text To Clipboard";
+            this.btnCopyToClipboard.Text = "复制文本到剪贴板";
             this.btnCopyToClipboard.UseVisualStyleBackColor = true;
             this.btnCopyToClipboard.Click += new System.EventHandler(this.btnCopyToClipboard_Click);
             // 
@@ -412,7 +408,7 @@
             this.Name = "frmSeqLog";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Text = "SEQ Log";
+            this.Text = "SEQ 日志";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmSeqLog_FormClosing);
             this.tabMain.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

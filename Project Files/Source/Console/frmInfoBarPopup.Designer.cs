@@ -57,7 +57,7 @@
             this.chkButton8.Name = "chkButton8";
             this.chkButton8.Size = new System.Drawing.Size(50, 23);
             this.chkButton8.TabIndex = 40;
-            this.chkButton8.Text = "Peak";
+            this.chkButton8.Text = "峰值";
             this.chkButton8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.chkButton8.MouseUp += new System.Windows.Forms.MouseEventHandler(this.chkButton1_MouseUp);
             // 
@@ -78,7 +78,7 @@
             this.chkButton7.Name = "chkButton7";
             this.chkButton7.Size = new System.Drawing.Size(50, 23);
             this.chkButton7.TabIndex = 39;
-            this.chkButton7.Text = "Peak";
+            this.chkButton7.Text = "峰值";
             this.chkButton7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.chkButton7.MouseUp += new System.Windows.Forms.MouseEventHandler(this.chkButton1_MouseUp);
             // 
@@ -99,7 +99,7 @@
             this.chkButton6.Name = "chkButton6";
             this.chkButton6.Size = new System.Drawing.Size(50, 23);
             this.chkButton6.TabIndex = 38;
-            this.chkButton6.Text = "Peak";
+            this.chkButton6.Text = "峰值";
             this.chkButton6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.chkButton6.MouseUp += new System.Windows.Forms.MouseEventHandler(this.chkButton1_MouseUp);
             // 
@@ -120,7 +120,7 @@
             this.chkButton5.Name = "chkButton5";
             this.chkButton5.Size = new System.Drawing.Size(50, 23);
             this.chkButton5.TabIndex = 37;
-            this.chkButton5.Text = "Peak";
+            this.chkButton5.Text = "峰值";
             this.chkButton5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.chkButton5.MouseUp += new System.Windows.Forms.MouseEventHandler(this.chkButton1_MouseUp);
             // 
@@ -141,7 +141,7 @@
             this.chkButton4.Name = "chkButton4";
             this.chkButton4.Size = new System.Drawing.Size(50, 23);
             this.chkButton4.TabIndex = 36;
-            this.chkButton4.Text = "Peak";
+            this.chkButton4.Text = "峰值";
             this.chkButton4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.chkButton4.MouseUp += new System.Windows.Forms.MouseEventHandler(this.chkButton1_MouseUp);
             // 
@@ -162,7 +162,7 @@
             this.chkButton3.Name = "chkButton3";
             this.chkButton3.Size = new System.Drawing.Size(50, 23);
             this.chkButton3.TabIndex = 35;
-            this.chkButton3.Text = "Peak";
+            this.chkButton3.Text = "峰值";
             this.chkButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.chkButton3.MouseUp += new System.Windows.Forms.MouseEventHandler(this.chkButton1_MouseUp);
             // 
@@ -183,7 +183,7 @@
             this.chkButton2.Name = "chkButton2";
             this.chkButton2.Size = new System.Drawing.Size(50, 23);
             this.chkButton2.TabIndex = 34;
-            this.chkButton2.Text = "Peak";
+            this.chkButton2.Text = "峰值";
             this.chkButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.chkButton2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.chkButton1_MouseUp);
             // 
@@ -204,7 +204,7 @@
             this.chkButton1.Name = "chkButton1";
             this.chkButton1.Size = new System.Drawing.Size(50, 23);
             this.chkButton1.TabIndex = 33;
-            this.chkButton1.Text = "Peak";
+            this.chkButton1.Text = "峰值";
             this.chkButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.chkButton1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.chkButton1_MouseUp);
             // 

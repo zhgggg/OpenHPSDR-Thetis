@@ -204,7 +204,7 @@
             this.labelTS5.Name = "labelTS5";
             this.labelTS5.Size = new System.Drawing.Size(54, 13);
             this.labelTS5.TabIndex = 8;
-            this.labelTS5.Text = "AGC Gain";
+            this.labelTS5.Text = "AGC 增益";
             // 
             // labelTS4
             // 
@@ -252,7 +252,7 @@
             this.labelTS3.Name = "labelTS3";
             this.labelTS3.Size = new System.Drawing.Size(34, 13);
             this.labelTS3.TabIndex = 5;
-            this.labelTS3.Text = "Mode";
+            this.labelTS3.Text = "模式";
             // 
             // udRXAVolume
             // 
@@ -290,7 +290,7 @@
             this.labelTS2.Name = "labelTS2";
             this.labelTS2.Size = new System.Drawing.Size(42, 13);
             this.labelTS2.TabIndex = 3;
-            this.labelTS2.Text = "Volume";
+            this.labelTS2.Text = "音量";
             // 
             // labelTS1
             // 
@@ -300,7 +300,7 @@
             this.labelTS1.Name = "labelTS1";
             this.labelTS1.Size = new System.Drawing.Size(57, 13);
             this.labelTS1.TabIndex = 1;
-            this.labelTS1.Text = "Frequency";
+            this.labelTS1.Text = "频率";
             // 
             // udRXAFreq
             // 

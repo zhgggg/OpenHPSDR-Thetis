@@ -50,8 +50,7 @@ namespace Thetis
             this.btnList.TabIndex = 2;
             this.btnList.TabStop = false;
             this.btnList.Text = "V";
-            this.toolTip1.SetToolTip(this.btnList, "QuickRecall will store a frequency/mode if you stay on that frequency for 4 secon" +
-        "ds. Click to show list.");
+            this.toolTip1.SetToolTip(this.btnList, "在某个频率上停留 4 秒，快速调用就会存储该频率/模式。点击显示列表。");
             this.btnList.UseVisualStyleBackColor = false;
             this.btnList.Click += new System.EventHandler(this.btnList_Click);
             // 
@@ -68,7 +67,7 @@ namespace Thetis
             this.btnNext.TabIndex = 1;
             this.btnNext.TabStop = false;
             this.btnNext.Text = ">";
-            this.toolTip1.SetToolTip(this.btnNext, "Next frequency in QuickRecall list");
+            this.toolTip1.SetToolTip(this.btnNext, "快速调用列表中的下一个频率");
             this.btnNext.UseVisualStyleBackColor = false;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
@@ -85,7 +84,7 @@ namespace Thetis
             this.btnPrevious.TabIndex = 0;
             this.btnPrevious.TabStop = false;
             this.btnPrevious.Text = "<";
-            this.toolTip1.SetToolTip(this.btnPrevious, "Previous frequency in QuickRecall list");
+            this.toolTip1.SetToolTip(this.btnPrevious, "快速调用列表中的上一个频率");
             this.btnPrevious.UseVisualStyleBackColor = false;
             this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
             // 
@@ -97,7 +96,7 @@ namespace Thetis
             this.lblFlashColour.Name = "lblFlashColour";
             this.lblFlashColour.Size = new System.Drawing.Size(14, 14);
             this.lblFlashColour.TabIndex = 3;
-            this.toolTip1.SetToolTip(this.lblFlashColour, "Green = just added, Orange = udated mode");
+            this.toolTip1.SetToolTip(this.lblFlashColour, "绿色 = 刚添加，橙色 = 模式已更新");
             this.lblFlashColour.Click += new System.EventHandler(this.lblFlashColour_Click);
             // 
             // ucQuickRecall

@@ -60,8 +60,8 @@ namespace Thetis
             this.btnHideSelected.Name = "btnHideSelected";
             this.btnHideSelected.Size = new System.Drawing.Size(117, 31);
             this.btnHideSelected.TabIndex = 13;
-            this.btnHideSelected.Text = "Hide Selected (wip)";
-            this.toolTip1.SetToolTip(this.btnHideSelected, "Hides this entry from the results of this filter ONLY");
+            this.btnHideSelected.Text = "隐藏所选（开发中）";
+            this.toolTip1.SetToolTip(this.btnHideSelected, "仅在此筛选器的结果中隐藏该条目");
             this.btnHideSelected.UseVisualStyleBackColor = true;
             this.btnHideSelected.Visible = false;
             // 
@@ -74,8 +74,8 @@ namespace Thetis
             this.chkAlwaysOnTop.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.chkAlwaysOnTop.Size = new System.Drawing.Size(98, 17);
             this.chkAlwaysOnTop.TabIndex = 12;
-            this.chkAlwaysOnTop.Text = "Always On Top";
-            this.toolTip1.SetToolTip(this.chkAlwaysOnTop, "This window is on top of all others always");
+            this.chkAlwaysOnTop.Text = "总在最前";
+            this.toolTip1.SetToolTip(this.chkAlwaysOnTop, "此窗口始终位于所有其他窗口之上");
             this.chkAlwaysOnTop.UseVisualStyleBackColor = true;
             this.chkAlwaysOnTop.CheckedChanged += new System.EventHandler(this.chkAlwaysOnTop_CheckedChanged);
             // 
@@ -86,8 +86,8 @@ namespace Thetis
             this.btnAddStackEntry.Name = "btnAddStackEntry";
             this.btnAddStackEntry.Size = new System.Drawing.Size(117, 64);
             this.btnAddStackEntry.TabIndex = 11;
-            this.btnAddStackEntry.Text = "Add New Entry";
-            this.toolTip1.SetToolTip(this.btnAddStackEntry, "Adds a new entry");
+            this.btnAddStackEntry.Text = "新建条目";
+            this.toolTip1.SetToolTip(this.btnAddStackEntry, "添加新条目");
             this.btnAddStackEntry.UseVisualStyleBackColor = true;
             this.btnAddStackEntry.Click += new System.EventHandler(this.btnAddStackEntry_Click);
             // 
@@ -100,7 +100,7 @@ namespace Thetis
             this.lblFilterName.Size = new System.Drawing.Size(86, 16);
             this.lblFilterName.TabIndex = 10;
             this.lblFilterName.Text = "xxxxxx";
-            this.toolTip1.SetToolTip(this.lblFilterName, "The current filter or description if one has been given");
+            this.toolTip1.SetToolTip(this.lblFilterName, "当前筛选器，或已给出的描述");
             // 
             // btnShowBandStackFilterManager
             // 
@@ -110,8 +110,8 @@ namespace Thetis
             this.btnShowBandStackFilterManager.Name = "btnShowBandStackFilterManager";
             this.btnShowBandStackFilterManager.Size = new System.Drawing.Size(117, 31);
             this.btnShowBandStackFilterManager.TabIndex = 9;
-            this.btnShowBandStackFilterManager.Text = "Filter Manager (wip)";
-            this.toolTip1.SetToolTip(this.btnShowBandStackFilterManager, "Show the filter manager");
+            this.btnShowBandStackFilterManager.Text = "筛选管理器（开发中）";
+            this.toolTip1.SetToolTip(this.btnShowBandStackFilterManager, "显示筛选管理器");
             this.btnShowBandStackFilterManager.UseVisualStyleBackColor = true;
             this.btnShowBandStackFilterManager.Visible = false;
             // 
@@ -122,8 +122,8 @@ namespace Thetis
             this.btnDeleteSelected.Name = "btnDeleteSelected";
             this.btnDeleteSelected.Size = new System.Drawing.Size(117, 31);
             this.btnDeleteSelected.TabIndex = 8;
-            this.btnDeleteSelected.Text = "Delete Selected";
-            this.toolTip1.SetToolTip(this.btnDeleteSelected, "Removes this entry. It can not appear in any filter results.");
+            this.btnDeleteSelected.Text = "删除所选";
+            this.toolTip1.SetToolTip(this.btnDeleteSelected, "移除此条目。它将不再出现在任何筛选结果中。");
             this.btnDeleteSelected.UseVisualStyleBackColor = true;
             this.btnDeleteSelected.Click += new System.EventHandler(this.btnDeleteSelected_Click);
             // 
@@ -134,8 +134,8 @@ namespace Thetis
             this.btnLockSelected.Name = "btnLockSelected";
             this.btnLockSelected.Size = new System.Drawing.Size(117, 31);
             this.btnLockSelected.TabIndex = 7;
-            this.btnLockSelected.Text = "Lock Selected";
-            this.toolTip1.SetToolTip(this.btnLockSelected, "Locks the currently selected entry so that changes to it are prevented");
+            this.btnLockSelected.Text = "锁定所选";
+            this.toolTip1.SetToolTip(this.btnLockSelected, "锁定当前选中的条目，防止对其更改");
             this.btnLockSelected.UseVisualStyleBackColor = true;
             this.btnLockSelected.Click += new System.EventHandler(this.btnLockSelected_Click);
             // 
@@ -146,8 +146,8 @@ namespace Thetis
             this.btnOptions.Name = "btnOptions";
             this.btnOptions.Size = new System.Drawing.Size(75, 31);
             this.btnOptions.TabIndex = 6;
-            this.btnOptions.Text = "Options >>";
-            this.toolTip1.SetToolTip(this.btnOptions, "Expand/shrink the options");
+            this.btnOptions.Text = "选项 >>";
+            this.toolTip1.SetToolTip(this.btnOptions, "展开/收起选项");
             this.btnOptions.UseVisualStyleBackColor = true;
             this.btnOptions.Click += new System.EventHandler(this.btnOptions_Click);
             // 
@@ -160,8 +160,8 @@ namespace Thetis
             this.radioLastUsed.Size = new System.Drawing.Size(164, 17);
             this.radioLastUsed.TabIndex = 5;
             this.radioLastUsed.TabStop = true;
-            this.radioLastUsed.Text = "Return to last used frequency";
-            this.toolTip1.SetToolTip(this.radioLastUsed, "You will return to the last used frequency.");
+            this.radioLastUsed.Text = "返回上次使用的频率";
+            this.toolTip1.SetToolTip(this.radioLastUsed, "将返回上次使用的频率。");
             this.radioLastUsed.UseVisualStyleBackColor = true;
             this.radioLastUsed.CheckedChanged += new System.EventHandler(this.radioLastUsed_CheckedChanged);
             // 
@@ -172,8 +172,8 @@ namespace Thetis
             this.btnSetSpecific.Name = "btnSetSpecific";
             this.btnSetSpecific.Size = new System.Drawing.Size(45, 24);
             this.btnSetSpecific.TabIndex = 4;
-            this.btnSetSpecific.Text = "Set";
-            this.toolTip1.SetToolTip(this.btnSetSpecific, "Set the specific selected entry");
+            this.btnSetSpecific.Text = "设置";
+            this.toolTip1.SetToolTip(this.btnSetSpecific, "设置指定的选中条目");
             this.btnSetSpecific.UseVisualStyleBackColor = true;
             this.btnSetSpecific.Click += new System.EventHandler(this.btnSetSpecific_Click);
             // 
@@ -186,9 +186,8 @@ namespace Thetis
             this.radioSpecific.Size = new System.Drawing.Size(134, 17);
             this.radioSpecific.TabIndex = 3;
             this.radioSpecific.TabStop = true;
-            this.radioSpecific.Text = "Return to specific entry";
-            this.toolTip1.SetToolTip(this.radioSpecific, "You will return to the specific entry. If it has been removed you will return to " +
-        "last use frequency.");
+            this.radioSpecific.Text = "返回指定条目";
+            this.toolTip1.SetToolTip(this.radioSpecific, "将返回指定条目。如果该条目已被移除，将返回上次使用的频率。");
             this.radioSpecific.UseVisualStyleBackColor = true;
             this.radioSpecific.CheckedChanged += new System.EventHandler(this.radioSpecific_CheckedChanged);
             // 
@@ -201,9 +200,8 @@ namespace Thetis
             this.radioLastUsedEntry.Size = new System.Drawing.Size(140, 17);
             this.radioLastUsedEntry.TabIndex = 2;
             this.radioLastUsedEntry.TabStop = true;
-            this.radioLastUsedEntry.Text = "Return to last used entry";
-            this.toolTip1.SetToolTip(this.radioLastUsedEntry, "You will return to the currently selected entry if you leave and come back. If th" +
-        "e entry has been remove you will return to last used frequency.");
+            this.radioLastUsedEntry.Text = "返回上次使用的条目";
+            this.toolTip1.SetToolTip(this.radioLastUsedEntry, "离开后再回来时，将返回当前选中的条目。如果该条目已被移除，将返回上次使用的频率。");
             this.radioLastUsedEntry.UseVisualStyleBackColor = true;
             this.radioLastUsedEntry.CheckedChanged += new System.EventHandler(this.radioLastUsedEntry_CheckedChanged);
             // 
@@ -214,8 +212,8 @@ namespace Thetis
             this.btnUpdateEntry.Name = "btnUpdateEntry";
             this.btnUpdateEntry.Size = new System.Drawing.Size(62, 64);
             this.btnUpdateEntry.TabIndex = 15;
-            this.btnUpdateEntry.Text = "Update Entry";
-            this.toolTip1.SetToolTip(this.btnUpdateEntry, "Update an existing unlocked entry");
+            this.btnUpdateEntry.Text = "更新条目";
+            this.toolTip1.SetToolTip(this.btnUpdateEntry, "更新现有的未锁定条目");
             this.btnUpdateEntry.UseVisualStyleBackColor = true;
             this.btnUpdateEntry.Click += new System.EventHandler(this.btnUpdateEntry_Click);
             // 
@@ -228,8 +226,8 @@ namespace Thetis
             this.chkShowHidden.Name = "chkShowHidden";
             this.chkShowHidden.Size = new System.Drawing.Size(88, 17);
             this.chkShowHidden.TabIndex = 14;
-            this.chkShowHidden.Text = "Show hidden";
-            this.toolTip1.SetToolTip(this.chkShowHidden, "Show any that have been hidden for this filter.");
+            this.chkShowHidden.Text = "显示已隐藏";
+            this.toolTip1.SetToolTip(this.chkShowHidden, "显示此筛选器已隐藏的条目。");
             this.chkShowHidden.UseVisualStyleBackColor = true;
             this.chkShowHidden.Visible = false;
             // 
@@ -241,8 +239,8 @@ namespace Thetis
             this.chkIgnoreDuplicates.Name = "chkIgnoreDuplicates";
             this.chkIgnoreDuplicates.Size = new System.Drawing.Size(88, 17);
             this.chkIgnoreDuplicates.TabIndex = 16;
-            this.chkIgnoreDuplicates.Text = "Ignore dupes";
-            this.toolTip1.SetToolTip(this.chkIgnoreDuplicates, "Do not update if the current VFO frequency already exists");
+            this.chkIgnoreDuplicates.Text = "忽略重复";
+            this.toolTip1.SetToolTip(this.chkIgnoreDuplicates, "若当前 VFO 频率已存在则不更新");
             this.chkIgnoreDuplicates.UseVisualStyleBackColor = true;
             this.chkIgnoreDuplicates.CheckedChanged += new System.EventHandler(this.chkIgnoreDuplicates_CheckedChanged);
             // 
@@ -254,8 +252,8 @@ namespace Thetis
             this.chkHideOnSelect.Name = "chkHideOnSelect";
             this.chkHideOnSelect.Size = new System.Drawing.Size(94, 17);
             this.chkHideOnSelect.TabIndex = 17;
-            this.chkHideOnSelect.Text = "Hide on select";
-            this.toolTip1.SetToolTip(this.chkHideOnSelect, "Close the band stack window when an item is selected");
+            this.chkHideOnSelect.Text = "选择时隐藏";
+            this.toolTip1.SetToolTip(this.chkHideOnSelect, "选中条目时关闭波段堆栈窗口");
             this.chkHideOnSelect.UseVisualStyleBackColor = true;
             this.chkHideOnSelect.CheckedChanged += new System.EventHandler(this.chkHideOnSelect_CheckedChanged);
             // 
@@ -267,8 +265,8 @@ namespace Thetis
             this.chkShowInSpectrum.Name = "chkShowInSpectrum";
             this.chkShowInSpectrum.Size = new System.Drawing.Size(126, 17);
             this.chkShowInSpectrum.TabIndex = 18;
-            this.chkShowInSpectrum.Text = "Show on Panadapter";
-            this.toolTip1.SetToolTip(this.chkShowInSpectrum, "Show the entries as overlays on the panadapter. Click them to select.");
+            this.chkShowInSpectrum.Text = "在频谱上显示";
+            this.toolTip1.SetToolTip(this.chkShowInSpectrum, "将条目作为叠加显示在频谱上，点击即可选择。");
             this.chkShowInSpectrum.UseVisualStyleBackColor = true;
             this.chkShowInSpectrum.CheckedChanged += new System.EventHandler(this.chkShowInSpectrum_CheckedChanged);
             // 
@@ -281,7 +279,7 @@ namespace Thetis
             this.lblFilterNameCaption.Name = "lblFilterNameCaption";
             this.lblFilterNameCaption.Size = new System.Drawing.Size(43, 16);
             this.lblFilterNameCaption.TabIndex = 1;
-            this.lblFilterNameCaption.Text = "Filter :";
+            this.lblFilterNameCaption.Text = "筛选器 :";
             this.lblFilterNameCaption.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // bandStackListBox
@@ -334,7 +332,7 @@ namespace Thetis
             this.Name = "frmBandStack2";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.ShowInTaskbar = false;
-            this.Text = "Band Stack 2";
+            this.Text = "波段堆栈 2";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmBandStack2_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();

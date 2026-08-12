@@ -1,0 +1,31 @@
+name: Build Thetis
+
+on:
+  push:
+    branches: [ master, zh-cn ]
+  pull_request:
+    branches: [ master, zh-cn ]
+
+jobs:
+  build-x86:
+    runs-on: windows-2022
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Add MSBuild to PATH
+        uses: microsoft/setup-msbuild@v2
+
+      - name: Install WiX Toolset
+        run: choco install wixtoolset --version=3.11.2 -y --no-progress
+
+      - name: Restore NuGet packages
+        run: nuget restore "Project Files\Source\Thetis_VS2022.sln" -MSBuildVersion 17
+
+      - name: Build solution (Release x86)
+        run: msbuild "Project Files\Source\Thetis_VS2022.sln" /m /p:Configuration=Release /p:Platform=x86 /v:minimal
+
+      - name: Build solution (Release x64)
+        run: msbuild "Project Files\Source\Thetis_VS2022.sln" /m /p:Configuration=Release /p:Platform=x64 /v:minimal
